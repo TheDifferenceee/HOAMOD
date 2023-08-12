@@ -3009,12 +3009,12 @@ focus_tree = {
 		
 		available = {
 			is_subject = no
-			date > 1941.5.1
+			date > 1941.5.10
 		}
 		x = 0
 		y = 2
 		relative_position_id = GER_anti_comitern_pact
-		cost = 10
+		cost = 5
 		historical_ai = {
 			NOT = {
 				any_home_area_neighbor_country = {
