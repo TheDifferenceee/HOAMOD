@@ -5345,6 +5345,10 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			annex_country = {
+			    target = PHI
+			    transfer_troops = yes
+			}
 		}
 	}
 

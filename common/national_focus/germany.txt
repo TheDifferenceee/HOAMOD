@@ -2055,7 +2055,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 16
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2177,7 +2177,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -2195,8 +2195,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber
-				category = cas_bomber			
+				category = tactical_bomber	
 			}
 		}
 	}
@@ -2208,7 +2207,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_tactical_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.1
 		}
@@ -2234,7 +2233,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_tactical_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2259,7 +2258,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = GER_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2441,7 +2440,9 @@ focus_tree = {
 			factor = 1
 		}
 
-		available_if_capitulated = yes
+		available = {
+		ENG = { has_completed_focus = fighter_command_focus }
+		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = { 
 			air_experience = 50
@@ -2462,6 +2463,12 @@ focus_tree = {
 				SOV = {
 					country_event = { id = germany.78 days = 1 }
 				}
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
 			}
 		}
 	}
@@ -3002,6 +3009,7 @@ focus_tree = {
 		
 		available = {
 			is_subject = no
+			date > 1941.5.1
 		}
 		x = 0
 		y = 2
@@ -3384,43 +3392,6 @@ focus_tree = {
 			}
 		}
 	}
-	
-		focus = {
-		id = GER_annex_hungary
-		icon = GFX_focus_smiling_buddha
-		prerequisite = { focus = GER_anschluss }
-		x = -4
-		y = 1
-		relative_position_id = GER_anschluss
-
-		cost = 1
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-        completion_reward = {
-			annex_country = {
-			    target = HUN
-			    transfer_troops = yes
-			}
-		
-		
-				every_state = {
-				155 = {set_compliance = 70}
-				43 = {set_compliance = 70}
-				154 = {set_compliance = 70
-				}
-		}
-	}
-}
 
 	focus = {
 		id = GER_demand_memel
@@ -4328,18 +4299,16 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					HUN = {
-						is_friend_or_potential_friend_of_GER = yes
-					}
-					ROM = {
-						controls_state = 76
-						NOT = { has_war_with = HUN }
-					}
-				}
-				country_event = { id = germany.20 }
+			annex_country = {
+			    target = HUN
+			    transfer_troops = yes
 			}
+		
+		    every_state = {
+				155 = {set_compliance = 70}
+				43 = {set_compliance = 70}
+				154 = {set_compliance = 70}
+		    }
 		}
 	}
 

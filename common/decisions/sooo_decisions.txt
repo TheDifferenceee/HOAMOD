@@ -150,3 +150,74 @@ eng_kendiniasan = {
 	}
 	
 }
+
+ger_kendiniasan = {
+	sweden_resources = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			tag = GER
+		}
+		available = {
+		    date > 1940.1.1
+			GER = {
+			has_war_with = ENG
+			}
+			NOR = {
+			has_capitulated = yes
+			}
+			SWE = {
+			exists = yes
+			}
+		}
+		visible = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+		SWE = {
+		add_ideas = GER_secure_vital_resources_from_sweden_I
+		}
+		}
+	}
+	
+	vichy_resources = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			tag = GER
+		}
+		available = {
+		    date > 1940.1.1
+			GER = {
+			has_war_with = ENG
+			}
+			FRA = {
+			has_capitulated = yes
+			}
+			VIC = {
+			exists = yes
+			}
+		}
+		visible = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+		VIC = {
+		add_ideas = GER_secure_vital_resources_from_sweden_I
+		}
+		}
+	}
+	
+}
