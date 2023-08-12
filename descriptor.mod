@@ -2,5 +2,5 @@ version="1.12.14"
 tags={
 	"Historical"
 }
-name="Back to Front Remake"
+name="HOAMOD"
 supported_version="1.12.14"
