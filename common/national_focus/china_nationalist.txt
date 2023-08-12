@@ -813,6 +813,12 @@
 			PRC = {
 				country_event = generic.5
 			}
+			CHI = { add_to_faction = SHX }
+            CHI = { add_to_faction = PRC }
+            CHI = { add_to_faction = XSM }
+            CHI = { add_to_faction = SIK }
+            CHI = { add_to_faction = GXC }
+            CHI = { add_to_faction = YUN }
 		}
 	}
 
