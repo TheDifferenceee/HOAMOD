@@ -2740,7 +2740,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 2
 		}
@@ -2773,7 +2773,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 2
 		}
@@ -3278,7 +3278,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
-		cost = 10
+		cost = 5
 		available = {
 			controls_state = 2
 			controls_state = 161
@@ -5013,7 +5013,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_air_innovations_bba
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -8416,7 +8416,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ITA_solid_progress
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -8953,7 +8953,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_triumph_in_africa_bba
-		cost = 10
+		cost = 5
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
@@ -9223,7 +9223,7 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = ITA_la_battaglia_per_le_nascite
-		cost = 10
+		cost = 5
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
@@ -9910,7 +9910,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ITA_towards_a_greater_italy
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -10032,7 +10032,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_towards_a_greater_italy
-		cost = 10
+		cost = 5
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini

@@ -324,7 +324,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
@@ -2320,7 +2320,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -4193,7 +4193,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6010,7 +6010,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 10
+		cost = 5
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -6102,7 +6102,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_rehabilitated_military
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6171,7 +6171,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_desperate_measures
-		cost = 5
+		cost = 1
 
 		available = {
 			has_war = yes
@@ -6918,7 +6918,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_zinovyevite_terrorist_center
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -11373,7 +11373,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -11508,7 +11508,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_collectivist_propaganda
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -11642,6 +11642,19 @@ focus_tree = {
 			add_popularity = {
 				ideology = communism
 				popularity = 0.05
+				
+			annex_country = {
+			    target = MON
+			    transfer_troops = yes
+			}
+		
+		    every_state = {
+				820 = {set_compliance = 70}
+				818 = {set_compliance = 70}
+				330 = {set_compliance = 70}
+				819 = {set_compliance = 70}
+				817 = {set_compliance = 70}
+		    }
 			}
 		}
 	}
@@ -13373,7 +13386,7 @@ ai_will_do = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_claims_in_baltic
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
