@@ -1,0 +1,81 @@
+on_actions = {
+    on_startup = {
+        effect = {
+		if ={
+		limit = {
+			has_game_rule = {
+				rule = soo_optimization
+				option = SOO_HARD
+			}			
+			}
+			every_other_country = { 
+			
+				country_event = sooo.start.event.1 
+
+				if={
+					LIMIT = {
+						NOT = { is_ai = yes }
+					}
+					add_ideas = sooo_player_was_here 
+				}
+				
+			}
+		  }
+		  TUR = { 
+		  load_focus_tree = generic_focus 
+		  set_rule = { #DLC
+					can_not_declare_war = yes
+				}
+				country_lock_all_division_template = yes
+			remove_ideas = TUR_sectarian_woes
+			remove_ideas = TUR_disorganised_armed_forces
+		  }
+		  SOV = { 
+		  add_war_support = 0.05
+		  }
+		  ENG = { 
+		  diplomatic_relation = {
+           country = POL
+           relation = guarantee
+           active = yes
+          }
+		  }
+		  FRA = { 
+		  diplomatic_relation = {
+           country = POL
+           relation = guarantee
+           active = yes
+          }
+		  }
+		  SWI = { 
+		  load_focus_tree = generic_focus 
+		  set_rule = { #DLC
+					can_not_declare_war = yes
+				}
+				country_lock_all_division_template = yes
+			remove_ideas = SWI_swiss_neutrality
+			remove_ideas = SWI_foreign_fascist_propaganda
+		  }
+		  POR = { 
+		  load_focus_tree = generic_focus 
+		  set_rule = { #DLC
+					can_not_declare_war = yes
+				}
+				country_lock_all_division_template = yes
+				remove_ideas = POR_unreliable_army
+				remove_ideas = POR_unstable_republic
+		  }
+		  MEX = { 
+		         load_focus_tree = generic_focus
+                set_rule = { #DLC
+					can_not_declare_war = yes
+				}
+				country_lock_all_division_template = yes
+                remove_ideas = MEX_callistas
+                remove_ideas = MEX_church_power_2
+				remove_ideas = MEX_politicised_army
+				remove_ideas = MEX_cedillo_tension_2
+		    }
+        }
+    }
+}
