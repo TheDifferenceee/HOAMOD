@@ -34,7 +34,9 @@ on_actions = {
 		  add_war_support = 0.05
 		  }
                   JAP = {
-                   530 = { add_extra_state_shared_building_slots = 10 }	 	   
+                   530 = { add_extra_state_shared_building_slots = 4 }
+                   529 = { add_extra_state_shared_building_slots = 2 }	 
+                   533 = { add_extra_state_shared_building_slots = 4 }	   
                         }
 		  ENG = { 
 		  diplomatic_relation = {
