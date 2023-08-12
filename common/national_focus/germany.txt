@@ -50,7 +50,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 8
 		}
@@ -163,7 +163,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_west_wall
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -793,7 +793,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_west_wall
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1575,7 +1575,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 1
@@ -2887,7 +2887,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		relative_position_id = GER_rhineland
-		cost = 10
+		cost = 5
 		available = {
 			is_subject = no
 			NOT = { has_government = communism }
@@ -2906,6 +2906,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			SOU = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+			add_political_power = 100
 			add_named_threat = { threat = 2 name = GER_anti_comitern_pact }
 			every_other_country = {
 				limit = {

@@ -3225,7 +3225,42 @@
 			}
 		}
 	}
+	
+	focus = {
+		id = AST_annex_new_zealand
+		icon = GFX_focus_smiling_buddha
+		prerequisite = { focus = AST_support_the_policy_of_appeasement }
+		x = 3
+		y = 1
+		relative_position_id = AST_support_the_policy_of_appeasement
 
+		cost = 1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+        completion_reward = {
+			annex_country = {
+			    target = NZL
+			    transfer_troops = yes
+			}
+		
+		
+				every_state = {
+				723 = {set_compliance = 100}
+				284 = {set_compliance = 100}
+				}
+		}
+	}
+	
 	focus = {
 		id = AST_adopt_westminster
 		icon = GFX_goal_generic_improve_relations
