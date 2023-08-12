@@ -477,8 +477,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }
-				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
+				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }				
 			}
 			if = {
 				limit = {
@@ -6961,8 +6960,8 @@ focus_tree = {
 			add_to_variable = { SOV_the_politburo_global_building_slots_factor = 0.1 } 
 			custom_effect_tooltip = SOV_the_collectivization_process_ns_tt
 
-			add_stability = -0.05
-			add_war_support = -0.05
+			add_stability = 0.05
+			add_war_support = 0.05
 
 			if = { #Target a rural state with no civs
 				limit = {
@@ -7274,7 +7273,7 @@ focus_tree = {
 				limit = {
 					has_war = no
 				}
-				add_stability = -0.1
+				
 			}
 			else = {
 				custom_effect_tooltip = SOV_war_economy_stability_war_tt

@@ -106,6 +106,7 @@ ideas = {
 
 			modifier = {
 				drift_defence_factor = 0.5
+                                communism_drift = 0.2
 			}
 			rule = {
 				can_create_factions = yes
