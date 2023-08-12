@@ -18,3 +18,11 @@ ger_kendiniasan = {
     }
 	
 }
+
+rom_kendiniasan = {
+	icon = GFX_decision_category_generic
+	priority = {
+	base = 3
+    }
+	
+}
