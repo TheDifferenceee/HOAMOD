@@ -6,7 +6,7 @@ com_templates = {
 		days_remove    = -1
 		complete_effect = {
 			division_template = {
-				name = "1DivTraining"
+				name = "Hearts of Ayran"
 
 				division_names_group = GER_Inf_01
 
