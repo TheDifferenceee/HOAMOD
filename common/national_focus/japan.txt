@@ -2203,7 +2203,7 @@
 	focus = {
 		id = JAP_national_mobilization_law
 		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = JAP_guide_the_zaibatsus focus = JAP_challenge_the_zaibatsus }
+		prerequisite = { focus = JAP_guide_the_zaibatsus }
 		x = 2
 		y = 1
 		relative_position_id = JAP_guide_the_zaibatsus
@@ -4877,7 +4877,6 @@
 		id = JAP_supremacy_of_technology
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = JAP_small_arms_modernization }
-		mutually_exclusive = { focus = JAP_supremacy_of_will }
 		x = 0
 		y = 1
 		relative_position_id = JAP_small_arms_modernization
@@ -5057,7 +5056,6 @@
 		id = JAP_supremacy_of_will
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = JAP_army_expansion }
-		mutually_exclusive = { focus = JAP_supremacy_of_technology }
 		x = 0
 		y = 1
 		relative_position_id = JAP_army_expansion
