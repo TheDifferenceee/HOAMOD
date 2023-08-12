@@ -142,8 +142,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 5 64 200 }
+    color_ui = rgb { 5 64 200 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -214,8 +214,8 @@ PER = {
 	color_ui = rgb { 92 147 126 }
 }
 PHI = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
 }
 PRU = {
 	color = rgb { 196 189 204 }
@@ -234,8 +234,8 @@ SIA = {
 	color_ui = rgb { 222 247 198 }
 }
 SIK = {
-	color = rgb { 71 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 5 64 200 }
+    color_ui = rgb { 5 64 200 }
 }
 TIB = {
 	color = rgb { 80 115 45}
@@ -250,17 +250,16 @@ VEN = {
 	color_ui = rgb { 222 247 198 }
 }
 YUN = {
-	color = rgb { 114 148 80 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 5 64 200 }
+    color_ui = rgb { 5 64 200 }
 }
 USA = {
 	color = rgb { 20 133 237 }
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
-	#color = HSV { 0.1 0.15 0.4 }
-	color = rgb { 108 140 42 }
-	color_ui = rgb { 209 247 133 }
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
 }
 MEN = {
   color = rgb { 221  178  83 } #
@@ -309,23 +308,23 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 245 12 55 }
-	color_ui = rgb { 178 34 60 }
+	color = rgb { 5 64 200 }
+    color_ui = rgb { 5 64 200 }
 }
 
 GXC = {
-	color = rgb { 71 113 97 }
-	color_ui = rgb { 71 113 97 }
+	color = rgb { 5 64 200 }
+    color_ui = rgb { 5 64 200 }
 }
 
 SHX = {
-	color = rgb { 82  2  15 }
-	color_ui = rgb { 101  30  41 }
+	color = rgb { 5 64 200 }
+    color_ui = rgb { 5 64 200 }
 }
 
 XSM = {
-	color = rgb { 105 90 132 }
-	color_ui = rgb { 105 90 132 }
+	color = rgb { 5 64 200 }
+    color_ui = rgb { 5 64 200 }
 }
 
 LBA = {
