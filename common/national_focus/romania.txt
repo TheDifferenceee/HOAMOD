@@ -14,7 +14,7 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1100 }
+	continuous_focus_position = { x = 50 y = 1200 }
 
 #	focus = {
 #		id = ROM_
@@ -65,10 +65,10 @@
 		id = ROM_preserve_greater_romania
 		icon = GFX_focus_rom_preserve_romania
 		mutually_exclusive = { focus = ROM_balkans_dominance }
-		x = 3
+		x = 1
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -290,7 +290,7 @@
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -324,7 +324,7 @@
 		y = 2
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -369,7 +369,7 @@
 		y = 3
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -407,7 +407,7 @@
 		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -455,12 +455,12 @@
 		id = ROM_german_romanian_oil_exploitation_company
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_join_axis }
-		x = -1
+		x = 0
 		y = 5
 		relative_position_id = ROM_trade_treaty_with_germany
 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -491,7 +491,7 @@
 				}
 				add_resource = {
 					type = oil
-					amount = 8
+					amount = 24
 				}
 			}
 			GER = {
@@ -501,7 +501,7 @@
 					}
 					add_resource = {
 						type = oil
-						amount = 4
+						amount = 24
 					}
 				}
 			}
@@ -512,6 +512,7 @@
 		id = ROM_demand_transnistria
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = ROM_join_axis }
+		allow_branch = { always = no }
 		x = 1
 		y = 5
 		relative_position_id = ROM_trade_treaty_with_germany
@@ -1012,7 +1013,7 @@
 		id = ROM_agrarian_reform
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = ROM_civil_works focus = ROM_national_defense_industry }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ROM_civil_works
 
@@ -1044,11 +1045,11 @@
 		id = ROM_danubian_transport_network
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ROM_agrarian_reform }
-		x = 1
+		x = 0
 		y = 2
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1153,7 +1154,7 @@
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ROM_danubian_transport_network }
 		mutually_exclusive = { focus = ROM_invite_foreign_motor_companies }
-		x = 0
+		x = -1
 		y = 3
 		relative_position_id = ROM_civil_works
 
@@ -1216,7 +1217,7 @@
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = ROM_danubian_transport_network }
 		mutually_exclusive = { focus = ROM_malaxa }
-		x = 2
+		x = 1
 		y = 3
 		relative_position_id = ROM_civil_works
 
@@ -1248,7 +1249,7 @@
 		id = ROM_hunedoara_steel_works
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ROM_invite_foreign_motor_companies focus = ROM_malaxa }
-		x = 0
+		x = -1
 		y = 4
 		relative_position_id = ROM_civil_works
 
@@ -1318,7 +1319,7 @@
 		id = ROM_invest_in_the_iar
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_invite_foreign_motor_companies focus = ROM_malaxa }
-		x = 2
+		x = 1
 		y = 4
 		relative_position_id = ROM_civil_works
 
@@ -1383,7 +1384,7 @@
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_invest_in_the_iar }
 		prerequisite = { focus = ROM_hunedoara_steel_works }
-		x = 1
+		x = 0
 		y = 5
 		relative_position_id = ROM_civil_works
 
@@ -1410,7 +1411,7 @@
 			46 = {
 				add_resource = {
 					type = oil
-					amount = 24
+					amount = 32
 				}
 			}
 		}
@@ -1420,7 +1421,7 @@
 		id = ROM_expand_the_university_of_bucharest
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_expand_ploiesti_oil_production }
-		x = 1
+		x = 0
 		y = 6
 		relative_position_id = ROM_civil_works
 
@@ -1451,7 +1452,7 @@
 		id = ROM_exploit_the_baita_mines
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = ROM_expand_the_university_of_bucharest }
-		x = 1
+		x = 0
 		y = 7
 		relative_position_id = ROM_civil_works
 
@@ -1857,7 +1858,7 @@
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
-		x = 21
+		x = 12
 		y = 0
 
 		cost = 10
@@ -1914,7 +1915,7 @@
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2075,7 +2076,7 @@
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2416,7 +2417,7 @@
 		y = 1
 		relative_position_id = ROM_flexible_foreign_policy
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2799,7 +2800,7 @@
 		y = 1
 		relative_position_id = ROM_force_abdication
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3075,7 +3076,7 @@
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 32
+		x = 22
 		y = 0
 
 		cost = 10
@@ -3729,10 +3730,10 @@
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 40
+		x = 31
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -3763,7 +3764,7 @@
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3807,7 +3808,7 @@
 		y = 1
 		relative_position_id = ROM_army_war_college
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3843,7 +3844,7 @@
 		y = 1
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3911,7 +3912,7 @@
 		y = 1
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3985,7 +3986,7 @@
 		y = 2
 		relative_position_id = ROM_the_zb_53
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -4017,7 +4018,7 @@
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -4109,7 +4110,7 @@
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -4141,7 +4142,7 @@
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -4306,7 +4307,7 @@
 		y = 2
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -4339,7 +4340,7 @@
 		y = 1
 		relative_position_id = ROM_acquire_modern_tanks
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -4407,10 +4408,10 @@
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 47
+		x = 40
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
