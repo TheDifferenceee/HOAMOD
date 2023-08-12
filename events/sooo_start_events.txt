@@ -46,7 +46,6 @@ country_event = {
 						tag = USA
 						tag = FIN
 						tag = CAN
-						tag = SAF
 						tag = RAJ
 						tag = AST
 						tag = NZL
