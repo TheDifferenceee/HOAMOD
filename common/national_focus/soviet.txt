@@ -11641,8 +11641,8 @@ focus_tree = {
 			add_political_power = 50
 			add_popularity = {
 				ideology = communism
-				popularity = 0.05
-				
+				popularity = 0.05	
+			}
 			annex_country = {
 			    target = MON
 			    transfer_troops = yes
@@ -11655,7 +11655,6 @@ focus_tree = {
 				819 = {set_compliance = 70}
 				817 = {set_compliance = 70}
 		    }
-			}
 		}
 	}
 
