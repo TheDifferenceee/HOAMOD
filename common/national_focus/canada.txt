@@ -2107,7 +2107,7 @@
 			add_tech_bonus = {
 				name = CAN_royal_regiment_of_canadian_artillery
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = artillery
 			}
 		}
