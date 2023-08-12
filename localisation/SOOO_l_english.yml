@@ -18,7 +18,6 @@
  RULE_OPTION_SOO_NORMAL_DESC:0 "Normal game experience without SOO ideas..."
  RULE_GROUP_SOO:0 "SOO Optimization"
  eng_kendiniasan:0 "Britain War Decisions"
- ger_kendiniasan:0 "Germany War Decisions"
  puppet_dutch_east_indies:0 "Puppet Dutch East Indies"
  eng_invade_greenland:0 "Invade Greenland (Better)"
  GER_improve_national_spirit_kendiniasan_tooltip:0 "We, or our Faction members, must control Warszawa and Paris and the states they reside in."
