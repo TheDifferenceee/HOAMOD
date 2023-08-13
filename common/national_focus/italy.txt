@@ -5611,10 +5611,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -5623,14 +5623,14 @@ focus_tree = {
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 1
+						size > 2
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -5656,10 +5656,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -5671,10 +5671,10 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}				
@@ -5753,10 +5753,10 @@ focus_tree = {
 					}
 				}
 				162 = { #TUSCANY (La Spezia)
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -5772,10 +5772,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 157 161 2 } #ABRUZZO as main fallback
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -5793,10 +5793,10 @@ focus_tree = {
 					}
 				}
 				736 = { #LITORALE (Trieste)
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -5812,10 +5812,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 852 160 161 } #ISTRIA as main fallback
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -5895,10 +5895,10 @@ focus_tree = {
 					}
 				}
 				162 = { #TUSCANY (La Spezia)
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -5914,10 +5914,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 157 161 160 } #ABRUZZO as main fallback
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -5941,7 +5941,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 10
+		cost = 5
 		available = {
 			OR = {
 				has_full_control_of_state = 448
@@ -6150,7 +6150,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -6191,13 +6191,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 5
-		available = {
-			any_enemy_country = {
-				is_major_not_original_tag_root = yes
-			}
-		}
-
+		cost = 5		
 		search_filters = {FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
@@ -6228,9 +6222,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
-		available = {
-			is_at_peace_exiled_countries_excluded = yes
-		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
@@ -6249,10 +6240,10 @@ focus_tree = {
 					}
 				}
 				849 = { #PUGLIA (Taranto)
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = fuel_silo
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6268,10 +6259,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 852 736 } #ISTRIA as main fallback
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = fuel_silo
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6289,10 +6280,10 @@ focus_tree = {
 					}
 				}
 				117 = { #Campagna (Napoli)
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = fuel_silo
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6308,10 +6299,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 157 162 } #ABRUZZO as main fallback
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = fuel_silo
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6329,10 +6320,10 @@ focus_tree = {
 					}
 				}
 				115 = { #SICILY (Palermo)
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = fuel_silo
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -6348,10 +6339,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 156 114 } #CALABRIA as main fallback
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = fuel_silo
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
