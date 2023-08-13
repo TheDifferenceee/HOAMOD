@@ -2445,6 +2445,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = { 
+		    add_research_slot = 1
 			air_experience = 50
 
 			add_ideas = GER_air_innovations_2_idea
@@ -3175,6 +3176,7 @@ focus_tree = {
 		available_if_capitulated = no
 		available = {
 			is_subject = no
+			date > 1938.3.12
 			NOT = { has_idea = rhineland_challenge_met }
 			if = {
 				limit = {
@@ -3196,7 +3198,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = GER_rhineland
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3401,7 +3403,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 5
 		bypass = {
 			188 = { is_owned_by = GER }
 			85 = { is_owned_by = GER }
@@ -3956,7 +3958,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
@@ -4257,47 +4259,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_capitulated = no
-		}
-		bypass = {
-			OR = {
-				AND = {
-					OR = {
-						HUN = {
-							NOT = { has_government = fascism }
-							is_friend_or_potential_friend_of_GER = no
-						}
-						ROM = {
-							OR = {
-								AND = {
-									NOT = { controls_state = 76 }
-									NOT = { controls_state = 83 }
-									NOT = { controls_state = 84 }
-								}
-								has_war_with = HUN
-								AND = {
-									is_in_faction_with = GER
-									HUN = { NOT = { is_in_faction_with = GER } }#GER should not want to give territory to Hungary if Romania joined the axis early.
-								}
-							}
-						}
-					}
-					OR = {
-						BUL = { is_friend_or_potential_friend_of_GER = no }
-						ROM = {
-							OR = {
-								NOT = { controls_state = 77 }
-								has_war_with = BUL					
-							}
-						}					
-					}
-				}
-				HUN = { exists = no } 
-				ROM = { exists = no	}
-				HUN = { has_capitulated = yes }
-				ROM = { has_capitulated = yes }
-				HUN = { is_subject_of = ROM } #just rude
-			}
-		}
+		}		
 		completion_reward = {
 			annex_country = {
 			    target = HUN
@@ -6059,7 +6021,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_second_ljubljana_award
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}	
