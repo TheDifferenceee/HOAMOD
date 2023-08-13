@@ -8623,7 +8623,7 @@ focus_tree = {
 
 			ITA_bop_low_decrease_effect = yes	
 
-			mark_focus_tree_layout_dirty = yes
+			 
 		}
 	}
 
@@ -8959,7 +8959,7 @@ focus_tree = {
 
 			ITA_bop_very_low_increase_effect = yes
 
-			mark_focus_tree_layout_dirty = yes
+			 
 		}
 	}
 	
@@ -18576,7 +18576,7 @@ focus_tree = {
 				play_song = "bella_ciao"
 			}
 
-			mark_focus_tree_layout_dirty = yes
+			 
 		}
 	}
 

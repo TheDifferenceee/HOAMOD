@@ -2799,7 +2799,7 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}		
@@ -4563,7 +4563,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_around_maginot
-		cost = 10
+		cost = 5
 		bypass = {
 			OR = {
 				NOT = { country_exists = FRA }
@@ -6009,8 +6009,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		will_lead_to_war_with = GRE
 		available = {
-			GRE = { 
-				exists = yes
+			GER = { 
 				has_war = yes
 			}
 			NOT = { is_in_faction_with = GRE }
@@ -6154,7 +6153,7 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -6259,7 +6258,7 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -8079,7 +8078,7 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}

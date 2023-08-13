@@ -1546,7 +1546,7 @@
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -4582,7 +4582,7 @@
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -5052,7 +5052,7 @@
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -6757,7 +6757,7 @@
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}

@@ -6671,7 +6671,7 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				mark_focus_tree_layout_dirty = yes
+				  
 			}
 		}
 	}
@@ -6751,7 +6751,7 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				mark_focus_tree_layout_dirty = yes
+				  
 			}
 		}
 	}
@@ -8680,7 +8680,7 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				mark_focus_tree_layout_dirty = yes
+				  
 			}
 		}
 	}
@@ -9876,7 +9876,7 @@ focus_tree = {
 						option = HIDE
 					}
 				}
-				mark_focus_tree_layout_dirty = yes
+				  
 			}
 		}
 	}
@@ -15173,7 +15173,7 @@ ai_will_do = {
 						option = HIDE
 					}
 				}
-				mark_focus_tree_layout_dirty = yes
+				  
 			}
 		}
 	}
@@ -15694,7 +15694,7 @@ ai_will_do = {
 						option = HIDE
 					}
 				}
-				mark_focus_tree_layout_dirty = yes
+				  
 			}
 		}
 	}

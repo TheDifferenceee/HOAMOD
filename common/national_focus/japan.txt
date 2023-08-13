@@ -82,7 +82,7 @@
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					  
 				}
 			}
 		}
@@ -2695,7 +2695,7 @@
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					  
 				}
 			}
 		}
@@ -3578,7 +3578,7 @@
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					  
 				}
 			}
 		}
@@ -5172,6 +5172,7 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		    set_technology = { improved_small_airframe = 1 } 
 			custom_effect_tooltip = JAP_the_zero_tt
 			hidden_effect = { 
 				if = {

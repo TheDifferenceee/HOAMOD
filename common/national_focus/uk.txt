@@ -1475,13 +1475,6 @@ focus_tree = {
 		icon = GFX_focus_generic_cruiser2
 		x = 4
 		y = 1
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = naval_rearmament_focus
 		cost = 10
 		ai_will_do = {
@@ -1579,13 +1572,6 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 0
 		y = 2
-		offset = {
-			x = 0
-			y = -1
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = uk_convoy_focus
 		cost = 10
 		ai_will_do = {
@@ -1877,22 +1863,6 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity
 		x = 28
 		y = 0
-		offset = {
-			x = -2
-			y = 0
-			trigger = {
-				OR = {
-					NOT = { has_dlc = "Man the Guns" }
-					AND = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-						has_completed_focus = uk_empire_focus
-					}
-				}
-			}
-		}
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1920,22 +1890,6 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 1
-		offset = {
-			x = 2
-			y = 0
-			trigger = {
-				OR = {
-					NOT = { has_dlc = "Man the Guns" }
-					AND = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-						has_completed_focus = uk_empire_focus
-					}
-				}
-			}
-		}
 		relative_position_id = uk_empire_focus
 		cost = 5
 
@@ -2583,18 +2537,6 @@ focus_tree = {
 		x = 33
 		y = 0
 
-		offset = {
-			x = -16
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_revisit_colonial_policy
-			}
-		}
-
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2624,7 +2566,7 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -2647,18 +2589,6 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = ENG_revisit_colonial_policy
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_revisit_colonial_policy
-			}
-		}
 
 		cost = 10
 		ai_will_do = {
@@ -5873,13 +5803,6 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = -1
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = uk_india_focus
 		cost = 10
 
@@ -7341,59 +7264,6 @@ focus_tree = {
 		y = 0
 		relative_position_id = ENG_revisit_colonial_policy
 
-		offset = {
-			x = -7
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				has_dlc = "Man the Guns"
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = uk_empire_focus
-			}
-		}
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_revisit_colonial_policy
-			}
-		}
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_global_defense
-			}
-		}
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_home_defence
-			}
-		}
-
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -7428,7 +7298,6 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
@@ -7469,18 +7338,6 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ENG_steady_as_she_goes
-
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_global_defense
-			}
-		}
 
 		cost = 5
 		ai_will_do = {
@@ -7623,7 +7480,6 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
@@ -8098,24 +7954,6 @@ focus_tree = {
 		icon = GFX_focus_generic_home_defense
 		x = 4
 		y = 1
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_home_defence
-			}
-		}
 		relative_position_id = ENG_steady_as_she_goes
 		cost = 5
 		ai_will_do = {
@@ -8209,7 +8047,6 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
@@ -8238,13 +8075,6 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = -6
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = ENG_home_defence
 		cost = 10
 		ai_will_do = {
@@ -8313,18 +8143,6 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = 4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_global_defense
-			}
-		}
-
 		available = {
 			SOV = {
 				ENG_focus_available_embargo_sanction = yes
@@ -8390,13 +8208,6 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		x = 1
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = ENG_home_defence
 		cost = 5
 		ai_will_do = {
@@ -8530,13 +8341,6 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = -3
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = ENG_home_defence
 		cost = 10
 		ai_will_do = {
@@ -8692,13 +8496,6 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = ENG_home_defence
 		cost = 5
 		ai_will_do = {
@@ -8737,13 +8534,6 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 1
 		y = 1
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
-			}
-		}
 		relative_position_id = ENG_home_defence
 		cost = 10
 		ai_will_do = {
@@ -8849,67 +8639,6 @@ focus_tree = {
 		x = 18
 		y = 0
 		relative_position_id = ENG_steady_as_she_goes
-
-		offset = {
-			x = -18
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_a_change_in_course
-			}
-		}
-
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_the_kings_party
-			}
-		}
-
-		offset = {
-			x = -3
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_organize_the_blackshirts
-			}
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_organize_the_blackshirts
-				has_completed_focus = uk_empire_focus
-			}
-		}
-
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_concessions_to_the_trade_unions
-			}
-		}
 
 		cost = 5
 		ai_will_do = {
@@ -9062,7 +8791,6 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
 				}
 			}
 		}
@@ -9092,18 +8820,6 @@ focus_tree = {
 						has_completed_focus = ENG_steady_as_she_goes
 					}
 				}
-			}
-		}
-
-		offset = {
-			x = 5
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_the_kings_party
 			}
 		}
 
@@ -9163,7 +8879,7 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -9388,18 +9104,6 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_organize_the_blackshirts
-			}
-		}
-
 		available = {
 			is_subject = no
 			has_war = no
@@ -9508,7 +9212,7 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -10630,18 +10334,6 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_concessions_to_the_trade_unions
-			}
-		}
-
 		available = {
 			is_subject = no
 			has_war = no
@@ -10739,7 +10431,7 @@ focus_tree = {
 							option = HIDE
 						}
 					}
-					mark_focus_tree_layout_dirty = yes
+					 
 				}
 			}
 		}
@@ -10749,18 +10441,6 @@ focus_tree = {
 		id = ENG_move_to_secure_the_dominions
 		prerequisite = { focus = ENG_organize_the_blackshirts focus = ENG_concessions_to_the_trade_unions }
 		allow_branch = { always = no }
-
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ENG_concessions_to_the_trade_unions
-			}
-		}
 
 		available = {
 			is_subject = no
