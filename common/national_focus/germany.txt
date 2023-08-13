@@ -1433,6 +1433,30 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+		64 = {
+				add_resource = {
+					type = tungsten
+					amount = 25
+				}
+				}
+				59 = {
+				add_resource = {
+					type = tungsten
+					amount = 25
+				}
+				}
+				60 = {
+				add_resource = {
+					type = tungsten
+					amount = 25
+				}
+				}
+				54 = {
+				add_resource = {
+					type = tungsten
+					amount = 25
+				}
+				}
 			custom_effect_tooltip = GER_autobahn_tt
 			hidden_effect = {
 				64 = {
@@ -4175,7 +4199,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_first_vienna_award
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
