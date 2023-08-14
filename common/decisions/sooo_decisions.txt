@@ -82,42 +82,7 @@ sooo_player_to_ai_to_player = {
 
 }
 
-eng_kendiniasan = {
-	puppet_dutch_east_indies = {
-
-		icon = GFX_decision_generic_prepare_civil_war
-
-		allowed = {
-			tag = ENG
-		}
-		available = {
-		    date > 1940.1.1
-			GER = {
-			has_war_with = ENG
-			}
-			HOL = {
-			has_capitulated = yes
-			}
-			INS = {
-			exists = yes
-			}
-		}
-		visible = {
-			
-		}
-		fire_only_once = yes
-		cost = 25
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-		 set_autonomy = {
-		  target = INS
-		autonomous_state = autonomy_integrated_puppet
-	   }
-		}
-	}
-	
+eng_kendiniasan = {	
 	eng_invade_greenland = {
 
 		icon = GFX_decision_generic_prepare_civil_war
