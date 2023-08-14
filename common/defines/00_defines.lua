@@ -1,5 +1,11 @@
 NDefines = {
 
+NGame = {
+	COMBAT_LOG_MAX_MONTHS = 6 --12
+	LAG_DAYS_FOR_LOWER_SPEED = 60 --10
+	LAG_DAYS_FOR_PAUSE = 100 --25
+	GAME_SPEED_SECONDS = { 0.4, 0.25, 0.1, 0.05, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
+
 NDiplomacy = {
 	MIN_WARGOAL_JUSTIFY_COST = 2.0,                    -- It always takes atleast 10 days to justify a wargoal
 	MIN_WARGOAL_JUSTIFY_COST = 2000.0,                    -- It always takes atleast 10 days to justify a wargoal (not aldım)
@@ -10,11 +16,13 @@ NDiplomacy = {
     VOLUNTEERS_TRANSFER_SPEED = 7,                    -- days to transfer a unit to another nation
     VOLUNTEERS_DIVISIONS_REQUIRED = 0,                -- This many divisons are required for the country to be able to send volunteers.
 	GUARANTEE_COST = 2000,                            -- Scale with the number of already guaranteed countries.
+	REVOKE_GUARANTEE_COST = 1000;
     REVOKE_GUARANTEE_COST = 2000,
 	ATTACHE_XP_SHARE = 0.2,                            -- Country received xp from attaches
 },
 	
 NCountry = {
+	EVENT_PROCESS_OFFSET = 27 --20 
     SPECIAL_FORCES_CAP_BASE = 1,                    -- Max ammount of special forces battalions is total number of non-special forces battalions multiplied by this and modified by a country modifier
     SPECIAL_FORCES_CAP_MIN = 400,                    -- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
     FUEL_LEASE_CONVOY_RATIO = 0.0005,                -- num convoys needed per fuel land lease 
@@ -28,6 +36,7 @@ NProduction = {
     BASE_FACTORY_SPEED_MIL = 5,                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
     BASE_FACTORY_SPEED_NAV = 5,                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	MIN_POSSIBLE_TRAINING_MANPOWER = 8000000,    -- How many deployment lines minimum can be training
+	MIN_LICENSE_ACTIVE_DAYS = 0;
     BASE_LICENSE_IC_COST = 0,                            -- Base IC cost for lended license
     LICENSE_IC_COST_YEAR_INCREASE = 0,                    -- IC cost equipment for every year of equipment after 1936
 	CONVERSION_SPEED_BONUS = 0,                            -- Modifier to the production speed when converting equipment
@@ -52,6 +61,12 @@ NBuildings = {
 },
     
 NMilitary = {	
+	MAX_ARMY_EXPERIENCE = 900			--Max army experience a country can store
+	MAX_NAVY_EXPERIENCE = 900			--Max navy experience a country can store
+	MAX_AIR_EXPERIENCE = 900			--Max air experience a country can store
+	BASE_DIVISION_BRIGADE_GROUP_COST = 1
+	BASE_DIVISION_BRIGADE_CHANGE_COST = 1
+	BASE_DIVISION_SUPPORT_SLOT_COST = 1
 	LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.032,    -- air global damage modifier
     LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.032,    -- global damage modifier
     LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 3, -- how many CAS/TAC can enter a combat depending on enemy width there     (VANILLA DEGERI DEGISECEK=
@@ -104,6 +119,7 @@ NAir = {
 	AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 4.0,                      -- Balancing value to increase usual losses if Kamikaze participating in the battle
     BASE_KAMIKAZE_DAMAGE = 2.0,                                    -- Base Kamikaze death rate
     BASE_KAMIKAZE_TARGETING = 2.0,                            -- Kamikaze can't be a bad target       KAMIKAZE DMG ARTABILIR (UÇAK UPDATELERİNDEN SONRA BAK)
+	AIR_DEPLOYMENT_DAYS = 1;
 	DISRUPTION_FACTOR_CARRIER = 6.0,                            -- multiplier on disruption damage to scale its effects on carrier vs carrier planes              elimde kalsın, carrierdaki bombing oranı
 },
     
@@ -141,6 +157,8 @@ NNavy = {
     SUPREMACY_PER_SHIP_PER_MANPOWER = 0.00,                            -- supremacy of a ship is calculated using its IC, manpower and a base define
     SUPREMACY_PER_SHIP_PER_IC = 0.05,
     SUPREMACY_PER_SHIP_BASE = 0.0,
+	NAVAL_MINES_IN_REGION_MAX = 0.0
+	NAVAL_MINES_PLANTING_SPEED_MULT = 0.00000
 	MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO                    = 0.75,  -- maximum penalty to get from larger fleets        (vanilla değer)    100vs200 donanmada yediğin nerf o kadar da fazla değil
 	POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS        = 0.01, -- each ship that joins the combat will have this penalty to be added into positioning
 	MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS                     = 0.25,  -- the accumulated penalty from new ships will be clamped to this value
