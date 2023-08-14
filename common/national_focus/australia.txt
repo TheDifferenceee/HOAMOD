@@ -3221,8 +3221,18 @@
 
 		completion_reward = {
 			ENG = {
-				country_event = { id = tfv_australia.1 }
-			}
+                annex_country = {
+                    target = MAL
+                    transfer_troops = yes
+                }
+            }
+
+            AST = {
+                annex_country = {
+                    target = INS
+                    transfer_troops = yes
+                }
+            }
 		}
 	}
 	
