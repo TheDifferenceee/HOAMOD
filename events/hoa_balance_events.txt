@@ -120,3 +120,85 @@ news_event = {
 		name = hoa.start.event.4.a
 	}
 }
+
+# The Fall of Benelux
+news_event = {
+	id = hoa.start.event.6
+	title = hoa.start.event.6.t
+	desc = hoa.start.event.6.d
+	picture = GFX_news_event_064
+	
+	hidden = yes
+	
+	trigger = {
+		HOL = { has_capitulated = yes }
+		BEL = { has_capitulated = yes }
+		ENG = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_beneluxx }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_beneluxx
+		ENG = {
+			annex_country = {
+			target = HOL
+			}
+			annex_country = {
+			target = BEL
+			}
+			annex_country = {
+			target = LUX
+			}
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = hoa.start.event.6.a
+	}
+}
+
+# The Fall of Scandinavia
+news_event = {
+	id = hoa.start.event.7
+	title = hoa.start.event.7.t
+	desc = hoa.start.event.7.d
+	picture = GFX_news_event_064
+	
+	hidden = yes
+	
+	trigger = {
+		DEN = { has_capitulated = yes }
+		NOR = { has_capitulated = yes }
+		ENG = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_scandi }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_scandi
+		ENG = {
+			annex_country = {
+			target = DEN
+			}
+			annex_country = {
+			target = ICE
+			}
+			annex_country = {
+			target = NOR
+			}
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = hoa.start.event.7.a
+	}
+}
