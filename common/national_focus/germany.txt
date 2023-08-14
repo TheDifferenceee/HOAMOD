@@ -4727,18 +4727,6 @@ focus_tree = {
 		x = 35
 		y = 1
 
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_oppose_hitler
-			}
-		}
-
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -6081,41 +6069,6 @@ focus_tree = {
 		x = 47
 		y = 0
 
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_oppose_hitler
-			}
-		}
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_reestablish_free_elections
-			}
-		}
-
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_revive_the_kaiserreich
-			}
-		}
-
 		cost = 10
 		ai_will_do = {
 			factor = 7
@@ -6217,18 +6170,6 @@ focus_tree = {
 						has_completed_focus = GER_reestablish_free_elections
 					}
 				}
-			}
-		}
-
-		offset = {
-			x = 1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_revive_the_kaiserreich
 			}
 		}
 
@@ -8037,18 +7978,6 @@ focus_tree = {
 						has_completed_focus = GER_revive_the_kaiserreich
 					}
 				}
-			}
-		}
-
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = GER_reestablish_free_elections
 			}
 		}
 	
