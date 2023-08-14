@@ -5,7 +5,6 @@ NGame = {
 	LAG_DAYS_FOR_LOWER_SPEED = 60, --10
 	LAG_DAYS_FOR_PAUSE = 100, --25
 	GAME_SPEED_SECONDS = { 0.4, 0.25, 0.1, 0.05, 0.0 }, --{2.0, 0.5, 0.2, 0.1, 0.0}
-},
 
 NDiplomacy = {
 	MIN_WARGOAL_JUSTIFY_COST = 2.0,                    -- It always takes atleast 10 days to justify a wargoal
@@ -187,7 +186,6 @@ NNavy = {
 	NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1.0,
 	NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 5,                         -- how much score factor from low health (scales between 0->this number)
 	NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5,                           -- how much score factor from low AA guns (scales between 0->this number)           
-},	
 	
 NFocus = {	
 	MAX_SAVED_FOCUS_PROGRESS = 30,                -- This much progress can be saved while not having a focus selected         
