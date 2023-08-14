@@ -2,7 +2,7 @@ NDefines = {
 
 NDiplomacy = {
 	MIN_WARGOAL_JUSTIFY_COST = 2.0,                    -- It always takes atleast 10 days to justify a wargoal
-    MIN_WARGOAL_JUSTIFY_COST = 2000.0,                    -- It always takes atleast 10 days to justify a wargoal (not aldım)
+	MIN_WARGOAL_JUSTIFY_COST = 2000.0,                    -- It always takes atleast 10 days to justify a wargoal (not aldım)
 	WARGOAL_THREAT_MAX_TIME_RATIO = 1.0,            -- Threat from justifying a wargoal slowly builds up, hitting 100% at this proportion of the way to completion
 	VOLUNTEERS_PER_TARGET_PROVINCE = 1,            -- Each province owned by the target country contributes this amount of volunteers to the limit.
     VOLUNTEERS_PER_COUNTRY_ARMY = 1,                -- Each army unit owned by the source country contributes this amount of volunteers to the limit.
@@ -78,7 +78,7 @@ NMilitary = {
     LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.005,        -- Experience scale for lend leased equipment used in combat.
 	REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 7,   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.   (askerler hızlı dolarsa değişecek)
     REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 3,       -- How many days must pass until we may give another reinforcement request         (askerler hızlı dolarsa değişecek)
-    EXPERIENCE_COMBAT_FACTOR = 0.05,             (askerler çok xp kazanırsa değişecek)
+    EXPERIENCE_COMBAT_FACTOR = 0.05,            -- (askerler çok xp kazanırsa değişecek)
 	PARACHUTE_COMPLETE_ORG = 0.2,                   -- Organisation value (in %) after unit being dropped, regardless if failed, disrupted, or successful.   (paraşüt eklenirse böyle olabilir)
 	AIR_SUPPORT_BASE = 0.10,                        -- CAS bonus factor for air support moddifier for land unit in combat
 	PLANNING_MAX = 0.3,                               -- can get more from techs   (vanilla planningi, sistem biraz garip)
@@ -90,7 +90,7 @@ NMilitary = {
 	PLAN_PORVINCE_PORT_BASE_IMPORTANCE = 2.0,        -- Added importance for area defense province with a port     ? plandaki askerlerin dizilisi
 	PLAN_PORVINCE_AIRFIELD_BASE_IMPORTANCE = 2.0,    -- Added importance for area defense province with air field    ? plandaki askerlerin dizilisi
 	ARMOR_VS_AVERAGE = 0.4,                            -- how to weight in highest armor & pen vs the division average
-    PEN_VS_AVERAGE = 0.4,                             (elimde kalsın bu kod)
+    PEN_VS_AVERAGE = 0.4,                          --   (elimde kalsın bu kod)
 	GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0,            -- armies gets increased cap when they are garrisoned       (garnizona koyunca 72 oluyor o kod bu şimdilik degisme)
 	ARMY_TRAINING_FUEL_MULT = 1.0,                    -- fuel consumption ratio while training      elimde kalsın bu kod
 },
