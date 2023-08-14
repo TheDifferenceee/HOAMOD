@@ -203,3 +203,37 @@ news_event = {
 		name = hoa.start.event.7.a
 	}
 }
+
+# The Fall of Poland
+news_event = {
+	id = hoa.start.event.8
+	title = hoa.start.event.8.t
+	desc = hoa.start.event.8.d
+	picture = GFX_news_event_064
+	
+	hidden = yes
+	
+	trigger = {
+		POL = { has_capitulated = yes }
+		ENG = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_polaa }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_polaa
+		ENG = {
+			annex_country = {
+			target = POL
+			}			
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = hoa.start.event.8.a
+	}
+}
