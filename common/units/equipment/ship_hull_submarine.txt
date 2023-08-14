@@ -71,7 +71,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 25
-		naval_speed = 13
+		naval_speed = 10
 		reliability = 0.60
 		
 		naval_range = 2500
@@ -81,19 +81,16 @@ equipments = {
 
 		fuel_consumption = 1
 		
-		build_cost_ic = 220
+		build_cost_ic = 300
 		resources = {
 			#oil = 1
-			steel = 1
+			steel = 2
 		}
 		
 		manpower = 200
-
-		naval_supremacy_factor = 0.8
 	}
 
 	ship_hull_submarine_1 = {
-		abbreviation = "heb"
 		year = 1922
 
 		archetype = ship_hull_submarine
@@ -103,7 +100,6 @@ equipments = {
 	}
 
 	ship_hull_submarine_2 = {
-		abbreviation = "hec"
 		year = 1936
 
 		archetype = ship_hull_submarine
@@ -126,25 +122,27 @@ equipments = {
 			rear_1_custom_slot = empty
 			fixed_ship_engine_slot = sub_ship_engine_2
 		}
-		sub_visibility = 22
-		naval_speed = 17
+		sub_visibility = 20
+		naval_speed = 12
 		reliability = 0.70
 
-		naval_range = 4000
+		naval_range = 3000
 		reliability = 0.70
-		max_strength = 20
+		max_strength = 14
 		
 
 		
-		build_cost_ic = 250
+		build_cost_ic = 300
 		resources = {
 			#oil = 1
 			steel = 2
 		}
+		type = { 
+			submarine
+		}
 	}
 
 	ship_hull_submarine_3 = {
-		abbreviation = "hed"
 		year = 1940
 
 		archetype = ship_hull_submarine
@@ -176,23 +174,25 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 20
-		naval_speed = 18
+		sub_visibility = 15
+		naval_speed = 16
 		reliability = 0.75
 		
-		naval_range = 5000
+		naval_range = 3500
 		
-		max_strength = 30
+		max_strength = 18
 
 
 		
-		build_cost_ic = 320
+		build_cost_ic = 300
 		resources = {
 			steel = 2
 		}
+		type = { 
+			submarine
+		}	
 	}
 	ship_hull_submarine_4 = {
-		abbreviation = "hee"
 		year = 1944
 
 		archetype = ship_hull_submarine
@@ -224,25 +224,26 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 15
+		sub_visibility = 12
 		naval_speed = 18
 		reliability = 0.80
 
-		naval_range = 6000
+		naval_range = 4000
 		
-		max_strength = 35
+		max_strength = 22
 		
 
 		
-		build_cost_ic = 450
+		build_cost_ic = 300
 		resources = {
-			steel = 3
-			chromium = 1
+			steel = 2
 		}
+		type = { 
+			submarine
+		}	
 	}
 
 	ship_hull_cruiser_submarine = {
-		abbreviation = "hef"
 		year = 1940
 
 		archetype = ship_hull_submarine
@@ -284,61 +285,23 @@ equipments = {
 		}
 		
 		sub_visibility = 20
-		naval_speed = 16
+		naval_speed = 20
 		reliability = 0.75
 		
-		naval_range = 5000
+		naval_range = 3000
 		
-		max_strength = 30
+		max_strength = 50
 
 
 		
-		build_cost_ic = 390
+		build_cost_ic = 300
 		resources = {
 			steel = 2
 		}
+		type = { 
+			submarine
+		}	
 	}
-
-	ship_hull_midget_submarine = {
-		abbreviation = "ssm"
-		year = 1940
-
-		archetype = ship_hull_submarine
-		priority = 1500
-		module_slots = {
-			fixed_ship_engine_slot = inherit
-			fixed_ship_torpedo_slot = inherit #TODO_Manu: Could have a new Torpedo module for Midget Subs with lower stats
-			#rear_1_custom_slot = { #TODO_Manu: Potentially delete, this can cause Subs with 0 attack
-			#	allowed_module_categories = {
-			#		ship_torpedo_sub
-			#		ship_mine_layer_sub
-			#	}
-			#}
-		}
-
-		default_modules = {
-			#rear_1_custom_slot = empty #TODO_Manu: Possibly delete, see comment above
-			fixed_ship_torpedo_slot = inherit 
-			fixed_ship_engine_slot = inherit
-		}
-		
-		sub_visibility = 15
-		naval_speed = 8.3
-		reliability = 0.65
-		
-		naval_range = 500
-		
-		max_strength = 5
-
-		manpower = 100
-
-		
-		build_cost_ic = 100
-		resources = {
-			steel = 1
-		}
-	}
-
 	submarine_1 = {
 		year = 1922
 
@@ -366,7 +329,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 30
-		naval_speed = 13
+		naval_speed = 9
 		reliability = 0.60
 		
 		naval_range = 2500
@@ -379,7 +342,7 @@ equipments = {
 		build_cost_ic = 250
 		resources = {
 			#oil = 1
-			steel = 1
+			steel = 2
 		}
 		
 		manpower = 200
@@ -411,7 +374,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 25
-		naval_speed = 17
+		naval_speed = 14
 		reliability = 0.70
 
 		naval_range = 4000
@@ -425,6 +388,9 @@ equipments = {
 			#oil = 1
 			steel = 2
 		}
+		type = { 
+			submarine
+		}		
 	}
 	
 	submarine_3 = {
@@ -453,7 +419,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 15
-		naval_speed = 18
+		naval_speed = 16
 		reliability = 0.75
 		
 		naval_range = 5000
@@ -467,6 +433,9 @@ equipments = {
 			#oil = 2
 			steel = 2
 		}
+		type = { 
+			submarine
+		}		
 	}
 	
 	submarine_4 = {
@@ -495,7 +464,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 10
-		naval_speed = 18
+		naval_speed = 16
 		reliability = 0.80
 
 		naval_range = 6000
@@ -508,7 +477,10 @@ equipments = {
 		resources = {
 			#oil = 2
 			steel = 3
-			chromium = 1
+			chromium = 4
 		}
+		type = { 
+			submarine
+		}		
 	}
 }
