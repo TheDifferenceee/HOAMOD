@@ -3134,18 +3134,6 @@
 		icon = GFX_goal_generic_improve_relations
 		x = 4
 		y = 1
-		
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_revive_the_national_bloc
-			}
-		}
 
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
@@ -3373,29 +3361,6 @@
 		icon = GFX_goal_support_democracy
 		x = 10
 		y = 1
-		
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_form_the_popular_front
-			}
-		}
-		offset = {
-			x = -9
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_revive_the_national_bloc
-			}
-		}
 
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
@@ -3435,30 +3400,6 @@
 		allow_branch = { always = no }
 		x = 7
 		y = 2
-
-		
-		offset = {
-			x = -4
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_form_the_popular_front
-			}
-		}
-		offset = {
-			x = -5
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_revive_the_national_bloc
-			}
-		}
 
 		prerequisite = {
 			focus = FRA_form_the_popular_front
@@ -4530,18 +4471,6 @@
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 39
 		y = 0
-		
-		offset = {
-			x = -9
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_revive_the_national_bloc
-			}
-		}
 
 		allow_branch = {
 			if = {
@@ -4916,19 +4845,6 @@
 		y = 1
 		relative_position_id = FRA_revive_the_national_bloc
 		allow_branch = { always = no }
-		
-		offset = {
-			x = -1
-			y = 0
-			trigger = {
-				has_dlc = "La Resistance"
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_revive_the_national_bloc
-			}
-		}
 
 		allow_branch = {
 			has_dlc = "La Resistance"
@@ -6691,19 +6607,6 @@
 		allow_branch = { always = no }
 		x = 14
 		y = 1
-		
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_dlc = "La Resistance"
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_the_council_of_rambouillet
-			}
-		}
 
 		relative_position_id = FRA_utilize_the_leagues
 
@@ -7895,86 +7798,6 @@
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 46
 		y = 0
-
-		offset = {
-			x = -16
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "La Resistance" }
-			}
-		}
-		offset = {
-			x = -12
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "La Resistance"}
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_form_the_popular_front
-			}
-		}
-		offset = {
-			x = -9
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "La Resistance"}
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_revive_the_national_bloc
-			}
-		}
-		offset = {
-			x = -27
-			y = 0
-			trigger = {
-				has_dlc = "La Resistance"
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_form_the_popular_front
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_dlc = "La Resistance"
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_revive_the_national_bloc
-			}
-		}
-		offset = {
-			x = -11
-			y = 0
-			trigger = {
-				has_dlc = "La Resistance"
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_national_regeneration
-			}
-		}
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_dlc = "La Resistance"
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = FRA_the_council_of_rambouillet
-			}
-		}
 
 		cost = 10
 		available_if_capitulated = yes
