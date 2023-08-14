@@ -26,7 +26,7 @@ equipments = {
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
-				allowed_module_categories = { ship_light_battery }
+				allowed_module_categories = { ship_light_battery dp_light_battery}
 			}
 			fixed_ship_anti_air_slot = {
 				required = no
@@ -100,12 +100,12 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.80
 		
 		naval_range = 1500
 		
-		max_strength = 40
+		max_strength = 25
 		
 
 		fuel_consumption = 0
@@ -119,6 +119,7 @@ equipments = {
 	}
 
 	ship_hull_light_1 = {
+		abbreviation = "hdb"
 		year = 1922
 
 		archetype = ship_hull_light
@@ -129,6 +130,7 @@ equipments = {
 	}
 
 	ship_hull_light_2 = {
+		abbreviation = "hdc"
 		year = 1936
 
 		archetype = ship_hull_light
@@ -153,6 +155,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			rear_1_custom_slot = mid_1_custom_slot
@@ -166,16 +169,17 @@ equipments = {
 
 
 		reliability = 0.85
-		naval_range = 2000
-		max_strength = 48
-		build_cost_ic = 440
+		naval_range = 1800
+		max_strength = 40
+		build_cost_ic = 500
 		resources = {
 			steel = 2
 		}
-		manpower = 250
+		manpower = 325
 	}
 
 	ship_hull_light_3 = {
+		abbreviation = "hdd"
 		year = 1940
 
 		archetype = ship_hull_light
@@ -197,6 +201,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			mid_1_custom_slot = {
@@ -208,6 +213,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			rear_1_custom_slot = {
@@ -219,22 +225,23 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 		}
 
 		
 		resources = {
-			steel = 2
+			steel = 3
 		}
 
 		surface_detection = 20
 		surface_visibility = 10
 		reliability = 0.90
-		naval_range = 2500
-		max_strength = 56
-		build_cost_ic = 480
-		manpower = 250
+		naval_range = 2000
+		max_strength = 50
+		build_cost_ic = 550
+		manpower = 400
 
 		default_modules = {
 			mid_1_custom_slot = empty
@@ -244,6 +251,7 @@ equipments = {
 	}
 
 	ship_hull_light_4 = {
+		abbreviation = "hde"
 		year = 1944
 
 		archetype = ship_hull_light
@@ -264,6 +272,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			mid_1_custom_slot = {
@@ -275,6 +284,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -287,6 +297,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 		}
@@ -294,13 +305,14 @@ equipments = {
 
 		surface_detection = 20
 		reliability = 0.92
-		naval_range = 300
-		max_strength = 64
-		build_cost_ic = 520
+		naval_range = 2500
+		max_strength = 60
+		build_cost_ic = 600
 		resources = {
-			steel = 2
+			steel = 4
+			chromium = 1
 		}
-		manpower = 250
+		manpower = 500
 	}
 	destroyer_1 = {
 		year = 1922
@@ -332,7 +344,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 5
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.80
 		
 		naval_range = 1500
@@ -380,7 +392,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.85
 
 		naval_range = 1800
@@ -432,7 +444,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.90
 
 		naval_range = 2000
@@ -483,7 +495,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.92
 
 		naval_range = 2500
@@ -500,8 +512,8 @@ equipments = {
 		build_cost_ic = 500
 		resources = {
 			#oil = 2
-			steel = 2
-			chromium = 4
+			steel = 4
+			chromium = 1
 		}		
 		manpower = 500
 	}
