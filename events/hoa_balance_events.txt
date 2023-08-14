@@ -217,6 +217,9 @@ news_event = {
 		POL = { has_capitulated = yes }
 		ENG = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_polaa }
+                SOV = {
+			controls_state = 94			
+		}
 	}
 	
 	immediate = {
