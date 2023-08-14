@@ -133,6 +133,7 @@ news_event = {
 	trigger = {
 		HOL = { has_capitulated = yes }
 		BEL = { has_capitulated = yes }
+                LUX = { has_capitulated = yes }
 		ENG = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_beneluxx }
 	}
