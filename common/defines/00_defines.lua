@@ -16,7 +16,7 @@ NDiplomacy = {
     VOLUNTEERS_TRANSFER_SPEED = 7,                    -- days to transfer a unit to another nation
     VOLUNTEERS_DIVISIONS_REQUIRED = 0,                -- This many divisons are required for the country to be able to send volunteers.
 	GUARANTEE_COST = 2000,                            -- Scale with the number of already guaranteed countries.
-	REVOKE_GUARANTEE_COST = 1000;
+	REVOKE_GUARANTEE_COST = 1000
     REVOKE_GUARANTEE_COST = 2000,
 	ATTACHE_XP_SHARE = 0.2,                            -- Country received xp from attaches
 },
@@ -36,7 +36,7 @@ NProduction = {
     BASE_FACTORY_SPEED_MIL = 5,                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
     BASE_FACTORY_SPEED_NAV = 5,                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	MIN_POSSIBLE_TRAINING_MANPOWER = 8000000,    -- How many deployment lines minimum can be training
-	MIN_LICENSE_ACTIVE_DAYS = 0;
+	MIN_LICENSE_ACTIVE_DAYS = 0
     BASE_LICENSE_IC_COST = 0,                            -- Base IC cost for lended license
     LICENSE_IC_COST_YEAR_INCREASE = 0,                    -- IC cost equipment for every year of equipment after 1936
 	CONVERSION_SPEED_BONUS = 0,                            -- Modifier to the production speed when converting equipment
@@ -86,7 +86,7 @@ NMilitary = {
 	ANTI_AIR_TARGETTING_TO_CHANCE = 0.07,            -- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support                                                                                                                                                                                                                                                    (kod güzel bakabilirim
     ANTI_AIR_ATTACK_TO_AMOUNT = 0.005,                -- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.             (kod güzel bakabilirim)
 	DEPLOY_TRAINING_MAX_LEVEL = 2,
-	UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 1 },        -- Experience needed to progress to the next level                 ;????????????????????????????????????????
+	UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 1 },        -- Experience needed to progress to the next level                 ????????????????????????????????????????
     FIELD_EXPERIENCE_SCALE = 0.002,
     FIELD_EXPERIENCE_MAX_PER_DAY = 3,                -- Most xp you can gain per day
     EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 0.5,        -- reduction factor in Xp from expeditionary forces
@@ -119,7 +119,7 @@ NAir = {
 	AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 4.0,                      -- Balancing value to increase usual losses if Kamikaze participating in the battle
     BASE_KAMIKAZE_DAMAGE = 2.0,                                    -- Base Kamikaze death rate
     BASE_KAMIKAZE_TARGETING = 2.0,                            -- Kamikaze can't be a bad target       KAMIKAZE DMG ARTABILIR (UÇAK UPDATELERİNDEN SONRA BAK)
-	AIR_DEPLOYMENT_DAYS = 1;
+	AIR_DEPLOYMENT_DAYS = 1
 	DISRUPTION_FACTOR_CARRIER = 6.0,                            -- multiplier on disruption damage to scale its effects on carrier vs carrier planes              elimde kalsın, carrierdaki bombing oranı
 },
     
