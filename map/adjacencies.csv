@@ -1,0 +1,671 @@
+From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
+12251;10321;sea;8313;-1;-1;-1;-1;;Andaman
+7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas
+10141;1419;sea;5267;-1;-1;-1;-1;;Moluccas
+480;9431;sea;8621;-1;-1;-1;-1;;Netherlands outlier
+8857;2284;sea;7617;1560;1009;1556;1016;PANAMA_CANAL;Panama
+2729;2408;sea;6257;2949;1598;2962;1612;KIEL_CANAL;Kiel
+5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
+299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
+6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
+3260;3325;;2408;-1;-1;-1;-1;;Sjaelland-Fyn
+3260;3374;;2408;-1;-1;2973;1625;;Sjaelland-SdFyn
+3277;3325;;2408;-1;-1;-1;-1;;Fyn-Jylland
+11251;3325;;2408;2956;1628;2960;1629;;Fyn-SdrJylland
+83;185;sea;1885;-1;-1;-1;-1;;Estonia-Ösel
+185;6201;sea;1885;-1;-1;-1;-1;;Ösel-Dagö
+83;6201;sea;1660;-1;-1;-1;-1;;Dagö-Estonia
+6891;3838;sea;5579;-1;-1;-1;-1;;Sardinia-Corsica
+9990;4159;sea;5681;-1;-1;-1;-1;;Calabria-Sicily
+9793;9845;sea;8871;-1;-1;-1;-1;;Menorca-Mallorca
+12299;12113;sea;5539;-1;-1;-1;-1;;Singapore-Batam
+7396;1401;sea;5615;-1;-1;-1;-1;;Bangka Belitung-Sumatra
+1342;10279;sea;2737;-1;-1;-1;-1;;Java-Sumatra
+7396;4211;sea;4225;-1;-1;-1;-1;;Bangka-Belitung
+1460;12126;sea;812;-1;-1;-1;-1;;Tanahbala-Sumatra
+12126;1428;sea;812;-1;-1;-1;-1;;Tanahbala-Siberut
+4306;4608;sea;5666;-1;-1;-1;-1;;Soerbaja-Madura
+7654;4273;sea;2239;-1;-1;-1;-1;;Java-Bali
+7293;4273;sea;2239;-1;-1;-1;-1;;Bali-Lombok
+7293;10191;sea;2239;-1;-1;-1;-1;;Lombok-W.Nusa Tenggara
+12162;1298;sea;2124;-1;-1;-1;-1;;West Nusa Tenggara-East Nusa Tenggara
+12151;10219;sea;5414;-1;-1;-1;-1;;East Nusa Tenggara-Pulau Alor
+12444;10222;sea;5515;-1;-1;-1;-1;;Sulawesi-Pulau Buton
+1293;4269;sea;8751;-1;-1;-1;-1;;Surigao-Leyte
+1311;4228;sea;2856;-1;-1;-1;-1;;San Bernardino Strait
+4288;1221;sea;2876;-1;-1;-1;-1;;Mindoro-Batangas
+4228;7307;sea;2876;-1;-1;-1;-1;;Ticao Pass
+10302;1261;sea;2876;-1;-1;-1;-1;;Panay-Negros
+10186;12153;sea;8751;-1;-1;-1;-1;;Negros-Cebu
+7385;12153;sea;8751;-1;-1;-1;-1;;Bohol-Cebu
+7557;1574;sea;5390;-1;-1;-1;-1;;Buru-Seram
+7557;7369;sea;4899;-1;-1;-1;-1;;Buru-Taliabu
+10342;1437;sea;4899;-1;-1;-1;-1;;Obi-Bacan
+7413;1437;sea;4899;-1;-1;-1;-1;;Halmahera-Bacan
+4509;7542;sea;2585;-1;-1;-1;-1;;Papua-Japen
+10251;1329;sea;430;5112;550;5122;559;;Papua-New Britain
+7251;4421;sea;7010;-1;-1;-1;-1;;New Britain-Latangai
+13021;13022;sea;8673;-1;-1;-1;-1;;Gilbert Islands
+4268;4231;sea;5741;-1;-1;-1;-1;;New Caledonia 1
+1237;12120;sea;5660;-1;-1;-1;-1;;New Caledonia 2
+12632;1814;sea;5637;-1;-1;-1;-1;;North-South NZ Islands
+10231;10248;sea;430;-1;-1;-1;-1;;New Guinea-Fergusson
+12246;10288;sea;5513;-1;-1;-1;-1;;Cobourg-Australia
+1042;7437;sea;6819;-1;-1;-1;-1;;San Cristobal-Guadalcanal
+4292;10319;sea;5868;-1;-1;-1;-1;;Guadalcanal-Munda
+10319;12265;sea;5868;-1;-1;-1;-1;;Munda-Choiseul
+12265;4252;sea;5868;-1;-1;-1;-1;;Choiseul-Santa Isabel
+4252;1085;sea;5868;-1;-1;-1;-1;;Santa Isabel-Malaita
+1085;10291;sea;5868;-1;-1;-1;-1;;Malaita-Guadalcanal
+1742;7868;sea;2510;-1;-1;-1;-1;;Sakhalin-Siberia
+12661;7884;sea;8538;-1;-1;-1;-1;;Kodiak-Alaska
+11985;1025;sea;7932;-1;-1;-1;-1;;Japan-Kyushu
+4094;7212;sea;8791;-1;-1;-1;-1;;Shikoku-Chugoku
+9965;7072;sea;8791;-1;-1;-1;-1;;Shikoku-Kansai
+1399;1515;sea;220;-1;-1;-1;-1;;Kurils 1
+1515;13037;sea;5614;-1;-1;-1;-1;;Kurils 2
+13037;4646;sea;4465;-1;-1;-1;-1;;Kurils-Hokkaido
+9952;1117;sea;2658;-1;-1;-1;-1;;Niigata-Sado
+10092;7046;sea;8791;-1;-1;-1;-1;;Kyushu-Shikoku
+4198;12032;sea;8472;-1;-1;-1;-1;;Kanoya-Yokushima
+11948;1177;sea;2708;-1;-1;-1;-1;;Jeju-Korea
+10124;1123;sea;8499;-1;-1;-1;-1;;Okinawa 1
+1123;7115;sea;8318;-1;-1;-1;-1;;Okinawa 2
+3995;13024;sea;2855;-1;-1;-1;-1;;Saipan-Tinian
+1135;13090;sea;6471;-1;-1;-1;-1;;Amlia-Unalaska
+13090;10694;sea;6064;-1;-1;-1;-1;;Unalaska-Unimak
+10048;7195;sea;8384;-1;-1;-1;-1;;Hawaii-Maui
+7195;4180;sea;8410;-1;-1;-1;-1;;Maui-Honolulu
+4180;7112;sea;5339;-1;-1;-1;-1;;Honolulu-Kauai
+12148;10188;sea;8660;-1;-1;-1;-1;;Tahiti-Raiatea
+7290;13080;sea;9081;-1;-1;-1;-1;;Samoan Islands
+4286;12159;sea;8289;-1;-1;-1;-1;;Fiji-Sanua Levu
+13055;13056;sea;8419;-1;-1;-1;-1;;Nukufetau-Funafuti
+13056;13057;sea;8419;-1;-1;-1;-1;;Funafuti-Nukulaelae
+13027;13028;sea;2735;-1;-1;-1;-1;;Ngulu-Yap
+13029;13028;sea;2735;-1;-1;-1;-1;;Ulithi-Yap
+2489;13033;sea;7918;-1;-1;-1;-1;;Truk-Hall Islands
+13041;13044;sea;7287;-1;-1;-1;-1;;Carolines 1
+13042;13043;sea;2414;-1;-1;-1;-1;;Carolines 2
+10276;7669;sea;5263;-1;-1;-1;-1;;Tiwi-Darwin
+12910;7567;sea;5771;-1;-1;-1;-1;;Adelaide-Kangaroo Island
+4526;153;sea;2571;-1;-1;-1;-1;;Curacao-Zulia
+10767;3284;sea;2597;-1;-1;-1;-1;;Miranda-Trinidad
+13012;3284;sea;2597;-1;-1;-1;-1;;Tobago-Trinidad
+11106;379;sea;5533;-1;-1;-1;-1;;Grenada-St Vincent
+379;11350;sea;5533;-1;-1;-1;-1;;St Vincent-Barbados
+379;13009;sea;5533;-1;-1;-1;-1;;St Vincent-St Lucia
+13009;177;sea;5533;-1;-1;-1;-1;;St Lucia-Martinique
+177;7123;sea;5533;-1;-1;-1;-1;;Martinique-Dominica
+7123;9377;sea;5533;-1;-1;-1;-1;;Dominica-Guadeloupe
+9377;4450;sea;2887;-1;-1;-1;-1;;Guadeloupe-Montserrat
+4450;13084;sea;2887;-1;-1;-1;-1;;Montserrat-Anguilla
+13084;4155;sea;5507;-1;-1;-1;-1;;Anguilla-Virgin Islands
+1440;4155;sea;5507;-1;-1;-1;-1;;Puerto Rico-Virgin Islands
+10203;9805;sea;5864;-1;-1;-1;-1;;Corfu-Epirus
+1106;12001;sea;5913;-1;-1;-1;-1;;Lefkada-Epirus
+3401;7127;sea;6801;-1;-1;-1;-1;;Cyclades-Greece
+8435;6864;sea;7452;-1;-1;-1;-1;;Lesbos-Turkey
+6550;4112;sea;7226;-1;-1;-1;-1;;Chios-Turkey
+7003;9941;sea;7226;-1;-1;-1;-1;;Kos-Bodrum
+10007;10122;sea;7226;-1;-1;-1;-1;;Rhodes-Turkey
+9833;11829;sea;5412;-1;-1;-1;-1;;Bosphorus
+9680;6741;sea;8282;-1;-1;-1;-1;;Kerch Strait
+9859;3962;sea;5946;-1;-1;-1;-1;;Tsugaru Strait
+10011;7110;sea;2708;4825;1219;-1;-1;;Tushima-Kyushu
+4160;1070;sea;5244;-1;-1;-1;-1;;Hainan-Strait
+1712;12147;sea;8978;-1;-1;-1;-1;;Quebec-Strait
+3691;7813;sea;6261;-1;-1;-1;-1;;Cold Ass-Strait
+7259;1393;sea;5257;-1;-1;-1;-1;;Vancouver-Strait
+11047;198;sea;8370;-1;-1;-1;-1;;Barents-Strait
+11157;3145;sea;5792;-1;-1;-1;-1;;Northern-Straits
+11090;91;sea;5792;-1;-1;-1;-1;;Northern-Straits
+44;11050;sea;5792;-1;-1;-1;-1;;Northern-Straits
+22;3016;sea;5792;-1;-1;-1;-1;;Northern-Straits
+6062;6205;sea;3590;-1;-1;-1;-1;;West Scottish-Strait
+8435;6550;sea;7452;-1;-1;-1;-1;;Aegan Isle-Strait
+7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
+5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
+5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
+2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
+5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
+10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
+10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
+10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
+10910;12807;impassable;-1;-1;-1;-1;-1;;Himalayas
+12730;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
+12730;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
+10810;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
+1996;5018;impassable;-1;-1;-1;-1;-1;;Himalayas
+1996;8041;impassable;-1;-1;-1;-1;-1;;Himalayas
+1996;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
+4318;5102;impassable;-1;-1;-1;-1;-1;;Himalayas
+1898;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
+1898;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
+3989;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
+1129;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
+4558;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+4558;12653;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+4558;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+12763;10826;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+2084;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+10821;7519;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+4998;12831;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+4998;5082;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+1978;5082;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+1978;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+7975;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+8044;8090;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+8044;5064;impassable;-1;-1;-1;-1;-1;;peshawar mountains
+12805;7519;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+12805;5087;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+12805;1766;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+10417;7519;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+10417;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+8027;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+7224;12653;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+7224;12314;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+12218;12314;impassable;-1;-1;-1;-1;-1;;stalinabad mountains
+12370;1766;impassable;-1;-1;-1;-1;-1;;pamir mountains
+12370;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
+5062;12119;impassable;-1;-1;-1;-1;-1;;pamir mountains
+5062;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
+4768;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
+4391;4828;impassable;-1;-1;-1;-1;-1;;pamir mountains
+4391;1703;impassable;-1;-1;-1;-1;-1;;pamir mountains
+4391;12526;impassable;-1;-1;-1;-1;-1;;pamir mountains
+3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
+976;11895;impassable;-1;-1;-1;-1;-1;;Greek Mountains
+863;11895;impassable;-1;-1;-1;-1;-1;;Greek Mountains
+863;11786;impassable;-1;-1;-1;-1;-1;;Greek Mountains
+4078;7096;impassable;-1;-1;-1;-1;-1;;Greek Mountains
+9837;11856;impassable;-1;-1;-1;-1;-1;;Macedonian Mountains
+9837;974;impassable;-1;-1;-1;-1;-1;;Macedonian Mountains
+936;3833;impassable;-1;-1;-1;-1;-1;;Macedonian Mountains
+6886;3526;impassable;-1;-1;-1;-1;-1;;Macedonian Mountains
+6857;9818;impassable;-1;-1;-1;-1;-1;;Bulgarian Mountains
+935;9818;impassable;-1;-1;-1;-1;-1;;Bulgarian Mountains
+935;3908;impassable;-1;-1;-1;-1;-1;;Bulgarian Mountains
+6982;3952;impassable;-1;-1;-1;-1;-1;;Bulgarian Mountains
+3865;3882;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+833;11762;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+867;11762;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+3896;6913;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+9849;6913;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+9849;6940;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+6889;9894;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+6889;11816;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+3924;6957;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+3974;6957;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+3974;3985;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+6957;6983;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+9922;6983;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+9894;11872;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+953;11872;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+11856;13235;impassable;-1;-1;-1;-1;-1;;Yugoslav Mountains
+8231;8217;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+8161;2161;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+8161;5118;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+8161;5169;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+2199;5169;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+12920;8192;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+8251;8192;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+8251;2215;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+8229;2215;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+8229;10992;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+650;2179;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+8194;12928;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+12914;12928;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+5192;12928;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+5192;8253;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+5192;8195;impassable;-1;-1;-1;-1;-1;;Chile Mountains
+6184;11198;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+6184;11101;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+100;11101;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+100;3129;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+3059;9047;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+11037;9047;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+11037;6216;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+6136;6216;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+6152;6111;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+6152;173;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+9175;173;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+9175;6214;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+11058;6214;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+11058;9126;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+58;9126;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+6155;9126;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+6155;3132;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+6155;3034;impassable;-1;-1;-1;-1;-1;;Norwegian Mountains
+2170;12955;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+2170;8221;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+7424;7443;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+7424;2117;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+5226;2117;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+2047;2117;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+2047;8091;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+7424;5176;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+2170;4335;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+2184;2170;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+2184;7424;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+7299;5226;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+4236;5226;impassable;-1;-1;-1;-1;-1;;Borneo Mountains
+11645;1450;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+6763;1450;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+6763;3711;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+6763;7554;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+6436;7554;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+6436;1455;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+672;11664;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+6674;672;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+6674;654;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+9632;654;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+9632;9626;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+9632;1530;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+11609;1530;impassable;-1;-1;-1;-1;-1;;Caucus Mountains
+1313;4320;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+1313;12209;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+1274;7308;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+10150;7308;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+10150;12138;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+10294;12138;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+10294;7440;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+12415;1533;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+12343;10382;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+12343;10354;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+7327;10354;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+7327;1460;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+7327;4446;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+12302;4446;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+12302;10522;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+7673;10522;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+1274;12209;impassable;-1;-1;-1;-1;-1;;Sumatra Mountains
+2099;2028;impassable;-1;-1;-1;-1;-1;;Qinghai Mountains
+5076;2028;impassable;-1;-1;-1;-1;-1;;Qinghai Mountains
+5076;7971;impassable;-1;-1;-1;-1;-1;;Qinghai Mountains
+12596;7971;impassable;-1;-1;-1;-1;-1;;Qinghai Mountains
+671;3657;impassable;-1;-1;-1;-1;-1;;friuli mountains
+6673;9613;impassable;-1;-1;-1;-1;-1;;friuli mountains
+6675;3660;impassable;-1;-1;-1;-1;-1;;lombardy mountains
+3660;11587;impassable;-1;-1;-1;-1;-1;;lombardy mountains
+3662;11587;impassable;-1;-1;-1;-1;-1;;lombardy mountains
+3660;6661;impassable;-1;-1;-1;-1;-1;;lombardy mountains
+658;6661;impassable;-1;-1;-1;-1;-1;;lombardy mountains
+3662;6661;impassable;-1;-1;-1;-1;-1;;lombardy mountains
+6635;9587;impassable;-1;-1;-1;-1;-1;;piedmont mountains
+11570;9587;impassable;-1;-1;-1;-1;-1;;piedmont mountains
+11570;3612;impassable;-1;-1;-1;-1;-1;;piedmont mountains
+9988;9961;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+9988;4339;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+9988;12332;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+9988;1362;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+4397;1362;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+4397;10326;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+12297;10326;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+12297;4260;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+7280;4260;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+7280;10195;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+1302;10195;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+1302;10238;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+1302;12210;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+4379;12210;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+4379;7426;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+10309;7426;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+7426;7229;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+4554;7229;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+4554;1248;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+1577;1248;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+9961;11909;impassable;-1;-1;-1;-1;-1;;tonkin mountains
+10363;10499;impassable;-1;-1;-1;-1;-1;;mongolian mountains
+10363;3978;impassable;-1;-1;-1;-1;-1;;mongolian mountains
+10363;10429;impassable;-1;-1;-1;-1;-1;;mongolian mountains
+10429;7578;impassable;-1;-1;-1;-1;-1;;mongolian mountains
+12469;7578;impassable;-1;-1;-1;-1;-1;;mongolian mountains
+12469;1811;impassable;-1;-1;-1;-1;-1;;mongolian mountains
+7812;1811;impassable;-1;-1;-1;-1;-1;;mongolian mountains
+10674;12656;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+7850;1783;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+10674;12656;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+12601;7866;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+7808;7737;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+7870;7737;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+1774;7737;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+1774;4849;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+10539;4849;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+4751;4849;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+4751;4823;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+4751;7693;impassable;-1;-1;-1;-1;-1;;dzungaria mountains
+5016;8112;impassable;-1;-1;-1;-1;-1;;talakman desert
+7790;8112;impassable;-1;-1;-1;-1;-1;;talakman desert
+7790;1970;impassable;-1;-1;-1;-1;-1;;talakman desert
+5016;4973;impassable;-1;-1;-1;-1;-1;;talakman desert
+8042;10911;impassable;-1;-1;-1;-1;-1;;talakman desert
+10911;10885;impassable;-1;-1;-1;-1;-1;;talakman desert
+1943;10885;impassable;-1;-1;-1;-1;-1;;talakman desert
+1943;12864;impassable;-1;-1;-1;-1;-1;;talakman desert
+2074;12864;impassable;-1;-1;-1;-1;-1;;talakman desert
+10802;7273;impassable;-1;-1;-1;-1;-1;;tibet mountains
+10802;5042;impassable;-1;-1;-1;-1;-1;;tibet mountains
+12801;5042;impassable;-1;-1;-1;-1;-1;;tibet mountains
+12801;4973;impassable;-1;-1;-1;-1;-1;;tibet mountains
+8068;4973;impassable;-1;-1;-1;-1;-1;;tibet mountains
+8068;10911;impassable;-1;-1;-1;-1;-1;;tibet mountains
+8068;1943;impassable;-1;-1;-1;-1;-1;;tibet mountains
+5011;1943;impassable;-1;-1;-1;-1;-1;;tibet mountains
+5011;10315;impassable;-1;-1;-1;-1;-1;;tibet mountains
+8037;10315;impassable;-1;-1;-1;-1;-1;;tibet mountains
+1114;12319;impassable;-1;-1;-1;-1;-1;;indochina china border
+1114;12008;impassable;-1;-1;-1;-1;-1;;indochina china border
+1114;12008;impassable;-1;-1;-1;-1;-1;;indochina china border
+1196;12008;impassable;-1;-1;-1;-1;-1;;indochina china border
+10776;12392;impassable;-1;-1;-1;-1;-1;;indochina china border
+10776;12433;impassable;-1;-1;-1;-1;-1;;indochina china border
+10776;4568;impassable;-1;-1;-1;-1;-1;;indochina china border
+6679;11605;impassable;-1;-1;-1;-1;-1;;transvania mountains
+3665;11605;impassable;-1;-1;-1;-1;-1;;transvania mountains
+3665;6667;impassable;-1;-1;-1;-1;-1;;transvania mountains
+9619;6667;impassable;-1;-1;-1;-1;-1;;transvania mountains
+11689;9685;impassable;-1;-1;-1;-1;-1;;transvania mountains
+11689;727;impassable;-1;-1;-1;-1;-1;;transvania mountains
+9548;727;impassable;-1;-1;-1;-1;-1;;transvania mountains
+3743;727;impassable;-1;-1;-1;-1;-1;;transvania mountains
+3743;9704;impassable;-1;-1;-1;-1;-1;;transvania mountains
+3743;6571;impassable;-1;-1;-1;-1;-1;;transvania mountains
+9425;6571;impassable;-1;-1;-1;-1;-1;;transvania mountains
+11689;711;impassable;-1;-1;-1;-1;-1;;transvania mountains
+9882;3899;impassable;-1;-1;-1;-1;-1;;aragon mountains
+9882;899;impassable;-1;-1;-1;-1;-1;;aragon mountains
+9882;915;impassable;-1;-1;-1;-1;-1;;aragon mountains
+9884;915;impassable;-1;-1;-1;-1;-1;;aragon mountains
+9884;11838;impassable;-1;-1;-1;-1;-1;;aragon mountains
+10028;12002;impassable;-1;-1;-1;-1;-1;;Egypt Desert
+8030;4924;impassable;-1;-1;-1;-1;-1;;Arab Desert
+8030;4976;impassable;-1;-1;-1;-1;-1;;Arab Desert
+12768;4976;impassable;-1;-1;-1;-1;-1;;Arab Desert
+12768;12894;impassable;-1;-1;-1;-1;-1;;Arab Desert
+8118;12894;impassable;-1;-1;-1;-1;-1;;Arab Desert
+8118;2059;impassable;-1;-1;-1;-1;-1;;Arab Desert
+12740;2059;impassable;-1;-1;-1;-1;-1;;Arab Desert
+12740;2018;impassable;-1;-1;-1;-1;-1;;Arab Desert
+12740;5049;impassable;-1;-1;-1;-1;-1;;Arab Desert
+12740;2048;impassable;-1;-1;-1;-1;-1;;Arab Desert
+12740;8108;impassable;-1;-1;-1;-1;-1;;Arab Desert
+4974;4951;impassable;-1;-1;-1;-1;-1;;Arab Desert
+10815;4951;impassable;-1;-1;-1;-1;-1;;Arab Desert
+10815;1631;impassable;-1;-1;-1;-1;-1;;Arab Desert
+8101;1631;impassable;-1;-1;-1;-1;-1;;Arab Desert
+8101;4440;impassable;-1;-1;-1;-1;-1;;Arab Desert
+8101;1544;impassable;-1;-1;-1;-1;-1;;Arab Desert
+4574;8101;impassable;-1;-1;-1;-1;-1;;Arab Desert
+1181;10766;impassable;-1;-1;-1;-1;-1;;Congo Jungle
+1181;12847;impassable;-1;-1;-1;-1;-1;;Congo Jungle
+2226;5216;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+2226;2198;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+8213;2198;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+8213;13083;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+8213;8185;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+12825;13083;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+12825;12919;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+12729;12919;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+12729;5083;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+10792;5083;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+8050;5083;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+10792;5083;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+5317;5083;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+10849;5214;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+10849;5083;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+12716;5214;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+4982;5214;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+8107;5214;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+4934;4980;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+10849;12716;impassable;-1;-1;-1;-1;-1;;Amazonian Jungle
+8056;1944;impassable;-1;-1;-1;-1;-1;;Colombian Mountains
+1937;1944;impassable;-1;-1;-1;-1;-1;;Colombian Mountains
+4969;10482;impassable;-1;-1;-1;-1;-1;;Colombian Mountains
+74;6128;impassable;-1;-1;-1;-1;-1;;Northern Finland
+11085;6128;impassable;-1;-1;-1;-1;-1;;Northern Finland
+11085;11030;impassable;-1;-1;-1;-1;-1;;Northern Finland
+197;11030;impassable;-1;-1;-1;-1;-1;;Northern Finland
+197;3156;impassable;-1;-1;-1;-1;-1;;Northern Finland
+9116;3097;impassable;-1;-1;-1;-1;-1;;Northern Finland
+6092;3097;impassable;-1;-1;-1;-1;-1;;Northern Finland
+6092;6061;impassable;-1;-1;-1;-1;-1;;Northern Finland
+9064;6061;impassable;-1;-1;-1;-1;-1;;Northern Finland
+11104;6061;impassable;-1;-1;-1;-1;-1;;Northern Finland
+11104;3069;impassable;-1;-1;-1;-1;-1;;Northern Finland
+9128;3069;impassable;-1;-1;-1;-1;-1;;Northern Finland
+9128;167;impassable;-1;-1;-1;-1;-1;;Northern Finland
+11169;167;impassable;-1;-1;-1;-1;-1;;Northern Finland
+11169;203;impassable;-1;-1;-1;-1;-1;;Northern Finland
+9191;203;impassable;-1;-1;-1;-1;-1;;Northern Finland
+30;11164;impassable;-1;-1;-1;-1;-1;;Northern Finland
+30;11081;impassable;-1;-1;-1;-1;-1;;Northern Finland
+30;11041;impassable;-1;-1;-1;-1;-1;;Northern Finland
+3026;11041;impassable;-1;-1;-1;-1;-1;;Northern Finland
+3115;3153;impassable;-1;-1;-1;-1;-1;;Northern Finland
+3073;3153;impassable;-1;-1;-1;-1;-1;;Northern Finland
+4261;4383;impassable;-1;-1;-1;-1;-1;;Central Asia
+1378;7373;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+4311;7328;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10185;7328;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10185;1334;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10329;1334;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10329;12287;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10329;11223;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10716;10216;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10716;12659;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+1771;7824;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+1744;10677;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+1744;10551;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+198;13076;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10677;12393;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+10216;12527;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+3280;4758;impassable;-1;-1;-1;-1;-1;;Ural mountains
+10185;10142;impassable;-1;-1;-1;-1;-1;;Ural Mountains
+4774;3169;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+7768;1664;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+4715;1664;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+12574;12517;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+1784;12517;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+1784;1757;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+7781;10635;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+1828;10635;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+12615;12643;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+4831;12643;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+12531;4812;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+13059;9224;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+12611;10557;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+4878;12634;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+4878;6211;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+1745;6211;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+1745;2877;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+1714;11607;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+12592;11607;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+7878;12522;impassable;-1;-1;-1;-1;-1;;Siberian Impassable Border
+12448;4655;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12331;4655;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12331;1723;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12609;1723;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12609;1853;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10629;1853;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+10629;12539;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12880;12539;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+12880;10558;impassable;-1;-1;-1;-1;-1;;Gobi Desert
+1506;7466;impassable;-1;-1;-1;-1;-1;;Appalachia
+1506;7646;impassable;-1;-1;-1;-1;-1;;Appalachia
+10343;3941;impassable;-1;-1;-1;-1;-1;;Appalachia
+10343;6958;impassable;-1;-1;-1;-1;-1;;Appalachia
+11873;6958;impassable;-1;-1;-1;-1;-1;;Appalachia
+11873;11888;impassable;-1;-1;-1;-1;-1;;Appalachia
+951;11888;impassable;-1;-1;-1;-1;-1;;Appalachia
+10468;8014;impassable;-1;-1;-1;-1;-1;;Appalachia
+10495;8014;impassable;-1;-1;-1;-1;-1;;Appalachia
+7643;8014;impassable;-1;-1;-1;-1;-1;;Appalachia
+7643;7791;impassable;-1;-1;-1;-1;-1;;Appalachia
+9967;7791;impassable;-1;-1;-1;-1;-1;;Appalachia
+10602;1736;impassable;-1;-1;-1;-1;-1;;Rockies
+10602;6742;impassable;-1;-1;-1;-1;-1;;Rockies
+10672;1736;impassable;-1;-1;-1;-1;-1;;Rockies
+1815;7814;impassable;-1;-1;-1;-1;-1;;Rockies
+4668;4865;impassable;-1;-1;-1;-1;-1;;Rockies
+7667;941;impassable;-1;-1;-1;-1;-1;;California
+7667;11763;impassable;-1;-1;-1;-1;-1;;California
+1432;11763;impassable;-1;-1;-1;-1;-1;;California
+1432;6876;impassable;-1;-1;-1;-1;-1;;California
+1432;6694;impassable;-1;-1;-1;-1;-1;;California
+1601;6694;impassable;-1;-1;-1;-1;-1;;California
+1601;6699;impassable;-1;-1;-1;-1;-1;;California
+7414;10157;impassable;-1;-1;-1;-1;-1;;Oregon
+7442;7315;impassable;-1;-1;-1;-1;-1;;Oregon
+7442;7386;impassable;-1;-1;-1;-1;-1;;Oregon
+10273;1323;impassable;-1;-1;-1;-1;-1;;British Columbia
+10273;4870;impassable;-1;-1;-1;-1;-1;;British Columbia
+10258;4870;impassable;-1;-1;-1;-1;-1;;British Columbia
+10228;4870;impassable;-1;-1;-1;-1;-1;;British Columbia
+10548;4870;impassable;-1;-1;-1;-1;-1;;British Columbia
+10548;12571;impassable;-1;-1;-1;-1;-1;;British Columbia
+13088;2083;impassable;-1;-1;-1;-1;-1;;Mexico
+12721;13088;impassable;-1;-1;-1;-1;-1;;Mexico
+12721;10769;impassable;-1;-1;-1;-1;-1;;Mexico
+8033;4977;impassable;-1;-1;-1;-1;-1;;Mexico
+7935;4977;impassable;-1;-1;-1;-1;-1;;Mexico
+7935;1945;impassable;-1;-1;-1;-1;-1;;Mexico
+4898;1945;impassable;-1;-1;-1;-1;-1;;Mexico
+4898;8057;impassable;-1;-1;-1;-1;-1;;Mexico
+10871;8057;impassable;-1;-1;-1;-1;-1;;Mexico
+4946;8057;impassable;-1;-1;-1;-1;-1;;Mexico
+4946;10895;impassable;-1;-1;-1;-1;-1;;Mexico
+7921;10895;impassable;-1;-1;-1;-1;-1;;Mexico
+10832;1965;impassable;-1;-1;-1;-1;-1;;Mexico
+8089;7913;impassable;-1;-1;-1;-1;-1;;Mexico
+10732;7913;impassable;-1;-1;-1;-1;-1;;Mexico
+10842;1900;impassable;-1;-1;-1;-1;-1;;Mexico
+11020;8252;impassable;-1;-1;-1;-1;-1;;Ecuador
+12798;8075;impassable;-1;-1;-1;-1;-1;;Ecuador
+12798;10888;impassable;-1;-1;-1;-1;-1;;Ecuador
+5051;10888;impassable;-1;-1;-1;-1;-1;;Ecuador
+12969;5190;impassable;-1;-1;-1;-1;-1;;Peru
+12969;8199;impassable;-1;-1;-1;-1;-1;;Peru
+5162;8199;impassable;-1;-1;-1;-1;-1;;Peru
+12997;2162;impassable;-1;-1;-1;-1;-1;;Peru
+5166;2182;impassable;-1;-1;-1;-1;-1;;Peru
+5166;5202;impassable;-1;-1;-1;-1;-1;;Peru
+5166;12953;impassable;-1;-1;-1;-1;-1;;Peru
+10952;8157;impassable;-1;-1;-1;-1;-1;;Bolivia
+8240;8157;impassable;-1;-1;-1;-1;-1;;Bolivia
+8240;10938;impassable;-1;-1;-1;-1;-1;;Bolivia
+1494;4556;impassable;-1;-1;-1;-1;-1;;South Africa
+7576;4556;impassable;-1;-1;-1;-1;-1;;South Africa
+7576;4584;impassable;-1;-1;-1;-1;-1;;South Africa
+1833;4584;impassable;-1;-1;-1;-1;-1;;South Africa
+5097;5041;impassable;-1;-1;-1;-1;-1;;East Africa
+2072;5041;impassable;-1;-1;-1;-1;-1;;East Africa
+2072;8043;impassable;-1;-1;-1;-1;-1;;East Africa
+7944;5041;impassable;-1;-1;-1;-1;-1;;East Africa
+5160;12929;impassable;-1;-1;-1;-1;-1;;East Africa
+12072;11908;impassable;-1;-1;-1;-1;-1;;Japan
+10015;11908;impassable;-1;-1;-1;-1;-1;;Japan
+4000;11989;impassable;-1;-1;-1;-1;-1;;Japan
+4122;1117;impassable;-1;-1;-1;-1;-1;;Japan
+4153;1117;impassable;-1;-1;-1;-1;-1;;Japan
+4153;11930;impassable;-1;-1;-1;-1;-1;;Japan
+10100;10015;impassable;-1;-1;-1;-1;-1;;Japan
+7187;7217;impassable;-1;-1;-1;-1;-1;;Japan
+4172;7217;impassable;-1;-1;-1;-1;-1;;Japan
+9955;7214;impassable;-1;-1;-1;-1;-1;;Taiwan
+9955;11959;impassable;-1;-1;-1;-1;-1;;Taiwan
+4096;11959;impassable;-1;-1;-1;-1;-1;;Taiwan
+11810;9830;impassable;-1;-1;-1;-1;-1;;Anatolia
+11810;961;impassable;-1;-1;-1;-1;-1;;Anatolia
+784;12016;impassable;-1;-1;-1;-1;-1;;Anatolia
+10056;9830;impassable;-1;-1;-1;-1;-1;;Anatolia
+6813;3889;impassable;-1;-1;-1;-1;-1;;Anatolia
+6813;9893;impassable;-1;-1;-1;-1;-1;;Anatolia
+7620;6965;impassable;-1;-1;-1;-1;-1;;Anatolia
+3950;6919;impassable;-1;-1;-1;-1;-1;;Anatolia
+6965;6919;impassable;-1;-1;-1;-1;-1;;Anatolia
+11739;9858;impassable;-1;-1;-1;-1;-1;;Anatolia
+11880;9858;impassable;-1;-1;-1;-1;-1;;Anatolia
+3965;975;impassable;-1;-1;-1;-1;-1;;Anatolia
+960;975;impassable;-1;-1;-1;-1;-1;;Anatolia
+3979;975;impassable;-1;-1;-1;-1;-1;;Anatolia
+7530;12318;impassable;-1;-1;-1;-1;-1;;Anatolia
+12476;12318;impassable;-1;-1;-1;-1;-1;;Anatolia
+12809;1986;impassable;-1;-1;-1;-1;-1;;Persia
+12809;10913;impassable;-1;-1;-1;-1;-1;;Persia
+11249;12852;impassable;-1;-1;-1;-1;-1;;Persia
+11249;10759;impassable;-1;-1;-1;-1;-1;;Persia
+10828;10759;impassable;-1;-1;-1;-1;-1;;Persia
+10828;10873;impassable;-1;-1;-1;-1;-1;;Persia
+1963;10873;impassable;-1;-1;-1;-1;-1;;Persia
+2026;12756;impassable;-1;-1;-1;-1;-1;;Persia
+5067;12756;impassable;-1;-1;-1;-1;-1;;Persia
+1982;12756;impassable;-1;-1;-1;-1;-1;;Persia
+2065;8040;impassable;-1;-1;-1;-1;-1;;Persia
+10826;10781;impassable;-1;-1;-1;-1;-1;;Afghanistan
+10737;10781;impassable;-1;-1;-1;-1;-1;;Afghanistan
+10737;12831;impassable;-1;-1;-1;-1;-1;;Afghanistan
+4629;7682;impassable;-1;-1;-1;-1;-1;;Central Asia
+12581;10488;impassable;-1;-1;-1;-1;-1;;Central Asia
+12581;10187;impassable;-1;-1;-1;-1;-1;;Central Asia
+12581;4467;impassable;-1;-1;-1;-1;-1;;Central Asia
+2058;4467;impassable;-1;-1;-1;-1;-1;;Central Asia
+2058;4923;impassable;-1;-1;-1;-1;-1;;Central Asia
+10488;10530;impassable;-1;-1;-1;-1;-1;;Central Asia
+10488;10660;impassable;-1;-1;-1;-1;-1;;Central Asia
+7224;12250;impassable;-1;-1;-1;-1;-1;;Central Asia
+7224;1384;impassable;-1;-1;-1;-1;-1;;Central Asia
+1216;10671;impassable;-1;-1;-1;-1;-1;;Central Asia
+4316;1825;impassable;-1;-1;-1;-1;-1;;Central Asia
+12822;7106;impassable;-1;-1;-1;-1;-1;;Kashmir
+12822;12754;impassable;-1;-1;-1;-1;-1;;Kashmir
+12005;12754;impassable;-1;-1;-1;-1;-1;;Kashmir
+10887;12754;impassable;-1;-1;-1;-1;-1;;Kashmir
+10905;10887;impassable;-1;-1;-1;-1;-1;;Kashmir
+10905;4979;impassable;-1;-1;-1;-1;-1;;Kashmir
+1910;4979;impassable;-1;-1;-1;-1;-1;;Kashmir
+1910;8022;impassable;-1;-1;-1;-1;-1;;Kashmir
+10750;4536;impassable;-1;-1;-1;-1;-1;;Qinghai
+10750;12846;impassable;-1;-1;-1;-1;-1;;Qinghai
+10436;4593;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+10436;1546;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+4552;1546;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+10436;7269;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+8235;4593;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+8250;1602;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+8250;1617;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+4635;2129;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12107;2129;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+1222;10954;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+1222;5135;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+1389;12428;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12240;12428;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12931;1222;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12931;1242;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12931;7409;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12931;4418;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12931;12237;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12931;12193;impassable;-1;-1;-1;-1;-1;;Papau New Guinea
+12689;4861;impassable;-1;-1;-1;-1;-1;;Iceland
+8099;7618;impassable;-1;-1;-1;-1;-1;;Ashkhabad
+12491;7618;impassable;-1;-1;-1;-1;-1;;Ashkhabad
+12491;1493;impassable;-1;-1;-1;-1;-1;;Ashkhabad
+11924;9946;impassable;-1;-1;-1;-1;-1;;Orissa
+7090;9946;impassable;-1;-1;-1;-1;-1;;Orissa
+7090;1579;impassable;-1;-1;-1;-1;-1;;Orissa
+1934;8063;impassable;-1;-1;-1;-1;-1;;Mandalay
+1197;8063;impassable;-1;-1;-1;-1;-1;;Mandalay
+1197;4318;impassable;-1;-1;-1;-1;-1;;Mandalay
+8093;10768;impassable;-1;-1;-1;-1;-1;;Tehran
+12818;10768;impassable;-1;-1;-1;-1;-1;;Tehran
+8093;10385;impassable;-1;-1;-1;-1;-1;;Tehran
+8093;7602;impassable;-1;-1;-1;-1;-1;;Tehran
+11671;7602;impassable;-1;-1;-1;-1;-1;;Tehran
+3981;3904;impassable;-1;-1;-1;-1;-1;;Korea
+3852;3904;impassable;-1;-1;-1;-1;-1;;Korea
+3852;11878;impassable;-1;-1;-1;-1;-1;;Korea
+6922;11878;impassable;-1;-1;-1;-1;-1;;Korea
+959;11878;impassable;-1;-1;-1;-1;-1;;Korea
+987;3895;impassable;-1;-1;-1;-1;-1;;Liaotung
+892;3895;impassable;-1;-1;-1;-1;-1;;Liaotung
+-1;-1;;-1;-1;-1;-1;-1;-1
