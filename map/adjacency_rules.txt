@@ -76,7 +76,7 @@ adjacency_rule =
 	{
 		army = no
 		navy = no
-		submarine = yes
+		submarine = no
 		trade = no
 	}
 	friend =
@@ -363,121 +363,6 @@ adjacency_rule = {
 	icon = 4985
 	offset = { 5 0 -6 }
 }
-#Crete Straits
-adjacency_rule = {
-	name = "Crete Straits"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = yes
-	}
-	
-	required_provinces = { 12058 4178 }
-		
-	icon = 12058
-	offset = { 5 0 -6 }
-}
-#Gotland Straits
-adjacency_rule = {
-	name = "Gotland Straits"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = yes
-	}
-	
-	required_provinces = { 408 11380 }
-		
-	icon = 408
-	offset = { 5 0 -6 }
-}
-#Abu Dhabi Straits
-adjacency_rule = {
-	name = "Abu Dhabi Straits"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = yes
-	}
-	
-	required_provinces = { 10904 7982 }
-		
-	icon = 10904
-	offset = { 5 0 -6 }
-}
-
 #Strait of Hormuz
 adjacency_rule =
 {
