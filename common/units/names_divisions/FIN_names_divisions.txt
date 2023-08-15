@@ -107,7 +107,7 @@ FIN_INF_01 =
 
 FIN_CAV_01 = 
 {
-	name = "Cavalry Brigades"
+	name = "Cavalry Divisions"
 
 	for_countries = { FIN }
 
@@ -363,108 +363,67 @@ FIN_GAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { FIN_INF_01 }
 
-	fallback_name = "%d. Paikallisjoukot"
+	fallback_name = "%d. Ryhmä"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Helsingin Paikallisjoukot" }
-        2 = { "%d. Turun Paikallisjoukot" }
-        3 = { "%d. Tampereen Paikallisjoukot" }
-        4 = { "%d. Oulun Paikallisjoukot" }
-        5 = { "%d. Jyväskylän Paikallisjoukot" }
-        6 = { "%d. Kuopion Paikallisjoukot" }
-        7 = { "%d. Lahden Paikallisjoukot" }
-        8 = { "%d. Porin Paikallisjoukot" }
-        9 = { "%d. Vaasan Paikallisjoukot" }
-        10 = { "%d. Lappeenrannan Paikallisjoukot" }
-        11 = { "%d. Rovaniemen Paikallisjoukot" }
-        12 = { "%d. Kajaanin Paikallisjoukot" }
-        13 = { "%d. Joensuun Paikallisjoukot" }
-        14 = { "%d. Mikkelin Paikallisjoukot" }
-        15 = { "%d. Hämeenlinnan Paikallisjoukot" }
-        16 = { "%d. Seinäjoen Paikallisjoukot" }
-        17 = { "%d. Kotkan Paikallisjoukot" }
-        18 = { "%d. Kokkolan Paikallisjoukot" }
-        19 = { "%d. Imatran Paikallisjoukot" }
-        20 = { "%d. Savonlinnan Paikallisjoukot" }
-        21 = { "%d. Kauhavan Paikallisjoukot" }
-        22 = { "%d. Kemi-Tornion Paikallisjoukot" }
-        23 = { "%d. Pohjanmaan Paikallisjoukot" }
-        24 = { "%d. Satakunnan Paikallisjoukot" }
-        25 = { "%d. Kainuun Paikallisjoukot" }
-        26 = { "%d. Karjalan Paikallisjoukot" }
-        27 = { "%d. Uudenmaan Paikallisjoukot" }
-        28 = { "%d. Varsinais-Suomen Paikallisjoukot" }
-        29 = { "%d. Pirkanmaan Paikallisjoukot" }
-        30 = { "%d. Etelä-Savon Paikallisjoukot" }
+		1 = { "Taipals. Komennuskunta" }
+		4 = { "Taivalal. Komennuskunta" }
+		5 = { "Äänl. Komennuskunta" }
+		8 = { "Petsamon komennuskunta" }
+		10 = { "%d. Ryhmä" }
+		11 = { "%d. Ryhmä" }
+		6 = { "Lahden Komennuskunta" }
+		9 = { "Hanhik. Komennuskunta" }
+		12 = { "Lemin Komennuskunta" }
+		13 = { "Savitaip. Komennuskunta" }
+		2 = { "Raudun Ryhmä" }
+		3 = { "Lapin Ryhmä" }
+		7 = { "Pohjois-Karjalan Ryhmä" }
+		14 = { "Räsäsen Ryhmä" }
+		15 = { "Lipolan Ryhmä" }
+		17 = { "Muolaan Ryhmä" }
+		18 = { "Uudenkirkon Ryhmä" }
+		19 = { "%d. Ryhmä" }
+		20 = { "%d. Ryhmä" }
+		21 = { "%d. Ryhmä" }
+		22 = { "%d. Ryhmä" }
+		23 = { "%d. Ryhmä" }
+		24 = { "%d. Ryhmä" }
+		25 = { "%d. Ryhmä" }
+		26 = { "%d. Ryhmä" }
+		27 = { "%d. Ryhmä" }
+		28 = { "%d. Ryhmä" }
+		29 = { "%d. Ryhmä" }
+		30 = { "%d. Ryhmä" }
+		31 = { "%d. Ryhmä" }
+		32 = { "%d. Ryhmä" }
+		33 = { "%d. Ryhmä" }
+		34 = { "%d. Ryhmä" }
+		35 = { "%d. Ryhmä" }
+		36 = { "%d. Ryhmä" }
+		37 = { "%d. Ryhmä" }
+		38 = { "%d. Ryhmä" }
+		39 = { "%d. Ryhmä" }
+		40 = { "%d. Ryhmä" }
+		41 = { "%d. Ryhmä" }
+		42 = { "%d. Ryhmä" }
+		43 = { "%d. Ryhmä" }
+		44 = { "%d. Ryhmä" }
+		45 = { "%d. Ryhmä" }
+		46 = { "%d. Ryhmä" }
+		47 = { "%d. Ryhmä" }
+		48 = { "%d. Ryhmä" }
+		49 = { "%d. Ryhmä" }
+		51 = { "%d. Ryhmä" }
+		52 = { "%d. Ryhmä" }
+		53 = { "%d. Ryhmä" }
 
 		# FIN converted some of its groups or similar into divisions for the continuation war, but they fought as garrison units or therabouts for the winter war.  Thus, the INF and GAR lists are linked, with the idea that converting one of the starting "Ryhmä's" into a div will give it a sensible div number (although these groups have not been matched to their division numbers, and this approach may or may not be appropriate).
 	}
 }
-
-FIN_DET_01 = {
-    name = "Command Detachments"
-    for_countries = { FIN }
-    can_use = { always = yes }
-    division_types = { "infantry" "motorized" "mechanized" }
-    fallback_name = "Komennuskunta"
-    ordered = {
-        1 = { "Ilomantsin Komennuskunta" }
-        2 = { "Lieksan Komennuskunta" }
-        3 = { "Nurmeksen Komennuskunta" }
-        4 = { "Juuan Komennuskunta" }
-        5 = { "Rantasalmen Komennuskunta" }
-        6 = { "Savonrannan Komennuskunta" }
-        7 = { "Heinäveden Komennuskunta" }
-        8 = { "Mäntyharjun Komennuskunta" }
-        9 = { "Sulkavan Komennuskunta" }
-        10 = { "Kerimäen Komennuskunta" }
-        11 = { "Rautjärven Komennuskunta" }
-        12 = { "Parikkalan Komennuskunta" }
-        13 = { "Punkaharjun Komennuskunta" }
-        14 = { "Taipalsaaren Komennuskunta" }
-        15 = { "Ruokolahden Komennuskunta" }
-        16 = { "Anttolan Komennuskunta" }
-        17 = { "Kangaslammen Komennuskunta" }
-        18 = { "Simpeleen Komennuskunta" }
-        19 = { "Juvan Komennuskunta" }
-        20 = { "Liperin Komennuskunta" }
-    }
-}
-
-FIN_DET_02 = {
-    name = "Separate Groups"
-    for_countries = { FIN }
-    can_use = { always = yes }
-    division_types = { "infantry" }
-    fallback_name = "Ryhmä %s"
-    ordered = {
-        1 = { "Ryhmä Airo" }
-        2 = { "Ryhmä Heinrichs" }
-        3 = { "Ryhmä Hägglund" }
-        4 = { "Ryhmä Kekkonen" }
-        5 = { "Ryhmä Kivimäki" }
-        6 = { "Ryhmä Kopra" }
-        7 = { "Ryhmä Kuussaari" }
-        8 = { "Ryhmä Laatikainen" }
-        9 = { "Ryhmä Lehtovaara" }
-        10 = { "Ryhmä Mäkinen" }
-        11 = { "Ryhmä Nenonen" }
-        12 = { "Ryhmä Nikinmaa" }
-        13 = { "Ryhmä Oesch" }
-        14 = { "Ryhmä Paasonen" }
-        15 = { "Ryhmä Palmroth" }
-        16 = { "Ryhmä Rautavaara" }
-        17 = { "Ryhmä Siilasvuo" }
-        18 = { "Ryhmä Sihvo" }
-        19 = { "Ryhmä Uotila" }
-        20 = { "Ryhmä Vihma" }
-    }
-}
-
-
 
 FIN_MAR_01 = 
 {

@@ -83,7 +83,6 @@ if = {
 	}
 }
 
-recruit_character = AST_joseph_lyons
 recruit_character = AST_john_curtin
 recruit_character = AST_eric_campbell
 recruit_character = AST_richard_dixon

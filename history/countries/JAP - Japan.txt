@@ -16,7 +16,6 @@ add_ideas = {
 	JAP_zaibatsus
 	JAP_duplicate_research_efforts
 	JAP_militarism
-	JAP_hirohito_2
 }
 
 609 = {
@@ -210,6 +209,12 @@ if = {
 	set_technology = {
 		armored_car1 = 1
 	}
+}
+
+create_import = {
+		resource = oil
+		factories = 2
+		exporter = USA
 }
 
 1939.1.1 = {
@@ -427,16 +432,9 @@ set_popularities = {
 	fascism = 100
 }
 
-recruit_character = JAP_keisuke_Okada
-recruit_character = JAP_koki_hirota
-recruit_character = JAP_senjuro_hayashi
-recruit_character = JAP_fumimaro_konoe
-recruit_character = JAP_kiichiro_hiranuma
-recruit_character = JAP_nobuyuki_abe
-recruit_character = JAP_mitsumasa_yonai
-recruit_character = JAP_fumimaro_konoe_2
 recruit_character = JAP_tetsu_katayama
 recruit_character = JAP_kyuichi_tokuda
+recruit_character = JAP_emperor_hirohito
 recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_hisaichi_terauchi
 recruit_character = JAP_shunroku_hata
@@ -495,6 +493,7 @@ recruit_character = JAP_nishizo_tsukahara
 recruit_character = JAP_hajime_sugiyama
 recruit_character = JAP_chuichi_nagumo
 recruit_character = JAP_hino_kumazo
+recruit_character = JAP_mitsumasa_yonai
 recruit_character = JAP_takuo_godo
 recruit_character = JAP_chiune_sugihara
 recruit_character = JAP_kingoro_hashimoto

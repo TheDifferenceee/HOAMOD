@@ -1596,9 +1596,6 @@ characters={
 			army={
 				small="GFX_idea_clement_attlee"
 			}
-			civilian={
-				large=GFX_ENG_Clement_Atlee
-			}
 		}
 		advisor={
 			slot = political_advisor

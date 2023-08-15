@@ -155,7 +155,7 @@ characters={
 		}
 
 		corps_commander={
-			traits={ trait_reckless armor_officer war_hero trickster harsh_leader panzer_leader inspirational_leader  }
+			traits={ trait_reckless armor_officer war_hero trickster panzer_leader }
 			skill=5
 			attack_skill=7
 			defense_skill=3
@@ -190,7 +190,7 @@ characters={
 		}
 
 		corps_commander={
-			traits={ brilliant_strategist trait_cautious trait_engineer }
+			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer }
 			skill=5
 			attack_skill=3
 			defense_skill=5

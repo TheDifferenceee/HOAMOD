@@ -12,20 +12,6 @@ characters={
 			id=-1
 		}
 	}
-	
-	AST_joseph_lyons={
-		name=AST_joseph_lyons
-		portraits={
-			civilian={
-				large=GFX_AST_Joseph_Lyons
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
 
 	AST_eric_campbell={
 		name=AST_eric_campbell
@@ -636,9 +622,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_AST_robert_g_menzies" #small="GFX_idea_generic_political_advisor_europe_2"
-			}
-			civilian={
-				large="GFX_AST_robert_g_menzies"
 			}
 		}
 		advisor={

@@ -1,7 +1,0 @@
-spriteTypes = {
-
-	spriteType = {
-		name = "GFX_ENG_Clement_Atlee"
-		texturefile = "gfx/leaders/ENG/Portrait_ENG_Clement_Atlee.dds"
-	}
-}

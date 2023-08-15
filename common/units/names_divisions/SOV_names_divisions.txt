@@ -1544,7 +1544,7 @@ SOV_GTC_01 =
 }
 
 
-SOV_CAV_02 =
+SOV_CAV_02 = #COSSACK CAVALRY
 {
 	name = "Cossack Cavalry Division"
 
@@ -1902,129 +1902,5 @@ SOV_JAP_INF = {
 	ordered =
 	{
 
-	}
-}
-
-SOV_NKVD_01 = {
-    name = "NKVD Security Divisions"
-    for_countries = { SOV }
-    can_use = { always = yes }
-    division_types = { "infantry" }
-    fallback_name = "%d-ya Diviziya NKVD Bezopasnosti"
-    ordered =
-    {
-        1 = { "%d-ya Diviziya NKVD Bezopasnosti 'Beria'" }
-        2 = { "%d-ya Diviziya NKVD Bezopasnosti 'Merkuov'" }
-        3 = { "%d-ya Diviziya NKVD Bezopasnosti 'Ezov'" }
-        4 = { "%d-ya Diviziya NKVD Bezopasnosti 'Abakumov'" }
-        5 = { "%d-ya Diviziya NKVD Bezopasnosti 'Goglidze'" }
-        6 = { "%d-ya Diviziya NKVD Bezopasnosti 'Ryumin'" }
-        7 = { "%d-ya Diviziya NKVD Bezopasnosti 'Kryuchkov'" }
-        8 = { "%d-ya Diviziya NKVD Bezopasnosti 'Ignatev'" }
-        9 = { "%d-ya Diviziya NKVD Bezopasnosti 'Kravchenko'" }
-        10 = { "%d-ya Diviziya NKVD Bezopasnosti 'Yagoda'" }
-        11 = { "%d-ya Diviziya NKVD Bezopasnosti 'Mironov'" }
-        12 = { "%d-ya Diviziya NKVD Bezopasnosti 'Blokhin'" }
-        13 = { "%d-ya Diviziya NKVD Bezopasnosti 'Molchanov'" }
-        14 = { "%d-ya Diviziya NKVD Bezopasnosti 'Frinovsky'" }
-        15 = { "%d-ya Diviziya NKVD Bezopasnosti 'Chernov'" }
-        16 = { "%d-ya Diviziya NKVD Bezopasnosti 'Kvantaliani'" }
-        17 = { "%d-ya Diviziya NKVD Bezopasnosti 'Spiridonov'" }
-        18 = { "%d-ya Diviziya NKVD Bezopasnosti 'Maslennikov'" }
-        19 = { "%d-ya Diviziya NKVD Bezopasnosti 'Tsarev'" }
-        20 = { "%d-ya Diviziya NKVD Bezopasnosti 'Kuprianov'" }
-        21 = { "%d-ya Diviziya NKVD Bezopasnosti 'Isakov'" }
-        22 = { "%d-ya Diviziya NKVD Bezopasnosti 'Zakovsky'" }
-        23 = { "%d-ya Diviziya NKVD Bezopasnosti 'Delone'" }
-        24 = { "%d-ya Diviziya NKVD Bezopasnosti 'Baskakov'" }
-        25 = { "%d-ya Diviziya NKVD Bezopasnosti 'Roginski'" }
-        26 = { "%d-ya Diviziya NKVD Bezopasnosti 'Agranov'" }
-        27 = { "%d-ya Diviziya NKVD Bezopasnosti 'Zalpeter'" }
-		28 = { "%d-ya Diviziya NKVD Bezopasnosti 'Gubelman'" }
-        29 = { "%d-ya Diviziya NKVD Bezopasnosti 'Bogolepov'" }
-        30 = { "%d-ya Diviziya NKVD Bezopasnosti 'Levitsky'" }
-    }
-}
-
-SOV_AIR_01 = 
-{
-    name = "Guards Airborne Divisions"
-
-    for_countries = { SOV }
-
-    can_use = { always = yes }
-
-    division_types = { "paratrooper" }
-
-    # Number reservation system will tie to another group.
-    #link_numbering_with = { SOV_INF_01 }
-
-    fallback_name = "%d-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya"
-
-    # Names with numbers (only one number per entry). 
-    # It's okay to have gaps in numbering.
-    ordered =
-    {
-        1 = { "1-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Krasnaya Zvezda'" }
-        2 = { "2-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Suvorov'" }
-        3 = { "3-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Zhukov'" }
-        4 = { "4-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Kutuzov'" }
-        5 = { "5-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Stalin'" }
-        6 = { "6-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Kirov'" }
-        7 = { "7-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Lenin'" }
-        8 = { "8-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Rokossovsky'" }
-        9 = { "9-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Budyonny'" }
-        10 = { "10-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Tukhachevsky'" }
-		11 = { "11-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Tolbukhin'" }
-        12 = { "12-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Chapayev'" }
-        13 = { "13-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Krasny Oktyabr'" }
-        14 = { "14-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Petrovsky'" }
-        15 = { "15-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Yakovlev'" }
-        16 = { "16-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Sverdlov'" }
-        17 = { "17-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Chervonaya Ukraina'" }
-        18 = { "18-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Molotov'" }
-        19 = { "19-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Kalinin'" }
-        20 = { "20-ya Gvardeyskaya Vozdushno-Desantnaya Diviziya 'Voroshilov'" }
-
-    }
-}
-
-SOV_ART_01 = 
-{
-	name = "Artillery Divisions"
-
-	for_countries = { SOV }
-
-	can_use = { always = yes }
-
-	division_types = { "artillery" }
-
-	link_numbering_with = { SOV_INF_01 }
-
-	fallback_name = "%d-ya Artillyeriyskaya Diviziya"
-
-	# Names with numbers (only one number per entry). 
-	ordered =
-	{
-		1 = { "1-ya Artillyeriyskaya Diviziya" }
-		2 = { "2-ya Artillyeriyskaya Diviziya" }
-		3 = { "3-ya Artillyeriyskaya Diviziya" }
-		4 = { "4-ya Artillyeriyskaya Diviziya" }
-		5 = { "5-ya Artillyeriyskaya Diviziya" }
-		6 = { "6-ya Artillyeriyskaya Diviziya" }
-		7 = { "7-ya Artillyeriyskaya Diviziya" }
-		8 = { "8-ya Artillyeriyskaya Diviziya" }
-		9 = { "9-ya Artillyeriyskaya Diviziya" }
-		10 = { "10-ya Artillyeriyskaya Diviziya" }
-		11 = { "11-ya Artillyeriyskaya Diviziya" }
-		12 = { "12-ya Artillyeriyskaya Diviziya" }
-		13 = { "13-ya Artillyeriyskaya Diviziya" }
-		14 = { "14-ya Artillyeriyskaya Diviziya" }
-		15 = { "15-ya Artillyeriyskaya Diviziya" }
-		16 = { "16-ya Artillyeriyskaya Diviziya" }
-		17 = { "17-ya Artillyeriyskaya Diviziya" }
-		18 = { "18-ya Artillyeriyskaya Diviziya" }
-		19 = { "19-ya Artillyeriyskaya Diviziya" }
-		20 = { "20-ya Artillyeriyskaya Diviziya" }
 	}
 }

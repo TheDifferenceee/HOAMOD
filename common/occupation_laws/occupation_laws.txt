@@ -119,7 +119,7 @@ autonomous_occupation = {
 
 	state_modifier = {
 		resistance_target 				= +0.10
-		compliance_gain 				= 0.04
+		compliance_gain 				= 0.02
 		required_garrison_factor 		= -0.40
 		resistance_damage_to_garrison 	= -0.25
 	}
@@ -147,7 +147,7 @@ foreign_civilian_oversight = {
 		#resistance_target 				= 0.0
 		required_garrison_factor 		= -0.25
 		resistance_damage_to_garrison 	= -0.25
-		compliance_gain 				= 0.025
+		compliance_gain 				= 0.000
 		local_factories 				= 0.00
 		local_resources 				= 0.00
 	}

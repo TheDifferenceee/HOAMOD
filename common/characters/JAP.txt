@@ -13,111 +13,6 @@ characters={
 			id=700
 		}
 	}
-	
-	JAP_keisuke_Okada={
-		name=JAP_keisuke_Okada
-		portraits={
-			civilian={
-				large=GFX_JAP_Keisuke_Okada
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={}
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-	
-	JAP_koki_hirota={
-		name=JAP_koki_hirota
-		portraits={
-			civilian={
-				large=GFX_JAP_Koki_Hirota
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={}
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-	
-	JAP_senjuro_hayashi={
-		name=JAP_senjuro_hayashi
-		portraits={
-			civilian={
-				large=GFX_portrait_JAP_senjuro_hayashi
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={}
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-	
-	JAP_fumimaro_konoe={
-		name=JAP_fumimaro_konoe
-		portraits={
-			civilian={
-				large=GFX_JAP_Fumimaro_Konoe
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={}
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-	
-	JAP_fumimaro_konoe_2={
-		name=JAP_fumimaro_konoe_2
-		portraits={
-			civilian={
-				large=GFX_JAP_Fumimaro_Konoe_2
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={}
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-	
-	JAP_kiichiro_hiranuma={
-		name=JAP_kiichiro_hiranuma
-		portraits={
-			civilian={
-				large=GFX_portrait_JAP_kiichiro_hiranuma
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={}
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
-	
-	JAP_nobuyuki_abe={
-		name=JAP_nobuyuki_abe
-		portraits={
-			civilian={
-				large=GFX_JAP_Nobuyuki_Abe
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={}
-			expire="1989.1.1.1"
-			id=-1
-		}
-	}
 
 	JAP_kyuichi_tokuda={
 		name=JAP_kyuichi_tokuda
@@ -323,9 +218,9 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 3.000
+				factor = 2.500
 				modifier = {
-					factor = 3.000
+					factor = 1.500
 					not = {
 						JAP = {
 							has_war_with = USA
@@ -1214,9 +1109,6 @@ characters={
 			army={
 				small="GFX_idea_hideki_tojo"
 			}
-			civilian={
-				large=GFX_JAP_Hideki_Tojo
-			}
 		}
 		advisor={
 			slot = army_chief
@@ -1619,15 +1511,6 @@ characters={
 			army={
 				small="GFX_idea_generic_political_advisor_asia_2"
 			}
-			civilian={
-				large=GFX_JAP_Mitsumasa_Yonai
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			traits={}
-			expire="1989.1.1.1"
-			id=-1
 		}
 		advisor={
 			slot = political_advisor

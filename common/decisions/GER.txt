@@ -235,7 +235,6 @@ GER_mefo_bills_category = {
 					}
 				}
 			}
-			date > 1945.1.1
 		}
 
 		cost = 0
