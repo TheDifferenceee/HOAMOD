@@ -1,0 +1,22 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_RAJ_Viscount_Wavell"
+		texturefile = "gfx/leaders/RAJ/Portrait_British_Raj_Viscount_Wavell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_RAJ_Lord_Willingdon"
+		texturefile = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Willingdon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_AST_Joseph_Lyons"
+		texturefile = "gfx/leaders/AST/Portrait_Australia_AST_Joseph_Lyons.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_AST_robert_g_menzies"
+		texturefile = "gfx/leaders/AST/Portrait_Australia_AST_robert_menzies.dds"
+	}
+}

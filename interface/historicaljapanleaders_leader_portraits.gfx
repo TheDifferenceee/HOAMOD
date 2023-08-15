@@ -1,0 +1,47 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_JAP_Keisuke_Okada"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Keisuke_Okada.dds"
+	}
+
+	spriteType = {
+		name = "GFX_JAP_Koki_Hirota"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Koki_Hirota.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_JAP_senjuro_hayashi"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Senjuro_Hayashi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_JAP_Fumimaro_Konoe"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Fumimaro_Konoe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_JAP_Nobuyuki_Abe"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Nobuyuki_Abe.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_JAP_Fumimaro_Konoe_2"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Fumimaro_Konoe_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_JAP_Hideki_Tojo"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Hideki_Tojo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_JAP_kiichiro_hiranuma"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Kiichiro_Hiranuma.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_JAP_Mitsumasa_Yonai"
+		texturefile = "gfx/leaders/JAP/Portrait_Japan_Mitsumasa_Yonai.dds"
+	}
+}
