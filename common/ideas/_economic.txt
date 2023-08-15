@@ -592,6 +592,16 @@ ideas = {
 		free_trade = {
 
 			available = {
+			
+			    OR = {
+					
+					AND = {
+						
+						NOT = {	tag = SOV }
+						
+						}
+					}
+				
 				if = {
 					limit = {
 						original_tag = SPR
@@ -648,6 +658,16 @@ ideas = {
 		export_focus = {
 
 			available = {
+			
+			    OR = {
+					
+					AND = {
+						
+						NOT = {	tag = SOV }
+						
+						}
+					}
+				
 
 				if = {
 					limit = {
@@ -723,6 +743,7 @@ ideas = {
 						}
 					}
 					AND = {
+					    NOT = {	tag = SOV }
 						NOT = { has_government = democratic }
 						OR = {
 							has_idea = partial_economic_mobilisation
@@ -807,7 +828,7 @@ ideas = {
 					has_idea = tot_economic_mobilisation
 				}
 				OR = {
-					NOT = {	tag = SOV }
+					
 					NOT = { has_opinion_modifier = MR_pact }
 				}
 

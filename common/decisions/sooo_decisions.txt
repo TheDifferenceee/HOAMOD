@@ -1,0 +1,250 @@
+sooo_player_to_ai_to_player = {
+	sooo_ai_to_player = {
+
+		icon = GFX_decision_eng_trade_unions_demand
+
+		available = {
+			is_ai = no
+			has_idea = sooo_game_speed_balance
+
+		}
+
+		visible = {
+			
+			is_ai = no
+			has_idea = sooo_game_speed_balance
+		}
+
+		#fire_only_once = no
+
+		modifier = {
+		
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			remove_ideas = sooo_game_speed_balance
+			add_ideas = sooo_player_was_here
+			set_rule = { #DLC
+					can_not_declare_war = no
+				}
+			
+			country_lock_all_division_template = no	
+		}
+
+	}
+	
+	sooo_player_to_ai = {
+
+		icon = GFX_decision_generic_civil_support
+
+		available = {
+			is_ai = no
+			has_idea = sooo_player_was_here
+
+		}
+
+		visible = {
+			
+			is_ai = no
+			
+			has_idea = sooo_player_was_here
+			
+		}
+
+		#fire_only_once = no
+
+		modifier = {
+	
+			
+		}
+
+		cost = 0
+		days_remove = 0
+		days_re_enable = 0
+
+		complete_effect = {
+			add_ideas = sooo_game_speed_balance
+			remove_ideas = sooo_player_was_here
+			
+			set_rule = { #DLC
+				can_not_declare_war = yes
+			}
+			country_lock_all_division_template = yes				
+			
+		}
+
+	}
+
+
+}
+
+eng_kendiniasan = {	
+	eng_invade_greenland = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			tag = ENG
+		}
+		available = {
+		    date > 1939.1.1
+			GER = {
+			has_war_with = ENG	
+			}
+			DEN = {
+			has_capitulated = yes
+			}
+		}
+		visible = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+		 transfer_state = 101
+		 transfer_state = 100
+		 transfer_state = 337
+		}
+	}
+	
+}
+
+ger_kendiniasan = {
+	sweden_resources = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			tag = GER
+		}
+		available = {
+		    date > 1940.1.1
+			GER = {
+			has_war_with = ENG
+			}
+			NOR = {
+			has_capitulated = yes
+			}
+			SWE = {
+			exists = yes
+			}
+		}
+		visible = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+		SWE = {
+		add_ideas = GER_secure_vital_resources_from_sweden_I
+		}
+		}
+	}
+	
+	vichy_resources = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			tag = GER
+		}
+		available = {
+		    date > 1940.1.1
+			GER = {
+			has_war_with = ENG
+			}
+			FRA = {
+			has_capitulated = yes
+			}
+			VIC = {
+			exists = yes
+			}
+		}
+		visible = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+		VIC = {
+		add_ideas = GER_secure_vital_resources_from_sweden_I
+		}
+		}
+	}
+	
+}
+
+rom_kendiniasan = {
+	annex_bulgaria = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			tag = ROM
+		}
+		available = {
+		    date > 1936.1.1
+		}
+		visible = {
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+		    annex_country = {
+			    target = BUL
+			    transfer_troops = yes
+			}
+		}
+	}
+}
+
+ita_kendiniasan = {
+	arab_war = {
+
+        icon = generic_prepare_civil_war
+
+        allowed = {
+            tag = ITA
+        }
+        available = {
+            ENG = {
+                NOT = {
+                    controls_state = 446
+                }
+            }
+        }
+        visible = {
+            ITA = {
+                has_war_with = ENG
+            }
+        }
+        cost = 50
+        fire_only_once = yes
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            declare_war_on = {
+                target = IRQ
+                    type = annex_everything
+            }
+        }
+    }
+}

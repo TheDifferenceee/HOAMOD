@@ -606,15 +606,6 @@ country_event = {
 		name = soviet.18.a
 		PRC = { country_event = { id = soviet.19 days = 1 } }
 	}
-
-	# Refuse to negotiate
-	option = {
-		name = soviet.18.b
-		#SOV = { country_event = { id = soviet.20 days = 1 } }
-		ai_chance = { factor = 0 }
-		set_global_flag = CHI_no_national_front_flag
-		custom_effect_tooltip = CHI_no_united_front
-	}
 }
 
 # Xi'an Incident - Communist China
@@ -661,15 +652,6 @@ country_event = {
 			}
 		}
 		#SOV = { country_event = { id = soviet.21 days = 1 } }
-	}
-
-	# Refuse to negotiate
-	option = {
-		name = soviet.19.b
-		SOV = { country_event = { id = soviet.22 days = 1 } }
-		set_global_flag = CHI_no_national_front_flag
-		ai_chance = { factor = 0 }
-		custom_effect_tooltip = CHI_no_united_front
 	}
 }
 
@@ -1208,11 +1190,6 @@ country_event = {
 	option = {
 		name = soviet.31.a
 		FIN = { country_event = { days = 2 id = finland.1 } }
-	}
-	option = {
-		name = soviet.31.b
-		ai_chance = { factor = 0 }
-		#
 	}
 }
 
@@ -2426,50 +2403,6 @@ country_event = {
 		}
 
 		GER = { country_event = soviet.61 }
-	}
-	option = {
-		name = soviet.60.b
-		ai_chance = {
-			base = 1
-			modifier = {
-				add = -1
-				is_historical_focus_on = yes
-				NOT = {
-					AND = {
-						POL = {
-							is_ai = no
-							has_civil_war = no
-						}
-						is_in_faction_with = POL
-					}
-				}
-			}
-		}
-		GER = { country_event = soviet.62 }
-		clr_global_flag = sov_yes_pact
-		diplomatic_relation = {
-			country = GER
-			relation = non_aggression_pact
-			active = no
-		}
-		GER = {
-			add_state_claim = 88
-			add_state_claim = 92
-			add_state_claim = 90
-			add_state_claim = 86
-			add_state_claim = 87
-			add_state_claim = 85
-			add_state_claim = 98
-			add_state_claim = 10
-			add_state_claim = 762
-			add_state_claim = 807
-			effect_tooltip = {
-				create_wargoal = {
-					type = annex_everything
-					target = SOV
-				}
-			}
-		}
 	}
 }
 

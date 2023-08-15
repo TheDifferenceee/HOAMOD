@@ -1,0 +1,46 @@
+focus_tree = {
+	id = nothing_tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NSA
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+
+	focus = {
+		id = NSA_nothing
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 0
+
+		cost = 10000000
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 1
+		}
+	}
+}
