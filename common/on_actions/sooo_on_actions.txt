@@ -51,7 +51,16 @@ on_actions = {
            relation = guarantee
            active = yes
           }
-		  }		  
+		  }
+		  SWI = { 
+		  load_focus_tree = generic_focus 
+		  set_rule = { #DLC
+					can_not_declare_war = yes
+				}
+				country_lock_all_division_template = yes
+			remove_ideas = SWI_swiss_neutrality
+			remove_ideas = SWI_foreign_fascist_propaganda
+		  }
 		  POR = { 
 		  load_focus_tree = generic_focus 
 		  set_rule = { #DLC
