@@ -11776,7 +11776,7 @@ SOV_great_patriotic_war = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				surrender_progress > 0.25
+				surrender_progress > 0.40
 				factor = 10
 			}
 		}
@@ -11786,7 +11786,7 @@ SOV_great_patriotic_war = {
 				SOV_is_major_not_original_sov = yes
 			}
 			has_completed_focus = SOV_lessons_of_war
-			surrender_progress > 0.25
+			surrender_progress > 0.40
 		}
 
 		ai_hint_pp_cost = 50
@@ -11808,7 +11808,7 @@ SOV_great_patriotic_war = {
 		days_remove = 180
 
 		modifier = {
-			army_core_defence_factor = 0.25
+			army_core_defence_factor = 0.15
 			mobilization_speed = 0.15
 		}
 

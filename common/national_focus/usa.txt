@@ -5025,6 +5025,16 @@ focus_tree = {
 			    target = PHI
 			    transfer_troops = yes
 			}
+		
+		    every_state = {
+				623 = {set_compliance = 70}
+				327 = {set_compliance = 70}
+				624 = {set_compliance = 70}
+				626 = {set_compliance = 70}
+				628 = {set_compliance = 70}
+				625 = {set_compliance = 70}
+				627 = {set_compliance = 70}
+		    }
 		}
 	}
 

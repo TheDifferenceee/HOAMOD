@@ -2285,7 +2285,6 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = no
 			num_of_factories > 50
 		}
 
