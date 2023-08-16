@@ -14615,6 +14615,11 @@ focus_tree = {
 			add_state_claim = 853 #LJUBLJANA
 			add_state_claim = 103 #DALMATIA
 			add_state_claim = 105 #MONTENEGRO
+			create_wargoal = {
+					type = annex_everything
+					target = YUG
+					expire = 0
+				}
 
 			if = {
 				limit = {
@@ -14644,7 +14649,7 @@ focus_tree = {
 						105 = { is_fully_controlled_by = YUG }
 					}
 				}
-				activate_targeted_decision = { target = YUG decision = ITA_send_ultimatum_to_country_balkan }
+				
 			}	
 		}
 	}
