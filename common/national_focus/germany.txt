@@ -3200,7 +3200,7 @@ focus_tree = {
 		available_if_capitulated = no
 		available = {
 			is_subject = no
-			date > 1938.3.12
+			date > 1937.8.15
 			NOT = { has_idea = rhineland_challenge_met }
 			if = {
 				limit = {

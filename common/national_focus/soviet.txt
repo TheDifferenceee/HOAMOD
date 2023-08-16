@@ -477,7 +477,8 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }				
+				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }	
+				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
 			}
 			if = {
 				limit = {
@@ -3971,7 +3972,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			date > 1941.6.15
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
