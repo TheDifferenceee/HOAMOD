@@ -2632,9 +2632,9 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 0
-		y = 1
-		relative_position_id = GER_demand_memel
+		x = 6
+		y = 2
+		relative_position_id = GER_soviet_treaty
 		cost = 5
 		ai_will_do = {
 			factor = 10
