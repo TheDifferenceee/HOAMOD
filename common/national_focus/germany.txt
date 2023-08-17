@@ -2632,9 +2632,9 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 8
-		y = 2
-		relative_position_id = GER_soviet_treaty
+		x = 0
+		y = 1
+		relative_position_id = GER_demand_memel
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2746,7 +2746,7 @@ focus_tree = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
 		mutually_exclusive = { focus = GER_oppose_hitler }
-		x = 24
+		x = 23
 		y = 0
 		cost = 10
 
@@ -2825,6 +2825,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = GER_rhineland
 		cost = 10
 
@@ -2887,6 +2888,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = GER_rhineland
 		cost = 10
 		ai_will_do = {
@@ -2915,7 +2917,7 @@ focus_tree = {
 		id = GER_anti_comitern_pact
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_rhineland  }
-		x = -3
+		x = -2
 		y = 2
 		relative_position_id = GER_rhineland
 		cost = 5
@@ -3218,7 +3220,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 3
+		x = 2
 		y = 2
 		relative_position_id = GER_rhineland
 		cost = 5
@@ -4723,8 +4725,8 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 35
-		y = 1
+		x = 32
+		y = 0
 
 		cost = 5
 		ai_will_do = {
@@ -4813,7 +4815,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
-		y = 3
+		y = 1
 		relative_position_id = GER_naval_rearmament
 		cost = 5
 		ai_will_do = {
@@ -4955,7 +4957,7 @@ focus_tree = {
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_u_boat_effort focus = GER_rebuild_the_high_seas_fleet focus = GER_accept_british_naval_dominance }
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 10
 		ai_will_do = {
@@ -5043,7 +5045,7 @@ focus_tree = {
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_plan_z focus = GER_rebuild_the_high_seas_fleet focus = GER_accept_british_naval_dominance }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 10
 		ai_will_do = {
@@ -6880,7 +6882,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		x = -1
-		y = 3
+		y = 1
 		relative_position_id = GER_modular_construction
 		cost = 10
 		ai_will_do = {

@@ -11114,10 +11114,9 @@ focus_tree = {
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 24
+		x = 52
 		y = 1
 
-		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 5
 
 		allow_branch = {
@@ -12157,7 +12156,7 @@ ai_will_do = {
 		id = SOV_policy_of_individual_security
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = SOV_the_comintern }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = SOV_the_comintern
 		cost = 5
@@ -12524,9 +12523,8 @@ ai_will_do = {
 		id = SOV_anti_capitalist_policies
 		icon = GFX_focus_spr_class_war
 		prerequisite = { focus = SOV_the_comintern }
-		x = 2
-		y = 1
-		relative_position_id = SOV_policy_of_individual_security
+		x = 62
+		y = 2
 		cost = 5
 
 		ai_will_do = {
@@ -12880,9 +12878,8 @@ ai_will_do = {
 		id = SOV_baltic_security
 		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = SOV_the_comintern }
-		x = 3
-		y = -1
-		relative_position_id = SOV_anti_capitalist_policies
+		x = 65
+		y = 2
 		cost = 5
 
 		ai_will_do = {
@@ -13030,9 +13027,8 @@ ai_will_do = {
 		id = SOV_claims_in_baltic
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_baltic_security }
-		x = 1
-		y = 1
-		relative_position_id = SOV_baltic_security
+		x = 65
+		y = 3
 		cost = 5
 
 		ai_will_do = {
@@ -13266,9 +13262,8 @@ ai_will_do = {
 		id = SOV_claims_on_poland
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = SOV_respect_baltic_self_determination focus = SOV_claims_in_baltic }
-		x = 0
-		y = 1
-		relative_position_id = SOV_claims_in_baltic
+		x = 66
+		y = 4
 		cost = 5
 
 		ai_will_do = {
@@ -13581,9 +13576,8 @@ ai_will_do = {
 		id = SOV_claim_on_bessarabia
 		icon = GFX_focus_generic_attack_romania
 		prerequisite = { focus = SOV_claims_on_poland }
-		x = 3
-		y = 1
-		relative_position_id = SOV_claims_on_poland
+		x = 66
+		y = 5
 		cost = 5
 
 		ai_will_do = {
@@ -13808,10 +13802,11 @@ ai_will_do = {
 		prerequisite = { focus = SOV_the_comintern }
 		x = 4
 		y = 0
+		allow_branch = { always = no }
 		relative_position_id = SOV_baltic_security
 		cost = 5
 		
-ai_will_do = {
+		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
@@ -14780,6 +14775,7 @@ ai_will_do = {
 		prerequisite = { focus = SOV_the_comintern }
 		x = 3
 		y = 0
+		allow_branch = { always = no }
 		relative_position_id = SOV_the_threat_from_the_land_of_the_rising_sun
 		cost = 10
 

@@ -1286,7 +1286,7 @@
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -1329,7 +1329,7 @@
 		relative_position_id = JAP_strike_south_doctrine
 		dynamic = yes  
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1402,7 +1402,7 @@
 
 		will_lead_to_war_with = PHI
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1470,7 +1470,7 @@
 		will_lead_to_war_with = MAL
 		will_lead_to_war_with = INS
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -1708,7 +1708,7 @@
 		y = 1
 		relative_position_id = JAP_strike_south_doctrine
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -4761,7 +4761,7 @@
 		y = 1
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -4835,7 +4835,7 @@
 		y = 1
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5159,7 +5159,7 @@
 		y = 3
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5388,7 +5388,7 @@
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5471,7 +5471,7 @@
 		y = 2
 		relative_position_id = JAP_carrier_warfare_experiments
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5507,7 +5507,7 @@
 		y = 1
 		relative_position_id = JAP_first_air_fleet
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5545,7 +5545,7 @@
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5584,7 +5584,7 @@
 		y = 2
 		relative_position_id = JAP_supremacy_of_the_battlefleet
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5809,7 +5809,7 @@
 		y = 1
 		relative_position_id = JAP_cruiser_modernization
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 4
@@ -5841,7 +5841,7 @@
 		y = 1
 		relative_position_id = JAP_long_lance_torpedoes
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 2

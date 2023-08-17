@@ -34,7 +34,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 1500 y = 1500 }
+	continuous_focus_position = { x = 50 y = 975 }
 
 	initial_show_position = {
 		x = 0
@@ -8175,7 +8175,7 @@ focus_tree = {
 		id = ITA_the_abyssinian_fiasco
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		mutually_exclusive = { focus = ITA_solid_progress focus = ITA_struggle_in_ethiopia }
-		x = 29
+		x = 12
 		y = 0
 		relative_position_id = ITA_naval_power_projection
 		cost = 5
@@ -8964,7 +8964,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_the_man_of_providence }
 		mutually_exclusive = { focus = ITA_to_live_as_a_lion }
 		x = -1
-		y = 3
+		y = 2
 		relative_position_id = ITA_the_man_of_providence
 		cost = 5
 		available = {
@@ -9131,9 +9131,8 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ITA_la_battaglia_per_le_nascite }
 
-		x = 0
-		y = 5
-		relative_position_id = ITA_la_battaglia_per_le_nascite
+		x = 53
+		y = 8
 		cost = 5
 		available = {
 			has_country_leader = {
@@ -9278,7 +9277,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_believe_obey_fight }
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ITA_believe_obey_fight
 		cost = 10
 
@@ -9341,7 +9340,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_banda_carita }
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ITA_banda_carita
 		cost = 10
 
@@ -9378,10 +9377,10 @@ focus_tree = {
 	focus = {
 		id = ITA_security_militias
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = ITA_culto_del_duce focus = ITA_convene_the_grand_council }
+		prerequisite = { focus = ITA_culto_del_duce }
 
 		x = 6
-		y = 2
+		y = 1
 		relative_position_id = ITA_culto_del_duce
 
 		cost = 5
@@ -14552,7 +14551,7 @@ focus_tree = {
 	focus = {
 		id = ITA_foreign_affairs
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = ITA_triumph_in_africa_bba focus = ITA_conspiracies_in_the_shadows }
+		prerequisite = { focus = ITA_triumph_in_africa_bba }
 
 		allow_branch = {
 			if = {
@@ -14567,7 +14566,7 @@ focus_tree = {
 			}
 		}
 
-		x = 45
+		x = 17
 		y = 1
 
 		relative_position_id = ITA_triumph_in_africa_bba
@@ -15710,7 +15709,7 @@ focus_tree = {
 	focus = {
 		id = ITA_befriend_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
-		prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
+		prerequisite = { focus = ITA_pact_of_steel }
 
 		x = 1
 		y = 1
@@ -15746,7 +15745,7 @@ focus_tree = {
 	focus = {
 		id = ITA_italian_irredentism
 		icon = GFX_focus_ITA_italian_irredentism
-		prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
+		prerequisite = { focus = ITA_pact_of_steel }
 
 		x = 3
 		y = 1
