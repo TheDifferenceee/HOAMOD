@@ -792,7 +792,7 @@ equipment_modules = {
 		}
 
 		add_average_stats = {
-			lg_armor_piercing = 1
+			lg_armor_piercing = 4
 		}
 		
 		can_convert_from = {
@@ -817,7 +817,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 1.6
+			lg_armor_piercing = 6.4
 		}
 		
 		can_convert_from = {
@@ -844,7 +844,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 0.5
+			lg_armor_piercing = 2
 		}
 		
 		can_convert_from = {
@@ -877,7 +877,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 0.6
+			lg_armor_piercing = 2.4
 		}
 		
 		can_convert_from = {
@@ -910,7 +910,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 0.7
+			lg_armor_piercing = 2.8
 		}
 		
 		can_convert_from = {
@@ -943,7 +943,7 @@ equipment_modules = {
 		}
 		
 		add_average_stats = {
-			lg_armor_piercing = 0.8
+			lg_armor_piercing = 3.2
 		}
 		
 		can_convert_from = {
