@@ -123,6 +123,8 @@
 		prerequisite = { focus = MAN_army_modernization }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
+
 		relative_position_id = MAN_army_modernization
 
 		cost = 10
@@ -262,6 +264,7 @@
 		prerequisite = { focus = MAN_collective_farms focus = MAN_mukden_military_academy focus = MAN_expand_the_textile_industry }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = MAN_collective_farms
 
 		cost = 10
@@ -479,6 +482,7 @@
 		prerequisite = { focus = MAN_obedience }
 		x = -2
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = MAN_obedience
 
 		cost = 10
@@ -850,7 +854,7 @@
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = MAN_social_research_unit }
 		prerequisite = { focus = MAN_expand_showa_steel_works }
-		prerequisite = { focus = MAN_mamc }
+		
 		x = 0
 		y = 4
 		relative_position_id = MAN_first_five_year_plan
@@ -981,6 +985,7 @@
 		prerequisite = { focus = MAN_mukden_arsenal }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = MAN_mukden_arsenal
 
 		cost = 10
@@ -1017,6 +1022,7 @@
 		prerequisite = { focus = MAN_first_five_year_plan }
 		x = 3
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = MAN_first_five_year_plan
 
 		cost = 10
@@ -2206,5 +2212,5 @@
 
 
 
-	shared_focus = CHI_invite_foreign_investors
+	
 }

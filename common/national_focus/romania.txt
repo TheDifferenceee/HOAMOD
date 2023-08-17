@@ -491,7 +491,7 @@
 				}
 				add_resource = {
 					type = oil
-					amount = 24
+					amount = 8
 				}
 			}
 			GER = {
@@ -501,7 +501,7 @@
 					}
 					add_resource = {
 						type = oil
-						amount = 24
+						amount = 4
 					}
 				}
 			}
@@ -1411,7 +1411,7 @@
 			46 = {
 				add_resource = {
 					type = oil
-					amount = 32
+					amount = 24
 				}
 			}
 		}

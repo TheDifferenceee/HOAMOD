@@ -1436,25 +1436,25 @@ focus_tree = {
 		64 = {
 				add_resource = {
 					type = tungsten
-					amount = 25
+					amount = 12
 				}
 				}
 				59 = {
 				add_resource = {
 					type = tungsten
-					amount = 25
+					amount = 12
 				}
 				}
 				60 = {
 				add_resource = {
 					type = tungsten
-					amount = 25
+					amount = 12
 				}
 				}
 				54 = {
 				add_resource = {
 					type = tungsten
-					amount = 25
+					amount = 12
 				}
 				}
 			custom_effect_tooltip = GER_autobahn_tt
@@ -5510,6 +5510,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		x = 2
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = GER_anschluss
 		cost = 10
 		ai_will_do = {
@@ -5650,6 +5651,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = GER_demand_slovenia
 		cost = 4
 		ai_will_do = {
@@ -5831,6 +5833,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = GER_first_ljubljana_award
 		cost = 10
 		ai_will_do = {
@@ -6005,6 +6008,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = GER_fate_of_yugoslavia
 		cost = 10
 		ai_will_do = {

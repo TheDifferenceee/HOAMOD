@@ -58,7 +58,7 @@ focus_tree = {
 #
 #		}
 #	}
-	shared_focus = CHI_invite_foreign_investors
+	
 
 	focus = {
 		id = PRC_strengthen_the_central_secretariat
@@ -835,6 +835,7 @@ focus_tree = {
 		prerequisite = { focus = PRC_prepare_for_war_with_japan }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = PRC_prepare_for_war_with_japan
 
 		cost = 10
@@ -968,6 +969,7 @@ focus_tree = {
 		prerequisite = { focus = PRC_prepare_for_war_with_japan}
 		x = -3
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = PRC_prepare_for_war_with_japan
 
 		cost = 10
@@ -1041,7 +1043,7 @@ focus_tree = {
 	focus = {
 		id = PRC_revolutionary_military_commission
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = PRC_confrontation_with_the_warlords focus = PRC_infiltration }
+		prerequisite = { focus = PRC_prepare_for_war_with_japan}
 		x = 0
 		y = 1
 		relative_position_id = PRC_confrontation_with_the_warlords
@@ -1505,6 +1507,7 @@ focus_tree = {
 		prerequisite = { focus = PRC_focus_on_china }
 		x = 0
 		y = 2
+		allow_branch = { always = no }
 		relative_position_id = PRC_focus_on_china
 
 		cost = 10
@@ -1711,6 +1714,7 @@ focus_tree = {
 		prerequisite = { focus = PRC_land_redistribution }
 		x = -4
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = PRC_land_redistribution
 
 		cost = 10

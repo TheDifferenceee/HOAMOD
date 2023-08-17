@@ -50,7 +50,7 @@
 #
 #		}
 #	}
-	shared_focus = CHI_invite_foreign_investors
+	
 
 	focus = {
 		id = CHI_three_principles_of_the_people
@@ -92,6 +92,7 @@
 		prerequisite = { focus = CHI_three_principles_of_the_people }
 		x = -4
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = CHI_three_principles_of_the_people
 
 		cost = 10
@@ -361,6 +362,7 @@
 		prerequisite = { focus = CHI_three_principles_of_the_people }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = CHI_three_principles_of_the_people
 
 		cost = 10
@@ -828,6 +830,7 @@
 		prerequisite = { focus = CHI_united_front focus = CHI_anti_communism }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = CHI_united_front
 
 		cost = 10
@@ -1246,6 +1249,7 @@
 		prerequisite = { focus = CHI_war_of_resistance }
 		x = 2
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = CHI_war_of_resistance
 
 		cost = 5
@@ -1409,6 +1413,7 @@
 		prerequisite = { focus = CHI_military_affairs_commission }
 		x = -2
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = CHI_military_affairs_commission
 
 		cost = 10
@@ -1715,6 +1720,7 @@
 		prerequisite = { focus = CHI_military_affairs_commission }
 		x = 2
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = CHI_military_affairs_commission
 
 		cost = 10
@@ -1757,6 +1763,7 @@
 		prerequisite = { focus = CHI_army_reform }
 		x = 0
 		y = 2
+		allow_branch = { always = no }
 		relative_position_id = CHI_military_affairs_commission
 
 		cost = 10
@@ -1859,6 +1866,7 @@
 		prerequisite = { focus = CHI_unified_industrial_planning }
 		x = -2
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = CHI_unified_industrial_planning
 
 		cost = 10
