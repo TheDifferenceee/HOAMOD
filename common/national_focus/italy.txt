@@ -1723,7 +1723,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 4
+				amount = 8
 				state = 450
 			}
 			450 = {
@@ -12241,7 +12241,7 @@ focus_tree = {
 					}
 					add_resource = {
 						type = oil
-						amount = 2
+						amount = 8
 					}
 				}
 			}

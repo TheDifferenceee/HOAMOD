@@ -2780,7 +2780,7 @@
 			470 = {
 				add_resource = {
 					type = oil
-					amount = 36
+					amount = 24
 				}
 			}
 		}
