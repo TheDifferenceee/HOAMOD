@@ -2139,7 +2139,7 @@
 		id = ROM_crack_down_on_extremism
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = ROM_institute_royal_dictatorship
 
@@ -3075,7 +3075,7 @@
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 22
+		x = 21
 		y = 0
 
 		cost = 10
@@ -3729,7 +3729,7 @@
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
-		x = 31
+		x = 30
 		y = 0
 
 		cost = 5
@@ -4407,7 +4407,7 @@
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 40
+		x = 39
 		y = 0
 
 		cost = 5
