@@ -142,8 +142,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = rgb { 5 64 200 }
-    color_ui = rgb { 5 64 200 }
+	color = hsv { 0.18 0.6 0.9 } 
+    color_ui = hsv { 0.18 0.3 0.9 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -182,8 +182,8 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-  color = rgb { 221  178  83 } #
-   color_ui = rgb {221  178  83 } #
+  color = hsv { 0.05 0.3 1 }
+  color_ui = hsv { 0.05 0.25 1.2 }
 }
 LIB = {
 	color = rgb { 152 130 191 }
@@ -234,8 +234,8 @@ SIA = {
 	color_ui = rgb { 222 247 198 }
 }
 SIK = {
-	color = rgb { 5 64 200 }
-    color_ui = rgb { 5 64 200 }
+	color = hsv { 0.18 0.6 0.9 } 
+    color_ui = hsv { 0.18 0.3 0.9 }
 }
 TIB = {
 	color = rgb { 80 115 45}
@@ -250,8 +250,8 @@ VEN = {
 	color_ui = rgb { 222 247 198 }
 }
 YUN = {
-	color = rgb { 5 64 200 }
-    color_ui = rgb { 5 64 200 }
+	color = hsv { 0.18 0.6 0.9 } 
+    color_ui = hsv { 0.18 0.3 0.9 }
 }
 USA = {
 	color = rgb { 20 133 237 }
@@ -262,8 +262,8 @@ MON = {
 	color_ui = rgb { 163 17 31 }
 }
 MEN = {
-  color = rgb { 221  178  83 } #
-   color_ui = rgb {221  178  83 } #
+  color = hsv { 0.05 0.3 1 }
+  color_ui = hsv { 0.05 0.25 1.2 }
 }
 TAN = {
 	color = rgb { 152 130 191 }
@@ -308,23 +308,23 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 5 64 200 }
-    color_ui = rgb { 5 64 200 }
+	color = hsv { 0.18 0.6 0.9 } 
+    color_ui = hsv { 0.18 0.3 0.9 }
 }
 
 GXC = {
-	color = rgb { 5 64 200 }
-    color_ui = rgb { 5 64 200 }
+	color = hsv { 0.18 0.6 0.9 } 
+    color_ui = hsv { 0.18 0.3 0.9 }
 }
 
 SHX = {
-	color = rgb { 5 64 200 }
-    color_ui = rgb { 5 64 200 }
+	color = hsv { 0.18 0.6 0.9 } 
+    color_ui = hsv { 0.18 0.3 0.9 }
 }
 
 XSM = {
-	color = rgb { 5 64 200 }
-    color_ui = rgb { 5 64 200 }
+	color = hsv { 0.18 0.6 0.9 } 
+    color_ui = hsv { 0.18 0.3 0.9 }
 }
 
 LBA = {
@@ -422,8 +422,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-  color = rgb { 221  178  83 } #
-   color_ui = rgb {221  178  83 } #
+  color = hsv { 0.05 0.3 1 }
+  color_ui = hsv { 0.05 0.25 1.2 }
 }
 ANG = {
 	color = rgb { 37 140 61 }
