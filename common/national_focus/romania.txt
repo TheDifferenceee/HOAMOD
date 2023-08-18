@@ -2141,6 +2141,7 @@
 		prerequisite = { focus = ROM_institute_royal_dictatorship }
 		x = 2
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = ROM_institute_royal_dictatorship
 
 		cost = 5
@@ -2470,7 +2471,7 @@
 				}
 			}
 			add_popularity = {
-				popularity = 0.35
+				popularity = 0.50
 				ideology = fascism
 			}
 			custom_effect_tooltip = available_political_advisor
@@ -2538,8 +2539,6 @@
 					}
 				}
 			}
-			unlock_decision_category_tooltip = ROM_change_sides
-			unlock_decision_tooltip = ROM_change_sides_to_allies
 			#Cancel guarantees
 			diplomatic_relation = {
 				country = YUG
@@ -2664,11 +2663,7 @@
 					ideology = fascism_ideology
 				}
 			}
-			ROM_octavian_goga = {
-				promote_character = {
-					ideology = fascism_ideology
-				}
-			}
+			
 			set_party_name = {
 				ideology = fascism
 				long_name = ROM_fascism_party2_long
@@ -2748,6 +2743,19 @@
 				}
 				retire_country_leader = yes
 			}
+			ROM_king_michael = { #Making king michael into a Country leader 
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							prince_of_terror
+							anti_democrat
+						}
+					}
+					promote_leader = yes
+				}
+				}
 			if = {
 				limit = {
 					democratic > party_popularity@communism
