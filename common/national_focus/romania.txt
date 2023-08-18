@@ -2723,10 +2723,8 @@
 
 		available = {
 			has_idea = ROM_king_carol_ii_hedonist
-			OR = {
-				democratic > 0.35
-				communism > 0.35
-				fascism > 0.35
+			OR = {								
+				fascism > 0.51
 			}
 			is_subject = no
 			
@@ -2798,6 +2796,7 @@
 		prerequisite = { focus = ROM_force_abdication }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = ROM_force_abdication
 
 		cost = 5
