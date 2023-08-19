@@ -5,7 +5,7 @@ NDefines.NGame.GAME_SPEED_SECONDS = { 0.4, 0.25, 0.1, 0.05, 0.0 } --{2.0, 0.5, 0
 
 NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 2000.0                    -- It always takes atleast 10 days to justify a wargoal --2.0       
 NDefines.NDiplomacy.WARGOAL_THREAT_MAX_TIME_RATIO = 1.0            -- Threat from justifying a wargoal slowly builds up, hitting 100% at this proportion of the way to completion --1.0
-NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.07            -- Each province owned by the target country contributes this amount of volunteers to the limit. --0.05
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.1            -- Each province owned by the target country contributes this amount of volunteers to the limit. --0.05
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 1                -- Each army unit owned by the source country contributes this amount of volunteers to the limit. --0.05
 NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1                -- Returning volunteers keep this much equipment --0.95
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED = 7                    -- days to transfer a unit to another nation --14
@@ -72,7 +72,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.1     -- effect on sp
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01            -- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support --0.07 yani vanilla degeri sonradan bakabilirim           
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001                -- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit. --0.005 yani vanilla degeri sonradan bakabilirim          
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 --1
-NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 1 }        -- Experience needed to progress to the next level --{ 0.1, 0.3, 0.75, 0.9 }               
+NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }        -- Experience needed to progress to the next level --{ 0.1, 0.3, 0.75, 0.9 }               
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.002 --0.0015
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3                -- Most xp you can gain per day --1.2
 NDefines.NMilitary.EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 0.5        -- reduction factor in Xp from expeditionary forces --0.3
