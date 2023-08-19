@@ -1,11 +1,11 @@
-NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 --12
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6 --12
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 60 --10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100 --25
 NDefines.NGame.GAME_SPEED_SECONDS = { 0.4, 0.25, 0.1, 0.05, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
 
 NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 2000.0                    -- It always takes atleast 10 days to justify a wargoal --2.0       
 NDefines.NDiplomacy.WARGOAL_THREAT_MAX_TIME_RATIO = 1.0            -- Threat from justifying a wargoal slowly builds up, hitting 100% at this proportion of the way to completion --1.0
-NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.07            -- Each province owned by the target country contributes this amount of volunteers to the limit. --0.05
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 1            -- Each province owned by the target country contributes this amount of volunteers to the limit. --0.05
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 1                -- Each army unit owned by the source country contributes this amount of volunteers to the limit. --0.05
 NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1                -- Returning volunteers keep this much equipment --0.95
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED = 7                    -- days to transfer a unit to another nation --14
@@ -44,9 +44,9 @@ NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100        -- Each level of airbase 
 NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 6   -- supply throughput per level of naval base --3 bunu degistirebilirim askerler atrittion yemezse
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.4 -- multiplactive resource bonus for each level of (non damaged) infrastructure --0.2
     
-NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 32									-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 32								-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
-NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5									-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked --5 
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 24									-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 24								-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
+NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 6									-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked --5 
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 1   --Base cost to unlock a regiment slot, --20
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1  --Base cost to change a regiment column. --5
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 1    --Base cost to unlock a support slot --10
@@ -58,10 +58,10 @@ NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.032    -- global dama
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2 -- how many CAS/TAC can enter a combat depending on enemy width there --3 
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 50        -- chance to get a hit to damage on forts. (out of 100) --5  
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60               -- chance to avoid hit if no defences left. --60 yani vanilla degeri     
-NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.25                -- small river crossing -- -0.3
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2                 -- small river crossing -- -0.3
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4           -- large river crossing -- -0.6
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.25          -- small river crossing -- -0.25
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.4     -- large river crossing -- -0.5
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.3           -- small river crossing -- -0.25
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.6     -- large river crossing -- -0.5
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.1                        -- fort penalty -- -0.15          
 NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.3               -- defender penalty if attacked from multiple directions -- -0.5       
 NDefines.NMilitary.DIG_IN_FACTOR = 0.02                           -- bonus factor for each dug-in level --0.02 yani vanilla degeri sonradan bakabilirim         entrench 2x              

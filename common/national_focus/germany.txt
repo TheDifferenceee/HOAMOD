@@ -4276,7 +4276,6 @@ focus_tree = {
 		prerequisite = { focus = GER_end_of_czechoslovakia	}
 		x = 0
 		y = 3
-		allow_branch = { always = no }
 		relative_position_id = GER_czech_friend
 		cost = 4
 		ai_will_do = {
@@ -4726,7 +4725,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 30
+		x = 32
 		y = 0
 
 		cost = 5
@@ -5460,7 +5459,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
