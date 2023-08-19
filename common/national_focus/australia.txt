@@ -3219,14 +3219,10 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		available = {
+		    date > 1940.1.1
+		}
 		completion_reward = {
-			ENG = {
-                annex_country = {
-                    target = MAL
-                    transfer_troops = yes
-                }
-            }
-
             AST = {
                 annex_country = {
                     target = INS
@@ -3251,23 +3247,24 @@
 		}
 
 		available = {
-
+		NZL = {
+            is_ai = yes
+            }
+		    date > 1939.1.1
 		}
 
 		bypass = {
 
 		}
-        completion_reward = {
-			annex_country = {
+		completion_reward = {
+		    annex_country = {
 			    target = NZL
 			    transfer_troops = yes
 			}
-		
-		
-				every_state = {
-				723 = {set_compliance = 100}
-				284 = {set_compliance = 100}
-				}
+            43 = {set_compliance = 70}
+            154 = {set_compliance = 70}
+            155 = {set_compliance = 70}
+
 		}
 	}
 	
