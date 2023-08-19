@@ -3763,7 +3763,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_heavy_fighter_effort
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = cat_heavy_fighter
 			}
@@ -3802,7 +3801,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_light_fighter_effort
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = light_fighter
 			}
@@ -3841,7 +3839,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_cas_focus
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = cas_bomber
 			}
@@ -3880,7 +3877,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_tac_focus
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = tactical_bomber
 			}
@@ -4340,7 +4336,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
-				ahead_reduction = 2
+				bonus = 1.0
 				uses = 1
 				category = armor
 			}

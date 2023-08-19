@@ -1540,7 +1540,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ENG_asw_warfare
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 2
 				category = asw_tech
 			}	

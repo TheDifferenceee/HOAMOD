@@ -596,7 +596,6 @@
 			add_tech_bonus = {
 				name = AST_m_special_unit
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				technology = tech_recon
 				technology = tech_recon2
@@ -637,8 +636,7 @@
 			add_tech_bonus = {
 				name = AST_central_bureau
 				bonus = 1.0
-				ahead_reduction = 2
-				uses = 2
+				uses = 1
 				technology = tech_signal_company
 				technology = tech_signal_company2
 				technology = tech_signal_company3
@@ -1160,7 +1158,6 @@
 			add_tech_bonus = {
 				name = AST_naval_bombers
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = naval_bomber
 			}
@@ -1683,7 +1680,6 @@
 			add_tech_bonus = {
 				name = AST_scrap_iron_flotilla
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
 			}
@@ -1721,7 +1717,6 @@
 			add_tech_bonus = {
 				name = AST_royal_australian_submarine_service
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
 			}
@@ -1791,7 +1786,6 @@
 			add_tech_bonus = {
 				name = AST_cruisers
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = cl_tech
 				category = ca_tech
@@ -3229,42 +3223,6 @@
                     transfer_troops = yes
                 }
             }
-		}
-	}
-	
-	focus = {
-		id = AST_annex_new_zealand
-		icon = GFX_focus_smiling_buddha
-		prerequisite = { focus = AST_support_the_policy_of_appeasement }
-		x = 3
-		y = 1
-		relative_position_id = AST_support_the_policy_of_appeasement
-
-		cost = 1
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-		NZL = {
-            is_ai = yes
-            }
-		    date > 1938.6.1
-		}
-
-		bypass = {
-
-		}
-		completion_reward = {
-		    annex_country = {
-			    target = NZL
-			    transfer_troops = yes
-			}
-            43 = {set_compliance = 70}
-            154 = {set_compliance = 70}
-            155 = {set_compliance = 70}
-
 		}
 	}
 	

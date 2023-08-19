@@ -2192,7 +2192,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+focus = {
 		id = GER_tactical_air_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = GER_air_innovation }
@@ -2218,7 +2218,8 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber	
+				category = tactical_bomber
+				category = cas_bomber			
 			}
 		}
 	}
@@ -2310,7 +2311,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 19
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2463,12 +2464,9 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-		ENG = { has_completed_focus = fighter_command_focus }
-		}
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = { 
-		    add_research_slot = 1
 			air_experience = 50
 
 			add_ideas = GER_air_innovations_2_idea
@@ -2487,12 +2485,6 @@ focus_tree = {
 				SOV = {
 					country_event = { id = germany.78 days = 1 }
 				}
-			}
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 1
-				category = light_fighter
 			}
 		}
 	}
@@ -3704,7 +3696,6 @@ focus_tree = {
 			add_tech_bonus = {
 				name = tp_bonus
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = tp_tech
 			}

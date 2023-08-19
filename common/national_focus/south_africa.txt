@@ -3486,7 +3486,6 @@ focus = {
 			add_tech_bonus = {
 				name = SAF_anti_submarine_tactics
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
 			}
@@ -3528,7 +3527,6 @@ focus = {
 			add_tech_bonus = {
 				name = SAF_submarine_warfare
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
 			}

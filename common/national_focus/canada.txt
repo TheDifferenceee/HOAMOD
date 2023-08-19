@@ -2022,8 +2022,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_cmp_truck
-				ahead_reduction = 2
-				bonus = 3.0
+				bonus = 1.0
 				uses = 1
 				category = motorized_equipment
 			}
@@ -2348,7 +2347,6 @@
 			}
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
-				ahead_reduction = 2
 				bonus = 1.0
 				uses = 1
 				category = cat_light_armor
@@ -4507,7 +4505,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_the_sabre_project
-				ahead_reduction = 2
+				bonus = 1.0
 				uses = 2
 				category = rocketry
 				category = jet_technology
@@ -4614,7 +4612,6 @@
 			add_tech_bonus = {
 				name = CAN_destroyer_effort
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
 			}
@@ -4652,7 +4649,6 @@
 			add_tech_bonus = {
 				name = CAN_light_cruiser_effort
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = cl_tech
 			}
@@ -4690,7 +4686,6 @@
 			add_tech_bonus = {
 				name = CAN_heavy_cruiser_effort
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = ca_tech
 			}

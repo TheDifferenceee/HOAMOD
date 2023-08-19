@@ -3561,10 +3561,8 @@
 						has_tech = fighter2
 					}
 					add_tech_bonus = {
-						name = ROM_iar_80
-						bonus = 1.0
-						ahead_reduction = 2
-						uses = 1
+							bonus = 1.0
+							uses = 1
 						category = light_fighter
 					}
 					else = {
@@ -3587,7 +3585,6 @@
 					add_tech_bonus = {
 						name = ROM_iar_80
 						bonus = 1.0
-						ahead_reduction = 2
 						uses = 1
 						technology = improved_small_airframe
 					}
@@ -4401,7 +4398,6 @@
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 1.0
-				ahead_reduction = 2
 				uses = 1
 				category = cat_heavy_armor
 			}

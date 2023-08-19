@@ -23,7 +23,7 @@ focus_tree = {
 			original_tag = USA
 		}
 	}
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 50 y = 900 }
 	default = no
 #	focus = {
 #		id = USA_
@@ -2178,7 +2178,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_the_giant_wakes
 		cost = 10
 		ai_will_do = {
