@@ -121,7 +121,7 @@ NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
 		0.2, -- CONVOY ESCORT --1.0
 		1.0, -- MINES PLANTING --1.0	
 		1.0, -- MINES SWEEPING --1.0	 
-		0.2, -- TRAIN --0.6
+		0.6, -- TRAIN --0.6
 		0.0, -- RESERVE_FLEET (consumes fuel HOLD_MISSION_MOVEMENT_COST fuel while moving) --0.0
 		1.0, -- NAVAL_INVASION_SUPPORT (does not cost fuel at base, only costs while doing bombardment and escorting units) --1.0
 	}
@@ -156,7 +156,7 @@ NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.25    -- total sum of fleet's an
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.25    -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE --0.25 yani vanilla deger
 NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.2 --0.2 yani vanilla deger
 NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75    -- damage reduction for incoming air attacks is clamped to this value at maximum. --0.75 yani vanilla deger       
-NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 1.0    -- hit profile for depth charges --100.0 yani vanilla deger                    
+NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 100.0    -- hit profile for depth charges --100.0 yani vanilla deger                    
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 1                             -- scoring for target picking for planes inside naval combat, one define per ship typ --10 yani vanilla deger
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 1 --50 yani vanilla deger
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 1 --200 yani vanilla deger
