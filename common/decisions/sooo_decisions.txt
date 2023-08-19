@@ -129,14 +129,10 @@ rom_kendiniasan = {
 			tag = ROM
 		}
 		available = {
-<<<<<<< HEAD
 		BUL = {
             is_ai = yes
             }
 		    date > 1938.6.1
-=======
-		    date > 1936.1.1
->>>>>>> parent of 160accb (mekanize değişiklik, portekiz savaş dışı, 1-2 ufak defines..)
 		}
 		visible = {
 			
@@ -151,7 +147,6 @@ rom_kendiniasan = {
 			    target = BUL
 			    transfer_troops = yes
 			}
-<<<<<<< HEAD
 			add_state_core = 275
             add_state_core = 719
             add_state_core = 681
@@ -188,8 +183,6 @@ rom_kendiniasan = {
             add_state_core = 43
             add_state_core = 154
             add_state_core = 155
-=======
->>>>>>> parent of 160accb (mekanize değişiklik, portekiz savaş dışı, 1-2 ufak defines..)
 		}
 	}
 }
