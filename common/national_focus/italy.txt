@@ -14617,6 +14617,11 @@ focus_tree = {
 					target = YUG
 					expire = 0
 				}
+			create_wargoal = {
+					type = annex_everything
+					target = GRE
+					expire = 0
+			}
 
 			if = {
 				limit = {
