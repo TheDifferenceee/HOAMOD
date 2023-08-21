@@ -99,7 +99,7 @@ NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0            -- armies get
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0                    -- fuel consumption ratio while training --1.0 yani vanilla deger      
 	
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 1                            -- Higher value = more shot down planes --1 yani vanilla deger
-NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1                    -- same as above but used inside naval combat for carrier battles --5 yani vanilla deger           
+NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 5                    -- same as above but used inside naval combat for carrier battles --5 yani vanilla deger           
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction. --1.0 yani vanilla deger 
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction. --1.5 yani vanilla deger 
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 10.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively) --10.0 yani vanilla deger      
@@ -107,10 +107,7 @@ NDefines.NAir.AIR_NAVAL_KAMIKAZE_LOSSES_MULT = 4.0                      -- Balan
 NDefines.NAir.BASE_KAMIKAZE_DAMAGE = 2.0                                    -- Base Kamikaze death rate --2.0 yani vanilla deger ama kamikaze icin degisicem gucsuz gibi
 NDefines.NAir.BASE_KAMIKAZE_TARGETING = 2.0                            -- Kamikaze can't be a bad target --2.0 yani vanilla deger ama kamikaze icin degisicem gucsuz gibi   
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                            -- Days to deploy one air wing --2 
-NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 6.0                            -- multiplier on disruption damage to scale its effects on carrier vs carrier planes --6.0 yani vanilla deger 
-NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0    -- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 1.0    -- Maximum damage reduction factor applied to incoming air attacks against units with AA.    
-NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.015 --vanilla degeri aynı, mp sonrasi bakilabilir      
+NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 6.0                            -- multiplier on disruption damage to scale its effects on carrier vs carrier planes --6.0 yani vanilla deger           
     
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25                                -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty. --0.6
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5                            -- casting damage value to ship organisation multiplier. Use it to balance the game difficulty. --1.0 
