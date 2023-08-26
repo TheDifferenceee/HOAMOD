@@ -7,7 +7,7 @@ news_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		date > 1938.06.1
+		date > 1939.03.1
 		country_exists = SAF
 		SAF = { is_ai = yes }
 		CAN = { has_war = no }
