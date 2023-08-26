@@ -245,7 +245,7 @@ ast_kendiniasan = {
 		}
 		complete_effect = {
 		    annex_country = {
-			    target = 
+			    target = NZL
 			    transfer_troops = yes
 			}
 			add_state_core = 284
