@@ -3971,7 +3971,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1941.6.15
+			
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
