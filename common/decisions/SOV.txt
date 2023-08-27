@@ -5281,7 +5281,7 @@ SOV_diplomacy_baltic_decision_category = {
 
 		days_remove = SOV_ultimatum_days
 
-		cost = SOV_send_ultimatum_to_country_cost
+		cost = 25
 
 		remove_effect = {
 			if = {
@@ -5830,7 +5830,7 @@ SOV_diplomacy_balkan_decision_category = {
 		visible = {
 		}
 
-		cost = SOV_send_ultimatum_to_country_cost
+		cost = 25
 
 		days_remove = SOV_ultimatum_days
 
@@ -6152,7 +6152,7 @@ SOV_diplomacy_middle_east_decision_category = {
 
 		days_remove = SOV_ultimatum_days
 
-		cost = SOV_send_ultimatum_to_country_cost
+		cost = 25
 
 		remove_effect = {
 			FROM = {

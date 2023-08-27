@@ -1991,6 +1991,9 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+				
+	            
+	
 			}
 		}
 	}
@@ -2240,6 +2243,8 @@ focus_tree = {
 			}
 		}
 	}
+	
+	
 
 	focus = {
 		id = uk_sanction_italy_focus
@@ -2497,6 +2502,67 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+	id = uk_protect_homeland
+	prerequisite = { focus = uk_malta_focus}
+	icon = GFX_goal_generic_construct_military
+	x = 2
+	y = 3
+	allow_branch = { always = no }
+	relative_position_id = uk_mediterranean_focus
+	
+	completion_reward = {
+	126 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	127 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	123 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	338 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	128 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	129 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	122 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	130 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	132 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	131 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	121 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	133 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	136 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	120 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	119 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	125 = {
+	add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = ENG }
+	}
+	}
+	}
 
 	### DECOLONIZATION ###
 
@@ -2568,6 +2634,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 
 	focus = {
 		id = ENG_guide_the_colonies
