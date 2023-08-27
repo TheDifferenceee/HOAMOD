@@ -53,8 +53,8 @@ NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 1    --Base cost to unlock 
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 900			--Max army experience a country can store --500
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 900			--Max navy experience a country can store --500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 900			--Max air experience a country can store --500
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.032    -- air global damage modifier --0.032 yani vanilla degeri
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.032    -- global damage modifier --0.032 yani vanilla degeri
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.01    -- air global damage modifier --0.032 yani vanilla degeri
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.01    -- global damage modifier --0.032 yani vanilla degeri
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2 -- how many CAS/TAC can enter a combat depending on enemy width there --3 
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 50        -- chance to get a hit to damage on forts. (out of 100) --5  
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60               -- chance to avoid hit if no defences left. --60 yani vanilla degeri     
@@ -98,7 +98,7 @@ NDefines.NMilitary.PEN_VS_AVERAGE = 0.4 --0.4 yani vanilla deger
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0            -- armies gets increased cap when they are garrisoned --3.0 yani vanilla deger      
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0                    -- fuel consumption ratio while training --1.0 yani vanilla deger      
 	
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 1                            -- Higher value = more shot down planes --1 yani vanilla deger
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5                            -- Higher value = more shot down planes --1 yani vanilla deger
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1                    -- same as above but used inside naval combat for carrier battles --5  f3ten koydugumuz ucakla ayni islevde oldugunu dusunuyoruz        
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction. --1.0 yani vanilla deger 
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction. --1.5 yani vanilla deger 
