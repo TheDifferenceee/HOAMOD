@@ -58,6 +58,21 @@ spriteTypes = {
 		name = "GFX_therippla"
 		texturefile = "gfx/interface/goals/therippla.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_goal_USA_america_economic_miracle"
+		texturefile = "gfx/interface/goals/goal_USA_america_economic_miracle.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_usa_war_dept"
+		texturefile = "gfx/interface/goals/goal_usa_war_dept.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_usa_dept_def"
+		texturefile = "gfx/interface/goals/goal_usa_dept_def.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_American_Service"
@@ -70,6 +85,18 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_america_goal_usmc"
 		texturefile = "gfx/interface/goals/america_goal_usmc.tga"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_destroyers_bases"
+		texturefile = "gfx/interface/goals/focus_usa_destroyers_bases.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_usa_airborne_divisions"
+		texturefile = "gfx/interface/goals/goal_usa_airborne_divisions.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_usa_tanks_focus"
+		texturefile = "gfx/interface/goals/goal_usa_tanks_focus.dds"
 	}
 	SpriteType = {
 		name = "GFX_usa_amphib"
@@ -133,6 +160,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_commune_politics"
 		texturefile = "gfx/interface/goals/goal_commune_politics.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_usa_ware_group"
+		texturefile = "gfx/interface/goals/goal_usa_ware_group.tga"
 	}
 
 	SpriteType = {
@@ -240,8 +272,11 @@ spriteTypes = {
 		name = "GFX_usa_armored_infantry"
 		texturefile = "gfx/interface/goals/usa_armored_infantry.dds"
 	}
-
-
+	
+	SpriteType = {
+		name = "GFX_goal_usa_amphibious_operations"
+		texturefile = "gfx/interface/goals/goal_usa_amphibious_operations.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_us_desegregation"
@@ -309,7 +344,11 @@ spriteTypes = {
 		name = "GFX_destroyers_for_bases"
 		texturefile = "gfx/interface/goals/destroyers_for_bases.dds"
 	}
-
+	
+	SpriteType = {
+		name = "GFX_goal_usa_support_rock_island"
+		texturefile = "gfx/interface/goals/goal_usa_support_rock_island.dds"
+	}
 
 
 	SpriteType = {
@@ -1151,6 +1190,36 @@ spriteTypes = {
  	SpriteType = {
 		name = "GFX_goal_supremacy_of_technology"
 		texturefile = "gfx/interface/goals/goal_great_science.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_Focus_Examine_Foreign_Science"
+		texturefile = "gfx/interface/goals/Focus_Examine_Foreign_Science.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_america_goal_american_industry"
+		texturefile = "gfx/interface/goals/america_goal_american_industry.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_usa_arsenal_of_democracy"
+		texturefile = "gfx/interface/goals/goal_usa_arsenal_of_democracy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_usa_neutrality_focus"
+		texturefile = "gfx/interface/goals/germany/goal_usa_neutrality_focus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_COS_American_Staff"
+		texturefile = "gfx/interface/goals/germany/COS_American_Staff.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_usa_european_intervention"
+		texturefile = "gfx/interface/goals/goal_usa_european_intervention.dds"
 	}
 
 	SpriteType = {
