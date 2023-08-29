@@ -142,6 +142,8 @@ autonomous_occupation = {
 foreign_civilian_oversight = {
 	icon = 3
 	sound_effect = "Martial_Law_Interface_Foreign_Cvilian_Oversight"
+	default_law = yes
+	starting_law = yes
 
 	state_modifier = {
 		#resistance_target 				= 0.0
@@ -241,8 +243,6 @@ liberate_workers_occupation = {
 military_governor_occupation = {
 	icon = 6
 	sound_effect = "Martial_Law_Interface_Military_Governor_Occupation"
-	default_law = yes
-	starting_law = yes
 	
 	state_modifier = {
 		resistance_target 			= -0.35

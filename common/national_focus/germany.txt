@@ -2205,9 +2205,6 @@ focus = {
 			factor = 0.25
 		}
 
-		available = {
-		ENG = { has_completed_focus = fighter_command_focus }
-		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_doctrine_cost_reduction = {
