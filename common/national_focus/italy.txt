@@ -14631,7 +14631,6 @@ focus_tree = {
 						105 = { is_fully_controlled_by = CRO }
 					}
 				}
-				activate_targeted_decision = { target = CRO decision = ITA_send_ultimatum_to_country_balkan }
 			}
 			if = {
 				limit = {
@@ -14641,7 +14640,6 @@ focus_tree = {
 						105 = { is_fully_controlled_by = MNT }
 					}
 				}
-				activate_targeted_decision = { target = MNT decision = ITA_send_ultimatum_to_country_balkan }
 			}
 			if = {
 				limit = {
