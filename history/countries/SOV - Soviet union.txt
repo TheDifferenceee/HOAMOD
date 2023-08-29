@@ -837,6 +837,7 @@ add_ideas = {
 	SOV_politicized_military
 	closed_economy
     soviet_economic_plan
+	partial_economic_mobilisation
 
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
