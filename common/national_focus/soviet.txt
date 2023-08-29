@@ -12882,7 +12882,7 @@ ai_will_do = {
 		id = SOV_baltic_security
 		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = SOV_the_comintern }
-		x = 55
+		x = 54
 		y = 2
 		cost = 5
 
@@ -13031,7 +13031,7 @@ ai_will_do = {
 		id = SOV_claims_in_baltic
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_baltic_security }
-		x = 55
+		x = 54
 		y = 3
 		cost = 5
 
@@ -13266,7 +13266,7 @@ ai_will_do = {
 		id = SOV_claims_on_poland
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = SOV_respect_baltic_self_determination focus = SOV_claims_in_baltic }
-		x = 56
+		x = 55
 		y = 4
 		cost = 5
 
@@ -13580,7 +13580,7 @@ ai_will_do = {
 		id = SOV_claim_on_bessarabia
 		icon = GFX_focus_generic_attack_romania
 		prerequisite = { focus = SOV_claims_on_poland }
-		x = 56
+		x = 55
 		y = 5
 		cost = 5
 

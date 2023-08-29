@@ -4630,7 +4630,7 @@ focus = {
 
 	focus = {
 		id = GER_reintegrate_luxemburg_and_alsace_lorraine
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = GER_war_with_france }
 		available = {
 			is_subject = no
@@ -4660,7 +4660,7 @@ focus = {
 		bypass = {
 		}
 		cancel_if_invalid = yes
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = GER_war_with_france
 		cost = 10
@@ -4711,14 +4711,13 @@ focus = {
 				}
 			}
 		}
-		allow_branch = { always = no }
 
 	}
 
 	
 	focus = {
 		id = GER_naval_rearmament
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_goal_der_kriegsmarine
 		x = 30
 		y = 0
 
@@ -4806,7 +4805,7 @@ focus = {
 	focus = {
 		id = GER_naval_effort
 		text = naval_effort
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_focus_generic_destroyer
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
 		y = 1
