@@ -6233,10 +6233,10 @@ focus_tree = {
 					}
 				}
 				849 = { #PUGLIA (Taranto)
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -6252,10 +6252,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 852 736 } #ISTRIA as main fallback
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -6273,10 +6273,10 @@ focus_tree = {
 					}
 				}
 				117 = { #Campagna (Napoli)
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -6292,10 +6292,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 157 162 } #ABRUZZO as main fallback
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -6313,10 +6313,10 @@ focus_tree = {
 					}
 				}
 				115 = { #SICILY (Palermo)
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -6332,10 +6332,10 @@ focus_tree = {
 						}
 					}
 					prioritize = { 156 114 } #CALABRIA as main fallback
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
