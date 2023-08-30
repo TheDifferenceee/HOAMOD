@@ -219,6 +219,70 @@ ita_kendiniasan = {
             }
         }
     }
+	hoa_ita_eng_war = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+
+		allowed = {
+			tag = ITA
+		}
+		activation = {
+		GER = {
+                has_war_with = ENG
+            }
+		}
+		
+		available = {
+		NOT = {
+			GER = {
+                has_war_with = ENG
+            }
+			}
+		}
+		visible = {
+           GER = {
+                has_war_with = ENG
+            }
+        }
+		
+		days_mission_timeout = 180
+		is_good = yes
+		fire_only_once = yes
+
+		timeout_effect = {
+			declare_war_on = {
+                target = ENG
+                    type = annex_everything
+            }
+			declare_war_on = {
+                target = FRA
+                    type = annex_everything
+            }
+			declare_war_on = {
+                target = AST
+                    type = annex_everything
+            }
+			declare_war_on = {
+                target = CAN
+                    type = annex_everything
+            }
+			declare_war_on = {
+                target = SAF
+                    type = annex_everything
+            }
+			declare_war_on = {
+                target = RAJ
+                    type = annex_everything
+            }
+			declare_war_on = {
+                target = NZL
+                    type = annex_everything
+            }
+			}
+			
+
+		
+	}
 }
 
 ast_kendiniasan = {
@@ -254,3 +318,4 @@ ast_kendiniasan = {
 	}
 
 }
+
