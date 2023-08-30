@@ -354,7 +354,7 @@ equipments = {
 
 		fuel_consumption = 7
 		
-		build_cost_ic = 400
+		build_cost_ic = 700
 		resources = {
 			#oil = 1
 			steel = 2
@@ -406,7 +406,7 @@ equipments = {
 			anti_air
 		}
 
-		build_cost_ic = 500
+		build_cost_ic = 860
 		resources = {
 			#oil = 1
 			steel = 3
@@ -457,7 +457,7 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 500
+		build_cost_ic = 920
 		resources = {
 			#oil = 2
 			steel = 3
@@ -509,7 +509,7 @@ equipments = {
 			anti_air
 		}
 
-		build_cost_ic = 500
+		build_cost_ic = 980
 		resources = {
 			#oil = 2
 			steel = 2
