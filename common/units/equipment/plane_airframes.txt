@@ -752,7 +752,7 @@ equipments = {
 
 		module_count_limit = {
 			module = torpedo_mounting
-			count < 2
+			count < 4
 		}
 
 		module_count_limit = {
@@ -782,7 +782,7 @@ equipments = {
 
 		module_count_limit = {
 			category = nav_bomber_weapon
-			count < 2
+			count < 4
 		}
 
 		module_count_limit = {
@@ -1416,7 +1416,7 @@ equipments = {
 
 		module_count_limit = {
 			module = torpedo_mounting
-			count < 3
+			count < 4
 		}
 
 		module_count_limit = {
@@ -1441,7 +1441,7 @@ equipments = {
 
 		module_count_limit = {
 			category = nav_bomber_weapon
-			count < 3
+			count < 4
 		}
 
 		module_count_limit = {
