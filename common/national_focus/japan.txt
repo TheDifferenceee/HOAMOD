@@ -1427,7 +1427,7 @@
 		}
 
 		available = {
-
+			date > 1940.6.15
 		}
 
 		bypass = {
@@ -1490,7 +1490,7 @@
 		}
 
 		available = {
-
+			date > 1940.6.15
 		}
 
 		bypass = {

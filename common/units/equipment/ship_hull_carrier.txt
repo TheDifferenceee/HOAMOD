@@ -109,7 +109,7 @@ equipments = {
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
-		build_cost_ic = 2450
+		build_cost_ic = 2520
 		resources = {
 			steel = 2
 		}
@@ -179,7 +179,7 @@ equipments = {
 		
 
 
-		build_cost_ic = 2600
+		build_cost_ic = 3040
 		resources = {
 			steel = 2
 		}
@@ -240,7 +240,7 @@ equipments = {
 		
 
 
-		build_cost_ic = 3250
+		build_cost_ic = 3640
 		resources = {
 			steel = 2
 		}
@@ -286,7 +286,7 @@ equipments = {
 		naval_speed = 23
 
 
-		build_cost_ic = 2700
+		build_cost_ic = 5000
 		resources = {
 			steel = 2
 		}
@@ -327,7 +327,7 @@ equipments = {
 		
 		reliability = 0.65
 		naval_speed = 20
-		build_cost_ic = 2700
+		build_cost_ic = 5600
 		resources = {
 			steel = 2
 		}

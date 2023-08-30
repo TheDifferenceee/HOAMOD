@@ -124,7 +124,7 @@ equipments = {
 
 		fuel_consumption = 20
 		
-		build_cost_ic = 2000
+		build_cost_ic = 2100
 		resources = {
 			steel = 4
 		}
@@ -155,7 +155,7 @@ equipments = {
 		manpower = 1000
 		naval_speed = 24
 		reliability = 0.85
-		build_cost_ic = 2400
+		build_cost_ic = 2520
 		naval_range = 3000
 		max_strength = 120
 		resources = {
@@ -225,7 +225,7 @@ equipments = {
 		priority = 1900
 		parent = ship_hull_cruiser_2
 		naval_speed = 28
-		build_cost_ic = 2800
+		build_cost_ic = 3020
 		reliability = 0.90
 		max_strength = 140
 		naval_range = 3500
@@ -312,7 +312,7 @@ equipments = {
 		naval_speed = 32
 		reliability = 0.95
 		manpower = 1000
-		build_cost_ic = 3200
+		build_cost_ic = 3520
 		naval_range = 4000
 		max_strength = 160
 		resources = {
