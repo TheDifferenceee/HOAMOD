@@ -22,6 +22,8 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 400                    -- You can hav
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0005                -- num convoys needed per fuel land lease    --0.0005 yani vanilla deger
 NDefines.NCountry.STARTING_FUEL_RATIO = 1                        -- starting fuel ratio compared to max fuel for countries --0.25
 	
+NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.1 -- base resistance grow	--vanillasi 0.2
+	
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 150 --10
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150 --15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150 --5
