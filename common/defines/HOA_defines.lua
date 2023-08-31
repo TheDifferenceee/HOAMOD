@@ -21,6 +21,7 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_BASE = 1                    -- Max ammount 
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 400                    -- You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier --24
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0005                -- num convoys needed per fuel land lease    --0.0005 yani vanilla deger
 NDefines.NCountry.STARTING_FUEL_RATIO = 1                        -- starting fuel ratio compared to max fuel for countries --0.25
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0       --Removed for game stability/reducing chance of desync
 	
 NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.1 -- base resistance grow	--vanillasi 0.2
 	
