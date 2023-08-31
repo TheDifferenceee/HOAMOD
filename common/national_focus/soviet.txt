@@ -6624,7 +6624,7 @@ focus_tree = {
 	focus = {
 		id = SOV_the_path_of_marxism_leninism
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		x = 16
+		x = 14
 		y = 0
 
 		relative_position_id = SOV_strengthen_the_mobilization_plan
@@ -6671,7 +6671,7 @@ focus_tree = {
 		id = SOV_the_centre
 		icon = GFX_focus_fra_loyalty_stalin
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = -8
+		x = -6
 		y = 1
 
 		relative_position_id = SOV_the_path_of_marxism_leninism
@@ -11497,7 +11497,7 @@ focus_tree = {
 		id = SOV_the_comintern
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 9
+		x = 7
 		y = 0
 		relative_position_id = SOV_addressing_internal_affairs
 		cost = 5
@@ -11547,6 +11547,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_comintern }
 		x = -5
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = SOV_the_comintern
 		cost = 5
 
@@ -12153,35 +12154,81 @@ ai_will_do = {
 	}
 
 	focus = {
-		id = SOV_policy_of_individual_security
-		icon = GFX_goal_generic_defence
+		id = SOV_ger_war_goal
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = SOV_the_comintern }
+		available_if_capitulated = no
+		will_lead_to_war_with = GER
+
+		cancel = {
+			is_subject = yes
+			NOT = { country_exists = GER }
+		}
+		
+		available = {
+			is_subject = no
+			date > 1942.1.1
+		}
 		x = -1
 		y = 1
 		relative_position_id = SOV_the_comintern
-		cost = 5
-
+		cost = 0.2
+		historical_ai = {
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT					
+				}		
+			}
+		}
+		bypass = {
+			has_war_with = GER
+		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
 			modifier = {
 				factor = 0
-				has_civil_war = yes
-			}	
-		}
-		
-		mutually_exclusive = { focus = SOV_policy_of_collective_security }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_POLITICAL}
-
+				OR = {
+					has_army_manpower = { size < 1199999 }
+					any_home_area_neighbor_country = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 0 #AI should not pick this focus if it does not share a border with the German Reich
+				NOT = { 
+					any_home_area_neighbor_country = {
+						tag = GER
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+				date < 1939.1.1
+			}
+		}	
 		completion_reward = {
-			add_political_power = 35
-
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = SOV_vyacheslav_molotov
+			IF = {
+				limit = { GER = { has_civil_war = no } }
+				create_wargoal = {
+					type = annex_everything
+					target = GER
+					expire = 0
+				}
+			}
+			ELSE = {
+				every_country = {
+					limit = { original_tag = GER }
+					GER = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+							expire = 0
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -12882,7 +12929,7 @@ ai_will_do = {
 		id = SOV_baltic_security
 		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = SOV_the_comintern }
-		x = 54
+		x = 52
 		y = 2
 		cost = 5
 
@@ -13031,7 +13078,7 @@ ai_will_do = {
 		id = SOV_claims_in_baltic
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_baltic_security }
-		x = 54
+		x = 52
 		y = 3
 		cost = 5
 
@@ -13116,7 +13163,7 @@ ai_will_do = {
 	focus = {
 		id = SOV_secure_leningrad
 		icon = GFX_focus_generic_attack_finland
-		prerequisite = { focus = SOV_respect_baltic_self_determination focus = SOV_claims_in_baltic }
+		prerequisite = { focus = SOV_claims_in_baltic }
 		x = 0
 		y = 1
 		relative_position_id = SOV_respect_baltic_self_determination
@@ -13265,8 +13312,8 @@ ai_will_do = {
 	focus = {
 		id = SOV_claims_on_poland
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SOV_respect_baltic_self_determination focus = SOV_claims_in_baltic }
-		x = 55
+		prerequisite = { focus = SOV_claims_in_baltic }
+		x = 53
 		y = 4
 		cost = 5
 
@@ -13580,7 +13627,7 @@ ai_will_do = {
 		id = SOV_claim_on_bessarabia
 		icon = GFX_focus_generic_attack_romania
 		prerequisite = { focus = SOV_claims_on_poland }
-		x = 55
+		x = 53
 		y = 5
 		cost = 5
 

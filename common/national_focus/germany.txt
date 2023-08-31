@@ -2626,7 +2626,7 @@ focus = {
 		x = 6
 		y = 2
 		relative_position_id = GER_soviet_treaty
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3419,7 +3419,7 @@ focus = {
 		x = 0
 		y = 1
 		relative_position_id = GER_anschluss
-		cost = 5
+		cost = 10
 		bypass = {
 			188 = { is_owned_by = GER }
 			85 = { is_owned_by = GER }
@@ -3462,6 +3462,7 @@ focus = {
 		will_lead_to_war_with = POL
 		available = {
 			is_subject = no		
+			date > 1939.6.1
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
@@ -3514,7 +3515,7 @@ focus = {
 		x = 0
 		y = 2
 		relative_position_id = GER_demand_memel
-		cost = 10
+		cost = 0.2
 		ai_will_do = {
 			factor = 10	
 			modifier = {

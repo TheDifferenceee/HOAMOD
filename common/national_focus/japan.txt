@@ -1090,6 +1090,7 @@
 		available = { 
 			is_puppet = no 
 			NOT = { has_war_with = CHI }
+			date > 1937.4.1
 		}
 		bypass = {
 			OR = {
@@ -1402,7 +1403,7 @@
 
 		will_lead_to_war_with = PHI
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 1
@@ -1470,7 +1471,7 @@
 		will_lead_to_war_with = MAL
 		will_lead_to_war_with = INS
 
-		cost = 5
+		cost = 0.2
 
 		ai_will_do = {
 			factor = 10
