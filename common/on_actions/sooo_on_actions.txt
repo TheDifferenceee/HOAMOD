@@ -24,16 +24,20 @@ on_actions = {
                         OR = { 
                              AND = { 
                                 tag = INS
+                                is_ai = yes
                                    }
                             AND = { 
                                 tag = MAL
+                                is_ai = yes
                                    }
                             AND = { 
                                 tag = SIA
+                                is_ai = yes
                                    }
                         }
                     }
                     add_ideas = hoa_ai_rules
+                    country_lock_all_division_template = yes
                 }	
 			}
 		}
