@@ -12,6 +12,7 @@
  sooo_player_to_ai:0 "Player to AI"
  sooo_ai_to_player:0 "AI to Player"
  SOO_OPTIMIZATION:0 "SOO Optimization"
+ hoa_ai_rules:0 "HOA AI Rules"
  RULE_OPTION_SOO_HARD:0 "SOO Optimization (With Ideas)"
  RULE_OPTION_SOO_HARD_DESC:0 "Prevents unnecessary countries from slowing down the game!"
  RULE_OPTION_SOO_NORMAL:0 "SOO Optimization (Without Ideas)"

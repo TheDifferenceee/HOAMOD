@@ -16,11 +16,27 @@ on_actions = {
 					LIMIT = {
 						NOT = { is_ai = yes }
 					}
+
 					add_ideas = sooo_player_was_here 
 				}
-				
+				if={
+                    LIMIT = {
+                        OR = { 
+                             AND = { 
+                                tag = INS
+                                   }
+                            AND = { 
+                                tag = MAL
+                                   }
+                            AND = { 
+                                tag = SIA
+                                   }
+                        }
+                    }
+                    add_ideas = hoa_ai_rules
+                }	
 			}
-		  }
+		}
 		  TUR = { 
 		  load_focus_tree = generic_focus 
 		  set_rule = { #DLC
