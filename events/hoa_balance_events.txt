@@ -1,3 +1,4 @@
+add_namespace = hoa.start.event
 # The Fall of China
 news_event = {
 	id = hoa.start.event.2
@@ -48,6 +49,19 @@ news_event = {
 	
 	option = {
 		name = hoa.start.event.2.a
+	}
+}
+
+# Historical Focuses are not activated
+    news_event = {
+	id = hoa.start.event.31
+	title = "Historical Focus"
+	desc = "Hostu acilen gotten sikin ve rehost atin historical focuslar yok kafanizi sikeyim."
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "ALLAHINI..."
 	}
 }
 
