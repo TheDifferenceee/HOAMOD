@@ -126,9 +126,7 @@ focus_tree = {
 				}				
 			}
 			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 3
-				}
+				prioritize = { 582 }
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -137,9 +135,7 @@ focus_tree = {
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 3
-				}
+				prioritize = { 651 }
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -148,9 +144,7 @@ focus_tree = {
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 3
-				}
+				prioritize = { 249 }
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -159,9 +153,7 @@ focus_tree = {
 				set_state_flag = SOV_infrastructure_effort_3Inf	
 			}
 			random_owned_controlled_state = {
-				limit = {
-					infrastructure < 3
-				}
+				prioritize = { 251 }
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -220,14 +212,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					limit = {
-						industrial_complex > 0
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
+					prioritize = { 653 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -271,15 +256,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					limit = {
-						industrial_complex > 0
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-						NOT = { has_state_flag = SOV_finish_five_year_plan_2IC }
-					}
+					prioritize = { 572 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = industrial_complex
@@ -349,14 +326,7 @@ focus_tree = {
 
 		completion_reward = { #TODO_Manu: This is just copy-pasted from the old focus -> Is this what we want?
 			random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-					free_building_slots = {
-						building = industrial_complex
-						size > 2
-						include_locked = yes
-					}
-				}
+				prioritize = { 569 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -366,14 +336,7 @@ focus_tree = {
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 			random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+				prioritize = { 568 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -839,6 +802,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_steel_casting_industry_ns_tt
 
 			random_owned_controlled_state = {
+				prioritize = { 563 }
 				limit = {
 					has_resources_amount = {
 						resource = steel
@@ -878,6 +842,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
+					prioritize = { 213 }
 					limit = {
 						has_resources_amount = {
 							resource = steel
@@ -1972,6 +1937,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_expand_the_aircraft_industry_ns_tt
 
 			random_owned_controlled_state = {
+				prioritize = { 257 }
 				limit = {
 					free_building_slots = {
 						building = arms_factory

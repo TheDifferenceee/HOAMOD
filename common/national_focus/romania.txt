@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = romanian_focus
 	
 	country = {
@@ -496,6 +496,7 @@
 			}
 			GER = {
 				random_owned_controlled_state = {
+					prioritize = { 64 }
 					limit = {
 						GER = { has_full_control_of_state = PREV }
 					}
@@ -1103,12 +1104,6 @@
 		completion_reward = {
 			random_owned_controlled_state = {
 				prioritize = { 46 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1118,12 +1113,6 @@
 			}
 			random_owned_controlled_state = {
 				prioritize = { 81 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1133,12 +1122,6 @@
 			}
 			random_owned_controlled_state = {
 				prioritize = { 82 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
