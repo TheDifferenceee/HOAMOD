@@ -355,7 +355,16 @@ spriteTypes = {
 		name = "GFX_military_construction"
 		texturefile = "gfx/interface/goals/military_construction.dds"
 	}
-
+	
+	SpriteType = {
+		name = "GFX_goal_eng_big_ben"
+		texturefile = "gfx/interface/goals/goal_eng_big_ben.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_eng_military_training"
+		texturefile = "gfx/interface/goals/goal_eng_military_training.dds"
+	}
 
 
 	SpriteType = {
@@ -1658,6 +1667,26 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ENG_conscription"
 		texturefile = "gfx/interface/goals/ENG_conscription.tga"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_saf"
+		texturefile = "gfx/interface/goals/goal_eng_develop_saf.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_nzl"
+		texturefile = "gfx/interface/goals/goal_eng_develop_nzl.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_can"
+		texturefile = "gfx/interface/goals/goal_eng_develop_can.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_ast"
+		texturefile = "gfx/interface/goals/goal_eng_develop_ast.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_eng_develop_raj"
+		texturefile = "gfx/interface/goals/goal_eng_develop_raj.dds"
 	}
 
 	SpriteType = {

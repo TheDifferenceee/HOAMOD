@@ -102,7 +102,7 @@ focus_tree = {
 		} 
 		prerequisite = { focus = crypto_bomb_focus }
 		prerequisite = { focus = radar_focus }
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_ENG_tizard
 		x = 0
 		y = 3
 		relative_position_id = crypto_bomb_focus
@@ -121,7 +121,7 @@ focus_tree = {
 		id = maud_focus
 		available = { is_in_faction_with = USA }
 		prerequisite = { focus = tizard_mission_focus }
-		icon = GFX_focus_wonderweapons
+		icon = GFX_manhattan
 		x = 0
 		y = 1
 		relative_position_id = tizard_mission_focus
@@ -145,7 +145,7 @@ focus_tree = {
 	
 	focus = {
 		id = limited_rearmament_focus
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_Limited_Rearm
 		x = 5
 		y = 0
 		cost = 10
@@ -224,7 +224,7 @@ focus_tree = {
 		prerequisite = { focus = limited_rearmament_focus }
 		available = { 			
 		}
-		icon = GFX_goal_generic_army_motorized
+		icon = GFX_Royal_Tank
 		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
@@ -247,7 +247,7 @@ focus_tree = {
 	focus = {
 		id = ENG_tank_focus
 		prerequisite = { focus = ENG_motorized_focus }
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_ENG_tanks
 		x = 0
 		y = 1
 		relative_position_id = ENG_motorized_focus
@@ -298,7 +298,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_goal_generic_air_defense
 		x = -4
 		y = 1
 		relative_position_id = limited_rearmament_focus
@@ -618,7 +618,7 @@ focus_tree = {
 		id = uk_industrial_focus
 		text = industrial_effort
 		prerequisite = { focus = shadow_scheme_focus }
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_eng_big_ben
 		x = 0
 		y = 1
 		relative_position_id = shadow_scheme_focus
@@ -642,7 +642,7 @@ focus_tree = {
 	focus = {
 		id = uk_extra_tech_slot
 		text = extra_tech_slot
-		icon = GFX_focus_research
+		icon = GFX_goal_supremacy_of_technology
 		prerequisite = { focus = uk_industrial_focus }
 		x = 0
 		y = 1
@@ -685,7 +685,7 @@ focus_tree = {
 
 		continue_if_invalid = yes
 
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_General_Rearm
 		x = 4
 		y = 1
 		relative_position_id = limited_rearmament_focus
@@ -708,7 +708,7 @@ focus_tree = {
 
 		continue_if_invalid = yes
 
-		icon = GFX_focus_eng_special_air_service
+		icon = GFX_Generic_ENG_SAS
 		x = 0
 		y = 1
 		relative_position_id = general_rearmament_focus
@@ -761,7 +761,7 @@ focus_tree = {
 			}
 		} #at war with major or ger in rhineland or high threat
 		prerequisite = { focus = uk_industrial_focus }
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_eng_military_training
 		x = -1
 		y = 2
 		relative_position_id = uk_industrial_focus
@@ -913,7 +913,7 @@ focus_tree = {
 	focus = {
 		id = air_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
-		icon = GFX_goal_generic_air_doctrine
+		icon = GFX_Royal_Air_Force
 		x = -2
 		y = 1
 		relative_position_id = general_rearmament_focus
@@ -1148,7 +1148,7 @@ focus_tree = {
 	focus = {
 		id = fighter_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_goal_generic_air_fighter
+		icon = GFX_ENG_fighter
 		x = -1
 		y = 2
 		relative_position_id = air_rearmament_focus
@@ -1197,7 +1197,7 @@ focus_tree = {
 	focus = {
 		id = bomber_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_goal_generic_air_bomber
+		icon = GFX_Noras_Eng_Bomber_Command
 		x = 0
 		y = 1
 		relative_position_id = air_rearmament_focus
@@ -1246,7 +1246,7 @@ focus_tree = {
 	focus = {
 		id = coastal_command_focus
 		prerequisite = { focus = air_rearmament_focus }
-		icon = GFX_goal_generic_air_naval_bomber
+		icon = GFX_nav_bomber
 		x = 1
 		y = 2
 		relative_position_id = air_rearmament_focus
@@ -1313,7 +1313,7 @@ focus_tree = {
 	focus = {
 		id = uk_jet_focus
 		prerequisite = { focus = aircraft_production_focus }
-		icon = GFX_goal_generic_build_airforce
+		icon = GFX_ENG_jet_aircraft
 		x = 0
 		y = 1
 		relative_position_id = aircraft_production_focus
@@ -1336,7 +1336,7 @@ focus_tree = {
 	focus = {
 		id = naval_rearmament_focus
 		prerequisite = { focus = general_rearmament_focus }
-		icon = GFX_goal_generic_construct_naval_dockyard 
+		icon = GFX_royal_navy 
 		x = 2
 		y = 1
 		relative_position_id = general_rearmament_focus
@@ -1439,7 +1439,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_coastal
 		x = 2
 		y = 1
-		
+		allow_branch = { always = no }
 		relative_position_id = naval_rearmament_focus
 		cost = 10
 		ai_will_do = {
@@ -1521,7 +1521,7 @@ focus_tree = {
 	focus = {
 		id = ENG_a_s_warfare
 		prerequisite = { focus = uk_destroyer_focus }
-		icon = GFX_goal_generic_navy_anti_submarine
+		icon = GFX_goal_eng_convoy
 		x = 0
 		y = 2
 		relative_position_id = uk_destroyer_focus
@@ -1549,7 +1549,7 @@ focus_tree = {
 	focus = {
 		id = uk_convoy_focus
 		prerequisite = { focus = uk_destroyer_focus }
-		icon = GFX_goal_generic_navy_cruiser
+		icon = GFX_goal_eng_convoy
 		x = -1
 		y = 1
 		relative_position_id = uk_destroyer_focus
@@ -1568,7 +1568,7 @@ focus_tree = {
 	focus = {
 		id = ENG_anti_submarine_training_school
 		prerequisite = { focus = uk_convoy_focus }
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_goal_eng_convoy
 		x = 0
 		y = 2
 		relative_position_id = uk_convoy_focus
@@ -1593,7 +1593,7 @@ focus_tree = {
 	focus = {
 		id = uk_waves_focus
 		prerequisite = { focus = naval_rearmament_focus }
-		icon = GFX_goal_generic_navy_doctrines_tactics
+		icon = GFX_ENG_navy
 		x = 1
 		y = 2
 		relative_position_id = naval_rearmament_focus
@@ -1643,7 +1643,7 @@ focus_tree = {
 		id = uk_battleship_focus
 		prerequisite = { focus = uk_waves_focus }
 		mutually_exclusive = { focus = uk_carrier_focus }
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_ENG_battleship
 		x = 1
 		y = 1
 		relative_position_id = uk_waves_focus
@@ -1750,7 +1750,7 @@ focus_tree = {
 	focus = {
 		id = ENG_vanguard
 		prerequisite = { focus = uk_battleship_focus }
-		icon = GFX_focus_generic_navy_battleship2
+		icon = GFX_ENG_battleship
 		x = 0
 		y = 2
 		relative_position_id = uk_battleship_focus
@@ -1859,7 +1859,7 @@ focus_tree = {
 			}
 		}
 
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_ENG_royal_army
 		x = 24
 		y = 0
 		cost = 10
@@ -1913,7 +1913,7 @@ focus_tree = {
 				}
 			}
 		} 
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_british_fortifications
 		x = 33
 		y = 2
 		cost = 5
@@ -1962,7 +1962,7 @@ focus_tree = {
 		available = {
 			118 = { is_owned_and_controlled_by = ENG }
 		} 
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_british_fortifications
 		x = -2
 		y = 1
 		relative_position_id = uk_mediterranean_focus
@@ -2097,7 +2097,7 @@ focus_tree = {
 	focus = {
 		id = uk_protect_suez
 		prerequisite = { focus = uk_mediterranean_focus }
-		icon = GFX_goal_generic_defence
+		icon = GFX_british_fortifications
 		x = 0
 		y = 1
 		relative_position_id = uk_mediterranean_focus
@@ -2398,6 +2398,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = uk_protect_suez
 		cost = 10
 		search_filters = {FOCUS_FILTER_POLITICAL}
@@ -2458,9 +2459,9 @@ focus_tree = {
 		available = {
 			116 = { is_owned_and_controlled_by = ENG }
 		}		
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_british_fortifications
 		x = 2
-		y = 2
+		y = 1
 		relative_position_id = uk_mediterranean_focus
 		cost = 10
 
@@ -4856,7 +4857,7 @@ focus_tree = {
 	focus = {
 		id = uk_colonial_focus 
 		prerequisite = { focus = uk_service_focus }
-		icon = GFX_focus_research2
+		icon = GFX_Focus_Examine_Foreign_Science
 		x = 23
 		y = 2
 		cost = 10
@@ -5002,6 +5003,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = -2
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = uk_asia_focus
 		cost = 5
 		ai_will_do = {
@@ -5203,7 +5205,7 @@ focus_tree = {
 	focus = {
 		id = singapore_focus
 		prerequisite = { focus = uk_asia_focus }
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_british_fortifications
 		x = 0
 		y = 1
 		relative_position_id = uk_asia_focus
@@ -5354,7 +5356,7 @@ focus_tree = {
 	focus = {
 		id = hongkong_focus
 		prerequisite = { focus = uk_asia_focus }
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_british_fortifications
 		x = 2
 		y = 1
 		relative_position_id = uk_asia_focus
@@ -5595,7 +5597,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_ENG_Reinforce_the_Commonwealth
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus
@@ -5696,7 +5698,7 @@ focus_tree = {
 				is_in_faction_with = ROOT
 			}
 		} 
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_eng_develop_raj
 		x = -3
 		y = 1
 		relative_position_id = uk_commonwealth_focus
@@ -5837,6 +5839,7 @@ focus_tree = {
 		icon = GFX_goal_generic_improve_relations
 		x = -1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = uk_india_focus
 		cost = 10
 
@@ -5900,7 +5903,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_goal_eng_develop_ast
 		x = 1
 		y = 1
 		relative_position_id = uk_commonwealth_focus
@@ -6060,7 +6063,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_eng_develop_nzl
 		x = 0
 		y = 1
 		relative_position_id = uk_australia_focus
@@ -6220,7 +6223,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_eng_develop_can
 		x = 0
 		y = 3
 		relative_position_id = uk_commonwealth_focus
@@ -6379,7 +6382,7 @@ focus_tree = {
 				}
 			}
 		}
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_eng_develop_saf
 		x = 2
 		y = 3
 		relative_position_id = uk_commonwealth_focus
@@ -6534,6 +6537,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = uk_india_focus
 		cost = 10
 		ai_will_do = {
@@ -7278,7 +7282,7 @@ focus_tree = {
 	focus = {
 		id = ENG_steady_as_she_goes
 		mutually_exclusive = { focus = ENG_a_change_in_course }
-		icon = GFX_goal_support_democracy
+		icon = GFX_ENG_conscription
 
 		allow_branch = {
 			if = {
@@ -7528,7 +7532,7 @@ focus_tree = {
 
 		continue_if_invalid = yes
 
-		icon = GFX_focus_generic_commonwealth_build_infantry
+		icon = GFX_ENG_war_propaganda
 		x = -1
 		y = 1
 		relative_position_id = ENG_global_defense
@@ -7622,7 +7626,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_goal_generic_construct_mil_factory
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = ENG_no_further_appeasement
 		cost = 10
@@ -7773,6 +7777,7 @@ focus_tree = {
 		icon = GFX_focus_chi_british_cooperation
 		x = -1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = ENG_no_further_appeasement
 		cost = 10
 		ai_will_do = {
@@ -7886,6 +7891,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = ENG_no_further_appeasement
 		cost = 10
 		ai_will_do = {
@@ -7985,7 +7991,7 @@ focus_tree = {
 		id = ENG_home_defence
 		prerequisite = { focus = ENG_steady_as_she_goes }
 		mutually_exclusive = { focus = ENG_global_defense }
-		icon = GFX_focus_generic_home_defense
+		icon = GFX_ENG_home_defense
 		x = 4
 		y = 1
 		relative_position_id = ENG_steady_as_she_goes
@@ -8239,7 +8245,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_home_defence }
-		icon = GFX_goal_generic_construct_military
+		icon = GFX_Generic_Chemical_Warfare
 		x = 1
 		y = 1
 		relative_position_id = ENG_home_defence
@@ -8266,7 +8272,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		prerequisite = { focus = ENG_issue_gasmasks }
-		icon = GFX_focus_generic_commonwealth_build_infantry
+		icon = GFX_ENG_war_propaganda
 		x = 0
 		y = 1
 		relative_position_id = ENG_issue_gasmasks
@@ -8297,6 +8303,7 @@ focus_tree = {
 		icon = GFX_goal_generic_trade
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = ENG_military_training_act
 		cost = 5
 		ai_will_do = {
