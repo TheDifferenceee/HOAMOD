@@ -1345,7 +1345,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_fascism_tt
-			add_stability = -0.025
 		}
 		if = {
 			limit = {
@@ -1356,7 +1355,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_fascism_tt
-			add_stability = -0.05
 		}
 		if = {
 			limit = {
@@ -1367,7 +1365,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_fascism_tt
-			add_stability = -0.075
 		}
 		if = {
 			limit = {
@@ -1377,7 +1374,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_fascism_tt
-			add_stability = -0.1
 		}
 		if = {
 			limit = {
@@ -1387,7 +1383,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_communism_tt
-			add_stability = -0.025
 		}
 		if = {
 			limit = {
@@ -1398,7 +1393,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_communism_tt
-			add_stability = -0.05
 		}
 		if = {
 			limit = {
@@ -1409,7 +1403,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_communism_tt
-			add_stability = -0.075
 		}
 		if = {
 			limit = {
@@ -1419,7 +1412,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_communism_tt
-			add_stability = -0.1
 		}
 		if = {
 			limit = {
@@ -1430,7 +1422,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
-			add_stability = -0.025
 		}
 		if = {
 			limit = {
@@ -1441,7 +1432,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
-			add_stability = -0.05
 		}
 		if = {
 			limit = {
@@ -1452,7 +1442,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
-			add_stability = -0.075
 		}
 		if = {
 			limit = {
@@ -1462,7 +1451,6 @@ country_event = {
 				strength_ratio = { tag = FROM ratio < 1.2 }
 			}
 			custom_effect_tooltip = attache_democratic_tt
-			add_stability = -0.1
 		}
 	}	
 }
