@@ -147,7 +147,7 @@ news_event = {
 	trigger = {
 		HOL = { has_capitulated = yes }
 		BEL = { has_capitulated = yes }
-                LUX = { has_capitulated = yes }
+        LUX = { has_capitulated = yes }
 		ENG = { has_war_with = GER }
 		NOT = { has_global_flag = fall_of_beneluxx }
 	}
@@ -290,5 +290,47 @@ news_event = {
 	
 	option = {
 		name = hoa.start.event.9.a
+	}
+}
+
+# The Fall of Belgium
+news_event = {
+	id = hoa.start.event.10
+	title = hoa.start.event.10.t
+	desc = hoa.start.event.10.d
+	picture = GFX_news_event_064
+	
+	hidden = yes
+	
+	trigger = {
+		ENG = {
+			controls_state = 538
+			controls_state = 295
+			controls_state = 888
+		}
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_belgi
+		SAF = {
+			transfer_state = 538
+			transfer_state = 295
+			transfer_state = 888
+			transfer_state = 718
+			transfer_state = 890
+			transfer_state = 768
+			transfer_state = 769
+			transfer_state = 889
+			}	
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = hoa.start.event.10.a
 	}
 }
