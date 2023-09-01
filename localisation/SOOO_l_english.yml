@@ -36,10 +36,10 @@
  one_div_training:0 "1 Division Training"
  soviet_economic_plan:0 "Soviet Economic Plan"
  SOV_ger_war_goal:0 "War with the German Reich"
- 
- 
- 
- 
+ FRA_colonial_slot_expansion: "Northern Africa Slot Expansion"
+ FRA_integrate_colonial_industry: "Integrate Northern Africa"
+ FRA_scnd_integrate_colonial_industry: "Integrate Western Africa"
+ FRA_thrd_integrate_colonial_industry: "Integrate Central Africa"
  
  
  
