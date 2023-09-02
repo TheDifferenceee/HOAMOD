@@ -8619,7 +8619,7 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_state_core = 779
+			add_state_core = 799
 			add_state_core = 677
 			add_state_core = 553
 			add_state_core = 554
@@ -8630,7 +8630,7 @@
 			#add_state_core = 781
 			#add_state_core = 776
 			#add_state_core = 777
-			779 = {add_extra_state_shared_building_slots = 1}
+			799 = {add_extra_state_shared_building_slots = 1}
 			677 = {add_extra_state_shared_building_slots = 1}
 			553 = {add_extra_state_shared_building_slots = 1}
 			554 = {add_extra_state_shared_building_slots = 1}
