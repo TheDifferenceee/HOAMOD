@@ -74,7 +74,7 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.15           -- more AA att
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 110 -- how quickly defense approaches the max impact diminishing returns curve --112
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.1     -- effect on speed due to enemy air superiority -- -0.3
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01            -- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support --0.07 yani vanilla degeri sonradan bakabilirim           
-NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.001                -- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit. --0.005 yani vanilla degeri sonradan bakabilirim          
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005                -- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit. --0.005 yani vanilla degeri sonradan bakabilirim          
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 --1
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }        -- Experience needed to progress to the next level --{ 0.1, 0.3, 0.75, 0.9 }               
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.002 --0.0015
@@ -173,6 +173,8 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 1 --200 yani vanilla dege
 NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1.0 --1.0 yani vanilla deger
 NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 1                         -- how much score factor from low health (scales between 0->this number) --5 yani vanilla deger
 NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 1                           -- how much score factor from low AA guns (scales between 0->this number) --5 yani vanilla deger
-	
+NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0 --vanilla 0.5
+NDefines.NNavy.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 1 --vanilla 10
+NDefines.NNavy.UNIT_EXPERIENCE_SCALE = 0.5 --vanilla 1
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                -- This much progress can be saved while not having a focus selected --10       
