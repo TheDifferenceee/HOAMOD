@@ -22,8 +22,9 @@ equipments = {
 		module_slots = {
 			main_armament_slot = {
 				required = yes
-				allowed_modules = {
-					tank_high_velocity_cannon
+				allowed_module_categories = {
+					tank_small_main_armament
+					tank_flamethrower
 				}
 			}
 
