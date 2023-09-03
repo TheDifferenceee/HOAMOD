@@ -4431,9 +4431,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				has_idea = YUG_idea_croatian_opposition
-			}
+			
 		}
 
 		bypass = {
