@@ -486,7 +486,9 @@ equipments = {
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-				 tank_high_velocity_cannon
+					tank_light_turret_type
+					tank_medium_turret_type
+					tank_heavy_turret_type
 				}
 			}
 
