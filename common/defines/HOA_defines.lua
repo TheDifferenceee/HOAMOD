@@ -117,7 +117,9 @@ NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 1.0    -- Maximum damag
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.015 --vanilla degeri aynı, mp sonrasi bakilabilir    
 NDefines.NAir.NAVAL_MINES_PLANTING_SPEED_MULT = 0.001						-- Value used to overall balance of the speed of planting naval mines   --vanillasi 0.025 
 NDefines.NAir.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.001						-- Value used to overall balance of the speed of sweeping naval mines   --vanillasi 0.025
-    
+Ndefines.Nair.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.2. --0.05 vamilla
+
+
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25                                -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty. --0.6
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5                            -- casting damage value to ship organisation multiplier. Use it to balance the game difficulty. --1.0 
 NDefines.NNavy.EXPERIENCE_FACTOR_CARRIER_GAIN = 0.02                            -- Xp gain by carrier ships in the combat --0.08
