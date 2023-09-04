@@ -20,7 +20,7 @@ sub_units = {
 			category_army
 		}		
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			light_tank_artillery_chassis = 50
@@ -85,7 +85,7 @@ sub_units = {
 			category_all_armor
 			category_army
 		}		
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			medium_tank_artillery_chassis = 50
@@ -99,7 +99,7 @@ sub_units = {
 		supply_consumption = 0.46
 
 		breakthrough = -0.25
-		soft_attack = 0.15
+		soft_attack = 0.1
 
 		suppression = 1.5
 
@@ -155,7 +155,7 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			heavy_tank_artillery_chassis = 40
@@ -168,7 +168,7 @@ sub_units = {
 		supply_consumption = 0.6
 
 		breakthrough = -0.25
-		soft_attack = 0.15
+		soft_attack = 0.1
 
 		suppression = 1.5
 
@@ -224,7 +224,7 @@ sub_units = {
 		}
 		
 
-		combat_width = 3
+		combat_width = 2
 
 		need = {
 			super_heavy_tank_artillery_chassis = 40
@@ -306,7 +306,7 @@ sub_units = {
 		supply_consumption = 0.5
 		
 		breakthrough = -0.25
-		soft_attack = 0.25
+		soft_attack = 0.15
 
 		suppression = 1.5
 
