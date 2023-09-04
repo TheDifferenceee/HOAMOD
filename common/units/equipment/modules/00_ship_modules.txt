@@ -2494,7 +2494,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 720
-			armor_value = 7.2
+			armor_value = 7.5
 		}
 
 		build_cost_resources = {
@@ -2513,7 +2513,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 840
-			armor_value = 8.4
+			armor_value = 9
 		}
 
 		build_cost_resources = {
@@ -2533,7 +2533,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 960
-			armor_value = 9.6
+			armor_value = 10.5
 		}
 
 		build_cost_resources = {
