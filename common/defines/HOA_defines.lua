@@ -99,7 +99,7 @@ NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 1.2 --0.9 monty degisiklik
 NDefines.NMilitary.NUKE_DELAY_HOURS = 12 --12 yani vanilla deger monty degisiklik
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.4                            -- how to weight in highest armor & pen vs the division average --0.4 yani vanilla deger sonradan degisebilir
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.4 --0.4 yani vanilla deger                       
-NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0            -- armies gets increased cap when they are garrisoned --3.0 yani vanilla deger      
+NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0            -- armies gets increased cap when they are garrisoned --3.0 yani vanilla deger      
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0                    -- fuel consumption ratio while training --1.0 yani vanilla deger      
 	
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5                            -- Higher value = more shot down planes --1 yani vanilla deger
