@@ -215,7 +215,7 @@ equipment_modules = {
 		can_convert_from = {
 			module = ship_light_battery_2
 			convert_cost_ic = 60
-		
+		}
 		critical_parts = { damaged_light_guns }
 	}
 
