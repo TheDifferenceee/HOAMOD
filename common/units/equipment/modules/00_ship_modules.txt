@@ -434,7 +434,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = -0.05
-      max_strengeth = 0.25
+      max_strength = 0.25
 		}
 
 		add_average_stats = {
@@ -471,7 +471,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.05
-      max_strengeth = 0.25
+      max_strength = 0.25
 		}
 		add_average_stats = {
 			lg_armor_piercing = 7.5
@@ -511,7 +511,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = -0.05
-      max_strengeth = 0.25
+      max_strength = 0.25
 		}
 
 		add_average_stats = {
@@ -556,7 +556,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			naval_speed = -0.05
-      max_strengeth = 0.25
+      max_strength = 0.25
 		}
 
 		add_average_stats = {
