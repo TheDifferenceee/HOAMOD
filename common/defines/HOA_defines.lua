@@ -178,5 +178,6 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 1                         
 NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0 --vanilla 0.5
 NDefines.NNavy.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 1 --vanilla 10
 NDefines.NNavy.UNIT_EXPERIENCE_SCALE = 0.5 --vanilla 1
+NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 1 --vanilla 0.2
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                -- This much progress can be saved while not having a focus selected --10       
