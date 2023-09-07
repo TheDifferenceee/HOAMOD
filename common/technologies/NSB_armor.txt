@@ -728,6 +728,11 @@ technologies = {
 			modern_tank_artillery_chassis_1
 			modern_tank_aa_chassis_1
 		}
+
+		enable_equipment_modules = {
+			smoothbore_125mm_sahi_top
+		}
+		
 		enable_subunits = {
 			modern_armor
 		}
