@@ -38,10 +38,11 @@
  soviet_economic_plan:0 "Soviet Economic Plan"
  SOV_ger_war_goal:0 "War with the German Reich"
  SOV_USSR_research_sharing:0 "USSR Research Sharing"
- FRA_colonial_slot_expansion: "Northern Africa Slot Expansion"
- FRA_integrate_colonial_industry: "Integrate Northern Africa"
- FRA_scnd_integrate_colonial_industry: "Integrate Eastern Africa"
- FRA_thrd_integrate_colonial_industry: "Integrate Central Africa"
+ SOMALILAND_STRAIT:0 "Somaliland Strait"
+ FRA_colonial_slot_expansion:0 "Northern Africa Slot Expansion"
+ FRA_integrate_colonial_industry:0 "Integrate Northern Africa"
+ FRA_scnd_integrate_colonial_industry:0 "Integrate Eastern Africa"
+ FRA_thrd_integrate_colonial_industry:0 "Integrate Central Africa"
 
  
  
