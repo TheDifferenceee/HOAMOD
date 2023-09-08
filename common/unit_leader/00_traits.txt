@@ -65,7 +65,7 @@ leader_traits = {
 		}
 		
 		non_shared_modifier = {
-			experience_gain_factor = -0.25
+			experience_gain_factor = -0.1
 		}
 
 		new_commander_weight = {
@@ -152,7 +152,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		non_shared_modifier = {
-			experience_gain_factor = -0.1
+			experience_gain_factor = -0.05
 			promote_cost_factor = -0.5
 		}
 
@@ -402,7 +402,7 @@ leader_traits = {
 		}
 		
 		trait_xp_factor = {
-			infantry_leader = 1     #+100%
+			infantry_leader = 0.1     #+100%
 		}
 		
 		new_commander_weight = {
@@ -469,7 +469,7 @@ leader_traits = {
 		}
 		
 		trait_xp_factor = {
-			cavalry_leader = 1     #+100%
+			cavalry_leader = 0.1     #+100%
 		}
 
 		new_commander_weight = {
@@ -506,7 +506,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		trait_xp_factor = {
-			panzer_leader = 1     #+100%
+			panzer_leader = 0.1     #+100%
 		}
 		
 		unit_trigger = {
@@ -572,7 +572,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		trait_xp_factor = {
-			trait_engineer = 1     #+100%
+			trait_engineer = 0.1     #+100%
 		}
 		
 		unit_trigger = {
@@ -2675,7 +2675,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			experience_gain_factor = -0.25 
+			experience_gain_factor = -0.1 
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2731,7 +2731,7 @@ leader_traits = {
 			
 		}
 		trait_xp_factor = {
-			ironside = 0.5     #+100%
+			ironside = 0.1     #+100%
 		}
 		new_commander_weight = {
 			factor = 1  
@@ -2920,7 +2920,7 @@ leader_traits = {
 			
 		}
 		trait_xp_factor = {
-			air_controller = 0.5     #+100%
+			air_controller = 0.1    #+100%
 		}
 		new_commander_weight = {
 			factor = 1  
