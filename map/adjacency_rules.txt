@@ -310,7 +310,7 @@ adjacency_rule =
 
 #Somaliland Straits
 adjacency_rule = {
-	name = "Somaliland Straits"
+	name = "SOMALILAND_STRAIT"
 
 	contested =
 	{
