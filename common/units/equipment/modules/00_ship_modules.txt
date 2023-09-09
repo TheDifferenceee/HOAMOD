@@ -2464,7 +2464,7 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			build_cost_ic = 8100
+			build_cost_ic = 5600
 			armor_value = 56
 			naval_torpedo_enemy_critical_chance_factor = -0.25
 			naval_torpedo_damage_reduction_factor = 0.25
