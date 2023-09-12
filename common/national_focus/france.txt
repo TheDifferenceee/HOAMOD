@@ -198,32 +198,19 @@
 				limit = { 
 					has_state_flag = FRA_industrial_expansion_target
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			random_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
-					NOT = {
-						has_state_flag = FRA_industrial_expansion_target
-					}	
-				}
-				add_extra_state_shared_building_slots = 2
+			458 = {
+				add_extra_state_shared_building_slots = 4
 				set_state_flag = FRA_industrial_expansion_target
-				random_neighbor_state = {
-					limit = { 
-						is_core_of = ROOT 	
-						is_owned_by = ROOT
-						NOT = {
-							has_state_flag = FRA_industrial_expansion_target
-						}	
-					}
-					add_extra_state_shared_building_slots = 2
-					set_state_flag = FRA_industrial_expansion_target
-				}
+			}
+			665 = {
+				add_extra_state_shared_building_slots = 4
+				set_state_flag = FRA_industrial_expansion_target
 			}
 		}
 	}
@@ -233,7 +220,8 @@
 		icon = GFX_focus_generic_industry_3
 		available = {
 		}
-		prerequisite = { focus = FRA_metropolitan_france focus = FRA_algerie_france }
+		prerequisite = { focus = FRA_metropolitan_france }
+		prerequisite = { focus = FRA_algerie_france }
 		x = 0
 		y = 1
 		relative_position_id = FRA_metropolitan_france
@@ -259,7 +247,6 @@
 					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
 			}
 		}
 
@@ -273,7 +260,7 @@
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -285,7 +272,8 @@
 		icon = GFX_goal_generic_construct_mil_factory
 		available = {
 		}
-		prerequisite = { focus = FRA_industrial_expansion focus = FRA_colonial_industry }
+		prerequisite = { focus = FRA_industrial_expansion }
+		prerequisite = { focus = FRA_colonial_industry }
 		x = 2
 		y = 1
 		relative_position_id = FRA_industrial_expansion
@@ -307,10 +295,9 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -327,10 +314,9 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 2 #States already got 2 building slots and 2 civs in previous focuses, so let's just add 2 more slots and mils here
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}				
@@ -367,7 +353,7 @@
 		ai_will_do = {
 			factor = 0.2
 		}
-		prerequisite = { focus = FRA_invest_in_the_metropole focus = FRA_invest_in_the_colonies }
+		prerequisite = { focus = FRA_invest_in_the_metropole }
 		relative_position_id = FRA_invest_in_the_metropole
 		available_if_capitulated = yes
 
@@ -386,48 +372,25 @@
 					is_owned_or_subject_trigger = yes	
 					OR = {	
 						has_state_flag = FRA_industrial_expansion_target
-						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			random_state = {
-				limit = { 
-					OR = {
-						state = 459
-						state = 460
-						state = 513
-					}
-					NOT  = {
-						has_state_flag = FRA_industrial_expansion_target
-						has_state_flag = FRA_colonial_industry_target
-					}
-					is_owned_or_subject_trigger = yes	
-				}
-				add_extra_state_shared_building_slots = 2
+			459 = {
+				add_extra_state_shared_building_slots = 4
 				set_state_flag = FRA_industrial_expansion_target
-				set_state_flag = FRA_colonial_industry_target
-				random_neighbor_state = {
-					limit = { 
-						OR = {
-							state = 459
-							state = 460
-							state = 513
-						}
-						is_owned_or_subject_trigger = yes
-						NOT  = {
-							has_state_flag = FRA_industrial_expansion_target
-							has_state_flag = FRA_colonial_industry_target
-						}		
-					}
-					add_extra_state_shared_building_slots = 2
-					set_state_flag = FRA_industrial_expansion_target
-					set_state_flag = FRA_colonial_industry_target
-				}
+			}
+			460 = {
+				add_extra_state_shared_building_slots = 4
+				set_state_flag = FRA_industrial_expansion_target
+			}
+			513 = {
+				add_extra_state_shared_building_slots = 4
+				set_state_flag = FRA_industrial_expansion_target
 			}
 		}
 	}	
@@ -490,14 +453,8 @@
 		available = {
 			any_state = {
 				OR = {
-					state = 272
-					state = 780
-					state = 556
-					state = 779
-					state = 778
-					state = 781
-					state = 776
-					state = 777
+					state = 461
+					state = 462
 				}	
 				is_owned_or_subject_trigger = yes
 			}
@@ -513,78 +470,12 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			random_state = {
-				limit = { 
-					OR = {
-						state = 272
-						state = 780
-						state = 556
-						state = 779
-						state = 778
-						state = 781
-						state = 776
-						state = 777
-					}	
-					OWNER = { is_owned_or_subject_trigger = yes }
-					NOT = {
-						has_state_flag = FRA_colonial_industry_target
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			461 = {
+				add_extra_state_shared_building_slots = 4
 				set_state_flag = FRA_colonial_industry_target
 			}
-		}
-	}
-	focus = {
-		id = FRA_invest_in_indochina
-		icon = GFX_focus_generic_industry_1
-		x = 2
-		y = 1
-		
-		prerequisite = { focus = FRA_invest_in_the_colonies }
-		mutually_exclusive = { }
-		relative_position_id = FRA_invest_in_the_colonies
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			any_state = {
-				OR = {
-					is_core_of = VIN
-					is_core_of = CAM
-					is_core_of = LAO
-				}
-				is_owned_or_subject_trigger = yes
-			}
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			random_state = {
-				limit = { 
-					OR = {
-						state = 741
-						state = 286
-						state = 671
-						state = 670
-					}
-					OWNER = { is_owned_or_subject_trigger = yes }	
-					NOT = {
-						has_state_flag = FRA_colonial_industry_target
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			462 = {
+				add_extra_state_shared_building_slots = 4
 				set_state_flag = FRA_colonial_industry_target
 			}
 		}
@@ -624,20 +515,16 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			random_state = {
-				limit = { 
-					OR = {
-						state = 677
-						state = 680
-						state = 554
-						state = 553
-					}
-					OWNER = { is_owned_or_subject_trigger = yes }	
-					NOT = {
-						has_state_flag = FRA_colonial_industry_target
-					}
-				}
-				add_extra_state_shared_building_slots = 2
+			677 = {
+				add_extra_state_shared_building_slots = 4
+				set_state_flag = FRA_colonial_industry_target
+			}
+			554 = {
+				add_extra_state_shared_building_slots = 4
+				set_state_flag = FRA_colonial_industry_target
+			}
+			553 = {
+				add_extra_state_shared_building_slots = 4
 				set_state_flag = FRA_colonial_industry_target
 			}
 		}
@@ -647,7 +534,8 @@
 		icon = GFX_focus_generic_industry_3
 		available = {
 		}
-		prerequisite = { focus = FRA_algerie_france focus = FRA_invest_in_west_africa focus = FRA_invest_in_indochina focus = FRA_invest_in_syria }
+		prerequisite = { focus = FRA_invest_in_west_africa }
+		prerequisite = { focus = FRA_invest_in_syria }
 		x = 2
 		y = 1
 		relative_position_id = FRA_algerie_france
@@ -672,10 +560,9 @@
 				}
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
 			}
 		}
 	}
@@ -804,7 +691,7 @@
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -816,7 +703,7 @@
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
