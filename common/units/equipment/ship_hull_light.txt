@@ -100,7 +100,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.80
 		
 		naval_range = 1600
@@ -110,7 +110,7 @@ equipments = {
 
 		fuel_consumption = 0
 		
-		build_cost_ic = 520
+		build_cost_ic = 800
 		resources = {
 			steel = 2
 		}
@@ -171,7 +171,7 @@ equipments = {
 		reliability = 0.85
 		naval_range = 2000
 		max_strength = 50
-		build_cost_ic = 650
+		build_cost_ic = 1000
 		resources = {
 			steel = 2
 		}
@@ -240,7 +240,7 @@ equipments = {
 		reliability = 0.90
 		naval_range = 2400
 		max_strength = 60
-		build_cost_ic = 780
+		build_cost_ic = 1200
 		manpower = 250
 
 		default_modules = {
@@ -304,10 +304,10 @@ equipments = {
 
 
 		surface_detection = 20
-		reliability = 0.92
+		reliability = 0.95
 		naval_range = 2800
 		max_strength = 70
-		build_cost_ic = 930
+		build_cost_ic = 1400
 		resources = {
 			steel = 2
 			chromium = 0

@@ -150,13 +150,25 @@ NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy 
         1.0,   -- high --1.0
         0.1,   -- I am death incarnate! --0.1
     }
+NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
+		0.0, -- HOLD
+		1.0, -- PATROL
+		1.0, -- STRIKE FORCE
+		0.5, -- CONVOY RAIDING
+		0.5, -- CONVOY ESCORT
+		0.3, -- MINES PLANTING
+		0.3, -- MINES SWEEPING
+		0.0, -- TRAIN
+		0.0, -- RESERVE_FLEET
+		1.0, -- NAVAL_INVASION_SUPPORT
+	}
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.00                            -- supremacy of a ship is calculated using its IC, manpower and a base define --0.05
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.05 --0.005
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 0 --0 yani vanilla deger
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1000.0 --1000.0
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.00000 --0.01
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.1  -- maximum penalty to get from larger fleets --0.75 yani vanilla deger   
-NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0	-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
+NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0	-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS = 0.01 -- each ship that joins the combat will have this penalty to be added into positioning --0.01 yani vanilla deger
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.025  -- the accumulated penalty from new ships will be clamped to this value --0.25 yani vanilla deger
 NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS = 0.005 -- the accumulated penalty from new ships will decay hourly by this value --0.05 yani vanilla deger

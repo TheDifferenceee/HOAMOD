@@ -114,7 +114,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 15
-		naval_speed = 20
+		naval_speed = 30
 		reliability = 0.80
 		
 		naval_range = 2400
@@ -122,9 +122,9 @@ equipments = {
 		max_strength = 120		
 		
 
-		fuel_consumption = 20
+		fuel_consumption = 0
 		
-		build_cost_ic = 2000
+		build_cost_ic = 1600
 		resources = {
 			steel = 4
 		}
@@ -153,9 +153,9 @@ equipments = {
 		priority = 1900
 		parent = ship_hull_cruiser_1
 		manpower = 1000
-		naval_speed = 24
+		naval_speed = 30
 		reliability = 0.85
-		build_cost_ic = 2500
+		build_cost_ic = 2000
 		naval_range = 3000
 		max_strength = 150
 		resources = {
@@ -224,8 +224,8 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1900
 		parent = ship_hull_cruiser_2
-		naval_speed = 28
-		build_cost_ic = 3100
+		naval_speed = 30
+		build_cost_ic = 2400
 		reliability = 0.90
 		max_strength = 180
 		naval_range = 3600
@@ -309,10 +309,10 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1900
 		parent = ship_hull_cruiser_3
-		naval_speed = 32
+		naval_speed = 30
 		reliability = 0.95
 		manpower = 1000
-		build_cost_ic = 3700
+		build_cost_ic = 2800
 		naval_range = 4200
 		max_strength = 210
 		resources = {
