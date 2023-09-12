@@ -402,7 +402,7 @@ leader_traits = {
 		}
 		
 		trait_xp_factor = {
-			infantry_leader = 0.1     #+100%
+			infantry_leader = 0.25     #+100%
 		}
 		
 		new_commander_weight = {

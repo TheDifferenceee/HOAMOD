@@ -51,9 +51,9 @@ NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.4 -- multiplactive resourc
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 32									-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 32								-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5									-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked --5 
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 1   --Base cost to unlock a regiment slot, --20
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 1  --Base cost to change a regiment column. --5
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 1    --Base cost to unlock a support slot --10
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0   --Base cost to unlock a regiment slot, --20
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0  --Base cost to change a regiment column. --5
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0    --Base cost to unlock a support slot --10
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 900			--Max army experience a country can store --500
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 900			--Max navy experience a country can store --500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 900			--Max air experience a country can store --500
