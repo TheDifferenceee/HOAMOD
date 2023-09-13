@@ -183,6 +183,7 @@ rom_kendiniasan = {
             add_state_core = 43
             add_state_core = 154
             add_state_core = 155
+			add_state_core = 664
 		}
 	}
 }
