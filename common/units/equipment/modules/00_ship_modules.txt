@@ -844,7 +844,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.04
+			naval_speed = -0.03
 		}
 		
 		add_average_stats = {
@@ -877,7 +877,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.04
+			naval_speed = -0.03
 		}
 		
 		add_average_stats = {
@@ -910,7 +910,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.04
+			naval_speed = -0.03
 		}
 		
 		add_average_stats = {
@@ -943,7 +943,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			naval_speed = -0.04
+			naval_speed = -0.03
 		}
 		
 		add_average_stats = {
@@ -1272,6 +1272,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 8
 			build_cost_ic = 200
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1295,6 +1296,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 10
 			build_cost_ic = 250
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1322,6 +1324,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 12
 			build_cost_ic = 300
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1349,6 +1352,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 14
 			build_cost_ic = 350
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1375,6 +1379,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 4
 			build_cost_ic = 100
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1399,6 +1404,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 5
 			build_cost_ic = 125
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1426,6 +1432,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 6
 			build_cost_ic = 150
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1452,6 +1459,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 7
 			build_cost_ic = 175
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1477,6 +1485,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 24
 			build_cost_ic = 400
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1499,10 +1508,11 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 30
 			build_cost_ic = 500
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.25
+			naval_speed = 0.2
 
 		}
 		
@@ -1527,10 +1537,11 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 36
 			build_cost_ic = 600
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.5
+			naval_speed = 0.4
 
 		}
 		
@@ -1554,10 +1565,11 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 42
 			build_cost_ic = 700
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.75
+			naval_speed = 0.6
 
 		}
 		
@@ -1580,6 +1592,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 80
 			build_cost_ic = 800
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1602,10 +1615,11 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 100
 			build_cost_ic = 1000
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.25
+			naval_speed = 0.15
 
 		}
 		
@@ -1630,10 +1644,11 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 120
 			build_cost_ic = 1200
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.5
+			naval_speed = 0.3
 
 			
 		}
@@ -1658,10 +1673,11 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 140
 			build_cost_ic = 1400
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.75
+			naval_speed = 0.45
 
 			
 		}
@@ -1685,6 +1701,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 80
 			build_cost_ic = 600
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1707,6 +1724,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 100
 			build_cost_ic = 750
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1735,6 +1753,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 120
 			build_cost_ic = 900
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1762,6 +1781,7 @@ equipment_modules = {
 		add_stats = {
 			fuel_consumption = 140
 			build_cost_ic = 1050
+			naval_torpedo_damage_reduction_factor = 0.8
 		}
 		
 		multiply_stats = {
@@ -1798,7 +1818,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 4
+			torpedo_attack = 20
 			build_cost_ic = 80
 		}
 		multiply_stats = {
@@ -1818,7 +1838,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 5
+			torpedo_attack = 25
 			naval_torpedo_hit_chance_factor = 0.01
 			build_cost_ic = 100
 		}
@@ -1850,7 +1870,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 6
+			torpedo_attack = 30
 			build_cost_ic = 120
 			naval_torpedo_hit_chance_factor = 0.015
 		}
@@ -1872,7 +1892,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 7
+			torpedo_attack = 35
 			build_cost_ic = 140
 			naval_torpedo_hit_chance_factor = 0.02
 		}
@@ -1895,7 +1915,7 @@ equipment_modules = {
 
 		
 		add_stats = {
-			torpedo_attack = 4
+			torpedo_attack = 20
 			build_cost_ic = 80
 		}
 		
@@ -1917,7 +1937,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 5
+			torpedo_attack = 25
 			build_cost_ic = 100
 			naval_torpedo_hit_chance_factor = 0.01
 		}
@@ -1944,7 +1964,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 6
+			torpedo_attack = 30
 			build_cost_ic = 120
 			naval_torpedo_hit_chance_factor = 0.015
 		}
@@ -1968,7 +1988,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 7
+			torpedo_attack = 35
 			build_cost_ic = 140
 			naval_torpedo_hit_chance_factor = 0.02
 		}
