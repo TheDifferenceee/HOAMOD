@@ -975,13 +975,6 @@ focus_tree = {
 					tag = YUN
 					tag = SHX
 					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
-
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
 				}				
 			}
 		}
