@@ -510,7 +510,7 @@ equipments = {
 		}
 		naval_range = 5600
 		
-		max_strength = 7200
+		max_strength = 720
 		naval_speed = 30
 		fuel_consumption = 0
 		reliability = 0.95

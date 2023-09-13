@@ -162,6 +162,11 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		0.0, -- RESERVE_FLEET
 		1.0, -- NAVAL_INVASION_SUPPORT
 	}
+NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
+		80.0,	-- big guns
+		30.0,	-- torpedoes
+		45.0,	-- small guns
+	}
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.00                            -- supremacy of a ship is calculated using its IC, manpower and a base define --0.05
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.05 --0.005
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 0 --0 yani vanilla deger

@@ -25,9 +25,9 @@ equipments = {
 
 		torpedo_attack = 0
 		lg_attack = 0.25
-		naval_speed = 12
-		max_strength = 12 #60
-		max_organisation = 6 #30
+		naval_speed = 1
+		max_strength = 60 #60
+		max_organisation = 60 #30
 		anti_air_attack = 0.1
 
 
