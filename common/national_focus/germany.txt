@@ -1590,6 +1590,27 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_extra_tech_slott
+		icon = GFX_goal_ger_push_limits
+		text = extra_tech_slot
+		prerequisite = { focus = GER_german_war_economy}
+		prerequisite = { focus = GER_integrate_war_economies}
+		x = 1
+		y = 1
+		relative_position_id = GER_integrate_war_economies
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 	focus = {
 		id = GER_grosraumwirtschaft
