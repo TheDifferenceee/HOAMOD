@@ -27,7 +27,7 @@ equipments = {
 		lg_attack = 0.25
 		naval_speed = 1
 		max_strength = 60 #60
-		max_organisation = 60 #30
+		max_organisation = 30 #30
 		anti_air_attack = 0.1
 
 
