@@ -529,6 +529,58 @@
 			}
 		}
 	}
+	#focus = {
+		#id = FRA_invest_in_indochina
+		#icon = GFX_focus_generic_industry_1
+		#x = 2
+		#y = 1
+		
+		#prerequisite = { focus = FRA_invest_in_the_colonies }
+		#mutually_exclusive = { }
+		#relative_position_id = FRA_invest_in_the_colonies
+		#cost = 5
+
+		#ai_will_do = {
+			#factor = 1
+		#}
+
+		#available = {
+			#any_state = {
+				#OR = {
+					#is_core_of = VIN
+					#is_core_of = CAM
+					#is_core_of = LAO
+				#}
+				#is_owned_or_subject_trigger = yes
+			#}
+		#}
+		
+		#bypass = {
+
+		#}
+
+		#cancel_if_invalid = yes
+		#continue_if_invalid = no
+		#available_if_capitulated = yes
+
+		#search_filters = { FOCUS_FILTER_INDUSTRY }
+		#completion_reward = {
+			#random_state = {
+				#limit = { 
+					#OR = {
+						#state = 741
+						#state = 286
+						#state = 671
+						#state = 670
+					#}
+					#OWNER = { is_owned_or_subject_trigger = yes }	
+					#NOT = {
+						#has_state_flag = FRA_colonial_industry_target
+					#}
+				#}
+			#}
+		#}
+	#}
 	focus = {
 		id = FRA_colonial_industry
 		icon = GFX_focus_generic_industry_3
