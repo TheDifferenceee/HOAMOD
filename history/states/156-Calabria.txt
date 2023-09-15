@@ -2,6 +2,9 @@
 state = {
 	id = 156
 	name = "STATE_156"
+	resources={
+		chromium=20.000
+	}
 	manpower = 1772000 # was 2966315 before Puglia was added
 	
 	state_category = town
