@@ -23,6 +23,7 @@
  rom_kendiniasan:0 "Romania Annex Decisions"
  ast_kendiniasan:0 "Australia Annex Decisions"
  jap_kendiniasan:0 "Japan War decisions"
+ declare_war_to_iraq:0 "Declare War to Iraq"
  annex_bulgaria:0 "Annex Bulgaria"
  annex_hungary:0 "Annex Hungary"
  annex_newzealand:0 "Annex New Zealand"

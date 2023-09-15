@@ -321,7 +321,7 @@ ast_kendiniasan = {
 }
 
 jap_kendiniasan = {
-	arab_war = {
+	declare_to_iraq = {
 
         icon = generic_prepare_civil_war
 

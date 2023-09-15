@@ -228,7 +228,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -302,7 +302,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -551,7 +551,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_defense_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -863,7 +863,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = royal_ordinance_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1862,7 +1862,7 @@ focus_tree = {
 		icon = GFX_ENG_royal_army
 		x = 24
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2463,7 +2463,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = uk_mediterranean_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -5749,6 +5749,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		add_political_power = 25
 			RAJ = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
@@ -5793,7 +5794,7 @@ focus_tree = {
 					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
-						type = industrial_complex
+						type = dockyard
 						level = 1
 						instant_build = yes
 					}
@@ -5950,6 +5951,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		add_political_power = 25
 			AST = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
@@ -5995,7 +5997,7 @@ focus_tree = {
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = dockyard
+						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
@@ -6029,7 +6031,7 @@ focus_tree = {
 
 	focus = {
 		id = uk_new_zealand_focus 
-		prerequisite = { focus = uk_australia_focus }
+		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
 			any_country = {
 				original_tag = NZL
@@ -6064,8 +6066,8 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_eng_develop_nzl
-		x = 0
-		y = 1
+		x = 1
+		y = 2
 		relative_position_id = uk_australia_focus
 		cost = 5
 
@@ -6110,6 +6112,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		add_political_power = 25
 			NZL = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
@@ -6155,7 +6158,7 @@ focus_tree = {
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = dockyard
+						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
@@ -6270,6 +6273,7 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+		add_political_power = 25
 			CAN = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				random_owned_controlled_state = {
@@ -6315,7 +6319,7 @@ focus_tree = {
 					}
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
-						type = dockyard
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
@@ -6385,6 +6389,7 @@ focus_tree = {
 		icon = GFX_goal_eng_develop_saf
 		x = 2
 		y = 3
+		allow_branch = { always = no }
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
 

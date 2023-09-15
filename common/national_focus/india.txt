@@ -2155,7 +2155,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2553,7 +2553,7 @@ focus_tree = {
 		icon = GFX_focus_smiling_buddha
 		prerequisite = { focus = RAJ_royal_indian_air_force }
 		prerequisite = { focus = RAJ_institute_of_fundamental_research }
-		x = 2
+		x = 3
 		y = 4
 		relative_position_id = RAJ_british_pilot_training
 
@@ -2564,14 +2564,7 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = { NOT = { has_government = fascism } }
-				compare_autonomy_state > autonomy_colony
-			}
-			if = {
-				limit = { has_government = fascism }
-				compare_autonomy_state > autonomy_reichsprotectorate
-			}
+
 		}
 
 		bypass = {
@@ -2828,7 +2821,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_industrial_expansion
 
-		cost = 4
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3519,6 +3512,7 @@ focus_tree = {
 		prerequisite = { focus = RAJ_clamp_down_on_corruption }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = RAJ_clamp_down_on_corruption
 
 		cost = 5
