@@ -1565,6 +1565,7 @@
 		prerequisite = { focus = CAN_if_day }
 		x = -3
 		y = 6
+		allow_branch = { always = no }
 		relative_position_id = CAN_defence_of_canada_regulations
 
 		cost = 10

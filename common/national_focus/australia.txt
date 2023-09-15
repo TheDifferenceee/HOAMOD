@@ -2807,8 +2807,6 @@
 		}
 
 		available = {
-			is_subject = no
-			has_war = yes
 			is_in_faction = yes
 			OR = {
 				num_of_factories > 50
@@ -3024,7 +3022,7 @@
 		}
 
 		available = {
-			is_subject = no
+
 		}
 		
 		bypass = {

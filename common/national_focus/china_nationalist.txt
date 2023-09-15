@@ -13,7 +13,7 @@
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1000 }
+	continuous_focus_position = { x = 100 y = 1500 }
 
 #	focus = {
 #		id = CHI_
@@ -55,13 +55,13 @@
 	focus = {
 		id = CHI_three_principles_of_the_people
 		icon = GFX_goal_generic_national_unity
-		x = 5
+		x = 3
 		y = 0
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
-			factor = 4
+			factor = 5
 		}
 
 		available = {
@@ -670,14 +670,14 @@
 		id = CHI_nationalism
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = CHI_three_principles_of_the_people }
-		x = 4
+		x = 0
 		y = 1
 		relative_position_id = CHI_three_principles_of_the_people
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
-			factor = 4
+			factor = 5
 		}
 
 		available = {
@@ -707,10 +707,10 @@
 		y = 1
 		relative_position_id = CHI_nationalism
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
-			factor = 4
+			factor = 5
 		}
 
 		available = {
@@ -784,7 +784,7 @@
 		y = 1
 		relative_position_id = CHI_foreign_threats
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 10
@@ -1380,14 +1380,15 @@
 	focus = {
 		id = CHI_military_affairs_commission
 		icon = GFX_focus_secret_rearmament
-		x = 10
-		y = 0
+		prerequisite = { focus = CHI_united_front }
+		x = 0
+		y = 4
 		relative_position_id = CHI_three_principles_of_the_people
 
 		cost = 10
 
 		ai_will_do = {
-			factor = 4
+			factor = 3
 		}
 
 		available = {
@@ -1691,10 +1692,10 @@
 		y = 1
 		relative_position_id = CHI_military_affairs_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
-			factor = 4
+			factor = 3
 		}
 
 		available = {
@@ -1827,8 +1828,9 @@
 	focus = {
 		id = CHI_unified_industrial_planning
 		icon = GFX_goal_generic_construction
-		x = 7
-		y = 0
+		prerequisite = { focus = CHI_army_reform }
+		x = 0
+		y = 2
 		relative_position_id =  CHI_military_affairs_commission
 
 		cost = 10
@@ -1937,7 +1939,7 @@
 		y = 1
 		relative_position_id = CHI_unified_industrial_planning
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1990,6 +1992,7 @@
 		prerequisite = { focus = CHI_rural_reconstruction_movement }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = CHI_rural_reconstruction_movement
 
 		cost = 10
@@ -2035,7 +2038,6 @@
 		}
 
 		available = {
-			controls_state = 615
 			NOT = {
 				has_idea = CHI_hyper_inflation_5
 			}
@@ -2137,7 +2139,7 @@
 		y = 1
 		relative_position_id = CHI_unified_industrial_planning
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -2206,7 +2208,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 4
 		}
 
 		available = {
@@ -2238,7 +2240,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 1
+			factor = 4
 		}
 
 		available = {

@@ -792,7 +792,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 8
+			factor = 29
 		}
 
 		available = {
@@ -878,7 +878,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 29
 		}
 
 		available = {
@@ -952,7 +952,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 29
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_bureau_of_industry
@@ -988,7 +988,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 29
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_wairarapa_sheep_farms
@@ -1091,7 +1091,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 29
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_domestic_arms_industry
@@ -1158,7 +1158,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 29
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_department_of_scientific_and_industrial_research
@@ -1285,6 +1285,7 @@
 		prerequisite = { focus = NZL_project_seal }
 		x = -2
 		y = 5
+		allow_branch = { always = no }
 		relative_position_id = NZL_national_roads_board
 
 		cost = 10
@@ -1358,7 +1359,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 28
 		}
 
 		available = {
@@ -1396,7 +1397,7 @@
 		cost = 5
 
 		ai_will_do = {
-			factor = 25
+			factor = 27
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_industrial_conscription
@@ -1491,7 +1492,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 25
+			factor = 26
 			modifier = {
 				factor = 2
 				has_completed_focus = NZL_industrial_conscription
@@ -1673,8 +1674,6 @@
 		}
 
 		available = {
-			is_subject = no
-			has_war = yes
 			is_in_faction = yes
 			OR = {
 				num_of_factories > 50
@@ -1762,7 +1761,7 @@
 		cost = 10
 
 		ai_will_do = {
-			factor = 2
+			factor = 30
 		}
 
 		available = {
