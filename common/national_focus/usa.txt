@@ -1869,7 +1869,7 @@ focus_tree = {
 
 		available = {
 			congress_low_support_trigger = yes
-			democratic > 0.95
+			democratic > 0.5
 			NOT = { has_idea_with_trait = fascist_demagogue }
 			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
@@ -1922,7 +1922,7 @@ focus_tree = {
 			else = {
 				congress_high_support_trigger = yes
 			}
-			democratic > 0.95
+			democratic > 0.5
 			custom_trigger_tooltip = {
 				tooltip = USA_lend_lease_act_neutrality_tt
 			}
@@ -2019,7 +2019,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			democratic > 0.95
+			democratic > 0.5
 		}
 		bypass = {
 			AND = {
@@ -2111,7 +2111,7 @@ focus_tree = {
 				has_war = yes
 				has_war_support > 0.3
 			}
-			democratic > 0.95
+			democratic > 0.5
 		}
 		continue_if_invalid = yes
 		x = 0
@@ -2129,6 +2129,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+		    add_ideas = USA_consumer_balance
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
 			if = {
@@ -2166,9 +2167,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			date > 1941.1.1
-			democratic > 0.80
+			democratic > 0.50
 		}
 		completion_reward = {
+		    remove_ideas = USA_consumer_balance
 			swap_ideas = {
 				remove_idea = great_depression_4
 				add_idea = great_depression_5
@@ -5833,18 +5835,18 @@ focus_tree = {
 
 		complete_tooltip = {
 			378 = { 
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
 			358 = { 
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5868,10 +5870,10 @@ focus_tree = {
 					}
 				}
 				378 = { 
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 5
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -5887,10 +5889,10 @@ focus_tree = {
 					}
 				}
 				358 = { 
-					add_extra_state_shared_building_slots = 5
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 5
+						level = 3
 						instant_build = yes
 					}
 				}
