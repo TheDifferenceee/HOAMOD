@@ -2553,7 +2553,7 @@ focus_tree = {
 		icon = GFX_focus_smiling_buddha
 		prerequisite = { focus = RAJ_royal_indian_air_force }
 		prerequisite = { focus = RAJ_institute_of_fundamental_research }
-		x = 1
+		x = 2
 		y = 4
 		relative_position_id = RAJ_british_pilot_training
 
@@ -2866,6 +2866,7 @@ focus_tree = {
 		prerequisite = { focus = RAJ_institute_of_fundamental_research }
 		x = 0
 		y = 4
+		allow_branch = { always = no }
 		relative_position_id = RAJ_industrial_expansion
 
 		cost = 10
