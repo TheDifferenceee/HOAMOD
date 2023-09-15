@@ -2441,7 +2441,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_3
 		
 		multiply_stats = {
-			naval_speed = -0.3
+			naval_speed = -0.2
 		}
 
 		build_cost_resources = {
