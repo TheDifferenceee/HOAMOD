@@ -21,7 +21,7 @@ technologies = {
 		planning_speed = 0.5
 		army_speed_factor = 0.10
 		enable_tactic = tactic_unexpected_thrust
-		org_loss_when_moving = -0.1
+		org_loss_when_moving = -0.15
 
 		doctrine = yes	
 		research_cost = 2.25
@@ -57,7 +57,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_infantry = {
-			max_organisation = 15
+			max_organisation = 10
 		}
 		
 		
@@ -560,7 +560,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			default_morale = 0.2
+			default_morale = 0.3
 			max_organisation = 10
 		}
 		# faster planning
@@ -781,7 +781,7 @@ technologies = {
 		}
 
 		
-		conscription = 0.02
+		conscription = 0.05
 		
 		path = {
 			leads_to_tech = nd_conscription 
@@ -833,7 +833,7 @@ technologies = {
 	nd_conscription = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		conscription = 0.03
+		conscription = 0.05
 
 		path = {
 			leads_to_tech = werwolf_guerillas 
@@ -877,7 +877,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		#Increased Partisan effect on your land occupied by others
-		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
+		resistance_damage_to_garrison_on_our_occupied_states = 0.30 
 
 		enable_tactic = tactic_guerrilla_tactics
 		
@@ -2620,7 +2620,7 @@ technologies = {
 		}
 		
 		land_reinforce_rate = 0.02
-		minimum_training_level = -0.1
+		minimum_training_level = -0.20
 		weekly_casualties_war_support = 0.001
 
 		doctrine = yes	
@@ -2817,10 +2817,10 @@ technologies = {
 	
 	deep_operations = {
 		category_tanks = {
-			max_organisation = 2
+			max_organisation = 3
 		}
 		armored_car = {
-			max_organisation = 2
+			max_organisation = 3
 		}
 
 		xp_research_type = army
@@ -2926,7 +2926,7 @@ technologies = {
 		supply_consumption_factor = -0.10
 		
 		infantry = {
-			combat_width = -0.4
+			max_strength = 7
 		}
 
 		
@@ -2978,16 +2978,16 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_tanks = {
-			max_organisation = 1
-			breakthrough = 0.10
+			max_organisation = 2
+			breakthrough = 0.20
 		}
 		category_all_infantry = {
 			max_organisation = 5
 			breakthrough = 0.10
 		}
 		armored_car = {
-			max_organisation = 1
-			breakthrough = 0.10
+			max_organisation = 2
+			breakthrough = 0.20
 		}
 		
 		enable_tactic = tactic_breakthrough
@@ -3161,7 +3161,7 @@ technologies = {
 		#Increased Partisan effect on your land occupied by others
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects 
 		#Land Units take less attrition
-		attrition = -0.1 #take 10% less attrition losses
+		attrition = -0.2 #take 10% less attrition losses
 		
 		enable_tactic = tactic_human_wave_tactics
 		
@@ -3318,7 +3318,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {
-			combat_width = -0.4
+			max_strength = 7
 		}
 
 		land_reinforce_rate = 0.15		
