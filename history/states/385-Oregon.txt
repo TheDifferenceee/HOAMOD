@@ -4,13 +4,13 @@ state={
 	name="STATE_385"
 	manpower = 953785
 	
-	state_category = town
+	state_category = city
 
 	history={
 		owner = USA
 		buildings = {
 			infrastructure = 3 #was: 5
-			industrial_complex = 1
+			industrial_complex = 3
 			air_base = 6
 			12211 = {
 				naval_base = 3

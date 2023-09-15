@@ -2129,6 +2129,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = USA_general_motors
 			if = {
 				limit = {
 					NOT = { has_idea = undisturbed_isolation }
@@ -2167,9 +2169,6 @@ focus_tree = {
 			democratic > 0.80
 		}
 		completion_reward = {
-			add_ideas = loltime_industry_focus
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = USA_general_motors
 			swap_ideas = {
 				remove_idea = great_depression_4
 				add_idea = great_depression_5
