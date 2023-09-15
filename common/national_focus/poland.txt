@@ -1949,7 +1949,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_complete_april_constitution
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 10
@@ -1972,7 +1972,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_polish_militarism
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 10
@@ -1994,7 +1994,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_consolidate_sanation_government
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 10
@@ -2039,7 +2039,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = POL_the_castle
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
@@ -2078,7 +2078,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_eliminate_socialist_parties
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 10
@@ -4478,7 +4478,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_dissolve_the_sejm
-		cost = 5
+		cost = 1
 		mutually_exclusive = { focus = POL_polish_revanchism focus = POL_baltic_security }
 		allow_branch = {
 			if = {
@@ -4528,7 +4528,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = POL_align_with_the_west
-		cost = 10
+		cost = 3
 
 		ai_will_do = {
 			factor = 10
