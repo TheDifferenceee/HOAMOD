@@ -321,7 +321,7 @@ ast_kendiniasan = {
 }
 
 jap_kendiniasan = {
-	declare_to_iraq = {
+	declare_war_to_iraq = {
 
         icon = generic_prepare_civil_war
 
@@ -329,9 +329,7 @@ jap_kendiniasan = {
             tag = JAP
         }
         available = {
-		    date > 1941.3.1
-                }
-            }
+		    date > 1941.6.1
         }
         visible = {
             JAP = {
