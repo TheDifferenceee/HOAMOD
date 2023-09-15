@@ -1,12 +1,12 @@
 state={
 	id=816
 	name="STATE_816"
-	state_category = town
+	state_category = city
 	history={
 		owner = USA
 		add_core_of = USA
 		buildings = {
-			industrial_complex = 2
+			industrial_complex = 3
 			infrastructure = 3
 			air_base = 3
 		}

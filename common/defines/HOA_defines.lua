@@ -47,6 +47,7 @@ NDefines.NPolitics.NAVY_LEADER_MAX_COST = 100                -- max cost BEFORE 
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100        -- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane. --200 
 NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 6   -- supply throughput per level of naval base --3 bunu degistirebilirim askerler atrittion yemezse
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.4 -- multiplactive resource bonus for each level of (non damaged) infrastructure --0.2
+NDefines.NBuildings.MAX_SHARED_SLOTS = 40
     
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 32									-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 32								-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
