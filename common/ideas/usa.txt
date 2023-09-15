@@ -703,6 +703,24 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
+				conversion_cost_civ_to_mil_factor= -0.5
+			}
+		}
+
+		loltime_industry_focus = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
 				production_speed_industrial_complex_factor = 0.50
 				production_speed_arms_factory_factor = 0.50
 				production_speed_dockyard_factor = 0.50
