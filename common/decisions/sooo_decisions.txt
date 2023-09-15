@@ -320,3 +320,34 @@ ast_kendiniasan = {
 
 }
 
+jap_kendiniasan = {
+	arab_war = {
+
+        icon = generic_prepare_civil_war
+
+        allowed = {
+            tag = JAP
+        }
+        available = {
+		    date > 1941.3.1
+                }
+            }
+        }
+        visible = {
+            JAP = {
+                has_war_with = ENG
+            }
+        }
+        cost = 50
+        fire_only_once = yes
+        ai_will_do = {
+            factor = 0
+        }
+        complete_effect = {
+            declare_war_on = {
+                target = IRQ
+                    type = annex_everything
+            }
+        }
+    }
+

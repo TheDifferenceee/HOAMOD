@@ -42,3 +42,9 @@ ast_kendiniasan = {
     }
 
 }
+
+jap_kendiniasan = {
+	icon = GFX_decision_category_generic
+	priority = {
+	base = 3
+    }
