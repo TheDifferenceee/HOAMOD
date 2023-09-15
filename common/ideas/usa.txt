@@ -16,7 +16,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 1
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.4
 				conscription_factor = -0.5
 				join_faction_tension = 0.20
 				local_resources_factor = -0.2
@@ -37,7 +37,7 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.65
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.35
 				conscription_factor = -0.4
 				join_faction_tension = 0.20
 				local_resources_factor = -0.15
@@ -58,10 +58,44 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.25
-				consumer_goods_factor = 0.175
+				consumer_goods_factor = 0.30
 				conscription_factor = -0.2
 				join_faction_tension = 0.20
 				local_resources_factor = -0.1
+			}
+		}
+		great_depression_4 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+		great_depression_5 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = { 
+
 			}
 		}
 		USA_limited_intervention = {
@@ -85,19 +119,19 @@ ideas = {
 				economy_cost_factor = 1
 			}
 		}
-		USA_consumer_balance = {
-		picture = generic_disjointed_gov
-		allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				has_government = democratic
-			}
-			removal_cost = -1
-			modifier = {
-				consumer_goods_factor = 0.15
-			}
-		}
+		#USA_consumer_balance = {
+		#picture = generic_disjointed_gov
+		#allowed = {
+				#always = no
+			#}
+			#allowed_civil_war = {
+				#has_government = democratic
+			#}
+			#removal_cost = -1
+			#modifier = {
+				#consumer_goods_factor = 0.15
+			#}
+		#}
 		USA_neutrality_act = {
 			picture = generic_production_bonus
 			
@@ -669,7 +703,9 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				conversion_cost_civ_to_mil_factor= -0.5
+				production_speed_industrial_complex_factor = 0.50
+				production_speed_arms_factory_factor = 0.50
+				production_speed_dockyard_factor = 0.50
 			}
 		}
 	

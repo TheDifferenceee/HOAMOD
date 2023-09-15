@@ -1238,7 +1238,10 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			USA_great_depression_level_down = yes
+			swap_ideas = {
+				remove_idea = great_depression
+				add_idea = great_depression_2
+			}
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
@@ -1279,7 +1282,10 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			USA_great_depression_level_down = yes
+			swap_ideas = {
+				remove_idea = great_depression_2
+				add_idea = great_depression_3
+			}
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_opposition = yes
@@ -1321,9 +1327,12 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			USA_great_depression_level_down = yes
+			swap_ideas = {
+				remove_idea = great_depression_3
+				add_idea = great_depression_4
+			}
 			USA_congress_medium_opposition = yes
-			add_ideas = USA_consumer_balance
+			#add_ideas = USA_consumer_balance
 			custom_effect_tooltip = federal_housing_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
@@ -2044,7 +2053,7 @@ focus_tree = {
 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = arms_factory
+					type = dockyard
 					level = 3
 					instant_build = yes
 				}
@@ -2055,40 +2064,6 @@ focus_tree = {
 			navy_experience = 50
 			army_experience = 50
 			air_experience = 10
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
-			random_owned_controlled_state = {
-				limit = {
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 2
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-				set_state_flag = USA_arsenal_of_democracy_3AF
-			}
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -2188,12 +2163,17 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		available = {
+			date > 1941.1.1
 			democratic > 0.95
 		}
 		completion_reward = {
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
+			swap_ideas = {
+				remove_idea = great_depression_4
+				add_idea = great_depression_5
+			}
 		}
 	}
 	
@@ -2224,10 +2204,10 @@ focus_tree = {
 			army_experience = 10
 			every_state = {
 				limit = { has_state_flag = USA_military_construction_5MF }
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2265,10 +2245,10 @@ focus_tree = {
 						region = 197
 					}
 				}
-				add_extra_state_shared_building_slots = 5
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = USA_military_construction_5MF
@@ -2523,6 +2503,40 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = USA_arsenal_of_democracy_3AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = USA_arsenal_of_democracy_3AF
+			}
 			random_owned_controlled_state = {
 				limit = {
 					arms_factory > 0
