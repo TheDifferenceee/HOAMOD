@@ -363,8 +363,8 @@ technologies = {
 			lg_armor_piercing = 0.05
 		}
 		heavy_cruiser = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
 		}
 
 		folder = {
@@ -447,8 +447,8 @@ technologies = {
 			lg_armor_piercing = 0.05
 		}
 		heavy_cruiser = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
 		}
 
 
