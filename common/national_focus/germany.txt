@@ -1433,9 +1433,13 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		64 = {
+				64 = {
 				add_resource = {
 					type = tungsten
+					amount = 12
+				}
+				add_resource = {
+					type = chromium
 					amount = 12
 				}
 				}
@@ -1444,10 +1448,18 @@ focus_tree = {
 					type = tungsten
 					amount = 12
 				}
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
 				}
 				60 = {
 				add_resource = {
 					type = tungsten
+					amount = 12
+				}
+				add_resource = {
+					type = chromium
 					amount = 12
 				}
 				}
@@ -1456,6 +1468,11 @@ focus_tree = {
 					type = tungsten
 					amount = 12
 				}
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+				
 				}
 			custom_effect_tooltip = GER_autobahn_tt
 			hidden_effect = {
