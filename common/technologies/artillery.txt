@@ -1275,6 +1275,12 @@ technologies = {
 	}
 
 	antitank4 = {
+
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
+		}
+
 		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1
@@ -1360,8 +1366,6 @@ technologies = {
 			anti_tank_equipment_3
 		}
 		enable_equipment_modules = {
-			tank_high_velocity_cannon_3
-			tank_heavy_cannon_3
 			auto_loader
 			tank_medium_cannon_3
 		}
