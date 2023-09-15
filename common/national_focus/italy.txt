@@ -3678,7 +3678,7 @@ focus_tree = {
 			custom_effect_tooltip = ITA_increase_production_military_industry_tt
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
-			#custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 		}
 	}
 
