@@ -938,7 +938,7 @@ equipments = {
 		
 		anti_air_attack = 0
 		
-		armor_value = 7
+		armor_value = 0
 
 		
 		surface_detection = 40
@@ -949,17 +949,17 @@ equipments = {
 		
 		naval_range = 4000
 		
-		max_strength = 140		
+		max_strength = 100		
 		
 
 		
-		build_cost_ic = 1700
+		build_cost_ic = 2000
 		resources = {
 			#oil = 2
-			steel = 4
+			steel = 3
 		}
 		
-		manpower = 960
+		manpower = 1000
 	}
 
 	###special snowflake hulls
@@ -1042,17 +1042,17 @@ equipments = {
 		
 		naval_range = 4000
 		
-		max_strength = 140		
+		max_strength = 100		
 		
 
 		
-		build_cost_ic = 1700
+		build_cost_ic = 2000
 		resources = {
 			#oil = 2
 			steel = 3
 		}
 		
-		manpower = 960
+		manpower = 1000
 	}
 	ship_hull_cruiser_panzerschiff = {
 		abbreviation = "hbf"
