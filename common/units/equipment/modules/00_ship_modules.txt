@@ -1271,7 +1271,7 @@ equipment_modules = {
 		
 		add_stats = {
 			fuel_consumption = 8
-			build_cost_ic = 200
+			build_cost_ic = 300
 			naval_torpedo_damage_reduction_factor = 0.95
 		}
 		
@@ -1281,7 +1281,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = light_ship_engine
-			convert_cost_ic = 100
+			convert_cost_ic = 150
 		}
 
 	}
@@ -1295,22 +1295,22 @@ equipment_modules = {
 		
 		add_stats = {
 			fuel_consumption = 10
-			build_cost_ic = 250
+			build_cost_ic = 375
 			naval_torpedo_damage_reduction_factor = 0.95
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.1
+			naval_speed = 0.15
 		}
 		
 		can_convert_from = {
 			module_category = light_ship_engine
-			convert_cost_ic = 125
+			convert_cost_ic = 182.5
 		}
 		
 		can_convert_from = {
 			module = light_ship_engine_1
-			convert_cost_ic = 62.5
+			convert_cost_ic = 93.75
 		}
 	}
 
@@ -1323,23 +1323,23 @@ equipment_modules = {
 		
 		add_stats = {
 			fuel_consumption = 12
-			build_cost_ic = 300
+			build_cost_ic = 450
 			naval_torpedo_damage_reduction_factor = 0.95
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.2
+			naval_speed = 0.3
 
 		}
 		
 		can_convert_from = {
 			module_category = light_ship_engine
-			convert_cost_ic = 150
+			convert_cost_ic = 225
 		}
 		
 		can_convert_from = {
 			module = light_ship_engine_2
-			convert_cost_ic = 75
+			convert_cost_ic = 112.5
 		}
 	}
 	light_ship_engine_4 = {
@@ -1351,23 +1351,23 @@ equipment_modules = {
 		
 		add_stats = {
 			fuel_consumption = 14
-			build_cost_ic = 350
+			build_cost_ic = 525
 			naval_torpedo_damage_reduction_factor = 0.95
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.3
+			naval_speed = 0.45
 
 		}
 		
 		can_convert_from = {
 			module_category = light_ship_engine
-			convert_cost_ic = 175
+			convert_cost_ic = 262.5
 		}
 		
 		can_convert_from = {
 			module = light_ship_engine_3
-			convert_cost_ic = 87.5
+			convert_cost_ic = 131.25
 		}
 	}
 	sub_ship_engine_1 = {
@@ -1378,7 +1378,7 @@ equipment_modules = {
 		
 		add_stats = {
 			fuel_consumption = 4
-			build_cost_ic = 100
+			build_cost_ic = 160
 		}
 		
 		multiply_stats = {
@@ -1389,7 +1389,7 @@ equipment_modules = {
 		
 		can_convert_from = {
 			module_category = sub_ship_engine
-			convert_cost_ic = 50
+			convert_cost_ic = 80
 		}
 	}
 
@@ -1402,21 +1402,21 @@ equipment_modules = {
 		
 		add_stats = {
 			fuel_consumption = 5
-			build_cost_ic = 125
+			build_cost_ic = 200
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.1
+			naval_speed = 0.15
 		}
 		
 		can_convert_from = {
 			module_category = sub_ship_engine
-			convert_cost_ic = 62.5
+			convert_cost_ic = 100
 		}
 		
 		can_convert_from = {
 			module = sub_ship_engine_1
-			convert_cost_ic = 31.25
+			convert_cost_ic = 50
 		}
 	}
 
@@ -1429,21 +1429,21 @@ equipment_modules = {
 		
 		add_stats = {
 			fuel_consumption = 6
-			build_cost_ic = 150
+			build_cost_ic = 240
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.2
+			naval_speed = 0.3
 		}
 		
 		can_convert_from = {
 			module_category = sub_ship_engine
-			convert_cost_ic = 75
+			convert_cost_ic = 120
 		}
 		
 		can_convert_from = {
 			module = sub_ship_engine_2
-			convert_cost_ic = 37.5
+			convert_cost_ic = 60
 		}
 	}
 	sub_ship_engine_4 = {
@@ -1455,21 +1455,21 @@ equipment_modules = {
 		
 		add_stats = {
 			fuel_consumption = 7
-			build_cost_ic = 175
+			build_cost_ic = 280
 		}
 		
 		multiply_stats = {
-			naval_speed = 0.3
+			naval_speed = 0.45
 		}
 		
 		can_convert_from = {
 			module_category = sub_ship_engine
-			convert_cost_ic = 87.5
+			convert_cost_ic = 140
 		}
 		
 		can_convert_from = {
 			module = sub_ship_engine_3
-			convert_cost_ic = 43.75
+			convert_cost_ic = 70
 		}
 	}
 	cruiser_ship_engine_1 = {
