@@ -24,7 +24,7 @@ equipments = {
 		surface_visibility = 14
 
 		torpedo_attack = 0
-		lg_attack = 0.25
+		lg_attack = 0
 		naval_speed = 1
 		max_strength = 60 #60
 		max_organisation = 30 #30
