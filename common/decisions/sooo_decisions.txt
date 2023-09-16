@@ -329,7 +329,11 @@ jap_kendiniasan = {
             tag = JAP
         }
         available = {
-		    date > 1941.6.1
+            JAP = {
+                NOT = {
+                    controls_state = 439
+                }
+            }
         }
         visible = {
             JAP = {
