@@ -125,7 +125,7 @@ news_event = {
 	hidden = yes
 	
 	trigger = {
-		YUG = { surrender_progress > 0.8 }
+		YUG = { surrender_progress > 0.6 }
 		ITA = { has_war_with = YUG }
 		NOT = { has_global_flag = fall_of_yugos }
 	}
@@ -160,7 +160,7 @@ news_event = {
 	hidden = yes
 	
 	trigger = {
-		GRE = { surrender_progress > 0.8 }
+		GRE = { surrender_progress > 0.6 }
 		ITA = { has_war_with = GRE }
 		NOT = { has_global_flag = fall_of_greek }
 	}
