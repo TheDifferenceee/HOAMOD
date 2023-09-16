@@ -167,7 +167,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		1.0, -- NAVAL_INVASION_SUPPORT
 	}
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		80.0,	-- big guns
+		60.0,	-- big guns
 		10.0,	-- torpedoes
 		40.0,	-- small guns
 	}
