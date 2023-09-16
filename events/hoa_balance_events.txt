@@ -64,6 +64,29 @@ news_event = {
 				591 = {set_compliance = 70}
 				592 = {set_compliance = 70}
 				593 = {set_compliance = 70}
+				601 = {set_compliance = 40}
+				752 = {set_compliance = 40}
+				751 = {set_compliance = 40}
+				605 = {set_compliance = 40}
+				603 = {set_compliance = 40}
+				748 = {set_compliance = 40}
+				602 = {set_compliance = 40}
+				595 = {set_compliance = 40}
+				596 = {set_compliance = 40}
+				749 = {set_compliance = 40}
+				600 = {set_compliance = 40}
+				606 = {set_compliance = 40}
+				620 = {set_compliance = 40}
+				750 = {set_compliance = 40}
+				607 = {set_compliance = 40}
+				744 = {set_compliance = 40}
+				613 = {set_compliance = 40}
+				598 = {set_compliance = 40}
+				597 = {set_compliance = 40}
+				743 = {set_compliance = 40}
+				614 = {set_compliance = 40}
+				608 = {set_compliance = 40}
+				
 
 		    }
 		}
