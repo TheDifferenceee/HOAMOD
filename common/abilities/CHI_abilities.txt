@@ -23,7 +23,7 @@ ability = {
 			add_temporary_buff_to_units = {
 				combat_offense = 0.2
 				combat_breakthrough = 0.2
-				str_damage_multiplier = 0.75
+				str_damage_multiplier = 1.5
 				cannot_retreat_while_attacking = 1.0
 				
 				days = 7
