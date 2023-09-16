@@ -37,16 +37,14 @@ ability = {
 			}
 		}
 		
-		cost = 0.22
+		cost = 0.01
 		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
 				combat_offense = 0.2
-				combat_breakthrough = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
-				war_support_reduction_on_damage = 0.2
+				combat_breakthrough = 0.2
+				str_damage_multiplier = 5.0
 				cannot_retreat_while_attacking = 1.0
 				
 				days = 7
@@ -74,17 +72,14 @@ ability = {
 			}
 		}
 		
-		cost = 0.22
+		cost = 0.01
 		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
 				combat_defense = 0.2
-				combat_entrenchment = 0.25
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
-				war_support_reduction_on_damage = 0.2
-				cannot_retreat_while_defending = 1.0
+				combat_entrenchment = 0.2
+				str_damage_multiplier = 0.4
 				
 				days = 7
 				tooltip = ABILITY_LAST_STAND_TOOLTIP
@@ -121,11 +116,11 @@ ability = {
 			is_border_war = no
 		}
 		
-		cost = 0.12
+		cost = 0.01
 		duration = 168
 		
 		unit_modifiers = {
-			planning_speed = 4.0
+			planning_speed = 1.0
 		}
 		
 		
@@ -158,12 +153,12 @@ ability = {
 		
 		unit_modifiers = {
 			fort = {
-				attack = 0.2
+				attack = 0.1
 			}
-			fortification_damage = 2.0
-			fortification_collateral_chance = 2.0
+			fortification_damage = 1.0
+			fortification_collateral_chance = 1.0
 		}
-		cost = 0.1
+		cost = 0.01
 		duration = 168
 		
 		
@@ -220,7 +215,7 @@ ability = {
 			naval_invasion_prep_speed = 0.5
 		}
 		
-		cost = 0.1
+		cost = 0.01
 		duration = 168
 	}
 	
@@ -258,13 +253,13 @@ ability = {
 		
 		
 		unit_modifiers = {
-			river_crossing_factor = -0.4
+			river_crossing_factor = -0.2
 			river = {
-				attack = 0.2
+				attack = 0.1
 			}
 		}
 		
-		cost = 0.1
+		cost = 0.01
 		duration = 168
 		
 		ai_will_do = {
@@ -299,7 +294,7 @@ ability = {
 			supply_units = 168
 		}
 		
-		cost = 0.2
+		cost = 0.1
 		duration = 168
 		cooldown = 504
 	}
