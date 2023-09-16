@@ -2094,7 +2094,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = dockyard
+					type = arms_factory
 					level = 3
 					instant_build = yes
 				}
@@ -2246,10 +2246,10 @@ focus_tree = {
 						region = 197
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = USA_military_construction_5MF
@@ -2516,7 +2516,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -2533,7 +2533,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -2553,10 +2553,10 @@ focus_tree = {
 						region = 120
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = USA_USACE_projects_3AF
