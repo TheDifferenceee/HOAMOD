@@ -23,7 +23,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_factory_efficiency_gain_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.10
 				production_factory_max_efficiency_factor = 0.05
 				consumer_goods_factor = 0.05
 				production_speed_industrial_complex_factor = 0.05
@@ -130,7 +130,60 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
-				production_factory_efficiency_gain_factor = -0.25
+			}
+			
+		}
+
+		soviet_economic_plan2 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {				
+				production_factory_efficiency_gain_factor = -0.20
+			}
+			
+		}
+
+		soviet_economic_plan3 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {				
+				production_factory_efficiency_gain_factor = -0.05
+			}
+			
+		}
+
+		soviet_economic_plan4 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {				
+				production_factory_efficiency_gain_factor = -0.10
 			}
 			
 		}
