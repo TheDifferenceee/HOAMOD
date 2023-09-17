@@ -66,6 +66,15 @@ on_actions = {
 			remove_ideas = HOL_aloof_neutrality
 			remove_ideas = HOL_wilhelmina
 		  }
+		  GRE = { 
+		  load_focus_tree = generic_focus 
+			remove_ideas = GRE_agrarian_society
+			remove_ideas = GRE_political_instability
+			remove_ideas = GRE_schachtplan
+			remove_ideas = GRE_foreign_monopolies
+			remove_ideas = GRE_debt_to_the_ifc
+			remove_ideas = GRE_george_ii
+		  }
 		  SOV = { 
 		  add_war_support = 0.05
 		  }
