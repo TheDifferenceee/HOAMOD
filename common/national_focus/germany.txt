@@ -2793,6 +2793,7 @@ focus = {
 			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
+			add_war_support = 0.1
 			army_experience = 5
 			add_named_threat = { threat = 5 name = GER_rhineland }
 			if = {
