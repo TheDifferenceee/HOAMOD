@@ -82,6 +82,7 @@ NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005                -- Balancing
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 --1
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }        -- Experience needed to progress to the next level --{ 0.1, 0.3, 0.75, 0.9 }               
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.002 --0.0015
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP	0.45	Base xp gain for traits per hour for armies
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3                -- Most xp you can gain per day --1.2
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0001 --vanilla 0.0001,
 NDefines.NMilitary.UNIT_EXPERIENCE_SCALE = 1.0 --vanila 1.0,
