@@ -58,6 +58,14 @@ on_actions = {
 			remove_ideas = TUR_sectarian_woes
 			remove_ideas = TUR_disorganised_armed_forces
 		  }
+		  HOL = { 
+		  load_focus_tree = generic_focus 
+			remove_ideas = HOL_weak_government
+			remove_ideas = HOL_de_crisisjaren_5
+			remove_ideas = HOL_shell_shocked_spectator_5
+			remove_ideas = HOL_aloof_neutrality
+			remove_ideas = HOL_wilhelmina
+		  }
 		  SOV = { 
 		  add_war_support = 0.05
 		  }
