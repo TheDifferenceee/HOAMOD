@@ -88,6 +88,7 @@ NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0.1
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 8
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.45
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.1
+NDefines.NMilitary.LEADER_EXPERIENCE_SCALE = 1.0
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3                -- Most xp you can gain per day --1.2
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0001 --vanilla 0.0001,
 NDefines.NMilitary.UNIT_EXPERIENCE_SCALE = 1.0 --vanila 1.0,
