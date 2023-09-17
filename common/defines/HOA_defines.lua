@@ -23,6 +23,9 @@ NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.0005                -- num convoys
 NDefines.NCountry.STARTING_FUEL_RATIO = 1                        -- starting fuel ratio compared to max fuel for countries --0.25
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0       --Removed for game stability/reducing chance of desync
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 50					-- pp cost to scorch a state  --5
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.025
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 150
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.16 
 	
 NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.1 -- base resistance grow	--vanillasi 0.2
 	
