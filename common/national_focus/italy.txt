@@ -2779,13 +2779,14 @@ focus_tree = {
 			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 
 			2 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
+			
 		}
 	}
 
@@ -8930,7 +8931,7 @@ focus_tree = {
 		id = ITA_legge_bottai
 		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = ITA_the_man_of_providence }
-
+		allow_branch = { always = no }
 		x = 0
 		y = 1
 		relative_position_id = ITA_the_man_of_providence
@@ -8960,6 +8961,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_to_live_as_a_lion }
 		x = -1
 		y = 2
+		allow_branch = { always = no }
 		relative_position_id = ITA_the_man_of_providence
 		cost = 5
 		available = {
@@ -8986,7 +8988,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_to_live_as_a_lion
 		prerequisite = { focus = ITA_the_man_of_providence }
 		mutually_exclusive = { focus = ITA_boost_the_grand_council_of_fascism }
-		x = 2
+		x = 1
 		y = 0
 		relative_position_id = ITA_boost_the_grand_council_of_fascism
 		cost = 5
@@ -9034,6 +9036,49 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+		if = { #Latium
+				limit = {
+					2 = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						} 
+					}
+				}
+				2 = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			if = { #Campania
+				limit = {
+					117 = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						} 
+					}
+				}
+				117 = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+
+			if = { #Tuscany
+				limit = {
+					162 = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						} 
+					}
+				}
+				162 = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 			add_timed_idea = { idea = ITA_battaglia_del_grano days = 730 }
 		}
 	}
@@ -9164,7 +9209,7 @@ focus_tree = {
 	focus = {
 		id = ITA_devotion
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = ITA_to_live_as_a_lion focus = ITA_boost_the_grand_council_of_fascism }
+		prerequisite = { focus = ITA_to_live_as_a_lion}
 		prerequisite = { focus = ITA_strengthen_the_regime }
 
 		x = -3
@@ -9766,6 +9811,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_capo_supremo }
 		x = -4
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = ITA_towards_a_greater_italy
 		cost = 5
 		available = {
@@ -9905,7 +9951,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_war_support = 0.05
-			add_stability = -0.05
+			add_stability = 0.05
 			add_political_power = 75
 			add_command_power = 50
 			add_popularity = {

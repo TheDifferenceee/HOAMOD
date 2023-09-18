@@ -982,7 +982,6 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				political_power_factor = -0.15
-				out_of_supply_factor = -0.1
 			}
 		}
 
@@ -1001,7 +1000,7 @@ ideas = {
 					
 			modifier = {
 				consumer_goods_factor = -0.02
-				political_power_factor = 0.1
+				political_power_factor = 0.15
 			}
 		}
 
