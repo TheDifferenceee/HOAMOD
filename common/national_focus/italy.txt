@@ -14578,9 +14578,8 @@ focus_tree = {
 		id = ITA_balkan_ambition
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = ITA_foreign_affairs }
-		mutually_exclusive = { focus = ITA_potential_allies_in_the_balkans }
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
@@ -14640,8 +14639,7 @@ focus_tree = {
 		id = ITA_potential_allies_in_the_balkans
 		icon = GFX_focus_generic_balkan_diplomacy
 		prerequisite = { focus = ITA_foreign_affairs }
-		mutually_exclusive = { focus = ITA_balkan_ambition }
-
+		allow_branch = { always = no }
 		x = 1
 		y = 1
 		relative_position_id = ITA_foreign_affairs
@@ -14726,7 +14724,7 @@ focus_tree = {
 	focus = {
 		id = ITA_albanian_occupation
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
+		prerequisite = { focus = ITA_balkan_ambition }
 
 		x = -7
 		y = 1
@@ -15379,7 +15377,7 @@ focus_tree = {
 	focus = {
 		id = ITA_pact_of_steel
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
+		prerequisite = { focus = ITA_balkan_ambition }
 		mutually_exclusive = { focus = ITA_guarantee_austrian_independence focus = ITA_italy_first }
 		x = -1
 		y = 1
