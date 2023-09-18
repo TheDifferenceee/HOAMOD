@@ -9081,7 +9081,7 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
-			add_timed_idea = { idea = ITA_battaglia_del_grano days = 730 }
+			add_timed_idea = { idea = ITA_battaglia_del_grano days = 365 }
 		}
 	}
 
@@ -9144,7 +9144,7 @@ focus_tree = {
 				}
 			}
 
-			add_timed_idea = { idea = ITA_battaglia_per_la_terra days = 730 }
+			add_timed_idea = { idea = ITA_battaglia_per_la_terra days = 182 }
 		}
 	}
 
@@ -10027,6 +10027,7 @@ focus_tree = {
 		id = ITA_bend_the_bars
 		icon = GFX_focus_ITA_bend_the_bars
 		prerequisite = { focus = ITA_towards_a_greater_italy }
+		allow_branch = { always = no }
 
 		x = 0
 		y = 1
@@ -10300,11 +10301,11 @@ focus_tree = {
 	focus = {
 		id = ITA_a_colonial_empire
 		icon = GFX_focus_ITA_a_colonial_empire
-		prerequisite = { focus = ITA_subdue_the_sentinels }
+		prerequisite = { focus = ITA_towards_a_greater_italy }
 
 		x = 0
 		y = 1
-		relative_position_id = ITA_subdue_the_sentinels
+		relative_position_id = ITA_towards_a_greater_italy
 		cost = 10
 		available = {
 		}
@@ -12465,7 +12466,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = ITA_culto_del_duce
-		cost = 10
+		cost = 5
 
 
 		available = {
@@ -12476,9 +12477,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = ITA_mobilize_the_railway_guns_military_industry_dm_tt
-			hidden_effect = {
-				add_ideas = ITA_hidden_railway_gun_production_ns
-			}
+			
 
 			if = {
 				limit = {
@@ -12486,7 +12485,7 @@ focus_tree = {
 				}
 				set_technology = { railway_gun = 1 }
 			}
-			ITA_mobilize_railway_guns = yes
+			
 		}
 	}
 
@@ -15466,8 +15465,8 @@ focus_tree = {
 				days = 365
 			}
 
-			custom_effect_tooltip = remove_political_advisor
-			show_ideas_tooltip = ITA_guido_jung
+			
+			
 		}
 	}
 
@@ -15476,7 +15475,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -15556,7 +15555,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -15598,6 +15597,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_war_with_france }
 		x = 0
 		y = 2
+		allow_branch = { always = no }
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
 
@@ -15740,17 +15740,13 @@ focus_tree = {
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
 
 		available = {
 			country_exists = JAP
-			JAP = { 
-				is_in_faction = no
-				has_government = ROOT
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -15775,7 +15771,7 @@ focus_tree = {
 		id = ITA_italian_irredentism
 		icon = GFX_focus_ITA_italian_irredentism
 		prerequisite = { focus = ITA_pact_of_steel }
-
+		allow_branch = { always = no }
 		x = 3
 		y = 1
 		relative_position_id = ITA_pact_of_steel
@@ -16032,6 +16028,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_befriend_greece }
 		x = 0
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = ITA_italian_irredentism
 		cost = 5
 
@@ -16222,7 +16219,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_foreign_affairs }
 
-		x = 5
+		x = 3
 		y = 1
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
