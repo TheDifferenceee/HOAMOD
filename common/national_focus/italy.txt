@@ -12417,7 +12417,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = ITA_culto_del_duce
-		cost = 15
+		cost = 10
 
 
 		available = {
