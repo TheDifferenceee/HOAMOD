@@ -329,7 +329,7 @@ jap_kendiniasan = {
             tag = JAP
         }
         available = {
-            JAP = {
+            RAJ = {
                 NOT = {
                     controls_state = 439
                 }
