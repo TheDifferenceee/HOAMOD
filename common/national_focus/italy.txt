@@ -2915,7 +2915,7 @@ focus_tree = {
 					has_full_control_of_state = 159
 					159 = {
 						free_building_slots = {
-							building = arms_factory
+							building = industrial_complex
 							size > 0
 							include_locked = yes
 						}
@@ -2924,7 +2924,7 @@ focus_tree = {
 				159 = { #LOMBARDY (Milano, Brescia)
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
-						type = arms_factory
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
@@ -2935,7 +2935,7 @@ focus_tree = {
 					limit = {
 						is_controlled_by = ROOT
 						free_building_slots = {
-							building = arms_factory
+							building = industrial_complex
 							size > 0
 							include_locked = yes
 						}
@@ -2943,7 +2943,7 @@ focus_tree = {
 					prioritize = { 850 30 } #TRENTINO as main fallback
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
-						type = arms_factory
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
@@ -3004,7 +3004,7 @@ focus_tree = {
 				160 = { #VENETO (Venice )
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
-						type = dockyard
+						type = industrial_complex
 						level = 1
 						instant_build = yes
 					}
@@ -3015,7 +3015,7 @@ focus_tree = {
 					limit = {
 						is_controlled_by = ROOT
 						free_building_slots = {
-							building = dockyard
+							building = industrial_complex
 							size > 0
 							include_locked = yes
 						}
@@ -3052,7 +3052,7 @@ focus_tree = {
 					has_full_control_of_state = 117
 					117 = {
 						free_building_slots = {
-							building = industrial_complex
+							building = arms_factory
 							size > 1
 							include_locked = yes
 						}
@@ -3071,13 +3071,8 @@ focus_tree = {
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -3111,13 +3106,8 @@ focus_tree = {
 					}
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -3138,10 +3128,10 @@ focus_tree = {
 							instant_build = yes						
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = dockyard
-						level = 1
+						type = arms_factory
+						level = 2
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -3175,6 +3165,12 @@ focus_tree = {
 						instant_build = yes
 						province = 4159					
 					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -3198,6 +3194,12 @@ focus_tree = {
 							level = 1
 							instant_build = yes						
 						}
+						add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 						add_building_construction = {
 							type = naval_base
 							level = 2
@@ -3215,7 +3217,7 @@ focus_tree = {
 				162 = {
 					add_resource = {
 						type = steel
-						amount = 12
+						amount = 16
 					}
 				}
 			}
@@ -9047,7 +9049,7 @@ focus_tree = {
 					}
 				}
 				2 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 				}
 			}
 			if = { #Campania
@@ -9061,7 +9063,7 @@ focus_tree = {
 					}
 				}
 				117 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 				}
 			}
 
@@ -9076,7 +9078,7 @@ focus_tree = {
 					}
 				}
 				162 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 				}
 			}
 			add_timed_idea = { idea = ITA_battaglia_del_grano days = 730 }
