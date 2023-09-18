@@ -12417,22 +12417,8 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = ITA_culto_del_duce
-		cost = 5
+		cost = 15
 
-		allow_branch = {
-			has_dlc = "By Blood Alone"
-			has_dlc = "No Step Back"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = { has_completed_focus = ITA_culto_del_duce }
-				NOT = { has_completed_focus = ITA_defy_the_duce }
-			}
-		}
 
 		available = {
 			has_tech = armored_train
