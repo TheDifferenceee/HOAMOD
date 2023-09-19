@@ -87,6 +87,7 @@ NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 --1
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }        -- Experience needed to progress to the next level --{ 0.1, 0.3, 0.75, 0.9 }               
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.002 --0.0015
 NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 400.0
+NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5--vanilla 0.3					-- xp gain ratio for army group leaders
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0.01 --vanilla 0.04
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0.0 --vanilla 0.1
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 30 -- vanilla 8
