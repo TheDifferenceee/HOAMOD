@@ -89,42 +89,42 @@ leader_skills = {
 	}
 		
 	2 = {
-		cost = 200
+		cost = 100
 		type = corps_commander
 	}
 	
 	3 = {
-		cost = 400
+		cost = 200
 		type = corps_commander
 	}
 	
 	4 = {
-		cost = 800
+		cost = 300
 		type = corps_commander
 	}
 	
 	5 = {
-		cost = 1600
+		cost = 500
 		type = corps_commander
 	}
 
 	6 = {
-		cost = 3200
+		cost = 800
 		type = corps_commander
 	}
 
 	7 = {
-		cost = 6400
+		cost = 1300
 		type = corps_commander
 	}
 
 	8 = {
-		cost = 12800
+		cost = 2100
 		type = corps_commander
 	}
 
 	9 = {
-		cost = 25600
+		cost = 3400
 		type = corps_commander
 	}
 	
@@ -136,42 +136,42 @@ leader_skills = {
 	}
 		
 	2 = {
-		cost = 200
+		cost = 100
 		type = field_marshal
 	}
 	
 	3 = {
-		cost = 400
+		cost = 200
 		type = field_marshal
 	}
 	
 	4 = {
-		cost = 800
+		cost = 300
 		type = field_marshal
 	}
 	
 	5 = {
-		cost = 1600
+		cost = 500
 		type = field_marshal
 	}
 
 	6 = {
-		cost = 3200
+		cost = 800
 		type = field_marshal
 	}
 
 	7 = {
-		cost = 6400
+		cost = 1300
 		type = field_marshal
 	}
 
 	8 = {
-		cost = 12800
+		cost = 2100
 		type = field_marshal
 	}
 
 	9 = {
-		cost = 25600
+		cost = 3400
 		type = field_marshal
 	}
 	

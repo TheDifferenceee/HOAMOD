@@ -6501,7 +6501,7 @@ leader_traits = {
 
 	army_artillery_1 = { # +4 artillery efficiency
 		sprite = 16
-		army_artillery_attack_factor = 0.1
+		army_artillery_attack_factor = 0.05
 		army_artillery_defence_factor = 0.05
 		#experience_gain_army = @experience_gain_low
 
@@ -6518,7 +6518,7 @@ leader_traits = {
 
 	army_artillery_2 = { # +8 artillery efficiency
 		sprite = 16
-		army_artillery_attack_factor = 0.15
+		army_artillery_attack_factor = 0.1
 		army_artillery_defence_factor = 0.1
 		#experience_gain_army = @experience_gain_medium
 
@@ -6535,7 +6535,7 @@ leader_traits = {
 
 	army_artillery_3 = { # +12 artillery efficiency
 		sprite = 16
-		army_artillery_attack_factor = 0.2
+		army_artillery_attack_factor = 0.15
 		army_artillery_defence_factor = 0.15
 		#experience_gain_army = @experience_gain_high
 
@@ -6554,7 +6554,7 @@ leader_traits = {
 	army_infantry_1 = { # +4 infantry efficiency
 		sprite = 5
 		army_infantry_attack_factor = 0.05
-		army_infantry_defence_factor = 0.1
+		army_infantry_defence_factor = 0.05
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -6571,7 +6571,7 @@ leader_traits = {
 	army_infantry_2 = { # +8 infantry efficiency
 		sprite = 5
 		army_infantry_attack_factor = 0.1
-		army_infantry_defence_factor = 0.15
+		army_infantry_defence_factor = 0.1
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -6588,7 +6588,7 @@ leader_traits = {
 	army_infantry_3 = { # +12 infantry efficiency
 		sprite = 5
 		army_infantry_attack_factor = 0.15
-		army_infantry_defence_factor = 0.2
+		army_infantry_defence_factor = 0.15
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
@@ -6605,8 +6605,8 @@ leader_traits = {
 
 	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
 		sprite = 5
-		special_forces_attack_factor = 0.1
-	    special_forces_defence_factor = 0.1
+		special_forces_attack_factor = 0.05
+	    special_forces_defence_factor = 0.05
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -6622,8 +6622,8 @@ leader_traits = {
 
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
 		sprite = 5
-		special_forces_attack_factor = 0.15
-	    special_forces_defence_factor = 0.15
+		special_forces_attack_factor = 0.1
+	    special_forces_defence_factor = 0.1
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -6639,8 +6639,8 @@ leader_traits = {
 
 	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
 		sprite = 5
-		special_forces_attack_factor = 0.2
-	    special_forces_defence_factor = 0.2
+		special_forces_attack_factor = 0.15
+	    special_forces_defence_factor = 0.15
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
