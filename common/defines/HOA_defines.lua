@@ -55,7 +55,7 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 40
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.060       -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
-NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.03 --vanilla 0.53      -- global damage modifier
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.03 --vanilla 0.053      -- global damage modifier
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 32									-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 32								-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5									-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked --5 
