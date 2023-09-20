@@ -2452,6 +2452,12 @@ focus = {
 						uses = 2
 						category = armor
 					}
+					add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 1
+					category = motorized_equipment
+					}
 				}
 			}
 			else = {
@@ -2539,25 +2545,19 @@ focus = {
 					}
 				}
 				add_tech_bonus = {
-					bonus = 1.0
-					uses = 1
-					name = mech_army_bonus
-					technology = basic_medium_tank
-					technology = improved_medium_tank
-					technology = advanced_medium_tank
-					technology = mechanised_infantry
-				}	
+						name = armor_bonus
+						bonus = 1.0
+						uses = 2
+						category = armor
+					}	
 			}
 			else = {
 				add_tech_bonus = {
-					bonus = 1.0
-					uses = 1
-					name = mech_army_bonus
-					technology = basic_medium_tank_chassis
-					technology = improved_medium_tank_chassis
-					technology = advanced_medium_tank_chassis
-					technology = mechanised_infantry
-				}
+						name = armor_bonus
+						bonus = 1.0
+						uses = 2
+						category = armor
+					}
 			}
 		}
 	}

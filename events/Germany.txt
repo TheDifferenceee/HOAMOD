@@ -3360,17 +3360,6 @@ country_event = {
 		# REVISIT Balance research bonus
 		give_SOV_armor_research_bonuses = yes
 	}
-
-	option = {
-		name = germany.75.b	#no way
-		add_timed_idea = { idea = SOV_scientist_defect days = 365 }
-		ai_chance = { factor = 0 }
-		add_political_power = -10
-		add_opinion_modifier = { target = GER modifier = refused_MR_pact }# no pact
-		GER = {
-			country_event = { days = 1 id = germany.77 }
-		}
-	}
 }
 
 # Soviets Accept German-Soviet Treaty
@@ -3402,6 +3391,12 @@ country_event = {
 				uses = 2
 				category = armor
 			}
+			add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 1
+					category = motorized_equipment
+					}
 		}
 		else = { #NO STEP BACK EFFECTS
 			add_tech_bonus = {
@@ -3410,6 +3405,12 @@ country_event = {
 				uses = 2
 				category = armor
 			}
+			add_tech_bonus = {
+					name = armor_bonus
+					bonus = 1.0
+					uses = 1
+					category = motorized_equipment
+					}
 			create_equipment_variant = {
 				name = "Panzer III Ausf. A"
 				type = medium_tank_chassis_1
