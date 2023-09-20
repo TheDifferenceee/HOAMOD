@@ -27,7 +27,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
-
+add_timed_idea = { idea = hoa_peace_idea days = 1320 }
 # RESISTANCE / COMPLIANCE
 
 550 = { #ERITREA

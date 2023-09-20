@@ -127,6 +127,8 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 
+add_timed_idea = { idea = hoa_peace_idea days = 1320 }
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }

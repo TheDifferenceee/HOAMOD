@@ -86,6 +86,7 @@ if = {
 	}
 	add_ideas = MTG_naval_treaty_adherent
 }
+add_timed_idea = { idea = hoa_peace_idea days = 1825 }
 
 
 

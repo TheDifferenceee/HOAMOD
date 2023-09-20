@@ -132,6 +132,7 @@ if = {
 	give_guarantee = CZE
 	give_guarantee = TUR
 }
+add_timed_idea = { idea = hoa_peace_idea days = 1320 }
 if = {
 	limit = {
 		AND = {  

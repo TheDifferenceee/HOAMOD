@@ -176,7 +176,7 @@ add_ideas = {
 	ENG_the_war_to_end_all_wars
 	george_v
 }
-	
+add_timed_idea = { idea = hoa_peace_idea days = 1320 }	
 
 set_convoys = 800
 
