@@ -162,9 +162,7 @@ set_war_support = 0.3
 
 #Trade
 create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
+		
 }
 
 1939.1.1 = {
