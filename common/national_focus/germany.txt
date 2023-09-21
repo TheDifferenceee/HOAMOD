@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -3484,7 +3484,7 @@ focus = {
 		will_lead_to_war_with = POL
 		available = {
 			is_subject = no		
-			date > 1939.8.14
+			date > 1939.6.1
 			#Make custom trigger tooltip here
 			85 = {
 				owner = {
