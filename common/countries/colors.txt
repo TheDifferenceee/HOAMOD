@@ -233,16 +233,16 @@ SAU = {
 	color_ui = rgb { 0 108 53 }
 }
 SIA = {
-	color = rgb { 165 25 49 }
-	color_ui = rgb { 165 25 49 }
+	color = rgb { 190 190 190 }
+	color_ui = rgb { 260 260 260 }
 }
 SIK = {
-	color = rgb { 85 298 226 }
-	color_ui = rgb { 85 298 226 }
+	color = rgb { 0 0 155 } 
+	color_ui = rgb { 0 0 155 }
 }
 TIB = {
-	color = rgb { 250 250 250 }
-	color_ui = rgb { 250 250 250 }
+	color = rgb { 0 0 180 } 
+	color_ui = rgb { 0 0 180 }
 }
 URG = {
 	color = rgb { 0 56 168 }
@@ -265,8 +265,8 @@ MON = {
 	color_ui = rgb { 218 32 50 }
 }
 MEN = {
-	color = rgb { 255 255 0 }
-	color_ui = rgb { 255 255 0 }
+	color = rgb { 225 225 225 }
+	color_ui = rgb { 225 225 225 }
 }
 TAN = {
 	color = rgb { 188 0 0 }
@@ -311,8 +311,8 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 238 28 37 }
-	color_ui = rgb { 238 28 37 }
+	color = rgb { 0 0 200 } 
+	color_ui = rgb { 0 0 200 }
 }
 
 GXC = {
@@ -396,7 +396,7 @@ LAO = {
 }
 
 INS = {
-	color = rgb { 255 0 0 }
+	color = rgb { 100 100 100 }
 	color_ui = rgb { 255 0 0 }
 }
 
@@ -425,8 +425,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-	color = rgb { 255 197 0 }
-	color_ui = rgb { 255 197 0 }
+	color = rgb { 200 200 200 }
+	color_ui = rgb { 200 200 200  }
 }
 ANG = {
 	color = rgb { 37 140 61 }
