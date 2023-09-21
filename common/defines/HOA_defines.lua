@@ -29,9 +29,9 @@ NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.03
 	
 NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.1 -- base resistance grow	--vanillasi 0.2
 	
-NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 150 --10
-NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 150 --15
-NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 150 --5
+NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 40 --10
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 40 --15
+NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 40 --5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives). --4.50
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 5                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives). --2.5
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 8000000    -- How many deployment lines minimum can be training --100000
