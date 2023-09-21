@@ -737,6 +737,7 @@ recruit_character = ITA_sebastiano_visconti_prasca
 recruit_character = ITA_ubaldo_soddu
 recruit_character = ITA_italo_balbo
 
+recruit_character = ITA_deliga_italy
 recruit_character = ITA_ettore_bastico
 recruit_character = ITA_italo_gariboldi
 recruit_character = ITA_pietro_pintor
