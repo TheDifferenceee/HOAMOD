@@ -147,7 +147,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.15
 			}
 			
 		}
@@ -165,7 +165,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.03
 			}
 			
 		}
@@ -183,7 +183,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.7
 			}
 			
 		}
