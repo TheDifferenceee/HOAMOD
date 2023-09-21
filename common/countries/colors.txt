@@ -209,12 +209,12 @@ NZL = {
 	color_ui = rgb { 0 36 125 }
 }
 PAN = {
-	color = rgb { 7 35 87 }
-	color_ui = rgb { 7 35 87 }
+	color = rgb { 4 4 4 }
+	color_ui = rgb { 4 4 4 }
 }
 PER = {
-	color = rgb { 35 159 64 }
-	color_ui = rgb { 35 159 64 }
+	color = rgb { 4 4 4 }
+	color_ui = rgb { 4 4 4 }
 }
 PHI = {
 	color = rgb { 0 56 168 }
@@ -229,8 +229,8 @@ SAF = {
 	color_ui = rgb { 255 132 0 }
 }
 SAU = {
-	color = rgb { 0 108 53 }
-	color_ui = rgb { 0 108 53 }
+	color = rgb { 4 4 4 }
+	color_ui = rgb { 4 4 4 }
 }
 SIA = {
 	color = rgb { 190 190 190 }
@@ -241,8 +241,8 @@ SIK = {
 	color_ui = rgb { 0 0 155 }
 }
 TIB = {
-	color = rgb { 0 0 180 } 
-	color_ui = rgb { 0 0 180 }
+	color = rgb { 4 4 4 }
+	color_ui = rgb { 4 4 4 }
 }
 URG = {
 	color = rgb { 0 56 168 }
@@ -261,12 +261,12 @@ USA = {
 	color_ui = rgb { 0 38 100 }
 }
 MON = {
-	color = rgb { 218 32 50 }
-	color_ui = rgb { 218 32 50 }
+	color = rgb { 188 0 0 }
+	color_ui = rgb { 188 0 0 }
 }
 MEN = {
-	color = rgb { 225 225 225 }
-	color_ui = rgb { 225 225 225 }
+	color = rgb { 245 245 245 }
+	color_ui = rgb { 245 245 245 }
 }
 TAN = {
 	color = rgb { 188 0 0 }
@@ -311,8 +311,8 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 0 0 200 } 
-	color_ui = rgb { 0 0 200 }
+	color = rgb { 0 0 149 } 
+	color_ui = rgb { 0 0 149 }
 }
 
 GXC = {
@@ -425,8 +425,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-	color = rgb { 200 200 200 }
-	color_ui = rgb { 200 200 200  }
+	color = rgb { 245 245 245 }
+	color_ui = rgb { 245 245 245 }
 }
 ANG = {
 	color = rgb { 37 140 61 }

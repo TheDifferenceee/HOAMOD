@@ -5482,7 +5482,6 @@ focus = {
 		completion_reward = {
 			remove_ideas = sour_loser
 			add_ideas = triumphant_will
-			set_cosmetic_tag = GER_greater_german_reich
 		}
 	}
 
