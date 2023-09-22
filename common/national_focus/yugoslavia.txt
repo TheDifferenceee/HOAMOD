@@ -4092,7 +4092,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -4129,7 +4129,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_industrialization_program
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -4169,7 +4169,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 60
@@ -4277,7 +4277,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_rare_minerals_exploitation
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 60
@@ -4344,7 +4344,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -4424,7 +4424,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = YUG_industrialization_program
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 100
@@ -4458,7 +4458,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = YUG_develop_civilian_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -4540,7 +4540,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = YUG_develop_civilian_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -4607,7 +4607,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = YUG_develop_civilian_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -4733,7 +4733,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_develop_slovenian_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -4810,7 +4810,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_expand_the_mining_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -4862,7 +4862,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -5035,7 +5035,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 60
@@ -5073,7 +5073,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 4
 
 		ai_will_do = {
 			factor = 100
@@ -5106,7 +5106,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = YUG_develop_military_industry
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -5139,7 +5139,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = YUG_local_self_management
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
