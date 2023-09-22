@@ -2800,7 +2800,7 @@ focus_tree = {
 		relative_position_id = ITA_steel_industry_in_terni
 		cost = 5
 		available = {
-			has_tech = synth_oil_experiments
+			
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -3227,11 +3227,12 @@ focus_tree = {
 	focus = {
 		id = ITA_new_industrialization_program
 		icon = GFX_focus_generic_industry_3
-		prerequisite = { focus = ITA_strengthen_northern_industry focus = ITA_modernize_the_mezzogiorno }
+		prerequisite = { focus = ITA_expand_research_initiative }
 		prerequisite = { focus = ITA_expand_national_universities }
 
 		x = 1
 		y = 2
+		
 		relative_position_id = ITA_strengthen_northern_industry
 		cost = 10
 		available = {
@@ -3424,6 +3425,27 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+	
+	focus = {
+		id = ITA_expand_research_initiative
+		icon = GFX_focus_research
+		prerequisite = { focus = ITA_strengthen_northern_industry focus = ITA_modernize_the_mezzogiorno }
+
+		x = 1
+		y = 1
+		
+		relative_position_id = ITA_strengthen_northern_industry
+		cost = 10
+		
+		available = {
+		}
+
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 
 	focus = {
 		id = ITA_fiocchi_munizioni
@@ -3601,7 +3623,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_brescia_small_arms_industry
-		cost = 10
+		cost = 5
 		available = {
 			has_full_control_of_state = 159
 		}
@@ -6350,7 +6372,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_expand_naval_facilities
-		cost = 10
+		cost = 5
 		available = {
 			has_tech = marines
 		}
@@ -6530,7 +6552,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = ITA_supermarina
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -6725,7 +6747,7 @@ focus_tree = {
 		x = 6
 		y = 1
 		relative_position_id = ITA_supermarina
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -6762,7 +6784,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = ITA_incrociatori_leggeri
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -6854,7 +6876,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = ITA_incrociatori_leggeri
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -7361,7 +7383,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = ITA_incrociatori_pesanti
-		cost = 10
+		cost = 5
 		available = {
 			if = { # MTG tech
 				limit = {
@@ -7487,7 +7509,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = ITA_incrociatori_pesanti
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -14626,7 +14648,7 @@ focus_tree = {
 		icon = GFX_focus_generic_balkans_focus
 		prerequisite = { focus = ITA_foreign_affairs }
 
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
@@ -15029,7 +15051,6 @@ focus_tree = {
 		id = ITA_guarantee_austrian_independence
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
-		mutually_exclusive = { focus = ITA_pact_of_steel focus = ITA_italy_first }
 		allow_branch = { always = no }
 		x = -10
 		y = 1
@@ -15425,8 +15446,8 @@ focus_tree = {
 		id = ITA_pact_of_steel
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ITA_balkan_ambition }
-		mutually_exclusive = { focus = ITA_guarantee_austrian_independence focus = ITA_italy_first }
-		x = -1
+		mutually_exclusive = { focus = ITA_befriend_japan }
+		x = -3
 		y = 1
 		relative_position_id = ITA_potential_allies_in_the_balkans
 		cost = 5
@@ -15465,7 +15486,6 @@ focus_tree = {
 		cost = 5
 		available = {
 			NOT = { has_war_with = GER }
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 
 		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP}
@@ -15474,18 +15494,67 @@ focus_tree = {
 			add_ideas = ITA_german_millitary_cooperation_focus
 		}
 	}
+	
+	focus = {
+		id = ITA_japan_military_cooperation
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = ITA_befriend_japan }
+
+		x = 3
+		y = 2
+		relative_position_id = ITA_balkan_ambition
+		cost = 5
+		available = {
+			NOT = { has_war_with = JAP }
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			add_ideas = ITA_japan_millitary_cooperation_focus
+		}
+	}
+	
+	focus = {
+		id = ITA_japan_military_exchange
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = ITA_japan_military_cooperation }
+
+		x = 3
+		y = 3
+		relative_position_id = ITA_balkan_ambition
+		cost = 5
+		available = {
+			
+		}
+
+		search_filters = {FOCUS_FILTER_AIR_XP FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			add_relation_modifier = {
+				target = JAP
+				modifier = ITA_military_agreements
+			}
+			JAP = {
+				add_relation_modifier = {
+					target = ROOT
+					modifier = ITA_military_agreements
+				}
+				}
+		}
+	}
 
 	focus = {
 		id = ITA_sea_wolves_bba
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = ITA_german_military_cooperation }
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_german_military_cooperation
 		cost = 5
 		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+			
 		}
 		
 		search_filters = {FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -15510,14 +15579,14 @@ focus_tree = {
 	focus = {
 		id = ITA_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = ITA_german_military_cooperation }
+		prerequisite = { focus = ITA_treaty_with_germany focus = ITA_treaty_with_japan}
 
-		x = 1
-		y = 1
-		relative_position_id = ITA_german_military_cooperation
+		x = 0
+		y = 3
+		relative_position_id = ITA_balkan_ambition
 		cost = 5
 		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+			
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -15544,7 +15613,7 @@ focus_tree = {
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
 		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+			
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -15570,6 +15639,39 @@ focus_tree = {
 					category = armor
 				}
 			}
+		}
+	}
+	
+	focus = {
+		id = ITA_treaty_with_japan
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = ITA_befriend_japan }
+
+		x = 1
+		y = 2
+		relative_position_id = ITA_balkan_ambition
+		cost = 5
+		available = {
+			
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			
+				add_tech_bonus = {
+				name = ITA_navi_da_battaglia
+				bonus = 1
+				uses = 1
+				category = bb_tech
+			}
+			add_tech_bonus = {
+				name = ITA_navi_da_battaglia
+				bonus = 1
+				uses = 1
+				category = cv_tech
+			}
+			
 		}
 	}
 
@@ -15638,7 +15740,6 @@ focus_tree = {
 		id = ITA_italy_first
 		icon = GFX_focus_generic_italy_first
 		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
-		mutually_exclusive = { focus = ITA_guarantee_austrian_independence focus = ITA_pact_of_steel }
 		allow_branch = { always = no }
 		x = 0
 		y = 1
@@ -15722,12 +15823,12 @@ focus_tree = {
 	focus = {
 		id = ITA_befriend_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
-		prerequisite = { focus = ITA_pact_of_steel }
-
-		x = 2
+		prerequisite = { focus = ITA_balkan_ambition }
+		mutually_exclusive = { focus = ITA_pact_of_steel }
+		x = 1
 		y = 1
-		relative_position_id = ITA_pact_of_steel
-		cost = 10
+		relative_position_id = ITA_balkan_ambition
+		cost = 5
 
 		available = {
 			country_exists = JAP
@@ -15736,17 +15837,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_relation_modifier = {
-				target = JAP
-				modifier = ITA_military_agreements
-			}
-			JAP = {
-				add_relation_modifier = {
-					target = ROOT
-					modifier = ITA_military_agreements
-				}
-
+		JAP = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
+			}
+		add_timed_idea = {
+				idea = ITA_pact_of_japan
+				days = 365
 			}
 		}
 	}
@@ -16202,8 +16298,8 @@ focus_tree = {
 		id = ITA_corpo_di_truppe_volontarie
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_foreign_affairs }
-
-		x = 3
+		allow_branch = { always = no }
+		x = 2
 		y = 1
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
@@ -16332,7 +16428,6 @@ focus_tree = {
 		icon = GFX_focus_intervention_spain_nationalists
 		prerequisite = { focus = ITA_corpo_di_truppe_volontarie }
 		prerequisite = { focus = ITA_italy_first }
-		mutually_exclusive = { focus = ITA_demand_balearic_islands_bba }
 		allow_branch = { always = no }
 		x = -1
 		y = 2
@@ -16420,11 +16515,10 @@ focus_tree = {
 	focus = {
 		id = ITA_demand_balearic_islands_bba
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_corpo_di_truppe_volontarie }
-		mutually_exclusive = { focus = ITA_spanish_italian_alliance }
-		x = 0
+		prerequisite = { focus = ITA_foreign_affairs }
+		x = 1
 		y = 1
-		relative_position_id = ITA_corpo_di_truppe_volontarie
+		relative_position_id = ITA_foreign_affairs
 		cost = 5
 		available = {
 			if = {

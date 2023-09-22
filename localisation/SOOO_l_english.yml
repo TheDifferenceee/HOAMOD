@@ -56,11 +56,12 @@
  soviet_economic_plan3:0 "Soviet Economic Balanced3"
  soviet_economic_plan4:0 "Soviet Economic Balanced4"
  soviet_economic_plan5:0 "Soviet Economic Balanced5"
- 
-
- 
- 
- 
+ ITA_treaty_with_japan:0 "Treaty With Japan"
+ ITA_japan_military_cooperation:0 "Japan Military Cooperation"
+ ITA_japan_military_exchange:0 "Japan Military Exchange"
+ ITA_pact_of_japan:0 "Pact With Japan"
+ ITA_japan_millitary_cooperation_focus:0 "Military Cooperation With Japan"
+ ITA_expand_research_initiative:0 "Expand Research Initiative"
  
  
  

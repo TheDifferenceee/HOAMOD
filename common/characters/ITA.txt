@@ -162,7 +162,7 @@ characters = {
 				original_tag = ITA
 			}
 			traits = {
-				army_commando_1
+				army_commando_2
 			}
 			cost = 100
 			ai_will_do = {

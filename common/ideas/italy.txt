@@ -593,6 +593,45 @@ ideas = {
 			}
 			
 		}
+		
+		ITA_japan_millitary_cooperation_focus = {
+
+			picture = german_advisors
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				OR = {
+					AND = {
+						has_government = fascism
+						GER = {
+							has_government = fascism
+						}
+					}
+					AND = {
+						has_government = communism
+						GER = {
+							has_government = communism
+						}
+					}
+					AND = {
+						has_government = democratic
+						GER = {
+							has_government = democratic
+						}
+					}
+				}
+			}
+
+			removal_cost = -1	
+
+			modifier = {
+				naval_doctrine_cost_factor = -0.1				
+			}
+			
+		}
 
 
  #####   #####     ##   
@@ -1272,6 +1311,29 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		ITA_pact_of_japan = {
+			removal_cost = -1
+
+			picture = generic_fascism_drift_2
+				
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				has_completed_focus = ITA_befriend_japan
+			}
+
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 

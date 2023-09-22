@@ -1598,8 +1598,8 @@ focus_tree = {
 		prerequisite = { focus = GER_german_war_economy}
 		prerequisite = { focus = GER_integrate_war_economies}
 		x = 1
-		y = 1
-		relative_position_id = GER_integrate_war_economies
+		y = 4
+		relative_position_id = GER_four_year_plan
 		cost = 10
 		ai_will_do = {
 			factor = 1
