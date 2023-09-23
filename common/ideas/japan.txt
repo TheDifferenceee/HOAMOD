@@ -18,6 +18,8 @@ ideas = {
 	
 
 			modifier = {
+			    global_building_slots_factor = 0.1
+				operative_slot = 2
 				industry_air_damage_factor = -0.1
 				army_morale_factor = 0.1
 				army_core_attack_factor = 0.20
