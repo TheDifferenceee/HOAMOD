@@ -169,7 +169,7 @@
  ITA_military_industry_dynamic_modifier:0 "Military Industry"
  ITA_military_industry_dynamic_modifier_desc:1 "Our domestic military complex has fallen behind our rivals in both productivity and technology. We must strengthen Italy's military industries if we want our forces to be successful on the battlefields."
  ITA_military_industry_dynamic_modifier_tt:0 "[GetResearchPenaltiesTooltip][GetArtyProductionTooltip][GetTankettesTooltip][GetSPGTooltip][GetFerreaMoleTooltip][GetStandardizationOrSpecializationTooltip][GetLightCruisersTooltip][GetHeavyCruisersTooltip][GetDeckConversionsTooltip][GetRailwayGunsTooltip][GetSuperHeavyAircraftTooltip][GetSuperHeavyTanksTooltip][GetSuperHeavyShipsTooltip]"
- ITA_military_industry_dynamic_modifier_research_tt:0 "$armor_research$: §R-15%§! \n$infantry_weapons_research$: §R-15%§! \n$artillery_research$: §R-15%§! \n$air_equipment_research$: §R-15%§! \n$naval_equipment_research$: §R-15%§! \n"
+ ITA_military_industry_dynamic_modifier_research_tt:0 "$armor_research$: §R-15%§! \n$infantry_weapons_research$: §R-15%§! \n$artillery_research$: §R-15%§! \n$air_equipment_research$: §R-15%§! \n"
  ITA_military_industry_dynamic_modifier_arty_tt:1 "§Y$artillery_equipment$§!: $production_cost_tt$ §G-10.00%§! \n§Y$anti_tank_equipment$§!: $production_cost_tt$ §G-10.00%§! \n§Y$anti_air_equipment$§!: $production_cost_tt$ §G-10.00%§! \n"
  ITA_military_industry_dynamic_modifier_tankettes_tt:1 "§Y$light_tank_chassis$§!: $production_cost_tt$ §G-5.00%§! \n§Y$light_tank_chassis$§!: Reliability: §G+5.00%§! \n"
  ITA_self_propelled_guns_dynamic_modifier_tt:0 "§YLight§!, §YMedium§! and §YHeavy SP Artillery§!: $production_cost_tt$ §G-5.00%§! \n§YLight§!, §YMedium§! and §YHeavy Tank Destroyer§!: $production_cost_tt$ §G-5.00%§! \n"
