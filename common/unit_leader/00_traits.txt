@@ -1121,7 +1121,7 @@ leader_traits = {
 		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.8 }
+			multiply_temp_variable = { temp = 0.75 }
 			set_temp_variable = { cmm = num_cavalry }
 			add_to_temp_variable = { cmm = num_motorized }
 			add_to_temp_variable = { cmm = num_mechanized }
@@ -1150,7 +1150,7 @@ leader_traits = {
 		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.8 }
+			multiply_temp_variable = { temp = 0.75 }
 			check_variable = { num_infantry > temp }
 		}
 		custom_gain_xp_trigger_tooltip = infantry_ratio_over_80
@@ -1331,7 +1331,7 @@ leader_traits = {
  		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.8 }
+			multiply_temp_variable = { temp = 0.75 }
 			check_variable = { num_armored > temp }
 		}
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
@@ -1933,7 +1933,7 @@ leader_traits = {
 	seawolf = { 
 		type = navy
 		gain_xp = {
-			submarine > 0.8 # at least 80% subs
+			submarine > 0.75 # at least 80% subs
 		}
 		cost = 700
 		modifier = {
