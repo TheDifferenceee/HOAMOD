@@ -1,107 +1,4 @@
 add_namespace = hoa.start.event
-# The Fall of China
-news_event = {
-	id = hoa.start.event.2
-	title = hoa.start.event.2.t
-	desc = hoa.start.event.2.d
-	picture = GFX_news_event_064
-	
-	hidden = yes
-	
-	trigger = {
-		CHI = { surrender_progress > 0.7 }
-		JAP = { has_war_with = CHI }
-		NOT = { has_global_flag = fall_of_chinaa }
-	}
-	
-	immediate = {
-		set_global_flag = fall_of_chinaa
-		JAP = {
-			annex_country = {
-			target = CHI
-			}
-			annex_country = {
-			target = SHX
-			}
-			annex_country = {
-			target = PRC
-			}
-			annex_country = {
-			target = XSM
-			}
-			annex_country = {
-			target = SIK
-			}
-			annex_country = {
-			target = GXC
-			}
-			annex_country = {
-			target = YUN
-			}
-			add_named_threat = { threat = 30 name = Fall_of_China }
-			every_state = {
-				619 = {set_compliance = 70}
-				617 = {set_compliance = 70}
-				618 = {set_compliance = 70}
-				287 = {set_compliance = 70}
-				759 = {set_compliance = 70}
-				760 = {set_compliance = 70}
-				755 = {set_compliance = 70}
-				604 = {set_compliance = 70}
-				756 = {set_compliance = 70}
-				616 = {set_compliance = 70}
-				754 = {set_compliance = 70}
-				753 = {set_compliance = 70}
-				283 = {set_compliance = 70}
-				622 = {set_compliance = 70}
-				746 = {set_compliance = 70}
-				621 = {set_compliance = 70}
-				615 = {set_compliance = 70}
-				325 = {set_compliance = 70}
-				747 = {set_compliance = 70}
-				599 = {set_compliance = 70}
-				594 = {set_compliance = 70}
-				591 = {set_compliance = 70}
-				592 = {set_compliance = 70}
-				593 = {set_compliance = 70}
-				601 = {set_compliance = 40}
-				752 = {set_compliance = 40}
-				751 = {set_compliance = 40}
-				605 = {set_compliance = 40}
-				603 = {set_compliance = 40}
-				748 = {set_compliance = 40}
-				602 = {set_compliance = 40}
-				595 = {set_compliance = 40}
-				596 = {set_compliance = 40}
-				749 = {set_compliance = 40}
-				600 = {set_compliance = 40}
-				606 = {set_compliance = 40}
-				620 = {set_compliance = 40}
-				750 = {set_compliance = 40}
-				607 = {set_compliance = 40}
-				744 = {set_compliance = 40}
-				613 = {set_compliance = 40}
-				598 = {set_compliance = 40}
-				597 = {set_compliance = 40}
-				743 = {set_compliance = 40}
-				614 = {set_compliance = 40}
-				608 = {set_compliance = 40}
-				
-
-		    }
-		}
-		
-	}
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	option = {
-		name = hoa.start.event.2.a
-	}
-}
-
 # Historical Focuses are not activated
     news_event = {
 	id = hoa.start.event.31
@@ -373,8 +270,6 @@ news_event = {
 			transfer_state = 889
 			}	
 		}
-		
-	}
 	
 	mean_time_to_happen = {
 		days = 2
