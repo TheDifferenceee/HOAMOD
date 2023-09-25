@@ -1573,10 +1573,6 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SWI_citizen_militia_1
-				add_idea = SWI_citizen_militia_2
-			}
 			SWI_add_suspicious_prep_opinion = yes 		
 		}
 	}	

@@ -640,7 +640,6 @@ country_event = {
 		hidden_effect =  {
 			FRA = { news_event = { id = france.20 days = 1 } }
 		}
-	}
 
 	option = { # Agree - Neutrality
 		name = france.14.c
@@ -941,7 +940,7 @@ country_event = {
 			country_event = { hours = 6 id = france.15 }
 		}
 	}
-}
+  }
 
 # Germany refuses armistice! (France)
 country_event = {
