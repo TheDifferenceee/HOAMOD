@@ -37,10 +37,10 @@ sub_units = {
 		
 		supply_consumption = 0.25
 
-		breakthrough = 0.15
+		breakthrough = 0.25
 
 		#Tanks are awesome
-		# soft_attack = 0.5
+		soft_attack = 0.075
 
 		suppression = 2.5
 		
