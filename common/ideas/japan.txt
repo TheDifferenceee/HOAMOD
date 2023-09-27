@@ -310,7 +310,7 @@ ideas = {
 
 			picture = jap_duplicate_research
 			
-			research_bonus = { air_equipment = -0.10 }
+			research_bonus = { air_equipment = -0.15 }
 		}
 
 		JAP_militarism = {
@@ -330,8 +330,6 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_speed_factor = -0.05
-				production_speed_industrial_complex_factor = -0.1
 				ai_desired_divisions_factor = 0.25
 			}
 		}
