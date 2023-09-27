@@ -183,7 +183,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.07
+				production_factory_efficiency_gain_factor = -0.05
 			}
 			
 		}
@@ -201,7 +201,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.02
 			}
 			
 		}
@@ -238,6 +238,24 @@ ideas = {
 
 			modifier = {				
 				consumer_goods_factor = 0.02
+			}
+			
+		}
+		
+		soviet_economic_plan8 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {				
+				production_factory_efficiency_gain_factor = -0.03
 			}
 			
 		}
