@@ -30,7 +30,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 60
+		max_organisation = 40
 		default_morale = 0.3
 		manpower = 1000
 
@@ -72,7 +72,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 60
+		max_organisation = 40
 		default_morale = 0.3
 		maximum_speed = 0.6
 		manpower = 1000
@@ -147,7 +147,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 20
-		max_organisation = 70
+		max_organisation = 50
 		default_morale = 0.4
 		manpower = 1000
 
@@ -202,7 +202,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 20
-		max_organisation = 70
+		max_organisation = 50
 		default_morale = 0.4
 		manpower = 1000
 
@@ -258,7 +258,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 22
-		max_organisation = 70
+		max_organisation = 50
 		default_morale = 0.4
 		manpower = 1000
 
@@ -494,7 +494,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 15 #25 (HP)
-		max_organisation = 70 #60 -> Lower HP but higher Org: They should keep fighting longer
+		max_organisation = 50 #60 -> Lower HP but higher Org: They should keep fighting longer
 		default_morale = 0.4 #0.3 (Recovery) -> Easy to get more punishees
 		manpower = 850 #1000 -> Usually no more than 850
 
@@ -536,7 +536,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 30 # reg inf 25
-		max_organisation = 45 # reg inf 60
+		max_organisation = 35 # reg inf 60
 		default_morale = 0.2 #  reg inf 0.3
 		manpower = 1000
 
@@ -604,7 +604,7 @@ sub_units = {
 		
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 50 #reg infantry 60
+		max_organisation = 40 #reg infantry 60
 		default_morale = 0.3
 		manpower = 1000
 

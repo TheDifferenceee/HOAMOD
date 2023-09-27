@@ -59,6 +59,9 @@ technologies = {
 		category_all_infantry = {
 			max_organisation = 10
 		}
+		category_line_artillery = {
+			max_organisation = 0.11 #sonradan ellenebilir oylesine koydum
+		}
 		
 		
 		enable_tactic = tactic_delay
@@ -249,6 +252,9 @@ technologies = {
 		xp_unlock_cost = 100
 		category_all_infantry = {
 			max_organisation = 10
+		}
+		category_line_artillery = {
+			max_organisation = 0.11 #sonradan ellenebilir oylesine koydum
 		}	
 		
 		
@@ -563,6 +569,9 @@ technologies = {
 			default_morale = 0.3
 			max_organisation = 10
 		}
+		category_line_artillery = {
+			max_organisation = 0.11 #sonradan ellenebilir oylesine koydum
+		}
 		# faster planning
 		planning_speed = 0.2
 		
@@ -624,6 +633,9 @@ technologies = {
 		
 		category_all_infantry = {
 			max_organisation = 10
+		}
+		category_line_artillery = {
+			max_organisation = 0.11 #sonradan ellenebilir oylesine koydum
 		}
 		category_tanks = {
 			max_organisation = 2
@@ -1644,6 +1656,9 @@ technologies = {
 			max_organisation = 10
 			default_morale = 0.05
 		}
+		category_line_artillery = {
+			max_organisation = 0.11 #sonradan ellenebilir oylesine koydum
+		}
 		category_tanks = {
 			max_organisation = 2
 		}
@@ -1860,6 +1875,9 @@ technologies = {
 		category_all_infantry = {
 			defense = 0.10
 			max_organisation = 10
+		}
+		category_line_artillery = {
+			max_organisation = 0.11 #sonradan ellenebilir oylesine koydum
 		}
 		
 		path = {
@@ -2079,6 +2097,9 @@ technologies = {
 		category_all_infantry = {
 			max_organisation = 5
 		}
+		category_line_artillery = {
+			max_organisation = 0.11 # sonradan ellenebilir suan oylesine koydum
+		}
 		category_tanks = {
 			max_organisation = 1
 		}
@@ -2239,6 +2260,9 @@ technologies = {
 		land_reinforce_rate = 0.02
 		category_all_infantry = {
 			max_organisation = 5
+		}
+		category_line_artillery = {
+			max_organisation = 0.11 # sonradan ellenebilir suan oylesine koydum
 		}
 		category_tanks = {
 			max_organisation = 1
@@ -2509,6 +2533,9 @@ technologies = {
 		xp_unlock_cost = 100
 		category_all_infantry = {
 			max_organisation = 5
+		}
+		category_line_artillery = {
+			max_organisation = 0.11 # sonradan ellenebilir suan oylesine koydum
 		}
 		category_tanks = {
 			max_organisation = 1
@@ -2985,6 +3012,9 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.10
 		}
+		category_line_artillery = {
+			max_organisation = 0.11 # sonradan ellenebilir suan oylesine koydum
+		}
 		armored_car = {
 			max_organisation = 2
 			breakthrough = 0.20
@@ -3270,6 +3300,9 @@ technologies = {
 		category_all_infantry = {
 			max_organisation = 10
 		}
+		category_line_artillery = {
+			max_organisation = 0.11 #sonradan ellenebilir oylesine koydum
+		}
 		category_tanks = {
 			max_organisation = 2
 		}
@@ -3319,9 +3352,7 @@ technologies = {
 		xp_unlock_cost = 100
 		infantry = {
 			max_strength = 7
-		}
-
-		land_reinforce_rate = 0.15		
+		}		
 		
 		path = {
 			leads_to_tech = guerilla_warfare
