@@ -663,6 +663,9 @@ ideas = {
 					AND = {
 						
 						NOT = {	tag = SOV }
+						NOT = {	tag = POR }
+						NOT = {	tag = TUR }
+						NOT = {	tag = SPR }
 						
 						}
 					}
@@ -743,6 +746,9 @@ ideas = {
 					}
 					AND = {
 					    NOT = {	tag = SOV }
+						NOT = {	tag = POR }
+						NOT = {	tag = TUR }
+						NOT = {	tag = SPR }
 						NOT = { has_government = democratic }
 						OR = {
 							has_idea = partial_economic_mobilisation
@@ -820,6 +826,9 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
+					    NOT = {	tag = POR }
+						NOT = {	tag = TUR }
+						NOT = {	tag = SPR }
 				}
 				OR = {
 					has_idea = war_economy
@@ -844,7 +853,8 @@ ideas = {
 
 			modifier = {
 				min_export = 0
-				#civilian_intel_to_others = 0.0
+				civilian_intel_to_others = 5.0
+				navy_intel_to_others = 5
 			}
 
 			on_add = {

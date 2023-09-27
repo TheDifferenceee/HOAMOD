@@ -159,7 +159,7 @@ if = {
 		}
 		add_ideas = {
 			limited_conscription
-			export_focus
+			free_trade
 			civilian_economy
 			TUR_kemalist_army_officers_limited_power_loyal
 			TUR_sectarian_woes
