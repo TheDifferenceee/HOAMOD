@@ -26,7 +26,6 @@ NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 50					-- pp cost to scorch a stat
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.025
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 150
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.03 
-NDefines.NMilitary.REINFORCE_CHANCE = -0.25
 	
 NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.1 -- base resistance grow	--vanillasi 0.2
 	
