@@ -205,6 +205,42 @@ ideas = {
 			}
 			
 		}
+		
+		soviet_economic_plan6 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {				
+				consumer_goods_factor = -0.05
+			}
+			
+		}
+		
+		soviet_economic_plan7 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {				
+				consumer_goods_factor = 0.02
+			}
+			
+		}
 
 		SOV_molotov_ribbentrop_pact = {
 			removal_cost = -1

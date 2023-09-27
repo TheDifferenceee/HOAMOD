@@ -443,7 +443,7 @@ focus_tree = {
 				add_to_variable = { SOV_fyp_production_factory_efficiency_gain_factor = 0.05 }	
 				add_to_variable = { SOV_fyp_consumer_goods_factor = 0.05 }
 			}
-			add_ideas = soviet_economic_plan4
+			add_ideas = soviet_economic_plan6
 			if = {
 				limit = {
 					has_government = communism
@@ -507,6 +507,7 @@ focus_tree = {
 			hidden_effect = {
 				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.05 }
 			}
+			#add_ideas = soviet_economic_plan7
 			custom_effect_tooltip = SOV_reorganize_the_pc_of_heavy_industry_ns_tt
 			if = {
 				limit = {

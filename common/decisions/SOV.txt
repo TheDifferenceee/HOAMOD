@@ -2546,7 +2546,7 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_high_yield_cost
 
 		modifier = {
-			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.05
 		}
 
 		complete_effect = {
