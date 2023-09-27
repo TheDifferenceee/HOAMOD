@@ -51,6 +51,8 @@ NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100        -- Each level of airbase 
 NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 6   -- supply throughput per level of naval base --3 bunu degistirebilirim askerler atrittion yemezse
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.4 -- multiplactive resource bonus for each level of (non damaged) infrastructure --0.2
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40
+
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5
  
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
