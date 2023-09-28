@@ -38,6 +38,7 @@ tactic_anti_stack = {
 		NOT = { is_fighting_in_terrain = mountain }
 		NOT = { is_fighting_in_terrain = marsh }
 		NOT = { is_fighting_in_terrain = jungle }
+		NOT = { is_fighting_in_terrain = desert }
 		hardness > 0.5
 	}
 	
