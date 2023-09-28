@@ -38,11 +38,12 @@ tactic_anti_stack = {
 	
 	active = yes
 
-	base =  { factor = 222 }
+	base =  { factor = 4 }
 	picture = attack
 
 	attacker = 0.05
 	combat_width = -0.50
+	attacker_movement_speed = 0.5
 }
 
 tactic_basic_defend = {
