@@ -28,6 +28,23 @@ tactic_basic_attack = {
 	attacker = 0.05
 }
 
+tactic_anti_stack = {
+
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		NOT = { is_fighting_in_terrain = urban }
+	}
+	
+	active = yes
+
+	base =  { factor = 2 }
+	picture = attack
+
+	attacker = 0.05
+	combat_width = -0.50
+}
+
 tactic_basic_defend = {
 	is_attacker = no
 	trigger = {
