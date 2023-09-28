@@ -38,16 +38,16 @@ tactic_anti_stack = {
 		NOT = { is_fighting_in_terrain = mountain }
 		NOT = { is_fighting_in_terrain = marsh }
 		NOT = { is_fighting_in_terrain = jungle }
+		hardness > 0.5
 	}
 	
 	active = yes
 
-	base =  { factor = 4 }
+	base =  { factor = 6 }
 	picture = attack
 
 	attacker = 0.05
 	combat_width = -0.50
-	attacker_movement_speed = -0.5
 }
 
 tactic_basic_defend = {
