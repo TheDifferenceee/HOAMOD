@@ -227,5 +227,15 @@ NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0.1
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 1.0
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0.01
 NDefines.NNavy.TRAINING_ACCIDENT_ORG_LOSS_FACTOR = 0.1
+NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1 --vanilla 0.1,  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
+NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.01 --vanilla 0.05, -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
+NDefines.NNavy.CONVOY_HIT_PROFILE = 120.0  	-- convoys has this contant hit profile
+NDefines.NNavy.HIT_PROFILE_MULT  = 100.0  	-- multiplies hit profile of every ship
+NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR = 1 --vanilla 0.5,		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult)
+NDefines.NNavy.HIT_PROFILE_SPEED_BASE = 0.0 --vanilla 20,		-- Base value added to hitprofile speed calulation
+NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1 --vanilla 0.66,	-- org will clamped to this ratio on manual move
+NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 1 --vanilla0.1,	-- org will clamped to this ratio on manual move
+NDefines.NNavy.CONVOY_DETECTION_CHANCE_BASE = 10 --vanilla 4.12,							-- regular convoy base chance detection percentage (if this fails, no detection is done on that tick)
+NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -1 --vanilla -0.9,					-- All damage reduction % when target armor is >= then shooter armor piercing.
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                -- This much progress can be saved while not having a focus selected --10       
