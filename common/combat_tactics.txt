@@ -42,7 +42,7 @@ tactic_anti_stack = {
 		hardness > 0.5
 	}
 	
-	active = yes
+	active = no
 
 	base =  { factor = 9 }
 	picture = attack

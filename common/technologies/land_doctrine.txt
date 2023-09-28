@@ -7,7 +7,9 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 0
 		
-		xor = { superior_firepower trench_warfare mass_assault } 
+		xor = { superior_firepower trench_warfare mass_assault }
+
+		enable_tactic = tactic_anti_stack 
 
 		path = {
 			leads_to_tech = delay 
@@ -930,7 +932,9 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 0
 		
-		xor = { mobile_warfare trench_warfare mass_assault } 
+		xor = { mobile_warfare trench_warfare mass_assault }
+
+		enable_tactic = tactic_anti_stack 
 
 		path = {
 			leads_to_tech = sup_delay 
@@ -1778,7 +1782,9 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 0
 		
-		xor = { mobile_warfare superior_firepower mass_assault } 
+		xor = { mobile_warfare superior_firepower mass_assault }
+
+		enable_tactic = tactic_anti_stack 
 	
 		max_dig_in = 10
 		dig_in_speed_factor = 0.25 #25% bonus
@@ -2639,7 +2645,9 @@ technologies = {
 		
 		xp_research_type = army
 		xp_unlock_cost = 0
-		xor = { mobile_warfare superior_firepower trench_warfare } 
+		xor = { mobile_warfare superior_firepower trench_warfare }
+
+		enable_tactic = tactic_anti_stack 
 
 		path = {
 			leads_to_tech = pocket_defence 
