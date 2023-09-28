@@ -34,6 +34,10 @@ tactic_anti_stack = {
 	trigger = { # combined scope for both country and combatant
 		is_attacker = yes
 		NOT = { is_fighting_in_terrain = urban }
+		NOT = { is_fighting_in_terrain = hills }
+		NOT = { is_fighting_in_terrain = mountain }
+		NOT = { is_fighting_in_terrain = marsh }
+		NOT = { is_fighting_in_terrain = jungle }
 	}
 	
 	active = yes
@@ -43,7 +47,7 @@ tactic_anti_stack = {
 
 	attacker = 0.05
 	combat_width = -0.50
-	attacker_movement_speed = 0.5
+	attacker_movement_speed = -0.5
 }
 
 tactic_basic_defend = {
