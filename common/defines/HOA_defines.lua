@@ -53,6 +53,7 @@ NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.4 -- multiplactive resourc
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40
 
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 2
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 2
  
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
