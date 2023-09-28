@@ -1,7 +1,7 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 --12
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 60 --10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100 --25
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.4, 0.25, 0.1, 0.05, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.25, 0.1, 0.1, 0.05, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
 
 NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 2000.0                    -- It always takes atleast 10 days to justify a wargoal --2.0       
 NDefines.NDiplomacy.WARGOAL_THREAT_MAX_TIME_RATIO = 1.0            -- Threat from justifying a wargoal slowly builds up, hitting 100% at this proportion of the way to completion --1.0
@@ -13,7 +13,7 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0                -- This man
 NDefines.NDiplomacy.GUARANTEE_COST = 2000                            -- Scale with the number of already guaranteed countries. --25
 NDefines.NDiplomacy.REVOKE_GUARANTEE_COST = 2000 --25
 NDefines.NDiplomacy.ATTACHE_XP_SHARE = 0.2                            -- Country received xp from attaches --0.15
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.02                  -- basic speed control	
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.05 --- 0.05                 -- basic speed control	
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 27 --20 
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_INFRA = 0.35 --0.2 monty degisiklik
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_VP = 1 --3 monty degisiklik
