@@ -125,6 +125,7 @@ NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0                    -- fuel cons
 NDefines.NMilitary.COMBAT_STACKING_START = 3                       -- vanilla is 8 -- at what nr of divisions stacking penalty starts
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- vanilla is 4 -- extra stacking from directions
 NDefines.NMilitary.COMBAT_STACKING_PENALTY = -1                -- vanilla is -0.02 -- how much stacking penalty per division      
+NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = -1
 	
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5                            -- Higher value = more shot down planes --1 yani vanilla deger
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1                    -- same as above but used inside naval combat for carrier battles --5  f3ten koydugumuz ucakla ayni islevde oldugunu dusunuyoruz        
