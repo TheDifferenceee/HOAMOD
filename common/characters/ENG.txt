@@ -253,7 +253,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine }
+			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine desert_fox}
 			skill=4
 			attack_skill=2
 			defense_skill=4
