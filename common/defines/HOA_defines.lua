@@ -13,7 +13,7 @@ NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 0                -- This man
 NDefines.NDiplomacy.GUARANTEE_COST = 2000                            -- Scale with the number of already guaranteed countries. --25
 NDefines.NDiplomacy.REVOKE_GUARANTEE_COST = 2000 --25
 NDefines.NDiplomacy.ATTACHE_XP_SHARE = 0.2                            -- Country received xp from attaches --0.15
-	
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.02                  -- basic speed control	
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 27 --20 
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_INFRA = 0.35 --0.2 monty degisiklik
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_VP = 1 --3 monty degisiklik
