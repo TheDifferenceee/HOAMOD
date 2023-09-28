@@ -26,7 +26,7 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		breakthrough = 8
+		breakthrough = 16
 		hardness = 0.50
 		armor_value = 10
 
@@ -71,7 +71,7 @@ equipments = {
 		maximum_speed = 10
 
 		#Defensive Abilities
-		breakthrough = 10
+		breakthrough = 20
 		hardness = 0.60
 		armor_value = 15
 
@@ -100,7 +100,7 @@ equipments = {
 		maximum_speed = 12
 
 		#Defensive Abilities
-		breakthrough = 12
+		breakthrough = 24
 		hardness = 0.70
 		armor_value = 20
 
