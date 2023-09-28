@@ -55,39 +55,7 @@ leader_traits = {
 	
 ##################################
 # Common Traits
-##################################
-	old_guard = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-			max_dig_in = 1
-		}
-		
-		non_shared_modifier = {
-			experience_gain_factor = -0.1
-		}
-
-		new_commander_weight = {
-			factor = 1
-
-			modifier = {
-				FROM = { has_idea = best_of_the_best_spirit }
-				factor = 0
-			}
-			modifier = {
-				FROM = { has_idea = academy_scholarships_spirit }
-				factor = 0
-			}
-			modifier = { #Purged Junior Army Officers
-				FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-				factor = 0
-			}
-		}
-		
-	}
-	
-	
+##################################		
 	brilliant_strategist = { 
 		type = land
 		trait_type = personality_trait
@@ -373,199 +341,6 @@ leader_traits = {
 		}
 	}
 	
-	infantry_officer = { 
-		type = land
-		trait_type = personality_trait 
-		
-		unit_trigger = {
-			OR = {
-				division_has_majority_template = infantry
-				division_has_majority_template = bicycle_battalion
-				division_has_majority_template = marine
-				division_has_majority_template = mountaineers
-				division_has_majority_template = paratrooper
-				division_has_majority_template = penal_battalion
-				
-				owner = {
-					has_idea = mass_assault_academy_spirit
-				}
-			}
-			owner = {
-				NOT = {
-					OR = {
-						has_idea = best_of_the_best_spirit
-						has_idea = academy_scholarships_spirit
-						has_idea = SOV_purged_junior_army_officers_3
-					}
-				}
-			}
-		}
-		
-		trait_xp_factor = {
-			infantry_leader = 0.1     #+100%
-		}
-		
-		new_commander_weight = {
-			factor = 1
-			
-			modifier = {
-				FROM = { 
-					has_idea = mass_assault_academy_spirit
-				}
-				factor = 2
-			}
-			
-			modifier = {
-				FROM = { has_idea = best_of_the_best_spirit }
-				factor = 0
-			}
-			modifier = {
-				FROM = { has_idea = academy_scholarships_spirit }
-				factor = 0
-			}
-			modifier = { #Purged Junior Army Officers
-				FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-				factor = 0
-			}
-			
-			modifier = {
-				FROM = { 
-					has_dlc = "By Blood Alone"
-				}
-				factor = 0
-			}
-			
-		}
-		defense_skill_factor = 1
-		planning_skill_factor = 1
-	}
-	
-	cavalry_officer = { 
-		type = land
-		trait_type = personality_trait
-		unit_type = {
-			type = cavalry
-			type = camelry
-			type = motorized
-			type = mechanized
-		}
-		
-		unit_trigger = {
-			OR = {
-				division_has_majority_template = cavalry
-				division_has_majority_template = camelry
-				division_has_majority_template = motorized
-				division_has_majority_template = mechanized
-			}
-			owner = {
-				NOT = {
-					OR = {
-						has_idea = best_of_the_best_spirit
-						has_idea = academy_scholarships_spirit
-						has_idea = SOV_purged_junior_army_officers_3
-					}
-				}
-			}
-		}
-		
-		trait_xp_factor = {
-			cavalry_leader = 0.1     #+100%
-		}
-
-		new_commander_weight = {
-			factor = 1
-			
-			modifier = {
-				FROM = { has_idea = best_of_the_best_spirit }
-				factor = 0
-			}
-			modifier = {
-				FROM = { has_idea = academy_scholarships_spirit }
-				factor = 0
-			}
-			modifier = { #Purged Junior Army Officers
-				FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-				factor = 0
-			}
-			
-			modifier = {
-				FROM = { 
-					has_dlc = "By Blood Alone"
-				}
-				factor = 0
-			}
-			
-		}
-		
-		attack_skill_factor = 1
-		logistics_skill_factor = 1
-	}
-	
-	armor_officer = { 
-		type = land
-		trait_type = personality_trait
-		
-		trait_xp_factor = {
-			panzer_leader = 0.1     #+100%
-		}
-		
-		unit_trigger = {
-			OR = {
-				division_has_majority_template = light_armor
-				division_has_majority_template = medium_armor
-				division_has_majority_template = heavy_armor
-				division_has_majority_template = super_heavy_armor
-				
-				owner = {
-					has_idea = mobile_warfare_academy_spirit
-				}
-				
-			}
-			owner = {
-				NOT = {
-					OR = {
-						has_idea = best_of_the_best_spirit
-						has_idea = academy_scholarships_spirit
-						has_idea = SOV_purged_junior_army_officers_3
-					}
-				}
-			}
-		}
-		
-		new_commander_weight = {
-			factor = 1
-			
-			modifier = {
-				FROM = { 
-					has_idea = mobile_warfare_academy_spirit
-				}
-				factor = 2
-			}
-			
-			modifier = {
-				FROM = { has_idea = best_of_the_best_spirit }
-				factor = 0
-			}
-			modifier = {
-				FROM = { has_idea = academy_scholarships_spirit }
-				factor = 0
-			}
-			modifier = { #Purged Junior Army Officers
-				FROM = { has_idea = SOV_purged_junior_army_officers_3 }
-				factor = 0
-			}
-			
-			modifier = {
-				FROM = { 
-					has_dlc = "By Blood Alone"
-				}
-				factor = 0
-			}
-			
-		}
-		attack_skill_factor = 1
-		planning_skill_factor = 1
-	}
 
 	engineer_officer = { 
 		type = land
@@ -1072,7 +847,7 @@ leader_traits = {
 		cost = 400
 		
 		field_marshal_modifier = {
-			max_army_group_size = 2
+			max_army_group_size = 8
 		}
 		
 		slot = army_chief
@@ -1092,6 +867,90 @@ leader_traits = {
 ##################################
 # Corps Commander traits.
 ##################################
+	infantry_officer = { 		
+		trait_xp_factor = {
+			infantry_leader = 1     #+100%
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = -16
+		}
+		type = corps_commander
+		gain_xp = {
+			always = yes
+		}
+		cost = 0
+		
+		trait_type = assignable_trait
+		
+		gui_row = 17
+		mutually_exclusive = armor_officer
+		mutually_exclusive = cavalry_officer
+		mutually_exclusive = old_guard
+	}
+
+	armor_officer = { 
+		trait_xp_factor = {
+			panzer_leader = 1     #+100%
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = -16
+		}
+		type = corps_commander
+		gain_xp = {
+			always = yes
+		}
+		cost = 0
+		
+		trait_type = assignable_trait
+		
+		gui_row = 16
+		attack_skill_factor = 1
+		mutually_exclusive = infantry_officer
+		mutually_exclusive = cavalry_officer
+		mutually_exclusive = old_guard
+	}
+
+	cavalry_officer = { 
+		trait_xp_factor = {
+			cavalry_leader = 1     #+100%
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = -16
+		}
+		type = corps_commander
+		gain_xp = {
+			always = yes
+		}
+		cost = 0
+		
+		trait_type = assignable_trait
+		
+		gui_row = 18
+		mutually_exclusive = infantry_officer
+		mutually_exclusive = armor_officer
+		mutually_exclusive = old_guard
+	}
+
+		old_guard = { 		
+		non_shared_modifier = {
+			experience_gain_factor = -0.5
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = 32
+		}
+		type = corps_commander
+		gain_xp = {
+			always = yes
+		}
+		cost = 0
+		
+		trait_type = assignable_trait
+		
+		gui_row = 19
+		mutually_exclusive = infantry_officer
+		mutually_exclusive = armor_officer
+		mutually_exclusive = cavalry_officer
+	}
 
 	organizer = { 
 		type = corps_commander
@@ -1179,7 +1038,7 @@ leader_traits = {
 				check_variable = { num_units > 99 }
 			}
 			else = {
-				check_variable = { num_units > 23 }
+				check_variable = { num_units > 31 }
 			}
 		}
 		custom_gain_xp_trigger_tooltip = fighting_with_enough_units
@@ -1187,7 +1046,7 @@ leader_traits = {
 		cost = 400
 		
 		corps_commander_modifier = {
-			max_commander_army_size = 6
+			max_commander_army_size = 8
 		}
 		
 		ai_will_do = {
@@ -1540,7 +1399,7 @@ leader_traits = {
 		gain_xp = {
 			is_amphibious_invasion = yes
 		}
-		cost = 100
+		cost = 1
 		modifier = {
 			amphibious_invasion = 0.3 # 30% faster invasions
 			invasion_preparation = -0.3
