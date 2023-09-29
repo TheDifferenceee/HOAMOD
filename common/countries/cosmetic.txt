@@ -4,7 +4,7 @@ MAL_UK = {
 }
 
 RAJ_UK = {
-	color = rgb { 200 16 47 }
+	color = rgb { 64 0 90 }
 	color_ui = rgb { 200 16 47 }
 }
 
@@ -267,12 +267,12 @@ CAN_north_america_dominion = {
 }
 
 CAN_UK = {
-	color = rgb { 206 17 38 }
+	color = rgb { 167 1 1 }
 	color_ui = rgb { 206 17 38 }
 }
 
 CAN_FREE = {
-	color = rgb { 255 1 1 }
+	color = rgb { 167 1 1 }
 	color_ui = rgb { 255 1 1 }
 }
 

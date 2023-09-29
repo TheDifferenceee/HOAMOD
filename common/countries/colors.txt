@@ -9,7 +9,7 @@ ENG = {
 	color_ui = rgb { 200 16 46 }
 }
 SOV = {
-	color = rgb { 188 0 0 }
+	color = rgb { 160 0 0 }
 	color_ui = rgb { 188 0 0 }
 }
 SWE = {
@@ -141,11 +141,11 @@ BRA = {
 	color_ui = rgb { 0 155 58 }
 }
 CAN = {
-	color = rgb { 255 1 1 }
+	color = rgb { 167 1 1 }
 	color_ui = rgb { 255 1 1 }
 }
 CHI = {
-	color = rgb { 0 0 149 } 
+	color = rgb { 0 106 167 } 
 	color_ui = rgb { 0 0 149 }
 }
 CHL = {
@@ -237,7 +237,7 @@ SIA = {
 	color_ui = rgb { 260 260 260 }
 }
 SIK = {
-	color = rgb { 0 0 155 } 
+	color = rgb { 128 128 128 } 
 	color_ui = rgb { 0 0 155 }
 }
 TIB = {
@@ -253,7 +253,7 @@ VEN = {
 	color_ui = rgb { 247 209 23 }
 }
 YUN = {
-	color = rgb { 0 0 149 }
+	color = rgb { 0 120 0 }
 	color_ui = rgb { 0 0 149 }
 }
 USA = {
@@ -301,7 +301,7 @@ SLO = {
 	color_ui = rgb { 0 92 230 }
 }
 RAJ = {
-	color = rgb { 255 153 51 }
+	color = rgb { 64 0 112 }
 	color_ui = rgb { 255 153 51 }
 }
 
@@ -311,22 +311,22 @@ CRO = {
 }
 
 PRC = {
-	color = rgb { 0 0 149 } 
+	color = rgb { 173 0 0 } 
 	color_ui = rgb { 0 0 149 }
 }
 
 GXC = {
-	color = rgb { 0 0 149 }
+	color = rgb { 0 110 0 }
 	color_ui = rgb { 0 0 149 }
 }
 
 SHX = {
-	color = rgb { 0 0 149 }
+	color = rgb { 182 0 0 }
 	color_ui = rgb { 0 0 149 }
 }
 
 XSM = {
-	color = rgb { 0 0 149 }
+	color = rgb { 128 128 128 }
 	color_ui = rgb { 0 0 149 }
 }
 
