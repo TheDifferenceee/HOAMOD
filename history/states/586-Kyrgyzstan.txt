@@ -5,7 +5,7 @@ state={
 		rubber=20 # was: 0
 		steel=20.000
 		chromium=12.000
-		tungsten=4.000
+		tungsten=32.000
 		aluminium=10.000
 	}
 
