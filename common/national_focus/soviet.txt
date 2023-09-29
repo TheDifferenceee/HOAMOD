@@ -2080,6 +2080,7 @@ focus_tree = {
 				add_ideas = SOV_increased_aircraft_production_ns_bonus
 				add_to_variable = { SOV_soviet_airforce_air_accidents_factor = 0.05 }
 			}
+				add_ideas = SOV_zulme_karsi_mukavemet
 
 			hidden_effect = {
 				if = { #DEFAULT COMMIE
