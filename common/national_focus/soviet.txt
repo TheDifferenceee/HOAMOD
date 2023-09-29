@@ -6511,7 +6511,7 @@ focus_tree = {
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			surrender_progress < 0.05
+			surrender_progress < 0.15
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
