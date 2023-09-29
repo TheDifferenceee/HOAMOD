@@ -5607,6 +5607,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			134 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+
 			random_country = {
 				limit = {
 					original_tag = CAN
