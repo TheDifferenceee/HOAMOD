@@ -871,9 +871,6 @@ leader_traits = {
 		trait_xp_factor = {
 			infantry_leader = 1     #+100%
 		}
-		corps_commander_modifier = {
-			max_commander_army_size = -16
-		}
 		type = corps_commander
 		gain_xp = {
 			always = yes
@@ -891,9 +888,6 @@ leader_traits = {
 	armor_officer = { 
 		trait_xp_factor = {
 			panzer_leader = 1     #+100%
-		}
-		corps_commander_modifier = {
-			max_commander_army_size = -16
 		}
 		type = corps_commander
 		gain_xp = {
@@ -913,9 +907,6 @@ leader_traits = {
 	cavalry_officer = { 
 		trait_xp_factor = {
 			cavalry_leader = 1     #+100%
-		}
-		corps_commander_modifier = {
-			max_commander_army_size = -16
 		}
 		type = corps_commander
 		gain_xp = {
