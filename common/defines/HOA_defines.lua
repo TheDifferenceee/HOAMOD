@@ -1,7 +1,7 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 --12
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 120 --10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 240 --25
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.25, 0.1, 0.1, 0.05, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.3, 0.175, 0.03, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
 
 NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 2000.0                    -- It always takes atleast 10 days to justify a wargoal --2.0       
 NDefines.NDiplomacy.WARGOAL_THREAT_MAX_TIME_RATIO = 1.0            -- Threat from justifying a wargoal slowly builds up, hitting 100% at this proportion of the way to completion --1.0
