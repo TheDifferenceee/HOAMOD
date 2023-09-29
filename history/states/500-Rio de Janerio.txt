@@ -7,13 +7,12 @@ state={
 	state_category = large_city
 	
 	history={
-		owner = PAN
-		add_core_of = PAN
+		owner = USA
 		buildings = {
-			infrastructure = 1 #was: 6
+			infrastructure = 2 #was: 6
 			air_base = 1
 			10980 = {
-				naval_base = 1
+				naval_base = 6
 			}
 		}
 		victory_points = {
