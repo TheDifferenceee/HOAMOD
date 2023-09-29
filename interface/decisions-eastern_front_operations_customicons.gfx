@@ -1,8 +1,0 @@
-spriteTypes = { 
-	##Icon For: Uranus
-	SpriteType = { 
-		name = "decision_icon_uranus"
-		texturefile = "gfx/interface/decisions/decision_icon_uranus.dds"
-	}
-
-}

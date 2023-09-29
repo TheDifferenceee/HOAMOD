@@ -50,23 +50,6 @@ ideas = {
 			}
 		}
 
-		uranus = {
-			name = uranus
-
-			removal_cost = -1
-
-			picture = trotskyite_plot
-
-			allowed = {
-				always = no
-			}
-
-		
-			modifier = {
-defence = 0.1
-			}
-		}
-
 		trotskyite_plot_nsb = {
 			name = trotskyite_plot
 
