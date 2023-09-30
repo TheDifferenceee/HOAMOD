@@ -1398,8 +1398,8 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_armor = {
-			hard_attack = 0.10
 			soft_attack = 0.10
+			default_morale = 0.1
 		}
 		
 		enable_tactic = tactic_breakthrough
