@@ -3,6 +3,7 @@ ideas = {
 	country = {
 	
 		okinawa = {
+		picture = warrior_traditions_idea
 			allowed = {
 				always = no
 			}
@@ -23,6 +24,7 @@ ideas = {
 		}
 	
 			iwojima = {
+			picture = warrior_traditions_idea
 			allowed = {
 				always = no
 			}
@@ -42,6 +44,7 @@ ideas = {
 			}
 		}
 			taiwan = {
+			picture = warrior_traditions_idea
 			allowed = {
 				always = no
 			}
