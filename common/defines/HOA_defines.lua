@@ -234,5 +234,9 @@ NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1 --vanilla 0.66,	-- org will clamped to
 NDefines.NNavy.MIN_ORG_ON_MANUAL_MOVE = 1 --vanilla0.1,	-- org will clamped to this ratio on manual move
 NDefines.NNavy.CONVOY_DETECTION_CHANCE_BASE = 10 --vanilla 4.12,							-- regular convoy base chance detection percentage (if this fails, no detection is done on that tick)
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -1 --vanilla -0.9,					-- All damage reduction % when target armor is >= then shooter armor piercing.
+NDefines.NNavy.NAVY_REPAIR_BASE_SEARCH_SCORE_PER_SHIP_WAITING_EXTRA_SHIP = 5  -- if a naval base has more ships than it can repair, it will get penalties
+NDefines.NNavy.NAVY_REPAIR_BASE_SEARCH_SCORE_PER_SLOT = 1					-- while searching for a naval base for repairs, the bases gets a bonus to their scores per empty slot they have
+NDefines.NNavy.NAVY_REPAIR_BASE_SEARCH_BOOST_FOR_SAME_COUNTRY = 1 --vanilla 5				-- while searching for a naval base for repairs, your own bases gets a bonus
+NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1 --vanilla 0.25				-- initially countries will allocate this ratio of dockyards for repairs
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                -- This much progress can be saved while not having a focus selected --10       
