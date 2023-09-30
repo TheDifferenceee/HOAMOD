@@ -894,9 +894,7 @@ leader_traits = {
 			always = yes
 		}
 		cost = 0
-		corps_commander_modifier = {
-			max_commander_army_size = -16
-		}
+		
 		trait_type = assignable_trait
 		
 		gui_row = 16
