@@ -1,0 +1,9 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_homeland_score"
+		texturefile = "gfx/homeland_score.dds"
+		legacy_lazy_load = no
+	}
+    
+}
+

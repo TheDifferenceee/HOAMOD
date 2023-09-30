@@ -22,8 +22,8 @@ ideas = {
 				operative_slot = 2
 				industry_air_damage_factor = -0.1
 				army_morale_factor = 0.1
-				army_core_attack_factor = 0.50
-				army_core_defence_factor = 0.50
+				army_core_attack_factor = -0.12
+				army_core_defence_factor = -0.12
 			}
 		}
 	
