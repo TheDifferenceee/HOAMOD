@@ -926,7 +926,7 @@ leader_traits = {
 
 		old_guard = { 		
 		corps_commander_modifier = {
-			max_commander_army_size = 32
+			max_commander_army_size = 96
 		}
 		type = corps_commander
 		gain_xp = {
