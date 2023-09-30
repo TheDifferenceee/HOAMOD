@@ -105,7 +105,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ old_guard urban_assault_specialist defensive_doctrine }
+			traits={ urban_assault_specialist defensive_doctrine }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -359,7 +359,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard   }
+			traits={ }
 			skill=3
 			attack_skill=4
 			defense_skill=3

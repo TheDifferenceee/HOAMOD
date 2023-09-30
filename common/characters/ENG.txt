@@ -309,7 +309,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist armor_officer politically_connected }
+			traits={ inflexible_strategist politically_connected }
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -467,7 +467,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard }
+			traits={ }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -486,7 +486,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard }
+			traits={ }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -601,7 +601,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard politically_connected }
+			traits={ politically_connected }
 			skill=4
 			attack_skill=2
 			defense_skill=4
@@ -620,7 +620,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist armor_officer war_hero }
+			traits={ inflexible_strategist war_hero }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -639,7 +639,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
+			traits={ }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -658,7 +658,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader armor_officer politically_connected }
+			traits={ harsh_leader politically_connected }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -677,7 +677,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist career_officer infantry_officer }
+			traits={ brilliant_strategist career_officer }
 			skill=4
 			attack_skill=3
 			defense_skill=4
@@ -696,7 +696,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer armor_officer war_hero }
+			traits={ career_officer war_hero }
 			skill=3
 			attack_skill=1
 			defense_skill=3

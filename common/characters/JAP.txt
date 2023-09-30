@@ -188,7 +188,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_officer trickster }
+			traits={ career_officer trickster }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -250,7 +250,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist infantry_officer }
+			traits={ brilliant_strategist }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -326,7 +326,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless infantry_officer }
+			traits={ trait_reckless }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -379,7 +379,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_reckless cavalry_officer }
+			traits={ trait_reckless }
 			skill=4
 			attack_skill=3
 			defense_skill=2
@@ -398,7 +398,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard war_hero }
+			traits={ war_hero }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -436,7 +436,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer cavalry_officer }
+			traits={ career_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=1
@@ -455,7 +455,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless infantry_officer JAP_samurai_lineage trickster }
+			traits={ trait_reckless JAP_samurai_lineage trickster }
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -474,7 +474,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_reckless }
+			traits={ trait_reckless }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -569,7 +569,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer }
+			traits={ }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -625,7 +625,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer infantry_officer commando }
+			traits={ career_officer commando }
 			skill=3
 			attack_skill=3
 			defense_skill=1
@@ -663,7 +663,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard politically_connected JAP_samurai_lineage }
+			traits={ politically_connected JAP_samurai_lineage }
 			skill=2
 			attack_skill=2
 			defense_skill=2

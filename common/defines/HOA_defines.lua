@@ -26,6 +26,7 @@ NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 50					-- pp cost to scorch a stat
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.025
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 150
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.03 
+NDefines.NCountry.MIN_MANPOWER_RATIO = 0.5 --vanilla 0.15,						-- Min manpower ratio to show manpower alert
 	
 NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.1 -- base resistance grow	--vanillasi 0.2
 	
@@ -51,6 +52,7 @@ NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100        -- Each level of airbase 
 NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 6   -- supply throughput per level of naval base --3 bunu degistirebilirim askerler atrittion yemezse
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.4 -- multiplactive resource bonus for each level of (non damaged) infrastructure --0.2
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40
+NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.05 --vanilla 0.05		-- Each level of navalbase building repairs X strength and can repair as many ships as its level
 
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 2
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 2
@@ -87,14 +89,28 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.1     -- effect on sp
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01            -- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support --0.07 yani vanilla degeri sonradan bakabilirim           
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005                -- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit. --0.005 yani vanilla degeri sonradan bakabilirim          
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 --1
-NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }        -- Experience needed to progress to the next level --{ 0.1, 0.3, 0.75, 0.9 }               
+NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }        -- Experience needed to progress to the next level --{ 0.1, 0.3, 0.75, 0.9 }      
+NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0         
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.002 --0.0015
-NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 400.0
+NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 0
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5--vanilla 0.3					-- xp gain ratio for army group leaders
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0.04 --vanilla 0.04
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0.0 --vanilla 0.1
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 30 -- vanilla 8
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.01 -- vanilla 0.45
+NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
+2.0, -- field marshal
+2.0, -- corps commander
+1.0, -- navy general
+0.0, -- operative
+}
+
+NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits on each level
+1.0, -- field marshal
+1.0, -- corps commander
+1.0, -- navy general
+0.0, -- operative
+}
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 1.0 -- vanilla 0.1
 NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3                -- Most xp you can gain per day --1.2
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0001 --vanilla 0.0001,

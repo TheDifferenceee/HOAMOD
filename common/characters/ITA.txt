@@ -236,7 +236,7 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer }
+			traits = { inflexible_strategist politically_connected defensive_doctrine organizer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -271,7 +271,7 @@ characters = {
 		}
 		
 		field_marshal = {
-			traits = { old_guard trait_cautious politically_connected defensive_doctrine }
+			traits = { trait_cautious politically_connected defensive_doctrine }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -363,7 +363,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { armor_officer war_hero }
+			traits = { war_hero }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 3
@@ -398,7 +398,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard career_officer trait_cautious organisational_leader }
+			traits = { career_officer trait_cautious organisational_leader }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -459,7 +459,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer career_officer }
+			traits = { career_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -480,7 +480,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard career_officer }
+			traits = { career_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -559,7 +559,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard }
+			traits = { }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -580,7 +580,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard inflexible_strategist }
+			traits = { inflexible_strategist }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -601,7 +601,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard trait_reckless war_hero } #Always sick really need to do something about it
+			traits = { trait_reckless war_hero } #Always sick really need to do something about it
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -621,7 +621,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard trait_engineer }
+			traits = { trait_engineer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -641,7 +641,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { armor_officer } #Representing how he died
+			traits = { } #Representing how he died
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -683,7 +683,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer organizer } #Logistics and Infantry
+			traits = { organizer } #Logistics and Infantry
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -703,7 +703,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer }
+			traits = { }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -723,7 +723,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { career_officer infantry_officer militias_officer } # Infantry & Mountaineers (Used for Blackshirts since he also commanded them)
+			traits = { career_officer militias_officer } # Infantry & Mountaineers (Used for Blackshirts since he also commanded them)
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -827,7 +827,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer } # Infantry
+			traits = { } # Infantry
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -847,7 +847,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard trait_engineer fortress_buster trait_reckless } # Infantry
+			traits = { trait_engineer fortress_buster trait_reckless } # Infantry
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -889,7 +889,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard infantry_officer commando }
+			traits = { commando }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -2493,7 +2493,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer armor_officer }
+			traits = { infantry_officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -2519,7 +2519,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer urban_assault_specialist }
+			traits = { urban_assault_specialist }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -3120,7 +3120,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { politically_connected skilled_staffer infantry_officer } #SCW + Partisan Commander
+			traits = { politically_connected skilled_staffer } #SCW + Partisan Commander
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -3223,7 +3223,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { militias_officer infantry_officer } #SCW + Partisan Commander
+			traits = { militias_officer } #SCW + Partisan Commander
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -3550,7 +3550,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { old_guard }
+			traits = { }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3
