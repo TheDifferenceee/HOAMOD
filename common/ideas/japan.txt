@@ -2,66 +2,7 @@ ideas = {
 
 	country = {
 	
-		okinawa = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			removal_cost = -1
 	
-
-			modifier = {
-
-				army_core_defence_factor = 0.07
-			}
-		}
-	
-			iwojima = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			removal_cost = -1
-	
-
-			modifier = {
-
-				army_core_defence_factor = 0.07
-			}
-		}
-			taiwan = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			removal_cost = -1
-	
-
-			modifier = {
-
-				army_core_defence_factor = 0.07
-			}
-		}
-		
-		
 		state_shintoism = {
 			allowed = {
 				always = no
