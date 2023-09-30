@@ -88,6 +88,9 @@ if = {
 }
 add_timed_idea = { idea = hoa_peace_idea days = 1825 }
 
+add_dynamic_modifier = {
+	modifier = homeland_score_modifier_spirit
+}
 
 
 set_technology = {
