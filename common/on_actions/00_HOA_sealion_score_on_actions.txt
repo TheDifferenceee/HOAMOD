@@ -5,10 +5,10 @@ on_actions = {
 			JAP = {
 
                 set_variable = { homeland_score = 0 }
-				set_variable = { sub_weight = 1 }
+				set_variable = { sub_weight = 2 }
 				set_variable = { screen_weight = 7 }
-				set_variable = { capital_weight = 19 }
-				set_variable = { carrier_weight = 18 }
+				set_variable = { capital_weight = 25 }
+				set_variable = { carrier_weight = 7 }
             }
 		}
 	}
