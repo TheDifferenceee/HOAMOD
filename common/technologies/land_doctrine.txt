@@ -696,6 +696,13 @@ technologies = {
 		xp_unlock_cost = 100
 		enable_tactic = tactic_backhand_blow
 		
+		motorized = {
+			combat_width = -0.25
+		}
+		mechanized = {
+			combat_width = -0.25       #sfp metadan cikmaliydi hem op piyade hem op tanki olamaz
+		}
+		
 		path = {
 			leads_to_tech = modern_blitzkrieg 
 			research_cost_coeff = 1
@@ -2784,7 +2791,21 @@ technologies = {
 			peoples_army
 		}
 
+		artillery_brigade = {
+			soft_attack = 0.1           #deep battle bokkkum gibiydi bundan sonrakiler full deep battle
+		}
 
+		anti_tank_brigade = {
+			hard_attack = 0.1
+		}
+
+		category_artillery = {
+			soft_attack = 0.1
+		}
+
+		category_light_infantry = {
+			max_organisation = 5
+		}
 
 		supply_consumption_factor = -0.10
 
@@ -2910,6 +2931,11 @@ technologies = {
 		xp_unlock_cost = 100
 		max_planning = 0.10
 		land_reinforce_rate = 0.05
+
+		category_tanks = {
+			max_organisation = 2.5
+			default_morale = 0.1
+		}
 
 		enable_tactic = tactic_elastic_defense
 		
@@ -3087,11 +3113,11 @@ technologies = {
 		}	
 
 		mechanized = {
-			max_organisation = 10
+			max_organisation = 15
 			default_morale = 0.1
 		}
 		motorized = {
-			max_organisation = 10
+			max_organisation = 15
 			default_morale = 0.1
 		}	
 		amphibious_mechanized = {
@@ -3145,7 +3171,7 @@ technologies = {
 	continuous_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		org_loss_when_moving = -0.25
+		org_loss_when_moving = -0.15
 		land_reinforce_rate = 0.05
 		
 		enable_tactic = tactic_backhand_blow

@@ -1905,8 +1905,7 @@
 	focus = {
 		id = AST_western_australian_government_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = AST_standard_gauge_railway }
-		prerequisite = { focus = AST_industries_assistance_corporation }
+		prerequisite = { focus = AST_standard_gauge_railway focus = AST_industries_assistance_corporation }
 		x = 1
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
@@ -3193,6 +3192,7 @@
                     transfer_troops = yes
                 }
             }
+            335 = {set_compliance = 30}
 		}
 	}
 	
