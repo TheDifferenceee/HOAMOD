@@ -169,7 +169,7 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DISRUPTION_MIN_DAMAGE_FACTOR = 0.1 -- Mu
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER = 15.0 -- see above
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR = 0.01 -- Disruption damage to supply throughput done by bombing damage, not dependant on killing trains which also causes diruption.
 
-NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.15 -- max trucks we can destroy in one instance of a logistics strike --vanilla 0.3
+NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.2 -- max trucks we can destroy in one instance of a logistics strike --vanilla 0.3
 
 
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25                                -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty. --0.6
