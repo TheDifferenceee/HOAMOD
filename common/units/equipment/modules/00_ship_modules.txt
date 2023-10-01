@@ -427,7 +427,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 
 		add_stats = {
-			lg_attack = 2.8
+			lg_attack = 2
 			build_cost_ic = 1280
 		}
 
@@ -464,7 +464,7 @@ equipment_modules = {
 
 		add_equipment_type = capital_ship
 		add_stats = {
-			lg_attack = 3.5
+			lg_attack = 2.5
 			build_cost_ic = 1600
 		}
 		multiply_stats = {
@@ -502,7 +502,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 4.2
+			lg_attack = 3
 			build_cost_ic = 1920
 		}
 
@@ -546,7 +546,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 4.9
+			lg_attack = 3.5
 			build_cost_ic = 2240
 		}
 
