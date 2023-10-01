@@ -42,6 +42,20 @@ ideas = {
 			}
 		}
 
+		hoa_grind_idea = {
+			
+			picture = chi_incompetent_officers
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+	
+			modifier = {
+			    experience_gain_factor = -0.9
+			}
+		}
+
 		hoa_minor_idea = {
 			
 			picture = sisu

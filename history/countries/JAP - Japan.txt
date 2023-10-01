@@ -89,6 +89,7 @@ if = {
 	add_ideas = MTG_naval_treaty_adherent
 }
 add_timed_idea = { idea = hoa_peace_idea days = 1825 }
+add_timed_idea = { idea = hoa_grind_idea days = 1731 }
 
 add_dynamic_modifier = {
 	modifier = homeland_score_modifier_spirit
