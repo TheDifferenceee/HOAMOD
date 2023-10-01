@@ -98,7 +98,7 @@ NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5--vanilla 0.3					-- xp gain rati
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0.04 --vanilla 0.04
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0.0 --vanilla 0.1
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 30 -- vanilla 8
-NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.01 -- vanilla 0.45
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.02 -- vanilla 0.45
 NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
 2.0, -- field marshal
 2.0, -- corps commander
