@@ -394,6 +394,7 @@ add_to_faction = ITA
 add_ideas = {
 	sour_loser
 	general_staff
+	hoa_grind_idea
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation

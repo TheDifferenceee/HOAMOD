@@ -3676,7 +3676,7 @@ focus = {
 		x = 1
 		y = 2
 		relative_position_id = GER_danzig_or_war
-		cost = 4
+		cost = 1
 		ai_will_do = {
 			factor = 10	
 			modifier = {
@@ -4573,11 +4573,16 @@ focus = {
 		available = {
 			is_subject = no			
 			NOT = { is_in_faction_with = FRA }
+			POL = { has_capitulated = yes }
+			DEN = { has_capitulated = yes }
+			BEL = { has_capitulated = yes }
+			HOL = { has_capitulated = yes }
+			LUX = { has_capitulated = yes }
 		}
 		x = 1
 		y = 1
 		relative_position_id = GER_around_maginot
-		cost = 5
+		cost = 1
 		bypass = {
 			OR = {
 				NOT = { country_exists = FRA }
@@ -4600,6 +4605,9 @@ focus = {
 			}
 		}	
 		completion_reward = {
+			remove_ideas = hoa_grind_idea
+			ROM =  { remove_ideas = hoa_grind_idea }
+			ITA =  { remove_ideas = hoa_grind_idea }
 			add_named_threat = { threat = 5 name = GER_war_with_france_threat }
  			create_wargoal = {
  				type = take_state_focus

@@ -99,6 +99,9 @@ NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0.04 --vanilla 0.04
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0.0 --vanilla 0.1
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 30 -- vanilla 8
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.01 -- vanilla 0.45
+NDefines.NMilitary.COMBAT_STACKING_START = 3						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
+NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- vanilla is 4 -- extra stacking from directions
+NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.045                -- vanilla is -0.02 -- how much stacking penalty per division
 NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 				-- trait slot for 0 level leader
 2.0, -- field marshal
 2.0, -- corps commander

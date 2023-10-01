@@ -842,6 +842,7 @@ add_ideas = {
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
 add_timed_idea = { idea = hoa_peace_idea days = 1970 }
+add_timed_idea = { idea = hoa_grind_idea days = 1931 }
 
 1939.1.1 = {
 
