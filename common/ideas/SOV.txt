@@ -126,11 +126,13 @@ ideas = {
 			}
 
 			modifier = {
-				surrender_limit = -0.15
+				surrender_limit = -0.135     #sovyet dun biraz erken kaput oldu
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
+				civilian_intel_to_others = 40.0       #free trade bufflari varsa nerfleri de olmali
+				navy_intel_to_others = 20.0
 			}
 			
 		}

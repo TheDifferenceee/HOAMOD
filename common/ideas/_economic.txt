@@ -853,8 +853,6 @@ ideas = {
 
 			modifier = {
 				min_export = 0
-				civilian_intel_to_others = 10.0
-				navy_intel_to_others = 5
 			}
 
 			on_add = {

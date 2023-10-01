@@ -159,6 +159,7 @@ if = {
 	add_to_tech_sharing_group = commonwealth_research
 }
 add_timed_idea = { idea = hoa_peace_idea days = 1320 }
+add_ideas = hoa_minor_idea
 
 1939.1.1 = {
 	add_political_power = 1198

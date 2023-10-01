@@ -128,6 +128,7 @@ if = {
 }
 
 add_timed_idea = { idea = hoa_peace_idea days = 1320 }
+add_ideas = hoa_minor_idea
 
 if = {
 	limit = {

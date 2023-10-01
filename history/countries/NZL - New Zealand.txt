@@ -14,6 +14,7 @@ if = {
 	}
 }
 add_timed_idea = { idea = hoa_peace_idea days = 1320 }
+add_ideas = hoa_minor_idea
 # Starting tech
 set_stability = 0.8
 set_war_support = 0.3
