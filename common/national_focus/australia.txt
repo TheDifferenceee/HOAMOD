@@ -3192,6 +3192,7 @@
                     transfer_troops = yes
                 }
             }
+            335 = {set_compliance = 30}
 		}
 	}
 	
