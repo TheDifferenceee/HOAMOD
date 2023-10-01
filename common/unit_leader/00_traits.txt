@@ -869,7 +869,7 @@ leader_traits = {
 ##################################
 	infantry_officer = { 		
 		trait_xp_factor = {
-			infantry_leader = 1     #+100%
+			infantry_leader = 3     #+100%
 		}
 		type = corps_commander
 		gain_xp = {
@@ -923,9 +923,6 @@ leader_traits = {
 	}
 
 		old_guard = { 
-		non_shared_modifier = {
-			experience_gain_factor = -0.5
-		}
 		corps_commander_modifier = {
 			max_commander_army_size = 96
 		}
