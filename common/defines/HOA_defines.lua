@@ -294,5 +294,21 @@ NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_LIGHT_SHIPS = 0.01 --vanilla 0.1
 NDefines.NNavy.AGGRESSION_LIGHT_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 0.01 -- ratio for scoring for different gun types against heavy ships
 NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 4.0 --vanilla 1.0 -- ratio for scoring for different gun types against heavy ships
 NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_HEAVY_SHIPS = 4.0 --vanila 1.1   -- ratio for scoring for different gun types against heavy ships
+NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+5.00,
+2.00,
+1.00,
+0.50,
+0.10,
+0.00 --there isn't much point setting this higher than 0
+}
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+5.00,
+2.00,
+1.00,
+0.50,
+0.10,
+0.00 -- For criticals, you could reduce crit chance unlike damage in army combat, but we do not for now.
+}
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                -- This much progress can be saved while not having a focus selected --10       
