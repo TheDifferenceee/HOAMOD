@@ -47,7 +47,7 @@ tactic_anti_stack = {
 	base =  { factor = 0.15 }
 	picture = attack
 
-	attacker = -0.3
+	attacker = -0.25
 	defender = -0.05
 	combat_width = -0.50
 }
