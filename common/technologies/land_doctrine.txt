@@ -1240,7 +1240,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_line_artillery = {
-			soft_attack = 0.18
+			soft_attack = 0.2
 		}
 		coordination_bonus = 0.05
 		enable_tactic = tactic_overwhelming_fire
@@ -1354,7 +1354,11 @@ technologies = {
 		}
 
 		category_army = {
-			hard_attack = 0.20
+			hard_attack = 0.075
+		}
+
+		anti_tank_brigade = {
+			hard_attack = 0.05
 		}
 		
 		path = {
@@ -1405,8 +1409,11 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_armor = {
-			soft_attack = 0.10
 			default_morale = 0.1
+		}
+
+		category_army = {
+			hard_attack = 0.075
 		}
 		
 		enable_tactic = tactic_breakthrough
@@ -2872,6 +2879,15 @@ technologies = {
 	}
 	
 	deep_operations = {
+
+		artillery_brigade = {
+			soft_attack = 0.025
+		}
+
+		anti_tank_brigade = {
+			hard_attack = 0.025
+		}
+
 		category_tanks = {
 			max_organisation = 3
 		}

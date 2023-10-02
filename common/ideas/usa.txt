@@ -1078,6 +1078,7 @@ ideas = {
 				ai_badass_factor = 0.03 # cares for 3% of normal threat
 				ai_desired_divisions_factor = 0.5
 				global_building_slots_factor = 0.3
+				subjects_autonomy_gain = -2
 			}
 		}
 

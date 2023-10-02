@@ -4583,12 +4583,6 @@ focus = {
 		y = 1
 		relative_position_id = GER_around_maginot
 		cost = 1
-		bypass = {
-			OR = {
-				NOT = { country_exists = FRA }
-				has_war_with = FRA
-			}
-		}
 		historical_ai = {
 			date > 1939.1.1
 			NOT = {

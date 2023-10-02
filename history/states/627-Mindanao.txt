@@ -6,6 +6,10 @@ state={
 	
 	state_category = rural
 
+	resources={
+		chromium=60
+	}
+
 	history={
 		owner = PHI
 		buildings = {
