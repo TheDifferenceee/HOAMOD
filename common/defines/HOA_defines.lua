@@ -175,8 +175,8 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR = 0.01 -
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.2 -- max trucks we can destroy in one instance of a logistics strike --vanilla 0.3
 
 
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25                                -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty. --0.6
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5                            -- casting damage value to ship organisation multiplier. Use it to balance the game difficulty. --1.0 
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.2                                -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty. --0.6
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.0                            -- casting damage value to ship organisation multiplier. Use it to balance the game difficulty. --1.0 
 NDefines.NNavy.EXPERIENCE_FACTOR_CARRIER_GAIN = 0.02                            -- Xp gain by carrier ships in the combat --0.08
 NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 24                                -- base hours needed to prepare an invasion --168
 NDefines.NNavy.MISSION_FUEL_COSTS = {  -- fuel cost for each mission
@@ -218,9 +218,21 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		1.0, -- NAVAL_INVASION_SUPPORT
 	}
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		60.0,	-- big guns
+		40.0,	-- big guns
 		10.0,	-- torpedoes
 		40.0,	-- small guns
+	}
+NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
+		0.0, -- HOLD
+		0.0, -- PATROL
+		0.0, -- STRIKE FORCE
+		0.0, -- CONVOY RAIDING
+		0.0, -- CONVOY ESCORT
+		0.0, -- MINES PLANTING
+		0.0, -- MINES SWEEPING
+		0.0, -- TRAIN
+		0.0, -- RESERVE_FLEET
+		0.0, -- NAVAL_INVASION_SUPPORT
 	}
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.00                            -- supremacy of a ship is calculated using its IC, manpower and a base define --0.05
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.05 --0.005
@@ -251,12 +263,13 @@ NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0 --vanilla 0.5
 NDefines.NNavy.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 1 --vanilla 10
 NDefines.NNavy.UNIT_EXPERIENCE_SCALE = 0.5 --vanilla 1
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 1 --vanilla 0.2
-NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 1.0
+NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 10.0
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.01
 NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0.1
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 1.0
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0.01
 NDefines.NNavy.TRAINING_ACCIDENT_ORG_LOSS_FACTOR = 0.1
+NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.002 --vanilla 0.001,						-- Factor used to scale the Daily Country Navy XP gain
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1 --vanilla 0.1,  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.01 --vanilla 0.05, -- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.CONVOY_HIT_PROFILE = 120.0  	-- convoys has this contant hit profile
@@ -271,5 +284,15 @@ NDefines.NNavy.NAVY_REPAIR_BASE_SEARCH_SCORE_PER_SHIP_WAITING_EXTRA_SHIP = 5  --
 NDefines.NNavy.NAVY_REPAIR_BASE_SEARCH_SCORE_PER_SLOT = 1					-- while searching for a naval base for repairs, the bases gets a bonus to their scores per empty slot they have
 NDefines.NNavy.NAVY_REPAIR_BASE_SEARCH_BOOST_FOR_SAME_COUNTRY = 1 --vanilla 5				-- while searching for a naval base for repairs, your own bases gets a bonus
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1 --vanilla 0.25				-- initially countries will allocate this ratio of dockyards for repairs
+NDefines.NNavy.AGGRESION_MULTIPLIER_FOR_COMBAT = 1.2				-- ships are more aggresive in combat
+NDefines.NNavy.AGGRESSION_ARMOR_EFFICIENCY_MULTIPLIER = 1.0		-- armor to enemy piercing ratio is multiplied by this value, which will increase the strength of ships while considering them for aggression
+NDefines.NNavy.AGGRESSION_MIN_ARMOR_EFFICIENCY = 0.5              -- armor multiplier has a min and max caps while being factored in aggression
+NDefines.NNavy.AGGRESSION_MAX_ARMOR_EFFICIENCY = 1.5              -- armor multiplier has a min and max caps while being factored in aggression
+NDefines.NNavy.AGGRESSION_LIGHT_GUN_EFFICIENCY_ON_LIGHT_SHIPS = 4.0 --vanilla 1.0 -- ratio for scoring for different gun types against light ships
+NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_LIGHT_SHIPS = 0.01 --vanilla 0.25 -- ratio for scoring for different gun types against light ships
+NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_LIGHT_SHIPS = 0.01 --vanilla 0.1   -- ratio for scoring for different gun types against light ships
+NDefines.NNavy.AGGRESSION_LIGHT_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 0.01 -- ratio for scoring for different gun types against heavy ships
+NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 4.0 --vanilla 1.0 -- ratio for scoring for different gun types against heavy ships
+NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_HEAVY_SHIPS = 4.0 --vanila 1.1   -- ratio for scoring for different gun types against heavy ships
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                -- This much progress can be saved while not having a focus selected --10       

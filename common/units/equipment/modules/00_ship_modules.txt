@@ -429,6 +429,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 2
 			build_cost_ic = 1280
+			surface_visibility = 1
 		}
 
 		multiply_stats = {
@@ -466,6 +467,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 2.5
 			build_cost_ic = 1600
+			surface_visibility = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.05
@@ -504,6 +506,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 3
 			build_cost_ic = 1920
+			surface_visibility = 1
 		}
 
 		multiply_stats = {
@@ -548,6 +551,7 @@ equipment_modules = {
 		add_stats = {
 			lg_attack = 3.5
 			build_cost_ic = 2240
+			surface_visibility = 1
 		}
 
 		multiply_stats = {
@@ -2199,8 +2203,8 @@ equipment_modules = {
 		gfx = ship_airplane_launcher_1
 		
 		add_stats = {
-			surface_detection = 10
-			sub_detection = 2.5
+			surface_detection = 3
+			sub_detection = 12
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -2213,8 +2217,8 @@ equipment_modules = {
 		gfx = ship_airplane_launcher_2
 		parent = ship_airplane_launcher_1		
 		add_stats = {
-			surface_detection = 15
-			sub_detection = 3
+			surface_detection = 4
+			sub_detection = 16
 			build_cost_ic = 200
 		}
 		can_convert_from = {
