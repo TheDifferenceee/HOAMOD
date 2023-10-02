@@ -44,7 +44,7 @@ tactic_anti_stack = {
 	
 	active = no
 
-	base =  { factor = 0.1 }
+	base =  { factor = 0.15 }
 	picture = attack
 
 	attacker = -0.3
