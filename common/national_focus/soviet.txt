@@ -6509,10 +6509,7 @@ focus_tree = {
 		}
 
 		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
-			surrender_progress < 0.40
+			date > 1943.1.1
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
