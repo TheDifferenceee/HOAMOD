@@ -869,7 +869,7 @@ leader_traits = {
 ##################################
 	infantry_officer = { 		
 		trait_xp_factor = {
-			infantry_leader = 3     #+100%
+			infantry_leader = 1     #+100%
 		}
 		type = corps_commander
 		gain_xp = {
