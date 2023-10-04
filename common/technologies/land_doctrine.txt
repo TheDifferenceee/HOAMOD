@@ -2706,9 +2706,9 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
-		no_supply_grace = 48 # more hours before supply penalty changes
-		out_of_supply_factor = -0.10
-				
+		no_supply_grace = 216 # more hours before supply penalty changes
+		out_of_supply_factor = -0.25
+		pocket_penalty = -0.1		
 		path = {
 			leads_to_tech = defence_in_depth
 			research_cost_coeff = 1
@@ -2749,7 +2749,7 @@ technologies = {
 		max_dig_in = 5
 
 		category_light_infantry = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 		
 		
@@ -2799,20 +2799,36 @@ technologies = {
 		}
 
 		artillery_brigade = {
-			soft_attack = 0.1           #deep battle bokkkum gibiydi bundan sonrakiler full deep battle
+			soft_attack = 0.1			#deep battle bokkkum gibiydi bundan sonrakiler full deep battle
+			max_strength = 4
+			max_organisation = 3
 		}
 
 		anti_tank_brigade = {
 			hard_attack = 0.1
+			max_strength = 4
+			max_organisation = 3
 		}
 
 		category_artillery = {
 			soft_attack = 0.1
+			max_strength = 4
+			max_organisation = 3
 		}
-
-		category_light_infantry = {
-			max_organisation = 5
+		
+		rocket_artillery_brigade = {
+			soft_attack = 0.1
+			max_strength = 4
+			max_organisation = 3
 		}
+		
+		anti_air_brigade = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+			max_strength = 4
+			max_organisation = 3
+		}
+		
 
 		supply_consumption_factor = -0.10
 
@@ -2880,6 +2896,15 @@ technologies = {
 	
 	deep_operations = {
 
+		
+		mechanized = {
+			max_strength = 8
+		}
+		
+		motorized = {
+			max_strength = 8
+		}
+		
 		artillery_brigade = {
 			soft_attack = 0.025
 		}
@@ -2952,7 +2977,20 @@ technologies = {
 			max_organisation = 2.5
 			default_morale = 0.1
 		}
+		
+		motorized = {
+			max_organisation = 5
+			default_morale = 0.1
+		}
 
+		mechanized = {
+			max_organisation = 5
+			default_morale = 0.1
+		}
+
+		infantry = {
+			default_morale = 0.2
+		}
 		enable_tactic = tactic_elastic_defense
 		
 		path = {
@@ -3006,6 +3044,16 @@ technologies = {
 			max_strength = 7
 		}
 
+		mechanized = {
+			max_organisation = 8
+			default_morale = 0.10
+			breakthrough = 0.10
+		}
+		motorized = {
+			max_organisation = 8
+			default_morale = 0.10
+			breakthrough = 0.10
+		}
 		
 		enable_tactic = tactic_overwhelming_fire
 		
@@ -3060,7 +3108,7 @@ technologies = {
 		}
 		category_all_infantry = {
 			max_organisation = 5
-			breakthrough = 0.10
+			breakthrough = 0.20
 		}
 		category_line_artillery = {
 			max_organisation = 0.11 # sonradan ellenebilir suan oylesine koydum
