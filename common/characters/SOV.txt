@@ -1870,7 +1870,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { cavalry_officer panzer_leader panzer_expert }
+			traits = { cavalry_officer panzer_leader panzer_expert ranger}
 			skill = 6
 			attack_skill = 8
 			defense_skill = 5
