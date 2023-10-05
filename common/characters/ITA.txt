@@ -828,7 +828,7 @@ characters = {
 		
 		corps_commander = {
 			traits = { trait_TUR_kemalist_champion } # Infantry
-			skill = 3
+			skill = 1
 			attack_skill = 3
 			defense_skill = 3
 			planning_skill = 3

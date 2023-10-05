@@ -4571,13 +4571,12 @@ focus = {
 		icon = GFX_GER_curtail_france
 		prerequisite = { focus = GER_around_maginot focus = GER_weserubung }
 		available = {
-			is_subject = no			
-			NOT = { is_in_faction_with = FRA }
-			POL = { has_capitulated = yes }
-			DEN = { has_capitulated = yes }
-			BEL = { has_capitulated = yes }
-			HOL = { has_capitulated = yes }
-			LUX = { has_capitulated = yes }
+			is_subject = no
+			has_full_control_of_state = 8
+			has_full_control_of_state = 6
+			has_full_control_of_state = 36
+			has_full_control_of_state = 37
+			has_full_control_of_state = 10
 		}
 		x = 1
 		y = 1
