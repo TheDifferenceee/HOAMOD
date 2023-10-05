@@ -57,6 +57,7 @@ NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.05 --vanilla 0.05		-- Each level o
 
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 2
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 2
+NDefines.NSupply.CAPITAL_SUPPLY_BASE = 150
  
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
