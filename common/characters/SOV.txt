@@ -1822,16 +1822,16 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { trait_reckless war_hero commando }
+			traits = { trait_TUR_kemalist_champion }
 			skill = 3
-			attack_skill = 2
-			defense_skill = 2
+			attack_skill = 3
+			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_organization_of_the_partisans
+				has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
 			}
 		}
 	}

@@ -50,6 +50,7 @@ recruit_character = ROM_petre_dumitrescu
 recruit_character = ROM_ion_antonescu
 recruit_character = ROM_ioan_mihail_racovita
 recruit_character = ROM_gheorghe_avramescu
+recruit_character = ROM_gheorghe_hagi
 recruit_character = ROM_constantin_sanatescu
 recruit_character = ROM_horia_macellariu
 recruit_character = ROM_gheorghe_potopeanu

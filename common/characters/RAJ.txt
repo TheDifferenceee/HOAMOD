@@ -74,6 +74,25 @@ characters={
 		}
 	}
 
+	RAJ_indira_gandhi={
+		name=RAJ_indira_gandhi
+		portraits={
+			army={
+				large="GFX_RAJ_indira_gandhi"
+				small=GFX_portrait_RAJ_noel_beresfordpeirse_small
+			}
+		}
+		corps_commander={
+			traits={ trait_TUR_kemalist_champion }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
 	RAJ_frank_messervy={
 		name=RAJ_frank_messervy
 		portraits={

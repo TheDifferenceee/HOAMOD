@@ -62,15 +62,5 @@ ideas = {
 			    mobilization_laws_cost_factor = -0.5          #minorler %15-25lik yasalara gececek ppyi bulmakta patliyor
 			}
 		}
-
-		hoa_war_idea = {
-			picture = tfv_can_conscription_crisis
-			removal_cost = -1
-
-			modifer
-			non_shared_modifier = {
-				experience_gain_factor = 4
-			}
-		}
 	}		
 }

@@ -6206,7 +6206,6 @@ focus_tree = {
 					has_government = communism
 				}
 				show_unit_leaders_tooltip = SOV_vasily_korzh
-				show_unit_leaders_tooltip = SOV_sidor_kovpak
 			}
 
 			if = {
@@ -7390,6 +7389,8 @@ focus_tree = {
 			clr_country_flag = SOV_paranoia_do_not_cancel_focus_flag
 			set_country_flag = { flag = SOV_paranoia_random_purge_cooldown_from_focus_flag days = 15 } #Used to prevent random purges from popping up while this is active
 			set_country_flag = SOV_third_moscow_trial_flag #Used to unlock the next purge focus
+
+			show_unit_leaders_tooltip = SOV_sidor_kovpak
 
 			add_political_power = 25
 

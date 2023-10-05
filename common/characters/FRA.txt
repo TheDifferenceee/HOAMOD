@@ -498,12 +498,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+			traits={ trait_TUR_kemalist_champion }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=0
 		}
 	}

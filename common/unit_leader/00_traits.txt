@@ -3127,8 +3127,9 @@ leader_traits = {
 		type = all
 		trait_type = personality_trait
 
-		allowed = {
-			FROM = { original_tag = TUR }
+		modifier = {
+		    max_commander_army_size = 3099
+		    experience_gain_factor = -1
 		}
 
 		new_commander_weight = {
