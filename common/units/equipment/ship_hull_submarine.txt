@@ -282,7 +282,7 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 20
+		sub_visibility = 30
 		naval_speed = 20
 		reliability = 0.75
 		
@@ -321,7 +321,7 @@ equipments = {
 			fixed_ship_engine_slot = inherit
 		}
 		
-		sub_visibility = 20
+		sub_visibility = 30
 		naval_speed = 8.3
 		reliability = 0.65
 		
@@ -364,7 +364,7 @@ equipments = {
 		surface_detection = 30
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 20
+		sub_visibility = 30
 		naval_speed = 9
 		reliability = 0.60
 		
@@ -409,7 +409,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 20
+		sub_visibility = 30
 		naval_speed = 14
 		reliability = 0.70
 
@@ -451,7 +451,7 @@ equipments = {
 		surface_detection = 50
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 20
+		sub_visibility = 30
 		naval_speed = 16
 		reliability = 0.75
 		
@@ -493,7 +493,7 @@ equipments = {
 		surface_detection = 70
 		sub_detection = 0
 		surface_visibility = 1
-		sub_visibility = 20
+		sub_visibility = 30
 		naval_speed = 16
 		reliability = 0.80
 
