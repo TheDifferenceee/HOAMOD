@@ -6,8 +6,6 @@ state={
 	state_category = city
 
 	history={
-		owner = PAN
-		add_core_of = PAN
 		buildings = {
 			infrastructure = 1 #was: 5
 			5112 = {

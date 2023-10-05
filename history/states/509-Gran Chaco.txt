@@ -6,17 +6,10 @@ state={
 	
 	state_category = town
 	
-	resources={
-		tungsten=35 # was: 46
-		steel=6 # was: 8
-	}
-
 	history={
-		owner = PAN
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = PAN
 	}
 
 	provinces={

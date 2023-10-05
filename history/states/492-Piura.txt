@@ -1,20 +1,15 @@
 state={
 	id=492
 	name="STATE_492"
-	resources={
-		tungsten=2 # was: 2.000
-	}
 	
 	state_category = rural
 
 	history={
-		owner = PAN
 		buildings = {
 			infrastructure = 1
 			air_base = 1
 
 		}
-		add_core_of = PAN
 		victory_points = {
 			2210 1 
 		}

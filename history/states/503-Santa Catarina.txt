@@ -7,12 +7,10 @@ state={
 	state_category = rural
 
 	history={
-		owner = PAN
 		buildings = {
 			infrastructure = 1 #was: 5
 			air_base = 1
 		}
-		add_core_of = PAN
 	}
 
 	provinces={

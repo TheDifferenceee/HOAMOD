@@ -7,11 +7,9 @@ state={
 	state_category = rural
 
 	history={
-		owner = PAN
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = PAN
 		victory_points = {
 			8216 1 
 		}

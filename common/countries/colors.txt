@@ -209,8 +209,8 @@ NZL = {
 	color_ui = rgb { 0 36 125 }
 }
 PAN = {
-	color = rgb { 4 4 4 }
-	color_ui = rgb { 4 4 4 }
+	color = rgb { 152 130 191 }
+	color_ui = rgb { 198 169 248 }
 }
 PER = {
 	color = rgb { 4 4 4 }

@@ -6,12 +6,7 @@ state={
 	
 	state_category = rural
 	
-	resources={
-		rubber=23 # was: 30
-	}
-
 	history={
-		owner = PAN
 		buildings = {
 			infrastructure = 1
 			air_base = 1
@@ -19,7 +14,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = PAN
 		victory_points = {
 			12853 1 
 		}

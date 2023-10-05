@@ -6,12 +6,8 @@ state=
 	
 	state_category = town
 	
-	resources={
-		chromium=2 # was: 3
-	}
 	history=
 	{
-		owner = PAN
 		buildings = {
 			infrastructure = 1
 			air_base = 1
@@ -19,7 +15,6 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = PAN
 		victory_points = {
 			4641 5 
 		}

@@ -5,13 +5,8 @@ state={
 	manpower = 1
 	
 	state_category = large_city
-	
-	resources={
-		oil=1 # was: 2
-		steel=1 # was: 2
-	}
+
 	history={
-		owner = PAN
 		buildings = {
 			infrastructure = 1
 			air_base = 1
@@ -21,7 +16,6 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = PAN
 		victory_points = {
 			10362 5
 		}
