@@ -1200,7 +1200,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			custom_effect_tooltip = RAJ_two_nation_theory_effect
 			if = {
 				limit = {
 					has_idea = RAJ_marginalized_muslim_community_angry
