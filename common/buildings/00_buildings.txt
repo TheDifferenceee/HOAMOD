@@ -13,7 +13,7 @@ buildings = {
 		value = 1
 
 		show_modifier = yes
-		max_fuel_building = 1.5 #k
+		max_fuel_building = 5 #k
 		allied_build = yes
 
 		infrastructure_construction_effect = yes
@@ -71,8 +71,8 @@ buildings = {
 	}	
 	
 	rail_way = {
-		base_cost = 100
-		per_level_extra_cost = 75
+		base_cost = 400
+		per_level_extra_cost = -80
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 16
