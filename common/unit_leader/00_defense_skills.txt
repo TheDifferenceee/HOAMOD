@@ -87,6 +87,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.025
+			max_dig_in = 2.5
+			dig_in_speed_factor = 0.05
 		}
 	}
 		
@@ -95,6 +97,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.05
+			max_dig_in = 5
+			dig_in_speed_factor = 0.1
 		}
 	}
 	
@@ -104,6 +108,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.075
+			max_dig_in = 7.5
+			dig_in_speed_factor = 0.15
 		}
 	}
 	
@@ -112,6 +118,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.1
+			max_dig_in = 10
+			dig_in_speed_factor = 0.2
 		}
 	}
 	
@@ -120,6 +128,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.125
+			max_dig_in = 12.5
+			dig_in_speed_factor = 0.25
 		}
 	}
 
@@ -128,6 +138,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.15
+			max_dig_in = 15
+			dig_in_speed_factor = 0.3
 		}
 	}
 
@@ -135,7 +147,9 @@ leader_defense_skills = {
 		cost = 1300
 		type = corps_commander
 		modifier = {
-			defence = 0.175
+			defence = 1.75
+			max_dig_in = 17.5
+			dig_in_speed_factor = 0.35
 		}
 	}
 
@@ -144,6 +158,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.2
+			max_dig_in = 20
+			dig_in_speed_factor = 0.4
 		}
 	}
 
@@ -152,6 +168,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.225
+			max_dig_in = 22.5
+			dig_in_speed_factor = 0.4
 		}
 	}
 	
@@ -160,6 +178,8 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.25
+			max_dig_in = 25
+			dig_in_speed_factor = 0.5
 		}
 	}
 	
@@ -169,6 +189,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.025
+			max_dig_in = 2.5
+			dig_in_speed_factor = 0.05
 		}
 	}
 	
@@ -178,6 +200,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.05
+			max_dig_in = 5
+			dig_in_speed_factor = 0.1
 		}
 	}
 	
@@ -187,6 +211,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.075
+			max_dig_in = 7.5
+			dig_in_speed_factor = 0.15
 		}
 	}
 	
@@ -195,6 +221,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.1
+			max_dig_in = 10
+			dig_in_speed_factor = 0.2
 		}
 	}
 	
@@ -203,6 +231,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.125
+			max_dig_in = 12.5
+			dig_in_speed_factor = 0.25
 		}
 	}
 
@@ -211,6 +241,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.15
+			max_dig_in = 15
+			dig_in_speed_factor = 0.3
 		}
 	}	
 
@@ -219,6 +251,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.175
+			max_dig_in = 17.5
+			dig_in_speed_factor = 0.35
 		}
 	}	
 
@@ -227,6 +261,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.2
+			max_dig_in = 20
+			dig_in_speed_factor = 0.4
 		}
 	}	
 
@@ -235,6 +271,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.225
+			max_dig_in = 22.5
+			dig_in_speed_factor = 0.45
 		}
 	}	
 	
@@ -243,6 +281,8 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.25
+			max_dig_in = 25
+			dig_in_speed_factor = 0.5
 		}
 	}
 }

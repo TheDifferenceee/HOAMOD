@@ -627,7 +627,7 @@ leader_traits = {
 		cost = 400
 		
 		field_marshal_modifier = {
-			supply_consumption_factor = -0.15
+			supply_consumption_factor = -0.2
 		}
 		enable_ability = extra_suplies
 		ai_will_do = {
@@ -692,7 +692,7 @@ leader_traits = {
 		}
 		cost = 400
 		field_marshal_modifier = {
-			planning_speed = 0.25
+			planning_speed = 0.2
 		}
 		
 		slot = army_chief
@@ -741,10 +741,6 @@ leader_traits = {
 			always = no # not gainable
 		}
 
-		prerequisites = {
-			has_trait = inflexible_strategist
-		}
-
 		cost = 400
 		field_marshal_modifier = {
 			defence = 0.10
@@ -770,9 +766,6 @@ leader_traits = {
 		type = field_marshal
 		gain_xp = {
 			always = no # not gainable
-		}
-		prerequisites = {
-			has_trait = brilliant_strategist
 		}
 		cost = 400
 		field_marshal_modifier = {
@@ -949,7 +942,7 @@ leader_traits = {
 		
 		cost = 400
 		modifier = {
-			planning_speed = 0.1
+			planning_speed = 0.2
 		}
 		
 		slot = high_command
@@ -1757,7 +1750,7 @@ leader_traits = {
 		}
 		cost = 400
 		modifier = {
-			dig_in_speed_factor = 0.5
+			dig_in_speed_factor = 0.2
 		}
 		
 		ai_will_do = {

@@ -1002,8 +1002,8 @@ on_actions = {
 						limit = { is_army_leader = yes }
 					
 						random_list = { 
-							10 = { add_attack = 1 } 
-							90 = {} 
+							50 = { add_attack = 1 } 
+							50 = {} 
 						} 
 					}
 				}
@@ -1034,7 +1034,6 @@ on_actions = {
 						random_list = {
 							50 = { 
 								add_planning = 1 
-								add_logistics = 1
 							}
 							50 = {}
 						}
@@ -1050,10 +1049,10 @@ on_actions = {
 						limit = { is_navy_leader = yes }
 		
 						random_list = {
-							40 = { 
+							50 = { 
 								add_attack = 1 
 							}
-							60 = {}
+							50 = {}
 						}
 					}
 				}
@@ -1067,10 +1066,10 @@ on_actions = {
 						limit = { is_navy_leader = yes }
 					
 						random_list = {
-							40 = { 
+							50 = { 
 								add_defense = 1 
 							}
-							60 = {}
+							50 = {}
 						}
 					}
 				}
@@ -1084,11 +1083,10 @@ on_actions = {
 						limit = { is_navy_leader = yes }
 					
 						random_list = {
-							40 = { 
-								add_maneuver = 1
+							50 = { 
 								add_coordination = 1
 							}
-							60 = {}
+							50 = {}
 						}
 					}
 				}

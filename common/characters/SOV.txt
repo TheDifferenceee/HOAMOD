@@ -458,7 +458,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { career_officer cavalry_officer politically_connected }
+			traits = { career_officer politically_connected }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -612,7 +612,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer }
+			traits = { }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -711,7 +711,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless cavalry_officer }
+			traits = { trait_reckless }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -751,7 +751,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer }
+			traits = { }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -966,7 +966,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer cavalry_officer }
+			traits = { career_officer }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 3
@@ -1025,7 +1025,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer }
+			traits = { }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 3
@@ -1777,7 +1777,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { cavalry_officer trait_reckless war_hero cavalry_leader }
+			traits = { trait_reckless war_hero cavalry_leader }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -1846,7 +1846,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { cavalry_officer trait_reckless cavalry_leader ranger }
+			traits = { trait_reckless cavalry_leader ranger }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -1870,7 +1870,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { armor_officer panzer_leader panzer_expert ranger}
+			traits = { panzer_leader panzer_expert ranger }
 			skill = 6
 			attack_skill = 8
 			defense_skill = 5
@@ -2012,7 +2012,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { cavalry_officer }
+			traits = { }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -2034,7 +2034,7 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { trait_reckless cavalry_officer }
+			traits = { trait_reckless }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -3465,7 +3465,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { cavalry_officer cavalry_leader }
+			traits = { cavalry_leader }
 			skill = 3
 			attack_skill = 4
 			defense_skill = 2
