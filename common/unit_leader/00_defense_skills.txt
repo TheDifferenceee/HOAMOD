@@ -87,6 +87,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.025
+			organisation = 0.025
 		}
 	}
 		
@@ -95,6 +96,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.05
+			organisation = 0.05
 		}
 	}
 	
@@ -104,6 +106,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.075
+			organisation = 0.075
 		}
 	}
 	
@@ -112,6 +115,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.1
+			organisation = 0.1
 		}
 	}
 	
@@ -120,6 +124,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.125
+			organisation = 0.125
 		}
 	}
 
@@ -128,6 +133,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.15
+			organisation = 0.15
 		}
 	}
 
@@ -136,6 +142,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.175
+			organisation = 0.175
 		}
 	}
 
@@ -144,6 +151,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.2
+			organisation = 0.2
 		}
 	}
 
@@ -152,6 +160,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.225
+			organisation = 0.225
 		}
 	}
 	
@@ -160,6 +169,7 @@ leader_defense_skills = {
 		type = corps_commander
 		modifier = {
 			defence = 0.25
+			organisation = 0.25
 		}
 	}
 	
@@ -169,6 +179,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.025
+			organisation = 0.025
 		}
 	}
 	
@@ -178,6 +189,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.05
+			organisation = 0.05
 		}
 	}
 	
@@ -187,6 +199,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.075
+			organisation = 0.075
 		}
 	}
 	
@@ -195,6 +208,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.1
+			organisation = 0.1
 		}
 	}
 	
@@ -203,6 +217,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.125
+			organisation = 0.125
 		}
 	}
 
@@ -211,6 +226,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.15
+			organisation = 0.15
 		}
 	}	
 
@@ -219,6 +235,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.175
+			organisation = 0.175
 		}
 	}	
 
@@ -227,6 +244,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.2
+			organisation = 0.2
 		}
 	}	
 
@@ -235,6 +253,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.225
+			organisation = 0.225
 		}
 	}	
 	
@@ -243,6 +262,7 @@ leader_defense_skills = {
 		type = field_marshal
 		modifier = {
 			defence = 0.25
+			organisation = 0.25
 		}
 	}
 }
