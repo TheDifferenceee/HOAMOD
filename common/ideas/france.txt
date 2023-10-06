@@ -16,7 +16,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor = -0.25
+				conversion_cost_civ_to_mil_factor= 5.0
 			}
 		}
 		FRA_worker_shortage = {
@@ -33,9 +33,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor = -0.25
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				conversion_cost_civ_to_mil_factor= -0.3
 			}
 		}
 		FRA_inefficient_economy_1 = {
@@ -86,7 +84,7 @@ ideas = {
 				always = yes
 			}
 			available = {
-				has_stability < 0.7
+				has_stability < 0.6
 			}
 
 			removal_cost = -1
@@ -253,7 +251,7 @@ ideas = {
 			
 			modifier = {
 				economy_cost_factor = -0.5
-				conversion_cost_civ_to_mil_factor = -0.5
+				production_speed_arms_factory_factor = 0.10
 			}
 		}
 		FRA_expanded_citizenship = {
@@ -304,7 +302,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.075
+				production_speed_industrial_complex_factor = 0.15
 			}
 		}
 		FRA_entrepeneurship = {
