@@ -150,28 +150,28 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.15
 			}
 			
 		}
 
-		#soviet_economic_plan3 = {
-		#picture = man_five_year_plan_industry
-			#removal_cost = -1
+		soviet_economic_plan3 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
 
-			#allowed = {
-				#always = no # Added via focus
-			#}
+			allowed = {
+				always = no # Added via focus
+			}
 
-			#allowed_civil_war = {
-				#has_government = communism
-			#}
+			allowed_civil_war = {
+				has_government = communism
+			}
 
-			#modifier = {				
-				#production_factory_efficiency_gain_factor = -0.03
-			#}
+			modifier = {				
+				production_factory_efficiency_gain_factor = -0.03
+			}
 			
-		#}
+		}
 
 		soviet_economic_plan4 = {
 		picture = man_five_year_plan_industry
@@ -191,23 +191,23 @@ ideas = {
 			
 		}
 
-		#soviet_economic_plan5 = {
-		#picture = man_five_year_plan_industry
-			#removal_cost = -1
+		soviet_economic_plan5 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
 
-			#allowed = {
-				#always = no # Added via focus
-			#}
+			allowed = {
+				always = no # Added via focus
+			}
 
-			#allowed_civil_war = {
-				#has_government = communism
-			#}
+			allowed_civil_war = {
+				has_government = communism
+			}
 
-			#modifier = {				
-				#production_factory_efficiency_gain_factor = -0.02
-			#}
+			modifier = {				
+				production_factory_efficiency_gain_factor = -0.02
+			}
 			
-		#}
+		}
 		
 		soviet_economic_plan6 = {
 		picture = man_five_year_plan_industry
@@ -245,23 +245,23 @@ ideas = {
 			
 		}
 		
-		#soviet_economic_plan8 = {
-		#picture = man_five_year_plan_industry
-			#removal_cost = -1
+		soviet_economic_plan8 = {
+		picture = man_five_year_plan_industry
+			removal_cost = -1
 
-			#allowed = {
+			allowed = {
 				#always = no # Added via focus
-			#}
+			}
 
-			#allowed_civil_war = {
+			allowed_civil_war = {
 				#has_government = communism
-			#}
+			}
 
-			#modifier = {				
-				#production_factory_efficiency_gain_factor = -0.03
-			#}
+			modifier = {				
+				production_factory_efficiency_gain_factor = -0.03
+			}
 			
-		#}
+		}
 		
 		SOV_zulme_karsi_mukavemet = {
 			removal_cost = -1
