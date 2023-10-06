@@ -98,8 +98,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.05
 			max_planning = 0.025
-			max_dig_in = 0.025
-			dig_in_speed_factor = 0.05
 		}
 	}
 		
@@ -109,8 +107,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.1
 			max_planning = 0.05
-			max_dig_in = 0.05
-			dig_in_speed_factor = 0.1
 		}
 	}
 	
@@ -121,8 +117,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.15
 			max_planning = 0.075
-			max_dig_in = 0.075
-			dig_in_speed_factor = 0.15
 		}
 	}
 	
@@ -132,8 +126,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.2
 			max_planning = 0.1
-			max_dig_in = 0.1
-			dig_in_speed_factor = 0.2
 		}
 	}
 	
@@ -143,8 +135,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.25
 			max_planning = 0.125
-			max_dig_in = 0.125
-			dig_in_speed_factor = 0.25
 		}
 	}
 
@@ -154,8 +144,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.3
 			max_planning = 0.15
-			max_dig_in = 0.15
-			dig_in_speed_factor = 0.3
 		}
 	}
 
@@ -165,8 +153,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.35
 			max_planning = 0.175
-			max_dig_in = 0.175
-			dig_in_speed_factor = 0.35
 		}
 	}
 
@@ -176,8 +162,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.4
 			max_planning = 0.2
-			max_dig_in = 0.2
-			dig_in_speed_factor = 0.4
 		}
 	}
 
@@ -187,8 +171,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.45
 			max_planning = 0.225
-			max_dig_in = 0.225
-			dig_in_speed_factor = 0.45
 		}
 	}
 	
@@ -198,8 +180,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.5
 			max_planning = 0.25
-			max_dig_in = 0.25
-			dig_in_speed_factor = 0.5
 		}
 	}
 	
@@ -208,10 +188,8 @@ leader_planning_skills = {
 		cost = 100
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.05
+			planning_speed = 0.5
 			max_planning = 0.025
-			max_dig_in = 0.025
-			dig_in_speed_factor = 0.05
 		}
 	}
 	
@@ -222,8 +200,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.1
 			max_planning = 0.05
-			max_dig_in = 0.05
-			dig_in_speed_factor = 0.1
 		}
 	}
 	
@@ -234,8 +210,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.15
 			max_planning = 0.075
-			max_dig_in = 0.075
-			dig_in_speed_factor = 0.15
 		}
 	}
 	
@@ -245,8 +219,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.2
 			max_planning = 0.1
-			max_dig_in = 0.1
-			dig_in_speed_factor = 0.2
 		}
 	}
 	
@@ -256,8 +228,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.25
 			max_planning = 0.125
-			max_dig_in = 0.125
-			dig_in_speed_factor = 0.25
 		}
 	}
 
@@ -267,8 +237,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.3
 			max_planning = 0.15
-			max_dig_in = 0.15
-			dig_in_speed_factor = 0.3
 		}
 	}	
 
@@ -278,8 +246,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.35
 			max_planning = 0.175
-			max_dig_in = 0.175
-			dig_in_speed_factor = 0.35
 		}
 	}	
 
@@ -289,8 +255,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.4
 			max_planning = 0.2
-			max_dig_in = 0.2
-			dig_in_speed_factor = 0.4
 		}
 	}	
 
@@ -300,8 +264,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.45
 			max_planning = 0.225
-			max_dig_in = 0.225
-			dig_in_speed_factor = 0.45
 		}
 	}
 	
@@ -311,8 +273,6 @@ leader_planning_skills = {
 		modifier = {
 			planning_speed = 0.5
 			max_planning = 0.25
-			max_dig_in = 0.25
-			dig_in_speed_factor = 0.5
 		}
 	}
 }
