@@ -954,7 +954,7 @@ technologies = {
 			 soft_attack = 0.2
 		}
 
-		category_armor = {
+		category_all_armor = {
 			 soft_attack = -0.1
 		}
 		
