@@ -61,15 +61,15 @@ technologies = {
 
 		artillery = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		light_sp_artillery_brigade = {
 			soft_attack = 0.15
@@ -184,15 +184,15 @@ technologies = {
 
 		artillery = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		light_sp_artillery_brigade = {
 			soft_attack = 0.025
@@ -265,15 +265,15 @@ technologies = {
 
 		artillery = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		super_heavy_sp_artillery_brigade = {
 			soft_attack = 0.1
@@ -369,15 +369,15 @@ technologies = {
 
 		artillery = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
+			breakthrough = 0.025
 		}
 		light_sp_artillery_brigade = {
 			soft_attack = 0.025
