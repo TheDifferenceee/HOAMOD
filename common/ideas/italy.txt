@@ -3298,7 +3298,7 @@ ideas = {
 			}
 			
 			modifier = {
-				army_org_factor = 0.15
+				army_org_factor = 0.015
 				compliance_gain = 0.05
 				war_support_factor = 0.1
 			}
