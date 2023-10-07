@@ -953,6 +953,10 @@ technologies = {
 		category_army = {
 			 soft_attack = 0.2
 		}
+
+		category_armor = {
+			 soft_attack = -0.1
+		}
 		
 		enable_tactic = tactic_barrage
 			

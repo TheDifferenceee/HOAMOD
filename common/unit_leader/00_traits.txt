@@ -3122,7 +3122,7 @@ leader_traits = {
 
 		modifier = {
 		    max_commander_army_size = 3099
-		    experience_gain_factor = -1
+		    experience_gain_factor = -100
 		}
 
 		new_commander_weight = {
