@@ -255,8 +255,8 @@ form_greater_german_reich_category = {
 
 		available = {
 			is_subject = no
-			has_full_control_of_state = 812
-			has_full_control_of_state = 207
+			has_full_control_of_state = 16
+
 			all_owned_state = {
 				is_fully_controlled_by = ROOT
 			}
