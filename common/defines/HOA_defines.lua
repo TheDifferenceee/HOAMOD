@@ -28,6 +28,9 @@ NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 50					-- pp cost to scorch a stat
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.025
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 150
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.03 
+NDefines.NCountry.BASE_MAX_COMMAND_POWER = 300 -- 200
+NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 0.6 -- 0.4
+
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00002
 NDefines.NCountry.MIN_MANPOWER_RATIO = 0.5 --vanilla 0.15,						-- Min manpower ratio to show manpower alert
 	
