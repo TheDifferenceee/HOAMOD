@@ -728,10 +728,8 @@ country_event = {
 			annex_country = {
 			target = SIK
 			}
-		}
-
-		immediate = {
-				619 = {set_compliance = 70}
+			
+			619 = {set_compliance = 70}
 				617 = {set_compliance = 70}
 				618 = {set_compliance = 70}
 				287 = {set_compliance = 70}
@@ -777,8 +775,8 @@ country_event = {
 				743 = {set_compliance = 70}
 				614 = {set_compliance = 70}
 				608 = {set_compliance = 70}
-		
-	}
+
+		}
 
 	}
 }
