@@ -73,23 +73,18 @@ technologies = {
 		}
 		light_sp_artillery_brigade = {
 			soft_attack = 0.15
-			breakthrough = 0.125
 		}
 		medium_sp_artillery_brigade = {
 			soft_attack = 0.15
-			breakthrough = 0.125
 		}
 		heavy_sp_artillery_brigade = {
 			soft_attack = 0.15
-			breakthrough = 0.125
 		}
 		super_heavy_sp_artillery_brigade = {
 			soft_attack = 0.15
-			breakthrough = 0.125
 		}
 		modern_sp_artillery_brigade= {
 			soft_attack = 0.15
-			breakthrough = 0.125
 		}
 
 		enable_equipment_modules = {
@@ -200,24 +195,19 @@ technologies = {
 			breakthrough = 0.125
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.125
-			breakthrough = 0.125
+			soft_attack = 0.025
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.125
-			breakthrough = 0.125
+			soft_attack = 0.025
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.125
-			breakthrough = 0.125
+			soft_attack = 0.025
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-			breakthrough = 0.125
+			soft_attack = 0.1
 		}
 		modern_sp_artillery_brigade= {
-			soft_attack = 0.15
-			breakthrough = 0.125
+			soft_attack = 0.1
 		}
 
 		amphibious_armor = {
@@ -287,11 +277,9 @@ technologies = {
 		}
 		super_heavy_sp_artillery_brigade = {
 			soft_attack = 0.1
-			breakthrough = 0.125
 		}
 		modern_sp_artillery_brigade= {
 			soft_attack = 0.1
-			breakthrough = 0.125
 		}
 
 		enable_equipment_modules = {
@@ -392,24 +380,19 @@ technologies = {
 			breakthrough = 0.125
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.125
-			breakthrough = 0.125
+			soft_attack = 0.025
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.125
-			breakthrough = 0.125
+			soft_attack = 0.025
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.125
-			breakthrough = 0.125
+			soft_attack = 0.025
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.15
-			breakthrough = 0.125
+			soft_attack = 0.1
 		}
 		modern_sp_artillery_brigade= {
-			soft_attack = 0.15
-			breakthrough = 0.125
+			soft_attack = 0.1
 		}
 
 		enable_equipment_modules = {

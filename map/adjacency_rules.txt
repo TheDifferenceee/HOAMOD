@@ -18,8 +18,8 @@ adjacency_rule =
 
 	contested =
 	{
-		army = yes
-		navy = yes
+		army = no
+		navy = no
 		submarine = no
 		trade = yes
 	}
@@ -67,8 +67,8 @@ adjacency_rule =
 
 	contested =
 	{
-		army = yes
-		navy = yes
+		army = no
+		navy = no
 		submarine = no
 		trade = yes
 	}
@@ -314,8 +314,8 @@ adjacency_rule = {
 
 	contested =
 	{
-		army = yes
-		navy = yes
+		army = no
+		navy = no
 		submarine = no
 		trade = yes
 	}
