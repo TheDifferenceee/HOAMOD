@@ -61,27 +61,35 @@ technologies = {
 
 		artillery = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		light_sp_artillery_brigade = {
 			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 		medium_sp_artillery_brigade = {
 			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 		heavy_sp_artillery_brigade = {
 			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 		super_heavy_sp_artillery_brigade = {
 			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 		modern_sp_artillery_brigade= {
 			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 
 		enable_equipment_modules = {
@@ -181,27 +189,35 @@ technologies = {
 
 		artillery = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.125
+			breakthrough = 0.125
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.125
+			breakthrough = 0.125
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.125
+			breakthrough = 0.125
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.1
+			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 		modern_sp_artillery_brigade= {
-			soft_attack = 0.1
+			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 
 		amphibious_armor = {
@@ -259,18 +275,23 @@ technologies = {
 
 		artillery = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
+			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 
 		enable_equipment_modules = {
@@ -360,27 +381,35 @@ technologies = {
 
 		artillery = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		mot_artillery_brigade = {
 			soft_attack = 0.1
+			breakthrough = 0.125
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.125
+			breakthrough = 0.125
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.125
+			breakthrough = 0.125
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.125
+			breakthrough = 0.125
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 		modern_sp_artillery_brigade= {
-			soft_attack = 0.05
+			soft_attack = 0.15
+			breakthrough = 0.125
 		}
 
 		enable_equipment_modules = {
