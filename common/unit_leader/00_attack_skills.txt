@@ -86,7 +86,7 @@ leader_attack_skills = {
 		cost = 100
 		type = corps_commander
 		modifier = {
-			offence = 0.025
+			offence = 0.0225
 		}
 	}
 		
@@ -94,7 +94,7 @@ leader_attack_skills = {
 		cost = 100
 		type = corps_commander
 		modifier = {
-			offence = 0.05
+			offence = 0.045
 		}
 	}
 	
@@ -103,7 +103,7 @@ leader_attack_skills = {
 		cost = 200
 		type = corps_commander
 		modifier = {
-			offence = 0.075
+			offence = 0.0675
 		}
 	}
 	
@@ -111,7 +111,7 @@ leader_attack_skills = {
 		cost = 300
 		type = corps_commander
 		modifier = {
-			offence = 0.1
+			offence = 0.09
 		}
 	}
 	
@@ -119,7 +119,7 @@ leader_attack_skills = {
 		cost = 500
 		type = corps_commander
 		modifier = {
-			offence = 0.125
+			offence = 0.1125
 		}
 	}
 
@@ -127,7 +127,7 @@ leader_attack_skills = {
 		cost = 800
 		type = corps_commander
 		modifier = {
-			offence = 0.15
+			offence = 0.135
 		}
 	}
 
@@ -135,7 +135,7 @@ leader_attack_skills = {
 		cost = 1300
 		type = corps_commander
 		modifier = {
-			offence = 0.175
+			offence = 0.1575
 		}
 	}
 
@@ -143,7 +143,7 @@ leader_attack_skills = {
 		cost = 2100
 		type = corps_commander
 		modifier = {
-			offence = 0.2
+			offence = 0.18
 		}
 	}
 
@@ -151,7 +151,7 @@ leader_attack_skills = {
 		cost = 3400
 		type = corps_commander
 		modifier = {
-			offence = 0.225
+			offence = 0.2025
 		}
 	}
 	
@@ -159,7 +159,7 @@ leader_attack_skills = {
 		cost = 5500
 		type = corps_commander
 		modifier = {
-			offence = 0.25
+			offence = 0.225
 		}
 	}
 	
@@ -169,7 +169,7 @@ leader_attack_skills = {
 		cost = 100
 		type = field_marshal
 		modifier = {
-			offence = 0.025
+			offence = 0.0225
 		}
 	}
 	
@@ -178,7 +178,7 @@ leader_attack_skills = {
 		cost = 100
 		type = field_marshal
 		modifier = {
-			offence = 0.05
+			offence = 0.045
 		}
 	}
 	
@@ -187,7 +187,7 @@ leader_attack_skills = {
 		cost = 200
 		type = field_marshal
 		modifier = {
-			offence = 0.075
+			offence = 0.0675
 		}
 	}
 	
@@ -195,7 +195,7 @@ leader_attack_skills = {
 		cost = 300
 		type = field_marshal
 		modifier = {
-			offence = 0.1
+			offence = 0.09
 		}
 	}
 	
@@ -203,7 +203,7 @@ leader_attack_skills = {
 		cost = 500
 		type = field_marshal
 		modifier = {
-			offence = 0.125
+			offence = 0.1125
 		}
 	}
 
@@ -211,7 +211,7 @@ leader_attack_skills = {
 		cost = 800
 		type = field_marshal
 		modifier = {
-			offence = 0.15
+			offence = 0.135
 		}
 	}	
 
@@ -219,7 +219,7 @@ leader_attack_skills = {
 		cost = 1300
 		type = field_marshal
 		modifier = {
-			offence = 0.175
+			offence = 0.1575
 		}
 	}	
 
@@ -227,7 +227,7 @@ leader_attack_skills = {
 		cost = 2100
 		type = field_marshal
 		modifier = {
-			offence = 0.2
+			offence = 0.18
 		}
 	}	
 
@@ -235,7 +235,7 @@ leader_attack_skills = {
 		cost = 3400
 		type = field_marshal
 		modifier = {
-			offence = 0.225
+			offence = 0.2025
 		}
 	}	
 	
@@ -243,7 +243,7 @@ leader_attack_skills = {
 		cost = 5500
 		type = field_marshal
 		modifier = {
-			offence = 0.25
+			offence = 0.225
 		}
 	}
 }

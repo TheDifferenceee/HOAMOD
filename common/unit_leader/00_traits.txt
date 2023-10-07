@@ -1178,7 +1178,7 @@ leader_traits = {
 		cost = 400
 		modifier = {
 			army_armor_speed_factor = 0.05 
-			army_armor_attack_factor = 0.05 
+			army_armor_attack_factor = 0.085 
 		}
 		ai_will_do = {
 			factor = 1
@@ -1545,7 +1545,7 @@ leader_traits = {
 		}
 		cost = 400
 		modifier = {
-			army_infantry_attack_factor = 0.05
+			army_infantry_attack_factor = 0.085
 		}
 		
 		ai_will_do = {
