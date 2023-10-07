@@ -698,103 +698,39 @@ country_event = {
 		country_event = { hours = 72 id = japan.31 }
 		set_global_flag = fall_of_chinaa
 		JAP = {
+			
 			annex_country = {
 			target = CHI
 			}
+
 			add_named_threat = { threat = 30 name = Fall_of_China }
-				
-
-		}
-	}
-}
-
-# The Fall of China1
-country_event = {
-	id = japan.31
-	title = japan.31.t
-	desc = japan.31.d
-	picture = GFX_news_event_064
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	option = {
-		name = japan.31.a
-		country_event = { hours = 72 id = japan.32 }
-		JAP = {
+			
 			annex_country = {
 			target = YUN
 			}
+			
 			annex_country = {
 			target = GXC
 			}
-		}
-	}
-}
 
-# The Fall of China2
-country_event = {
-	id = japan.32
-	title = japan.32.t
-	desc = japan.32.d
-	picture = GFX_news_event_064
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	option = {
-		name = japan.32.a
-		country_event = { hours = 72 id = japan.33 }
-		JAP = {
 			annex_country = {
 			target = SHX
 			}
+
 			annex_country = {
 			target = PRC
 			}
-		}
-	}
-}
 
-# The Fall of China3
-country_event = {
-	id = japan.33
-	title = japan.33.t
-	desc = japan.33.d
-	picture = GFX_news_event_064
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	option = {
-		name = japan.33.a
-		country_event = { hours = 72 id = japan.34 }
-		JAP = {
 			annex_country = {
 			target = XSM
 			}
+
 			annex_country = {
 			target = SIK
 			}
-	    }
-    }
-}
+		}
 
-# The Fall of China4
-country_event = {
-	id = japan.34
-	title = japan.34.t
-	desc = japan.34.d
-	picture = GFX_news_event_064
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-	
-	immediate = {
+		immediate = {
 				619 = {set_compliance = 70}
 				617 = {set_compliance = 70}
 				618 = {set_compliance = 70}
@@ -843,8 +779,147 @@ country_event = {
 				608 = {set_compliance = 70}
 		
 	}
-	
-	option = {
-		name = japan.34.a
+
 	}
 }
+
+# The Fall of China1
+# country_event = {
+#	id = japan.31
+#	title = japan.31.t
+#	desc = japan.31.d
+#	picture = GFX_news_event_064
+#
+#	is_triggered_only = yes
+#
+#	fire_only_once = yes
+#	
+#	option = {
+#		name = japan.31.a
+#		country_event = { hours = 72 id = japan.32 }
+#		JAP = {
+#			annex_country = {
+#			target = YUN
+#			}
+#			annex_country = {
+#			target = GXC
+#			}
+#		}
+#	}
+#}
+
+# The Fall of China2
+# country_event = {
+#	id = japan.32
+#	title = japan.32.t
+#	desc = japan.32.d
+#	picture = GFX_news_event_064
+#
+#	is_triggered_only = yes
+#
+#	fire_only_once = yes
+#	
+#	option = {
+#		name = japan.32.a
+#		country_event = { hours = 72 id = japan.33 }
+#		JAP = {
+#			annex_country = {
+#			target = SHX
+#			}
+#			annex_country = {
+#			target = PRC
+#			}
+#		}
+#	}
+#}
+
+# The Fall of China3
+# country_event = {
+#	id = japan.33
+#	title = japan.33.t
+#	desc = japan.33.d
+#	picture = GFX_news_event_064
+#
+#	is_triggered_only = yes
+#
+#	fire_only_once = yes
+#	
+#	option = {
+#		name = japan.33.a
+#		country_event = { hours = 72 id = japan.34 }
+#		JAP = {
+#			annex_country = {
+#			target = XSM
+#			}
+#			annex_country = {
+#			target = SIK
+#			}
+#	    }
+#     }
+#}
+
+# The Fall of China4
+# country_event = {
+#	id = japan.34
+#	title = japan.34.t
+#	desc = japan.34.d
+#	picture = GFX_news_event_064
+#
+#	is_triggered_only = yes
+#
+#	fire_only_once = yes
+#	
+#	immediate = {
+#				619 = {set_compliance = 70}
+#				617 = {set_compliance = 70}
+#				618 = {set_compliance = 70}
+#				287 = {set_compliance = 70}
+#				759 = {set_compliance = 70}
+#				760 = {set_compliance = 70}
+#				755 = {set_compliance = 70}
+#				604 = {set_compliance = 70}
+#				756 = {set_compliance = 70}
+#				616 = {set_compliance = 70}
+#				754 = {set_compliance = 70}
+#				753 = {set_compliance = 70}
+#				283 = {set_compliance = 70}
+#				622 = {set_compliance = 70}
+#				746 = {set_compliance = 70}
+#				621 = {set_compliance = 70}
+#				615 = {set_compliance = 70}
+#				325 = {set_compliance = 70}
+#				747 = {set_compliance = 70}
+#				599 = {set_compliance = 70}
+#				594 = {set_compliance = 70}
+#				591 = {set_compliance = 70}
+#				592 = {set_compliance = 70}
+#				593 = {set_compliance = 70}
+#				601 = {set_compliance = 70}
+#				752 = {set_compliance = 70}
+#				751 = {set_compliance = 70}
+#				605 = {set_compliance = 70}
+#				603 = {set_compliance = 70}
+#				748 = {set_compliance = 70}
+#				602 = {set_compliance = 70}
+#				595 = {set_compliance = 70}
+#				596 = {set_compliance = 70}
+#				749 = {set_compliance = 70}
+#				600 = {set_compliance = 70}
+#				606 = {set_compliance = 70}
+#				620 = {set_compliance = 70}
+#				750 = {set_compliance = 70}
+#				607 = {set_compliance = 70}
+#				744 = {set_compliance = 70}
+#				613 = {set_compliance = 70}
+#				598 = {set_compliance = 70}
+#				597 = {set_compliance = 70}
+#				743 = {set_compliance = 70}
+#				614 = {set_compliance = 70}
+#				608 = {set_compliance = 70}
+#		
+#	}
+#	
+#	option = {
+#		name = japan.34.a
+#	}
+#}
