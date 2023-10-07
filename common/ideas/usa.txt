@@ -380,7 +380,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_dockyard_factor = 0.1	
+				production_speed_dockyard_factor = 0.225	
 			}
 		}
 		USA_us_air_force = {

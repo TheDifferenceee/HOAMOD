@@ -5900,14 +5900,14 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
-		cost = 10
+		cost = 0.1
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			date > 1938.9.1
 		}
 		
 		bypass = {

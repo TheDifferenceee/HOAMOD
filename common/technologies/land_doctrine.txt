@@ -9,7 +9,8 @@ technologies = {
 		
 		xor = { superior_firepower trench_warfare mass_assault }
 
-		enable_tactic = tactic_anti_stack 
+		enable_tactic = tactic_anti_stack
+		enable_tactic = tactic_anti_stack5
 
 		path = {
 			leads_to_tech = delay 
@@ -941,7 +942,8 @@ technologies = {
 		
 		xor = { mobile_warfare trench_warfare mass_assault }
 
-		enable_tactic = tactic_anti_stack 
+		enable_tactic = tactic_anti_stack
+		enable_tactic = tactic_anti_stack5 
 
 		path = {
 			leads_to_tech = sup_delay 
@@ -1798,7 +1800,8 @@ technologies = {
 		
 		xor = { mobile_warfare superior_firepower mass_assault }
 
-		enable_tactic = tactic_anti_stack 
+		enable_tactic = tactic_anti_stack
+		enable_tactic = tactic_anti_stack5 
 	
 		max_dig_in = 10
 		dig_in_speed_factor = 0.25 #25% bonus
@@ -2661,7 +2664,8 @@ technologies = {
 		xp_unlock_cost = 0
 		xor = { mobile_warfare superior_firepower trench_warfare }
 
-		enable_tactic = tactic_anti_stack 
+		enable_tactic = tactic_anti_stack
+		enable_tactic = tactic_anti_stack5 
 
 		path = {
 			leads_to_tech = pocket_defence 

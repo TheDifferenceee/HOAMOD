@@ -40,6 +40,32 @@ tactic_anti_stack = {
 		NOT = { is_fighting_in_terrain = jungle }
 		NOT = { is_fighting_in_terrain = desert }
 		hardness > 0.5
+		skill < 6
+	}
+	
+	active = no
+
+	base =  { factor = 0.15 }
+	picture = attack
+
+	attacker = -0.15
+	defender = -0.05
+	combat_width = -0.50
+}
+
+tactic_anti_stack5 = {
+
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		NOT = { is_fighting_in_terrain = urban }
+		NOT = { is_fighting_in_terrain = hills }
+		NOT = { is_fighting_in_terrain = mountain }
+		NOT = { is_fighting_in_terrain = marsh }
+		NOT = { is_fighting_in_terrain = jungle }
+		NOT = { is_fighting_in_terrain = desert }
+		hardness > 0.5
+		skill > 5
 	}
 	
 	active = no

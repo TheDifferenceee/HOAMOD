@@ -2673,6 +2673,8 @@
  modifier_tactic_barrage_preferred_weight_factor:1 "Additional §YSuppressive Barrage§! Tactic Chance if it is Preferred tactic"
  modifier_tactic_planned_attack_preferred_weight_factor:1 "Additional §YWell Planned Attack§! Tactic Chance if it is Preferred tactic"
  modifier_tactic_relentless_assault_preferred_weight_factor:1 "Additional §YRelentless Assault§! Tactic Chance if it is Preferred tactic"
+ modifier_tactic_anti_stack_preferred_weight_factor:1 "Additional §YAnti Stack§! Tactic Chance if it is Preferred tactic"
+ modifier_tactic_anti_stack5_preferred_weight_factor:1 "Additional §YAnti Stack 6+§! Tactic Chance if it is Preferred tactic"
  CHI_kwong_jiang:0 "Kwong Jiang"
  TUR_mumtaz_okmen_bftb:0 "Mümtaz Ökmen"
  TUR_kazim_ozalp_bftb:0 "Kazim Özalp"

@@ -567,7 +567,8 @@ ideas = {
 		victory_or_death_spirit = {
 			ledger = army
 			modifier = {
-			    tactic_anti_stack_preferred_weight_factor = 500
+			    tactic_anti_stack_preferred_weight_factor = 700
+			    tactic_anti_stack5_preferred_weight_factor = 700
 			}
 			ai_will_do = {
 				factor = 1
