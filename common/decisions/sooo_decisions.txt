@@ -95,9 +95,6 @@ ger_kendiniasan = {
 			GER = {
 			has_war_with = ENG
 			}
-			NOR = {
-			has_capitulated = yes
-			}
 			SWE = {
 			exists = yes
 			}
