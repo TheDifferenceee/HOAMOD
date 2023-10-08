@@ -1,0 +1,165 @@
+add_namespace = japan_peace
+
+country_event = {
+	id = japan_peace.1
+	title =japan_peace.1.t
+	desc = japan_peace.1.d
+	picture = GFX_report_event_generic_battle	
+
+	trigger = {
+		tag = SWI
+		JAP = {
+		   #has_war_with = USA
+		   surrender_progress > 0.95
+		}
+		not = { has_global_flag = JAP_peacedeal }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = JAP_peacedeal
+	}
+	
+	option = {
+		name = japan_peace_a
+		USA = {
+	puppet = JAP 
+		}
+
+		JAP = {			
+			white_peace = USA
+			white_peace = ENG
+			white_peace = FRA
+			white_peace = RAJ
+			white_peace = SAF
+			white_peace = AST
+			white_peace = NZL
+           		white_peace = CAN
+           		white_peace = NOR
+			white_peace = GRE
+		}
+		
+
+			
+		SOV = {
+		transfer_state = 761 
+			transfer_state = 714
+		transfer_state = 717
+		transfer_state = 328
+		transfer_state = 715				
+		transfer_state = 716
+		transfer_state = 537
+		transfer_state = 612
+		transfer_state = 611
+		transfer_state = 536
+		transfer_state = 533
+			transfer_state = 534
+
+	
+	}
+		
+
+		USA = {
+		annex_country = { target = JAP transfer_troops = yes }
+		}
+	}
+}
+country_event = {
+	id = japan_peace.2
+	title =japan_peace.2.t
+	desc = japan_peace.2.d
+	picture = GFX_report_event_generic_battle	
+
+	trigger = {
+		tag = SWI
+		SOV = {
+		   #has_war_with = GER
+		   surrender_progress > 0.98
+		}
+		not = { has_global_flag = SOV_peacedeal }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	immediate = {
+		set_global_flag = SOV_peacedeal
+	}
+	
+	option = {
+		name = sov_peace_a
+
+
+		SOV = {			
+			white_peace = GER
+			white_peace = ITA
+			white_peace = ROM
+			white_peace = HUN
+			white_peace = BUL
+			white_peace = SPR
+			white_peace = JAP
+			white_peace = AOI
+
+		}
+		GER = {
+	puppet = SOV 
+		}		
+		SOV = {
+	release = UKR 
+	release = AZR 
+	release = KAZ 
+		}
+		GER = {
+	puppet = UKR 
+	puppet = AZR
+	puppet = KAZ
+		}			
+		ROM = {
+		transfer_state = 766 
+			transfer_state = 78
+		transfer_state = 80
+		transfer_state = 192
+		transfer_state = 834				
+		transfer_state = 198
+		transfer_state = 197
+	
+	}
+		GER = {
+		transfer_state = 89 
+		transfer_state = 91 
+		transfer_state = 93 
+		transfer_state = 94 
+		transfer_state = 97 
+		transfer_state = 95 
+		transfer_state = 784 
+		transfer_state = 96 
+		transfer_state = 11 
+		transfer_state = 814 
+		transfer_state = 189 
+		transfer_state = 815 
+		transfer_state = 190 
+		transfer_state = 809 
+		transfer_state = 810 
+		transfer_state = 808 
+		transfer_state = 12 
+		transfer_state = 13 
+		transfer_state = 191 
+		transfer_state = 812 
+		transfer_state = 813 
+		transfer_state = 811 
+		transfer_state = 209 
+		transfer_state = 208 
+		transfer_state = 210 
+		transfer_state = 207 
+		transfer_state = 206 
+		transfer_state = 204 
+		transfer_state = 194 
+		transfer_state = 201 
+			transfer_state = 199 							
+
+	}		
+
+
+	}
+}
+
