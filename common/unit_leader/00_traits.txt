@@ -896,9 +896,6 @@ leader_traits = {
 	}
 
 	cavalry_officer = { 
-		modifier = {
-			experience_gain_factor = 1
-		}
 		type = corps_commander
 		gain_xp = {
 			set_temp_variable = { temp = num_units }
