@@ -100,10 +100,17 @@ NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }        -- Experience
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.002 --0.0015
 NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 0
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5--vanilla 0.3					-- xp gain ratio for army group leaders
-NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0.03 --vanilla 0.04
+NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0.3 --vanilla 0.04
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0 --vanilla 0.1
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 30 -- vanilla 8
-NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.03 -- vanilla 0.45
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.3 -- vanilla 0.45
+NDefines.NMilitary.DIVISIONAL_COMMANDER_RANK_XP_THRESHOLD = { 		-- XP thresholds for divisional commander ranks. [TAG]_DIVISION_EXPERIENCE_TITLE_ARMY_EXPERIENCE_[array index]
+		0,
+		100.0,
+		200.0,
+		400.0,
+		800.0,
+	}
 NDefines.NMilitary.COMBAT_STACKING_START = 3						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- vanilla is 4 -- extra stacking from directions
 NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.045                -- vanilla is -0.02 -- how much stacking penalty per division
