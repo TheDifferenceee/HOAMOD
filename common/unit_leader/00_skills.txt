@@ -84,94 +84,94 @@ leader_skills = {
 
 	### Corps Commander ###
 	1 = {
-		cost = 100
+		cost = 1000
 		type = corps_commander
 	}
 		
 	2 = {
-		cost = 100
+		cost = 1000
 		type = corps_commander
 	}
 	
 	3 = {
-		cost = 200
+		cost = 2000
 		type = corps_commander
 	}
 	
 	4 = {
-		cost = 300
+		cost = 3000
 		type = corps_commander
 	}
 	
 	5 = {
-		cost = 500
+		cost = 5000
 		type = corps_commander
 	}
 
 	6 = {
-		cost = 800
+		cost = 8000
 		type = corps_commander
 	}
 
 	7 = {
-		cost = 1300
+		cost = 13000
 		type = corps_commander
 	}
 
 	8 = {
-		cost = 2100
+		cost = 21000
 		type = corps_commander
 	}
 
 	9 = {
-		cost = 3400
+		cost = 34000
 		type = corps_commander
 	}
 	
 	
 	### Field Marshal ###
 	1 = {
-		cost = 100
+		cost = 1000
 		type = field_marshal
 	}
 		
 	2 = {
-		cost = 100
+		cost = 1000
 		type = field_marshal
 	}
 	
 	3 = {
-		cost = 200
+		cost = 2000
 		type = field_marshal
 	}
 	
 	4 = {
-		cost = 300
+		cost = 3000
 		type = field_marshal
 	}
 	
 	5 = {
-		cost = 500
+		cost = 5000
 		type = field_marshal
 	}
 
 	6 = {
-		cost = 800
+		cost = 8000
 		type = field_marshal
 	}
 
 	7 = {
-		cost = 1300
+		cost = 13000
 		type = field_marshal
 	}
 
 	8 = {
-		cost = 2100
+		cost = 21000
 		type = field_marshal
 	}
 
 	9 = {
-		cost = 3400
+		cost = 34000
 		type = field_marshal
 	}
 	

@@ -1451,6 +1451,7 @@
 		}
 
 		completion_reward = {
+			remove_ideas = CAN_great_depression_2
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2343,15 +2344,10 @@
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = armor
 			}
-			add_tech_bonus = {
-				name = CAN_the_valentine_tank
-				bonus = 1.0
-				uses = 1
-				category = cat_light_armor
-			}
+			
 		}
 	}
 

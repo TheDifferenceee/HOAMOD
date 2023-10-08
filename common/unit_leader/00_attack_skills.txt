@@ -83,167 +83,167 @@ leader_attack_skills = {
 
 	### Corps Commander ###
 	1 = {
-		cost = 100
+		cost = 1000
 		type = corps_commander
 		modifier = {
-			offence = 0.0225
+			offence = 0.02
 		}
 	}
 		
 	2 = {
-		cost = 100
+		cost = 1000
 		type = corps_commander
 		modifier = {
-			offence = 0.045
+			offence = 0.04
 		}
 	}
 	
 	
 	3 = {
-		cost = 200
+		cost = 2000
 		type = corps_commander
 		modifier = {
-			offence = 0.0675
+			offence = 0.06
 		}
 	}
 	
 	4 = {
-		cost = 300
+		cost = 3000
 		type = corps_commander
 		modifier = {
-			offence = 0.09
+			offence = 0.08
 		}
 	}
 	
 	5 = {
-		cost = 500
+		cost = 5000
 		type = corps_commander
 		modifier = {
-			offence = 0.1125
+			offence = 0.1
 		}
 	}
 
 	6 = {
-		cost = 800
+		cost = 8000
 		type = corps_commander
 		modifier = {
-			offence = 0.135
+			offence = 0.12
 		}
 	}
 
 	7 = {
-		cost = 1300
+		cost = 13000
 		type = corps_commander
 		modifier = {
-			offence = 0.1575
+			offence = 0.14
 		}
 	}
 
 	8 = {
-		cost = 2100
+		cost = 21000
+		type = corps_commander
+		modifier = {
+			offence = 0.16
+		}
+	}
+
+	9 = {
+		cost = 34000
 		type = corps_commander
 		modifier = {
 			offence = 0.18
 		}
 	}
-
-	9 = {
-		cost = 3400
-		type = corps_commander
-		modifier = {
-			offence = 0.2025
-		}
-	}
 	
 	10 = {
-		cost = 5500
+		cost = 55000
 		type = corps_commander
 		modifier = {
-			offence = 0.225
+			offence = 0.2
 		}
 	}
 	
 	
 	### Field Marshal ###
 	1 = {
-		cost = 100
+		cost = 1000
 		type = field_marshal
 		modifier = {
-			offence = 0.0225
+			offence = 0.02
 		}
 	}
 	
 	
 	2 = {
-		cost = 100
+		cost = 1000
 		type = field_marshal
 		modifier = {
-			offence = 0.045
+			offence = 0.04
 		}
 	}
 	
 	
 	3 = {
-		cost = 200
+		cost = 2000
 		type = field_marshal
 		modifier = {
-			offence = 0.0675
+			offence = 0.06
 		}
 	}
 	
 	4 = {
-		cost = 300
+		cost = 3000
 		type = field_marshal
 		modifier = {
-			offence = 0.09
+			offence = 0.08
 		}
 	}
 	
 	5 = {
-		cost = 500
+		cost = 5000
 		type = field_marshal
 		modifier = {
-			offence = 0.1125
+			offence = 0.1
 		}
 	}
 
 	6 = {
-		cost = 800
+		cost = 8000
 		type = field_marshal
 		modifier = {
-			offence = 0.135
+			offence = 0.12
 		}
 	}	
 
 	7 = {
-		cost = 1300
+		cost = 13000
 		type = field_marshal
 		modifier = {
-			offence = 0.1575
+			offence = 0.14
 		}
 	}	
 
 	8 = {
-		cost = 2100
+		cost = 21000
+		type = field_marshal
+		modifier = {
+			offence = 0.16
+		}
+	}	
+
+	9 = {
+		cost = 34000
 		type = field_marshal
 		modifier = {
 			offence = 0.18
 		}
 	}	
-
-	9 = {
-		cost = 3400
-		type = field_marshal
-		modifier = {
-			offence = 0.2025
-		}
-	}	
 	
 	10 = {
-		cost = 5500
+		cost = 55000
 		type = field_marshal
 		modifier = {
-			offence = 0.225
+			offence = 0.2
 		}
 	}
 }

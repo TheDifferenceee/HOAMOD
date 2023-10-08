@@ -6,6 +6,14 @@ state={
 	}
 	history = {
 		owner = CAN
+		buildings = {
+			infrastructure = 3
+			3691 = {
+				naval_base = 1
+
+			}
+
+		}
 		add_core_of = CAN
 	}
 	manpower=110000

@@ -4,7 +4,7 @@ state={
 	name="STATE_464"
 	manpower = 490912
 	
-	state_category = city
+	state_category = megapolis
 
 	history={
 		owner = CAN
@@ -12,7 +12,7 @@ state={
 			7361 3
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 4 #was: 5
 			industrial_complex = 1
 			air_base = 3
 			7361 = {
