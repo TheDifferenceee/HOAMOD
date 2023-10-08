@@ -2049,8 +2049,8 @@ technologies = {
 		amphibious_invasion_defence = 0.5
 		naval_invasion_capacity = 100
 
-		research_cost = 2
-		start_year = 1944
+		research_cost = 1.5
+		start_year = 1943
 		folder = {
 			name = mtgnavalsupportfolder
 			position = { x = 0 y = 19 }

@@ -12,6 +12,7 @@ state={
 		owner = RAJ
 		buildings = {
 			infrastructure = 1
+			arms_factory = 2
 		}
 		add_core_of = PAK
 		add_core_of = RAJ
