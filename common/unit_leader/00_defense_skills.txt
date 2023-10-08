@@ -117,7 +117,7 @@ leader_defense_skills = {
 		cost = 3000
 		type = corps_commander
 		modifier = {
-			defence = 0.8
+			defence = 0.08
 			max_dig_in = 8
 			dig_in_speed_factor = 0.2
 		}
