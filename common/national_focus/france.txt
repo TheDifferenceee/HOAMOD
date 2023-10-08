@@ -735,6 +735,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			army_experience = 200
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT

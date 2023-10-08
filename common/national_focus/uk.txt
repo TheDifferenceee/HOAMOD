@@ -1894,7 +1894,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 205
 			navy_experience = 25
 			air_experience = 25
 			add_ideas = ENG_service_overseas_idea
