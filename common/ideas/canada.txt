@@ -182,7 +182,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -201,7 +201,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.08
+				consumer_goods_factor = -0.10
 			}
 		}
 
@@ -223,7 +223,7 @@ ideas = {
 				industrial_capacity_factory = 0.02
 				industrial_capacity_dockyard = 0.02
 				conscription_factor = 0.05
-				stability_factor = -0.05
+				stability_factor = 0.05
 			}
 		}
 
@@ -243,7 +243,7 @@ ideas = {
 
 			modifier = {
 				min_export = -0.05
-				global_building_slots_factor = 0.15
+				global_building_slots_factor = 0.20
 			}
 		}
 
@@ -576,7 +576,7 @@ ideas = {
 			picture = generic_political_support
 			
 			modifier = {
-				political_advisor_cost_factor = -0.33
+				political_advisor_cost_factor = -0.66
 			}
 		}
 		
@@ -656,7 +656,7 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
-				production_speed_buildings_factor = 0.20
+				production_speed_buildings_factor = 0.10
 			}
 		}
 		
