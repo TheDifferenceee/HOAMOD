@@ -3294,10 +3294,8 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
-		#Increased Partisan effect on your land occupied by others
-		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects 
-		#Land Units take less attrition
-		attrition = -0.2 #take 10% less attrition losses
+		
+		attrition = -0.5 #take 50% less attrition losses
 		
 		enable_tactic = tactic_human_wave_tactics
 		
@@ -3498,12 +3496,12 @@ technologies = {
 	guerilla_warfare = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		out_of_supply_factor = -0.30
+		out_of_supply_factor = -0.50
 		category_army = {
-			default_morale = 0.2
+			default_morale = 0.3
 		}
 		
-		resistance_growth_on_our_occupied_states = 0.25 
+		
 		
 		enable_tactic = tactic_guerrilla_tactics
 		
