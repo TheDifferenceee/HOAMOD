@@ -99,11 +99,18 @@ NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2 --1
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.1, 0.3, 0.6, 0.9 }        -- Experience needed to progress to the next level --{ 0.1, 0.3, 0.75, 0.9 }      
 NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.002 --0.0015
 NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 0
-NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0.5--vanilla 0.3					-- xp gain ratio for army group leaders
+NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0 --vanilla 0.3					-- xp gain ratio for army group leaders
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0.3 --vanilla 0.04
 NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0 --vanilla 0.1
 NDefines.NMilitary.DIVISION_SIZE_FOR_XP = 30 -- vanilla 8
-NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.3 -- vanilla 0.45
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0 -- vanilla 0.45
+NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
+NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0
+NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
+NDefines.NMilitary.XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 0.0
+NDefines.NMilitary.MIN_XP_RATE_TO_DECAY = 0.0
+NDefines.NMilitary.XP_DECAY_RATE_PER_HOUR_IN_COMBAT = 0.00
+NDefines.NMilitary.MAX_RELATIVE_COMBAT_DAMAGE_TO_MODIFY_XP = 0.0
 NDefines.NMilitary.DIVISIONAL_COMMANDER_RANK_XP_THRESHOLD = { 		-- XP thresholds for divisional commander ranks. [TAG]_DIVISION_EXPERIENCE_TITLE_ARMY_EXPERIENCE_[array index]
 		0,
 		100.0,
@@ -127,8 +134,7 @@ NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits o
 1.0, -- navy general
 0.0, -- operative
 }
-NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 1.0 -- vanilla 0.1
-NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3                -- Most xp you can gain per day --1.2
+NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.0 -- vanilla 0.1
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0001 --vanilla 0.0001,
 NDefines.NMilitary.UNIT_EXPERIENCE_SCALE = 1.0 --vanila 1.0,
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.1 --vanilla 1.00,                 -- percentage of experienced solders who die when manpower is removed
