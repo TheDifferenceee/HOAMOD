@@ -48,7 +48,7 @@ tactic_anti_stack = {
 	base =  { factor = 0.15 }
 	picture = attack
 
-	attacker = -0.15
+	attacker = -0.2     #generaller sabit
 	defender = -0.05
 	combat_width = -0.50
 }
@@ -65,7 +65,7 @@ tactic_anti_stack5 = {
 		NOT = { is_fighting_in_terrain = jungle }
 		NOT = { is_fighting_in_terrain = desert }
 		hardness > 0.5
-		skill > 5
+		skill > 8
 	}
 	
 	active = no
@@ -73,7 +73,7 @@ tactic_anti_stack5 = {
 	base =  { factor = 0.15 }
 	picture = attack
 
-	attacker = -0.25
+	attacker = -0.25   #generaller sabit
 	defender = -0.05
 	combat_width = -0.50
 }

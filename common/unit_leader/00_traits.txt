@@ -8,10 +8,10 @@
 #	planning_skill = 0 # integer
 #	maneuvering_skill = 0 # integer
 #	coordination_skill = 0 # integer
-#	attack_skill_factor = 0.0 # decimal
-#	defense_skill_factor = 0.0 # decimal
-#	logistics_skill_factor = 0.0 # decimal
-#	planning_skill_factor = 0.0 # decimal
+#	#attack_skill_factor = 0.0 # decimal
+#	#defense_skill_factor = 0.0 # decimal
+#	#logistics_skill_factor = 0.0 # decimal
+#	#planning_skill_factor = 0.0 # decimal
 #	maneuvering_skill_factor = 0.0 # decimal
 #	coordination_skill_factor = 0.0 # decimal
 #	show_in_combat = yes # boolean
@@ -55,16 +55,50 @@ leader_traits = {
 	
 ##################################
 # Common Traits
-##################################		
+##################################
+
+	infantry_officer = { 		
+		type = land
+		
+		trait_type = personality_trait
+		
+		gui_row = 17
+	}
+
+	armor_officer = { 
+		type = land
+		
+		trait_type = personality_trait
+		
+		gui_row = 16
+		#attack_skill_factor = 1
+	}
+
+	cavalry_officer = { 
+		type = land
+		
+		trait_type = personality_trait
+		
+		gui_row = 18
+	}
+
+		old_guard = { 
+		corps_commander_modifier = {
+			max_commander_army_size = 68
+		}
+		type = land
+		
+		trait_type = personality_trait
+		
+		gui_row = 19
+	}
+
 	brilliant_strategist = { 
 		type = land
 		trait_type = personality_trait
 		
 		attack_skill = 1
 		planning_skill = 1
-		
-		attack_skill_factor = 1
-		planning_skill_factor = 1
 
 		new_commander_weight = {
 			factor = 1
@@ -93,8 +127,8 @@ leader_traits = {
 		defense_skill = 1
 		logistics_skill = 1
 		
-		defense_skill_factor = 1
-		logistics_skill_factor = 1
+		#defense_skill_factor = 1
+		#logistics_skill_factor = 1
 
 		new_commander_weight = {
 			factor = 1
@@ -119,9 +153,8 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		
-		non_shared_modifier = {
-			experience_gain_factor = -0.05
-			promote_cost_factor = -0.5
+		modifier = {
+			land_reinforce_rate = 0.03
 		}
 
 		new_commander_weight = {
@@ -147,8 +180,8 @@ leader_traits = {
 			}
 		}
 		
-		planning_skill_factor = 1
-		logistics_skill_factor = 1
+		#planning_skill_factor = 1
+		#logistics_skill_factor = 1
 	}
 	
 	war_hero = { 
@@ -163,16 +196,16 @@ leader_traits = {
 		new_commander_weight = {
 			factor = 0  # Scripted starting leaders only
 		}
-		attack_skill_factor = 1
-		planning_skill_factor = 1
+		#attack_skill_factor = 1
+		#planning_skill_factor = 1
 	}
 	
 	career_officer = { 
 		type = land
 		trait_type = personality_trait
 		
-		non_shared_modifier = {
-			promote_cost_factor = -0.25
+		modifier = {
+			breakthrough_factor = 0.045
 		}
 
 		new_commander_weight = {
@@ -192,8 +225,6 @@ leader_traits = {
 			}
 		}
 		
-		planning_skill_factor = 1
-		logistics_skill_factor = 1
 	}
 
 	trait_cautious = { 
@@ -201,7 +232,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			planning_speed = -0.20
+			planning_speed = 0.20
 			wounded_chance_factor = -0.5
 		}
 		
@@ -228,8 +259,8 @@ leader_traits = {
 		}
 		
 		
-		defense_skill_factor = 1
-		logistics_skill_factor = 1
+		#defense_skill_factor = 1
+		#logistics_skill_factor = 1
 	}
 
 	trait_reckless = { 
@@ -237,8 +268,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			planning_speed = 0.20
-			wounded_chance_factor = 0.5  # +50% chance to get wounded
+			max_planning = 0.04
 		}
 		
 		new_commander_weight = {
@@ -262,21 +292,18 @@ leader_traits = {
 			}
 		}
 		
-		attack_skill_factor = 1
-		defense_skill_factor = -1
-		planning_skill_factor = 1
+		#attack_skill_factor = 1
+		#defense_skill_factor = -1
+		#planning_skill_factor = 1
 	}
 
 	media_personality = { 
 		type = land
 		trait_type = personality_trait
 		
-		non_shared_modifier = {
-			reassignment_duration_factor = 1   # +100% cost to replace leader
+		modifier = {
+			terrain_penalty_reduction = 0.05
 		}
-		
-		attack_skill_factor = 1
-		defense_skill_factor = 1
 
 		new_commander_weight = {
 			factor = 1
@@ -299,11 +326,9 @@ leader_traits = {
 	harsh_leader = { 
 		type = land
 		trait_type = personality_trait
-		
-		attack_skill = 1
 
 		modifier = {
-			army_morale_factor = -0.10
+			army_morale_factor = 0.06
 		}
 
 		new_commander_weight = {
@@ -323,8 +348,8 @@ leader_traits = {
 			}
 		}
 		
-		attack_skill_factor = 1
-		logistics_skill_factor = 1
+		#attack_skill_factor = 1
+		#logistics_skill_factor = 1
 	}
 
 	bearer_of_artillery = {
@@ -333,7 +358,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			army_artillery_attack_factor = 0.15
+			army_artillery_attack_factor = 0.05
 		}
 		
 		new_commander_weight = {
@@ -393,8 +418,8 @@ leader_traits = {
 			}
 			
 		}
-		attack_skill_factor = 1
-		planning_skill_factor = 1
+		#attack_skill_factor = 1
+		#planning_skill_factor = 1
 	}
 
 	irregulars_officer = { 
@@ -472,8 +497,8 @@ leader_traits = {
 			}
 		}
 
-		attack_skill_factor = 1
-		planning_skill_factor = 1
+		#attack_skill_factor = 1
+		#planning_skill_factor = 1
 	}
 
 	ascari_officer = { 
@@ -535,8 +560,8 @@ leader_traits = {
 			}
 		}
 
-		defense_skill_factor = 1
-		logistics_skill_factor = 1
+		#defense_skill_factor = 1
+		#logistics_skill_factor = 1
 	}
 
 	militias_officer = { 
@@ -610,8 +635,8 @@ leader_traits = {
 			}
 		}
 
-		defense_skill_factor = 1
-		planning_skill_factor = 1
+		#defense_skill_factor = 1
+		#planning_skill_factor = 1
 	}
 
 	
@@ -860,90 +885,10 @@ leader_traits = {
 ##################################
 # Corps Commander traits.
 ##################################
-	infantry_officer = { 		
-		type = corps_commander
-		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.75 }
-			check_variable = { num_infantry > temp }
-		}
-		cost = 0
-		
-		trait_type = assignable_trait
-		
-		gui_row = 17
-		mutually_exclusive = armor_officer
-		mutually_exclusive = cavalry_officer
-		mutually_exclusive = old_guard
-	}
-
-	armor_officer = { 
-		type = corps_commander
-		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.75 }
-			check_variable = { num_armored > temp }
-		}
-		cost = 0
-		
-		trait_type = assignable_trait
-		
-		gui_row = 16
-		attack_skill_factor = 1
-		mutually_exclusive = infantry_officer
-		mutually_exclusive = cavalry_officer
-		mutually_exclusive = old_guard
-	}
-
-	cavalry_officer = { 
-		type = corps_commander
-		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.75 }
-			set_temp_variable = { cmm = num_cavalry }
-			add_to_temp_variable = { cmm = num_motorized }
-			add_to_temp_variable = { cmm = num_mechanized }
-			check_variable = { cmm > temp }
-		}
-		cost = 0
-		
-		trait_type = assignable_trait
-		
-		gui_row = 18
-		mutually_exclusive = infantry_officer
-		mutually_exclusive = armor_officer
-		mutually_exclusive = old_guard
-	}
-
-		old_guard = { 
-		corps_commander_modifier = {
-			max_commander_army_size = 96
-		}
-		modifier = {
-			experience_gain_factor = -0.75
-		}
-		type = corps_commander
-		gain_xp = {
-			always = yes
-		}
-		cost = 0
-		
-		trait_type = assignable_trait
-		
-		gui_row = 19
-		mutually_exclusive = infantry_officer
-		mutually_exclusive = armor_officer
-		mutually_exclusive = cavalry_officer
-	}
 
 	organizer = { 
 		type = corps_commander
-		gain_xp = {
-			check_variable = { num_battle_plans > 0 }
-		}
-		custom_gain_xp_trigger_tooltip = is_using_battle_plans
 		
-		cost = 4000
 		modifier = {
 			planning_speed = 0.2
 		}
@@ -962,17 +907,7 @@ leader_traits = {
 	
 	cavalry_leader = { 
 		type = corps_commander
-		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.75 }
-			set_temp_variable = { cmm = num_cavalry }
-			add_to_temp_variable = { cmm = num_motorized }
-			add_to_temp_variable = { cmm = num_mechanized }
-			check_variable = { cmm > temp }
-		}
-		custom_gain_xp_trigger_tooltip = cavalary_ratio_over_40
 		
-		cost = 4000
 		modifier = {
 			cavalry_attack_factor = 0.05
 		}
@@ -991,16 +926,10 @@ leader_traits = {
 	
 	infantry_leader = { 
 		type = corps_commander
-		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.75 }
-			check_variable = { num_infantry > temp }
-		}
-		custom_gain_xp_trigger_tooltip = infantry_ratio_over_80
 		
-		cost = 4000
 		modifier = {
 			army_infantry_defence_factor = 0.05
+			army_armor_attack_factor = -0.05
 		}
 		
 		slot = high_command
@@ -1016,18 +945,6 @@ leader_traits = {
 	}
 	skilled_staffer = { 
 		type = corps_commander
-		gain_xp_leader = {
-			if = {
-				limit = { is_leading_army_group = yes }
-				check_variable = { num_units > 99 }
-			}
-			else = {
-				check_variable = { num_units > 31 }
-			}
-		}
-		custom_gain_xp_trigger_tooltip = fighting_with_enough_units
-		
-		cost = 4000
 		
 		corps_commander_modifier = {
 			max_commander_army_size = 8
@@ -1036,7 +953,7 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-		logistics_skill_factor = 2
+		#logistics_skill_factor = 2
 		
 		gui_row = 15
 		
@@ -1047,15 +964,7 @@ leader_traits = {
 	}
 	trickster = { 
 		type = corps_commander
-		gain_xp = {
-			OR = {
-				has_flanked_opponent = yes
-				opponent = { has_flanked_opponent = yes }
-			}
-		}
-		custom_gain_xp_trigger_tooltip = has_flanked
-		
-		cost = 4000
+
 		modifier = {
 			recon_factor = 0.25
 		}
@@ -1070,10 +979,6 @@ leader_traits = {
 
 	winter_specialist = { 
 		type = corps_commander
-		gain_xp = {
-			temperature < 0
-		}
-		cost = 250
 		modifier = {
 			winter_attrition_factor = -0.5
 		}
@@ -1088,10 +993,7 @@ leader_traits = {
 
 	adaptable = { 
 		type = corps_commander
-		gain_xp = {
-			always = no # not gainable
-		}
-		cost = 4000
+
 		modifier = {
 			acclimatization_cold_climate_gain_factor = 0.1
 			acclimatization_hot_climate_gain_factor = 0.1
@@ -1119,10 +1021,6 @@ leader_traits = {
 	winter_expert = { 
 		type = corps_commander
 
-		gain_xp = {
-			always = no # not gainable
-		}
-
 		modifier = {
 			acclimatization_cold_climate_gain_factor = 0.40
 		}
@@ -1140,13 +1038,7 @@ leader_traits = {
 	
 	trait_engineer = { 
 		type = corps_commander
-		gain_xp = {
-			OR = {
-				has_combat_modifier = fort_attack
-				has_combat_modifier = river_crossing
-			}
-		}
-		cost = 4000
+
 		modifier = {
 			river = {
 				attack = 0.05
@@ -1171,22 +1063,17 @@ leader_traits = {
 
 	panzer_leader = {
  		type = corps_commander
-		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.75 }
-			check_variable = { num_armored > temp }
-		}
-		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
-		cost = 4000
+
 		modifier = {
 			army_armor_speed_factor = 0.05 
-			army_armor_attack_factor = 0.05 
+			army_armor_attack_factor = 0.05
+			army_infantry_attack_factor = -0.05
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		
-		attack_skill_factor = 2
+		#attack_skill_factor = 2
 		
 		gui_row = 1
 		
@@ -1198,15 +1085,6 @@ leader_traits = {
 
 	commando = { 
  		type = corps_commander
-		gain_xp = {
-			OR = {
-				temperature < 10
-				temperature > 20
-				has_combat_modifier = paradrop
-				has_combat_modifier = amphibious_attack
-			}
-		}
-		cost = 4000
 		modifier = {
 			out_of_supply_factor = -0.25
 		}
@@ -1224,10 +1102,6 @@ leader_traits = {
 
 	desert_fox = { 
  		type = corps_commander
-		gain_xp = {
-			is_fighting_in_terrain = desert
-		}
-		cost = 2000
 		modifier = {
 			desert = {
 				movement = 0.05
@@ -1252,10 +1126,6 @@ leader_traits = {
 
 	swamp_fox = { 
 		type = corps_commander
-		gain_xp = {
-			is_fighting_in_terrain = marsh
-		}
-		cost = 2000
 		modifier = {
 			marsh = {
 				movement = 0.05
@@ -1273,10 +1143,6 @@ leader_traits = {
 
 	trait_mountaineer = { 
 		type = corps_commander
-		gain_xp = {
-			is_fighting_in_terrain = mountain
-		}
-		cost = 2000
 		modifier = {
 			mountain = {
 				movement = 0.05
@@ -1294,10 +1160,6 @@ leader_traits = {
 
 	hill_fighter = { 
 		type = corps_commander
-		gain_xp = {
-			is_fighting_in_terrain = hills
-		}
-		cost = 2000
 		modifier = {
 			hills = {
 				movement = 0.05
@@ -1315,10 +1177,6 @@ leader_traits = {
 
 	jungle_rat = { 
 		type = corps_commander
-		gain_xp = {
-			is_fighting_in_terrain = jungle
-		}
-		cost = 2000
 		modifier = {
 			jungle = {
 				movement = 0.05
@@ -1336,10 +1194,6 @@ leader_traits = {
 
 	ranger = { 
 		type = corps_commander
-		gain_xp = {
-			is_fighting_in_terrain = forest
-		}
-		cost = 2000
 		modifier = {
 			forest = {
 				movement = 0.05
@@ -1357,10 +1211,6 @@ leader_traits = {
 
 	urban_assault_specialist = { 
 		type = corps_commander
-		gain_xp = {
-			is_fighting_in_terrain = urban
-		}
-		cost = 2000
 		modifier = {
 			urban = {
 				movement = 0.05
@@ -1379,10 +1229,6 @@ leader_traits = {
 	
 	naval_invader = {
 		type = corps_commander
-		gain_xp = {
-			is_amphibious_invasion = yes
-		}
-		cost = 1
 		modifier = {
 			amphibious_invasion = 0.3 # 30% faster invasions
 			invasion_preparation = -0.3
@@ -1490,12 +1336,9 @@ leader_traits = {
 	fortress_buster = {
 		type = corps_commander
 		gain_xp = {
-			OR = {
-				has_combat_modifier = fort_attack
-				dig_in > 10
-			}
+		    always = no
 		}
-		cost = 4000
+
 		modifier = {
 			fort = {
 				attack = 0.1
@@ -3124,7 +2967,6 @@ leader_traits = {
 
 		modifier = {
 		    max_commander_army_size = 3099
-		    experience_gain_factor = -100
 		}
 
 		new_commander_weight = {

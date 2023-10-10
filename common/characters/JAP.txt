@@ -64,12 +64,12 @@ characters={
 		}
 
 		corps_commander={
-			traits={ brilliant_strategist politically_connected trickster trait_engineer }
-			skill=5
-			attack_skill=4
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=4
+			traits={ infantry_leader trickster trait_engineer jungle_rat ranger }
+			skill=8
+			attack_skill=8
+			defense_skill=7
+			planning_skill=7
+			logistics_skill=6
 			legacy_id=0
 		}
 	}
@@ -96,12 +96,12 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ politically_connected JAP_samurai_lineage offensive_doctrine }
-			skill=4
-			attack_skill=4
+			traits={ JAP_samurai_lineage offensive_doctrine trait_mountaineer hill_fighter media_personality }
+			skill=7
+			attack_skill=6
 			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -131,11 +131,11 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ JAP_samurai_lineage offensive_doctrine }
+			traits={ JAP_samurai_lineage offensive_doctrine infantry_leader }
 			skill=4
 			attack_skill=3
 			defense_skill=4
-			planning_skill=2
+			planning_skill=4
 			logistics_skill=4
 			legacy_id=0
 		}
@@ -150,7 +150,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer }
+			traits={ }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -188,12 +188,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trickster }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
+			traits={ trickster infantry_leader trait_engineer urban_assault_specialist ranger }
+			skill=6
+			attack_skill=5
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -231,7 +231,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ trait_reckless }
+			traits={  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -250,12 +250,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist }
-			skill=3
-			attack_skill=3
-			defense_skill=2
+			traits={ infantry_leader trait_mountaineer trickster trait_reckless }
+			skill=5
+			attack_skill=5
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -269,12 +269,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer }
+			traits={ }
 			skill=3
-			attack_skill=1
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -288,12 +288,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ politically_connected JAP_samurai_lineage }
+			traits={  JAP_samurai_lineage }
 			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -307,7 +307,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage }
+			traits={   JAP_samurai_lineage }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -326,7 +326,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless }
+			traits={  }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -360,7 +360,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer substance_abuser }
+			traits={ substance_abuser }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -379,10 +379,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless }
+			traits={  }
 			skill=4
-			attack_skill=3
-			defense_skill=2
+			attack_skill=4
+			defense_skill=4
 			planning_skill=4
 			logistics_skill=4
 			legacy_id=0
@@ -398,7 +398,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ war_hero }
+			traits={  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -417,7 +417,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious politically_connected }
+			traits={   }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -436,7 +436,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer }
+			traits={ }
 			skill=3
 			attack_skill=3
 			defense_skill=1
@@ -455,12 +455,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless JAP_samurai_lineage trickster }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+			traits={ brilliant_strategist infantry_leader JAP_samurai_lineage trickster naval_invader commando media_personality career_officer jungle_rat }
+			skill=7
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=0
 		}
 	}
@@ -512,7 +512,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer politically_connected fortress_buster }
+			traits={  fortress_buster }
 			skill=3
 			attack_skill=1
 			defense_skill=3
@@ -531,7 +531,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious }
+			traits={  }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -550,7 +550,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious media_personality }
+			traits={   }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -588,7 +588,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer }
+			traits={ }
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -625,7 +625,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer commando }
+			traits={ commando }
 			skill=3
 			attack_skill=3
 			defense_skill=1
@@ -644,7 +644,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious }
+			traits={  }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -663,7 +663,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ politically_connected JAP_samurai_lineage }
+			traits={  JAP_samurai_lineage }
 			skill=2
 			attack_skill=2
 			defense_skill=2
