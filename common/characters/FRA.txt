@@ -140,10 +140,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist war_hero trickster }
-			skill=4
+			traits={ infantry_leader trickster }
+			skill=5
 			attack_skill=4
-			defense_skill=2
+			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
 			legacy_id=0
@@ -159,12 +159,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious }
-			skill=4
+			traits={ trait_mountaineer }
+			skill=5
 			attack_skill=3
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -199,12 +199,12 @@ characters={
 		}
 
 		field_marshal={
-			traits={ inflexible_strategist career_officer defensive_doctrine }
-			skill=2
-			attack_skill=1
+			traits={ infantry_leader defensive_doctrine }
+			skill=4
+			attack_skill=4
 			defense_skill=3
-			planning_skill=2
-			logistics_skill=1
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -239,12 +239,12 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ inflexible_strategist career_officer defensive_doctrine }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
+			traits={ panzer_leader media_personality organizer }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -275,12 +275,12 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ trait_cautious defensive_doctrine }
-			skill=3
-			attack_skill=2
-			defense_skill=2
+			traits={ infantry_leader }
+			skill=4
+			attack_skill=4
+			defense_skill=4
 			planning_skill=4
-			logistics_skill=2
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -342,12 +342,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ media_personality harsh_leader }
+			traits={ panzer_leader trickster trait_engineer }
 			skill=4
 			attack_skill=4
 			defense_skill=4
-			planning_skill=3
-			logistics_skill=2
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=101
 		}
 	}
@@ -379,12 +379,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_reckless }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			traits={ infantry_leader hill_fighter }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -423,12 +423,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ career_officer trait_cautious trickster }
+			traits={ infantry_leader trickster }
 			skill=3
-			attack_skill=2
-			defense_skill=2
+			attack_skill=3
+			defense_skill=3
 			planning_skill=4
-			logistics_skill=2
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -460,12 +460,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ }
-			skill=3
-			attack_skill=3
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
+			traits={ infantry_leader trait_reckless }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
 			legacy_id=0
 		}
 	}
@@ -479,7 +479,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious }
+			traits={  }
 			skill=2
 			attack_skill=1
 			defense_skill=3

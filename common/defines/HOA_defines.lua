@@ -3,6 +3,8 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 120 --10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 240 --25
 NDefines.NGame.GAME_SPEED_SECONDS = { 0.18, 0.175, 0.1625, 0.04, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
 
+NDefines.NCharacter.ADVISOR_PROMOTION_COST = 3131
+
 NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 2000.0                    -- It always takes atleast 10 days to justify a wargoal --2.0       
 NDefines.NDiplomacy.WARGOAL_THREAT_MAX_TIME_RATIO = 1.0            -- Threat from justifying a wargoal slowly builds up, hitting 100% at this proportion of the way to completion --1.0
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.1            -- Each province owned by the target country contributes this amount of volunteers to the limit. --0.05
@@ -109,6 +111,7 @@ NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
 NDefines.NMilitary.XP_GAIN_FACTOR_FOR_MAX_RELATIVE_COMBAT_DAMAGE = 0.0
 NDefines.NMilitary.MIN_XP_RATE_TO_DECAY = 0.0
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 3131
 NDefines.NMilitary.XP_DECAY_RATE_PER_HOUR_IN_COMBAT = 0.00
 NDefines.NMilitary.MAX_RELATIVE_COMBAT_DAMAGE_TO_MODIFY_XP = 0.0
 NDefines.NMilitary.DIVISIONAL_COMMANDER_RANK_XP_THRESHOLD = { 		-- XP thresholds for divisional commander ranks. [TAG]_DIVISION_EXPERIENCE_TITLE_ARMY_EXPERIENCE_[array index]

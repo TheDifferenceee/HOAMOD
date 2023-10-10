@@ -219,7 +219,10 @@ characters = {
 			planning_skill = 5
 			logistics_skill = 5
 			legacy_id = 402
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
+			}
 		}
 
 		advisor = {
@@ -413,7 +416,10 @@ characters = {
 			planning_skill = 4
 			logistics_skill = 4
 			legacy_id = 408
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
+			}
 		}
 	}
 
@@ -511,14 +517,17 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { inflexible_strategist politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { inflexible_strategist politically_connected infantry_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
 			legacy_id = 405
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
+			}
 		}
 	}
 
@@ -691,14 +700,17 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 1
+			traits = { harsh_leader panzer_leader ranger trickster }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
+			}
 		}
 	}
 
@@ -1729,14 +1741,17 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { career_officer organizer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 1
+			traits = { infantry_leader organizer politically_connected }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
 			planning_skill = 3
-			logistics_skill = 4
+			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			visible = {
+				NOT = { has_character_flag = SOV_exiled_flag }
+				has_completed_focus = SOV_the_bloc_of_rights_and_trotskyites
+			}
 		}
 	}
 
@@ -1822,8 +1837,8 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { trait_TUR_kemalist_champion }
-			skill = 1
+			traits = { trait_TUR_kemalist_champion infantry_leader }
+			skill = 5
 			attack_skill = 3
 			defense_skill = 3
 			planning_skill = 3
