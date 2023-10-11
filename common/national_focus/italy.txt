@@ -9212,6 +9212,14 @@ focus_tree = {
 			add_stability = 0.05
 			add_war_support = 0.05
 
+			ITA_benito_mussolini = {
+						set_portraits = {
+							civilian = {
+								large = "GFX_portrait_ITA_kriptosman"
+							}
+						}
+					}
+
 			if = {
 				limit = {
 					has_completed_focus = ITA_the_man_of_providence
