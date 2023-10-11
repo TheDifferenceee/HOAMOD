@@ -1884,8 +1884,8 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { panzer_leader panzer_expert ranger }
+		field_marshal = {
+			traits = { panzer_leader panzer_expert ranger trait_engineer trickster career_officer trait_reckless trait_cautious media_personality politically_connected }
 			skill = 8
 			attack_skill = 7
 			defense_skill = 5
