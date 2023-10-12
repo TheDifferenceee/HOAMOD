@@ -631,14 +631,12 @@ country_event = {
 					}
 					set_state_controller = 31
 				}
+			country_event = { hours = 6 id = news.34 }
+		    FRA = { news_event = { id = france.20 days = 1 } }
 			}
 			
 		}
 		
-		}
-		country_event = { hours = 6 id = news.34 }
-		hidden_effect =  {
-			FRA = { news_event = { id = france.20 days = 1 } }
 		}
 
 	option = { # Agree - Neutrality

@@ -23,8 +23,6 @@ on_actions = {
 			if = {
 			limit = {is_ai = yes}
 
-			remove_decision = BUL_internal_factions
-			remove_decision = BUL_the_fatherland_front_dec_cat
 			remove_ideas = BUL_second_national_catastrophe
 			remove_ideas = BUL_army_restrictions
 			remove_ideas = BUL_imro_01
