@@ -2341,7 +2341,7 @@ focus = {
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 			
-			army_experience = 10
+			army_experience = 100
 
 			
 			add_doctrine_cost_reduction = {
@@ -2793,7 +2793,7 @@ focus = {
 			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
-			army_experience = 5
+			army_experience = 50
 			add_named_threat = { threat = 5 name = GER_rhineland }
 			if = {
 				limit = { FRA = { is_subject = no } }
@@ -3266,7 +3266,7 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			army_experience = 10
+			army_experience = 100
 			if = {
 				limit = {
 					country_exists = AUS
