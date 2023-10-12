@@ -137,6 +137,8 @@ NDefines.NMilitary.UNIT_LEADER_TRAIT_SLOT_PER_LEVEL = { 			-- num extra traits o
 1.0, -- navy general
 0.0, -- operative
 }
+
+NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3 -- Most xp you can gain per day --1.2 günlük kazanılan max army xp sınırı
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.0 -- vanilla 0.1
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0001 --vanilla 0.0001,
 NDefines.NMilitary.UNIT_EXPERIENCE_SCALE = 1.0 --vanila 1.0,
