@@ -3149,7 +3149,7 @@ leader_traits = {
 		random = no
 		stability_factor = -0.1
 		war_support_factor = 0.05
-		political_power_factor = 0.05
+		political_power_factor = 0.1
 		opinion_gain_monthly_factor = -0.05
 		subjects_autonomy_gain = -0.1
 	}
