@@ -14666,6 +14666,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+		    army_experience = 250
 			add_state_claim = 102 #NORTH SLOVENIA
 			add_state_claim = 853 #LJUBLJANA
 			add_state_claim = 103 #DALMATIA
