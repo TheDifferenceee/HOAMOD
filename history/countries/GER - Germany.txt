@@ -1,4 +1,5 @@
 ﻿capital = 64
+
 if = {
 	limit = {
 		NOT = {
@@ -403,6 +404,8 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 add_ideas = GER_mefo_bills_1
+
+add_timed_idea = { idea = hoa_peace_idea days = 1320 }
 
 activate_mission = GER_mefo_bills_mission
 
@@ -960,7 +963,7 @@ if = {
 		icon = "GFX_GER_medium_plane_1_medium"
 	}
 
-	create_equipment_variant = { #Note: There is a copy of this variant in Finnish Scripted Effects file (FIN_purchase_german_equipment_for_cw). Any changes here should also be applied there
+	create_equipment_variant = {
 		name = "He 51" #also covers Ar 68
 		type = small_plane_airframe_0
 		modules = {
