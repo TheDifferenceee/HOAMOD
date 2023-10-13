@@ -168,7 +168,8 @@ NDefines.NMilitary.PEN_VS_AVERAGE = 0.4 --0.4 yani vanilla deger
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0            -- armies gets increased cap when they are garrisoned --3.0 yani vanilla deger      
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0                    -- fuel consumption ratio while training --1.0 yani vanilla deger
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1
-	
+
+NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.1       -- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.	
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5                            -- Higher value = more shot down planes --1 yani vanilla deger
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1                    -- same as above but used inside naval combat for carrier battles --5  f3ten koydugumuz ucakla ayni islevde oldugunu dusunuyoruz        
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction. --1.0 yani vanilla deger 
