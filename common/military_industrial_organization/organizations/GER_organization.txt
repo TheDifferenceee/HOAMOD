@@ -161,7 +161,7 @@ GER_daimler_benz_organization = {
 	}
 	initial_trait = {
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
+			military_industrial_organization_research_bonus = 0.025
 		}
 	}
 
@@ -173,8 +173,8 @@ GER_daimler_benz_organization = {
 
 		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
 		production_bonus = {
-			production_efficiency_cap_factor = 0.05
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.025
+			production_efficiency_gain_factor = 0.025
 		}
 
 		position = { x=9 y=0 }  
@@ -196,7 +196,7 @@ GER_daimler_benz_organization = {
 		any_parent = { GER_mio_trait_hotrolled_armor }
 		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
 		equipment_bonus = {
-			armor_value = 0.1
+			armor_value = 0.05
 		} 
 
 		position = { x=9 y=2 }  
@@ -289,11 +289,11 @@ GER_messerschmitt_organization = {
 		all_parents = { generic_mio_trait_expanded_production_facilities }
 
 		equipment_bonus = {
-			reliability = 0.05
+			reliability = 0.025
 		}
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 
@@ -310,8 +310,8 @@ GER_messerschmitt_organization = {
 		any_parent = { generic_mio_trait_heavier_airframe generic_mio_trait_maximum_wing_loads generic_mio_trait_gun_pods }
 
 		equipment_bonus = {
-			air_attack = 0.05
-			air_agility = 0.05
+			air_attack = 0.025
+			air_agility = 0.025
 		} 
 	}
 }
@@ -370,7 +370,7 @@ GER_junkers_organization = {
 		relative_position_id = generic_mio_trait_reinforced_wings
 
 		equipment_bonus = {
-			fuel_consumption = -0.05
+			fuel_consumption = -0.025
 		} 
 	}
 }

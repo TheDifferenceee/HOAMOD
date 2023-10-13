@@ -43,9 +43,9 @@ POL_pzinz_organization = {
 		}
 		
 		equipment_bonus = {
-			armor_value = -0.05
-			maximum_speed = -0.05
-			reliability = 0.05
+			armor_value = -0.025
+			maximum_speed = -0.025
+			reliability = 0.025
 		}
 	}
 	
@@ -66,8 +66,8 @@ POL_pzinz_organization = {
 		limit_to_equipment_type = { medium_tank_chassis heavy_tank_chassis }
 		
 		equipment_bonus = {
-			maximum_speed = 0.1
-			breakthrough = 0.05
+			maximum_speed = 0.05
+			breakthrough = 0.025
 		} 
 	}
 }

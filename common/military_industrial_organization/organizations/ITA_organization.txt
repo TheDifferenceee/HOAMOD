@@ -94,11 +94,11 @@ ITA_fiat_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -176,11 +176,11 @@ ITA_crda_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -216,11 +216,11 @@ ITA_cantiere_oto_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -256,11 +256,11 @@ ITA_navalmeccanica_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 } 
@@ -296,11 +296,11 @@ ITA_cantiere_navale_di_ancona_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -337,11 +337,11 @@ ITA_cantieri_navali_tosi_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -412,11 +412,11 @@ ITA_macchi_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -449,8 +449,8 @@ ITA_savoia_marchetti_organization = {
 		
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 		equipment_bonus = {
-			maximum_speed = 0.05
-			air_range = 0.15
+			maximum_speed = 0.025
+			air_range = 0.055
 		}
 	}
 
@@ -467,7 +467,7 @@ ITA_savoia_marchetti_organization = {
 		
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
 		equipment_bonus = {
-			naval_strike_attack = 0.15
+			naval_strike_attack = 0.055
 		}
 	}
 
@@ -487,10 +487,10 @@ ITA_savoia_marchetti_organization = {
 		
 		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
 		equipment_bonus = {
-			reliability = 0.1
+			reliability = 0.05
 		}
 		production_bonus = {
-			production_cost_factor = -0.1
+			production_cost_factor = -0.05
 		}
 	}
 
@@ -510,11 +510,11 @@ ITA_savoia_marchetti_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -572,11 +572,11 @@ ITA_caproni_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -612,11 +612,11 @@ ITA_piaggio_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -674,11 +674,11 @@ ITA_imam_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -714,11 +714,11 @@ ITA_crda_cant_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -740,8 +740,8 @@ ITA_fiat_aviazione_organization = {
 	
 	initial_trait = {
 		equipment_bonus = {
-			naval_strike_attack = -0.1
-			maximum_speed = 0.1
+			naval_strike_attack = -0.05
+			maximum_speed = 0.05
 		}
 	}
 
@@ -764,8 +764,8 @@ ITA_fiat_aviazione_organization = {
 		
 		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
 		equipment_bonus = {
-			air_agility = 0.05
-			air_attack = 0.03
+			air_agility = 0.025
+			air_attack = 0.015
 		}
 	}
 
@@ -785,11 +785,11 @@ ITA_fiat_aviazione_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -860,11 +860,11 @@ ITA_beretta_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -931,11 +931,11 @@ ITA_lancia_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -992,11 +992,11 @@ ITA_breda_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -1032,11 +1032,11 @@ ITA_brescia_arsenal_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }
@@ -1071,7 +1071,7 @@ ITA_officine_meccaniche_organization = {
 
 	initial_trait = {
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.15
+			military_industrial_organization_research_bonus = 0.055
 		}
 	}
 
@@ -1119,11 +1119,11 @@ ITA_officine_meccaniche_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 
@@ -1148,11 +1148,11 @@ ITA_officine_meccaniche_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 
@@ -1176,11 +1176,11 @@ ITA_officine_meccaniche_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.1
+			production_capacity_factor = 0.05
 		}
 	}
 }

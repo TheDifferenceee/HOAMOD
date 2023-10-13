@@ -153,19 +153,19 @@
 #		# cf. script enum script_enum_equipment_stat for possible values
 #		equipment_bonus = {
 #			reliability = 0.2
-#			soft_attack = 0.1 # accepts as many stats as needed
+#			soft_attack = 0.05 # accepts as many stats as needed
 #		}
 #       # Defines the bonus given when the trait is unlocked, and the MIO is assigned to a production line
 #		# cf. script enum script_enum_production_stat for possible values
 #		production_bonus = {
-#			production_cost_factor = -0.1
-#			production_capacity_factor = 0.1 # accepts as many stats as needed
+#			production_cost_factor = -0.05
+#			production_capacity_factor = 0.05 # accepts as many stats as needed
 #		}
 #
 #		# Defines modifiers that will apply on the Organization the trait is part of.
 #		# Only use modifiers relevant for MIOs - full list below.
 #		organization_modifier = {
-#			military_industrial_organization_research_bonus = 0.1
+#			military_industrial_organization_research_bonus = 0.05
 #			military_industrial_organization_design_team_assign_cost = -0.33
 #			military_industrial_organization_design_team_change_cost = -0.5
 #			military_industrial_organization_industrial_manufacturer_assign_cost = -0.66

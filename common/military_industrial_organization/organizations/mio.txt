@@ -23,13 +23,13 @@ my_custom_mio = {
 	initial_trait = {
 		limit_to_equipment_type = { infantry_equipment }
 		equipment_bonus = {
-			hard_attack = 0.1
+			hard_attack = 0.05
 		}
 		production_bonus = {
-			production_cost_factor = -0.1
+			production_cost_factor = -0.05
 		}
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 	}
 
@@ -45,7 +45,7 @@ my_custom_mio = {
 			soft_attack = 0.3
 		}
 		production_bonus = {
-			production_efficiency_cap_factor = 0.1
+			production_efficiency_cap_factor = 0.05
 		}
 		position = { x=0 y=0 }
 		available = { owner = { has_political_power > 10 } }
@@ -98,10 +98,10 @@ my_custom_mio = {
 		token = custom_6
 		icon = GFX_industrial_org_trait_placeholder
 		equipment_bonus = {
-			hard_attack = 0.1
+			hard_attack = 0.05
 		}
 		production_bonus = {
-			production_cost_factor = -0.1
+			production_cost_factor = -0.05
 		}
 		position = { x=0 y=2 }
 		any_parent = { custom_1 }
@@ -227,7 +227,7 @@ my_capital_ship_mio = {
 
 	initial_trait = {
 		equipment_bonus = {
-			hg_attack = 0.1
+			hg_attack = 0.05
 			armor_value  = 0.2
 			lg_attack = 0.3
 		}
@@ -237,7 +237,7 @@ my_capital_ship_mio = {
 		token = custom_1
 		icon = GFX_industrial_org_trait_placeholder
 		equipment_bonus = {
-			hg_attack = 0.1
+			hg_attack = 0.05
 			armor_value  = 0.2
 			lg_attack = 0.3
 		}

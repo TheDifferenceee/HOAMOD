@@ -3,7 +3,7 @@ mio_policy_general_ruthless_contracts = {
 	allowed = { always = yes  }
 	available = { has_mio_size > 5}
 	organization_modifier = {
-		military_industrial_organization_funds_gain = 0.1
+		military_industrial_organization_funds_gain = 0.05
 	}
 }
 
@@ -35,8 +35,8 @@ mio_policy_general_assembly_line_optimisers = {
 	available = { has_mio_size > 5}
 	production_bonus = {
 		same_as_mio = {
-			production_efficiency_cap_factor = 0.05
-			production_efficiency_gain_factor = 0.05
+			production_efficiency_cap_factor = 0.025
+			production_efficiency_gain_factor = 0.025
 		}
 	}
 }
@@ -47,8 +47,8 @@ mio_policy_general_vertical_integration = {
 	available = { has_mio_size > 5}
 	production_bonus = {
 		same_as_mio = {
-			production_resource_need_factor = -0.1
-			production_resource_penalty_factor = 0.1
+			production_resource_need_factor = -0.05
+			production_resource_penalty_factor = 0.05
 		}
 	}
 }
@@ -59,7 +59,7 @@ mio_policy_general_mechanical_genius  = {
 	available = { has_mio_size > 5}
 	equipment_bonus = {
 		same_as_mio = {
-			reliability = 0.1
+			reliability = 0.05
 		}
 	}
 }
@@ -83,12 +83,12 @@ mio_policy_NOR_general_permanent_industrial_revolution = {
 		owner = { has_completed_focus = NOR_norwegian_engineering } 
 	}
 	organization_modifier = {
-		military_industrial_organization_research_bonus = 0.1
+		military_industrial_organization_research_bonus = 0.05
 	}
 
 	production_bonus = {
 		same_as_mio = {
-			production_resource_need_factor = -0.1
+			production_resource_need_factor = -0.05
 		}
 	}
 }

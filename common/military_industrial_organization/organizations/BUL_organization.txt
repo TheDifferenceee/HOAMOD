@@ -1,7 +1,7 @@
 @prussia_of_the_balkans_position_X = 9
 @prussia_of_the_balkans_position_Y = 4
-@prussia_of_the_balkans_research_bonus = 0.1
-@prussia_of_the_balkans_production_capacity_factor = 0.1
+@prussia_of_the_balkans_research_bonus = 0.05
+@prussia_of_the_balkans_production_capacity_factor = 0.05
 
 #####################
 

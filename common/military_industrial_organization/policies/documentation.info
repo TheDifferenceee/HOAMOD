@@ -42,7 +42,7 @@
 #	equipment_bonus = {
 #		infantry_equipment = { # cf. script enum script_enum_equipment_bonus_type for possible values
 #			reliability = 0.2
-#			soft_attack = 0.1 # accepts as many stats as needed
+#			soft_attack = 0.05 # accepts as many stats as needed
 #		}
 #		armor = { ... } # accepts as many type as needed
 #		same_as_mio = { ... } # can use this keyword to apply to all equipments in departments of the attached MIO
@@ -52,8 +52,8 @@
 #	# Note it's different from equipment_bonus in traits. Here you have to give the equipment group/category/archetype/type.
 #	production_bonus = {
 #		infantry_equipment = { # cf. script enum script_enum_equipment_bonus_type for possible values
-#			production_cost_factor = -0.1
-#			production_capacity_factor = 0.1 # accepts as many stats as needed
+#			production_cost_factor = -0.05
+#			production_capacity_factor = 0.05 # accepts as many stats as needed
 #		}
 #		armor = { ... } # accepts as many type as needed
 #		same_as_mio = { ... } # can use this keyword to apply to all equipments in departments of the attached MIO
@@ -62,7 +62,7 @@
 #	# Defines modifiers that will apply on the MIO the policy is attached to.
 #	# Only use modifiers relevant for MIOs - full list below.
 #	organization_modifier = {
-#		military_industrial_organization_research_bonus = 0.1
+#		military_industrial_organization_research_bonus = 0.05
 #		military_industrial_organization_design_team_assign_cost = -0.33
 #		military_industrial_organization_design_team_change_cost = -0.5
 #		military_industrial_organization_industrial_manufacturer_assign_cost = -0.66
