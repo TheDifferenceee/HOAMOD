@@ -112,11 +112,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				join_faction_tension = -0.25
-				send_volunteers_tension = -0.35
-				guarantee_tension = -0.2
-				mobilization_laws_cost_factor = 1
-				economy_cost_factor = 1
+				production_speed_arms_factory_factor = -5
 			}
 		}
 		USA_consumer_balance = {

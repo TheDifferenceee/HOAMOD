@@ -2167,8 +2167,10 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		available = {
-			date > 1941.1.1
-			democratic > 0.50
+                OR = {
+				    date > 1941.1.1
+				    has_war = yes
+			}
 		}
 		completion_reward = {
 		    remove_ideas = USA_consumer_balance
@@ -5790,7 +5792,174 @@ focus_tree = {
 ## # #  # #   #  # #      #   #   #  #  #   #  #  # ## # 
 # ## ####  # #    #        #  ##  #     #   #  #  # # ## 
 #  # #  #  # #    #         # #   #  #  #   #  #  # #  # 
-#  # #  #   #     #       ##  ###  ##   #  ###  ##  #  # 
+#  # #  #   #     #       ##  ###  ##   #  ###  ##  #  #
+
+	focus = {
+		id = Usa_babag
+		icon = GFX_goal_generic_occupy_start_war
+		x = 13
+		y = 1
+		relative_position_id = USA_war_department
+
+		cost = 0.1
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+        date > 1938.1.1
+			OR = {
+			     AND = {
+					JAP = { num_of_naval_factories < 49 }
+				}
+				AND = {
+					JAP = { num_of_naval_factories < 50 }
+					OR = {
+					    AND = {
+					        USA = { num_of_naval_factories > 30 }
+					        ENG = { num_of_naval_factories > 20 }
+				        }
+				         AND = {
+					        USA = { num_of_naval_factories > 25 }
+					        ENG = { num_of_naval_factories > 25 }
+				        }
+				        AND = {
+					        USA = { num_of_naval_factories > 30 }
+					        ENG = { num_of_naval_factories > 20 }
+				        }
+				    }    
+				}
+				AND = {
+					JAP = { num_of_naval_factories < 60 }
+					OR = {
+					    AND = {
+					        USA = { num_of_naval_factories > 40 }
+					        ENG = { num_of_naval_factories > 20 }
+				        }
+				         AND = {
+					        USA = { num_of_naval_factories > 35 }
+					        ENG = { num_of_naval_factories > 25 }
+				        }
+				        AND = {
+					        USA = { num_of_naval_factories > 30 }
+					        ENG = { num_of_naval_factories > 30 }
+				        }
+				        AND = {
+					        USA = { num_of_naval_factories > 25 }
+					        ENG = { num_of_naval_factories > 35 }
+				        }
+				        AND = {
+					        USA = { num_of_naval_factories > 20 }
+					        ENG = { num_of_naval_factories > 40 }
+				        }
+				    }    
+				}
+				AND = {
+					JAP = { num_of_naval_factories < 75 }
+						OR = {
+							AND = {
+								USA = { num_of_naval_factories > 55 }
+								ENG = { num_of_naval_factories > 20 }
+							}
+							AND = {
+								USA = { num_of_naval_factories > 50 }
+								ENG = { num_of_naval_factories > 25 }
+							}
+							AND = {
+								USA = { num_of_naval_factories > 45 }
+								ENG = { num_of_naval_factories > 30 }
+							}
+							AND = {
+								USA = { num_of_naval_factories > 40 }
+								ENG = { num_of_naval_factories > 35 }
+							}
+							AND = {
+								USA = { num_of_naval_factories > 35 }
+								ENG = { num_of_naval_factories > 40 }
+							}
+							AND = {
+								USA = { num_of_naval_factories > 30 }
+								ENG = { num_of_naval_factories > 45 }
+							}
+							AND = {
+								USA = { num_of_naval_factories > 25 }
+								ENG = { num_of_naval_factories > 50 }
+							}
+							AND = {
+								USA = { num_of_naval_factories > 20 }
+								ENG = { num_of_naval_factories > 55 }
+							}
+						}
+				}
+				AND = {
+					JAP = { num_of_naval_factories < 90 }
+					OR = {
+						AND = {
+							USA = { num_of_naval_factories > 70 }
+							ENG = { num_of_naval_factories > 20 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 65 }
+							ENG = { num_of_naval_factories > 25 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 60 }
+							ENG = { num_of_naval_factories > 30 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 55 }
+							ENG = { num_of_naval_factories > 35 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 50 }
+							ENG = { num_of_naval_factories > 40 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 45 }
+							ENG = { num_of_naval_factories > 45 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 40 }
+							ENG = { num_of_naval_factories > 50 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 35 }
+							ENG = { num_of_naval_factories > 55 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 30 }
+							ENG = { num_of_naval_factories > 60 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 25 }
+							ENG = { num_of_naval_factories > 65 }
+						}
+						AND = {
+							USA = { num_of_naval_factories > 20 }
+							ENG = { num_of_naval_factories > 70 }
+						}
+					}
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			USA = { remove_ideas = USA_limited_intervention }
+		}
+	} 
 
 	focus = {
 		id = USA_two_ocean_navy_act
