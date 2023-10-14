@@ -72,7 +72,7 @@ NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.060       -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04 --vanilla 0.053      -- global damage modifier
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 1									-- field marshallar orduya verilmesin
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 32								-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 64								-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked --24 yani vanilla degeri
 NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5									-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked --5 
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0   --Base cost to unlock a regiment slot, --20
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0  --Base cost to change a regiment column. --5
@@ -85,10 +85,10 @@ NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.01    -- global damag
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2 -- how many CAS/TAC can enter a combat depending on enemy width there --3 
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 50        -- chance to get a hit to damage on forts. (out of 100) --5  
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60               -- chance to avoid hit if no defences left. --60 yani vanilla degeri     
-NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.25                -- small river crossing -- -0.3
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4           -- large river crossing -- -0.6
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.25          -- small river crossing -- -0.25
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.4     -- large river crossing -- -0.5
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.1                -- small river crossing -- -0.3
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.2           -- large river crossing -- -0.6
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.15          -- small river crossing -- -0.25
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.3     -- large river crossing -- -0.5
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.1                        -- fort penalty -- -0.15          
 NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.3               -- defender penalty if attacked from multiple directions -- -0.5         
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.10          -- effect on defense due to enemy air superiorty -- -0.35
@@ -168,7 +168,8 @@ NDefines.NMilitary.PEN_VS_AVERAGE = 0.4 --0.4 yani vanilla deger
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0            -- armies gets increased cap when they are garrisoned --3.0 yani vanilla deger      
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0                    -- fuel consumption ratio while training --1.0 yani vanilla deger
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1
-	
+
+NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.1       -- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.	
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5                            -- Higher value = more shot down planes --1 yani vanilla deger
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1                    -- same as above but used inside naval combat for carrier battles --5  f3ten koydugumuz ucakla ayni islevde oldugunu dusunuyoruz        
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction. --1.0 yani vanilla deger 
@@ -184,7 +185,8 @@ NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 1.0    -- Maximum damag
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.015 --vanilla degeri aynı, mp sonrasi bakilabilir    
 NDefines.NAir.NAVAL_MINES_PLANTING_SPEED_MULT = 0.001						-- Value used to overall balance of the speed of planting naval mines   --vanillasi 0.025 
 NDefines.NAir.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.001						-- Value used to overall balance of the speed of sweeping naval mines   --vanillasi 0.025
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.2 --0.05 vamilla
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.05 --0.05 vamilla
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 1 --vanilla 20,			-- Min cap for planes that can join naval combat
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_NO_TRUCK_DISRUPTION_FACTOR = 0.01 -- If a unit isn't motorized, still disrupt its supply by damage * this --0.02
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR = 0.15 --0.27
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_INFRA_DAMAGE_SPILL_FACTOR = 0.0008 -- Portion of truck damage to additionally deal to infrastructure --0.0016
@@ -273,9 +275,10 @@ NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.5    -- damage penalty 
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.5  -- screening efficiency (screen to capital ratio) at 0% positioning --0.5 yani vanilla deger
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.7  -- AA penalty at 0% positioning --0.7 yani vanilla deger
 NDefines.NNavy.SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING = 2.0  -- submarine reveal change on 0% positioning --2.0 yani vanilla deger
-NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.25    -- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction --0.25 yani vanilla deger
-NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.25    -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE --0.25 yani vanilla deger
-NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.2 --0.2 yani vanilla deger
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.05 --vanilla 0.01,								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0    -- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction --0.25 yani vanilla deger
+NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.1    -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE --0.25 yani vanilla deger
+NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 5 --0.2 yani vanilla deger
 NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75    -- damage reduction for incoming air attacks is clamped to this value at maximum. --0.75 yani vanilla deger       
 NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 1.0    -- hit profile for depth charges --100.0 yani vanilla deger                    
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 1                             -- scoring for target picking for planes inside naval combat, one define per ship typ --10 yani vanilla deger
