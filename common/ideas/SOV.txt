@@ -112,6 +112,25 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+
+		soviet_racon = {
+		picture = smersh
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_core_attack_factor = -0.1
+			}
+			
+		}
 		
 		soviet_economic_plan = {
 		picture = man_five_year_plan_industry
