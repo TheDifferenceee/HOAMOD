@@ -1,0 +1,2 @@
+SWE_alt_democratic_plan = {
+}
