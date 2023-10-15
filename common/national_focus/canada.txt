@@ -851,7 +851,7 @@
 				}
 				add_resource = {
 					type = steel
-					amount = 2
+					amount = 14
 				}
 			}
 			random_owned_controlled_state = {
@@ -860,8 +860,8 @@
 					is_in_home_area = yes
 				}
 				add_resource = {
-					type = steel
-					amount = 2
+					type = tungsten
+					amount = 10
 				}
 			}
 			random_owned_controlled_state = {
@@ -871,7 +871,7 @@
 				}
 				add_resource = {
 					type = chromium
-					amount = 3
+					amount = 6
 				}
 			}
 		}

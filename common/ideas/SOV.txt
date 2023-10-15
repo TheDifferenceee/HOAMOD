@@ -112,6 +112,25 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+
+		soviet_racon = {
+		picture = smersh
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				army_attack_factor = 0.1
+				army_core_attack_factor = -0.1
+			}
+			
+		}
 		
 		soviet_economic_plan = {
 		picture = man_five_year_plan_industry
@@ -127,7 +146,8 @@ ideas = {
 
 			modifier = {
 				surrender_limit = -0.08     #scripted deal varsa biraz arttirmaliyiz %96da kapitule oluyor
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.2 #growth yolundan dengelemek troll ustteki factory output kismak daha iyi 
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
