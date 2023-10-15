@@ -146,8 +146,7 @@ ideas = {
 
 			modifier = {
 				surrender_limit = -0.08     #scripted deal varsa biraz arttirmaliyiz %96da kapitule oluyor
-				industrial_capacity_factory = 0.05
-				production_factory_efficiency_gain_factor = 0.2 #growth yolundan dengelemek troll ustteki factory output kismak daha iyi 
+				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
