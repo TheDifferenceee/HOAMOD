@@ -942,7 +942,7 @@ characters = {
 			available = {
 				OR = {
 					has_completed_focus = POR_reorganization_of_the_communist_party 
-					SWE_refuge_for_revolutionaries_trigger = yes
+					#SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits = {
@@ -1007,7 +1007,7 @@ characters = {
 			available = {
 				OR = {
 					has_completed_focus = POR_popular_front 
-					SWE_refuge_for_revolutionaries_trigger = yes
+					#SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits = {

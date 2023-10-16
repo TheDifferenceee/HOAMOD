@@ -2243,7 +2243,7 @@ characters={
 							}
 						}
 					}
-					SWE_refuge_for_revolutionaries_trigger = yes
+					#SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			visible = {
@@ -2580,7 +2580,7 @@ characters={
 			available = {
 				OR = {
 					has_government = communism 
-					SWE_refuge_for_revolutionaries_trigger = yes
+					#SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits = {

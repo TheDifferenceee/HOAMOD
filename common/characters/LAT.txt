@@ -803,7 +803,7 @@ characters={
 			available = {
 				OR = {
 					has_completed_focus = BALTIC_revolutionary_cabinet 
-					SWE_refuge_for_revolutionaries_trigger = yes
+					#SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits = {
@@ -833,7 +833,7 @@ characters={
 			available = {
 				OR = {
 					has_completed_focus = BALTIC_revolutionary_cabinet 
-					SWE_refuge_for_revolutionaries_trigger = yes
+					#SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits = {
@@ -862,7 +862,7 @@ characters={
 			available = {
 				OR = {
 					has_completed_focus = BALTIC_revolutionary_cabinet 
-					SWE_refuge_for_revolutionaries_trigger = yes
+					#SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
 			traits = {
