@@ -190,7 +190,7 @@ country_event = {
 				var:DEN.DEN_overlord_nation = { has_government = fascism }
 			}
 		}
-		NOR_AAT = no
+		#NOR_AAT = no
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = { has_idea = fascism_defeated }
@@ -261,7 +261,7 @@ country_event = {
 				var:DEN.DEN_overlord_nation = { has_government = communism }
 			}
 		}
-		NOR_AAT = no
+		#NOR_AAT = no
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		NOT = { has_idea = communism_defeated }
@@ -344,7 +344,7 @@ country_event = {
 				date < 1949.1.1
 			}
 			AND = {
-				NOR_AAT = yes
+				#NOR_AAT = yes
 				date < 1949.1.1
 			} 
 			AND = { 
@@ -352,7 +352,7 @@ country_event = {
 				#has_dlc = "Battle for the Bosporus"
 			} 
 		}
-		NOR_aat = no
+		#NOR_AAT = no
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		democratic < 0.5
@@ -451,7 +451,7 @@ country_event = {
 				#has_dlc = "Battle for the Bosporus"
 			} 
 		}
-		NOR_aat = no 
+		#NOR_AAT = no 
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_country_flag = coalition_with_fascists
@@ -529,7 +529,7 @@ country_event = {
 				#has_dlc = "Battle for the Bosporus"
 			} 
 		}
-		NOR_aat = no 
+		#NOR_AAT = no 
 		OR = { NOT = { original_tag = SPR } NOT = { date < 1937.1.1 } }
 		has_government = democratic
 		has_country_flag = coalition_with_communists
@@ -607,7 +607,7 @@ country_event = {
 				var:DEN.DEN_overlord_nation = { has_government = fascism }
 			}
 		}
-		NOR_AAT = no 
+		#NOR_AAT = no 
 		NOT = {
 			AND = {
 				original_tag = SPR
@@ -683,7 +683,7 @@ country_event = {
 				var:DEN.DEN_overlord_nation = { has_government = communism }
 			}
 		}
-		NOR_AAT = no 
+		#NOR_AAT = no 
 		NOT = {
 			AND = {
 				original_tag = GRE
