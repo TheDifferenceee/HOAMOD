@@ -11,8 +11,8 @@ technologies = {
 			supply_consumption = -0.02
 		}
 		category_special_forces = {
-			max_organisation = 5
-			soft_attack = 0.05
+			max_organisation = 2
+			soft_attack = 0.025
 		}
 		enable_subunits = {
 			rangers_support
@@ -92,9 +92,9 @@ technologies = {
 		rangers_support = {
 			acclimatization_cold_climate_gain_factor = 0.25
 			snow = {
-				attack = 0.15
-				defence = 0.20
-				movement = 0.15
+				attack = 0.07
+				defence = 0.1
+				movement = 0.08
 			}
 		}
 		
@@ -137,9 +137,9 @@ technologies = {
 		
 		rangers_support = {
 			mountain = {
-				attack = 0.20
-				defence = 0.10
-				movement = 0.10
+				attack = 0.1
+				defence = 0.05
+				movement = 0.05
 			}
 		}
 		
@@ -313,7 +313,7 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		category_mountaineers = {
-			max_organisation = 10
+			max_organisation = 3
 		}
 		
 		force_use_small_tech_layout = yes
@@ -359,7 +359,7 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		category_mountaineers = {
-			soft_attack = 0.10
+			soft_attack = 0.05
 		}
 		
 		mountaineers_special_forces_contribution_factor = -0.25
@@ -395,9 +395,9 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 60
 		
-		special_forces_cap = 0.20
+		special_forces_cap = 0.1
 		special_forces_out_of_supply_factor = -0.1
-		special_forces_attack_factor = 0.10
+		special_forces_attack_factor = 0.05
 		acclimatization_hot_climate_gain_factor = 0.10
 		acclimatization_cold_climate_gain_factor = 0.10
 		
@@ -464,8 +464,8 @@ technologies = {
 		marines_special_forces_contribution_factor = -0.25
 		naval_invasion_capacity = 5
 		category_special_forces = {
-			max_organisation = 5
-			soft_attack = 0.05
+			max_organisation = 3
+			soft_attack = 0.02
 		}
 		
 		enable_subunits = {
@@ -516,9 +516,9 @@ technologies = {
 		
 		pioneer_support = {
 			jungle = {
-				attack = 0.15
-				defence = 0.10
-				movement = 0.10
+				attack = 0.07
+				defence = 0.03
+				movement = 0.04
 			}
 		}
 		
@@ -567,9 +567,9 @@ technologies = {
 		
 		pioneer_support = {
 			amphibious = {
-				attack = 0.25
-				defence = 0.15
-				movement = 0.20
+				attack = 0.1
+				defence = 0.1
+				movement = 0.1
 			}
 		}
 		
@@ -617,7 +617,7 @@ technologies = {
 		unit_marine_design_cost_factor = -0.50
 
 		marine = {
-			max_organisation = 5
+			max_organisation = 3
 		}
 			
 		doctrine = yes	
@@ -754,7 +754,7 @@ technologies = {
 		}
 		
 		marine_commando = {
-			breakthrough = 0.15
+			breakthrough = 0.1
 		}
 		
 		doctrine = yes	
@@ -850,8 +850,8 @@ technologies = {
 		pioneer_support = {
 			battalion_mult = {
 				category = category_amphibious_tanks
-				armor = 0.15
-				breakthrough = 0.15
+				armor = 0.1
+				breakthrough = 0.1
 			}
 		}
 		
@@ -892,7 +892,7 @@ technologies = {
 		force_use_small_tech_layout = yes
 		allow_branch = { not = { has_dlc = "Man the Guns" } }
 		
-		special_forces_attack_factor = 0.15
+		special_forces_attack_factor = 0.05
 		
 		doctrine = yes	
 		research_cost = 2.25
@@ -1195,7 +1195,7 @@ technologies = {
 		signal_company = {
 			battalion_mult = {
 				category = category_paratroopers
-				defense = 0.15
+				defense = 0.05
 			}
 		}
 			
@@ -1238,7 +1238,7 @@ technologies = {
 		field_hospital = {
 			battalion_mult = {
 				category = category_paratroopers
-				default_morale = 0.15
+				default_morale = 0.1
 			}
 		}
 		
