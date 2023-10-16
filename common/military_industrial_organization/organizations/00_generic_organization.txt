@@ -6799,7 +6799,7 @@ generic_infantry_equipment_organization = {
 		position = { x=1 y=0 }
 
 		equipment_bonus = {
-			defense = 0.0155
+			defense = 0.015
 		}
 	}
 
