@@ -2115,7 +2115,7 @@ country_event = {
 			NOT = { is_in_faction_with = FROM }
 			
 			#Lone Wolf Finland can't join any factions
-			FIN_is_lone_wolf_finland = no
+			#FIN_is_lone_wolf_finland = no
 		}
 
 		FROM = { add_to_faction = ROOT }
@@ -2207,7 +2207,7 @@ country_event = {
 		#Lone Wolf Finland can't join any factions - Tooltip for player
 		if = {
 			limit = {	
-				FIN_is_lone_wolf_finland = yes
+				#FIN_is_lone_wolf_finland = yes
 			}
 			custom_effect_tooltip = FIN_the_lone_wolf_no_faction_tt
 		}
@@ -2259,7 +2259,7 @@ country_event = {
 		#Lone Wolf Finland can't join any factions - Tooltip for player
 		if = {
 			limit = {	
-				FIN_is_lone_wolf_finland = yes
+				#FIN_is_lone_wolf_finland = yes
 			}
 			custom_effect_tooltip = FIN_the_lone_wolf_no_faction_tt
 		}
