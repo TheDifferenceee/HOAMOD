@@ -16,6 +16,6 @@ replace_path="common/decisions/categories"
 replace_path="common/military_industrial_organization"
 replace_path="common/on_actions"
 replace_path="common/scripted_triggers"
-
+replace_path="common/unit_leader"
 supported_version="1.13.*"
 remote_file_id="3019073217"
