@@ -53,7 +53,7 @@ USA_chrysler_organization = {
 				FROM = { tag = NOR }
 			}
 			FROM = { 
-				has_completed_focus = NOR_invite_transnational_manufacturers
+				has_completed_focus = #NOR_invite_transnational_manufacturers
 			}
 		}
 	}

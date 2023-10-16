@@ -127,7 +127,7 @@ SOV_morozov_design_bureau_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+			FROM = { has_completed_focus = #NOR_invite_soviet_designers }
 		}
 	}
 
@@ -963,7 +963,7 @@ SOV_rubin_design_bureau_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+			FROM = { has_completed_focus = #NOR_invite_soviet_designers }
 		}
 	}
 
@@ -2469,7 +2469,7 @@ SOV_gaz_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = NOR_invite_soviet_designers }
+			FROM = { has_completed_focus = #NOR_invite_soviet_designers }
 		}
 	}
 
