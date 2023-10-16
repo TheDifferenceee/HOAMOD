@@ -205,7 +205,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
 			}
 		}
 
@@ -292,7 +292,7 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.03
+				consumer_goods_expected_value = 0.03
 			}
 		}
 
@@ -393,7 +393,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				political_power_gain = -0.25
 			}
 		}
@@ -547,7 +547,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 
@@ -833,7 +833,7 @@ ideas = {
 
 			}
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		

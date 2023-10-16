@@ -86,7 +86,7 @@ political_actions = {
 
 		modifier = {
 			stability_weekly = 0.005
-			consumer_goods_factor = 0.05
+			consumer_goods_expected_value = 0.05
 			industrial_capacity_factory = -0.1
 		}
 
@@ -1742,7 +1742,7 @@ war_measures = {
 		cost = 50
 
 		modifier = {
-			consumer_goods_factor = -0.05
+			consumer_goods_expected_value = -0.05
 		}
 
 		ai_will_do = {
