@@ -1268,7 +1268,11 @@ on_actions = {
 			}
 		}
 	}
-
+every_country = {
+			## Barbarossa System 
+			set_variable = { var = GER.Barb_score_value value = 0 }
+			set_variable = { var = SOV.Barb_score_value value = 0 }
+}
 	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
 	on_annex = {
 		effect = {
