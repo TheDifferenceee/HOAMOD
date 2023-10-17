@@ -11,6 +11,91 @@ ideas = {
 
 	country= {
 
+		GDU_SOV_Danger_To_Heartland = {
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {			
+				army_morale_factor = 0.025
+				army_org_factor = 0.075
+				air_superiority_efficiency = 0.03
+				army_bonus_air_superiority_factor = 0.05
+				air_escort_efficiency = 0.04
+				air_intercept_efficiency = 0.03
+				air_cas_efficiency = 0.03
+				air_cas_present_factor = 0.05
+			}
+			equipment_bonus = {
+				small_plane_airframe  = {
+					air_agility = 0.025
+					air_attack = 0.025
+					instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					air_agility = 0.025
+					air_attack = 0.025
+					instant = yes
+				}
+				large_plane_airframe  = {
+					air_agility = 0.025
+					air_ground_attack = 0.025
+					instant = yes
+				}
+				medium_plane_airframe = {
+					air_agility = 0.025
+					air_ground_attack = 0.025
+					instant = yes
+				}
+			}
+
+		}
+		
+		
+		
+		GDU_SOV_Heartland_Falling = {
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {			
+				army_attack_factor = 0.025
+				army_defence_factor = 0.07
+				army_org_factor = 0.075            
+				army_morale_factor = 0.05
+				air_superiority_efficiency = 0.03
+				army_bonus_air_superiority_factor = 0.05
+				air_escort_efficiency = 0.04
+				air_intercept_efficiency = 0.03
+				air_cas_efficiency = 0.03
+				air_cas_present_factor = 0.05
+			}
+			equipment_bonus = {
+				small_plane_airframe  = {
+					air_agility = 0.025
+					air_attack = 0.025
+					instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					air_agility = 0.025
+					air_attack = 0.025
+					instant = yes
+				}
+				large_plane_airframe  = {
+					air_agility = 0.025
+					air_ground_attack = 0.025
+					instant = yes
+				}
+				medium_plane_airframe = {
+					air_agility = 0.025
+					air_ground_attack = 0.025
+					instant = yes
+				}
+			}
+
+		}			
+
+
 		SOV_second_five_year_plan_fake_1936_ns = { #Only used for 1936 bookmark (dynamic modifiers don't show up there)
 			name = SOV_second_five_year_plan_dynamic_modifier
 
