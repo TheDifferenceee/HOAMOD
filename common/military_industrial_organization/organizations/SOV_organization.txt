@@ -12,9 +12,9 @@
 @tank_3_X = 9
 @tank_3_Y = 4
 #BONUSES
-@tank_max_speed = 0.025
-@tank_production_capacity_factor = 0.025
-@tank_soft_attack = 0.025
+@tank_max_speed = 0.02
+@tank_production_capacity_factor = 0.02
+@tank_soft_attack = 0.02
 
 
 ### SHIPS
@@ -26,12 +26,12 @@
 @ship_3_X = 8
 @ship_3_Y = 4
 #BONUSES
-@ship_cruiser_production_cost_factor = -0.05
-@ship_destroyer_production_cost_factor = -0.05
-@ship_submarine_production_cost_factor = -0.05
-@ship_production_capacity_factor = -0.025
-@ship_mines_sweeping = 0.05
-@ship_mines_planting = 0.05
+@ship_cruiser_production_cost_factor = -0.1
+@ship_destroyer_production_cost_factor = -0.1
+@ship_submarine_production_cost_factor = -0.1
+@ship_production_capacity_factor = -0.05
+@ship_mines_sweeping = 0.1
+@ship_mines_planting = 0.1
 
 ### AIRCRAFT
 #POSITION
@@ -42,11 +42,11 @@
 @aircraft_3_X = 9
 @aircraft_3_Y = 4
 #BONUSES
-@aircraft_production_cost_factor = -0.025
-@aircraft_air_agility = 0.025
-@aircraft_air_defence = 0.05
-@aircraft_surface_detection = 0.055
-@aircraft_sub_detection = 0.055
+@aircraft_production_cost_factor = -0.05
+@aircraft_air_agility = 0.05
+@aircraft_air_defence = 0.1
+@aircraft_surface_detection = 0.15
+@aircraft_sub_detection = 0.15
 
 ### MATERIEL
 #POSITION
@@ -57,11 +57,11 @@
 @materiel_3_X = 9
 @materiel_3_Y = 4
 #BONUSES
-@artillery_production_cost_factor = -0.05
-@infantry_equipment_production_cost_factor = -0.05
-@motorized_production_cost_factor = -0.05
-@materiel_production_efficiency_cap_factor = 0.05
-@materiel_production_capacity_factor = 0.05
+@artillery_production_cost_factor = -0.1
+@infantry_equipment_production_cost_factor = -0.1
+@motorized_production_cost_factor = -0.1
+@materiel_production_efficiency_cap_factor = 0.1
+@materiel_production_capacity_factor = 0.1
 
 
 ########    ###    ##    ## ##    ##  ######  
@@ -92,7 +92,7 @@ SOV_morozov_design_bureau_organization = {
 				} 
 				has_dlc = "Waking the Tiger"
 			}
-			##NOR_AAT = yes
+			NOR_AAT = yes
 		}
 	}
 
@@ -127,7 +127,7 @@ SOV_morozov_design_bureau_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = #NOR_invite_soviet_designers }
+			FROM = { has_completed_focus = NOR_invite_soviet_designers }
 		}
 	}
 
@@ -939,7 +939,7 @@ SOV_rubin_design_bureau_organization = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
-			##NOR_AAT = yes
+			NOR_AAT = yes
 		}
 	}
 
@@ -963,7 +963,7 @@ SOV_rubin_design_bureau_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = #NOR_invite_soviet_designers }
+			FROM = { has_completed_focus = NOR_invite_soviet_designers }
 		}
 	}
 
@@ -1993,8 +1993,8 @@ SOV_tupolev_design_bureau_organization = {
 		}
 
 		equipment_bonus = {
-			air_defence = 0.025
-			reliability = 0.015
+			air_defence = 0.05
+			reliability = 0.03
 		}
 	}
 
@@ -2013,8 +2013,8 @@ SOV_tupolev_design_bureau_organization = {
 		}
 
 		equipment_bonus = {
-			fuel_consumption = -0.025
-			reliability = 0.015
+			fuel_consumption = -0.05
+			reliability = 0.03
 		}
 	}
 
@@ -2428,7 +2428,7 @@ SOV_gaz_organization = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
 			}
-			##NOR_AAT = yes
+			NOR_AAT = yes
 		}
 	}
 
@@ -2469,7 +2469,7 @@ SOV_gaz_organization = {
 			limit = {
 				FROM = { original_tag = NOR }
 			}
-			FROM = { has_completed_focus = #NOR_invite_soviet_designers }
+			FROM = { has_completed_focus = NOR_invite_soviet_designers }
 		}
 	}
 
