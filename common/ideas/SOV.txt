@@ -23,11 +23,6 @@ ideas = {
 				has_government = communism
 			}
 
-			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.06
-				air_doctrine = -0.06
-			}			 
 
 			modifier = {
 				max_dig_in = -7
@@ -56,12 +51,7 @@ ideas = {
 				has_government = communism
 			}
 
-			research_bonus = {
-				land_doctrine = -1.10
-				naval_doctrine = -0.04
-				air_doctrine = -0.04
-			}				  
-
+	
 
 			modifier = {	
 				max_dig_in = -5
@@ -90,9 +80,6 @@ ideas = {
 				has_government = communism
 			}
 
-			research_bonus = {
-				land_doctrine = -0.50
-			} 
 
 			modifier = {	
 				max_dig_in = -3
