@@ -33,4 +33,20 @@ homeland_score_modifier_spirit = {
 	army_core_defence_factor = homeland_score_modifier
 }
 
+###Purge Score###
+chaoticarmy_modifier_spirit = {
+	enable = { always = yes }
+	icon = "GFX_homeland_score_modifier"
+				max_dig_in = chaoticarmy_modifier
+				army_org_factor = chaoticarmy_modifier
+				planning_speed = chaoticarmy_modifier
+				max_planning = chaoticarmy_modifier
+				air_superiority_efficiency = chaoticarmy_modifier
+				army_bonus_air_superiority_factor = chaoticarmy_modifier
+				air_intercept_efficiency = chaoticarmy_modifier
+				enemy_army_bonus_air_superiority_factor = chaoticarmy_modifier
+				army_armor_speed_factor = chaoticarmy_modifier
+
+}
+
 

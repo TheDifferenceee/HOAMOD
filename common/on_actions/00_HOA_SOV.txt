@@ -186,8 +186,170 @@ on_actions = {
 	
 	
 
+	#### Purge1 ####
+	
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					
+					date > 1941.6.1
+					OR = {
+						original_tag = GER
+						original_tag = ITA
+						original_tag = HUN
+						original_tag = ROM
+						original_tag = BUL
+						original_tag = FIN
+						original_tag = SPR
+					}
+					FROM = { original_tag = SOV }
+					FROM.FROM = { OR = {
+						state = 581
+						state = 262
+						state = 214
+						state = 351	   #Northern Coast to Vologda#
+
+						state = 247
+						state = 248
+						state = 219
+						state = 253		#Core areas around Moscow to the outskirts of Stalingrad#
+						state = 255
+						state = 252
+						state = 239
+						state = 265
+						state = 245
+						state = 238
+						state = 235
+						
+						state = 233		#Cauacasus/Baku#
+						state = 231
+						state = 230
+						state = 229
+						
+						state = 584		#Central Asia and Far East#
+						state = 405
+						state = 586
+						state = 587
+						state = 585
+						state = 742
+						state = 732
+						state = 408
+						state = 409
+						state = 560
+						state = 562
+						state = 657
+						state = 561
+						}
+					}
+				}
+				
+                SOV  = { 
+
+swap_ideas = {
+    remove_idea = HOAofficers_purged_1
+    add_idea = HOAofficers_purged_2
+}
+                add_timed_idea = { idea = overextended1  days = 180 } 
+
+              }
+	            GER  = { 
+
+                add_timed_idea = { idea = overextended1  days = 180 } 
+
+              }
 
 
+				
+			}
+			
+
+				
+		}
+	}		
+
+	#### Purge2 ####
+	
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+
+					
+					date > 1941.6.1
+					OR = {
+						original_tag = GER
+						original_tag = ITA
+						original_tag = HUN
+						original_tag = ROM
+						original_tag = BUL
+						original_tag = FIN
+						original_tag = SPR
+					}
+					FROM = { original_tag = SOV }
+					FROM.FROM = { OR = {
+						state = 581
+						state = 262
+						state = 214
+						state = 351	   #Northern Coast to Vologda#
+
+						state = 247
+						state = 248
+						state = 219
+						state = 253		#Core areas around Moscow to the outskirts of Stalingrad#
+						state = 255
+						state = 252
+						state = 239
+						state = 265
+						state = 245
+						state = 238
+						state = 235
+						
+						state = 233		#Cauacasus/Baku#
+						state = 231
+						state = 230
+						state = 229
+						
+						state = 584		#Central Asia and Far East#
+						state = 405
+						state = 586
+						state = 587
+						state = 585
+						state = 742
+						state = 732
+						state = 408
+						state = 409
+						state = 560
+						state = 562
+						state = 657
+						state = 561
+						}
+					}
+				}
+				
+                SOV  = { 
+
+swap_ideas = {
+    remove_idea = HOAofficers_purged_2
+    add_idea = HOAofficers_purged_3
+}
+                add_timed_idea = { idea = overextended1  days = 180 } 
+
+              }
+	            GER  = { 
+
+                add_timed_idea = { idea = overextended1  days = 180 } 
+
+              }
+
+
+				
+			}
+			
+
+				
+		}
+	}		
 
 
 
