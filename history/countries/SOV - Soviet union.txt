@@ -743,7 +743,7 @@ if = {
 }
 
 set_research_slots = 3
-set_stability = 0.5
+set_stability = 0.6
 set_war_support = 0.3
 # Starting tech
 set_technology = { #WARNING: Do not just remove techs from here -> It can impact a lot of stuff. Before removing, double check that content does not count on these techs being researched
@@ -838,6 +838,7 @@ add_ideas = {
 	closed_economy
     soviet_economic_plan
 	partial_economic_mobilisation
+	soviet_economic_plan2
 
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }

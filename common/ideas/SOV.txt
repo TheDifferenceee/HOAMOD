@@ -169,7 +169,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.05
 			}
 			
 		}
@@ -187,7 +187,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.15
 			}
 			
 		}
@@ -205,7 +205,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
 			}
 			
 		}
@@ -223,7 +223,7 @@ ideas = {
 			}
 
 			modifier = {				
-				production_factory_efficiency_gain_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.10
 			}
 			
 		}
@@ -243,6 +243,8 @@ ideas = {
 			modifier = {				
 				consumer_goods_expected_value = -0.05
 				production_factory_efficiency_gain_factor = -0.10
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
 			}
 			
 		}
@@ -265,23 +267,23 @@ ideas = {
 			
 		}
 		
-		soviet_economic_plan8 = {
-		picture = man_five_year_plan_industry
-			removal_cost = -1
+		#soviet_economic_plan8 = {
+		#picture = man_five_year_plan_industry
+			#removal_cost = -1
 
-			allowed = {
+			#allowed = {
 				#always = no # Added via focus
-			}
+			#}
 
-			allowed_civil_war = {
+			#allowed_civil_war = {
 				#has_government = communism
-			}
+			#}
 
-			modifier = {				
-				production_factory_efficiency_gain_factor = -0.05
-			}
+			#modifier = {				
+				#production_factory_efficiency_gain_factor = -0.05
+			#}
 			
-		}
+		#}
 		
 		SOV_zulme_karsi_mukavemet = {
 			removal_cost = -1
@@ -1744,7 +1746,7 @@ ideas = {
 			}
 
 			modifier = {
-				research_speed_factor = 0.01
+				research_speed_factor = 0.10
 			}
 		}
 
