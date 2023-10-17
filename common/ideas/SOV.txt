@@ -10,6 +10,100 @@ ideas = {
 
 
 	country= {
+		HOAofficers_purged_1 = {         #### from start of Barbarossa to Move Industry to the Urals ####
+			removal_cost = -1
+
+			picture = officers_purged
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			research_bonus = {
+				land_doctrine = -1.10
+				naval_doctrine = -0.06
+				air_doctrine = -0.06
+			}			 
+
+			modifier = {
+				max_dig_in = -7
+				army_org_factor = -0.275
+				planning_speed = -0.5
+				max_planning = -0.05
+				air_superiority_efficiency = -0.275
+				army_bonus_air_superiority_factor = -0.35
+				air_intercept_efficiency = -0.2
+				army_armor_speed_factor = 0.1
+				enemy_army_bonus_air_superiority_factor = 0.45
+			}
+	
+			
+        }
+		HOAofficers_purged_2 = {         #### from Move Industry to the Urals to Defense of Moscow ####
+			removal_cost = -1
+
+			picture = officers_purged
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			research_bonus = {
+				land_doctrine = -1.10
+				naval_doctrine = -0.04
+				air_doctrine = -0.04
+			}				  
+
+
+			modifier = {	
+				max_dig_in = -5
+				army_org_factor = -0.25
+				planning_speed = -0.5
+				max_planning = -0.05
+				air_superiority_efficiency = -0.25
+				army_bonus_air_superiority_factor = -0.25
+				air_intercept_efficiency = -0.2
+				enemy_army_bonus_air_superiority_factor = 0.3
+				army_armor_speed_factor = 0.1
+			}
+		
+		}
+
+		HOAofficers_purged_3 = {         #### from Defense of Moscow to Red Army Resurgent ####
+			removal_cost = -1
+
+			picture = officers_purged
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			research_bonus = {
+				land_doctrine = -0.50
+			} 
+
+			modifier = {	
+				max_dig_in = -3
+				army_org_factor = -0.1
+				planning_speed = -0.3
+				air_superiority_efficiency = -0.10
+				army_bonus_air_superiority_factor = -0.15
+				air_intercept_efficiency = -0.1
+				enemy_army_bonus_air_superiority_factor = 0.2
+			}
+		}
 
 		GDU_SOV_Danger_To_Heartland = {
 			removal_cost = -1
