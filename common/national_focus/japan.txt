@@ -4605,9 +4605,6 @@
 			    target = MEN
 			    transfer_troops = yes
 			}
-		
-		
-
 				716 = {set_compliance = 100}
 				328 = {set_compliance = 100}
 				717 = {set_compliance = 100}
