@@ -4607,7 +4607,7 @@
 			}
 		
 		
-			every_state = {
+
 				716 = {set_compliance = 100}
 				328 = {set_compliance = 100}
 				717 = {set_compliance = 100}
@@ -4617,7 +4617,7 @@
 				610 = {set_compliance = 100}
 				612 = {set_compliance = 100}
 				611 = {set_compliance = 100}
-		    }
+		    
 		}
 	}
 
