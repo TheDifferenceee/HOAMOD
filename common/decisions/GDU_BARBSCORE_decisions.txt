@@ -58,41 +58,83 @@ GDU_Barbscore_Score_Category = {
 				idea = AXIS_attack_bonus_1
 				days = 45
 			}
-			ROM = {
+	
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
+			}
+
+	        ROM = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_1
 				days = 45
 				}
+		
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
 			}
+
+	}
 			HUN = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_1
 				days = 45
 				}
+		
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
 			}
+
+	}
 			SPR = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_1
 				days = 45
 				}
+		
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
 			}
+
+	}
 			BUL = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_1
 				days = 45
 				}
+		
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
 			}
+
+	}
 			FIN = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_1
 				days = 45
 				}
+	
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
+			}
+
 			}
 			ITA = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_1
 				days = 45
 				}
+	
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
+			}
+
 			}
 			hidden_effect = {
 				subtract_from_variable = { GER.Barb_score_value = 15 }
@@ -145,11 +187,23 @@ GDU_Barbscore_Score_Category = {
 				idea = AXIS_attack_bonus_3
 				days = 45
 			}
+	
+			add_timed_idea = {
+				idea = overextended2
+				days = 45
+			}
+
 			ROM = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_3
 				days = 45
 				}
+	
+			add_timed_idea = {
+				idea = overextended2
+				days = 45
+			}
+
 			}
 			HUN = {
 				add_timed_idea = {
@@ -180,6 +234,12 @@ GDU_Barbscore_Score_Category = {
 				idea = AXIS_attack_bonus_3
 				days = 45
 				}
+	
+			add_timed_idea = {
+				idea = overextended2
+				days = 45
+			}
+
 			}
 			hidden_effect = {
 				subtract_from_variable = { GER.Barb_score_value = 35 }
@@ -229,12 +289,24 @@ GDU_Barbscore_Score_Category = {
 				idea = AXIS_attack_bonus_2
 				days = 45
 			}
+	
+			add_timed_idea = {
+				idea = overextended3
+				days = 45
+			}
+
 			ROM = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_2
 				days = 45
 				}
+		
+			add_timed_idea = {
+				idea = overextended3
+				days = 45
 			}
+
+	}
 			HUN = {
 				add_timed_idea = {
 				idea = AXIS_attack_bonus_2
@@ -264,6 +336,12 @@ GDU_Barbscore_Score_Category = {
 				idea = AXIS_attack_bonus_2
 				days = 45
 				}
+	
+			add_timed_idea = {
+				idea = overextended3
+				days = 45
+			}
+
 			}
 
 			hidden_effect = {
@@ -1333,6 +1411,12 @@ GDU_Barbscore_Score_Category = {
 				idea = SOV_attack_bonus_1
 				days = 45
 			}
+	
+			add_timed_idea = {
+				idea = overextended3
+				days = 45
+			}
+
 			hidden_effect = {
 				subtract_from_variable = { SOV.Barb_score_value = 15 }
 			}
@@ -1381,6 +1465,12 @@ GDU_Barbscore_Score_Category = {
 				idea = SOV_attack_bonus_3
 				days = 45
 			}
+	
+			add_timed_idea = {
+				idea = overextended3
+				days = 45
+			}
+
 			hidden_effect = {
 				subtract_from_variable = { SOV.Barb_score_value = 35 }
 			}
@@ -1426,6 +1516,12 @@ GDU_Barbscore_Score_Category = {
 				idea = SOV_attack_bonus_2
 				days = 45
 			}
+	
+			add_timed_idea = {
+				idea = overextended3
+				days = 45
+			}
+
 			hidden_effect = {
 				subtract_from_variable = { SOV.Barb_score_value = 50 }
 			}

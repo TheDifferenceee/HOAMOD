@@ -20,7 +20,51 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
+			overextended1 = {
+			picture = general_staff
+
+			allowed = {
+
+			}
 		
+			removal_cost = -1
+		modifier = {
+org_loss_when_moving = 0.10
+
+	}
+
+		}
+		
+			overextended2 = {
+			picture = general_staff
+
+			allowed = {
+
+			}
+		
+			removal_cost = -1
+		modifier = {
+org_loss_when_moving = 0.2
+
+	}
+
+		}
+		
+			overextended3 = {
+			picture = general_staff
+
+			allowed = {
+
+			}
+		
+			removal_cost = -1
+		modifier = {
+org_loss_when_moving = 0.4
+
+	}
+
+		}
+						
 		general_staff = {
 			
 			allowed = {
