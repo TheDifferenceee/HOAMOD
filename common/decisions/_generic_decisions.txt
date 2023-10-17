@@ -1697,6 +1697,186 @@ war_measures = {
         }
    }
 
+   	All = {
+
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_war = yes
+			original_tag = FRA
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			set_capital = { state = 458 }
+		}
+	}
+
+	Quiet = {
+
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_war = yes
+			original_tag = FRA
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			set_capital = { state = 459 }
+		}
+	}
+
+	On = {
+
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_war = yes
+			original_tag = FRA
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			set_capital = { state = 461 }
+		}
+	}
+
+	African = {
+
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_war = yes
+			original_tag = FRA
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			set_capital = { state = 539 }
+		}
+	}
+
+	Front = {
+
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_war = yes
+			original_tag = FRA
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			set_capital = { state = 272 }
+		}
+	}
+
+	Convoy = {
+
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_war = yes
+			original_tag = FRA
+		}
+
+		cost = 0
+		fire_only_once = yes
+		available = {
+			has_war = yes
+		    OR = {
+                AND = {
+			        GER = {
+			            has_full_control_of_state = 16
+			            has_full_control_of_state = 15
+			            has_full_control_of_state = 24
+			            has_full_control_of_state = 18
+			            has_full_control_of_state = 30
+			            }
+			        }
+			    AND = {
+			        ROM = {
+			            has_full_control_of_state = 16
+			            has_full_control_of_state = 15
+			            has_full_control_of_state = 24
+			            has_full_control_of_state = 18
+			            has_full_control_of_state = 30
+			            }
+			        }
+			    AND = {
+			        ITA = {
+			            has_full_control_of_state = 16
+			            has_full_control_of_state = 15
+			            has_full_control_of_state = 24
+			            has_full_control_of_state = 18
+			            has_full_control_of_state = 30
+			        }
+			    }
+			}
+		}
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 200
+			}
+		    add_equipment_to_stockpile = {
+				type = convoy
+				amount = 600
+			}
+		}
+	}
+
     war_bonds = {
 
     	icon = generic_industry
