@@ -7,7 +7,7 @@
 ## Event at end of operation ( an event for victory, an event for failure )
 ## Change controlled by germany to controlled by any axis member ( change to is_fully_controlled_by instead of has_full_control_of_state )
 
-GDU_Barbscore_Score_Category = {
+GDU_Barbscore_Scorecat = {
 
 	############################
 	##  GER Mission Selection ##
