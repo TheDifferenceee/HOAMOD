@@ -6,6 +6,8 @@ technologies = {
 			artillery_equipment_1
 		}
 
+		additional_brigade_column_size = 1
+
 		path = {
 			leads_to_tech = interwar_artillery
 			research_cost_coeff = 1
