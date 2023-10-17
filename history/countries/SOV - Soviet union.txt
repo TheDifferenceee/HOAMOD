@@ -127,7 +127,11 @@ recruit_character = SOV_vasily_korzh
 recruit_character = SOV_sidor_kovpak
 recruit_character = SOV_lev_dovator
 recruit_character = SOV_pavel_rybalko
-
+add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 200000
+    producer = SOV
+} 
 if = {
 	limit = {
 		has_dlc = "No Step Back"
