@@ -1,6 +1,6 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 --12
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 120 --10
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 240 --25
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 240 --10
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 360 --25
 NDefines.NGame.GAME_SPEED_SECONDS = { 0.18, 0.175, 0.1625, 0.04, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
 
 NDefines.NCharacter.ADVISOR_PROMOTION_COST = 3131
@@ -18,7 +18,7 @@ NDefines.NDiplomacy.ATTACHE_XP_SHARE = 0.2                            -- Country
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 25	--100
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 20 --50
 NDefines.NDiplomacy.EMBARGO_COST = 25 -- 100
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.04 --- 0.05                 -- basic speed control	
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.03 --- 0.05                 -- basic speed control	
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 27 --20 
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_INFRA = 0.35 --0.2 monty degisiklik
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_VP = 1 --3 monty degisiklik
@@ -43,7 +43,7 @@ NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 40 --10
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 40 --15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 40 --5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives). --4.50
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 5                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives). --2.5
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 6.5                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives). --2.5
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 8000000    -- How many deployment lines minimum can be training --100000
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 0 --30
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0                            -- Base IC cost for lended license --1
@@ -61,7 +61,7 @@ NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100        -- Each level of airbase 
 NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 6   -- supply throughput per level of naval base --3 bunu degistirebilirim askerler atrittion yemezse
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.4 -- multiplactive resource bonus for each level of (non damaged) infrastructure --0.2
 NDefines.NBuildings.MAX_SHARED_SLOTS = 40
-NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.05 --vanilla 0.05		-- Each level of navalbase building repairs X strength and can repair as many ships as its level
+NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.08 --vanilla 0.05		-- Each level of navalbase building repairs X strength and can repair as many ships as its level
 
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 2
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 2
@@ -170,7 +170,7 @@ NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0                    -- fuel cons
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1
 
 NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.1       -- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.	
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.5                            -- Higher value = more shot down planes --1 yani vanilla deger
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.4                          -- Higher value = more shot down planes --1 yani vanilla deger
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1                    -- same as above but used inside naval combat for carrier battles --5  f3ten koydugumuz ucakla ayni islevde oldugunu dusunuyoruz        
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction. --1.0 yani vanilla deger 
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.5                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction. --1.5 yani vanilla deger 
@@ -263,6 +263,7 @@ NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
 		0.0, -- NAVAL_INVASION_SUPPORT
 	}
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.00                            -- supremacy of a ship is calculated using its IC, manpower and a base define --0.05
+NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.3            -- vanilla is 0.2, for a long time 
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0.05 --0.005
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 0 --0 yani vanilla deger
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1000.0 --1000.0
