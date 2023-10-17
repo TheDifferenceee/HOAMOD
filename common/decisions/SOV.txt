@@ -10987,7 +10987,7 @@ SOV_great_patriotic_war = {
 		}
 
 		available = {
-			surrender_progress > 0.65
+			surrender_progress > 0.20
 		}
 
 		visible = {
@@ -11039,7 +11039,7 @@ SOV_great_patriotic_war = {
 			any_enemy_country = {
 				SOV_is_major_not_original_sov = yes
 			}
-			surrender_progress > 0.80
+			surrender_progress > 0.50
 		}
 
 		ai_hint_pp_cost = 50
