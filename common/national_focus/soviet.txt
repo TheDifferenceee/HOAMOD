@@ -6000,9 +6000,8 @@ focus_tree = {
 		id = SOV_military_reorganization
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SOV_rehabilitated_military }
-		x = 0
-		y = 2
-		relative_position_id = SOV_rehabilitated_military
+		x = 29
+		y = 3
 		cost = 10
 
 		select_effect = {
@@ -6187,6 +6186,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_lessons_of_war }
 		x = -1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = SOV_lessons_of_war
 		cost = 10
 
@@ -6261,7 +6261,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_lessons_of_war
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -6284,13 +6284,6 @@ focus_tree = {
 				limit = {
 					has_government = communism
 				}
-				custom_effect_tooltip = unlock_propaganda_campaign_tt
-				if = {
-					limit ={ has_dlc = "La Resistance" }
-					unlock_decision_tooltip = SOV_propaganda_treacherous_enemy
-				}
-				unlock_decision_tooltip = SOV_propaganda_do_not_blab
-				custom_effect_tooltip = propaganda_campaign_requirement_tt
 			}
 		}
 	}
@@ -6320,7 +6313,7 @@ focus_tree = {
 		id = SOV_experts_in_camouflage
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = SOV_military_reorganization }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SOV_military_reorganization
 		cost = 5
@@ -6344,7 +6337,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = SOV_military_reorganization }
 		prerequisite = { focus = SOV_lessons_of_war }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SOV_military_reorganization
 		cost = 10
@@ -6447,7 +6440,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = SOV_military_reorganization }
 		prerequisite = { focus = SOV_lessons_of_war }
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = SOV_military_reorganization
 		cost = 10
