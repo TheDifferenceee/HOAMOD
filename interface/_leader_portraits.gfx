@@ -4925,12 +4925,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = GFX_portrait_ITA_benito_mussolini
-		texturefile = "gfx/leaders/ITA/ramon.dds"
-	}
-
-	spriteType = {
-		name = GFX_portrait_ITA_kriptosman
-		texturefile = "gfx/leaders/ITA/ramonYUKSEK.dds"
+		texturefile = "gfx/leaders/ITA/Portrait_Italy_Benito_Mussolini.dds"
 	}
 
 	spriteType = {
@@ -8195,7 +8190,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_portrait_ITA_grand_council"
-		texturefile = "gfx/leaders/ITA/gorillaz.dds"
+		texturefile = "gfx/leaders/ITA/portrait_ITA_grand_council.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_ITA_carlo_geloso"
