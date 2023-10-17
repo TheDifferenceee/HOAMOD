@@ -28,8 +28,7 @@ on_actions = {
 						state = 581
 						state = 262
 						state = 214
-						state = 351
-						state = 818												
+						state = 351											
 						state = 264       #Northern Coast to Leningrad#
 						state = 244
 						state = 195
@@ -37,7 +36,7 @@ on_actions = {
 
 						state = 263
 						state = 246
-						state = 795
+						state = 242
 						state = 205		#Line from Luga to Vyazma to Kursk to Rostov#
 						state = 222
 						state = 220
@@ -46,14 +45,10 @@ on_actions = {
 
 						state = 218		#Rostov to Cauacasus/Baku#
 						state = 234
-						state = 810
-						state = 812						
-						state = 233
+						state = 235					
 						state = 231
-						state = 230
-						state = 814						
+						state = 230					
 						state = 229
-						state = 813
 						state = 232
 						
 						state = 584		#Central Asia and Far East#
@@ -205,41 +200,18 @@ on_actions = {
 					}
 					FROM = { original_tag = SOV }
 					FROM.FROM = { OR = {
-						state = 581
-						state = 262
-						state = 214
-						state = 351	   #Northern Coast to Vologda#
+						state = 809
+						state = 96
+						state = 206
+						state = 204	   
 
-						state = 247
-						state = 248
-						state = 219
-						state = 253		#Core areas around Moscow to the outskirts of Stalingrad#
-						state = 255
-						state = 252
-						state = 239
-						state = 265
-						state = 245
-						state = 238
-						state = 235
+						state = 194
+						state = 202
+						state = 203	
+						state = 197
+
 						
-						state = 233		#Cauacasus/Baku#
-						state = 231
-						state = 230
-						state = 229
-						
-						state = 584		#Central Asia and Far East#
-						state = 405
-						state = 586
-						state = 587
-						state = 585
-						state = 742
-						state = 732
-						state = 408
-						state = 409
-						state = 560
-						state = 562
-						state = 657
-						state = 561
+
 						}
 					}
 				}
@@ -288,41 +260,18 @@ swap_ideas = {
 					}
 					FROM = { original_tag = SOV }
 					FROM.FROM = { OR = {
-						state = 581
-						state = 262
-						state = 214
-						state = 351	   #Northern Coast to Vologda#
+						state = 208
+						state = 209
+						state = 210
+						state = 242	   
 
-						state = 247
-						state = 248
-						state = 219
-						state = 253		#Core areas around Moscow to the outskirts of Stalingrad#
-						state = 255
-						state = 252
-						state = 239
-						state = 265
-						state = 245
-						state = 238
-						state = 235
-						
-						state = 233		#Cauacasus/Baku#
-						state = 231
-						state = 230
-						state = 229
-						
-						state = 584		#Central Asia and Far East#
-						state = 405
-						state = 586
-						state = 587
-						state = 585
-						state = 742
-						state = 732
-						state = 408
-						state = 409
-						state = 560
-						state = 562
-						state = 657
-						state = 561
+						state = 243
+						state = 224
+						state = 220
+						state = 240		
+						state = 221
+						state = 227
+	
 						}
 					}
 				}
