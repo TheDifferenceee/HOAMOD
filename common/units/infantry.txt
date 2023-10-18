@@ -317,7 +317,7 @@ sub_units = {
 		max_strength = 30
 		max_organisation = 62
 		default_morale = 0.55
-		manpower = 2000
+		manpower = 1500
 
 		#Misc Abilities
 		training_time = 125
@@ -352,7 +352,7 @@ sub_units = {
 	}	
 
 		need = {
-			infantry_equipment = 800
+			infantry_equipment = 240
 		}
 	}
 
