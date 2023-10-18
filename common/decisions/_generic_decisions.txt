@@ -1898,28 +1898,16 @@ war_measures = {
                 AND = {
 			        GER = {
 			            has_full_control_of_state = 16
-			            has_full_control_of_state = 15
-			            has_full_control_of_state = 24
-			            has_full_control_of_state = 18
-			            has_full_control_of_state = 30
 			            }
 			        }
 			    AND = {
 			        ROM = {
 			            has_full_control_of_state = 16
-			            has_full_control_of_state = 15
-			            has_full_control_of_state = 24
-			            has_full_control_of_state = 18
-			            has_full_control_of_state = 30
 			            }
 			        }
 			    AND = {
 			        ITA = {
 			            has_full_control_of_state = 16
-			            has_full_control_of_state = 15
-			            has_full_control_of_state = 24
-			            has_full_control_of_state = 18
-			            has_full_control_of_state = 30
 			        }
 			    }
 			}
