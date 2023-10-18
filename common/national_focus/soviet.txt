@@ -1911,7 +1911,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			air_experience = 50
+			air_experience = 150
 			add_ideas = SOV_zulme_karsi_mukavemet
 		}
 	}
@@ -2015,8 +2015,8 @@ focus_tree = {
 
 		icon = GFX_focus_SOV_merge_plants
 		prerequisite = { focus = SOV_modernize_aircraft_facilities }
-		x = -1
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = SOV_modernize_aircraft_facilities
 		cost = 5
 
@@ -2066,6 +2066,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_expand_the_aircraft_industry }
 		x = 0
 		y = 2
+		allow_branch = { always = no }
 		relative_position_id = SOV_expand_the_aircraft_industry
 		cost = 5
 
@@ -2134,7 +2135,7 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.1 }
 			custom_effect_tooltip = SOV_foster_flying_clubs_ns_tt
 
-			air_experience = 25
+			air_experience = 100
 		}
 	}
 
@@ -2164,7 +2165,7 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.05 }
 			custom_effect_tooltip = SOV_women_in_aviation_ns_tt
 
-			air_experience = 25
+			air_experience = 100
 			set_rule = {
 				can_generate_female_aces = yes
 			}
@@ -2176,7 +2177,7 @@ focus_tree = {
 
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = SOV_women_in_aviation }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SOV_women_in_aviation
 		cost = 5
@@ -2262,10 +2263,10 @@ focus_tree = {
 		id = SOV_intensify_pilot_training_program
 
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = SOV_foster_flying_clubs }
+		prerequisite = { focus = SOV_expand_aviation_institutes }
 		x = 0
-		y = 2
-		relative_position_id = SOV_foster_flying_clubs
+		y = 1
+		relative_position_id = SOV_expand_aviation_institutes
 		cost = 5
 
 		mutually_exclusive = { focus = SOV_increase_aircraft_production }
@@ -2351,7 +2352,7 @@ focus_tree = {
 
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
 		cost = 5
@@ -2400,7 +2401,7 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
 			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
 
-			air_experience = 50
+			air_experience = 200
 		}
 	}
 
@@ -3939,7 +3940,7 @@ focus_tree = {
 		id = SOV_found_the_pcdi
 
 		icon = GFX_goal_generic_defence
-		x = 6
+		x = 5
 		y = 0
 		relative_position_id = SOV_expand_the_red_fleet
 		cost = 5
@@ -11055,7 +11056,7 @@ focus_tree = {
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 44
+		x = 43
 		y = 1
 
 		cost = 5
@@ -12882,7 +12883,7 @@ ai_will_do = {
 		id = SOV_baltic_security
 		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = SOV_the_comintern }
-		x = 52
+		x = 51
 		y = 2
 		cost = 1
 
@@ -13051,7 +13052,7 @@ ai_will_do = {
 		id = SOV_claims_in_baltic
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_baltic_security }
-		x = 52
+		x = 51
 		y = 3
 		cost = 5
 
@@ -13287,7 +13288,7 @@ ai_will_do = {
 		id = SOV_claims_on_poland
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = SOV_claims_in_baltic }
-		x = 53
+		x = 52
 		y = 4
 		cost = 1
 
@@ -13601,7 +13602,7 @@ ai_will_do = {
 		id = SOV_claim_on_bessarabia
 		icon = GFX_focus_generic_attack_romania
 		prerequisite = { focus = SOV_claims_on_poland }
-		x = 53
+		x = 52
 		y = 5
 		cost = 1
 
