@@ -880,7 +880,7 @@ focus_tree = {
 
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = SOV_steel_casting_industry }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = SOV_steel_casting_industry
 		cost = 5
@@ -900,73 +900,7 @@ focus_tree = {
 
 		completion_reward = {
 			# ADD SYNTHETICS IN HISTORICAL STATES (VORONEZH AND TULA)
-			if = {
-				limit = {
-					has_full_control_of_state = 260 #VORONEZH
-				}
-				260 = { #VORONEZH
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 2
-						instant_build = yes
-					}
-				}
-				if = {
-					limit = {
-						has_full_control_of_state = 254 #RYAZAN
-						has_full_control_of_state = 258 #LIPETSK
-					}
-					# Moscow - Voronezh
-					build_railway = {
-						path = { 6380 6414 9348 9282 11268 9330 3356 6279 6230 6398 6341 413 3527 }
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 223 #TULA
-				}
-				223 = { #TULA
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 2
-						instant_build = yes
-					}
-				}
-				# Moscow - Tula
-				build_railway = {
-					path = { 6380 6414 9348 6290 6396 6262 }
-				}
-			}
-			add_tech_bonus = {
-				name = SOV_synthetic_rubber
-				bonus = 1.00
-				uses = 2
-				category = cat_synth_rubber
-			}
-		}
-	}
 
-	focus = {
-		id = SOV_oil_production
-
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = SOV_steel_casting_industry }
-		x = 1
-		y = 1
-		relative_position_id = SOV_steel_casting_industry
-		cost = 5
-
-		available = {
-			SOV_third_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
 			set_variable = { SOV_fyp_fuel_gain_factor_from_states = 0.05 }
 			set_variable = { SOV_fyp_production_oil_factor = 0.05 }
 			custom_effect_tooltip = SOV_oil_production_ns_tt
@@ -1022,6 +956,53 @@ focus_tree = {
 				build_railway = {
 					path = { 3668 3682 3672 }
 				}
+			}
+
+			if = {
+				limit = {
+					has_full_control_of_state = 260 #VORONEZH
+				}
+				260 = { #VORONEZH
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 254 #RYAZAN
+						has_full_control_of_state = 258 #LIPETSK
+					}
+					# Moscow - Voronezh
+					build_railway = {
+						path = { 6380 6414 9348 9282 11268 9330 3356 6279 6230 6398 6341 413 3527 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 223 #TULA
+				}
+				223 = { #TULA
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 2
+						instant_build = yes
+					}
+				}
+				# Moscow - Tula
+				build_railway = {
+					path = { 6380 6414 9348 6290 6396 6262 }
+				}
+			}
+			add_tech_bonus = {
+				name = SOV_synthetic_rubber
+				bonus = 1.00
+				uses = 2
+				category = cat_synth_rubber
 			}
 		}
 	}
@@ -1895,10 +1876,11 @@ focus_tree = {
 		id = SOV_transpolar_flights
 
 		icon = GFX_goal_generic_air_fighter2
-		x = 10
-		y = 0
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
+		x = -1
+		y = 1
+		relative_position_id = SOV_strengthen_the_mobilization_plan
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1913,33 +1895,6 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 150
 			add_ideas = SOV_zulme_karsi_mukavemet
-		}
-	}
-
-	focus = {
-		id = SOV_expand_the_aircraft_industry
-
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = SOV_transpolar_flights }
-		x = -1
-		y = 1
-		relative_position_id = SOV_transpolar_flights
-		cost = 5
-
-		available = {
-			any_owned_state = {
-				is_fully_controlled_by = ROOT
-				free_building_slots = {
-					building = arms_factory
-					size > 1
-					include_locked = yes
-				}
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-
-		completion_reward = {
 			set_variable = { SOV_soviet_airforce_aircraft_manufacturer_cost_factor = -0.25 }
 			custom_effect_tooltip = SOV_expand_the_aircraft_industry_ns_tt
 
@@ -1987,26 +1942,36 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_modernize_aircraft_facilities
+		id = SOV_expand_the_aircraft_industry
 
-		icon = GFX_goal_generic_air_production
-		prerequisite = { focus = SOV_expand_the_aircraft_industry }
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = SOV_transpolar_flights }
 		x = -1
 		y = 1
-		relative_position_id = SOV_expand_the_aircraft_industry
+		relative_position_id = SOV_transpolar_flights
 		cost = 5
 
 		available = {
 
 		}
 		
-		search_filters = {}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = -0.05 }
-			add_to_variable = { SOV_soviet_airforce_air_range_factor = 0.05 }
-			add_to_variable = { SOV_soviet_airforce_air_agility_factor = 0.05 }
-			custom_effect_tooltip = SOV_modernize_aircraft_facilities_ns_tt
+				add_tech_bonus = {
+				name = SOV_ground_support
+				bonus = 1
+				uses = 1
+				category = light_fighter
+			}
+			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.15 }
+			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
+			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.15 }
+			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
+			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = 0.1 }
+			custom_effect_tooltip = SOV_intensify_pilot_training_program_ns_tt
+			air_experience = 50
+
 		}
 	}
 
@@ -2014,10 +1979,10 @@ focus_tree = {
 		id = SOV_merge_aircraft_plants
 
 		icon = GFX_focus_SOV_merge_plants
-		prerequisite = { focus = SOV_modernize_aircraft_facilities }
+		prerequisite = { focus = SOV_expand_the_aircraft_industry }
 		x = 0
 		y = 1
-		relative_position_id = SOV_modernize_aircraft_facilities
+		relative_position_id = SOV_expand_the_aircraft_industry
 		cost = 5
 
 		available = {
@@ -2120,7 +2085,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 10
 
 		available = {
 
@@ -2129,13 +2094,24 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
+			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
+			add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.1 }
+			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
+			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.1 }
+			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.05 }
+			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
+			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
+			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.2 }
+			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.1 }
+			set_variable = { SOV_soviet_airforce_air_strategic_bomber_night_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.1 }
 			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.1 }
 			custom_effect_tooltip = SOV_foster_flying_clubs_ns_tt
 
-			air_experience = 100
+			air_experience = 300
 		}
 	}
 
@@ -2144,10 +2120,10 @@ focus_tree = {
 
 		icon = GFX_focus_SOV_women_in_aviation
 		prerequisite = { focus = SOV_foster_flying_clubs }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 5
+		cost = 10
 
 		available = {
 			OR = {
@@ -2159,6 +2135,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
+			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = -0.05 }
+			add_to_variable = { SOV_soviet_airforce_air_range_factor = 0.05 }
+			add_to_variable = { SOV_soviet_airforce_air_agility_factor = 0.05 }
+			custom_effect_tooltip = SOV_modernize_aircraft_facilities_ns_tt
 			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.25 }
 			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.05 }
 			add_to_variable = { SOV_soviet_airforce_air_mission_xp_gain_factor = 0.05 }
@@ -2171,240 +2151,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = SOV_raskovas_aviation_group
-
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = SOV_women_in_aviation }
-		x = 0
-		y = 1
-		relative_position_id = SOV_women_in_aviation
-		cost = 5
-
-		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
-			has_full_control_of_state = 219 #MOSCOW
-		}
-		
-		search_filters = {FOCUS_FILTER_AIR_XP}
-
-		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.2 }
-			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.1 }
-			set_variable = { SOV_soviet_airforce_air_strategic_bomber_night_penalty = -0.1 }
-			custom_effect_tooltip = SOV_raskovas_aviation_group_ns_tt
-
-			custom_effect_tooltip = SOV_night_witches_nsb_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					create_equipment_variant = {
-						name = "U-2" #
-						type = small_plane_cas_airframe_0
-						modules = {
-							fixed_main_weapon_slot = bomb_locks
-							fixed_auxiliary_weapon_slot_1 = empty
-							engine_type_slot = engine_1_1x
-							special_type_slot_1 = non_strategic_materials_small
-						}
-					}
-					create_equipment_variant = {
-						name = "Pe-2" #
-						type = small_plane_cas_airframe_2
-						allow_without_tech = yes
-						modules = {
-							fixed_main_weapon_slot = small_bomb_bay
-							fixed_auxiliary_weapon_slot_1 = light_mg_2x
-							engine_type_slot = engine_2_2x
-							special_type_slot_1 = lmg_defense_turret
-							special_type_slot_2 = dive_brakes_small
-						}
-					}
-					create_equipment_variant = {
-						name = "Yak-1" #
-						type = small_plane_airframe_1
-						modules = {
-							fixed_main_weapon_slot = aircraft_cannon_1_1x
-							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-							engine_type_slot = engine_2_1x
-							special_type_slot_1 = non_strategic_materials_small
-						}
-					}
-					if = {
-						limit = {
-							NOT = { has_government = communism }
-						}
-						
-						load_oob = "SOV_night_witches_nsb_alt_bba"
-						else = {
-							load_oob = "SOV_night_witches_nsb_bba" #nested here because otherwise it is considered a nested else for the higher level if
-						}
-					}
-				}
-				else_if = { #ALT IDEOLOGY
-					limit = {
-						NOT = { has_government = communism }
-					}
-					load_oob = "SOV_night_witches_nsb_alt"
-				}
-				else = { #DEFAULT COMMUNISM
-					load_oob = "SOV_night_witches_nsb"
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_intensify_pilot_training_program
-
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = SOV_expand_aviation_institutes }
-		x = 0
-		y = 1
-		relative_position_id = SOV_expand_aviation_institutes
-		cost = 5
-
-		mutually_exclusive = { focus = SOV_increase_aircraft_production }
-
-		available = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-		}
-		
-		search_filters = {FOCUS_FILTER_AIR_XP}
-
-		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
-			add_to_variable = { SOV_soviet_airforce_air_ace_generation_chance_factor = 0.15 }
-			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
-			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.15 }
-			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
-			add_to_variable = { SOV_soviet_airforce_air_fuel_consumption_factor = 0.1 }
-			custom_effect_tooltip = SOV_intensify_pilot_training_program_ns_tt
-
-			air_experience = 50
-		}
-	}
-
-	focus = {
-		id = SOV_expand_aviation_institutes
-
-		icon = GFX_focus_generic_military_academy
-		prerequisite = { focus = SOV_expand_the_aircraft_industry focus = SOV_foster_flying_clubs }
-		x = 1
-		y = 1
-		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 5
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_AIR_XP}
-
-		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_accidents_factor = -0.25 }
-			add_to_variable = { SOV_soviet_airforce_air_weather_penalty = -0.1 }
-			add_to_variable = { SOV_soviet_airforce_air_training_xp_gain_factor = 0.05 }
-			add_to_variable = { SOV_soviet_airforce_air_wing_xp_loss_when_killed_factor = -0.15 }
-			custom_effect_tooltip = SOV_expand_aviation_institutes_ns_tt
-		}
-	}
-
-	focus = {
-		id = SOV_ground_support
-
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
-		x = 0
-		y = 1
-		relative_position_id = SOV_increase_aircraft_production
-		cost = 5
-
-		mutually_exclusive = { focus = SOV_long_range_aircraft }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_cas_present_factor = 0.1 }
-			custom_effect_tooltip = SOV_ground_support_ns_tt
-
-			add_tech_bonus = {
-				name = SOV_ground_support
-				bonus = 0.75
-				uses = 2
-				category = light_fighter
-				category = cas_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_long_range_aircraft
-
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = SOV_increase_aircraft_production focus = SOV_intensify_pilot_training_program }
-		x = 1
-		y = 1
-		relative_position_id = SOV_intensify_pilot_training_program
-		cost = 5
-
-		mutually_exclusive = { focus = SOV_ground_support }
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_RESEARCH}
-
-		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_strategic_bomb_visibility = -0.1 }
-			custom_effect_tooltip = SOV_long_range_aircraft_ns_tt
-
-			add_tech_bonus = {
-				name = SOV_long_range_aircraft
-				bonus = 0.75
-				uses = 2
-				category = cat_heavy_fighter
-				category = tactical_bomber
-				category = cat_strategic_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_the_modern_war_in_the_skies
-
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = SOV_ground_support focus = SOV_long_range_aircraft }
-		x = 1
-		y = 1
-		relative_position_id = SOV_ground_support
-		cost = 5
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_AIR_XP}
-
-		completion_reward = {
-			add_to_variable = { SOV_soviet_airforce_air_night_penalty = -0.1 }
-			add_to_variable = { SOV_soviet_airforce_air_mission_efficiency = 0.1 } 
-			custom_effect_tooltip = SOV_the_modern_war_in_the_skies_ns_tt
-
-			air_experience = 200
-		}
-	}
-
 
 
 ##    ##    ###    ##     ## ##    ## 
@@ -3940,9 +3686,10 @@ focus_tree = {
 		id = SOV_found_the_pcdi
 
 		icon = GFX_goal_generic_defence
-		x = 5
-		y = 0
-		relative_position_id = SOV_expand_the_red_fleet
+		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
+		x = -6
+		y = 1
+		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
 
 		ai_will_do = {
@@ -3969,7 +3716,7 @@ focus_tree = {
 
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = SOV_found_the_pcdi }
-		x = -5
+		x = -2
 		y = 1
 		relative_position_id = SOV_found_the_pcdi
 		cost = 5
@@ -4596,9 +4343,9 @@ focus_tree = {
 	focus = {
 		id = SOV_strengthen_the_mobilization_plan
 		icon = GFX_focus_SOV_mobilization_plan
-		x = 7
+		x = 19
 		y = 0
-		relative_position_id = SOV_found_the_pcdi
+		relative_position_id = SOV_infrastructure_effort_nsb
 		cost = 5
 
 		ai_will_do = {
@@ -4622,7 +4369,6 @@ focus_tree = {
 		id = SOV_military_engineering_university
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = SOV_found_the_pcdi }
-		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
 		x = 2
 		y = 1
 		relative_position_id = SOV_found_the_pcdi
@@ -4716,7 +4462,7 @@ focus_tree = {
 		id = SOV_move_industry_to_the_urals
 		icon = GFX_goal_reichsautobahn
 		prerequisite = { focus = SOV_military_engineering_university }
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = SOV_military_engineering_university
 		cost = 4
@@ -4982,530 +4728,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_the_molotov_line
-		icon = GFX_goal_fortify_the_westwall
-		prerequisite = { focus = SOV_military_engineering_university }
-		x = -1
-		y = 1
-		relative_position_id = SOV_military_engineering_university
-		cost = 2
-
-		mutually_exclusive = { focus = SOV_improve_the_stalin_line }
-
-		available = {
-			OR = {
-				has_full_control_of_state = 188
-				has_full_control_of_state = 189
-				has_full_control_of_state = 814
-				has_full_control_of_state = 97
-				has_full_control_of_state = 94
-				has_full_control_of_state = 93
-				has_full_control_of_state = 91
-				has_full_control_of_state = 89
-				has_full_control_of_state = 80
-				has_full_control_of_state = 78
-				has_full_control_of_state = 766
-			}
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			custom_effect_tooltip = SOV_the_molotov_line_tt
-
-			### LITHUANIA ###
-			if = { #If Memel is controlled, then add forts in Memel, if not, then go to Zemaitija
-				limit = {
-					188 = { is_fully_controlled_by = ROOT }
-				}
-				custom_effect_tooltip = SOV_molotov_line_forts_3
-				hidden_effect = {
-					188 = {
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = {
-								id = 3288
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			else = {
-				189 = { #ZEMAITIJA
-					if = {
-						limit = { is_fully_controlled_by = ROOT }
-						custom_effect_tooltip = SOV_molotov_line_forts_3
-						hidden_effect = {
-							add_building_construction = {
-								type = bunker
-								level = 1
-								province = {
-									id = 6314
-									id = 9499
-									id = 3337
-								}
-								instant_build = yes
-							}
-						}
-					}
-				}
-			}
-			814 = { #Suduva
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 6407
-								id = 11312
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-
-			### POLAND ###
-			97 = { #Bialystok
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_6
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 3254
-								id = 400
-								id = 11357
-								id = 11329
-								id = 11274
-								id = 290
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			94 = { #Polesie
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 3392
-								id = 6546
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			93 = { #Wolyn
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 11441
-								id = 422
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			91 = { #Lwow
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 536
-								id = 9468
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			89 = { #Stanislawow
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_4
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 6431
-								id = 6460
-								id = 9425
-								id = 3743
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-
-			### ROMANIA ###
-			80 = { #Bucovina
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 9548
-								id = 577
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			### ROMANIA ###
-			78 = { #Bessarabia
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_5
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 3407
-								id = 3577
-								id = 565
-								id = 3707
-								id = 3724
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			766 = { #Southern Bessarabia
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_molotov_line_forts_2
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 3704
-								id = 3701
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_improve_the_stalin_line
-		icon = GFX_goal_fortify_the_westwall
-		prerequisite = { focus = SOV_military_engineering_university }
-		x = 1
-		y = 1
-		relative_position_id = SOV_military_engineering_university
-		cost = 4
-
-		mutually_exclusive = { focus = SOV_the_molotov_line }
-
-		available = {
-			OR = {
-				has_full_control_of_state = 209
-				has_full_control_of_state = 210
-				has_full_control_of_state = 207
-				has_full_control_of_state = 206
-				has_full_control_of_state = 202
-				has_full_control_of_state = 203
-				has_full_control_of_state = 834
-				has_full_control_of_state = 192
-			}
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			209 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 6
-						province = 415
-						instant_build = yes
-					}
-				}
-			}
-			210 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 3333
-						instant_build = yes
-					}
-				}
-			}
-			207 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 3219
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 6371
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 6220
-						instant_build = yes
-					}
-				}
-			}
-			206 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 11370
-						instant_build = yes
-					}
-				}
-			}
-			202 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 7
-						province = 525
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 7
-						province = 3494
-						instant_build = yes
-					}
-				}
-
-			}
-			203 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 7
-						province = 11409
-						instant_build = yes
-					}
-				}
-			}
-			834 ={
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 754
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 741
-						instant_build = yes
-					}
-				}
-			}
-			192 = {
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 11670
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_the_defense_of_moscow
-		icon = GFX_focus_SOV_the_defense_of_moscow
-		prerequisite = { focus = SOV_move_industry_to_the_urals focus = SOV_improve_the_stalin_line focus = SOV_the_molotov_line }
-		x = 1
-		y = 1
-		relative_position_id = SOV_move_industry_to_the_urals
-		cost = 2
-
-		available = {
-			219 = {
-				is_controlled_by = ROOT
-				
-				OR = {
-					any_neighbor_state = {
-						NOT = { is_controlled_by = ROOT }
-					}
-
-					SOV = { surrender_progress > 0.1 } #Keep an eye on this, might be too cheesy
-				}
-			}
-		}
-		
-		search_filters = {FOCUS_FILTER_ARMY_XP}
-
-		completion_reward = {
-			army_experience = 15
-			219 = {
-				custom_effect_tooltip = SOV_defense_of_moscow_forts
-				hidden_effect = {
-					if = {
-						limit = {
-							ROOT = { controls_province = 3391 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 3391
-							instant_build = yes
-						}
-					}
-					if = {
-						limit = {
-							ROOT = { controls_province = 6414 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6414
-							instant_build = yes
-						}
-					}
-					if = {
-						limit = {
-							ROOT = { controls_province = 9348 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 9348
-							instant_build = yes
-						}
-					}
-					if = {
-						limit = {
-							ROOT = { controls_province = 301 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 301
-							instant_build = yes
-						}
-					}
-					if = {
-						limit = {
-							ROOT = { controls_province = 9378 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 9378
-							instant_build = yes
-						}
-					}
-					if = {
-						limit = {
-							ROOT = { controls_province = 6283 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6283
-							instant_build = yes
-						}
-					}
-					if = {
-						limit = {
-							ROOT = { controls_province = 3259 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 3259
-							instant_build = yes
-						}
-					}
-					if = {
-						limit = {
-							ROOT = { controls_province = 11282 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 11282
-							instant_build = yes
-						}
-					}
-					if = {
-						limit = {
-							ROOT = { controls_province = 6380 }
-						}
-						add_building_construction = {
-							type = bunker
-							level = 4
-							province = 6380
-							instant_build = yes
-						}
-					}				
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_impregnable_forts
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SOV_improve_the_stalin_line focus = SOV_the_molotov_line }
-		x = -1
+		prerequisite = { focus = SOV_desperate_measures }
+		x = 2
 		y = 1
-		relative_position_id = SOV_improve_the_stalin_line
+		relative_position_id = SOV_desperate_measures
 		cost = 5
 
 		available = {
@@ -5605,362 +4833,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_protect_the_white_sea_baltic_canal
-		icon = GFX_focus_generic_provoke_border_clashes
-		prerequisite = { focus = SOV_military_engineering_university }
-		x = 2
-		y = 2
-		relative_position_id = SOV_military_engineering_university
-		cost = 2
-
-		available = {
-			has_full_control_of_state = 215 #ONEGA
-			has_full_control_of_state = 216 #OLONETS
-			has_full_control_of_state = 264 #TIKHVIN
-			has_full_control_of_state = 195 #LENINGRAD
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			if = {
-				limit = {
-					has_full_control_of_state = 215 #ONEGA
-				}
-				215 = { #ONEGA
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = {
-							id = 9045
-							id = 3078
-							id = 11212
-						}
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 1
-						province = 9045
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 216 #OLONETS
-				}
-				216 = { #OLONETS
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = {
-							id = 92
-							id = 11092
-						}
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 264 #TIKHVIN
-				}
-				264 = { #TIKHVIN
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = {
-							id = 9082
-							id = 9190
-							id = 11059
-						}
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 195 #LENINGRAD
-				}
-				195 = { #LENINGRAD
-					add_building_construction = {
-						type = anti_air_building
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province = {
-							id = 149
-							id = 11068
-							id = 79
-						}
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_far_east_fortification
-		icon = GFX_goal_fortify_the_westwall
-		prerequisite = { focus = SOV_military_engineering_university }
-		x = 3
-		y = 1
-		relative_position_id = SOV_military_engineering_university
-		cost = 0.2
-
-		available = {
-			OR = {
-				has_full_control_of_state = 563
-				has_full_control_of_state = 561
-				has_full_control_of_state = 657
-				has_full_control_of_state = 409
-				has_full_control_of_state = 408
-			}
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			563 = { #CHITA
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_4
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 4719
-								id = 12622
-							}
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = {
-								id = 10559
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			561 = { #AMUR
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_4
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 12543
-								id = 7851
-								id = 10678
-							}
-							instant_build = yes
-						}
-						add_building_construction = { #Set like this for stupid tooltip purposes
-							type = bunker
-							level = 1
-							province = {
-								id = 12657
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			657 = { #BIROBIDZHAN
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_10
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 10655
-								id = 7801
-								id = 10722
-								id = 7672
-							}
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = {
-								id = 7763
-								id = 4725
-								id = 4805
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			409 = { #KHABAROVSK
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_4
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = {
-								id = 12189
-							}
-							instant_build = yes
-						}
-						add_building_construction = {  #Set like this for stupid tooltip purposes
-							type = bunker
-							level = 2
-							province = {
-								id = 10466
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			408 = { #VLADIVOSTOK
-				if = {
-					limit = { is_fully_controlled_by = ROOT }
-					custom_effect_tooltip = SOV_far_east_fortification_forts_10
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 1
-							province = {
-								id = 11643
-								id = 6686
-								id = 664
-								id = 6684
-								id = 3787
-								id = 6838
-							}
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 2
-							province = {
-								id = 3977
-								id = 957
-							}
-							instant_build = yes
-						}
-					}
-				}
-			}
-			# Other possible Provinces
-			#11879 (Border Conflict with Japan) 1755 (North Sakhalin)
-		}
-	}
-
-	focus = {
-		id = SOV_restore_cossack_units
-		icon = GFX_focus_SOV_restore_cossack_units
-		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
-		x = -1
-		y = 1
-		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 5
-
-		mutually_exclusive = { focus = SOV_cohesion_first }
-
-		available = {
-
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			add_to_variable = { SOV_the_red_army_modifier_army_sub_unit_cavalry_speed_factor = 0.05 }
-			add_to_variable = { SOV_the_red_army_cavalry_attack_factor = 0.05 }
-			custom_effect_tooltip = SOV_restore_cossack_units_ns_tt
-
-			show_unit_leaders_tooltip = SOV_lev_dovator
-
-			#Spawn Cossack divisions
-			custom_effect_tooltip = SOV_restore_cossack_units_spawn_tt
-			hidden_effect = {
-				division_template = {
-					name = "Kazachya Kavaleryskaya Diviziya"
-					division_names_group = SOV_CAV_02
-					template_counter = 05
-
-					regiments = {
-						cavalry = { x = 0 y = 0 }
-						cavalry = { x = 0 y = 1 }
-						cavalry = { x = 1 y = 0 }
-						cavalry = { x = 1 y = 1 }
-						mot_artillery_brigade = { x = 2 y = 0 }
-						light_armor = { x = 3 y = 0 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						artillery = { x = 0 y = 1 }
-						recon = { x = 0 y = 2 }
-					}
-				}
-
-				capital_scope = {
-					#Cossack Cavalry
-					create_unit = { 
-						division = "name = \"4ya Donskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
-					}
-					create_unit = { 
-						division = "name = \"6ya Kubansko-Terskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
-					}
-					create_unit = { 
-						division = "name = \"10ya Tersko-Stavropolskaya Kazachya Kav. Div\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
-					}
-					create_unit = { 
-						division = "name = \"12ya Kubanskaya Kazachya Kav. Div.\" division_template = \"Kazachya Kavaleryskaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1.0" owner = ROOT
-					}
-
-					#Cossack Infantry
-					create_unit = {
-						division = "name = \"13ya Donskaya Kazachya Div.\" division_template = \"Strelkovaya Diviziya\" start_experience_factor = 0.7 start_equipment_factor = 1.0" owner = ROOT
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = SOV_cohesion_first
 		icon = GFX_focus_secret_rearmament
 		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
-
-		mutually_exclusive = { focus = SOV_restore_cossack_units }
 
 		available = {
 		}
@@ -5977,8 +4856,8 @@ focus_tree = {
 	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = SOV_restore_cossack_units focus = SOV_cohesion_first }
-		x = 0
+		prerequisite = { focus = SOV_cohesion_first }
+		x = 3
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
@@ -6001,7 +4880,7 @@ focus_tree = {
 		id = SOV_military_reorganization
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = SOV_rehabilitated_military }
-		x = 29
+		x = 22
 		y = 3
 		cost = 10
 
@@ -6041,7 +4920,7 @@ focus_tree = {
 		id = SOV_desperate_measures
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
-		x = 3
+		x = 6
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
@@ -6130,53 +5009,6 @@ focus_tree = {
 					}
 					remove_unit_leader_trait =  trait_SOV_cowed_by_stalin_navy
 				}
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_penal_battalions
-		icon = GFX_focus_SOV_penal_battalions
-		prerequisite = { focus = SOV_desperate_measures }
-		x = 2
-		y = 1
-		relative_position_id = SOV_desperate_measures
-		cost = 1
-
-		available = {
-			has_war = yes
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			#Spawn Penal divisions
-			custom_effect_tooltip = SOV_penal_battalions_spawn_tt
-			hidden_effect = {
-				set_technology = { penal_infantry = 1 popup = no }
-
-				division_template = {
-					name = "Shtrafnaya Chast"
-					division_names_group = SOV_PEN_01
-					is_locked = yes
-
-					regiments = {
-						penal_battalion = { x = 0 y = 0 }
-						penal_battalion = { x = 0 y = 1 }
-						penal_battalion = { x = 0 y = 2 }
-						penal_battalion = { x = 1 y = 0 }
-						penal_battalion = { x = 1 y = 1 }
-						penal_battalion = { x = 1 y = 2 }
-						penal_battalion = { x = 2 y = 0 }
-						penal_battalion = { x = 2 y = 1 }
-						penal_battalion = { x = 2 y = 2 }
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-					}
-				}
-
-				SOV_spawn_penal_divisions_effect = yes
 			}
 		}
 	}
@@ -6584,7 +5416,7 @@ focus_tree = {
 	focus = {
 		id = SOV_the_path_of_marxism_leninism
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		x = 14
+		x = 26
 		y = 0
 
 		relative_position_id = SOV_strengthen_the_mobilization_plan
@@ -6632,7 +5464,7 @@ focus_tree = {
 		id = SOV_the_centre
 		icon = GFX_focus_fra_loyalty_stalin
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = -6
+		x = -12
 		y = 1
 
 		relative_position_id = SOV_the_path_of_marxism_leninism
@@ -7479,10 +6311,10 @@ focus_tree = {
 	focus = {
 		id = SOV_stalins_cult_of_personality
 		icon = GFX_focus_SOV_stalins_cult_of_personality
-		prerequisite = { focus = SOV_the_bloc_of_rights_and_trotskyites }
-		x = 0
+		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
+		x = -5
 		y = 1
-		relative_position_id = SOV_the_bloc_of_rights_and_trotskyites
+		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 5
 
 		available = {
@@ -11056,7 +9888,7 @@ focus_tree = {
 		id = SOV_addressing_internal_affairs
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
-		x = 43
+		x = 50
 		y = 1
 
 		cost = 5
@@ -12883,7 +11715,7 @@ ai_will_do = {
 		id = SOV_baltic_security
 		icon = GFX_focus_SOV_baltic_security
 		prerequisite = { focus = SOV_the_comintern }
-		x = 51
+		x = 58
 		y = 2
 		cost = 1
 
@@ -13052,7 +11884,7 @@ ai_will_do = {
 		id = SOV_claims_in_baltic
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = SOV_baltic_security }
-		x = 51
+		x = 58
 		y = 3
 		cost = 5
 
@@ -13288,7 +12120,7 @@ ai_will_do = {
 		id = SOV_claims_on_poland
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = SOV_claims_in_baltic }
-		x = 52
+		x = 59
 		y = 4
 		cost = 1
 
@@ -13602,7 +12434,7 @@ ai_will_do = {
 		id = SOV_claim_on_bessarabia
 		icon = GFX_focus_generic_attack_romania
 		prerequisite = { focus = SOV_claims_on_poland }
-		x = 52
+		x = 59
 		y = 5
 		cost = 1
 
