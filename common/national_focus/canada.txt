@@ -4528,7 +4528,7 @@
 		}
 
 		available = {
-
+			has_full_control_of_state = 468
 		}
 		
 		bypass = {
@@ -4557,6 +4557,22 @@
 
 		completion_reward = {
 			navy_experience = 25
+
+			build_railway = {
+				level = 5
+				path = {
+					4345 9601 7291 12149
+				}
+			}
+			468 = {
+				add_building_construction = {
+					type = naval_base
+					province = 12149
+					level = 10
+					instant_build = yes
+				}
+			}
+
 			random_owned_controlled_state = {
 				prioritize = { 464 }
 				limit = {

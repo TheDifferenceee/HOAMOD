@@ -4402,7 +4402,7 @@ focus_tree = {
 		}
 
 		available = {
-
+		    has_full_control_of_state = 46
 		}
 
 		bypass = {
@@ -4429,6 +4429,22 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
+
+			build_railway = {
+				level = 5
+				path = {
+					9617 11603 6677 657
+				}
+			}
+			46 = {
+				add_building_construction = {
+					type = naval_base
+					province = 657
+					level = 10
+					instant_build = yes
+				}
+			}
+
 			random_owned_controlled_state = {
 				prioritize = { 46 }
 				limit = {

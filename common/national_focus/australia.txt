@@ -1442,6 +1442,7 @@
 		}
 
 		available = {
+			has_full_control_of_state = 285
 			any_state = {
 				is_coastal = yes
 				is_controlled_by = ROOT
@@ -1477,6 +1478,22 @@
 			
 		completion_reward = {
 			navy_experience = 25
+
+			build_railway = {
+				level = 5
+				path = {
+					7859 12435 12406
+				}
+			}
+			285 = {
+				add_building_construction = {
+					type = naval_base
+					province = 12406
+					level = 10
+					instant_build = yes
+				}
+			}
+
 			random_owned_controlled_state = {
 				prioritize = { 285 }
 				limit = {

@@ -1710,6 +1710,12 @@ war_measures = {
 			original_tag = FRA
 		}
 
+		available = {
+            has_war = yes
+            has_full_control_of_state = 458
+            original_tag = FRA
+        }
+
 		cost = 0
 		fire_only_once = no
 		available = {
@@ -1733,6 +1739,12 @@ war_measures = {
 			has_war = yes
 			original_tag = FRA
 		}
+
+		available = {
+            has_war = yes
+            has_full_control_of_state = 459
+            original_tag = FRA
+        }
 
 		cost = 0
 		fire_only_once = no
@@ -1758,6 +1770,12 @@ war_measures = {
 			original_tag = FRA
 		}
 
+		available = {
+            has_war = yes
+            has_full_control_of_state = 461
+            original_tag = FRA
+        }
+
 		cost = 0
 		fire_only_once = no
 		available = {
@@ -1766,6 +1784,36 @@ war_measures = {
 
 		complete_effect = {
 			set_capital = { state = 461 }
+		}
+	}
+
+	The = {
+
+		icon = generic_political_actions
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_war = yes
+			original_tag = FRA
+		}
+
+		available = {
+            has_war = yes
+            has_full_control_of_state = 543
+            original_tag = FRA
+        }
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+		}
+
+		complete_effect = {
+			set_capital = { state = 543 }
 		}
 	}
 
@@ -1781,6 +1829,12 @@ war_measures = {
 			has_war = yes
 			original_tag = FRA
 		}
+
+		available = {
+            has_war = yes
+            has_full_control_of_state = 539
+            original_tag = FRA
+        }
 
 		cost = 0
 		fire_only_once = no
@@ -1805,6 +1859,12 @@ war_measures = {
 			has_war = yes
 			original_tag = FRA
 		}
+
+		available = {
+            has_war = yes
+            has_full_control_of_state = 272
+            original_tag = FRA
+        }
 
 		cost = 0
 		fire_only_once = no
