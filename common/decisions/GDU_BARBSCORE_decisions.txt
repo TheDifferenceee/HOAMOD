@@ -12,7 +12,210 @@ GDU_Barbscore_Score_Category = {
 	############################
 	##  GER Mission Selection ##
 	############################
+	TOTAL_WAR = {
+
+		icon = GFX_decision_generic_prepare_civil_war  
+
+		allowed = {
+			original_tag = GER
+			
+		}
+		available = {
+			check_variable = { var = SOV.Barb_score_value value = 14 compare = greater_than }
+			check_variable = { var = GER.Barb_score_value value = 14 compare = greater_than }
+
+date > 1943.6.1
+OR = {
+				NOT = {
+OR = {
+GER =  { controls_state = 14 }
+GER =  { controls_state = 15 }
+GER =  { controls_state = 30 }
+}
+OR = {
+ITA =  { controls_state = 14 }
+ITA =  { controls_state = 15 }
+ITA =  { controls_state = 30 }
+}
+OR = {
+ROM =  { controls_state = 14 }
+ROM =  { controls_state = 15 }
+ROM =  { controls_state = 30 }
+}
+				}
+				NOT = {
+OR = {
+GER =  { controls_state = 29 }
+GER =  { controls_state = 6 }
+GER =  { controls_state = 7 }
+}
+OR = {
+ITA =  { controls_state = 29 }
+ITA =  { controls_state = 6 }
+ITA =  { controls_state = 7 }
+}
+OR = {
+ROM =  { controls_state = 29 }
+ROM =  { controls_state = 6 }
+ROM =  { controls_state = 7 }
+}
+				}
+}
+			
+			
+		}
+		custom_cost_trigger = {	
+			check_variable = { var = SOV.Barb_score_value value = 14 compare = greater_than }
+			check_variable = { var = ROOT.Barb_score_value value = 14 compare = greater_than }
+		}
+		custom_cost_text = barb_xpTOTAL
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+		}
+		
+		priority = 1000
+
+		
+		fire_only_once = yes
+		cost = 0
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = TOTALWAR
+				days = 365
+			}
+	ROM = {
+			add_timed_idea = {
+				idea = TOTALWAR
+				days = 365
+			}
+}
+			hidden_effect = {
+				subtract_from_variable = { GER.Barb_score_value = 15 }
+			}
+			
+		}
+	}
+
+
+
+
+
+
+
+	dday_upon_us = {
+
+		icon = GFX_decision_generic_prepare_civil_war  
+
+		allowed = {
+			original_tag = GER
+			
+		}
+		available = {
+			check_variable = { var = ROOT.Barb_score_value value = 14 compare = greater_than }
+date > 1942.1.1
+date < 1943.6.1
+OR = {
+				NOT = {
+OR = {
+GER =  { controls_state = 14 }
+GER =  { controls_state = 15 }
+GER =  { controls_state = 30 }
+}
+OR = {
+ITA =  { controls_state = 14 }
+ITA =  { controls_state = 15 }
+ITA =  { controls_state = 30 }
+}
+OR = {
+ROM =  { controls_state = 14 }
+ROM =  { controls_state = 15 }
+ROM =  { controls_state = 30 }
+}
+				}
+				NOT = {
+OR = {
+GER =  { controls_state = 29 }
+GER =  { controls_state = 6 }
+GER =  { controls_state = 7 }
+}
+OR = {
+ITA =  { controls_state = 29 }
+ITA =  { controls_state = 6 }
+ITA =  { controls_state = 7 }
+}
+OR = {
+ROM =  { controls_state = 29 }
+ROM =  { controls_state = 6 }
+ROM =  { controls_state = 7 }
+}
+				}
+}
+			
+			
+		}
+		custom_cost_trigger = {	
+			check_variable = { var = ROOT.Barb_score_value value = 14 compare = greater_than }
+		}
+		custom_cost_text = barb_xp_more_than_15
+
+		
+		visible = {
+			original_tag = GER
+			has_war_with = SOV
+		}
+		
+		priority = 1000
+
+		
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = AXIS_defense_bonus_1
+				days = 60
+			}
 	
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
+			}
+
+	        ROM = {
+				add_timed_idea = {
+				idea = AXIS_defense_bonus_1
+				days = 45
+				}
+		
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
+			}
+
+	}
+
+
+			ITA = {
+				add_timed_idea = {
+				idea = AXIS_defense_bonus_1
+				days = 45
+				}
+	
+			add_timed_idea = {
+				idea = overextended1
+				days = 45
+			}
+
+			}
+			hidden_effect = {
+				subtract_from_variable = { GER.Barb_score_value = 15 }
+			}
+			
+		}
+	}	
 	GER_buy_bonus_1 = {
 
 		icon = GFX_decision_generic_prepare_civil_war  
