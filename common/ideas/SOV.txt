@@ -408,8 +408,6 @@ ideas = {
 
 			modifier = {				
 				consumer_goods_expected_value = -0.05
-				production_factory_efficiency_gain_factor = -0.10
-				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 			}
 			
@@ -468,10 +466,10 @@ ideas = {
 
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 				medium_plane_airframe = {
-					build_cost_ic = -0.1 instant = yes
+					build_cost_ic = -0.15 instant = yes
 				}
 			}
 		}
