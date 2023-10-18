@@ -31,12 +31,14 @@
  barb_xp_more_than_10:0 "§H10§!  [ROOT.GetFlag]"
  barb_xp_more_than_10_blocked:0 "§R10§!  [ROOT.GetFlag]"
  barb_xp_more_than_10_tooltip:0 "It costs §H10§! [ROOT.GetFlag] §HBarbarossa Points§! to select this."
- 
+ barb_xpTOTAL_blocked:0 "§R15§![SOV.GetFlag] §R15§![ROOT.GetFlag] and allied landing"
  barb_xpTOTAL:0 "§H15§![SOV.GetFlag] 15[ROOT.GetFlag] and allied landing"
  barb_xp_more_than_15:0 "§H15§!  [ROOT.GetFlag]"
  barb_xp_more_than_15_blocked:0 "§R15§!  [ROOT.GetFlag]"
  barb_xp_more_than_15_tooltip:0 "It costs §H15§! [ROOT.GetFlag] §HBarbarossa Points§! to select this."
-
+ barb_xp_more_than_5:0 "§H5§!  [ROOT.GetFlag]"
+ barb_xp_more_than_5_blocked:0 "§R5§!  [ROOT.GetFlag]"
+ 
  barb_xp_more_than_20:0 "§H10§!  [ROOT.GetFlag]"
  barb_xp_more_than_20_blocked:0 "§R20§!  [ROOT.GetFlag]"
  barb_xp_more_than_20_tooltip:0 "It costs §H20§! [ROOT.GetFlag] §HBarbarossa Points§! to select this."
