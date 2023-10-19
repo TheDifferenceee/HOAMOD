@@ -1872,6 +1872,31 @@ focus_tree = {
 
 
 	focus = {
+		id = SOV_strengthen_the_mobilization_plan
+		icon = GFX_focus_SOV_mobilization_plan
+		x = 19
+		y = 0
+		relative_position_id = SOV_infrastructure_effort_nsb
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		search_filters = {FOCUS_FILTER_MANPOWER}
+
+		completion_reward = {
+			add_to_variable = { SOV_the_red_army_mobilization_speed = 0.05 }
+			add_to_variable = { SOV_the_red_army_conscription_factor = 0.03 }
+			custom_effect_tooltip = SOV_strengthen_the_mobilization_plan_ns_tt
+		}
+	}
+
+	focus = {
 		id = SOV_transpolar_flights
 
 		icon = GFX_goal_generic_air_fighter2
@@ -4340,31 +4365,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_strengthen_the_mobilization_plan
-		icon = GFX_focus_SOV_mobilization_plan
-		x = 19
-		y = 0
-		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		search_filters = {FOCUS_FILTER_MANPOWER}
-
-		completion_reward = {
-			add_to_variable = { SOV_the_red_army_mobilization_speed = 0.05 }
-			add_to_variable = { SOV_the_red_army_conscription_factor = 0.03 }
-			custom_effect_tooltip = SOV_strengthen_the_mobilization_plan_ns_tt
-		}
-	}
-
-	focus = {
 		id = SOV_military_engineering_university
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = SOV_found_the_pcdi }
@@ -4405,6 +4405,33 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = SOV_desperate_measures
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
+		x = 6
+		y = 2
+		relative_position_id = SOV_strengthen_the_mobilization_plan
+		cost = 5
+
+		available = {
+			any_enemy_country = {
+				SOV_is_major_not_original_sov = yes
+			}
+		}
+		
+		search_filters = {}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SOV_desperate_measures_ns
+				days = 180
+			}
+
+			custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
 		}
 	}
 
@@ -4912,33 +4939,6 @@ focus_tree = {
 
 			army_experience = 50
 			add_command_power = 25
-		}
-	}
-
-	focus = {
-		id = SOV_desperate_measures
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
-		x = 6
-		y = 2
-		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 5
-
-		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			add_timed_idea = {
-				idea = SOV_desperate_measures_ns
-				days = 180
-			}
-
-			custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
 		}
 	}
 

@@ -39,13 +39,6 @@ technologies = {
 		doctrine = yes	
 		research_cost = 2.25
 		
-		allow = {
-			AND = {
-				has_tech = tech_mountaineers
-				can_unlock_new_special_forces_tree = yes
-			}
-		}
-		
 		on_research_complete = {
 			remove_potential_special_forces_tree = yes
 		}
@@ -65,7 +58,6 @@ technologies = {
 			factor = 10
 			modifier = {
 				factor = 0
-				NOT = { ai_has_completed_army_doctrine = yes }
 			}
 		}
 		
@@ -440,13 +432,6 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		
-		allow = { 
-			AND = {
-				has_tech = marines
-				can_unlock_new_special_forces_tree = yes
-			}
-		}
-		
 		on_research_complete = {
 			remove_potential_special_forces_tree = yes
 		}
@@ -496,7 +481,6 @@ technologies = {
 			}
 			modifier = {
 				factor = 0
-				NOT = { ai_has_completed_naval_doctrine = yes }
 			}
 		}
 		
@@ -994,13 +978,6 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		allow = { 
-			AND = {
-				has_tech = paratroopers 
-				can_unlock_new_special_forces_tree = yes
-			}
-		}
-		
 		on_research_complete = {
 			remove_potential_special_forces_tree = yes
 		}
@@ -1034,7 +1011,6 @@ technologies = {
 			factor = 20
 			modifier = {
 				factor = 0
-				NOT = { ai_has_completed_air_doctrine = yes }
 			}
 		}
 		
