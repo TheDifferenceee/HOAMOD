@@ -36,6 +36,51 @@ on_actions = {
 			load_focus_tree = generic_focus 
 			}
 			}
+			AUS = {
+			load_focus_tree = generic_focus 
+			}
+			MON = {
+			load_focus_tree = generic_focus 
+			}
+			NOR = {
+			load_focus_tree = generic_focus 
+			}
+			BEL = {
+			load_focus_tree = generic_focus 
+			}
+			LUX = {
+			load_focus_tree = generic_focus 
+			}
+			DEN = {
+			load_focus_tree = generic_focus 
+			}
+			ALB = {
+			load_focus_tree = generic_focus 
+			}
+			IRQ = {
+			load_focus_tree = generic_focus 
+			}
+			SIA = {
+			load_focus_tree = generic_focus 
+			}
+			INS = {
+			load_focus_tree = generic_focus 
+			}
+			MAL = {
+			load_focus_tree = generic_focus 
+			}
+			PHI = {
+			load_focus_tree = generic_focus 
+			}
+			FIN = {
+			load_focus_tree = generic_focus 
+			}
+			SWE = {
+			load_focus_tree = generic_focus 
+			}
+			MEN = {
+			load_focus_tree = generic_focus 
+			}
 		}
 	}
 }
