@@ -4703,7 +4703,7 @@
 
 
 		completion_reward = {
-			army_experience = 30
+			army_experience = 200
 		}
 	}
 
@@ -5115,6 +5115,7 @@
 		completion_reward = {
 		    set_technology = { improved_small_airframe = 1 } 
 			custom_effect_tooltip = JAP_the_zero_tt
+			air_experience = 900
 			hidden_effect = { 
 				if = {
 					limit = {
