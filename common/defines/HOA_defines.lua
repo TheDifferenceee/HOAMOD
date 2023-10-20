@@ -299,6 +299,10 @@ NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.01
 NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0.1
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 1.0
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0.01
+
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.3
+
+
 NDefines.NNavy.TRAINING_ACCIDENT_ORG_LOSS_FACTOR = 0.1
 NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.002 --vanilla 0.001,						-- Factor used to scale the Daily Country Navy XP gain
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1 --vanilla 0.1,  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
