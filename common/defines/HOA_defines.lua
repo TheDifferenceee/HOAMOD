@@ -170,7 +170,7 @@ NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0            -- armies get
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 1.0                    -- fuel consumption ratio while training --1.0 yani vanilla deger
 NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 1
 
-NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.1       -- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.	
+NDefines.NAir.NAVAL_STRIKE_TARGETTING_TO_AMOUNT = 0.3       -- Balancing value to convert the naval_strike_targetting equipment stats to chances of how many airplanes managed to do successfull strike.	
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.4                          -- Higher value = more shot down planes --1 yani vanilla deger
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1                    -- same as above but used inside naval combat for carrier battles --5  f3ten koydugumuz ucakla ayni islevde oldugunu dusunuyoruz        
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0                    -- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction. --1.0 yani vanilla deger 
@@ -282,7 +282,7 @@ NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01 --vanilla 0.01,								-- Balanc
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0    -- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction --0.25 yani vanilla deger
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.1    -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE --0.25 yani vanilla deger
 NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 5 --0.2 yani vanilla deger
-NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.85    -- damage reduction for incoming air attacks is clamped to this value at maximum. --0.75 yani vanilla deger       
+NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75    -- damage reduction for incoming air attacks is clamped to this value at maximum. --0.75 yani vanilla deger       
 NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 1.0    -- hit profile for depth charges --100.0 yani vanilla deger                    
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 1                             -- scoring for target picking for planes inside naval combat, one define per ship typ --10 yani vanilla deger
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 1 --50 yani vanilla deger
