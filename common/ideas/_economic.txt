@@ -346,8 +346,6 @@ ideas = {
    			}
 		}
 		SOV_ECO = {
-
-
 			available = {
 				has_war_support > 0.5
 				tag=SOV
