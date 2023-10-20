@@ -1066,7 +1066,7 @@ equipments = {
 		surface_visibility = 22
 		sub_attack = 5
 		sub_detection = 20
-		naval_range = 5000
+		naval_range = 4000
 		max_strength = 220
 
 		resources = {
