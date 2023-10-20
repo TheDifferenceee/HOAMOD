@@ -449,24 +449,6 @@ ideas = {
 			
 		#}
 		
-		soviet_economic_plan9 = {
-		picture = man_five_year_plan_industry
-			removal_cost = -1
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			modifier = {				
-				production_speed_arms_factory_factor = 0.20
-			}
-			
-		}
-		
 		SOV_zulme_karsi_mukavemet = {
 			removal_cost = -1
 			
