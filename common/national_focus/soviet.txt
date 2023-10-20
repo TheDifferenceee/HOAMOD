@@ -580,6 +580,29 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = SOV_babalar_resitali
+
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = SOV_industrial_modernization focus = SOV_optimize_production_lines }
+		x = 2
+		y = 4
+		relative_position_id = SOV_reorganize_the_pc_of_heavy_industry
+		
+		cost = 5
+
+		available = {
+		NOT = { num_of_controlled_factories < 250 }
+		}
+		
+		search_filters = {FOCUS_FILTER_RESEARCH}
+
+		completion_reward = {
+			add_ideas = soviet_economic_plan9
+
+		}
+	}
 
 	focus = {
 		id = SOV_increase_state_reserves
@@ -10281,14 +10304,11 @@ focus_tree = {
 			    target = MON
 			    transfer_troops = yes
 			}
-		
-		    every_state = {
 				820 = {set_compliance = 70}
 				818 = {set_compliance = 70}
 				330 = {set_compliance = 70}
 				819 = {set_compliance = 70}
 				817 = {set_compliance = 70}
-		    }
 		}
 	}
 

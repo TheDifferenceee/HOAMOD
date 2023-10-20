@@ -51,8 +51,8 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0                    -- IC 
 NDefines.NProduction.CONVERSION_SPEED_BONUS = 2.0                        -- Modifier to the production speed when converting equipment --0
 NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0    -- Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting. --0.2
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 1    -- Minimum fraction of an equipment type's base strategic resource cost to use when converting a naval equipment, such as through ship refitting. --0.2  
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0,		-- The minimum number of factories we have to put on consumer goods, by value.
-NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.0,	-- The minimum number of factories we have to put on consumer goods, in percent.
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0		-- The minimum number of factories we have to put on consumer goods, by value.
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.0	-- The minimum number of factories we have to put on consumer goods, in percent.
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4        -- Base year ahead penalty --2
 	
 NDefines.NPolitics.ARMY_LEADER_MAX_COST = 100                -- max cost BEFORE modifiers --100 yani vanilla degeri
