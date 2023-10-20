@@ -5818,15 +5818,15 @@ focus_tree = {
 					OR = {
 					    AND = {
 					        USA = { num_of_naval_factories > 30 }
-					        ENG = { num_of_naval_factories > 20 }
+					        ENG = { num_of_naval_factories > 18 }
 				        }
 				         AND = {
 					        USA = { num_of_naval_factories > 25 }
 					        ENG = { num_of_naval_factories > 25 }
 				        }
 				        AND = {
-					        USA = { num_of_naval_factories > 30 }
-					        ENG = { num_of_naval_factories > 20 }
+					        USA = { num_of_naval_factories > 20 }
+					        ENG = { num_of_naval_factories > 30 }
 				        }
 				    }    
 				}
@@ -5835,7 +5835,7 @@ focus_tree = {
 					OR = {
 					    AND = {
 					        USA = { num_of_naval_factories > 40 }
-					        ENG = { num_of_naval_factories > 20 }
+					        ENG = { num_of_naval_factories > 18 }
 				        }
 				         AND = {
 					        USA = { num_of_naval_factories > 35 }
@@ -5860,7 +5860,7 @@ focus_tree = {
 						OR = {
 							AND = {
 								USA = { num_of_naval_factories > 55 }
-								ENG = { num_of_naval_factories > 20 }
+								ENG = { num_of_naval_factories > 18 }
 							}
 							AND = {
 								USA = { num_of_naval_factories > 50 }
@@ -5897,7 +5897,7 @@ focus_tree = {
 					OR = {
 						AND = {
 							USA = { num_of_naval_factories > 70 }
-							ENG = { num_of_naval_factories > 20 }
+							ENG = { num_of_naval_factories > 18 }
 						}
 						AND = {
 							USA = { num_of_naval_factories > 65 }
