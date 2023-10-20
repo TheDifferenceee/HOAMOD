@@ -18,6 +18,12 @@ NDefines.NDiplomacy.ATTACHE_XP_SHARE = 0.2                            -- Country
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 25	--100
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 20 --50
 NDefines.NDiplomacy.EMBARGO_COST = 25 -- 100
+
+NDefines.NDiplomacy.MARKET_ACCESS_ACCEPTANCE_SAME_IDEOLOGY = 0
+NDefines.NDiplomacy.MARKET_ACCESS_ACCEPTANCE_OPINION = 0
+NDefines.NDiplomacy.MARKET_ACCESS_ACCEPTANCE_TRADE_INFLUENCE = 0
+NDefines.NDiplomacy.MARKET_ACCESS_ACCEPTANCE_SCRIPTED_IDEOLOGY_ACCEPTANCE = 0
+
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.03 --- 0.05                 -- basic speed control	
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 27 --20 
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_INFRA = 0.35 --0.2 monty degisiklik
