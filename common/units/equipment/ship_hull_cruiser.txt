@@ -1061,11 +1061,14 @@ equipments = {
 		archetype = ship_hull_cruiser
 		priority = 1850
 		manpower = 1800
-		build_cost_ic = 3500
+		build_cost_ic = 3000
 		naval_speed = 20
 		surface_visibility = 22
-		naval_range = 7500
+		sub_attack = 5
+		sub_detection = 20
+		naval_range = 5000
 		max_strength = 220
+
 		resources = {
 			steel = 3
 		}
@@ -1084,6 +1087,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_anti_air
+					ship_medium_battery
 				}
 			}
 			
@@ -1094,6 +1098,8 @@ equipments = {
 					ship_secondaries
 					ship_dp_secondaries
 					ship_airplane_launcher
+					ship_torpedo
+					ship_medium_battery
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -1103,7 +1109,7 @@ equipments = {
 					ship_mine_layer
 					ship_anti_air
 					ship_airplane_launcher
-					ship_torpedo
+					ship_medium_battery
 				}
 			}
 		}
