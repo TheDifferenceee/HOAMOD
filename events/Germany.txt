@@ -3358,7 +3358,12 @@ country_event = {
 			}
 		}
 		# REVISIT Balance research bonus
-		give_SOV_armor_research_bonuses = yes
+		add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 3
+				category = armor
+			}
 	}
 }
 

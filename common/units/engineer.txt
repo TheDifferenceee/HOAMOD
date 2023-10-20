@@ -153,9 +153,9 @@ sub_units = {
 		can_be_parachuted = yes
 
 		marsh = {
-			attack = 0.10
-			defence = 0.20
-			movement = 0.2
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
 		}
 
 		fort = {
@@ -164,9 +164,9 @@ sub_units = {
 		}
 
 		river = {
-			attack = 0.10
-			defence = 0.20
-			movement = 0.25
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
 		}
 		
 		same_support_type = engineer
