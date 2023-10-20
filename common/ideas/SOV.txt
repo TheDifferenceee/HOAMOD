@@ -1899,6 +1899,21 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
+		
+		SOV_leningrad_polytechnical_institute = {
+
+			picture = generic_research_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
 
 		SOV_national_academy_of_sciences_fake = { #Don't look at me I'm a fake (never really added just used for tooltip reasons)
 			name = SOV_ussr_academy_of_sciences_dynamic_modifier
