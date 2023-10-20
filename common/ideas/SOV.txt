@@ -310,6 +310,17 @@ ideas = {
 				has_government = communism
 			}
 
+			equipment_bonus = {
+				artillery_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				    }
+				anti_tank_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				    }
+				}
+
 			modifier = {
 				surrender_limit = -0.08     #scripted deal varsa biraz arttirmaliyiz %96da kapitule oluyor
 				industrial_capacity_factory = 0.15
@@ -1461,10 +1472,6 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				artillery_equipment = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
 				rocket_artillery_equipment = {
 					instant = yes
 					build_cost_ic = -0.1
