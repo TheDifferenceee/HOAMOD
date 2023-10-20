@@ -83,8 +83,7 @@ characters={
 		name=HUN_arpad_szakasits
 		portraits={
 			civilian={
-				large="GFX_portrait_HUN_arpad_szakasits"
-				small = "GFX_portrait_HUN_arpad_szakasits_small"
+				large="GFX_Portrait_hungary_arpad_szakasits"
 			}
 		}
 		country_leader={
@@ -128,12 +127,13 @@ characters={
 				small="GFX_idea_HUN_geza_lakatos"
 			}
 		}
-		corps_commander={
-			skill=3
-			attack_skill=3
-			defense_skill=2
+		corps_commander={ #17/17
+			traits={ infantry_leader  urban_assault_specialist adaptable trait_reckless  trait_engineer  ranger }
+			skill=6
+			attack_skill=6
+			defense_skill=5
 			planning_skill=3
-			logistics_skill=2
+			logistics_skill=8
 			legacy_id=-1
 		}
 	}
@@ -146,13 +146,13 @@ characters={
 				small="GFX_idea_HUN_ivan_hindy"
 			}
 		}
-		corps_commander={
-			traits={ trickster }
-			skill=4
-			attack_skill=3
+		corps_commander={ #17/17
+			traits={ brilliant_strategist panzer_leader panzer_expert  ranger urban_assault_specialist trait_engineer }
+			skill=6
+			attack_skill=7
 			defense_skill=4
-			planning_skill=2
-			logistics_skill=4
+			planning_skill=3
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -165,12 +165,13 @@ characters={
 				small="GFX_idea_HUN_karoly_beregfy"
 			}
 		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+		field_marshal={ #17/17
+			traits={ bearer_of_artillery infantry_leader ranger trait_reckless harsh_leader  organizer  }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=7
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
@@ -183,13 +184,13 @@ characters={
 				small="GFX_idea_HUN_lajos_veress"
 			}
 		}
-		corps_commander={
-			traits={ armor_officer }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
+		corps_commander={ #17/17
+			traits={  panzer_expert ambusher panzer_leader trait_cautious ranger winter_specialist  guerilla_fighter }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
@@ -202,13 +203,13 @@ characters={
 				small="GFX_idea_HUN_ferenc_feketehalmy_czeydner"
 			}
 		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
+		field_marshal = {
+		traits = { trait_engineer fortress_buster ranger logistics_wizard thorough_planner panzer_leader panzer_expert brilliant_strategist  aggressive_assaulter   winter_specialist organizer }
+		skill = 6
+		attack_skill = 5
+		defense_skill = 4
+		planning_skill = 7
+		logistics_skill = 8
 		}
 	}
 
@@ -223,16 +224,39 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = HUN_shvoy_kalman
 			ledger = army
 			allowed = {
 				original_tag = HUN
 			}
-			
+			research_bonus = {
+				land_doctrine = 0.1
+			}
 			traits = {
 				military_theorist
+			}
+		}
+	}
+	HUN_shvoy_kalman_highcommand={
+		name=HUN_shvoy_kalman_highcommand
+		portraits={
+			army={
+				small="GFX_idea_HUN_shvoy_kalman"
+			}
+		}
+		advisor={
+			cost = 150
+			slot = high_command
+			idea_token = HUN_shvoy_kalman_highcommand
+			ledger = army
+			allowed = {
+				original_tag = HUN
+			}
+			
+			traits = {
+				army_commando_2
 			}
 		}
 	}
@@ -245,12 +269,15 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = HUN_gyorgy_jendrassik
 			ledger = air
 			allowed = {
 				original_tag = HUN
+			}
+			research_bonus = {
+				air_doctrine = 0.1
 			}
 			traits = {
 				air_warfare_theorist
@@ -277,7 +304,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -300,7 +327,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -326,7 +353,7 @@ characters={
 			traits = {
 				navy_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -349,7 +376,7 @@ characters={
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -375,7 +402,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -394,7 +421,7 @@ characters={
 			}
 		}
 		advisor={
-			slot = high_command
+			slot = air_chief
 			idea_token = HUN_sandor_magyarossy
 			allowed = {
 				original_tag = HUN
@@ -424,7 +451,7 @@ characters={
 				original_tag = HUN
 			}
 			traits = {
-				army_armored_1
+				army_armored_3
 			}
 			cost =  50
 			ai_will_do = {
@@ -450,7 +477,7 @@ characters={
 			traits = {
 				army_regrouping_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -474,7 +501,7 @@ characters={
 			traits = {
 				air_air_combat_training_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -496,9 +523,9 @@ characters={
 				original_tag = HUN
 			}
 			traits = {
-				army_cavalry_2
+				army_infantry_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -638,77 +665,28 @@ characters={
 		}
 	}
 
-	HUN_laszlo_rajk={
-		name=HUN_laszlo_rajk
+	HUN_albert_speer={ 
+		name=HUN_albert_speer
 		portraits={
 			army={
-				small="GFX_idea_HUN_laszlo_rajk"
+				small="GFX_idea_speer"
 			}
 		}
 		advisor={
 			slot = political_advisor
-			idea_token = HUN_laszlo_rajk
+			idea_token = speer
 			allowed = {
 				original_tag = HUN
 			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+			available = { 
+				date > 1941.6.1
+				GER = { has_idea = tot_economic_mobilisation }
 			}
 			traits = {
-				communist_revolutionary 
+				total_war_organizer 
 			}
-			ai_will_do = {
-				base = 0
-				modifier = {
-					add = 100
-					OR = {
-						has_country_flag = HUN_AI_RANDOM_COMMUNIST
-						has_game_rule = {
-							rule = HUN_ai_behavior
-							option = COMMUNIST
-						}
-					}
-				}
-			}
-		}
+		}		
 	}
-
-	HUN_jozsef_szell={
-		name=HUN_jozsef_szell
-		portraits={
-			army={
-				small="GFX_idea_HUN_jozsef_szell"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = HUN_jozsef_szell
-			allowed = {
-				original_tag = HUN
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
-			traits = {
-				democratic_reformer 
-			}
-		}
-	}
-	
 	HUN_gyula_gombos_de_jakfa={
 		name=HUN_gyula_gombos_de_jakfa
 		portraits={
@@ -723,14 +701,7 @@ characters={
 				original_tag = HUN
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				has_completed_focus = HUN_renounce_the_treaty_of_trianon
 			}
 			traits = {
 				fascist_demagogue 

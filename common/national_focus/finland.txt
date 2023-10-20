@@ -1,4 +1,0 @@
-focus_tree = {
-	id = finnish_focus
-
-}

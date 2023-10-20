@@ -4,14 +4,20 @@ state=
 	name="STATE_648"
 	state_category = tiny_island
 	manpower=42
+			resources={
+		oil=1
+		aluminium=1
+	}
 	history=
 	{
 		owner = JAP
-		add_core_of = GUM
+1936.1.1.13 = {
+			owner = SWE
+		}
 		buildings = {
-			infrastructure = 2
+		infrastructure = 2
 			air_base = 1
-			13026 = {
+			1034 = {
 				naval_base = 1
 			}
 		}
@@ -19,7 +25,5 @@ state=
 	}
 	provinces=
 	{
-13026 	}
-
-	local_supplies=0.0 
+1034 	}
 }

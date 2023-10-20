@@ -5,21 +5,18 @@ state={
 	state_category = small_island
 
 	history={
-		owner = NZL
-		add_core_of = SAM
+		owner = AST
+1936.1.1.13 = {
+			owner = SWE
+		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			7290 = {
 				naval_base = 1
 			}
 		}
-		victory_points = {
-			7290 1
-		}
 	}
 	provinces={
-		7290 13080 
+		7290 915 
 	}
-
-	local_supplies=0.0 
 }

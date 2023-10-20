@@ -98,20 +98,20 @@ characters={
 			traits = {
 				army_regrouping_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.500
 			}
 		}
 		
-		corps_commander={
-			traits={ trait_reckless trickster urban_assault_specialist panzer_leader }
-			skill=5
-			attack_skill=5
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=1
+		field_marshal = { #13/13
+			traits = {  brilliant_strategist trait_cautious career_officer inflexible_strategist politically_connected infantry_leader organizer }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 8
+	planning_skill = 8
+	logistics_skill = 5
+			
 		}
 	}
 
@@ -124,13 +124,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ infantry_leader ranger hill_fighter organizer logistics_wizard }
-			skill=3
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=2
+			traits = { brilliant_strategist offensive_doctrine armor_officer panzer_leader ranger trait_engineer urban_assault_specialist organizer}
+	skill = 8
+	attack_skill = 7
+	defense_skill = 7
+	planning_skill = 6
+	logistics_skill = 6
 		}
 	}
 
@@ -143,25 +142,26 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={   }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=3
+		traits = { commando infantry_leader urban_assault_specialist media_personality organizer trait_cautious politically_connected career_officer }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 7
 		}
 	}
 
 	GER_erwin_rommel={
-		name=GER_erwin_rommel
+		name="Erwin Rommel NORMAL"
 		portraits={
 			army={
-				large=GFX_portrait_GER_erwin_rommel
-				small="GFX_idea_erwin_rommel"
+				small="gfx/interface/ideas/idea_GER_erwin_rommel.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Erwin_Rommel.dds"
 			}
 		}
-		advisor={
+			advisor={
 			slot = high_command
 			idea_token = erwin_rommel
 			ledger = army
@@ -174,20 +174,18 @@ characters={
 			traits = {
 				army_armored_3
 			}
-			cost = 200
+			cost = 75
 			ai_will_do = {
 				factor = 8.000
 			}
 		}
-		
-		corps_commander={
-			traits={ trickster desert_fox panzer_leader}
-			skill=5
-			attack_skill=6
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=4
+		corps_commander={ #17/17
+			traits = { commando trickster inflexible_strategist panzer_expert trait_reckless war_hero media_personality infantry_officer trait_engineer panzer_leader }
+	skill = 6
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 2
 		}
 	}
 
@@ -207,19 +205,21 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			research_bonus = {
+				land_doctrine = 0.15
+			}
 			traits = {
 				mobile_warfare_expert
 			}
 		}
 		
-		corps_commander={
-			traits={ trait_reckless brilliant_strategist trickster trait_engineer panzer_leader ranger }
-			skill=8
-			attack_skill=7
-			defense_skill=6
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=5
+		field_marshal={ #17/17
+			traits = { offensive_doctrine  brilliant_strategist panzer_leader organizer trickster trait_engineer cavalry_officer ranger}
+	skill = 9
+	attack_skill = 8
+	defense_skill = 4
+	planning_skill = 9
+	logistics_skill = 5
 		}
 	}
 
@@ -232,26 +232,28 @@ characters={
 			}
 		}
 		advisor={
-			cost = 200
+			cost = 150
 			slot = theorist
 			idea_token = heinz_guderian
 			ledger = army
 			allowed = {
 				original_tag = GER
 			}
+			research_bonus = {
+				land_doctrine = 0.1
+			}
 			traits = {
 				blitzkrieg_theorist
 			}
 		}
 		
-		field_marshal={
-			traits={ trickster panzer_leader ranger }
-			skill=8
-			attack_skill=6
-			defense_skill=6
-			planning_skill=5
-			logistics_skill=5
-			legacy_id=6
+		corps_commander={ #17/17
+			traits = { trickster panzer_leader ranger trait_engineer trait_reckless brilliant_strategist career_officer infantry_officer media_personality war_hero urban_assault_specialist}
+	skill = 7
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 6
 		}
 	}
 
@@ -264,13 +266,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-			legacy_id=7
+			traits = { career_officer skilled_staffer infantry_leader }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
 		}
 	}
 
@@ -282,14 +283,13 @@ characters={
 				small=GFX_portrait_GER_ewald_von_kleist_small
 			}
 		}
-		corps_commander={
-			traits={   }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=8
+		corps_commander={ #17/17
+			traits = { panzer_leader armor_officer career_officer brilliant_strategist}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 		}
 	}
 
@@ -301,14 +301,13 @@ characters={
 				small=GFX_portrait_GER_fedor_von_bock_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=5
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=4
-			legacy_id=9
+		corps_commander={ #17/17
+			traits = { brilliant_strategist offensive_doctrine infantry_leader career_officer old_guard  }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 8
+	planning_skill = 5
+	logistics_skill = 6
 		}
 	}
 
@@ -321,12 +320,12 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ defensive_doctrine infantry_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=6
-			planning_skill=3
-			logistics_skill=3
+			traits={ brilliant_strategist trait_cautious career_officer inflexible_strategist politically_connected infantry_leader organizer }
+			skill=6
+			attack_skill=5
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=10
 			legacy_id=10
 		}
 	}
@@ -339,14 +338,13 @@ characters={
 				small=GFX_portrait_GER_maximilian_von_weichs_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=11
+		corps_commander={ #17/17
+			traits = {cavalry_officer career_officer cavalry_leader organizer}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
 		}
 	}
 
@@ -359,13 +357,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster infantry_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=13
+			traits = { offensive_doctrine infantry_officer harsh_leader career_officer old_guard}
+	skill = 5
+	attack_skill = 6
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 5
 		}
 	}
 
@@ -378,13 +375,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={   }
-			skill=1
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=14
+			traits = { panzer_leader swamp_fox harsh_leader}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
 		}
 	}
 
@@ -397,13 +393,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader urban_assault_specialist }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=15
+			traits = {  harsh_leader infantry_officer ranger}
+	skill = 4
+	attack_skill = 7
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 		}
 	}
 
@@ -425,20 +420,19 @@ characters={
 			traits = {
 				air_airborne_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		
-		corps_commander={
-			traits={ commando naval_invader }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=16
+		corps_commander={ #18/17
+			traits = { commando hill_fighter urban_assault_specialist harsh_leader trait_reckless politically_connected }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 6
 		}
 	}
 
@@ -450,14 +444,13 @@ characters={
 				small=GFX_portrait_GER_erwin_von_witzleben_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader trait_mountaineer }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=17
+		corps_commander={ #16/17
+			traits = { war_hero infantry_officer  old_guard infantry_leader trait_engineer fortress_buster hill_fighter }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 10
+	planning_skill = 3
+	logistics_skill = 3
 		}
 	}
 
@@ -469,14 +462,13 @@ characters={
 				small=GFX_portrait_GER_hermann_hoth_small
 			}
 		}
-		corps_commander={
-			traits={   }
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=18
+		corps_commander={ #17/17
+			traits = { panzer_leader harsh_leader trait_reckless brilliant_strategist skilled_staffer trait_engineer urban_assault_specialist}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
 		}
 	}
 
@@ -488,14 +480,13 @@ characters={
 				small=GFX_portrait_GER_johannes_blaskowitz_small
 			}
 		}
-		corps_commander={
-			traits={   }
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=19
+		corps_commander={  #17/17
+				traits = { infantry_leader trait_cautious inflexible_strategist infantry_officer}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 3
 		}
 	}
 
@@ -507,14 +498,13 @@ characters={
 				small=GFX_portrait_GER_paul_hausser_small
 			}
 		}
-		corps_commander={
-			traits={    }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=20
+		corps_commander={ #18/17
+			traits = {  panzer_leader trickster media_personality harsh_leader trait_engineer armor_officer}
+	skill = 5
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
 		}
 	}
 
@@ -527,13 +517,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_TUR_kemalist_champion }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=21
+			traits = { ranger politically_connected trait_cautious}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 4
 		}
 	}
 
@@ -545,13 +534,13 @@ characters={
 				small=GFX_portrait_GER_georg_von_kuchler_small
 			}
 		}
-		corps_commander={
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=22
+		corps_commander={ #17/17
+			traits = { organizer skilled_staffer infantry_officer brilliant_strategist old_guard}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 2
 		}
 	}
 
@@ -563,14 +552,14 @@ characters={
 				small=GFX_portrait_GER_alfred_jodl_small
 			}
 		}
-		corps_commander={
-			traits={  }
-			skill=1
-			attack_skill=2
+		corps_commander={ #17/17
+			traits={ adaptable harsh_leader infantry_leader skilled_staffer infantry_expert expert_improviser }
+			skill=6
+			attack_skill=4
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=23
+			planning_skill=8
+			logistics_skill=5
+			legacy_id=-1
 		}
 	}
 
@@ -582,14 +571,13 @@ characters={
 				small=GFX_portrait_GER_sepp_dietrich_small
 			}
 		}
-		corps_commander={
-			traits={     }
-			skill=1
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=24
+		corps_commander={ #17/17
+			traits = { panzer_leader harsh_leader cavalry_officer trait_reckless politically_connected}
+	skill = 3
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 		}
 	}
 
@@ -601,14 +589,13 @@ characters={
 				small=GFX_portrait_GER_hasso_von_manteuffel_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader trait_engineer hill_fighter }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=25
+		corps_commander={ #17/17
+			traits = { panzer_leader hill_fighter career_officer media_personality infantry_officer old_guard}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 3
 		}
 	}
 
@@ -631,20 +618,19 @@ characters={
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		
-		corps_commander={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=32
+		field_marshal={
+			traits = { media_personality old_guard trait_cautious career_officer war_hero inflexible_strategist organizer infantry_leader skilled_staffer trait_mountaineer}
+			skill = 6
+			attack_skill = 7
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 5
 		}
 	}
 
@@ -657,17 +643,18 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=33
+			traits = { trait_engineer fortress_buster infantry_leader trait_cautious fake_skilled_staffer commando camouflage_expert ambusher }
+		traits = {  fortress_buster trickster hill_fighter trait_engineer infantry_leader organizer career_officer war_hero brilliant_strategist old_guard}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+
 		}
 	}
 
-	GER_ernsteberhard_hell={          # gotun oglu
+	GER_ernsteberhard_hell={
 		name=GER_ernsteberhard_hell
 		portraits={
 			army={
@@ -675,34 +662,16 @@ characters={
 				small=GFX_portrait_GER_ernsteberhard_hell_small
 			}
 		}
-		corps_commander={
-			traits={ }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=34
+		corps_commander={  #17/17
+			traits = { winter_specialist old_guard war_hero career_officer media_personality harsh_leader cavalry_officer skilled_staffer}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 5
 		}
 	}
 
-	GER_felix_steiner={
-		name=GER_felix_steiner
-		portraits={
-			army={
-				large="GFX_portrait_ger_felix_steiner"
-				small=GFX_portrait_GER_felix_steiner_small
-			}
-		}
-		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=35
-		}
-	}
 
 	GER_karl_donitz={
 		name=GER_karl_donitz
@@ -724,20 +693,19 @@ characters={
 			traits = {
 				navy_chief_commerce_raiding_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 0.100
 			}
 		}
 		
 		navy_leader={
-			traits={ navy_career_officer seawolf }
-			skill=5
-			attack_skill=5
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=5
-			legacy_id=26
+			traits = { seawolf superior_tactician spotter blue_water_expert }
+	skill = 7
+	attack_skill = 7
+	defense_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 8
 		}
 	}
 
@@ -761,20 +729,19 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.100
 			}
 		}
 		
 		navy_leader={
-			traits={ battleship_adherent naval_lineage }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=27
+			traits = { old_guard_navy gunnery_expert fly_swatter superior_tactician ironside fleet_protector }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 4
+	maneuvering_skill = 5
+	coordination_skill = 7
 		}
 	}
 
@@ -803,13 +770,12 @@ characters={
 		}
 		
 		navy_leader={
-			traits={ old_guard_navy bold }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=4
-			legacy_id=28
+			traits = { bold fleet_protector blockade_runner ironside blue_water_expert }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 4
 		}
 	}
 
@@ -822,13 +788,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ craven superior_tactician }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			maneuvering_skill=4
-			coordination_skill=2
-			legacy_id=29
+			traits = { craven superior_tactician seawolf }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 5
+	coordination_skill = 2
 		}
 	}
 
@@ -841,13 +806,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy bold }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=4
-			legacy_id=30
+			traits = { navy_career_officer bold spotter fly_swatter blue_water_expert }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 2
+	maneuvering_skill = 5
+	coordination_skill = 5
 		}
 	}
 
@@ -872,20 +836,19 @@ characters={
 			traits = {
 				navy_fleet_logistics_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		
 		navy_leader={
-			traits={ gentlemanly navy_career_officer superior_tactician }
-			skill=3
-			attack_skill=4
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=4
-			legacy_id=31
+			traits = { navy_media_personality battleship_adherent superior_tactician ironside blue_water_expert  }
+	skill = 6
+	attack_skill = 7
+	defense_skill = 5
+	maneuvering_skill = 5
+	coordination_skill = 2
 		}
 	}
 
@@ -904,7 +867,7 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 603
-			traits = {   }
+			traits = { infantry_officer }
 			visible = {
 				has_global_flag = falkenhausen_recalled
 			}
@@ -928,7 +891,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = von_braun
 			ledger = air
@@ -952,7 +915,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = heisenberg
 			ledger = army
@@ -983,6 +946,9 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			research_bonus = {
+				cat_battlefield_support = 0.15
+			}
 			traits = {
 				close_air_support_proponent
 			}
@@ -997,10 +963,13 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = walther_wever
 			ledger = air
+			research_bonus = {
+				air_doctrine = 0.1
+			}
 			allowed = {
 				original_tag = GER
 			}
@@ -1016,10 +985,13 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ernst_udet
 			ledger = air
+			research_bonus = {
+				air_doctrine = 0.1
+			}
 			allowed = {
 				original_tag = GER
 			}
@@ -1037,10 +1009,13 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = otto_ciliax
 			ledger = navy
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
 			allowed = {
 				original_tag = GER
 			}
@@ -1066,7 +1041,7 @@ characters={
 			traits = {
 				army_chief_organizational_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1092,7 +1067,7 @@ characters={
 			traits = {
 				army_chief_drill_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1113,9 +1088,9 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				army_chief_offensive_2
+				army_chief_offensive_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1139,9 +1114,9 @@ characters={
 				has_completed_focus = GER_army_innovation
 			}
 			traits = {
-				army_chief_maneuver_2
+				army_chief_maneuver_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1185,7 +1160,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -1211,7 +1186,7 @@ characters={
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.500
 			}
@@ -1244,11 +1219,38 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				army_infantry_2
+				army_infantry_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 2.000
+			}
+		}
+	}
+	GER_ferdinand_schorner_2 ={
+		name=GER_ferdinand_schorner
+		portraits={
+			army={
+				small="GFX_idea_ferdinand_schorner"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = ferdinand_schorner_2
+			ledger = army
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_war_with = SOV
+				
+			}
+			traits = {
+				army_infantry_4
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
@@ -1270,7 +1272,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.500
 			}
@@ -1297,7 +1299,7 @@ characters={
 			traits = {
 				air_close_air_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1321,7 +1323,7 @@ characters={
 			traits = {
 				air_bomber_interception_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1345,7 +1347,7 @@ characters={
 			traits = {
 				navy_naval_air_defense_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1394,7 +1396,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_west_wall 
+				
 			}
 			traits = {
 				fortification_engineer 
@@ -1418,8 +1420,12 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			available = { 
+				date > 1941.6.1
+				GER = { has_idea = tot_economic_mobilisation }
+			}
 			traits = {
-				armaments_organizer 
+				total_war_organizer 
 			}
 		}		
 	}
@@ -1434,15 +1440,12 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = hjalmar_schacht
-			cost = 75.000
+			cost = 150.000
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan 
-				not = {
-					has_completed_focus = GER_demand_sudetenland 
-				}
+				
 			}
 			traits = {
 				captain_of_industry 
@@ -1526,20 +1529,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-					}
-					has_completed_focus = GER_reestablish_free_elections 
-				}
+				always = no
 			}
 			traits = {
 				democratic_reformer 
@@ -1569,15 +1559,8 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_government = fascism 
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				
+				
 			}
 			traits = {
 				fascist_demagogue propaganda_expert 
@@ -1604,7 +1587,7 @@ characters={
 			slot = political_advisor
 			idea_token = rudolf_hess
 			allowed = {
-				original_tag = GER
+				
 			}
 			available = {
 				NOT = {
@@ -1633,7 +1616,7 @@ characters={
 			}
 		}
 		allowed_civil_war = {
-			has_government = fascism
+			
 		}
 		advisor={
 			slot = political_advisor
@@ -1642,10 +1625,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
+				
 			}
 			on_add = {
 				custom_effect_tooltip = GER_SS_himmler_recruit
@@ -1670,10 +1650,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
+				
 			}
 			ai_will_do = {
 				factor = 30.000
@@ -1698,10 +1675,7 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
+				
 			}
 			traits = {
 				backroom_backstabber 
@@ -1746,7 +1720,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_oppose_hitler 
+				always = no
 			}
 			traits = {
 				anti_fascist_agent 
@@ -1772,7 +1746,10 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich 
+				always = no
+			}
+			research_bonus = {
+				cat_trade_interdiction = 0.2
 			}
 			traits = {
 				monarchist_media_mogul 
@@ -1798,7 +1775,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_revive_the_kaiserreich 
+				date > 1943.1.1
 			}
 			traits = {
 				economist 
@@ -1824,7 +1801,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_reestablish_free_elections 
+				always = no
 			}
 			traits = {
 				connected_citizen 
@@ -1850,7 +1827,7 @@ characters={
 				has_dlc = "Waking the Tiger"
 			}
 			available = {
-				has_completed_focus = GER_reestablish_free_elections 
+				always = no 
 			}
 			traits = {
 				liberal_journalist 

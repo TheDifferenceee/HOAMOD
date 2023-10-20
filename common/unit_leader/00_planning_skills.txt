@@ -6,7 +6,7 @@ leader_planning_skills = {
 		type = navy
 		modifier = {
 			naval_hit_chance = 0.05
-			naval_coordination = 0.02
+			naval_coordination = 0.01
 		}
 	}
 
@@ -15,7 +15,7 @@ leader_planning_skills = {
 		type = navy
 		modifier = {
 			naval_hit_chance = 0.1
-			naval_coordination = 0.04
+			naval_coordination = 0.03
 		}
 	}
 
@@ -24,7 +24,7 @@ leader_planning_skills = {
 		type = navy
 		modifier = {
 			naval_hit_chance = 0.15
-			naval_coordination = 0.06
+			naval_coordination = 0.05
 		}
 	}
 
@@ -33,7 +33,7 @@ leader_planning_skills = {
 		type = navy
 		modifier = {
 			naval_hit_chance = 0.2
-			naval_coordination = 0.08
+			naval_coordination = 0.07
 		}
 	}
 
@@ -42,7 +42,7 @@ leader_planning_skills = {
 		type = navy
 		modifier = {
 			naval_hit_chance = 0.25
-			naval_coordination = 0.1
+			naval_coordination = 0.09
 		}
 	}
 
@@ -93,186 +93,186 @@ leader_planning_skills = {
 
 	### Corps Commander ###
 	1 = {
-		cost = 1000
+		cost = 100
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.05
-			max_planning = 0.025
+			planning_speed = 0.03
+			max_planning = 0.01
 		}
 	}
 		
 	2 = {
-		cost = 1000
+		cost = 200
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.1
-			max_planning = 0.05
+			planning_speed = 0.06
+			max_planning = 0.02
 		}
 	}
 	
 	
 	3 = {
-		cost = 2000
+		cost = 400
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.15
-			max_planning = 0.075
+			planning_speed = 0.09
+			max_planning = 0.04
 		}
 	}
 	
 	4 = {
-		cost = 3000
+		cost = 800
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.2
-			max_planning = 0.1
+			planning_speed = 0.12
+			max_planning = 0.06
 		}
 	}
 	
 	5 = {
-		cost = 5000
+		cost = 1600
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.25
-			max_planning = 0.125
+			planning_speed = 0.15
+			max_planning = 0.08
 		}
 	}
 
 	6 = {
-		cost = 8000
+		cost = 3200
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.3
-			max_planning = 0.15
+			planning_speed = 0.18
+			max_planning = 0.1
 		}
 	}
 
 	7 = {
-		cost = 13000
+		cost = 6400
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.35
-			max_planning = 0.175
+			planning_speed = 0.21
+			max_planning = 0.12 
 		}
 	}
 
 	8 = {
-		cost = 21000
+		cost = 12800
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.4
-			max_planning = 0.2
+			planning_speed = 0.24
+			max_planning = 0.14
 		}
 	}
 
 	9 = {
-		cost = 34000
+		cost = 25600
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.45
-			max_planning = 0.225
+			planning_speed = 0.27
+			max_planning = 0.16
 		}
 	}
 	
 	10 = {
-		cost = 55000
+		cost = 51200
 		type = corps_commander
 		modifier = {
-			planning_speed = 0.5
-			max_planning = 0.25
+			planning_speed = 0.3
+			max_planning = 0.18 
 		}
 	}
 	
 	### Field Marshal ###
 	1 = {
-		cost = 1000
+		cost = 100
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.05
-			max_planning = 0.025
+			planning_speed = 0.03
+			max_planning = 0.005
 		}
 	}
 	
 	
 	2 = {
-		cost = 1000
+		cost = 200
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.1
-			max_planning = 0.05
+			planning_speed = 0.06
+			max_planning = 0.01
 		}
 	}
 	
 	
 	3 = {
-		cost = 2000
+		cost = 400
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.15
-			max_planning = 0.075
+			planning_speed = 0.09
+			max_planning = 0.02
 		}
 	}
 	
 	4 = {
-		cost = 3000
+		cost = 800
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.2
-			max_planning = 0.1
+			planning_speed = 0.12
+			max_planning = 0.03
 		}
 	}
 	
 	5 = {
-		cost = 5000
+		cost = 1600
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.25
-			max_planning = 0.125
+			planning_speed = 0.15
+			max_planning = 0.04
 		}
 	}
 
 	6 = {
-		cost = 8000
+		cost = 3200
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.3
-			max_planning = 0.15
+			planning_speed = 0.18
+			max_planning = 0.05
 		}
 	}	
 
 	7 = {
-		cost = 13000
+		cost = 6400
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.35
-			max_planning = 0.175
+			planning_speed = 0.21
+			max_planning = 0.06
 		}
 	}	
 
 	8 = {
-		cost = 21000
+		cost = 12800
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.4
-			max_planning = 0.2
+			planning_speed = 0.24
+			max_planning = 0.07
 		}
 	}	
 
 	9 = {
-		cost = 34000
+		cost = 25600
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.45
-			max_planning = 0.225
+			planning_speed = 0.27
+			max_planning = 0.08
 		}
 	}
 	
 	10 = {
-		cost = 55000
+		cost = 51200
 		type = field_marshal
 		modifier = {
-			planning_speed = 0.5
-			max_planning = 0.25
+			planning_speed = 0.3
+			max_planning = 0.09
 		}
 	}
 }

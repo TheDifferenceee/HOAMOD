@@ -62,7 +62,7 @@ characters={
 			id=-1
 		}
 	}
-	AUS_karl_eglseer={  #gotun oglu 2
+	AUS_karl_eglseer={
 		name=AUS_karl_eglseer
 		portraits={
 			army={
@@ -71,12 +71,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			traits={ trickster trait_mountaineer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}

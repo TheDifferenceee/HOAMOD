@@ -14,16 +14,18 @@ if = {
 	else = {
 		set_air_oob = "SIA_1936_air_legacy"
 		set_technology = {
-			early_fighter = 1
+			iw_small_airframe = 1
 			CAS1 = 1
 		}
 	}
 }
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = JAP modifier = sanctions }
+add_opinion_modifier = { target = JAP modifier = minor_sanctions }
 
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_nangklao_chichalerm
 recruit_character = SIA_chao_phonphayuhasena
-recruit_character = SIA_nangklao_suriyawongse
 recruit_character = SIA_tianliang_huntrakool
 recruit_character = SIA_phra_silpasakrakorn
 recruit_character = SIA_luang_sinthusongkhramchai
@@ -53,16 +55,16 @@ set_technology = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
+		##early_submarine = 1
+		##early_destroyer = 1
+		##early_light_cruiser = 1
+		##early_heavy_cruiser = 1
 	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
+		
 		early_ship_hull_light = 1
 		basic_battery = 1
 		basic_torpedo = 1
@@ -147,8 +149,8 @@ set_convoys = 15
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
-			basic_submarine = 1
-			basic_heavy_cruiser = 1
+			##basic_submarine = 1
+			##basic_heavy_cruiser = 1
 		}
 	}
 	if = {
@@ -199,22 +201,6 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Destroyers #
-	create_equipment_variant = {
-		name = "Phra Ruang Class"				
-		type = ship_hull_light_1
-		name_group = SIA_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
 }
 
 # 1939 Start #
@@ -238,22 +224,9 @@ if = {
 			}
 		}
 		# Cruisers #
-		create_equipment_variant = {
-			name = "Sri Ayuthia Class"
-			type = ship_hull_cruiser_coastal_defense_ship
-			name_group = SIA_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_1
-				fixed_ship_armor_slot = empty
-				mid_1_custom_slot = empty
-				mid_2_custom_slot = empty
-				rear_1_custom_slot = empty
-			}
-		}
 	}
+}
+
+add_ideas = {
+	GDU_neutrality
 }

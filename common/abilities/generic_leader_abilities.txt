@@ -8,16 +8,7 @@ ability = {
 		type = army_leader
 		
 		allowed = {
-			is_leading_army_group = no
-			is_border_war = no
-			OWNER = {
-				if = {
-					limit = {
-						has_dlc = "Waking the Tiger"
-					}
-					NOT = { has_completed_focus = CHI_dare_to_die_corps }
-				}
-			}
+			always = no
 		}
 		
 		ai_will_do = {
@@ -37,14 +28,17 @@ ability = {
 			}
 		}
 		
-		cost = 0.01
+		cost = 0.22
 		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
-				combat_offense = 0.1
-				combat_breakthrough = 0.1
-				str_damage_multiplier = 1.0
+				combat_offense = 0.2
+				combat_breakthrough = 0.25
+				org_damage_multiplier = -1.0
+				str_damage_multiplier = 0.6
+				war_support_reduction_on_damage = 0.2
+				cannot_retreat_while_attacking = 1.0
 				
 				days = 7
 				tooltip = ABILITY_FORCE_ATTACK_TOOLTIP
@@ -62,23 +56,20 @@ ability = {
 		
 		allowed = {
 			is_leading_army_group = no
-			is_border_war = no
-			OWNER = {
-				NOT = {
-					has_completed_focus = JAP_warrior_spirit
-					has_completed_focus = SPA_cultivate_fanaticism
-				}
-			}
+			always = no
 		}
 		
-		cost = 0.01
+		cost = 0.22
 		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
-				combat_offense = 0.05
-				combat_defense = 0.1
-				str_damage_multiplier = 1.0
+				combat_defense = 0.2
+				combat_entrenchment = 0.25
+				org_damage_multiplier = -1.0
+				str_damage_multiplier = 0.6
+				war_support_reduction_on_damage = 0.2
+				cannot_retreat_while_defending = 1.0
 				
 				days = 7
 				tooltip = ABILITY_LAST_STAND_TOOLTIP
@@ -115,11 +106,11 @@ ability = {
 			is_border_war = no
 		}
 		
-		cost = 0.01
+		cost = 0.12
 		duration = 168
 		
 		unit_modifiers = {
-			planning_speed = 1.0
+			planning_speed = 4.0
 		}
 		
 		
@@ -152,12 +143,12 @@ ability = {
 		
 		unit_modifiers = {
 			fort = {
-				attack = 0.1
+				attack = 0.2
 			}
-			fortification_damage = 1.0
-			fortification_collateral_chance = 1.0
+			fortification_damage = 2.0
+			fortification_collateral_chance = 2.0
 		}
-		cost = 0.01
+		cost = 0.1
 		duration = 168
 		
 		
@@ -214,7 +205,7 @@ ability = {
 			naval_invasion_prep_speed = 0.5
 		}
 		
-		cost = 0.01
+		cost = 0.1
 		duration = 168
 	}
 	
@@ -252,13 +243,13 @@ ability = {
 		
 		
 		unit_modifiers = {
-			river_crossing_factor = -0.2
+			river_crossing_factor = -0.4
 			river = {
-				attack = 0.01 #artik buna ihtiyac kalmadi
+				attack = 0.2
 			}
 		}
 		
-		cost = 0.01
+		cost = 0.1
 		duration = 168
 		
 		ai_will_do = {
@@ -293,7 +284,7 @@ ability = {
 			supply_units = 168
 		}
 		
-		cost = 0.1
+		cost = 0.2
 		duration = 168
 		cooldown = 504
 	}

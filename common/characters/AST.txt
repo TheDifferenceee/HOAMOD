@@ -77,13 +77,13 @@ characters={
 				small=GFX_portrait_AST_leslie_morshead_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader jungle_rat }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=4
+		field_marshal={ #12/12
+			traits={  infantry_leader infantry_expert trait_engineer trait_mountaineer jungle_rat thorough_planner  }
+			skill=6
+			attack_skill=4
+			defense_skill=4
+			planning_skill=7
+			logistics_skill=7
 			legacy_id=-1
 		}
 	}
@@ -96,12 +96,13 @@ characters={
 				small=GFX_portrait_AST_thomas_blamey_small
 			}
 		}
-		corps_commander={
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+		field_marshal={ #12.5/12
+			traits={ cavalry_leader combined_arms_expert  logistics_wizard defensive_doctrine  }
+			skill=5
+			attack_skill=1
+			defense_skill=7
+			planning_skill=1
+			logistics_skill=7
 			legacy_id=-1
 		}
 	}
@@ -114,32 +115,13 @@ characters={
 				small=GFX_portrait_AST_henry_wynter_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader trait_cautious trait_reckless media_personality politically_connected }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=-1
-		}
-	}
-
-	AST_iron_lady={
-		name=AST_iron_lady
-		portraits={
-			army={
-				large="GFX_AST_iron_lady"
-				small=GFX_portrait_AST_henry_wynter_small
-			}
-		}
-		corps_commander={
-		    traits={ trait_TUR_kemalist_champion }
-			skill=1
-			attack_skill=3
+		corps_commander={ #15/15
+			traits={ cavalry_leader panzer_leader combined_arms_expert ambusher guerilla_fighter }
+			skill=5
+			attack_skill=5
 			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			planning_skill=4
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -152,13 +134,13 @@ characters={
 				small=GFX_portrait_AST_alan_vasey_small
 			}
 		}
-		corps_commander={
-			traits={ hill_fighter infantry_leader }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=2
+		corps_commander={ #15/15
+			traits={ infantry_leader ambusher jungle_rat urban_assault_specialist trickster guerilla_fighter }
+			skill=6
+			attack_skill=6
+			defense_skill=3
+			planning_skill=7
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -171,13 +153,13 @@ characters={
 				small=GFX_portrait_AST_horace_robertson_small
 			}
 		}
-		corps_commander={
-			traits={ desert_fox infantry_leader trait_reckless }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+		field_marshal={ #12/12
+			traits={ infantry_leader ambusher  hill_fighter urban_assault_specialist logistics_wizard  }
+			skill=6
+			attack_skill=6
+			defense_skill=6
+			planning_skill=3
+			logistics_skill=7
 			legacy_id=-1
 		}
 	}
@@ -190,13 +172,13 @@ characters={
 				small=GFX_portrait_AST_john_northcott_small
 			}
 		}
-		field_marshal={
-			traits={ }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+		corps_commander={ #15/15
+			traits={ bearer_of_artillery organizer infantry_leader infantry_expert naval_invader trait_engineer fortress_buster }
+			skill=6
+			attack_skill=8
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
@@ -229,12 +211,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=2
+			traits={ bold superior_tactician fly_swatter }
+			skill=4
+			attack_skill = 5
+			defense_skill = 5
+			maneuvering_skill = 4
+			coordination_skill = 4
 			legacy_id=-1
 		}
 	}
@@ -245,6 +227,19 @@ characters={
 			army={
 				large="GFX_AST_iven_mackay"
 				small=GFX_portrait_AST_iven_mackay_small
+			}
+		}
+		advisor={
+			cost = 150
+			slot = high_command
+			idea_token = AST_iven_mackay
+			ledger = army
+			allowed = {
+				original_tag = AST
+			}
+			
+			traits = {
+				army_commando_3
 			}
 		}
 	}
@@ -260,16 +255,18 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = AST_norman_makin
-			ledger = navy
+			ledger = army
 			allowed = {
 				original_tag = AST
 			}
-			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
 			traits = {
-				naval_theorist
+				military_theorist
 			}
 		}		
 	}
@@ -282,7 +279,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = AST_james_fairbairn
 			ledger = air
@@ -314,7 +311,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -337,7 +334,7 @@ characters={
 			traits = {
 				army_chief_organizational_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -386,7 +383,7 @@ characters={
 			traits = {
 				navy_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -409,7 +406,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -435,7 +432,7 @@ characters={
 			traits = {
 				air_chief_safety_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -458,7 +455,7 @@ characters={
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -485,7 +482,7 @@ characters={
 			traits = {
 				army_infantry_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -502,14 +499,14 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = AST_clive_caldwell
-			ledger = air
+			ledger = army
 			allowed = {
 				original_tag = AST
 			}
 			traits = {
-				air_air_superiority_3
+				army_armored_2
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -534,7 +531,7 @@ characters={
 			traits = {
 				navy_capital_ship_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -558,7 +555,7 @@ characters={
 			traits = {
 				army_artillery_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -575,15 +572,15 @@ characters={
 		advisor={			
 			slot = high_command
 			idea_token = AST_arthur_drakeford
-			ledger = air
+			ledger = army
 			allowed = {
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
 			traits = {
-				air_air_combat_training_2
+				army_concealment_3
 			}
-			cost = 100
+			cost = 150
 		}		
 	}
 	
@@ -609,7 +606,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -652,7 +649,7 @@ characters={
 				original_tag = AST
 			}
 			traits = {
-				backroom_backstabber 
+				armaments_organizer
 			}
 		}		
 	}
@@ -671,12 +668,12 @@ characters={
 				original_tag = AST
 				has_dlc = "Together for Victory"
 			}
-			cost = 100.000
+			cost = 150.000
 			traits = {
 				smooth_talking_charmer 
 			}
 			available = {
-				has_completed_focus = AST_never_another_gallipoli 
+				
 			}
 		}		
 	}
@@ -694,7 +691,7 @@ characters={
 			allowed = {
 				original_tag = AST
 			}
-			cost = 100.000
+			cost = 150.000
 			traits = {
 				silent_workhorse 
 			}
@@ -763,20 +760,7 @@ characters={
 				original_tag = AST
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = AST_support_the_centre_party 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits = {
 				fascist_demagogue 
@@ -806,20 +790,7 @@ characters={
 				original_tag = AST
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = AST_empower_the_workers 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits = {
 				communist_revolutionary 
@@ -849,26 +820,10 @@ characters={
 				original_tag = AST
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					or = {
-						has_completed_focus = AST_protect_the_homeland 
-						has_completed_focus = AST_support_the_policy_of_appeasement 
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				
 			}
 			traits = {
-				democratic_reformer 
+				ideological_crusader 
 			}
 			do_effect = {
 				NOT = {

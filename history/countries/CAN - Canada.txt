@@ -25,20 +25,133 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "CAN_1936_air_bba"
 		set_technology = {
-			aa_lmg = 1
-			engines_1 = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
+
 		}
 	else = {
 		set_air_oob = "CAN_1936_air_legacy"
 	}
 }
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = JAP modifier = sanctions }
+add_opinion_modifier = { target = JAP modifier = minor_sanctions }
 
-set_research_slots = 3
+add_timed_idea = { idea = airandnavy_idea days = 1320 }
+add_intel = {
+	target = SPR
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = BUl
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = USA
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = ENG
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = SOV
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = RAJ
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = ITA
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = GER
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = ROM
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = HUN
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = JAP
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = CAN
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = FRA
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = SAF
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = AST
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = NZL
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+set_research_slots = 4
 set_country_flag = monroe_doctrine
 set_stability = 0.8
-set_war_support = 0.15
+set_war_support = 0.1
 
 recruit_character = CAN_mackenzie_king
 recruit_character = CAN_adrien_arcand
@@ -52,7 +165,6 @@ recruit_character = CAN_leonard_w_murray
 recruit_character = CAN_ht_bailliegrohman
 recruit_character = CAN_james_d_prentice
 recruit_character = CAN_harry_dewolf
-recruit_character = CAN_lloyd_samuel_breadner
 recruit_character = CAN_george_pearkes
 recruit_character = CAN_john_murchie
 recruit_character = CAN_harold_edwards
@@ -61,7 +173,6 @@ recruit_character = CAN_harry_crerar
 recruit_character = CAN_robert_leckie
 recruit_character = CAN_kenneth_stuart
 recruit_character = CAN_andrew_mcnaughton
-recruit_character = CAN_george_jones
 recruit_character = CAN_raymond_collishaw
 recruit_character = CAN_guy_simonds
 recruit_character = CAN_gino_verchiella
@@ -73,9 +184,7 @@ recruit_character = CAN_robert_manion
 recruit_character = CAN_ian_a_mackenzie
 recruit_character = CAN_c_d_howe
 recruit_character = CAN_newton_wesley_rowell
-recruit_character = CAN_chuck_crate
 recruit_character = CAN_james_ilsley
-recruit_character = CAN_william_kashtan
 recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
 recruit_character = CAN_louis_st_laurent
@@ -83,13 +192,40 @@ recruit_character = CAN_louis_st_laurent
 
 # Starting tech
 set_technology = {
+	airfield_construction = 1
+	fort_construction = 1
+	iw_medium_airframe = 1
+	desertinfantry_at = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	motorised_infantry = 1
-	tech_support = 1		
-	tech_engineers = 1
+	tech_support = 1
+	iw_small_airframe = 1
 	tech_recon = 1
+	tech_engineers = 1
+	tech_signal_company = 1
+	tech_logistics_company = 1 
+	tech_mountaineers = 1
+	CAS1x = 1
+	naval_bomber1x = 1
+	interwar_antitank = 1
+	basic_small_airframe = 1
+	synth_oil_experiments = 1
+	fuel_silos = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	fuel_refining = 1
+	armored_car1 = 1
+	heavy_fighter1x = 1
+	tech_mountaineers = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	motorised_infantry = 1
 	gw_artillery = 1
+	interwar_antiair = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 	basic_train = 1
@@ -99,7 +235,7 @@ if = {
 		NOT = { has_dlc = "By Blood Alone" }
 	}
 	set_technology = {
-		early_fighter = 1
+		iw_small_airframe = 1
 		naval_bomber1 = 1
 		early_bomber = 1
 		
@@ -127,15 +263,15 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_destroyer = 1
-		early_light_cruiser = 1
-		transport = 1
+		##early_destroyer = 1
+		##early_light_cruiser = 1
+		##transport = 1
 	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
+		
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
@@ -153,15 +289,22 @@ if = {
 }
 if = {
 	limit = { has_dlc = "Together for Victory" }
+
+	add_ideas = GDU_refinery_prebuild_disincentive
 	add_ideas = CAN_great_depression_1
 	add_ideas = CAN_conscription_crisis
 	set_cosmetic_tag = CAN_UK
+	
 
 	add_to_tech_sharing_group = commonwealth_research
 }
-add_timed_idea = { idea = hoa_peace_idea days = 1320 }
-add_ideas = hoa_minor_idea
 
+
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+    amount = 1141
+    producer = CAN
+}
 1939.1.1 = {
 	add_political_power = 1198
 	add_command_power = 100
@@ -295,99 +438,124 @@ set_popularities = {
 	communism = 1
 }
 
-set_convoys = 100
+set_convoys = 600
 set_stability = 0.75
 
 ### VARIANTS ###
 # 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Sanguenay Class"
-		type = destroyer_1
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 1
-			ship_ASW_upgrade = 1
-			ship_anti_air_upgrade = 1
-		}
-	}
-}
+
 
 if = {
 	limit = { has_dlc = "Man the Guns" } 
 	### Ship Variants ###
 	# Destroyers #
-	create_equipment_variant = {
-		name = "S Class"
-		type = ship_hull_light_1
-		name_group = CAN_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Sanguenay Class"
-		type = ship_hull_light_1
-		name_group = CAN_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = empty
-		}
+}
+create_field_marshal = {
+	name = "Charles Foulkes AFRICANUS"
+	picture = "AFRICA_Portrait_Canada_Charles_Foulkes.dds"
+	traits = { brilliant_strategist organizer desert_fox infantry_leader old_guard skilled_staffer politically_connected}
+	skill = 5
+		attack_skill = 4
+		defense_skill = 5
+		planning_skill = 2
+		logistics_skill = 6
+}
+create_corps_commander = {
+	name = "Georges Vanier AFRICANUS"
+	picture = "AFRICA_Portrait_CAN_Georges_Vanier.dds"
+	traits = { skilled_staffer old_guard organizer politically_connected desert_fox trait_cautious trait_engineer panzer_leader} 
+	skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kenneth Stuart AFRICANUS"
+	picture = "AFRICA_Portrait_CAN_Kenneth_Stuart.dds"
+	traits = { desert_fox career_officer trickster infantry_leader cavalry_officer panzer_leader  skilled_staffer old_guard trait_cautious brilliant_strategist}
+	skill = 5
+		attack_skill = 9
+		defense_skill = 2
+		planning_skill = 4
+		logistics_skill = 2
+}
+
+create_equipment_variant = {
+	name = "Vickers MK VIb" 	
+	type = light_tank_chassis_2
+	modules = {
+		main_armament_slot = tank_small_cannon
+		turret_type_slot = tank_light_three_man_tank_turret
+		special_type_slot_2 = additional_machine_guns
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
 	}
 }
 
+create_equipment_variant = {
+	name = "Matilda MK III" 	
+	type = heavy_tank_chassis_1
+	modules = {
+		main_armament_slot = tank_heavy_cannon
+		turret_type_slot = tank_heavy_three_man_tank_turret
+		special_type_slot_1 = secondary_turret_small_cannon
+		special_type_slot_2 = additional_machine_guns
+		special_type_slot_3 = dozer_blade
+		suspension_type_slot = tank_bogie_suspension
+		armor_type_slot = tank_welded_armor
+		engine_type_slot = tank_gasoline_engine
+	}
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 2505
+	producer = CAN
+} 
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 100
+	producer = CAN
+}   
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 1351
+	producer = CAN
+} 
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 1250
+	producer = CAN
+} 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 6000
+	producer = CAN
+} 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 7000
+	producer = CAN
+} 
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 230
+	producer = CAN
+}
+add_equipment_to_stockpile = {
+	type = heavy_tank_chassis_1
+	amount = 400
+	producer = CAN
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_2
+	amount = 1200
+	producer = CAN
+}
 # 1939 Start #
 1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-		create_equipment_variant = {
-			name = "Athabaskan Class"
-			type = destroyer_1
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 2
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Destroyers #
-		create_equipment_variant = {
-			name = "Iroquois Class"
-			type = ship_hull_light_2
-			name_group = CAN_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_2
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_light_battery_2
-				rear_1_custom_slot = ship_depth_charge_2
-			}
-		}
-	}
+	
+	
 }

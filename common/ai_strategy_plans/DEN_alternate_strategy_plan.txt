@@ -1,3 +1,0 @@
-DEN_h2istorical_plan = {
-	
-}

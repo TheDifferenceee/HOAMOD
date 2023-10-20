@@ -63,32 +63,13 @@ characters={
 				small=GFX_portrait_RAJ_noel_beresfordpeirse_small
 			}
 		}
-		field_marshal={
-			traits={ }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=-1
-		}
-	}
-
-	RAJ_indira_gandhi={
-		name=RAJ_indira_gandhi
-		portraits={
-			army={
-				large="GFX_RAJ_indira_gandhi"
-				small=GFX_portrait_RAJ_noel_beresfordpeirse_small
-			}
-		}
-		corps_commander={
-			traits={ trait_TUR_kemalist_champion }
-			skill=1
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+		corps_commander={ #15/15
+			traits={ inflexible_strategist organizer infantry_leader infantry_expert  hill_fighter jungle_rat ranger  }
+			skill=6
+			attack_skill=6
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=6
 			legacy_id=-1
 		}
 	}
@@ -102,12 +83,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter infantry_leader }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -120,13 +101,13 @@ characters={
 				small=GFX_portrait_RAJ_douglas_gracey_small
 			}
 		}
-		corps_commander={
-			traits={ desert_fox infantry_leader }
+		field_marshal={ #13/12
+			traits={ infantry_leader logistics_wizard defensive_doctrine ambusher camouflage_expert }
 			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=8
 			legacy_id=-1
 		}
 	}
@@ -214,14 +195,16 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100	
+			cost = 150	
 			slot = theorist
 			idea_token = RAJ_rajendra_prasad
 			ledger = army
 			allowed = {
 				original_tag = RAJ
 			}
-			
+			research_bonus = {
+				land_doctrine = 0.1
+			}
 			traits = {
 				military_theorist
 			}
@@ -236,7 +219,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = RAJ_anyang_bhula
 			ledger = air
@@ -258,14 +241,16 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = RAJ_bahadur_jayla_of_khoch_bahur
 			ledger = navy
 			allowed = {
 				original_tag = RAJ
 			}
-			
+			research_bonus = {
+				naval_doctrine = 0.1
+			}
 			traits = {
 				naval_theorist
 			}
@@ -280,12 +265,12 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = RAJ_homi_j_bhabha
 			ledger = army
 			available = {
-				has_completed_focus = RAJ_institute_of_fundamental_research
+				always = no
 			}
 			allowed = {
 				original_tag = RAJ
@@ -319,7 +304,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -342,7 +327,7 @@ characters={
 			traits = {
 				army_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -365,7 +350,51 @@ characters={
 			traits = {
 				army_chief_drill_2
 			}
-			cost = 100
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RAJ_richpal_ram={
+		name=RAJ_richpal_ram
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RAJ_richpal_ram
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	RAJ_syed_ahmed_el_edroos={
+		name=RAJ_syed_ahmed_el_edroos
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = RAJ_syed_ahmed_el_edroos
+			allowed = {
+				original_tag = RAJ
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -388,7 +417,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -411,7 +440,7 @@ characters={
 			traits = {
 				army_chief_morale_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -437,7 +466,7 @@ characters={
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -460,7 +489,7 @@ characters={
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -483,7 +512,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -506,7 +535,7 @@ characters={
 			traits = {
 				navy_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -532,7 +561,7 @@ characters={
 			traits = {
 				air_chief_safety_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -555,7 +584,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -578,7 +607,7 @@ characters={
 			traits = {
 				air_chief_night_operations_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -603,32 +632,9 @@ characters={
 				original_tag = RAJ
 			}
 			traits = {
-				army_infantry_1
+				army_infantry_3
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-
-		RAJ_vurucu_tosun={
-		name=RAJ_vurucu_tosun
-		portraits={
-			army={
-				small="GFX_idea_RAJ_ram_singh_thakur" #small="GFX_idea_generic_army_arab_1"
-			}
-		}
-		advisor={
-			slot = high_command
-			ledger = army
-			allowed = {
-				original_tag = RAJ
-			}
-			traits = {
-				army_commando_1
-			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -652,7 +658,7 @@ characters={
 			traits = {
 				air_air_combat_training_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -676,7 +682,7 @@ characters={
 			traits = {
 				air_naval_strike_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -700,7 +706,7 @@ characters={
 			traits = {
 				air_close_air_support_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -724,7 +730,7 @@ characters={
 			traits = {
 				navy_anti_submarine_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -748,20 +754,7 @@ characters={
 				original_tag = RAJ
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = RAJ_indian_national_congress 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				
 			}
 			traits = {
 				democratic_reformer 
@@ -791,20 +784,7 @@ characters={
 				original_tag = RAJ
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = RAJ_all_india_forward_bloc 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits = {
 				communist_revolutionary 
@@ -837,20 +817,7 @@ characters={
 				original_tag = RAJ
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = RAJ_all_india_forward_bloc 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits = {
 				fascist_demagogue 

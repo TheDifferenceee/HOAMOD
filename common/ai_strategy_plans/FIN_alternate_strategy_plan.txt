@@ -1,2 +1,0 @@
-FIN_fascist_plan = {
-}

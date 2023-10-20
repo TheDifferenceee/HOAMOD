@@ -1,29 +1,26 @@
-technologies = {
+	technologies = {
 
 	fleet_in_being = {
-		doctrine_name = "TITLE_FLEET_IN_BEING"
-		
 		#Fleet in being is mainly focused on Battleships (and Battlecrusiers/Heavy cruisers) and ASW with carriers and submarines being used to a lesser extent. The fleet may not have to do anything at all to be useful - simply having a powerful fleet in a protected port forces your enemies to keep a fleet of their own nearby in order you fight you if you emerge
 		#Bonus org for BB/BC/CA
 		
 		
 		# EFFECT #############
 		battleship = {
-			max_organisation = 5			
+			max_organisation = 12			
 		}
 		battle_cruiser = {
-			max_organisation = 5			
+			max_organisation = 12			
 		}
 		heavy_cruiser = {
-			max_organisation = 5			
+			max_organisation = 12			
 		}
-		light_cruiser = {
-			surface_detection = 0.10
-		}
-		destroyer = {
-			surface_detection = 0.10
-		}
-		mines_planting_by_fleets_factor = 0.1
+		light_cruiser = {		
+			surface_detection = 0.10		
+		}		
+		destroyer = {		
+			surface_detection = 0.10		
+		}		
 		#####
 
 
@@ -44,10 +41,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		xp_research_type = navy
-		xp_unlock_cost = 0
-		doctrine = yes	
-		research_cost = 3
+
+		doctrine = no	
+		research_cost = 0.01
 		
 		categories = {
 			naval_doctrine
@@ -74,15 +70,14 @@ technologies = {
 	battlefleet_concentration = {
 		# EFFECT #############
 		battleship = {
-			max_organisation = 5
+			max_organisation = 12
 		}
 		battle_cruiser = {
-			max_organisation = 5
+			max_organisation = 12
 		}
 		heavy_cruiser = {
-			max_organisation = 5
+			max_organisation = 12
 		}
-		strike_force_movement_org_loss = -0.2
 		########
 
 		path = {
@@ -91,9 +86,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -145,9 +141,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -174,14 +171,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -197,11 +186,11 @@ technologies = {
 		
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 30
 			sub_detection = 0.1
 		}
 		light_cruiser = {
-			max_organisation = 5
+			max_organisation = 15
 			sub_detection = 0.2
 		}
 
@@ -214,9 +203,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -239,14 +229,6 @@ technologies = {
 				tag = ENG
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -261,14 +243,10 @@ technologies = {
 		
 		# EFFECT #############
 		battleship = {
-			max_organisation = 20
+			max_organisation = 25
 		}
 		
-		battle_cruiser = {
-			max_organisation = 20			
-		}
-
-		navy_capital_ship_defence_factor = 0.10
+		navy_capital_ship_defence_factor = 0.15
 		
 		########
 
@@ -278,9 +256,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -295,14 +274,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -327,9 +298,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -344,14 +316,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -366,25 +330,25 @@ technologies = {
 		
 		# EFFECT #############
 		battleship = {
-			max_organisation = 20
+			max_organisation = 25
 		}
 
 		battle_cruiser = {
-			max_organisation = 20
+			max_organisation = 25
 		}
 
 		heavy_cruiser = {
-			max_organisation = 20
+			max_organisation = 25
 		}
 
-		navy_anti_air_attack_factor = 0.10
-		navy_capital_ship_attack_factor = 0.1
-		mines_planting_by_fleets_factor = 0.1
+		navy_anti_air_attack_factor = 0.20
+		navy_capital_ship_attack_factor = 0.15
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -407,14 +371,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -428,7 +384,7 @@ technologies = {
 		
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 15
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.05
@@ -440,9 +396,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -485,7 +442,7 @@ technologies = {
 		
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 15
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.1
@@ -497,9 +454,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -528,14 +486,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -549,9 +499,9 @@ technologies = {
 		#Small carriers/converted merchant ships sail with convoys for increased defense against subs and raiders
 
 		# EFFECT #############
-		carrier = {
-			sub_detection = 0.25
-		}
+		carrier = {		
+			sub_detection = 0.25		
+		}		
 		convoy_escort_efficiency = 0.15
 		####
 		
@@ -561,9 +511,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -592,14 +543,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -614,16 +557,16 @@ technologies = {
 		
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 25
 			sub_detection = 0.1
 		}
 		light_cruiser = {
-			max_organisation = 10
+			max_organisation = 15
 			sub_detection = 0.15
 		}
-		carrier = {
-			sub_detection = 0.25
-		}
+		carrier = {		
+			sub_detection = 0.25		
+		}		
 		convoy_escort_efficiency = 0.10
 		#####
 
@@ -633,9 +576,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -664,14 +608,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -686,10 +622,10 @@ technologies = {
 				
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
+			max_organisation = 8
 			surface_detection = 0.05
 		}
-		naval_torpedo_reveal_chance_factor = -0.05
+		naval_torpedo_reveal_chance_factor = -0.03
 		#######
 
 		path = {
@@ -698,9 +634,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -729,7 +666,7 @@ technologies = {
 
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
+			max_organisation = 8
 			surface_detection = 0.1
 		}
 		#######
@@ -741,9 +678,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -759,14 +697,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -779,11 +709,11 @@ technologies = {
 		# Sub boost
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
-			surface_detection = 0.05
-			convoy_raiding_coordination = 0.05
+			max_organisation = 8
+			surface_detection = 0.04
+			convoy_raiding_coordination = 0.04
 		}
-		naval_torpedo_reveal_chance_factor = -0.10
+		naval_torpedo_reveal_chance_factor = -0.08
 		#######				
 
 		path = {
@@ -792,9 +722,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -810,14 +741,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -830,16 +753,17 @@ technologies = {
 		# Sub boost
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
+			max_organisation = 8
 			surface_detection = 0.05
 			convoy_raiding_coordination = 0.1
 		}
 		#######
 	
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -855,14 +779,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -872,8 +788,6 @@ technologies = {
 	}
 	
 	trade_interdiction = {
-		doctrine_name = "TITLE_TRADE_INTERDICTION"
-		
 		# This tree is focused on sinking convoys, and boosting Subs and all types of Cruiser. It has some boosts for CVs and Battleships, but the CVs should be a bit worse and the BBs a lot worse than Fleet in being's.
 
 		xp_research_type = navy
@@ -914,10 +828,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		xp_research_type = navy
-		xp_unlock_cost = 0
-		doctrine = yes	
-		research_cost = 3
+
+		doctrine = no	
+		research_cost = 0.01 
 		
 		categories = {
 			naval_doctrine
@@ -959,11 +872,11 @@ technologies = {
 		# same as convoy interdiction
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
+			max_organisation = 15
 			surface_detection = 0.05
 			convoy_raiding_coordination = 0.05
 		}
-		naval_torpedo_reveal_chance_factor = -0.10
+		naval_torpedo_reveal_chance_factor = -0.15
 		#######
 		
 		path = {
@@ -972,9 +885,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1019,7 +933,7 @@ technologies = {
 			surface_detection = 0.1
 			convoy_raiding_coordination = 0.05
 		}
-		navy_submarine_attack_factor = 0.1
+		navy_submarine_attack_factor = 0.02
 		#######
 		
 		path = {
@@ -1028,9 +942,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1059,14 +974,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -1085,7 +992,6 @@ technologies = {
 			surface_detection = 0.10
 		}
 
-		naval_torpedo_reveal_chance_factor = -0.10
 		#######
 		
 		path = {
@@ -1094,9 +1000,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1125,14 +1032,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -1149,7 +1048,6 @@ technologies = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.2
 			surface_detection = 0.1
-			max_strength = 0.2
 		}
 		
 		path = {
@@ -1158,9 +1056,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1189,14 +1088,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -1215,27 +1106,28 @@ technologies = {
 		}
 
 		light_cruiser = {
-			max_organisation = 10
+			max_organisation = 5
 			convoy_raiding_coordination = 0.35
 			surface_detection = 0.15
 		}
 
 		heavy_cruiser = {
-			max_organisation = 10
+			max_organisation = 5
 			convoy_raiding_coordination = 0.35
 			surface_detection = 0.15
 		}
 
 		battle_cruiser = {
-			max_organisation = 10
+			max_organisation = 5
 			convoy_raiding_coordination = 0.35
 			surface_detection = 0.15
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1264,14 +1156,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -1286,13 +1170,15 @@ technologies = {
 		
 		# EFFECT ##############		
 		light_cruiser = {
-			max_organisation = 10
+			max_organisation = 8
+			surface_visibility = -0.05
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.10
 		}
 
 		heavy_cruiser = {
-			max_organisation = 10
+			max_organisation = 8
+			surface_visibility = -0.05
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.10
 		}
@@ -1305,9 +1191,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1336,18 +1223,19 @@ technologies = {
 
 		# EFFECT ##############		
 		battle_cruiser = {
-			max_organisation = 20
-			convoy_raiding_coordination = 0.5
-			surface_detection = 0.25
+			max_organisation = 15
+			surface_visibility = -0.05
+			convoy_raiding_coordination = 0.15
+			surface_detection = 0.15
 		}
 
 		battleship = {
-			max_organisation = 20
+			max_organisation = 15
 			convoy_raiding_coordination = 0.5
 			surface_detection = 0.25
 		}
 
-		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.2
 		#######
 		
 		path = {
@@ -1356,9 +1244,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1373,14 +1262,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -1403,7 +1284,6 @@ technologies = {
 		heavy_cruiser = {
 			max_organisation = 10
 		}		
-		strike_force_movement_org_loss = -0.2
 		########
 		
 		path = {
@@ -1412,9 +1292,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1429,14 +1310,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -1450,12 +1323,9 @@ technologies = {
 		#same as floating_fortress
 		# EFFECT #############
 		battleship = {
-			max_organisation = 20
+			max_organisation = 15
 		}
-		battle_cruiser = {
-			max_organisation = 20			
-		}
-		navy_capital_ship_defence_factor = 0.10
+		navy_capital_ship_defence_factor = 0.08
 		########
 
 		path = {
@@ -1464,9 +1334,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1481,14 +1352,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -1508,9 +1371,10 @@ technologies = {
 		########
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1525,14 +1389,6 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -1547,10 +1403,10 @@ technologies = {
 
 		# EFFECT #############
 		carrier = {
-			max_organisation = 20
+			max_organisation = 15
 		}
 		modifier = {
-			naval_strike_targetting_factor = 0.1
+			navy_carrier_air_targetting_factor = 0.05
 		}
 		########
 		
@@ -1560,9 +1416,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1598,7 +1455,7 @@ technologies = {
 		#same as convoy_sailing
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 10
 			sub_detection = 0.05
 		}
 		convoy_escort_efficiency = 0.05
@@ -1610,9 +1467,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1653,9 +1511,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1684,10 +1543,10 @@ technologies = {
 
 		# EFFECT #############
 		carrier = {
-			max_organisation = 10			
+			max_organisation = 5			
 		}
 		modifier = {
-			naval_strike_targetting_factor = 0.1
+			navy_carrier_air_targetting_factor = 0.05
 		}
 		########
 
@@ -1697,9 +1556,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1724,16 +1584,15 @@ technologies = {
 	}
 	
 	base_strike = {
-		doctrine_name = "TITLE_BASE_STRIKE"
 		#This tree is primarily focused on Carriers. It should have the best Carriers, Battleships that are better than Trade interdiction but worse than Fleet in being, and has the same Sub tree as FiB. Convoy defense is better than TI but worse than FiB
 		
 		xp_research_type = navy
 		
 		# EFFECT ##############
 		carrier = {
-			max_organisation = 20
+			max_organisation = 25
 		}
-		port_strike = 0.5
+		port_strike = 0.35
 		#####
 		
 		xor = { fleet_in_being trade_interdiction } 
@@ -1753,10 +1612,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		xp_research_type = navy
-		xp_unlock_cost = 0
-		doctrine = yes	
-		research_cost = 3
+
+		doctrine = no	
+		research_cost = 0.01 
 		
 		categories = {
 			naval_doctrine
@@ -1798,12 +1656,12 @@ technologies = {
 		#The idea that the carrier is the primary naval weapon and that other ships, even the BB, exist to support them
 		# EFFECT ##############
 		carrier = {
-			max_organisation = 20
+			max_organisation = 25
 		}
-		sortie_efficiency = 0.1
+		sortie_efficiency = 0.2
 
 		modifier = {
-			naval_strike_targetting_factor = 0.1
+			navy_carrier_air_targetting_factor = 0.075
 		}
 		#############
 
@@ -1813,9 +1671,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1866,13 +1725,13 @@ technologies = {
 		#Task forces are based around carrier flagship 
 		# EFFECT ##############
 		carrier = {
-			max_organisation = 20
+			max_organisation = 25
 		}
 		light_cruiser = {
-			max_organisation = 20
+			max_organisation = 25
 		}
 		modifier = {
-			naval_strike_targetting_factor = 0.1
+			navy_carrier_air_targetting_factor = 0.075
 		}
 		##########
 
@@ -1882,9 +1741,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1919,10 +1779,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
 				has_navy_experience > 120
 				factor = 2
 			}
@@ -1941,9 +1797,9 @@ technologies = {
 		#same as floating_airfield
 		# EFFECT #############
 		carrier = {
-			max_organisation = 20
+			max_organisation = 25
 		}
-		sortie_efficiency = 0.2
+		sortie_efficiency = 0.25
 		########
 
 		path = {
@@ -1952,9 +1808,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -1992,14 +1849,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 4
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -2013,13 +1862,13 @@ technologies = {
 		#CAGs are larger and more effort is made to have all planes arrive at the target at the same time, even when launched from multiple CVs
 		# EFFECT #############
 		carrier = {
-			max_organisation = 20			
+			max_organisation = 25			
 		}
-		carrier_capacity_penalty_reduction = -0.2
-		sortie_efficiency = 0.2
+		carrier_capacity_penalty_reduction = -0.25
+		sortie_efficiency = 0.25
 
 		modifier = {
-			naval_strike_targetting_factor = 0.2
+			navy_carrier_air_targetting_factor = 0.075
 		}
 		########
 		
@@ -2029,9 +1878,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2060,14 +1910,6 @@ technologies = {
 				factor = 2.5
 			}
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-			modifier = {
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
@@ -2092,12 +1934,9 @@ technologies = {
 		#same as floating_fortress
 		# EFFECT #############
 		battleship = {
-			max_organisation = 20
+			max_organisation = 25
 		}
-		battle_cruiser = {
-			max_organisation = 20			
-		}
-		navy_capital_ship_defence_factor = 0.10
+		navy_capital_ship_defence_factor = 0.1
 		########
 
 		path = {
@@ -2106,9 +1945,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2137,14 +1977,6 @@ technologies = {
 				}
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -2158,20 +1990,21 @@ technologies = {
 		
 		# EFFECT ##############
 		carrier = {
-			max_organisation = 20
+			max_organisation = 25
 		}
 		light_cruiser = {
-			max_organisation = 20
+			max_organisation = 25
 		}
 
-		navy_carrier_air_agility_factor = 0.10
+		navy_carrier_air_agility_factor = 0.05
 
 		###########
-		
+
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2206,14 +2039,6 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
-			modifier = {
 				has_navy_experience > 120
 				factor = 4
 			}
@@ -2232,10 +2057,10 @@ technologies = {
 		# same as submarine_operations
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
+			max_organisation = 5
 			surface_detection = 0.05
 		}
-		naval_torpedo_reveal_chance_factor = -0.05
+		naval_torpedo_reveal_chance_factor = -0.03
 		#######
 
 		path = {
@@ -2244,9 +2069,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2285,7 +2111,7 @@ technologies = {
 		# same as undersea_blockade
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
+			max_organisation = 5
 			surface_detection = 0.1
 		}
 		#######
@@ -2296,9 +2122,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2324,14 +2151,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -2345,11 +2164,11 @@ technologies = {
 		# same as convoy_interdiction
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
+			max_organisation = 5
 			surface_detection = 0.05
 			convoy_raiding_coordination = 0.05
 		}
-		naval_torpedo_reveal_chance_factor = -0.10
+		naval_torpedo_reveal_chance_factor = -0.08
 		#######
 
 		path = {
@@ -2358,9 +2177,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2386,14 +2206,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -2406,16 +2218,17 @@ technologies = {
 		# same as submarine_offensive
 		# EFFECT ##############
 		submarine = {
-			max_organisation = 10
+			max_organisation = 5
 			surface_detection = 0.05
-			convoy_raiding_coordination = 0.10
+			convoy_raiding_coordination = 0.08
 		}
 		#######
 
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2441,14 +2254,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -2462,10 +2267,10 @@ technologies = {
 		#same as convoy_escorts
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
-			sub_detection = 0.05
+			max_organisation = 20
+			sub_detection = 0.10
 		}
-		convoy_escort_efficiency = 0.1
+		convoy_escort_efficiency = 0.2
 		#####
 		
 		path = {
@@ -2474,9 +2279,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2517,11 +2323,11 @@ technologies = {
 		
 		# EFFECT ##############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 25
 			sub_detection = 0.05
 		}
 		light_cruiser = {
-			max_organisation = 5
+			max_organisation = 15
 			sub_detection = 0.1
 		}
 		
@@ -2534,9 +2340,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2563,14 +2370,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -2585,10 +2384,10 @@ technologies = {
 		#same as convoy_sailing
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 20
 			sub_detection = 0.05
 		}
-		convoy_escort_efficiency = 0.05
+		convoy_escort_efficiency = 0.10
 		#####
 		
 		path = {
@@ -2597,9 +2396,10 @@ technologies = {
 		}
 		
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -2626,14 +2426,6 @@ technologies = {
 				has_navy_experience > 120
 				factor = 2
 			}
-			modifier = {
-				not = { ai_air_doctrine_tier_1_trigger = yes }
-				factor = 0.5
-			}
-			modifier = {
-				not = { ai_air_doctrine_tier_2_trigger = yes }
-				factor = 0.75
-			}
 		}
 		
 		ai_research_weights = {
@@ -2648,23 +2440,24 @@ technologies = {
 		#same as integrated_convoy_defence
 		# EFFECT #############
 		destroyer = {
-			max_organisation = 5
+			max_organisation = 25
 			sub_detection = 0.10
 		}
 		light_cruiser = {
-			max_organisation = 5
+			max_organisation = 20
 			sub_detection = 0.15
 		}
-		carrier = {
-			sub_detection = 0.25
-		}
+		carrier = {		
+			sub_detection = 0.35		
+		}		
 		convoy_escort_efficiency = 0.1
 		#####
 	
 		xp_research_type = navy
-		xp_unlock_cost = 100
-		doctrine = yes	
-		research_cost = 3
+		xp_boost_cost = 75
+		xp_research_bonus = 1.00
+		doctrine = no	
+		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine

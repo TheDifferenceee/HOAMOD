@@ -1,23 +1,12 @@
-
 state={
-	id=306
-	name="STATE_306" # Cundinamarca
-	manpower = 1
-	
-	state_category = city
-	
+id=306
+name="STATE_306"
+manpower = 1
+state_category = wasteland
 	history={
-		buildings = {
-			infrastructure = 1
-			air_base = 1
-		}
-		victory_points = {
-			10747 10
-		}
-
-	}
-
-	provinces={
-		2079 7936 7991 7993 10747 10790 10846 
-	}
+		##
+}
+provinces={
+	1981
+}
 }

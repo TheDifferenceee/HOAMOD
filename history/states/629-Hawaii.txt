@@ -1,30 +1,43 @@
-
 state={
 	id=629
 	name="STATE_629"
 	manpower = 368336
 	state_category = town
+		resources={
+		rubber = 10
+		steel = 10
+		oil= 10
+	}
+
 	history={
 		owner = USA
-		add_core_of = HAW
+		1936.1.1.13 = {
+			owner = SWE
+		}
+		#add_core_of = USA
 		buildings = {
-			infrastructure = 2
-			air_base = 5
+			infrastructure = 8
+			air_base = 8
 			4180 = {
-				naval_base = 10
+				naval_base = 15
+				coastal_bunker = 5
+			}
+			7195 = {
+				coastal_bunker = 3
+			}
+			7112 = {
+				coastal_bunker = 3
+			}
+			2537 = {
+				coastal_bunker = 3
 			}
 		}
 		victory_points = {
-			4180 15
-		 }
-		victory_points = {
-			12021 3
+			4180 200
 		 }
 	}
 
 	provinces={
-		4180 7112 7195 10048 12021 
+		4180 7112 7195 5512 2537 
 	}
-
-	local_supplies=0.0 
 }

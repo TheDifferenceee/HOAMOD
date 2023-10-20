@@ -26,13 +26,6 @@
 
 unit_medals = {
 	
-	### NOR
-
-	
-
-
-
-
 	### GER
 	
 	iron_cross_second_class = {
@@ -44,7 +37,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_org_factor = 0.1
+		
 		}
 		
 		#leader_modifier = {
@@ -66,7 +59,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			recon_factor = 0.15
+	
 		}
 		
 		one_time_effect = {
@@ -84,8 +77,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_fuel_consumption_factor = -0.075
-			supply_consumption_factor = -0.075
+			
 		}
 		
 		one_time_effect = {
@@ -103,7 +95,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			breakthrough_factor = 0.075
+		
 		}
 		
 		one_time_effect = {
@@ -123,8 +115,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.05
-			army_org_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -142,7 +133,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.1
+			
 		}
 		
 		one_time_effect = {
@@ -160,7 +151,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_attack_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -178,7 +169,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			experience_loss_factor = -0.2
+		
 		}
 		
 		one_time_effect = {
@@ -198,7 +189,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.15
+			
 		}
 		
 		one_time_effect = {
@@ -216,7 +207,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			max_dig_in_factor = 0.15
+		
 		}
 		
 		one_time_effect = {
@@ -233,7 +224,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_strength_factor = 0.075
+		
 		}
 		
 		one_time_effect = {
@@ -251,7 +242,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_org_factor = 0.1
+		
 		}
 		
 		one_time_effect = {
@@ -271,7 +262,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			recon_factor_while_entrenched = 0.25
+			
 		}
 		
 		one_time_effect = {
@@ -289,7 +280,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_strength_factor = 0.1
+		
 		}
 		
 		one_time_effect = {
@@ -307,7 +298,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_defence_factor = 0.075
+		
 		}
 		
 		one_time_effect = {
@@ -325,7 +316,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.15
+			
 		}
 		
 		one_time_effect = {
@@ -345,8 +336,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			max_dig_in_factor = 0.1
-			recon_factor_while_entrenched = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -364,7 +354,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_org_factor = 0.075
+		
 		}
 		
 		one_time_effect = {
@@ -382,7 +372,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_fuel_consumption_factor = -0.15
+		
 		}
 		
 		one_time_effect = {
@@ -400,8 +390,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.1
-			army_defence_factor = 0.05
+		
 		}
 		
 		one_time_effect = {
@@ -421,8 +410,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			equipment_capture_factor = 0.1
-			army_morale_factor = 0.075
+			
 		}
 		
 		one_time_effect = {
@@ -440,8 +428,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			breakthrough_factor = 0.05
-			army_strength_factor = 0.05
+		
 		}
 		
 		one_time_effect = {
@@ -459,8 +446,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.1
-			army_defence_factor = -0.05
+			
 		}
 		
 		one_time_effect = {
@@ -478,7 +464,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_attack_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -498,7 +484,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.075
+		
 		}
 		
 		one_time_effect = {
@@ -516,8 +502,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.05
-			army_strength_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -535,8 +520,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.1
-			army_attack_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -553,7 +537,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			breakthrough_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -571,12 +555,12 @@ unit_medals = {
 			NOT = { has_government = communism }
 		}
 		frame = 1
-		icon = "GFX_medal_icon_eth"
+		icon = "GFX_medal_icon_default" #TODO_TA replace with correct art 
 	
 		cost = @cost
 		
 		unit_modifiers = {
-			army_org_factor = 0.1
+		
 			
 		}
 		
@@ -593,12 +577,12 @@ unit_medals = {
 			has_government = communism
 		}
 		frame = 2
-		icon = "GFX_medal_icon_eth" 
+		icon = "GFX_medal_icon_communism" 
 	
 		cost = @cost
 		
 		unit_modifiers = {
-			army_attack_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -614,13 +598,13 @@ unit_medals = {
 			should_have_ethiopian_medals_trigger = yes 
 			has_government = neutrality
 		}
-		frame = 3
-		icon = "GFX_medal_icon_eth"  
+		frame = 2
+		icon = "GFX_medal_icon_default" #TODO_TA replace with correct art 
 	
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.15
+			
 		}
 		
 		one_time_effect = {
@@ -639,13 +623,13 @@ unit_medals = {
 				character = ETH_haile_selassie_gugsa
 			}
 		}
-		frame = 4
-		icon = "GFX_medal_icon_eth"  
+		frame = 2
+		icon = "GFX_medal_icon_default" #TODO_TA replace with correct art 
 	
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.15
+			
 		}
 		
 		one_time_effect = {
@@ -663,13 +647,13 @@ unit_medals = {
 				character = ETH_hailu_tekle_haymanot
 			}
 		}
-		frame = 5
-		icon = "GFX_medal_icon_eth"  
+		frame = 2
+		icon = "GFX_medal_icon_fascism" #TODO_TA replace with correct art 
 	
 		cost = @cost
 		
 		unit_modifiers = {
-			breakthrough_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -687,13 +671,13 @@ unit_medals = {
 				character = ETH_abba_jofir
 			}
 		}
-		frame = 6
-		icon = "GFX_medal_icon_eth" 
+		frame = 2
+		icon = "GFX_medal_icon_default" 
 	
 		cost = @cost
 		
 		unit_modifiers = {
-			recon_factor = 0.1
+		
 		}
 		
 		one_time_effect = {
@@ -717,7 +701,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.15
+			
 		}
 		
 		one_time_effect = {
@@ -731,13 +715,13 @@ unit_medals = {
 		available = { 
 			should_have_ethiopian_medals_trigger = yes
 		}
-		frame = 4
-		icon = "GFX_medal_icon_default"  
+		frame = 3
+		icon = "GFX_medal_icon_default" #TODO_TA replace with correct art 
 		
 		cost = @cost
 		
 		unit_modifiers = {
-			equipment_capture_factor = 0.15
+		
 		}
 		
 		one_time_effect = {
@@ -751,13 +735,13 @@ unit_medals = {
 		available = { 
 			should_have_ethiopian_medals_trigger = yes
 		}
-		frame = 3
-		icon = "GFX_medal_icon_default"  
+		frame = 4
+		icon = "GFX_medal_icon_default" #TODO_TA replace with correct art 
 	
 		cost = @cost
 		
 		unit_modifiers = {
-			experience_loss_factor = -0.25
+			
 		}
 		
 		one_time_effect = {
@@ -780,7 +764,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -801,7 +785,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.15
+			
 		}
 		
 		one_time_effect = {
@@ -822,8 +806,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_defence_factor = 0.05
-			recon_factor = 0.1
+		
 		}
 		
 		one_time_effect = {
@@ -844,7 +827,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			experience_loss_factor = -0.25
+		
 		}
 		
 		one_time_effect = {
@@ -867,8 +850,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.15
-			army_fuel_consumption_factor = -0.15
+			
 		}
 		
 		one_time_effect = {
@@ -889,8 +871,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_morale_factor = 0.1
-			army_defence_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -911,7 +892,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_org_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -932,7 +913,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_strength_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -955,7 +936,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_org_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -976,7 +957,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_attack_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -997,8 +978,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			armor_factor = 0.1
-			recon_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -1019,7 +999,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			breakthrough_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -1042,8 +1022,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_defence_factor = 0.05
-			max_dig_in_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -1064,8 +1043,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			supply_consumption_factor = -0.15
-			army_morale_factor = 0.1
+			
 		}
 		
 		one_time_effect = {
@@ -1086,7 +1064,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			army_attack_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -1107,8 +1085,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			experience_loss_factor = -0.2
-			army_morale_factor = 0.05
+			
 		}
 		
 		one_time_effect = {
@@ -1123,7 +1100,7 @@ unit_medals = {
 		
 		available = { 
 			tag = YUG
-			has_completed_focus = YUG_medal_for_extreme_bravery
+	
 		}
 		frame = 1
 		icon = "GFX_medal_icon_default"
@@ -1131,7 +1108,7 @@ unit_medals = {
 		cost = @cost
 		
 		unit_modifiers = {
-			max_dig_in = 5
+			
 		}
 		
 		one_time_effect = {
@@ -1139,25 +1116,5 @@ unit_medals = {
 		}
 		
 	}
-
-	SWE_medal_1 = {
-		
-		available = { 
-			tag = SWE
-		}
-		frame = 1
-		icon = "GFX_medal_icon_swe"
-		
-		cost = @cost
-		
-		unit_modifiers = {
-			supply_consumption_factor = -0.15
-			max_dig_in_factor = 0.05
-		}
-		
-		one_time_effect = {
-			add_divisional_commander_xp = 100
-		}
-		
-	}
+	
 }

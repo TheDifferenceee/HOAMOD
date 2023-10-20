@@ -137,55 +137,47 @@ characters={
 				small="GFX_idea_SAF_j_f_van_rensburg" #small="GFX_idea_generic_political_advisor_europe_4"
 			}
 		}
+	
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = SAF_j_f_van_rensburg
 			ledger = army
 			allowed = {
 				original_tag = SAF
 			}
+			research_bonus = {
+				land_doctrine = 0.1
+			}
 			traits = {
 				military_theorist
 			}
 		}
-
+	}
+		SAF_j_f_van_rensburg_hc={
+		name=SAF_j_f_van_rensburg_hc
+		portraits={
+			army={
+				small="GFX_idea_SAF_j_f_van_rensburg" #small="GFX_idea_generic_army_europe_2"
+			}
+			civilian={
+				small="GFX_idea_SAF_j_f_van_rensburg" #small="GFX_idea_generic_political_advisor_europe_4"
+			}
+		}
 		advisor={
-			slot = political_advisor
-			idea_token = SAF_j_f_van_rensburg_fascist
+			cost = 150
+			slot = high_command
+			idea_token = SAF_j_f_van_rensburg_hc
+			ledger = army
 			allowed = {
 				original_tag = SAF
 			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = SAF_support_the_afrikaner_broederbond 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
 			traits = {
-				fascist_demagogue 
-			}
-			do_effect = {
-				NOT = {
-					has_government = fascism 
-				}
-			}
-			ai_will_do = {
-				factor = 0.000
+				army_infantry_2
 			}
 		}
 	}
-
+	
 	SAF_s_p_le_roux={
 		name=SAF_s_p_le_roux
 		portraits={
@@ -194,12 +186,15 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = SAF_s_p_le_roux
 			ledger = air
 			allowed = {
 				original_tag = SAF
+			}
+			research_bonus = {
+				air_doctrine = 0.1
 			}
 			traits = {
 				air_warfare_theorist
@@ -226,7 +221,7 @@ characters={
 			traits = {
 				army_chief_maneuver_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -249,7 +244,7 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -275,7 +270,7 @@ characters={
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -298,7 +293,7 @@ characters={
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -324,7 +319,29 @@ characters={
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	SAF_adolf_malan_hc={
+		name=SAF_adolf_malan_hc
+		portraits={
+			army={
+				small="GFX_idea_SAF_adolf_malan" #small="GFX_idea_generic_air_europe_3"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = SAF_adolf_malan_hc
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -347,7 +364,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -374,7 +391,30 @@ characters={
 			traits = {
 				army_regrouping_2
 			}
-			cost = 100
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	SAF_evered_poole={
+		name=SAF_evered_poole
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SAF_evered_poole
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_commando_2
+			}
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -398,7 +438,7 @@ characters={
 			traits = {
 				army_armored_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -422,7 +462,7 @@ characters={
 			traits = {
 				air_naval_strike_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -446,7 +486,7 @@ characters={
 			traits = {
 				navy_screen_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -474,20 +514,7 @@ characters={
 				original_tag = SAF
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = SAF_support_the_policy_of_appeasement 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits = {
 				democratic_reformer 
@@ -517,20 +544,7 @@ characters={
 				original_tag = SAF
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = SAF_empower_the_workers 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits = {
 				communist_revolutionary 

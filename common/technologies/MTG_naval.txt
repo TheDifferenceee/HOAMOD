@@ -663,6 +663,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_airplane_launcher_2
+			
 		}
 		on_research_complete = {
 			custom_effect_tooltip = airplane_launcher_advice_tt
@@ -721,7 +722,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 0.5
 
-		start_year = 1922
+		start_year = 1936
 
 		folder = {
 			name = mtgnavalfolder
@@ -873,8 +874,9 @@ technologies = {
 
 		enable_equipments = {
 			ship_hull_super_heavy_1
+			
 		}
-
+		
 		enable_equipment_modules = {
 			ship_armor_shbb
 		}
@@ -898,6 +900,70 @@ technologies = {
 			bc_tech
 		}
 	}
+
+	ship_hull_super_heavy_japtech = {
+
+		enable_equipments = {
+			ship_hull_super_heavy_jap
+			
+		}
+		allow {
+			always = no
+		}
+		
+		enable_equipment_modules = {
+			ship_armor_shbb
+		}
+
+		research_cost = 1.5
+
+		start_year = 1936
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 25
+				tag = JAP
+			}
+		}
+
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	ship_hull_heavy_bismarcktech = {
+
+		enable_equipments = {
+			ship_hull_heavy_bismarck
+			
+			
+			
+			
+		}
+		allow {
+			always = no
+		}
+		
+
+		research_cost = 1.5
+
+		start_year = 1940
+
+		ai_will_do = {
+			factor = 1
+
+		}
+
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	
 
 	improved_ship_hull_heavy = {
 
@@ -1040,8 +1106,8 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = heavy_armor_advice_tt
 		}
+		start_year = 1939
 
-		start_year = 1940
 		xp_research_type = navy
 		xp_boost_cost = 50
 		xp_research_bonus = 1.25

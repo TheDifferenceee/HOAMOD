@@ -7,17 +7,16 @@ country_event = {
 	picture = GFX_report_event_generic_battle	
 
 	trigger = {
-		tag = SWI
+		tag = YUG
+		NOT = { has_start_date > 1936.1.1.12 }
 		JAP = {
 		   #has_war_with = USA
-		   surrender_progress > 0.95
+		   surrender_progress > 0.90
 		}
 		not = { has_global_flag = JAP_peacedeal }
 	}
 	
-	mean_time_to_happen = { days = 1 }
-
-	fire_only_once = yes
+	mean_time_to_happen = { days = 5 }
 
 	immediate = {
 		set_global_flag = JAP_peacedeal
@@ -25,10 +24,6 @@ country_event = {
 	
 	option = {
 		name = japan_peace_a
-		USA = {
-	puppet = JAP 
-		}
-
 		JAP = {			
 			white_peace = USA
 			white_peace = ENG
@@ -42,128 +37,60 @@ country_event = {
 			white_peace = GRE
 		}
 		
-
+		USA = {
+		transfer_state = 282
+		transfer_state = 532
+		transfer_state = 535
+		transfer_state = 533
+		transfer_state = 534
+		transfer_state = 536
+		transfer_state = 555
+		transfer_state = 524
+		transfer_state = 526
+		transfer_state = 645
+		transfer_state = 648
+		transfer_state = 646
+		}
 			
 		SOV = {
-		transfer_state = 761 
-			transfer_state = 714
-		transfer_state = 717
-		transfer_state = 328
-		transfer_state = 715				
-		transfer_state = 716
 		transfer_state = 537
-		transfer_state = 612
-		transfer_state = 611
-		transfer_state = 536
-		transfer_state = 533
-			transfer_state = 534
-
-	
-	}
+		}
 		
-
-		USA = {
-		annex_country = { target = JAP transfer_troops = yes }
+		RAJ = {
+		transfer_state = 724
+		transfer_state = 289
+		transfer_state = 751
+		transfer_state = 747
+		}
+		GER = { 
+		add_ideas = japan_cap_idea
+		}
+		ITA = { 
+		add_ideas = japan_cap_idea
+		}
+		SPR = { 
+		add_ideas = japan_cap_idea
+		}
+		ROM = { 
+		add_ideas = japan_cap_idea
+		}
+		HUN = { 
+		add_ideas = japan_cap_idea
+		}
+		BUL = { 
+		add_ideas = japan_cap_idea
+		}
+		AST = {
+		transfer_state = 647
+		transfer_state = 798
+		transfer_state = 648
+		transfer_state = 797
+		transfer_state = 633
+		}
+		ENG = {
+		annex_country = { target = JAP transfer_troops = no }
 		}
 	}
 }
-country_event = {
-	id = japan_peace.2
-	title =japan_peace.2.t
-	desc = japan_peace.2.d
-	picture = GFX_report_event_generic_battle	
 
-	trigger = {
-		tag = SWI
-		SOV = {
-		   #has_war_with = GER
-		   surrender_progress > 0.96  #es kaza scripted yerine peace deal yersek oyun patlar
-		}
-		not = { has_global_flag = SOV_peacedeal }
-	}
-	
-	mean_time_to_happen = { days = 1 }
-
-	fire_only_once = yes
-
-	immediate = {
-		set_global_flag = SOV_peacedeal
-	}
-	
-	option = {
-		name = sov_peace_a
-
-
-		SOV = {			
-			white_peace = GER
-			white_peace = ITA
-			white_peace = ROM
-			white_peace = HUN
-			white_peace = BUL
-			white_peace = SPR
-			white_peace = JAP
-			white_peace = AOI
-
-		}
-		GER = {
-	puppet = SOV 
-		}		
-		SOV = {
-	release = UKR 
-	release = AZR 
-	release = KAZ 
-		}
-		GER = {
-	puppet = UKR 
-	puppet = AZR
-	puppet = KAZ
-		}			
-		ROM = {
-		transfer_state = 766 
-			transfer_state = 78
-		transfer_state = 80
-		transfer_state = 192
-		transfer_state = 834				
-		transfer_state = 198
-		transfer_state = 197
-	
-	}
-		GER = {
-		transfer_state = 89 
-		transfer_state = 91 
-		transfer_state = 93 
-		transfer_state = 94 
-		transfer_state = 97 
-		transfer_state = 95 
-		transfer_state = 784 
-		transfer_state = 96 
-		transfer_state = 11 
-		transfer_state = 814 
-		transfer_state = 189 
-		transfer_state = 815 
-		transfer_state = 190 
-		transfer_state = 809 
-		transfer_state = 810 
-		transfer_state = 808 
-		transfer_state = 12 
-		transfer_state = 13 
-		transfer_state = 191 
-		transfer_state = 812 
-		transfer_state = 813 
-		transfer_state = 811 
-		transfer_state = 209 
-		transfer_state = 208 
-		transfer_state = 210 
-		transfer_state = 207 
-		transfer_state = 206 
-		transfer_state = 204 
-		transfer_state = 194 
-		transfer_state = 201 
-			transfer_state = 199 							
-
-	}		
-
-
-	}
-}
 

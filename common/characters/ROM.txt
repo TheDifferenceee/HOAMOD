@@ -27,6 +27,29 @@ characters={
 		}
 	}
 
+	ROM_albert_speer={ 
+		name=ROM_albert_speer
+		portraits={
+			army={
+				small="GFX_idea_speer"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = speer
+			allowed = {
+				original_tag = ROM
+			}
+			available = { 
+				date > 1941.6.1
+				GER = { has_idea = tot_economic_mobilisation }
+			}
+			traits = {
+				total_war_organizer 
+			}
+		}		
+	}
+
 	ROM_king_michael={
 		name=ROM_king_michael
 		portraits={
@@ -111,13 +134,13 @@ characters={
 				small="GFX_idea_ROM_petre_dumitrescu"
 			}
 		}
-		field_marshal={
-			traits={ logistics_wizard }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+		field_marshal={ #13/13
+			traits={ inflexible_strategist fast_planner infantry_leader cavalry_leader logistics_wizard unyielding_defender  }
+			skill=6
+			attack_skill=3
+			defense_skill=8
+			planning_skill=3
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -130,32 +153,13 @@ characters={
 				small="GFX_idea_ROM_ioan_mihail_racovita"
 			}
 		}
-		corps_commander={
-			traits={ hill_fighter infantry_leader }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
-
-	ROM_gheorghe_hagi={
-		name=ROM_gheorghe_hagi
-		portraits={
-			army={
-				large="GFX_ROM_hagi"
-				small="GFX_idea_ROM_ioan_mihail_racovita"
-			}
-		}
-		corps_commander={
-		    traits={ trait_TUR_kemalist_champion }
-			skill=1
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+		corps_commander={ #17/17
+			traits={ infantry_leader infantry_expert trait_engineer naval_invader trait_mountaineer hill_fighter urban_assault_specialist  }
+			skill=6
+			attack_skill=7
+			defense_skill=4
+			planning_skill=8
+			logistics_skill=8
 			legacy_id=-1
 		}
 	}
@@ -171,15 +175,38 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ROM_gheorghe_potopeanu
 			ledger = army
 			allowed = {
 				original_tag = ROM
 			}
+			research_bonus = {
+				land_doctrine = 0.1
+			}
 			traits = {
 				military_theorist
+			}
+		}
+	}
+	ROM_gheorghe_potopeanu_highcommand={
+		name=ROM_gheorghe_potopeanu
+		portraits={
+			army={
+				small="GFX_idea_ROM_gheorghe_potopeanu"
+			}
+		}
+		advisor= {
+			cost = 150
+			slot = high_command
+			idea_token = ROM_gheorghe_potopeanu
+			ledger = army
+			allowed = {
+				original_tag = ROM
+			}
+			traits = {
+				army_regrouping_2
 			}
 		}
 	}
@@ -192,14 +219,16 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ROM_emanoil_ionescu
 			ledger = air
 			allowed = {
 				original_tag = ROM
 			}
-			
+			research_bonus = {
+				air_doctrine = 0.1
+			}
 			traits = {
 				air_warfare_theorist
 			}
@@ -226,19 +255,19 @@ characters={
 			traits = {
 				army_chief_defensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 
-		corps_commander={
-			traits={ brilliant_strategist infantry_leader trickster trait_engineer }
-			skill=5
-			attack_skill=5
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+		corps_commander={ #17/17
+			traits={ bearer_of_artillery infantry_leader infantry_expert urban_assault_specialist trait_engineer ranger organizer expert_improviser }
+			skill=6
+			attack_skill=6
+			defense_skill=5
+			planning_skill=7
+			logistics_skill=10
 			legacy_id=-1
 		}
 		
@@ -264,19 +293,19 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		
-		field_marshal={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
+		field_marshal={ #13/13
+			traits={ brilliant_strategist infantry_leader infantry_expert organizer thorough_planner aggressive_assaulter   }
+			skill=6
+			attack_skill=6
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -300,7 +329,7 @@ characters={
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -324,7 +353,7 @@ characters={
 			traits = {
 				navy_chief_maneuver_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -360,7 +389,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -383,7 +412,7 @@ characters={
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -411,19 +440,19 @@ characters={
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 
-		corps_commander={
-			traits= { infantry_leader ranger }
-			skill=3
-			attack_skill=3
-			defense_skill=2
+		corps_commander={ #17/17
+			traits={  panzer_leader hill_fighter ranger panzer_expert camouflage_expert expert_improviser }
+			skill=6
+			attack_skill=5
+			defense_skill=6
 			planning_skill=3
-			logistics_skill=3
+			logistics_skill=5
 			legacy_id=-1
 		}
 	}
@@ -445,7 +474,7 @@ characters={
 			traits = {
 				army_commando_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -467,9 +496,9 @@ characters={
 				original_tag = ROM
 			}
 			traits = {
-				air_strategic_bombing_2
+				army_armored_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -493,7 +522,7 @@ characters={
 			traits = {
 				air_airborne_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -545,20 +574,7 @@ characters={
 			slot = political_advisor
 			idea_token = ROM_gheorghe_gheorghiu_dej
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = ROM_appoint_soviet_friendly_government 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			allowed = {
 				original_tag = ROM

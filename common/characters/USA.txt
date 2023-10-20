@@ -60,33 +60,7 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus  = USA_suspend_the_presecution 
-					NOT  = {
-						focus_progress  = {
-							focus  = USA_neutrality_act 
-							progress > 0.000
-						}
-					}
-					NOT  = {
-						focus_progress  = {
-							focus  = USA_limited_intervention 
-							progress > 0.000
-						}
-					}
-					NOT  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-					NOT = {
-						has_country_leader = {
-							ruling_only = yes
-							character = USA_earl_browder
-						}
-					}
-				}
+				always = no
 			}
 			traits  = {
 				communist_revolutionary 
@@ -94,31 +68,6 @@ characters={
 			do_effect  = {
 				NOT  = {
 					has_government  = communism 
-				}
-			}
-			ai_will_do  = {
-				factor  = 10.000
-				modifier  = {
-					is_historical_focus_on  = yes 
-					has_game_rule  = {
-						rule  = USA_ai_behavior 
-						option  = default 
-					}
-					factor  = 0.000
-				}
-				modifier  = {
-					is_historical_focus_on  = yes 
-					NOT  = {
-						has_dlc = "Man the Guns"
-					}
-					factor  = 0.000
-				}
-				modifier  = {
-					NOT  = {
-						has_dlc = "Man the Guns"
-					}
-					has_idea_with_trait = fascist_demagogue
-					factor  = 0.000
 				}
 			}
 		}
@@ -148,21 +97,73 @@ characters={
 				allowed = {
 					original_tag = USA
 				}
-				
+				research_bonus = {
+				land_doctrine = 0.15
+			}
 				traits = {
 					mobile_warfare_expert
 				}
 		}
 
-		corps_commander={
-			traits={ trait_reckless trickster panzer_leader }
-			skill=5
-			attack_skill=7
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=0
+		corps_commander={ 
+				visible = { has_completed_focus = GDU_USA_torch   }
+	traits = {  trickster panzer_leader panzer_expert trait_reckless  urban_assault_specialist adaptable expert_improviser }
+	skill = 9
+	attack_skill = 9
+	defense_skill = 5
+	planning_skill = 6
+	logistics_skill = 8
 		}
+	}
+	
+	USA_wade_babcock={
+		name=USA_wade_babcock
+		advisor={
+			cost = 150
+			
+			slot = high_command
+			idea_token = wade_babcock
+			ledger = army
+				allowed = {
+					original_tag = USA
+				}
+				available = { 
+				date > 1941.6.1
+				GER = { has_idea = tot_economic_mobilisation }
+			}		
+				traits = {
+					USA_Special_Forces_High_Command
+				}
+		}
+
+		
+	}
+	USA_george_s_patton_highcommand={
+		name=USA_george_s_patton
+		portraits={
+			army={
+				large=GFX_portrait_USA_george_s_patton
+			}
+			army={
+				small="GFX_idea_george_patton"
+			}
+		}
+		advisor={
+			cost = 150
+			
+			slot = high_command
+			idea_token = george_s_patton_highcommand
+			ledger = army
+				allowed = {
+					original_tag = USA
+				}
+				
+				traits = {
+				 army_armored_2	
+				}
+		}
+
+		
 	}
 
 	USA_omar_bradley={
@@ -183,21 +184,23 @@ characters={
 			allowed = {
 				original_tag = USA
 			}
-			
+			research_bonus = {
+				land_doctrine = 0.15
+			}
 			traits = {
 				superior_firepower_expert
 			}
 		}
 
-		corps_commander={
-			traits={ infantry_leader trait_engineer ranger jungle_rat politically_connected }
-			skill=5
-			attack_skill=5
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=0
-		}
+		corps_commander={ 
+				visible = {  has_completed_focus = GDU_USA_torch   }
+	traits = {  trait_engineer fortress_buster fake_skilled_staffer trait_cautious brilliant_strategist ranger harsh_leader infantry_leader infantry_expert }
+	skill = 9
+	attack_skill = 8
+	defense_skill = 6
+	planning_skill = 6
+	logistics_skill = 8
+}
 	}
 
 	USA_dwight_d_eisenhower={
@@ -219,19 +222,19 @@ characters={
 				traits = {
 					army_chief_offensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
 		}
 		
 		field_marshal={
-			traits={ trickster infantry_leader organizer logistics_wizard offensive_doctrine }
-			skill=5
-			attack_skill=3
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=5
+			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine infantry_leader ranger }
+			skill=8
+			attack_skill=8
+			defense_skill=9
+			planning_skill=9
+			logistics_skill=9
 			legacy_id=602
 		}
 	}
@@ -244,14 +247,14 @@ characters={
 				small=GFX_portrait_USA_geoffrey_keyes_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
+		corps_commander={ #15/15
+			traits={ adaptable trait_engineer panzer_leader panzer_expert }
+			skill=5
+			attack_skill=1
+			defense_skill=3
+			planning_skill=8
 			logistics_skill=4
-			legacy_id=0
+			legacy_id=-1
 		}
 	}
 
@@ -263,14 +266,14 @@ characters={
 				small=GFX_portrait_USA_lucian_truscott_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader trait_engineer trait_mountaineer }
+		corps_commander={ #15/15
+			traits={ organizer infantry_leader infantry_expert skilled_staffer trait_engineer fortress_buster  }
 			skill=5
 			attack_skill=4
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=0
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=4
+			legacy_id=-1
 		}
 	}
 
@@ -294,20 +297,20 @@ characters={
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
 		}
 		
-		corps_commander={
-			traits={ infantry_leader naval_invader commando trickster hill_fighter }
-			skill=5
-			attack_skill=5
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=0
+		field_marshal={ #14.5/12
+			traits={ trait_reckless infantry_leader infantry_expert jungle_rat logistics_wizard thorough_planner  }
+			skill=6
+			attack_skill=6
+			defense_skill=6
+			planning_skill=8
+			logistics_skill=8
+			legacy_id=-1
 		}
 	}
 
@@ -338,19 +341,19 @@ characters={
 			traits = {
 				army_chief_morale_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		
 		field_marshal={
-			traits={ panzer_leader offensive_doctrine }
+			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine }
 			skill=4
 			attack_skill=4
 			defense_skill=3
 			planning_skill=4
-			logistics_skill=3
+			logistics_skill=2
 			legacy_id=57
 		}
 	}
@@ -372,25 +375,25 @@ characters={
 				original_tag = USA
 			}
 			available = {
-				has_completed_focus = USA_war_plans_division
+				
 			}
 			traits = {
 				army_chief_planning_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 
-		corps_commander={
-			traits={ infantry_leader trait_cautious }
-			skill=4
+		field_marshal={ #12/12
+			traits={ bearer_of_artillery brilliant_strategist panzer_leader offensive_doctrine panzer_expert aggressive_assaulter inspirational_leader  }
+			skill=5
 			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=0
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
 		}
 	}
 
@@ -403,12 +406,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader politically_connected }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
+			traits={ old_guard inflexible_strategist infantry_officer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -421,14 +424,14 @@ characters={
 				small=GFX_portrait_USA_leslie_mcnair_small
 			}
 		}
-		corps_commander={
-			traits={ }
-			skill=3
-			attack_skill=1
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=0
+		field_marshal={ #14/12
+			traits={ old_guard organizer panzer_expert panzer_leader logistics_wizard thorough_planner  }
+			skill=5
+			attack_skill=3
+			defense_skill=1
+			planning_skill=5
+			logistics_skill=7
+			legacy_id=-1
 		}
 	}
 
@@ -441,12 +444,11 @@ characters={
 			}
 		}
 		corps_commander={
-		    traits={ trait_TUR_kemalist_champion }
 			skill=1
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -460,7 +462,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
+			traits={ infantry_officer }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -478,14 +480,14 @@ characters={
 				small=GFX_portrait_USA_leonard_gerow_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
+		corps_commander={ #15/15
+			traits={  infantry_leader hill_fighter  infantry_expert expert_improviser  }
+			skill=5
+			attack_skill=3
+			defense_skill=6
+			planning_skill=3
 			logistics_skill=4
-			legacy_id=0
+			legacy_id=-1
 		}
 	}
 
@@ -497,14 +499,14 @@ characters={
 				small=GFX_portrait_USA_edward_brooks_small
 			}
 		}
-		corps_commander={
-			traits={  }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
+		corps_commander={ #15/15
+			traits={ adaptable trait_reckless cavalry_leader combined_arms_expert  trait_engineer  }
+			skill=5
+			attack_skill=1
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
 		}
 	}
 
@@ -517,7 +519,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={  }
+			traits={ old_guard harsh_leader }
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -535,14 +537,14 @@ characters={
 				small=GFX_portrait_USA_alexander_patch_small
 			}
 		}
-		corps_commander={
-			traits={ commando }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=0
+		corps_commander={ #15/15
+			traits={ fake_skilled_staffer_sov infantry_leader ambusher skirmisher guerilla_fighter organizer jungle_rat}
+			skill=6
+			attack_skill=8
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
 		}
 	}
 
@@ -554,14 +556,14 @@ characters={
 				small=GFX_portrait_USA_william_simpson_small
 			}
 		}
-		corps_commander={
-			traits={ }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
+		corps_commander={ #14/15
+			traits={ bearer_of_artillery organizer naval_invader infantry_leader ranger urban_assault_specialist infantry_expert }
+			skill=6
+			attack_skill=8
+			defense_skill=6
+			planning_skill=6
+			logistics_skill=10
+			legacy_id=-1
 		}
 	}
 
@@ -574,7 +576,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trickster }
+			traits={ career_officer trickster }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -604,20 +606,20 @@ characters={
 			traits = {
 				army_commando_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		
-		corps_commander={
-			traits={ panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=0
+		field_marshal={ #12/12
+			traits={ ranger panzer_expert panzer_leader urban_assault_specialist logistics_wizard  organizer expert_improviser guerilla_fighter }
+			skill=6
+			attack_skill=6
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=10
+			legacy_id=-1
 		}
 	}
 
@@ -646,14 +648,14 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		
 		corps_commander={
-			traits={   }
+			traits={ career_officer harsh_leader infantry_officer politically_connected }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -672,7 +674,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ }
+			traits={ infantry_officer }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -690,14 +692,14 @@ characters={
 				small=GFX_portrait_USA_maurice_rose_small
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader trait_reckless }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=0
+		corps_commander={ #16/15
+			traits={ brilliant_strategist trait_reckless panzer_expert panzer_leader hill_fighter  ranger urban_assault_specialist organizer }
+			skill=8
+			attack_skill=8
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=7
+			legacy_id=-1
 		}
 	}
 
@@ -717,7 +719,7 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			visible = { 
-				has_completed_focus = USA_intervention_in_asia 
+				always = no
 			}
 		}
 	}
@@ -734,29 +736,59 @@ characters={
 		}
 		advisor={
 			slot = navy_chief
-			idea_token = ernest_king
+			idea_token = ernest_king_1 
 			allowed = {
 				original_tag = USA
 			}
 			traits = {
-				navy_chief_reform_2
+				anglophobe
 			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
+			can_be_fired = no
+			cost = 0
+			visible = { always = no }
+		}
+		
+	}
+	ernest_king_2= {
+		name=ernest_king_2
+		portraits={
+			navy={
+				small="GFX_idea_ernest_king"
 			}
+			army={
+				large=GFX_portrait_USA_ernest_king
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = ernest_king_2
+			allowed = {
+				original_tag = USA
+			}
+			#visible = { always = yes }
+			cost = 150
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			
+			
 		}
 		
 		navy_leader={
-			traits={ navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
+			traits={ navy_career_officer  fleet_protector ironside ground_pounder big_guns_expert caustic_personality blockade_runner superior_tactician  }
 			skill=5
-			attack_skill=4
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=6
+			attack_skill= 10
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
 			legacy_id=0
 		}
+		
+		
 	}
+	
+		
+		
 
 	USA_chester_w_nimitz={
 		name=USA_chester_w_nimitz
@@ -777,20 +809,32 @@ characters={
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
+	}
+
+	USA_chester_w_nimitz_2 ={
+		name= USA_chester_w_nimitz_2
+		portraits={
+			army={
+				large=GFX_portrait_USA_chester_w_nimitz
+			}
+			army={
+				small="GFX_idea_chester_nimitz"
+			}
+		}
 		
 		navy_leader={
-			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
-			skill=5
-			attack_skill=3
-			defense_skill=3
-			maneuvering_skill=5
-			coordination_skill=5
-			legacy_id=0
+			visible = { has_completed_focus = Nimitz }
+			traits = { gunnery_expert battleship_adherent bold superior_tactician spotter ironside inshore_fighter navy_career_officer aviation_enthusiast air_controller blue_water_expert }
+			skill = 9
+			attack_skill = 7
+			defense_skill = 5
+			maneuvering_skill = 5
+			coordination_skill = 10
 		}
 	}
 
@@ -807,13 +851,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ bold aviation_enthusiast superior_tactician spotter }
-			skill=4
-			attack_skill=5
-			defense_skill=3
-			maneuvering_skill=3
-			coordination_skill=2
-			legacy_id=0
+			traits = { gunnery_expert battleship_adherent bold superior_tactician spotter ironside inshore_fighter navy_career_officer aviation_enthusiast air_controller }
+			skill = 7
+			attack_skill = 6
+			defense_skill = 4
+			maneuvering_skill = 5
+			coordination_skill = 6
 		}
 		advisor={
 			slot = navy_chief
@@ -824,7 +867,7 @@ characters={
 			traits = {
 				navy_chief_naval_aviation_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -851,20 +894,19 @@ characters={
 			traits = {
 				navy_carrier_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
 		
 		navy_leader={
-			traits={ gunnery_expert superior_tactician spotter }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=3
-			legacy_id=0
+			traits = { aviation_enthusiast fly_swatter spotter superior_tactician air_controller }
+	skill = 7
+	attack_skill = 5
+	defense_skill = 5
+	maneuvering_skill = 5
+	coordination_skill = 2
 		}
 	}
 
@@ -886,7 +928,7 @@ characters={
 			traits = {
 				navy_naval_air_defense_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -912,12 +954,12 @@ characters={
 		}
 		navy_leader={
 			traits={ cuts_corners blockade_runner spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=2
-			coordination_skill=2
-			legacy_id=0
+			traits = { gentlemanly superior_tactician fly_swatter air_controller blue_water_expert }
+	skill = 7
+	attack_skill = 6
+	defense_skill = 6
+	maneuvering_skill = 5
+	coordination_skill = 5
 		}
 	}
 
@@ -975,12 +1017,15 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = dewitt_clinton_ramsey
 			ledger = navy
 			allowed = {
 				original_tag = USA
+			}
+			research_bonus = {
+				army_doctrine = 0.1
 			}
 			traits = { naval_theorist }
 		}
@@ -1000,6 +1045,9 @@ characters={
 			ledger = navy
 			allowed = {
 				original_tag = USA
+			}
+			research_bonus = {
+				cat_base_strike = 0.15
 			}
 			traits = {
 				naval_aviation_pioneer
@@ -1022,6 +1070,9 @@ characters={
 			allowed = {
 				original_tag = USA
 			}
+			research_bonus = {
+				cat_strategic_destruction = 0.15
+			}
 			traits = {
 				victory_through_airpower
 			}
@@ -1036,12 +1087,15 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100	
+			cost = 150	
 			slot = theorist
 			idea_token = harold_mcclelland
 			ledger = air
 			allowed = {
 				original_tag = USA
+			}
+			research_bonus = {
+				air_doctrine = 0.1
 			}
 			traits = { air_warfare_theorist }
 		}
@@ -1055,7 +1109,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = robert_oppenheimer
 			ledger = army
@@ -1079,7 +1133,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = robert_goddard
 			ledger = air
@@ -1120,7 +1174,7 @@ characters={
 			traits = {
 				army_chief_drill_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1153,7 +1207,7 @@ characters={
 			traits = {
 				air_chief_reform_3
 			}
-			cost = 200
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1176,7 +1230,7 @@ characters={
 			traits = {
 				air_chief_night_operations_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1199,7 +1253,7 @@ characters={
 			traits = {
 				air_chief_safety_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1218,37 +1272,32 @@ characters={
 		}
 
 		advisor={
-			slot = high_command
+			slot = air_chief
 			idea_token = USA_charles_lindbergh
 			allowed = {
 				original_tag = USA
 			}
-			available = {
-				has_completed_focus = USA_send_lindbergh_to_germany
-			}
-			visible = {
-				has_dlc = "Man the Guns"
-			}
-			cost = 100.000
-			# TODO [AB] add support for equipment bonuses
+			cost = 150
+			###########NOT WORKING#################
 			#equipment_bonus = {
-			#	fighter_equipment = {
+			#	small_plane_airframe = {
 			#		instant = yes
-			#		fuel_consumption = -0.100
+			#		fuel_consumption = -0.2
 			#	}
-			#	heavy_fighter_equipment = {
+			#	medium_plane_fighter_airframe = {
 			#		instant = yes
-			#		fuel_consumption = -0.100
+			#		fuel_consumption = -0.2
 			#	}
 			#}
+
 			traits = {
 				air_pilot_training_3
 			}
-			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
 		}
+	     
 	}
 
 
@@ -1279,7 +1328,7 @@ characters={
 			traits = {
 				air_strategic_bombing_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1303,7 +1352,7 @@ characters={
 			traits = {
 				air_close_air_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1327,7 +1376,7 @@ characters={
 			traits = {
 				air_tactical_bombing_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1351,7 +1400,7 @@ characters={
 			traits = {
 				navy_amphibious_assault_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1432,7 +1481,7 @@ characters={
 			traits  = {
 				economist 
 			}
-			cost  = 0.000
+			cost  = 0
 			do_effect  = {
 			}
 			ai_will_do  = {
@@ -1442,6 +1491,34 @@ characters={
 		allowed_civil_war  = {
 			has_government  = communism 
 		}
+	}
+	USA_stonewall_campbell={
+		name=USA_stonewall_campbell
+		advisor={
+			slot = political_advisor
+			idea_token = stonewall_campbell
+			allowed  = {
+				original_tag  = USA
+			}
+			available  = {
+			
+				date > 1943.1.1
+				
+			}
+			visible  = {
+				
+			}
+			traits  = {
+				emergency_war_construction1
+			}
+			cost  = 50.0
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+	
 	}
 
 	USA_whittaker_chambers={
@@ -1497,12 +1574,7 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus  = USA_america_first 
-				}
+				
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
@@ -1510,7 +1582,7 @@ characters={
 			traits  = {
 				editor 
 			}
-			cost  = 50.000
+			cost = 50.0
 			do_effect  = {
 			}
 			ai_will_do  = {
@@ -1551,7 +1623,7 @@ characters={
 			traits  = {
 				captain_of_industry 
 			}
-			cost  = 50.000
+			cost = 150
 			do_effect  = {
 			}
 			ai_will_do  = {
@@ -1651,31 +1723,6 @@ characters={
 					has_government  = fascism 
 				}
 			}
-			ai_will_do  = {
-				factor  = 10.000
-				modifier  = {
-					is_historical_focus_on  = yes 
-					has_game_rule  = {
-						rule  = USA_ai_behavior 
-						option  = default 
-					}
-					factor  = 0.000
-				}
-				modifier  = {
-					is_historical_focus_on  = yes 
-					NOT  = {
-						has_dlc = "Man the Guns"
-					}
-					factor  = 0.000
-				}
-				modifier  = {
-					NOT  = {
-						has_dlc = "Man the Guns"
-					}
-					has_idea_with_trait = communist_revolutionary
-					factor  = 0.000
-				}
-			}
 		}
 	}
 
@@ -1712,7 +1759,7 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				has_completed_focus  = USA_empower_the_huac 
+				always = no
 			}
 			traits  = {
 				anti_communist_crusader 

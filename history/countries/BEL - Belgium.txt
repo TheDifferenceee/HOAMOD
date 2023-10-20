@@ -7,7 +7,7 @@ if = {
 	else = {
 		set_air_oob = "BEL_1936_air_legacy"
 		set_technology = {
-			early_fighter = 1
+			iw_small_airframe = 1
 		}
 	}
 }
@@ -28,6 +28,9 @@ set_technology = {
 	fuel_refining = 1
 	basic_train = 1
 }
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = JAP modifier = sanctions }
+add_opinion_modifier = { target = JAP modifier = minor_sanctions }
 
 recruit_character = BEL_hubert_pierlot
 recruit_character = BEL_joseph_jacquemotte
@@ -145,6 +148,10 @@ set_popularities = {
 		fascism = 8
 		communism = 5
 	}
+}
+
+add_ideas = {
+	GDU_neutrality
 }
 
 set_convoys = 80

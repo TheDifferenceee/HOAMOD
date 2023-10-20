@@ -17,13 +17,10 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = COR
 		add_core_of = FRA
 	}
 
 	provinces={
-		3838 9851 11804 
+		3838 5671 2674 
 	}
-
-	local_supplies=0.0 
 }

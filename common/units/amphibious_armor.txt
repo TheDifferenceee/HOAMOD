@@ -33,41 +33,49 @@ sub_units = {
 		default_morale = 0.3
 		training_time = 180
 		max_strength = 2
-		hard_attack = -0.3
 		weight = 1
 		supply_consumption = 0.2
 
 		forest = {
-			attack = -0.4
-			movement = -0.4
-		}
-		mountain = 	{
 			attack = -0.2
 		}
-		hills = 	{
-		    attack = -0.2
-		    movement = -0.2
-		}
-		plains = {
-			attack = -0.1
-			movement = -0.1
+		mountain = {
+			attack = -0.05
+			defence = -0.35
 		}
 		jungle = {
-			attack = -0.6
-			movement = -0.4
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.3
 		}
 		marsh = {
-			attack = 0.3
+			attack = -0.1
+		}
+		urban = {
+			attack = -0.2
+			defence = -0.05
 		}
 		river = {
 			attack = 0.4
+			movement = 0.2
 		}
 		amphibious = {
-			attack = 0.9
+			attack = 0.5
+		}
+		forest_africa = {
+			attack = -0.2
+		}
+		mountain_africa = {
+			attack = -0.05
+			defence = -0.35
+		}
+		jungle_africa = {
+			attack = -0.3
+		}
+		marsh_africa = {
+			attack = -0.1
+		}
+		urban_africa = {
+			attack = -0.2
+			defence = -0.05
 		}
 	}
 
@@ -109,32 +117,62 @@ sub_units = {
 		supply_consumption = 0.2
 
 		forest = {
-		    attack = -0.2
-			movement = -0.4
+		    attack = -0.075
+			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.1
+		    attack = -0.6
+			defence = -0.35
+			movement = -0.5
 		}
-		plains = {
-			attack = -0.1
-			movement = -0.1
-		}
-		jungle = {
+		gibraltar = 	{
 		    attack = -0.3
-			movement = -0.4
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
+			defence = -0.15
+			movement = -0.5
+		}		
+		jungle = {
+		    attack = -0.1
+			defence = -0.05 
+			movement = -0.2
 		}
 		marsh = {
-			attack = 0.2
+		    attack = -0.1 
+			movement = -0.1
 		}
-		river = {
-			attack = 0.2
+		urban = {
+			attack = -0.3
+			defence = -0.1
 		}
-		amphibious = {
-			attack = 0.0
+		river = { 
+			attack = 0.4 
+			movement = 0.2
+		}
+		amphibious = { 
+			attack = 0.5
+		}
+		
+		
+		forest_africa = {
+		    attack = -0.075
+			movement = -0.2
+		}
+		mountain_africa = 	{
+		    attack = -0.6
+			defence = -0.35
+			movement = -0.5
+		}
+		jungle_africa = {
+		    attack = -0.1
+			defence = -0.05 
+			movement = -0.2
+		}
+		marsh_africa = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.3
+			defence = -0.1
 		}	
 	}
 
@@ -176,35 +214,71 @@ sub_units = {
 		supply_consumption = 0.2
 
 		forest = {
-		    attack = -0.4
-			movement = -0.4
+		    attack = -0.2
+			movement = -0.2
+		}
+		hills = {
+		    attack = -0.2
+			defence = -0.1 
+			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.2
+		    attack = -0.65
+			defence = -0.99 
+			movement = -0.8
 		}
-		plains = {
-			attack = -0.1
-			movement = -0.1
-		}
-		hills = 	{
-		    attack = -0.15
-		}
+		gibraltar = 	{
+		    attack = -0.55
+			defence = -0.6 
+			movement = -0.8
+		}		
 		jungle = {
-		    attack = -0.4
-			movement = -0.4
-		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
+		    attack = -0.3
+			defence = -0.15 
+			movement = -0.3
 		}
 		marsh = {
-			attack = 0.1
+		    attack = -0.1 
+			movement = -0.1
 		}
-		river = {
-			attack = 0.0
+		urban = {
+			attack = -0.3
+			defence = -0.1
 		}
-		amphibious = {
-			attack = -0.125
+		river = { 
+			attack = 0.4 
+			movement = 0.2
+		}
+		amphibious = { 
+			attack = 0.5
+		}		
+		
+		forest_africa = {
+		    attack = -0.2
+			movement = -0.2
+		}
+		hills_africa = {
+		    attack = -0.2
+			defence = -0.1 
+			movement = -0.2
+		}
+		mountain_africa = 	{
+		    attack = -0.65
+			defence = -0.99 
+			movement = -0.8
+		}
+		jungle_africa = {
+		    attack = -0.3
+			defence = -0.15 
+			movement = -0.3
+		}
+		marsh_africa = {
+		    attack = -0.1 
+			movement = -0.1
+		}
+		urban_africa = {
+			attack = -0.3
+			defence = -0.1
 		}	
 	}
 
@@ -246,35 +320,73 @@ sub_units = {
 		supply_consumption = 0.2
 
 		forest = {
-		    attack = -0.5
-			movement = -0.4
+			attack = -0.40
+			movement = -0.40
+		}
+		hills = {
+		    attack = -0.20
+			defence = -0.1
 		}
 		mountain = 	{
-		    attack = -0.3
+		    attack = -0.95
+			defence = -0.95 
+			movement = -0.9
 		}
-		plains = {
-			attack = -0.1
-			movement = -0.1
-		}
-		hills = 	{
-		    attack = -0.2
-		}
+		gibraltar = 	{
+		    attack = -0.9
+			defence = -0.85 
+			movement = -0.9
+		}		
 		jungle = {
 		    attack = -0.6
-			movement = -0.4
+			defence = -0.2 
+			movement = -0.7
+		}
+		marsh = {
+		    attack = -0.4 
+			movement = -0.2
 		}
 		urban = {
 			attack = -0.5
 			defence = -0.2
 		}
-		marsh = {
-			attack = -0.2
+		river = { 
+			attack = 0.3 
+			movement = 0.1
 		}
-		river = {
-			attack = -0.2
+		amphibious = { 
+			attack = 0.4 
 		}
-		amphibious = {
-			attack = -0.225
+		fort = {
+			attack = 0.1
+		}
+
+		forest_africa = {
+		    attack = -0.40
+			movement = -0.40
+		}
+		hills_africa = {
+		    attack = -0.20
+			defence = -0.05			
+		}
+		mountain_africa = 	{
+		    attack = -0.95
+			defence = -0.95 
+			movement = -0.9
+		}
+		
+		jungle_africa = {
+		    attack = -0.6
+			defence = -0.2 
+			movement = -0.7
+		}
+		marsh_africa = {
+		    attack = -0.4 
+			movement = -0.2
+		}
+		urban_africa = {
+			attack = -0.5
+			defence = -0.2
 		}	
 	}
 }

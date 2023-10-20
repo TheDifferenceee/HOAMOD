@@ -530,20 +530,7 @@ characters={
 				original_tag  = CZE
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = CZE_democratic_bastion 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits  = {
 				democratic_reformer 
@@ -568,36 +555,13 @@ characters={
 				original_tag  = CZE
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = CZE_go_left 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits  = {
 				communist_revolutionary 
 			}
 			ai_will_do  = {
-				base = 0
-				modifier = {
-					add = 20
-					OR = {
-						has_country_flag = CZE_AI_RANDOM_COMMUNIST
-						has_game_rule = {
-							rule = CZE_ai_behavior
-							option = COMMUNIST
-						}
-					}
-				}
+				factor  = 0.000
 			}
 		}
 	}
@@ -616,36 +580,13 @@ characters={
 				original_tag  = CZE
 			}
 			available  = {
-				if  = {
-					limit  = {
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus  = CZE_go_right 
-				}
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					not  = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
+				always = no
 			}
 			traits  = {
 				fascist_demagogue 
 			}
 			ai_will_do  = {
-				base = 0
-				modifier = {
-					add = 20
-					OR = {
-						has_country_flag = CZE_AI_RANDOM_FASCIST
-						has_game_rule = {
-							rule = CZE_ai_behavior
-							option = FASCIST
-						}
-					}
-				}
+				factor  = 0.000
 			}
 		}		
 	}

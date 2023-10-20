@@ -24,7 +24,7 @@ characters = {
 			id = -1
 		}
 
-		corps_commander = {
+		field_marshal = {
 			traits={}
 			skill=1
 			attack_skill=1
@@ -33,7 +33,7 @@ characters = {
 			logistics_skill=1
 			legacy_id=0
 			visible = {
-				has_completed_focus = ITA_capo_supremo
+				always = yes
 			}
 		}
 	}
@@ -148,29 +148,7 @@ characters = {
  #     #  #   #   #    #    #        #        #       #    #  #    #  #       #   #   #    # 
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
                                                                                              
-	ITA_deliga_italy={
-		name=ITA_deliga_italy
-		portraits={
-			army={
-				small="GFX_idea_RAJ_ram_singh_thakur" #small="GFX_idea_generic_army_arab_1"
-			}
-		}
-		advisor={
-			slot = high_command
-			ledger = army
-			allowed = {
-				original_tag = ITA
-			}
-			traits = {
-				army_commando_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
-	
+
 	ITA_rodolfo_graziani = {
 		name = ITA_rodolfo_graziani
 		portraits = {
@@ -189,7 +167,10 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
+				
+			}
+			research_bonus = {
+				land_doctrine = 0.15
 			}
 			traits = {
 				grand_battle_plan_expert
@@ -200,16 +181,46 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = {   offensive_doctrine desert_fox infantry_leader }
-			skill = 5
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
+			traits = { trait_cautious politically_connected offensive_doctrine  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
 	}
+	ITA_rodolfo_graziani_highcommand = {
+		name = ITA_rodolfo_graziani
+		portraits = {
+			army = {
+				small = GFX_idea_rodolfo_graziani
+				large = GFX_portrait_ITA_rodolfo_graziani
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = army_chief
+			idea_token = rodolfo_graziani_highcommand
+			ledger = army
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			available = {
+				
+			}
+			traits = {
+			 army_chief_offensive_2
+			}
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+	}
+
+		
 
 	ITA_pietro_badoglio = {
 		name = ITA_pietro_badoglio
@@ -227,22 +238,21 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_morale_2
+				army_chief_morale_1
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
 		}
 
 		field_marshal = {
-			traits = {   defensive_doctrine organizer }
-			skill = 1
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = 0
+			traits = { old_guard offensive_doctrine panzer_leader skilled_staffer  media_personality career_officer brilliant_strategist}
+	skill = 6
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 6
+	logistics_skill = 7
 		}
 	}
 
@@ -262,22 +272,21 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_defensive_1
+				army_chief_defensive_2
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
 		}
 		
 		field_marshal = {
-			traits = {   defensive_doctrine }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+	traits = { organizer defensive_doctrine old_guard infantry_officer infantry_leader  politically_connected inflexible_strategist hill_fighter}
+	skill = 6
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 7
 		}
 	}
 
@@ -300,34 +309,25 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				if =  {
-					limit = { 
-						has_dlc = "By Blood Alone"
-					}
-					ITA_is_advisor_available = yes
-				}
+				
 			}
 			
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
 		}
 		
 		field_marshal = {
-			traits = { infantry_leader trickster trait_reckless media_personality }
-			skill = 5
-			attack_skill = 5
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-			visible = {
-				ITA_is_advisor_available = yes
-			}
+			traits = { career_officer old_guard infantry_officer infantry_leader hill_fighter skilled_staffer politically_connected trait_engineer}
+	skill = 6
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 6
 		}
 	}
 
@@ -349,27 +349,48 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				if = {
-					limit = { has_dlc = "By Blood Alone" }
-					OR = {
-						NOT = { has_government = communism }
-						has_completed_focus = ITA_common_ground
-					}
-				}
+				
+			}
+			research_bonus = {
+				land_doctrine = 0.15
 			}
 			traits = {
 				mobile_warfare_expert
 			}
 		}
 		
-		corps_commander = {
-			traits = { infantry_leader trait_reckless trait_cautious desert_fox }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 0
+		corps_commander={ #17/17 #PORTED TO BBA
+		traits = { panzer_leader trickster politically_connected media_personality old_guard war_hero brilliant_strategist trickster urban_assault_specialist hill_fighter trait_engineer }
+		skill = 7
+		attack_skill = 6
+		defense_skill = 6
+		planning_skill = 6
+		logistics_skill = 7
+		}
+	}
+	ITA_giovanni_messe_highcommand = {
+		name = ITA_giovanni_messe
+		portraits = {
+			army = {
+				small = GFX_idea_giovanni_messe
+				large = GFX_portrait_ITA_giovanni_messe
+			}
+		}
+
+		advisor = {
+			cost = 150
+			slot = high_command
+			idea_token = giovanni_messe_highcommand
+			ledger = army
+			allowed = {
+				ITA_is_italian_tag = yes
+			}
+			available = {
+				
+			}
+			traits = {
+				army_armored_3
+			}
 		}
 	}
 
@@ -389,22 +410,22 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_chief_organizational_1 # Was army_chief_maneuver_2 (replaced by Alberto Pariani)
+				army_chief_maneuver_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
 		}
 		
-		corps_commander = {
-			traits = { infantry_leader organisational_leader }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 0
+		corps_commander={ #17/17 #PORTED TO BBA
+		#	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+		traits = { old_guard media_personality infantry_officer infantry_leader  politically_connected inflexible_strategist urban_assault_specialist hill_fighter trait_engineer}
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 5
+		logistics_skill = 8
 		}
 	}
 
@@ -417,14 +438,13 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { panzer_leader }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
-			legacy_id = 0
+		corps_commander={ #17/17 #PORTED TO BBA
+			traits = { infantry_officer  hill_fighter trait_mountaineer infantry_leader war_hero inflexible_strategist old_guard naval_invader}
+		skill = 6
+		attack_skill = 8
+		defense_skill = 7
+		planning_skill = 5
+		logistics_skill = 6
 		}
 	}
 
@@ -437,15 +457,13 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = {  }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-			visible = { has_government = fascism }
+		corps_commander={ #17/17 #PORTED TO BBA
+			traits = { panzer_leader politically_connected skilled_staffer career_officer commando trait_engineer }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
 		}
 	}
 
@@ -458,15 +476,13 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-			visible = { has_government = fascism }
+		field_marshal={ #12.5/13 #PORTED TO BBA
+			traits = { old_guard infantry_officer infantry_leader trait_cautious hill_fighter inflexible_strategist  politically_connected skilled_staffer }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 6
+	logistics_skill = 3
 		}
 	}
 
@@ -480,13 +496,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = { media_personality career_officer cavalry_leader trickster brilliant_strategist}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
 		}
 	}
 
@@ -507,22 +522,21 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				army_cavalry_2
+				army_cavalry_1
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
 		}
 		
 		corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = {politically_connected infantry_officer old_guard organizer}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
 		}
 	}
 
@@ -550,22 +564,21 @@ characters = {
 				has_government = fascism
 			}
 			traits = {
-				army_infantry_2
+				army_infantry_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 2.000
 			}
 		}
 		
 		corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = {harsh_leader trait_cautious trait_mountaineer hill_fighter politically_connected}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 6
+	planning_skill = 2
+	logistics_skill = 3
 			visible = { has_government = fascism }
 		}
 	}
@@ -580,13 +593,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_leader }
-			skill = 1
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 0
+			traits = { politically_connected organizer skilled_staffer trait_cautious infantry_leader}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 6
 			visible = { has_government = fascism }
 		}
 	}
@@ -601,13 +613,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = {   } #Always sick really need to do something about it
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = {old_guard infantry_officer trait_cautious inflexible_strategist organizer}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 0
+	planning_skill = 6
+	logistics_skill = 7
 		}
 	}
 
@@ -621,13 +632,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { trait_engineer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = {infantry_officer panzer_leader skilled_staffer hill_fighter trait_reckless}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 3
 		}
 	}
 
@@ -640,15 +650,14 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
-			traits = { } #Representing how he died
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-			visible = { has_government = fascism }
+		corps_commander={ #17/17 #PORTED TO BBA
+			traits={ panzer_leader panzer_expert swamp_fox urban_assault_specialist  ambusher }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=9
+			legacy_id=-1
 		}
 	}
 
@@ -662,13 +671,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { cavalry_leader combined_arms_expert } #Motorized
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = {old_guard inflexible_strategist infantry_leader infantry_officer }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 6
+	planning_skill = 1
+	logistics_skill = 1
 			visible = { has_government = fascism }
 		}
 	}
@@ -682,14 +690,13 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
-			traits = { organizer } #Logistics and Infantry
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+		field_marshal={ #12.5/13 
+			traits = {harsh_leader infantry_officer skilled_staffer war_hero }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 2
 		}
 	}
 
@@ -703,13 +710,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = { cavalry_officer cavalry_leader trait_engineer trickster media_personality}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 		}
 	}
 
@@ -723,7 +729,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { militias_officer } # Infantry & Mountaineers (Used for Blackshirts since he also commanded them)
+			traits = { career_officer infantry_officer militias_officer } # Infantry & Mountaineers (Used for Blackshirts since he also commanded them)
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -731,7 +737,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				has_completed_focus = ITA_paramilitary_training
+				always = no
 			}
 		}
 	}
@@ -746,13 +752,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { } # Infantry
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = { career_officer } # Infantry
+			skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
 		}
 	}
 
@@ -766,13 +771,13 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+			
 		}
 	}
 
@@ -786,13 +791,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = {  } #Resistance stuff if anything
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
+			traits = { harsh_leader } #Resistance stuff if anything
+			skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
 			visible = { has_government = fascism }
 		}
 	}
@@ -827,12 +831,12 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { trait_TUR_kemalist_champion } # Infantry
+			traits = { infantry_officer } # Infantry
 			skill = 1
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 			legacy_id = 0
 		}
 	}
@@ -846,15 +850,14 @@ characters = {
 			}
 		}
 		
-		corps_commander = {
-			traits = { trait_engineer fortress_buster infantry_leader  } # Infantry
-			skill = 5
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = 0
-			visible = { has_government = fascism }
+		corps_commander={ #17/17 #PORTED
+			traits={ fake_skilled_staffer_sov old_guard ambusher infantry_leader camouflage_expert commando  }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=8
+			legacy_id=-1
 		}
 	}
 
@@ -868,14 +871,14 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { irregulars_officer desert_fox cavalry_leader skirmisher }  # Irregulars, Cavalry. Comandante Diavolo trait?
+			traits = { irregulars_officer  cavalry_leader skirmisher }  # Irregulars, Cavalry. Comandante Diavolo trait?
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { has_completed_focus = ITA_comandante_diavolo }
+			visible = { always = no }
 		}
 	}
 
@@ -889,7 +892,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { commando }
+			traits = { old_guard infantry_officer commando }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -897,8 +900,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				has_completed_focus = ITA_army_leaders
-				NOT = { has_government = communism }
+				always = no
 			}
 		}
 	}
@@ -913,14 +915,14 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { ascari_officer trickster guerilla_fighter reckless desert_fox } # Ascari
+			traits = { ascari_officer trickster guerilla_fighter reckless  } # Ascari
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { has_completed_focus = ITA_strengthen_ascari_corps }
+			visible = { always = no }
 		}
 	}
 
@@ -934,7 +936,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { ascari_officer naval_invader desert_fox } # Ascari, Nval Infantry
+			traits = { ascari_officer naval_invader  } # Ascari, Nval Infantry
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -942,8 +944,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				has_completed_focus = ITA_strengthen_ascari_corps
-				has_completed_focus = ITA_forza_navale_especiale
+				always = no
 			}
 		}
 	}
@@ -977,22 +978,21 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = {
-				navy_chief_decisive_battle_1
+				navy_chief_decisive_battle_2
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
 		}
 		
 		navy_leader = {
-			traits = { battleship_adherent superior_tactician spotter }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 3
-			legacy_id = 0
+			traits = { superior_tactician spotter fleet_protector fly_swatter green_water_expert }
+	skill = 8
+	attack_skill = 6
+	defense_skill = 6
+	maneuvering_skill = 5
+	coordination_skill = 6
 		}
 	}
 
@@ -1015,20 +1015,19 @@ characters = {
 			traits = {
 				navy_anti_submarine_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
 		}
 		
 		navy_leader = {
-			traits = { gentlemanly superior_tactician }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 3
-			coordination_skill = 2
-			legacy_id = 0
+			traits = { blockade_runner air_controller green_water_expert }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 7
 		}
 	}
 
@@ -1045,13 +1044,12 @@ characters = {
 		}
 		 
 		navy_leader = {
-			traits = { gentlemanly inshore_fighter }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 2
-			coordination_skill = 2
-			legacy_id = 0
+			traits = { ironside green_water_expert }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 8
+	maneuvering_skill = 4
+	coordination_skill = 6
 		}
 	}
 
@@ -1072,19 +1070,21 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			research_bonus = {
+				cat_fleet_in_being = 0.15
+			}
 			traits = {
 				grand_fleet_proponent
 			}
 		}
 
 		navy_leader = {
-			traits = { aviation_enthusiast blockade_runner }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			maneuvering_skill = 4
-			coordination_skill = 2
-			legacy_id = 0
+			traits = { bold superior_tactician spotter ironside green_water_expert }
+	skill = 4
+	attack_skill = 7
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 7
 		}
 	}
 
@@ -1107,7 +1107,7 @@ characters = {
 			traits = {
 				navy_capital_ship_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1134,7 +1134,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = angelo_iachino
 			ledger = navy
@@ -1142,18 +1142,21 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
+				
+			}
+			research_bonus = {
+				naval_doctrine = 0.1
 			}
 			traits = { naval_theorist }
 		}
 
 		navy_leader = {
-			traits = { bold navy_career_officer superior_tactician spotter }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 1
+			traits = { bold navy_career_officer superior_tactician spotter ironside green_water_expert }
+			skill = 8
+			attack_skill = 8
+			defense_skill = 6
+			maneuvering_skill = 6
+			coordination_skill = 7
 			legacy_id = 0
 			visible = { has_government = fascism }
 		}
@@ -1177,8 +1180,7 @@ characters = {
 			coordination_skill = 1
 			legacy_id = 0
 			visible = {
-				#has_government = fascism
-				#has_completed_focus = ITA_supermarina #Maybe Escort focus? Or maybe available from start
+				always = no
 			} 
 		}
 	}
@@ -1194,13 +1196,13 @@ characters = {
 
 		navy_leader = {
 			traits = { cuts_corners seawolf silent_hunter } #Submarines, Human torpedos, Torpedo boats, etc.
-			skill = 3
-			attack_skill = 4
-			defense_skill = 1
-			maneuvering_skill = 3
-			coordination_skill = 2
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			maneuvering_skill = 7
+			coordination_skill = 4
 			legacy_id = 0
-			visible = { has_completed_focus = ITA_decima_flottiglia_mas }
+			visible = { always = yes }
 		}
 	}
 
@@ -1231,6 +1233,9 @@ characters = {
 			allowed = {
 				ITA_is_italian_tag = yes
 			}
+			research_bonus = {
+				cat_operational_integrity = 0.15
+			}
 			traits = {
 				assault_avaition
 			}
@@ -1246,12 +1251,15 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = renato_sandalli
 			ledger = air
 			allowed = {
 				ITA_is_italian_tag = yes
+			}
+			research_bonus = {
+				air_doctrine = 0.1
 			}
 			traits = { air_warfare_theorist }
 		}		
@@ -1266,7 +1274,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = gaetano_crocco
 			ledger = air
@@ -1291,7 +1299,7 @@ characters = {
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = ITA_romeo_bernotti
 			ledger = navy
@@ -1328,12 +1336,12 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_completed_focus = ITA_a_bandits_war
+				always = no
 			}
 			traits = {
 				army_chief_maneuver_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1362,7 +1370,7 @@ characters = {
 			traits = {
 				navy_chief_commerce_raiding_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1384,12 +1392,12 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
+				
 			}
 			traits = {
 				navy_chief_naval_aviation_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1416,7 +1424,7 @@ characters = {
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1445,7 +1453,7 @@ characters = {
 			traits = {
 				air_chief_safety_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1469,7 +1477,7 @@ characters = {
 			traits = {
 				air_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1493,7 +1501,7 @@ characters = {
 			traits = {
 				air_chief_ground_support_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1535,12 +1543,12 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
+				
 			}
 			traits = {
 				air_tactical_bombing_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1568,7 +1576,7 @@ characters = {
 			traits = {
 				air_air_combat_training_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1596,7 +1604,7 @@ characters = {
 			traits = {
 				air_bomber_interception_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1624,7 +1632,7 @@ characters = {
 			traits = {
 				navy_naval_air_defense_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1647,17 +1655,12 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-				NOT = { has_completed_focus = ITA_disband_the_blackshirts }
-				has_completed_focus = ITA_army_leaders
+				always = no
 			}
 			traits = {
 				army_logistics_1 # Blackshirt related trait instead?
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1686,40 +1689,13 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_completed_focus = ITA_foreign_affairs
-				NOT = {
-					has_country_leader_with_trait = mussolini_minister_of_foreign_affairs
-				}
-				ITA_government_is_somewhat_fascist = yes
+				always = no
 			}
 			cost = 75
 			traits = {
 				hierarch_minister_of_foreign_affairs
 			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
-			}
-			ai_will_do = {
-				base = 0.3
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
-				}
-			}
+			
 		}
 	}
 
@@ -1741,47 +1717,15 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_completed_focus = ITA_believe_obey_fight
-				NOT = {
-					has_country_leader_with_trait = mussolini_minister_of_justice
-				}
-				ITA_government_is_somewhat_fascist = yes
-				if =  {
-					limit = { 
-						has_dlc = "By Blood Alone"
-					}
-					ITA_is_advisor_available = yes
-				}
+				always = no
 			}
 			
 			cost = 75
 			traits = {
 				hierarch_minister_of_justice 
 			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
-			}
-			ai_will_do = {
-				base = 0.3
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
-				}
-			}
+			
+			
 		}
 	}
 
@@ -1800,39 +1744,13 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_completed_focus = ITA_legge_bottai
-				NOT = {
-					has_country_leader_with_trait = mussolini_minister_of_education
-				}
+				always = no
 			}
 			cost = 75
 			traits = {
 				hierarch_minister_of_education # Hierarch / Minister of Education
 			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
-			}
-			ai_will_do = {
-				base = 0.300
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
-				}
-			}
+			
 		}
 	}
 
@@ -1851,40 +1769,13 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_completed_focus = ITA_security_militias
-				NOT = {
-					has_country_leader_with_trait = mussolini_minister_of_corporations
-				}
-				ITA_government_is_really_fascist = yes
+				always = no
 			}
 			cost = 75
 			traits = {
 				hierarch_minister_of_corporations # Leader of Blackshirts and Military Police
 			}
-			on_add = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_decrease_effect = yes
-					}
-				}
-			}
-			on_remove = {
-				owner = {
-					hidden_effect = {
-						ITA_bop_medium_increase_effect = yes
-					}
-				}
-			}
-			ai_will_do = {
-				base = 0.300
-				modifier = {
-					factor = 0
-					OR = {
-						ITA_is_communist_ai = yes
-						ITA_is_socialist_ai = yes
-					}
-				}
-			}
+			
 		}
 	}
 
@@ -1915,7 +1806,7 @@ characters = {
 			traits = {
 				army_regrouping_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1949,7 +1840,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = {  }
+			traits = { politically_connected }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -1975,7 +1866,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				prince_of_terror
@@ -2008,7 +1899,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				war_industrialist 
@@ -2043,7 +1934,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				quartermaster_general 
@@ -2079,7 +1970,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+			
 			}
 			traits = {
 				armaments_organizer
@@ -2115,16 +2006,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-					if = {
-						limit = {
-							has_dlc = "By Blood Alone"
-						}
-						has_completed_focus = ITA_cooperate_with_moderates
-					}
-				}
+				
 			}
 			traits = {
 				captain_of_industry
@@ -2158,13 +2040,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				has_government = fascism
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					NOT = { has_completed_focus = ITA_revoke_the_acerbo_law }
-				}
+				
 			}
 			traits = {
 				financial_expert
@@ -2201,7 +2077,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_somewhat_fascist = yes
+				
 			}
 			traits = {
 				silent_workhorse
@@ -2237,19 +2113,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					OR = {
-						has_government = fascism
-						has_completed_focus = ITA_utilize_the_blackshirts
-						has_completed_focus = ITA_cooperate_with_moderates
-					}
-				}
-				else = {
-					has_government = fascism
-				}
+				
 			}
 			traits = {
 				editor
@@ -2284,7 +2148,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				ideological_crusader 
@@ -2320,7 +2184,7 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				ITA_government_is_really_fascist = yes
+				
 			}
 			traits = {
 				backroom_backstabber 
@@ -2417,11 +2281,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_the_carabinieri
-					has_completed_focus = ITA_empower_the_carabinieri
-					has_completed_focus = ITA_expand_the_royal_guard
-				}
+				always = no
 			}
 		}
 	}
@@ -2443,18 +2303,12 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_army_leaders
-					}
-					has_completed_focus = ITA_meritocracy
-				}
+				always = no
 			}
 			traits = {
 				army_chief_drill_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				base = 1.000
 			}
@@ -2469,16 +2323,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					AND = {
-						OR = {
-							has_government = democratic
-							has_government = neutrality
-						}
-						has_completed_focus = ITA_army_leaders
-					}
-					has_completed_focus = ITA_meritocracy
-				}
+				always = no
 			}
 		}
 	}
@@ -2493,7 +2338,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { infantry_officer }
+			traits = { infantry_officer armor_officer }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -2501,10 +2346,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_italian_socialism
-					has_completed_focus = ITA_monarchia_d_italia
-				}
+				always = no
 			}
 		}
 	}
@@ -2519,7 +2361,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { urban_assault_specialist }
+			traits = { infantry_officer urban_assault_specialist }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -2527,10 +2369,7 @@ characters = {
 			logistics_skill = 1
 			legacy_id = 0
 			visible = { 
-				OR = {
-					has_completed_focus = ITA_the_carabinieri
-					has_completed_focus = ITA_empower_the_carabinieri
-				}
+				always = no
 			}
 		}
 	}
@@ -2551,10 +2390,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_meritocracy
-					has_completed_focus = ITA_bring_back_exiled_intellectuals
-				}
+				always = no
 			}
 			research_bonus = {
 				nuclear = 0.15
@@ -2567,6 +2403,28 @@ characters = {
 				base = 0.100
 			}
 		}
+	}
+	ITA_albert_speer={ 
+		name=ITA_albert_speer
+		portraits={
+			army={
+				small="GFX_idea_speer"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = speer
+			allowed = {
+				original_tag = ITA
+			}
+			available = { 
+				date > 1941.6.1
+				GER = { has_idea = tot_economic_mobilisation }
+			}
+			traits = {
+				total_war_organizer 
+			}
+		}		
 	}
 
 	ITA_vittorio_emanuele_orlando = {
@@ -2585,14 +2443,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_meritocracy
-					has_completed_focus = ITA_monarchia_d_italia
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
+				always = no
 			}
 			traits = {
 				old_figurehead
@@ -2627,10 +2478,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_revoke_the_acerbo_law
-					has_completed_focus = ITA_common_ground
-				}
+				always = no
 			}
 			traits = {
 				financial_expert 
@@ -2660,7 +2508,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				has_completed_focus = ITA_convene_the_grand_council
+				always = no
 			}
 			traits = {
 				staunch_monarchist
@@ -2695,10 +2543,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_power_to_the_king
-					has_completed_focus = ITA_cooperate_with_moderates
-				}
+				always = no
 			}
 			traits = {
 				economist
@@ -2792,20 +2637,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_revoke_the_acerbo_law
-					has_completed_focus = ITA_disband_the_blackshirts
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
-				NOT = { 
-					has_country_leader = {
-						character = ITA_alcide_de_gasperi
-						ruling_only = yes
-					}
-				}
+				always = no
 			}
 			traits = {
 				voice_of_restraint
@@ -2837,13 +2669,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_christian_democracy
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
+				always = no
 			}
 			traits = {
 				minister_of_posts_and_telegraphs # Christian Democracy guy
@@ -2875,14 +2701,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_cooperate_with_moderates
-					has_completed_focus = ITA_italian_socialism
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = communism
-					}
-				}
+				always = no
 			}
 			traits = {
 				liberal_professor # Liberal Philosophy professor and Minister of Education
@@ -2914,7 +2733,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				has_completed_focus = ITA_bring_back_exiled_intellectuals
+				always = no
 			}
 			traits = {
 				captain_of_industry # Ministry of Public Works and later Ambassador to USA
@@ -2942,10 +2761,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
+				always = no
 			}
 			traits = {
 				anti_fascist_chaplain
@@ -2987,14 +2803,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
+				always = no
 			}
 		}
 	}
@@ -3017,14 +2826,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
+				always = no
 			}
 		}
 	}
@@ -3041,7 +2843,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { militias_officer organizer  } #Partisan
+			traits = { militias_officer organizer trait_cautious } #Partisan
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -3049,7 +2851,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				has_completed_focus = ITA_gruppi_di_difesa_della_donna
+				always = no
 			}
 		}
 	}
@@ -3064,7 +2866,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = {  commando }
+			traits = { trait_reckless cavalry_officer commando }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -3072,14 +2874,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
+				always = no
 			}
 		}
 	}
@@ -3101,26 +2896,20 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			available = {
-				OR = {
-					has_government = communism
-					AND = {
-						has_completed_focus = ITA_common_ground
-						has_government = democratic
-					}
-				}
+				
 			}
-			cost = 50
+			cost = 150
 			traits = {
 				army_regrouping_2 
 			}
 
 			ai_will_do = {
-				base = 0.300
+				base = 1.000
 			}
 		}
 
 		corps_commander = {
-			traits = {  skilled_staffer } #SCW + Partisan Commander
+			traits = { politically_connected skilled_staffer infantry_officer } #SCW + Partisan Commander
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -3128,14 +2917,7 @@ characters = {
 			logistics_skill = 1
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_completed_focus = ITA_defy_the_duce
-					ITA_is_in_liberation_war = yes
-				}
-				OR = {
-					has_government = communism
-					has_government = democratic
-				}
+				always = no
 			}
 		}
 	}
@@ -3200,13 +2982,7 @@ characters = {
 			}
 
 			available = {
-				OR = {
-					has_completed_focus = ITA_the_popular_front
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_common_ground
-					}
-				}
+				always = no
 			}
 
 			traits = {
@@ -3223,7 +2999,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { militias_officer } #SCW + Partisan Commander
+			traits = { militias_officer infantry_officer } #SCW + Partisan Commander
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -3260,18 +3036,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_unite_the_opposition
-					has_completed_focus = ITA_defy_the_duce
-				}
-				NOT = { has_completed_focus = ITA_culto_del_duce }
-				NOT = { has_completed_focus = ITA_convene_the_grand_council }
-				NOT = { 
-					has_country_leader = {
-						character = ITA_palmiro_togliatti
-						ruling_only = yes
-					}
-				}
+				always = no
 			}
 			
 			traits = {
@@ -3316,18 +3081,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_the_abyssinian_fiasco
-					has_completed_focus = ITA_defy_the_duce
-				}
-				NOT = { has_completed_focus = ITA_culto_del_duce }
-				NOT = { has_completed_focus = ITA_convene_the_grand_council }
-				NOT = { 
-					has_country_leader = {
-						character = ITA_sandro_pertini
-						ruling_only = yes
-					}
-				}
+				always = no
 			}
 			
 			traits = {
@@ -3360,13 +3114,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_the_popular_front
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_common_ground
-					}
-				}
+				always = no
 			}
 			traits = {
 				economist
@@ -3394,13 +3142,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_the_popular_front
-					AND = {
-						has_government = democratic
-						has_completed_focus = ITA_common_ground
-					}
-				}
+				always = no
 			}
 			traits = {
 				minister_of_peasants #"Minister of Peasants" Agrarian Reforms
@@ -3428,7 +3170,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				has_completed_focus = ITA_the_popular_front
+				always = no
 			}
 			traits = {
 				partisans_organizer
@@ -3456,10 +3198,7 @@ characters = {
 				has_dlc = "By Blood Alone"
 			}
 			available = {
-				OR = {
-					has_completed_focus = ITA_the_path_to_progress
-					has_completed_focus = ITA_bring_back_exiled_intellectuals
-				}
+				always = no
 			}
 			traits = {
 				revolutionary_poet # Writer intelectual
@@ -3508,7 +3247,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { desert_fox }
+			traits = {  }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -3550,7 +3289,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { }
+			traits = { old_guard }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 3

@@ -347,7 +347,6 @@ characters={
 		name=CHI_chen_jitang
 		portraits={
 			army={
-				large=GFX_portrait_GXC_chen_jitang #This guy also exists in GXC as a unit leader and can be transferred to CHI via integrate warlord decisions, so he needs a large portrait definition
 				small="GFX_idea_generic_army_asia_5"
 			}
 		}
@@ -711,7 +710,7 @@ characters={
 			slot = political_advisor
 			idea_token = CHI_random_prince_of_terror
 			available  = {
-				has_completed_focus  = CHI_bureau_of_investigation_and_statistics 
+				always = no 
 			}
 			visible  = {
 				has_focus_tree  = china_nationalist_focus

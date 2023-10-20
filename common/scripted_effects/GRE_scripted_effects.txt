@@ -1,19 +1,3 @@
-#Heraklion Convention voting effects
-#Voted Aye!
-ROOT_voted_aye_in_megali_convention_effect = {
-	custom_effect_tooltip = ROOT_voted_aye_megali_effect
-	hidden_effect = {	
-		add_to_variable = { var = global.convention_ayes value = 1 }
-	}
-}
-#Voted Nay!
-ROOT_voted_nay_in_megali_convention_effect = {
-	custom_effect_tooltip = ROOT_voted_nay_megali_effect
-	hidden_effect = {	
-		add_to_variable = { var = global.convention_nays value = 1 }
-	}
-}
-
 #Debt to the I.F.C. Debt Check Effect 
 GRE_debt_check_effect = {
 	hidden_effect = {
@@ -61,12 +45,39 @@ GRE_debt_check_effect = {
 	}
 }
 
+#Debt to the I.F.C. Small Increase in debt - the United Kingdom
+GRE_small_debt_increase_to_british_effect = {
+	hidden_effect = {
+		add_to_variable = { var = GRE_debt_to_the_ifc_britain_var value = 1 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_paid_var value = 1 }
+		GRE_debt_check_effect = yes
+	}
+}
+
+#Debt to the I.F.C. Small Increase in debt - France
+GRE_small_debt_increase_to_french_effect = {
+	hidden_effect = {
+		add_to_variable = { var = GRE_debt_to_the_ifc_france_var value = 1 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_paid_var value = 1 }
+		GRE_debt_check_effect = yes
+	}
+}
+
+#Debt to the I.F.C. Small Increase in debt - Italy
+GRE_small_debt_increase_to_italians_effect = {
+	hidden_effect = {
+		add_to_variable = { var = GRE_debt_to_the_ifc_italy_var value = 1 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_paid_var value = 1 }
+		GRE_debt_check_effect = yes
+	}
+}
+
 #Debt to the I.F.C. Small Payment Effect - the United Kingdom
 GRE_small_payment_to_british_debt_effect = {
 	custom_effect_tooltip = GRE_small_payment_to_british_debt_effect_tt 
 	hidden_effect = {
-		subtract_from_variable = { var = GRE_debt_to_the_ifc_britain_var value = 2.5 }
-		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 2.5 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_britain_var value = 1 }
+		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 1 }
 		GRE_debt_check_effect = yes
 	}
 }
@@ -75,8 +86,8 @@ GRE_small_payment_to_british_debt_effect = {
 GRE_large_payment_to_british_debt_effect = {
 	custom_effect_tooltip = GRE_large_payment_to_british_debt_effect_tt 
 	hidden_effect = {
-		subtract_from_variable = { var = GRE_debt_to_the_ifc_britain_var value = 5 }
-		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 5 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_britain_var value = 2 }
+		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 2 }
 		if = {
 			limit = {
 				check_variable = { var = GRE_debt_to_the_ifc_britain_var value = 0 compare = less_than }
@@ -108,8 +119,8 @@ GRE_default_on_british_debt_effect = {
 GRE_small_payment_to_french_debt_effect = {
 	custom_effect_tooltip = GRE_small_payment_to_french_debt_effect_tt 
 	hidden_effect = {
-		subtract_from_variable = { var = GRE_debt_to_the_ifc_france_var value = 2.5 }
-		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 2.5 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_france_var value = 1 }
+		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 1 }
 		GRE_debt_check_effect = yes
 	}
 }
@@ -118,8 +129,8 @@ GRE_small_payment_to_french_debt_effect = {
 GRE_large_payment_to_french_debt_effect = {
 	custom_effect_tooltip = GRE_large_payment_to_french_debt_effect_tt 
 	hidden_effect = {
-		subtract_from_variable = { var = GRE_debt_to_the_ifc_france_var value = 5 }
-		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 5 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_france_var value = 2 }
+		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 2 }
 		if = {
 			limit = {
 				check_variable = { var = GRE_debt_to_the_ifc_france_var value = 0 compare = less_than }
@@ -151,8 +162,8 @@ GRE_default_on_french_debt_effect = {
 GRE_small_payment_to_italians_debt_effect = {
 	custom_effect_tooltip = GRE_small_payment_to_italians_debt_effect_tt 
 	hidden_effect = {
-		subtract_from_variable = { var = GRE_debt_to_the_ifc_italy_var value = 2.5 }
-		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 2.5 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_italy_var value = 1 }
+		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 1 }
 		GRE_debt_check_effect = yes
 	}
 }
@@ -161,8 +172,8 @@ GRE_small_payment_to_italians_debt_effect = {
 GRE_large_payment_to_italians_debt_effect = {
 	custom_effect_tooltip = GRE_large_payment_to_italians_debt_effect_tt 
 	hidden_effect = {
-		subtract_from_variable = { var = GRE_debt_to_the_ifc_italy_var value = 5 }
-		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 5 }
+		subtract_from_variable = { var = GRE_debt_to_the_ifc_italy_var value = 2 }
+		add_to_variable = { var = GRE_debt_to_the_ifc_paid_var value = 2 }
 		if = {
 			limit = {
 				check_variable = { var = GRE_debt_to_the_ifc_italy_var value = 0 compare = less_than }
@@ -312,465 +323,245 @@ GRE_default_on_debt_effect = {
 	}
 }
 
-#Faction System Political Instability Update Effect - No longer ideology-limited
-GRE_political_instability_update_effect = { 
+#Faction System Political Instability Update Effect
+GRE_political_instability_update_effect = {
 	hidden_effect = {
-		### MONARCHISTS ###
-		if = { #LOYAL MONARCHISTS
-			limit = {
-				check_variable = { GRE_monarchist_loyalty = 2 compare = equals } #loyal
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_loyal_monarchists }
-				}
-				add_ideas = GRE_loyal_monarchists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_monarchists
-				}
-				remove_ideas = GRE_friendly_monarchists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_monarchists
-				}
-				remove_ideas = GRE_hostile_monarchists
-			}
-		}
-		else_if = { #FRIENDLY MONARCHISTS
-			limit = {
-				check_variable = { GRE_monarchist_loyalty = 1 compare = equals } #friendly
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_friendly_monarchists }
-				}
-				add_ideas = GRE_friendly_monarchists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_loyal_monarchists
-				}
-				remove_ideas = GRE_loyal_monarchists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_monarchists
-				}
-				remove_ideas = GRE_hostile_monarchists
-			}
-		}
-		else_if = { #HOSTILE MONARCHISTS
-			limit = {
-				check_variable = { GRE_monarchist_loyalty = -1 compare = equals } #hostile
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_hostile_monarchists }
-				}
-				add_ideas = GRE_hostile_monarchists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_loyal_monarchists
-				}
-				remove_ideas = GRE_loyal_monarchists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_monarchists
-				}
-				remove_ideas = GRE_friendly_monarchists
-			}
-		}
-		else = { #INDIFFERENT/INCONSEQUENTIAL MONARCHISTS
-			if = {
-				limit = {
-					has_idea = GRE_loyal_monarchists
-				}
-				remove_ideas = GRE_loyal_monarchists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_monarchists
-				}
-				remove_ideas = GRE_friendly_monarchists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_monarchists
-				}
-				remove_ideas = GRE_hostile_monarchists
-			}
-		}
-
-		### REPUBLICANS ###
-		if = { #LOYAL REPUBLICANS
-			limit = {
-				check_variable = { GRE_republican_loyalty = 2 compare = equals } #loyal
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_loyal_republicans }
-				}
-				add_ideas = GRE_loyal_republicans
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_republicans
-				}
-				remove_ideas = GRE_friendly_republicans
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_republicans
-				}
-				remove_ideas = GRE_hostile_republicans
-			}
-		}
-		else_if = { #FRIENDLY REPUBLICANS
-			limit = {
-				check_variable = { GRE_republican_loyalty = 1 compare = equals } #friendly
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_friendly_republicans }
-				}
-				add_ideas = GRE_friendly_republicans
-			}
-			if = {
-				limit = {
-					has_idea = GRE_loyal_republicans
-				}
-				remove_ideas = GRE_loyal_republicans
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_republicans
-				}
-				remove_ideas = GRE_hostile_republicans
-			}
-		}
-		else_if = { #HOSTILE REPUBLICANS
-			limit = {
-				check_variable = { GRE_republican_loyalty = -1 compare = equals } #hostile
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_hostile_republicans }
-				}
-				add_ideas = GRE_hostile_republicans
-			}
-			if = {
-				limit = {
-					has_idea = GRE_loyal_republicans
-				}
-				remove_ideas = GRE_loyal_republicans
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_republicans
-				}
-				remove_ideas = GRE_friendly_republicans
-			}
-		}
-		else = { #INDIFFERENT/INCONSEQUENTIAL REPUBLICANS
-			if = {
-				limit = {
-					has_idea = GRE_loyal_republicans
-				}
-				remove_ideas = GRE_loyal_republicans
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_republicans
-				}
-				remove_ideas = GRE_friendly_republicans
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_republicans
-				}
-				remove_ideas = GRE_hostile_republicans
-			}
-		}
-
-		### COMMUNISTS ###
-		if = { #LOYAL COMMUNISTS
-			limit = {
-				check_variable = { GRE_communist_loyalty = 2 compare = equals } #loyal
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_loyal_communists }
-				}
-				add_ideas = GRE_loyal_communists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_communists
-				}
-				remove_ideas = GRE_friendly_communists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_communists
-				}
-				remove_ideas = GRE_hostile_communists
-			}
-		}
-		else_if = { #FRIENDLY COMMUNISTS
-			limit = {
-				check_variable = { GRE_communist_loyalty = 1 compare = equals } #friendly
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_friendly_communists }
-				}
-				add_ideas = GRE_friendly_communists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_loyal_communists
-				}
-				remove_ideas = GRE_loyal_communists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_communists
-				}
-				remove_ideas = GRE_hostile_communists
-			}
-		}
-		else_if = { #HOSTILE COMMUNISTS
-			limit = {
-				check_variable = { GRE_communist_loyalty = -1 compare = equals } #hostile
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_hostile_communists }
-				}
-				add_ideas = GRE_hostile_communists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_loyal_communists
-				}
-				remove_ideas = GRE_loyal_communists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_communists
-				}
-				remove_ideas = GRE_friendly_communists
-			}
-		}
-		else = { #INDIFFERENT/INCONSEQUENTIAL COMMUNISTS
-			if = {
-				limit = {
-					has_idea = GRE_loyal_communists
-				}
-				remove_ideas = GRE_loyal_communists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_communists
-				}
-				remove_ideas = GRE_friendly_communists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_communists
-				}
-				remove_ideas = GRE_hostile_communists
-			}
-		}
-
-		### FASCISTS ###
-		if = { #LOYAL FASCISTS
-			limit = {
-				check_variable = { GRE_fascist_loyalty = 2 compare = equals } #loyal
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_loyal_fascists }
-				}
-				add_ideas = GRE_loyal_fascists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_fascists
-				}
-				remove_ideas = GRE_friendly_fascists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_fascists
-				}
-				remove_ideas = GRE_hostile_fascists
-			}
-		}
-		else_if = { #FRIENDLY FASCISTS
-			limit = {
-				check_variable = { GRE_fascist_loyalty = 1 compare = equals } #friendly
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_friendly_fascists }
-				}
-				add_ideas = GRE_friendly_fascists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_loyal_fascists
-				}
-				remove_ideas = GRE_loyal_fascists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_fascists
-				}
-				remove_ideas = GRE_hostile_fascists
-			}
-		}
-		else_if = { #HOSTILE FASCISTS
-			limit = {
-				check_variable = { GRE_fascist_loyalty = -1 compare = equals } #hostile
-			}
-			if = {
-				limit = {
-					NOT = { has_idea = GRE_hostile_fascists }
-				}
-				add_ideas = GRE_hostile_fascists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_loyal_fascists
-				}
-				remove_ideas = GRE_loyal_fascists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_fascists
-				}
-				remove_ideas = GRE_friendly_fascists
-			}
-		}
-		else = { #INDIFFERENT/INCONSEQUENTIAL FASCISTS
-			if = {
-				limit = {
-					has_idea = GRE_loyal_fascists
-				}
-				remove_ideas = GRE_loyal_fascists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_friendly_fascists
-				}
-				remove_ideas = GRE_friendly_fascists
-			}
-			if = {
-				limit = {
-					has_idea = GRE_hostile_fascists
-				}
-				remove_ideas = GRE_hostile_fascists
-			}
-		}
-	}
-}
-
-#Apply appropriate cosmetic tag so that 3D models change based on ideology
-GRE_set_appropriate_cosmetic_tag = {
-	if = {
-		limit = { has_country_flag = GRE_byz_unified_flag }
 		if = {
-			limit = { has_government = communism }
-			set_cosmetic_tag = BYZ_UNIFIED_communism
+			limit = {
+				AND = { 
+					has_government = neutrality
+					check_variable = { GRE_republican_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_republicans
+			remove_ideas = GRE_hostile_republicans
 		}
-		else_if = {
-			limit = { has_government = democratic }
-			set_cosmetic_tag = BYZ_UNIFIED_democratic
-		}
-		else_if = {
-			limit = { has_government = fascism }
-			set_cosmetic_tag = BYZ_UNIFIED_fascism
-		}
-		else = {
-			set_cosmetic_tag = BYZ_UNIFIED_neutrality
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = GRE_GREATER_GREECE_flag }
 		if = {
-			limit = { has_government = communism }
-			set_cosmetic_tag = GRE_GREATER_GREECE_communism
+			limit = {
+				AND = { 
+					has_government = neutrality
+					check_variable = { GRE_republican_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_republicans
+			remove_ideas = GRE_friendly_republicans
 		}
-		else_if = {
-			limit = { has_government = democratic }
-			set_cosmetic_tag = GRE_GREATER_GREECE_democratic
-		}
-		else_if = {
-			limit = { has_government = fascism }
-			set_cosmetic_tag = GRE_GREATER_GREECE_fascism
-		}
-		else = {
-			set_cosmetic_tag = GRE_GREATER_GREECE_neutrality
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = GRE_dem_monarchy_flag }
 		if = {
-			limit = { has_government = communism }
-			set_cosmetic_tag = GRE_dem_monarchy_communism
+			limit = {
+				AND = { 
+					has_government = neutrality
+					check_variable = { GRE_communist_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_communists
+			remove_ideas = GRE_hostile_communists
 		}
-		else_if = {
-			limit = { has_government = democratic }
-			set_cosmetic_tag = GRE_dem_monarchy_democratic
-		}
-		else_if = {
-			limit = { has_government = fascism }
-			set_cosmetic_tag = GRE_dem_monarchy_fascism
-		}
-		else = {
-			set_cosmetic_tag = GRE_dem_monarchy_neutrality
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = GRE_com_independent_flag }
 		if = {
-			limit = { has_government = communism }
-			set_cosmetic_tag = GRE_com_independent_communism
+			limit = {
+				AND = { 
+					has_government = neutrality
+					check_variable = { GRE_communist_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_communists
+			remove_ideas = GRE_friendly_communists
 		}
-		else_if = {
-			limit = { has_government = democratic }
-			set_cosmetic_tag = GRE_com_independent_democratic
-		}
-		else_if = {
-			limit = { has_government = fascism }
-			set_cosmetic_tag = GRE_com_independent_fascism
-		}
-		else = {
-			set_cosmetic_tag = GRE_com_independent_neutrality
-		}
-	}
-	else_if = {
-		limit = { has_country_flag = GRE_mae_flag }
 		if = {
-			limit = { has_government = communism }
-			set_cosmetic_tag = MAE_communism
+			limit = {
+				AND = { 
+					has_government = neutrality
+					check_variable = { GRE_fascist_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_fascists
+			remove_ideas = GRE_hostile_fascists
 		}
-		else_if = {
-			limit = { has_government = democratic }
-			set_cosmetic_tag = MAE_democratic
+		if = {
+			limit = {
+				AND = { 
+					has_government = neutrality
+					check_variable = { GRE_fascist_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_fascists
 		}
-		else_if = {
-			limit = { has_government = fascism }
-			set_cosmetic_tag = MAE_fascism
+		if = {
+			limit = {
+				AND = { 
+					has_government = democratic
+					check_variable = { GRE_monarchist_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_monarchists
+			remove_ideas = GRE_hostile_monarchists
 		}
-		else = {
-			set_cosmetic_tag = MAE_neutrality
+		if = {
+			limit = {
+				AND = { 
+					has_government = democratic
+					check_variable = { GRE_monarchist_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_monarchists
+			remove_ideas = GRE_friendly_monarchists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = democratic
+					check_variable = { GRE_communist_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_communists
+			remove_ideas = GRE_hostile_communists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = democratic
+					check_variable = { GRE_communist_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_communists
+			remove_ideas = GRE_friendly_communists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = democratic
+					check_variable = { GRE_fascist_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_fascists
+			remove_ideas = GRE_hostile_fascists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = democratic
+					check_variable = { GRE_fascist_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_fascists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = communism
+					check_variable = { GRE_monarchist_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_monarchists
+			remove_ideas = GRE_hostile_monarchists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = communism
+					check_variable = { GRE_monarchist_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_monarchists
+			remove_ideas = GRE_friendly_monarchists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = communism
+					check_variable = { GRE_republican_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_republicans
+			remove_ideas = GRE_hostile_republicans
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = communism
+					check_variable = { GRE_republican_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_republicans
+			remove_ideas = GRE_friendly_republicans
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = communism
+					check_variable = { GRE_fascist_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_fascists
+			remove_ideas = GRE_hostile_fascists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = communism
+					check_variable = { GRE_fascist_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_fascists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = communism
+					check_variable = { GRE_monarchist_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_monarchists
+			remove_ideas = GRE_hostile_monarchists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = fascism
+					check_variable = { GRE_monarchist_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_monarchists
+			remove_ideas = GRE_friendly_monarchists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = fascism
+					check_variable = { GRE_republican_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_republicans
+			remove_ideas = GRE_hostile_republicans
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = fascism
+					check_variable = { GRE_republican_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_republicans
+			remove_ideas = GRE_friendly_republicans
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = fascism
+					check_variable = { GRE_communists_loyalty = 1 compare = equals } #friendly
+				}
+			}
+			add_ideas = GRE_friendly_communists
+			remove_ideas = GRE_hostile_communists
+		}
+		if = {
+			limit = {
+				AND = { 
+					has_government = fascism
+					check_variable = { GRE_communists_loyalty = -1 compare = equals } #hostile
+				}
+			}
+			add_ideas = GRE_hostile_communists
+			remove_ideas = GRE_friendly_communists
 		}
 	}
 }

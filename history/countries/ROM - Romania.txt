@@ -25,24 +25,141 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "ROM_1936_air_bba"
 		set_technology = {
-			iw_small_airframe = 1
-			aa_lmg = 1
-			engines_1 = 1
+
 		}
 	else = {
 		set_air_oob = "ROM_1936_air_legacy"
 		set_technology = {
-			early_fighter = 1
+			iw_small_airframe = 1
 
 		}
 	}
 }
-
-set_research_slots = 3
+add_ideas = {
+	partial_economic_mobilisation 
+}
+add_timed_idea = { idea = airandnavy_idea days = 1320 }
+add_intel = {
+	target = USA
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = JAP modifier = sanctions }
+add_opinion_modifier = { target = JAP modifier = minor_sanctions }
+add_intel = {
+	target = BUl
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = SPR
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = ENG
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = SOV
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = RAJ
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = ITA
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = GER
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = ROM
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = HUN
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = JAP
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = CAN
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = FRA
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = SAF
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = AST
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+add_intel = {
+	target = NZL
+	civilian_intel = 200
+	army_intel = 200
+	navy_intel = 200
+	airforce_intel = 200
+}
+set_research_slots = 4
 set_stability = 0.6
 set_war_support = 0.6
 
 recruit_character = ROM_gheorghe_tatarescu
+recruit_character = ROM_gheorghe_potopeanu_highcommand
 recruit_character = ROM_constantin_ion_parhon
 recruit_character = ROM_armand_calinescu
 recruit_character = ROM_corneliu_codreanu
@@ -50,7 +167,6 @@ recruit_character = ROM_petre_dumitrescu
 recruit_character = ROM_ion_antonescu
 recruit_character = ROM_ioan_mihail_racovita
 recruit_character = ROM_gheorghe_avramescu
-recruit_character = ROM_gheorghe_hagi
 recruit_character = ROM_constantin_sanatescu
 recruit_character = ROM_horia_macellariu
 recruit_character = ROM_gheorghe_potopeanu
@@ -62,24 +178,34 @@ recruit_character = ROM_gheorghe_jienescu
 recruit_character = ROM_paul_teodorescu
 recruit_character = ROM_gheorghe_vasiliu
 recruit_character = ROM_iuliu_maniu
+recruit_character = ROM_albert_speer
 recruit_character = ROM_petru_groza
-recruit_character = ROM_gheorghe_gheorghiu_dej
+
 recruit_character = ROM_nicolae_malaxa
 recruit_character = ROM_mihail_sturdza
 recruit_character = ROM_gheorghe_argeseanu
 recruit_character = ROM_king_michael
 recruit_character = ROM_octavian_goga
-
 # Starting tech
 set_technology = {
-	tech_support = 1		
+	airfield_construction = 1
+	fort_construction = 1
+	fuel_silos = 1
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
+	gwtank_chassis = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	basic_light_tank_chassis = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	basic_small_airframe = 1
+	tech_logistics_company = 1 
+	trench_warfare = 1 
 	basic_train = 1
 }
 
@@ -104,15 +230,15 @@ if = {
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
+		##early_submarine = 1
+		##early_destroyer = 1
 	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
+		
+		
 		early_ship_hull_light = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
@@ -131,11 +257,10 @@ if = {
 		ROM_king_carol_ii_hedonist
 	}
 	give_guarantee = CZE
+	give_guarantee = GRE
 	give_guarantee = TUR
+	give_guarantee = YUG
 }
-add_timed_idea = { idea = hoa_peace_idea days = 1320 }
-add_ideas = hoa_minor_idea
-add_ideas = hoa_grind_idea
 if = {
 	limit = {
 		AND = {  
@@ -147,8 +272,38 @@ if = {
 	give_guarantee = TUR
 	give_guarantee = YUG
 }
-add_ideas = neutrality_idea
 
+
+add_ideas = neutrality_idea
+add_ideas = GDU_scuffed_acclim
+add_ideas = limited_conscription
+add_ideas = general_staff
+add_ideas = GER_mefo_bills_non_germany
+
+1936.1.1.13 = {
+		set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		basic_fire_control_system = 1
+		basic_dp_light_battery = 1
+	}
+}
 #Kick off kings crazy life
 if = {
 	limit = {
@@ -171,10 +326,6 @@ if = {
 		modifier = BFTB_balkan_pact_ally
 	}
 	add_opinion_modifier = { 
-		target = TUR
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
 		target = YUG
 		modifier = BFTB_balkan_pact_ally
 	}
@@ -188,7 +339,55 @@ if = {
 	}
 }
 
-set_convoys = 10
+set_convoys = 100
+
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 3200
+         producer = ROM
+}  
+
+add_equipment_to_stockpile = {
+         type = support_equipment
+         amount = 872
+         producer = ROM
+} 
+
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 5600
+         producer = ROM
+} 
+add_equipment_to_stockpile = {
+         type = motorized_equipment_1
+         amount = 330
+         producer = ROM
+} 
+add_equipment_to_stockpile = {
+         type = anti_air_equipment_1
+         amount = 1833
+         producer = ROM
+} 
+create_corps_commander = {
+	name = "Nicolae Ciuperca AFRICANUS"
+	picture = "AFRICA_Portrait_Romania_Nicolae_Ciuperca.dds"
+	traits = { panzer_leader armor_officer career_officer trait_cautious substance_abuser harsh_leader commando desert_fox }
+	skill = 4
+	attack_skill = 6
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Nicolae Macici AFRICANUS"
+	picture = "AFRICA_Portrait_Romania_Nicolae_Macici.dds"
+	traits = {harsh_leader infantry_officer media_personality infantry_leader trait_reckless desert_fox }
+	skill = 6
+	attack_skill = 7
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 3
+}
 1939.1.1 = {
 	
 	remove_ideas = neutrality_idea
@@ -238,7 +437,7 @@ set_convoys = 10
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
-			basic_submarine = 1
+			##basic_submarine = 1
 		}
 	}
 	if = {
@@ -388,68 +587,10 @@ if = {
 		}
 	}
 }
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Regele Ferdinand Class"
-		type = destroyer_1
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 1
-			ship_ASW_upgrade = 1
-			ship_anti_air_upgrade = 1
-		}
-	}
-}
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
-	create_equipment_variant = {
-		name = "Delfinul Class"				
-		type = ship_hull_submarine_2
-		name_group = ROM_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "Marasti Class"				
-		type = ship_hull_light_1
-		name_group = ROM_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Regele Ferdinand Class"	
-		type = ship_hull_light_1
-		name_group = ROM_DD_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
 }
 
 # 1939 Start #
