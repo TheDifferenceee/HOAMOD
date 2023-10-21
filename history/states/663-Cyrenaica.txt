@@ -4,6 +4,10 @@ state={
 	manpower = 8808
 	
 	state_category = wasteland
+	
+	resources={
+		rubber=48
+	}
 
 	history={
 		owner = ITA
