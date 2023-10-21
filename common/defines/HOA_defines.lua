@@ -5,6 +5,8 @@ NDefines.NGame.GAME_SPEED_SECONDS = { 0.18, 0.175, 0.1625, 0.04, 0.0 } --{2.0, 0
 
 NDefines.NCharacter.ADVISOR_PROMOTION_COST = 3131
 
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                -- This much progress can be saved while not having a focus selected --10    
+
 NDefines.NDiplomacy.MIN_WARGOAL_JUSTIFY_COST = 2000.0                    -- It always takes atleast 10 days to justify a wargoal --2.0       
 NDefines.NDiplomacy.WARGOAL_THREAT_MAX_TIME_RATIO = 1.0            -- Threat from justifying a wargoal slowly builds up, hitting 100% at this proportion of the way to completion --1.0
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0.1            -- Each province owned by the target country contributes this amount of volunteers to the limit. --0.05
@@ -18,13 +20,12 @@ NDefines.NDiplomacy.ATTACHE_XP_SHARE = 0.2                            -- Country
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST = 25	--100
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 20 --50
 NDefines.NDiplomacy.EMBARGO_COST = 25 -- 100
-
 NDefines.NDiplomacy.MARKET_ACCESS_ACCEPTANCE_SAME_IDEOLOGY = 0
 NDefines.NDiplomacy.MARKET_ACCESS_ACCEPTANCE_OPINION = 0
 NDefines.NDiplomacy.MARKET_ACCESS_ACCEPTANCE_TRADE_INFLUENCE = 0
 NDefines.NDiplomacy.MARKET_ACCESS_ACCEPTANCE_SCRIPTED_IDEOLOGY_ACCEPTANCE = 0
 
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.03 --- 0.05                 -- basic speed control	
+
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 27 --20 
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_INFRA = 0.35 --0.2 monty degisiklik
 NDefines.NCountry.NUCLEAR_BOMB_DROP_WAR_SUPPORT_EFFECT_MAX_VP = 1 --3 monty degisiklik
@@ -39,7 +40,6 @@ NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 150
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.03 
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 300 -- 200
 NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 0.6 -- 0.4
-
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00002
 NDefines.NCountry.MIN_MANPOWER_RATIO = 0.5 --vanilla 0.15,						-- Min manpower ratio to show manpower alert
 	
@@ -63,6 +63,7 @@ NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4        -- Base year ahea
 	
 NDefines.NPolitics.ARMY_LEADER_MAX_COST = 100                -- max cost BEFORE modifiers --100 yani vanilla degeri
 NDefines.NPolitics.NAVY_LEADER_MAX_COST = 100                -- max cost BEFORE modifiers --100 yani vanilla degeri   
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.3
  
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100        -- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane. --200 
 NDefines.NBuildings.SUPPLY_PORT_LEVEL_THROUGHPUT = 6   -- supply throughput per level of naval base --3 bunu degistirebilirim askerler atrittion yemezse
@@ -74,6 +75,7 @@ NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 2
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 2
 NDefines.NSupply.CAPITAL_SUPPLY_BASE = 150
  
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.03 --- 0.05                 -- basic speed control	
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.060       -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
@@ -195,6 +197,8 @@ NDefines.NAir.NAVAL_MINES_SWEEPING_SPEED_MULT = 0.001						-- Value used to over
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.04 --0.05 vamilla
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.4
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 20 --vanilla 20			-- Min cap for planes that can join naval combat
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.2
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 1 --vanilla 20			-- Min cap for planes that can join naval combat
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_NO_TRUCK_DISRUPTION_FACTOR = 0.01 -- If a unit isn't motorized, still disrupt its supply by damage * this --0.02
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR = 0.15 --0.27
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_INFRA_DAMAGE_SPILL_FACTOR = 0.0008 -- Portion of truck damage to additionally deal to infrastructure --0.0016
@@ -202,11 +206,9 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_FACTOR = 0.030 --0.040
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_DISRUPTION_MITIGATION = 6.0 -- Multiply Train Damage by (Smooth / (Smooth + (Disruption * Mitigation)))
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_DISRUPTION_SMOOTHING = 5.0
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0 -- Portion of train damage to additionally deal to railways --0.006
-
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DISRUPTION_MIN_DAMAGE_FACTOR = 0.1 -- Multiply train damage by this factor, scale from 1.0 at 0 disruption to this at AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER = 15.0 -- see above
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR = 0.01 -- Disruption damage to supply throughput done by bombing damage, not dependant on killing trains which also causes diruption.
-
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.2 -- max trucks we can destroy in one instance of a logistics strike --vanilla 0.3
 
 
@@ -282,13 +284,13 @@ NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.025  -- the ac
 NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS = 0.005 -- the accumulated penalty from new ships will decay hourly by this value --0.05 yani vanilla deger
 NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.5    -- damage penalty at 0% positioning --0.5 yani vanilla deger
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.5  -- screening efficiency (screen to capital ratio) at 0% positioning --0.5 yani vanilla deger
-NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.7  -- AA penalty at 0% positioning --0.7 yani vanilla deger
+NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.5  -- AA penalty at 0% positioning --0.7 yani vanilla deger
 NDefines.NNavy.SUBMARINE_REVEAL_ON_MINIMUM_POSITIONING = 2.0  -- submarine reveal change on 0% positioning --2.0 yani vanilla deger
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01 --vanilla 0.01,								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0    -- total sum of fleet's anti air will be multiplied with this ratio and added to calculations anti-air of individual ships while air damage reduction --0.25 yani vanilla deger
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.1    -- received air damage is calculated using following: 1 - ( (ship_anti_air + fleet_anti_air * SHIP_TO_FLEET_ANTI_AIR_RATIO )^ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE ) * ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE --0.25 yani vanilla deger
-NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 5 --0.2 yani vanilla deger
-NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.75    -- damage reduction for incoming air attacks is clamped to this value at maximum. --0.75 yani vanilla deger       
+NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 2 --0.2 yani vanilla deger
+NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 1    -- damage reduction for incoming air attacks is clamped to this value at maximum. --0.75 yani vanilla deger       
 NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 1.0    -- hit profile for depth charges --100.0 yani vanilla deger                    
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 1                             -- scoring for target picking for planes inside naval combat, one define per ship typ --10 yani vanilla deger
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 1 --50 yani vanilla deger
@@ -305,10 +307,6 @@ NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.01
 NDefines.NNavy.TRAINING_ACCIDENT_CRITICAL_HIT_CHANCES = 0.1
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS = 1.0
 NDefines.NNavy.TRAINING_ACCIDENT_STRENGTH_LOSS_FACTOR = 0.01
-
-NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 2.3
-
-
 NDefines.NNavy.TRAINING_ACCIDENT_ORG_LOSS_FACTOR = 0.1
 NDefines.NNavy.TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.002 --vanilla 0.001,						-- Factor used to scale the Daily Country Navy XP gain
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1 --vanilla 0.1,  -- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
@@ -352,4 +350,4 @@ NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {	-- 0 armor will alway
 0.00 -- For criticals, you could reduce crit chance unlike damage in army combat, but we do not for now.
 }
 
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30                -- This much progress can be saved while not having a focus selected --10       
+
