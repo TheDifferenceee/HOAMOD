@@ -2106,7 +2106,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 		complete_tooltip = {
-			air_experience = 25
+			air_experience = 250
 			add_doctrine_cost_reduction = {
 				name = air_sup_bonus
 				cost_reduction = 0.25
@@ -2228,6 +2228,7 @@ focus = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		air_experience = 250
 			add_doctrine_cost_reduction = {
 				name = op_dest_bonus
 				cost_reduction = 0.25
@@ -2310,6 +2311,7 @@ focus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		air_experience = 250
 			# Balance research bonus for 2 techs in air_doctrine
 			add_doctrine_cost_reduction = {
 				name = strat_dest_bonus
