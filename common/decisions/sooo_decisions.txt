@@ -15,7 +15,7 @@ ITA =  { controls_state = 447 }
 		tag = GER	
 		}
 
-		#fire_only_once = no
+		fire_only_once = yes
 
 		modifier = {
 		
