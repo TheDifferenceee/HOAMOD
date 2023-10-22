@@ -377,6 +377,12 @@ ideas = {
 			NOT = {tag=SOV}
 				has_war = yes
 				has_war_support > 0.5
+				any_enemy_country = {
+					ic_ratio = {
+						tag = ROOT
+						ratio > 0.5
+					}
+				}
 
 				if = {
 					limit = {

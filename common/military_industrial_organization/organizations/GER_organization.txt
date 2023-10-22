@@ -136,7 +136,7 @@ GER_man_organization = {
 	}
 	add_trait = { 
 		token = SOV_mio_trait_merge_plant_no_175
-		name = SOV_merge_tank_plant
+		name = GER_man_drift
 		#icon = GFX_generic_mio_department_icon_facilities
 		icon = GFX_generic_mio_trait_icon_maximum_speed
 		special_trait_background = yes
@@ -147,21 +147,15 @@ GER_man_organization = {
 			FROM = { original_tag = GER }
 		}
 
-
-
-
-
 	equipment_bonus = {
-			soft_attack = 0.02
-breakthrough = 0.02
-armor_value = 0.05
-hard_attack = 0.02
-maximum_speed  = 0.02
+			soft_attack = 0.08
+			breakthrough = 0.06
+			armor_value = 0.15
+			hard_attack = 0.06
+			maximum_speed  = 0.10
 		}
 	}
-
-
-
+	
 }
 
 #Benz 
