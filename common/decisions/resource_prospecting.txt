@@ -2462,7 +2462,7 @@ prospect_for_resources = {
 			372 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 60
 				}
 			}
 		}

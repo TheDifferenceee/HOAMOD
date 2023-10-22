@@ -22,8 +22,6 @@ state={
 			}
 		}
 		add_core_of = ENG
-		add_core_of = IRE
-		add_core_of = NIR
 	}
 
 	provinces={
@@ -31,7 +29,7 @@ state={
 	}
 	manpower=1198537
 	buildings_max_level_factor=1
-	state_category="city"
+	state_category= megalopolis
 	
 	resources={
 		aluminium=2
