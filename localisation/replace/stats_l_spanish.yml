@@ -97,3 +97,4 @@
  STAT_NAVY_TORPEDO_ENEMY_CRIT_CHANCE:0 "£torpedo_texticon  Probabilidad de crítico de torpedo enemigo: "
  STAT_COMMON_NIGHT_PENALTY:0 "£night_texticon  Penalización nocturna: "
  STAT_COMMON_THRUST:0 "£speed_air_texticon  Impulso: "
+ STAT_STRATEGIC_ATTACK: "£strat_bombing_texticon  Bombardeo estratégico"
