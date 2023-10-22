@@ -85,7 +85,7 @@ equipments = {
 		build_cost_ic = 5
 		resources = {
 			tungsten = 1
-			steel = 3
+			steel = 2
 		}
 	}
 
@@ -151,7 +151,7 @@ equipments = {
 		build_cost_ic = 6
 		resources = {
 			tungsten = 1
-			steel = 3
+			steel = 2
 		}
 	}
 	
@@ -174,13 +174,13 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 15
-		breakthrough = 12
+		defense = 18
+		breakthrough = 23
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 36
+		soft_attack = 51
 		hard_attack = 1
 		ap_attack = 2
 		air_attack = 0
@@ -188,7 +188,7 @@ equipments = {
 		build_cost_ic = 12
 		resources = {
 			#oil = 1
-			rubber = 1
+			#rubber = 1
 			tungsten = 2
 			steel = 1
 		}

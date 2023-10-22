@@ -267,7 +267,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 750
-			thrust = 36
+			thrust = 45
 			build_cost_ic = 18
 			fuel_consumption = 0.16
 		}
@@ -286,7 +286,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 54
+			thrust = 63
 			build_cost_ic = 36
 			fuel_consumption = 0.32
 		}
@@ -304,7 +304,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 72
+			thrust = 90
 			build_cost_ic = 54
 			fuel_consumption = 0.48
 		}
@@ -323,7 +323,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 90
+			thrust = 117
 			build_cost_ic = 72
 			fuel_consumption = 0.64
 		}
@@ -342,7 +342,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 126
+			thrust = 144
 			build_cost_ic = 108
 			fuel_consumption = 0.8
 		}
@@ -360,7 +360,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 900
-			thrust = 40
+			thrust = 62
 			build_cost_ic = 19
 			fuel_consumption = 0.3
 		}
@@ -383,7 +383,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 850
-			thrust = 60
+			thrust = 80
 			build_cost_ic = 38
 			fuel_consumption = 0.6
 		}
@@ -406,7 +406,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 850
-			thrust = 80
+			thrust = 110
 			build_cost_ic = 57
 			fuel_consumption = 0.9
 		}
@@ -428,7 +428,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 850
-			thrust = 100
+			thrust = 130
 			build_cost_ic = 76
 			fuel_consumption = 1.2
 		}
@@ -449,7 +449,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 850
-			thrust = 120
+			thrust = 160
 			build_cost_ic = 114
 			fuel_consumption = 1.8
 		}
@@ -469,7 +469,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 40
+			thrust = 48
 			build_cost_ic = 15
 
 		}
@@ -489,7 +489,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 800
-			thrust = 45
+			thrust = 57
 			build_cost_ic = 16
 		}
 		multiply_stats = {
@@ -508,7 +508,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 1000
-			thrust = 50
+			thrust = 81
 			build_cost_ic = 17
 		}
 		multiply_stats = {
