@@ -1,6 +1,49 @@
 ideas = {
 
 	country = {
+
+
+		afrikenvictoriaidea = {
+			allowed = {
+				always = yes
+			}
+
+			picture = barbarossa
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+production_factory_max_efficiency_factor = 0.0987654321
+
+         }
+		}
+		supplyfix = {
+			allowed = {
+				always = yes
+			}
+
+			picture = barbarossa
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			
+			modifier = {
+supply_consumption_factor = -0.15
+
+
+          }
+		}
+
+
+
+
 		TOTALWAR = {
 			allowed = {
 				always = yes
