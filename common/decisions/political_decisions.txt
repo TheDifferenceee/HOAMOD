@@ -1840,8 +1840,7 @@ political_actions = {
 			is_ai = no
 ITA =  { controls_state = 907 }
 ITA =  { controls_state = 447 }
-ITA =  { controls_state = 453 }
-ITA =  { controls_state = 454 }
+ITA =  { controls_state = 446 }
 
 		}
 
@@ -1878,7 +1877,6 @@ ENG =  { controls_state = 447 }
 ENG =  { controls_state = 452 }
 ENG =  { controls_state = 451 }
 
-date > 1941.6.1
 		}
 
 		visible = {
