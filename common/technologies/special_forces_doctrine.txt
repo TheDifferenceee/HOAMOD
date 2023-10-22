@@ -11,7 +11,7 @@ technologies = {
 			supply_consumption = -0.02
 		}
 		category_special_forces = {
-			max_organisation = 1
+			#max_organisation = 1
 			soft_attack = 0.01
 		}
 		enable_subunits = {
@@ -305,7 +305,7 @@ technologies = {
 		xp_unlock_cost = 15
 		
 		category_mountaineers = {
-			max_organisation = 1
+			#max_organisation = 1
 		}
 		
 		force_use_small_tech_layout = yes
@@ -449,7 +449,7 @@ technologies = {
 		marines_special_forces_contribution_factor = -0.25
 		naval_invasion_capacity = 5
 		category_special_forces = {
-			max_organisation = 1
+			#max_organisation = 1
 			soft_attack = 0.01
 		}
 		
@@ -601,7 +601,7 @@ technologies = {
 		unit_marine_design_cost_factor = -0.50
 
 		marine = {
-			max_organisation = 3
+			#max_organisation = 3
 		}
 			
 		doctrine = yes	
@@ -785,7 +785,7 @@ technologies = {
 		pioneer_support = {
 			battalion_mult = {
 				category = category_line_artillery
-				max_organisation = 1
+				#max_organisation = 1
 				add = yes
 			}
 		}
@@ -828,7 +828,7 @@ technologies = {
 		amphibious_mechanized = {
 			 soft_attack = 0.01
 			 breakthrough = 0.01
-			 max_organisation = 1
+			 #max_organisation = 1
 		}
 		
 		pioneer_support = {
@@ -974,7 +974,7 @@ technologies = {
 			air_defence = 0.20
 		}
 		category_special_forces = {
-			max_organisation = 5
+			#max_organisation = 5
 			soft_attack = 0.05
 		}
 		
@@ -1114,7 +1114,7 @@ technologies = {
 		force_use_small_tech_layout = yes
 		
 		#category_all_infantry = {
-		#	max_organisation = 15
+		#	#max_organisation = 15
 		#}
 		
 		path = {
@@ -1257,7 +1257,7 @@ technologies = {
 		}
 		
 		category_paratroopers = {
-			max_organisation = 1
+			#max_organisation = 1
 			supply_consumption = -0.01
 		}
 		
