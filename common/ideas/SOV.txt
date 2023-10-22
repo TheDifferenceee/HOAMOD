@@ -332,6 +332,26 @@ ideas = {
 			}
 			
 		}
+		
+		soviet_army_balance = {
+		picture = generic_army_problems
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}			
+
+			modifier = {
+				land_doctrine_cost_factor = 9999
+				naval_doctrine_cost_factor = 9999
+				air_doctrine_cost_factor = 9999
+			}
+			
+		}
 
 		soviet_economic_plan2 = {
 		picture = man_five_year_plan_industry

@@ -5008,6 +5008,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			remove_ideas = soviet_army_balance
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
@@ -6050,10 +6051,10 @@ focus_tree = {
 	focus = {
 		id = SOV_war_economy
 		icon = GFX_goal_generic_trade
-		prerequisite = { focus = SOV_organization_centralization_discipline }
+		prerequisite = { focus = SOV_found_the_pcdi }
 		x = 0
 		y = 1
-		relative_position_id = SOV_organization_centralization_discipline
+		relative_position_id = SOV_found_the_pcdi
 		cost = 5
 
 		available = {
@@ -6063,22 +6064,21 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {		
-			if = {
-				limit = {
-					NOT = { has_idea = war_economy }
-					NOT = { has_idea = tot_economic_mobilisation }
+			
+				195 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
 				}
-				add_ideas = war_economy
-			}
-			if = {
-				limit = {
-					217 = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
+				219 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
 					}
 				}
 				217 = {
@@ -6089,25 +6089,8 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}
-			else = {
-				random_controlled_state = {
-					limit = {
-						arms_factory > 1
-						free_building_slots = {
-							building = arms_factory
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
+			
+			
 		}
 	}
 

@@ -841,6 +841,7 @@ add_ideas = {
 	SOV_politicized_military
 	closed_economy
     soviet_economic_plan
+	soviet_army_balance
 	SOV_ECO
 	limited_conscription
 	soviet_economic_plan2
