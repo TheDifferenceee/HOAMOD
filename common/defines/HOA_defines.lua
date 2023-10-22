@@ -1,7 +1,7 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 --12
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 360 --10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 480 --25
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.175, 0.2, 0.1, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.25, 0.2, 0.07, 0.0 } --{2.0, 0.5, 0.2, 0.1, 0.0}
 
 NDefines.NCharacter.ADVISOR_PROMOTION_COST = 3131
 
