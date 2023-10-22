@@ -4449,6 +4449,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			remove_ideas = soviet_army_balance
 			add_timed_idea = {
 				idea = SOV_desperate_measures_ns
 				days = 180
@@ -5008,7 +5009,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
-			remove_ideas = soviet_army_balance
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 }
 			set_variable = { SOV_the_red_army_experience_loss_factor = 0 }
@@ -5360,7 +5360,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1943.1.1
+			date > 1943.6.15
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -5380,6 +5380,46 @@ focus_tree = {
 				set_technology = { masterful_blitz = 1 popup = no }
 			}
 			custom_effect_tooltip = SOV_the_glory_of_the_red_army_masterful_blitz_tactic_tt
+		}
+	}
+	
+	focus = {
+		id = SOV_the_glory_of_the_soviet_economy
+		icon = GFX_focus_SOV_merge_plants
+		prerequisite = { focus = SOV_the_glory_of_the_red_army }
+		x = 1
+		y = 2
+		relative_position_id = SOV_keep_commissars_organization
+		cost = 5
+
+		available = {
+			date > 1943.6.15
+		}
+		
+		search_filters = {FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			add_ideas = soviet_glory_economy
+		}
+	}
+	
+	focus = {
+		id = SOV_the_glory_of_the_soviet_economyy
+		icon = GFX_focus_SOV_merge_plants
+		prerequisite = { focus = SOV_the_glory_of_the_soviet_economy }
+		x = 1
+		y = 3
+		relative_position_id = SOV_keep_commissars_organization
+		cost = 5
+
+		available = {
+			date > 1943.6.15
+		}
+		
+		search_filters = {FOCUS_FILTER_ARMY_XP}
+
+		completion_reward = {
+			add_ideas = soviet_glory_economy2
 		}
 	}
 
