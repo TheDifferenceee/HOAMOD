@@ -40,7 +40,7 @@ sooo_player_to_ai_to_player = {
 	}
 	
 
-
+}
 ger_kendiniasan = {
 	sweden_resources = {
 
