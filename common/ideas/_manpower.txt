@@ -197,7 +197,7 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				conscription = 0.04
+				conscription = 0.05
 				#industrial_capacity_factory = -0.1
 				#production_speed_buildings_factor = -0.1
 				training_time_factor = 0.05
@@ -306,7 +306,7 @@ ideas = {
 			level = 3
 
 			modifier = {
-				conscription = 0.08
+				conscription = 0.1
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
 				production_speed_buildings_factor = -0.05
@@ -402,7 +402,7 @@ ideas = {
 			level = 2
 			
 			modifier = {
-				conscription = 0.15
+				conscription = 0.18
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
 				production_speed_buildings_factor = -0.1
@@ -484,7 +484,7 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription = 0.25
+				conscription = 0.3
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.15
