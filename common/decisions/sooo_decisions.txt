@@ -99,8 +99,6 @@ rom_kendiniasan = {
 			factor = 0
 		}
 		complete_effect = {
-			set_cosmetic_tag = ROM_greaterx
-
 		    annex_country = {
 			    target = BUL
 			    transfer_troops = yes
