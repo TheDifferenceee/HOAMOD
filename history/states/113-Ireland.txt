@@ -8,7 +8,7 @@ state={
 		steel=2 # was: 3
 	}
 	
-	state_category = megalopolis
+	state_category = city
 	
 	history={
 		owner = ENG
@@ -22,7 +22,7 @@ state={
 			11293 10 #Dublin
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			air_base = 1
 			11293 = {
 				naval_base = 1
