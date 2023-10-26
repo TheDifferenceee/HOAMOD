@@ -84,6 +84,7 @@ ideas = {
 				operative_slot = 2
 				industry_air_damage_factor = -0.1
 				army_morale_factor = 0.1
+				consumer_goods_expected_value = -0.05
 
 			}
 		}
