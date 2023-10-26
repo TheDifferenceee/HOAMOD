@@ -2,7 +2,7 @@
 state={
 	id=276
 	name="STATE_276" # Southern Ontario
-	manpower = 4398713
+	manpower = 3117017
 	
 	state_category = megalopolis
 	
@@ -11,7 +11,6 @@ state={
 		aluminium=24
 		oil=1 
 	}
-
 	history={
 		owner = CAN
 		buildings = {

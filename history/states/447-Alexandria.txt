@@ -5,13 +5,13 @@ state={
 	manpower = 3859239
 	resources={
 		oil=1 # was: 2
+		tungsten = 3 #maganese
+		steel = 3 #Maganese
+		rubber=48
+		
 	}
 	
 	state_category = town
-	
-	resources={
-		rubber=48
-	}
 
 	history={
 		owner = ENG
