@@ -171,6 +171,7 @@ NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_IMPORTANCE_FRONT = 2.0 -- Used when c
 NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_IMPORTANCE_FRONT = 2.0  -- Used when calculating the calue of fronts in the battle plan system --2.75         
 NDefines.NMilitary.PLAN_PORVINCE_PORT_BASE_IMPORTANCE = 2.0        -- Added importance for area defense province with a port --12.0    
 NDefines.NMilitary.PLAN_PORVINCE_AIRFIELD_BASE_IMPORTANCE = 2.0    -- Added importance for area defense province with air field --3.0    
+NDefines.NMilitary.PLAN_NEIGHBORING_ENEMY_PROVINCE_FACTOR = 0.5 --vanilla 0.7,	-- When calculating the importance of provinces, it takes number of enemy provinces into account, factored by this
 NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.9 --0.1 monty degisiklik
 NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 1.2 --0.9 monty degisiklik
 NDefines.NMilitary.NUKE_DELAY_HOURS = 12 --12 yani vanilla deger monty degisiklik
