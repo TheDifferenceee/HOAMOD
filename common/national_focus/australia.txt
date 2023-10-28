@@ -2349,6 +2349,7 @@
 		prerequisite = { focus = AST_australian_arms_production }
 		x = 1
 		y = 5
+		allow_branch = { always = no }
 		relative_position_id = AST_standard_gauge_railway
 
 		cost = 10
@@ -2812,7 +2813,7 @@
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = AST_fight_work_or_perish }
 		prerequisite = { focus = AST_australian_arms_production }
-		x = -5
+		x = -3
 		y = 5
 		relative_position_id = AST_establish_advisory_war_council
 

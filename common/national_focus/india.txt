@@ -2822,6 +2822,7 @@ focus_tree = {
 		prerequisite = { focus = RAJ_indian_institute_of_science }
 		x = 0
 		y = 3
+		allow_branch = { always = no }
 		relative_position_id = RAJ_industrial_expansion
 
 		cost = 5

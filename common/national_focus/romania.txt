@@ -321,7 +321,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = ROM_trade_treaty_with_germany }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 5
@@ -366,7 +366,7 @@ focus_tree = {
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 5
@@ -404,7 +404,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ROM_invite_german_advisors }
 		x = 0
-		y = 4
+		y = 3
 		relative_position_id = ROM_trade_treaty_with_germany
 
 		cost = 5
@@ -456,7 +456,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_join_axis }
 		x = 0
-		y = 5
+		y = 4
 		relative_position_id = ROM_trade_treaty_with_germany
 
 
@@ -3678,6 +3678,7 @@ focus_tree = {
 		prerequisite = { focus = ROM_heavy_bombers }
 		x = 1
 		y = 2
+		allow_branch = { always = no }
 		relative_position_id = ROM_strategic_bomber_force
 
 		cost = 10

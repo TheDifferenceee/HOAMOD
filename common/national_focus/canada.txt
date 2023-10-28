@@ -1600,6 +1600,7 @@
 		prerequisite = { focus = CAN_polymer_corporation focus = CAN_national_steel_car }
 		x = 0
 		y = 5
+		allow_branch = { always = no }
 		relative_position_id = CAN_defence_of_canada_regulations
 
 		cost = 10
@@ -1785,8 +1786,8 @@
 		icon = GFX_goal_generic_trade
 		prerequisite = { focus = CAN_national_steel_car }
 		prerequisite = { focus = CAN_if_day }
-		x = 1
-		y = 7
+		x = 0
+		y = 6
 		relative_position_id = CAN_defence_of_canada_regulations
 
 		cost = 10

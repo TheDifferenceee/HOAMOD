@@ -3741,6 +3741,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
+		allow_branch = { always = no }
 		relative_position_id = ITA_increase_production
 		cost = 10
 		available = {

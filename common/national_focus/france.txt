@@ -483,7 +483,7 @@
 	focus = {
 		id = FRA_invest_in_syria
 		icon = GFX_focus_generic_industry_1
-		x = 4
+		x = 2
 		y = 1
 		
 		prerequisite = {focus = FRA_invest_in_the_colonies }
@@ -710,7 +710,7 @@
 	focus = {
 		id = FRA_begin_rearmament
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 16
+		x = 14
 		y = 0
 		
 		prerequisite = {}
@@ -1426,7 +1426,7 @@
 	focus = {
 		id = FRA_form_the_popular_front
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 23
+		x = 21
 		y = 0
 		
 
@@ -3301,7 +3301,7 @@
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_goal_support_democracy
-		x = 8
+		x = 6
 		y = 1
 
 		prerequisite = {
@@ -4411,7 +4411,7 @@
 	focus = {
 		id = FRA_revive_the_national_bloc
 		icon = GFX_focus_generic_strike_at_democracy2
-		x = 39
+		x = 33
 		y = 0
 
 		allow_branch = {
@@ -7738,7 +7738,7 @@
 	focus = {
 		id = FRA_naval_rearmament
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 46
+		x = 40
 		y = 0
 
 		cost = 10
