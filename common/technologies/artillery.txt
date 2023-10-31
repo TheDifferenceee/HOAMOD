@@ -72,8 +72,8 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_small_cannon_2
-			tank_close_support_gun
-			secondary_turret_close_support_gun
+			#tank_close_support_gun
+			#secondary_turret_close_support_gun
 		}
 
 		path = {
@@ -235,6 +235,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			#tank_medium_howitzer_2
+			tank_medium_cannon_2
 		}
 		path = {
 			leads_to_tech = artillery4
@@ -274,9 +275,6 @@ technologies = {
 
 		enable_equipments = {
 			artillery_equipment_3
-		}
-		enable_equipment_modules = {
-			tank_medium_cannon_2
 		}
 
 		path = {
@@ -567,7 +565,7 @@ technologies = {
 			ship_anti_air_2
 			#tank_auto_cannon
 			tank_anti_air_cannon
-			tank_heavy_cannon
+			#tank_heavy_cannon
 		}
 
 		enable_building = {
@@ -638,6 +636,10 @@ technologies = {
 		}
 		mot_anti_air_brigade = {
 			air_attack = 0.1
+		}
+		
+		enable_equipment_modules = {
+			tank_high_velocity_cannon
 		}
 
 		tech_air_damage_factor = -0.02
@@ -745,7 +747,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			tank_heavy_cannon_2
+			tank_high_velocity_cannon_2
 		}
 
 		tech_air_damage_factor = -0.02
@@ -850,7 +852,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_4
-			tank_heavy_cannon_3
+			tank_high_velocity_cannon_3
 			tank_anti_air_cannon_3
 			auto_loader
 		}
@@ -894,7 +896,6 @@ technologies = {
 			anti_tank_equipment_1
 		}
 		enable_equipment_modules = {
-			tank_high_velocity_cannon
 			tank_heavy_cannon
 			tank_buster_1
 		}
@@ -990,6 +991,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_medium_cannon
 			squeezebore_adaptor
+			tank_high_velocity_cannon
 		}
 		path = {
 			leads_to_tech = antitank2
@@ -1052,7 +1054,6 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_heavy_cannon_2
 			tank_buster_2
 		}
 		path = {
@@ -1122,6 +1123,8 @@ technologies = {
 	antitank3 = {
 		enable_equipment_modules = {
 			tank_medium_cannon_2
+			tank_high_velocity_cannon_2
+			tank_heavy_cannon_2
 		}
 		anti_tank = {
 			hard_attack = 0.1
@@ -1197,9 +1200,6 @@ technologies = {
 	}
 
 	antitank4 = {
-		enable_equipment_modules = {
-			tank_high_velocity_cannon_2
-		}
 		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.1

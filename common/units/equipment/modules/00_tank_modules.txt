@@ -288,7 +288,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_light_main_armament
+				tank_medium_main_armament
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -378,7 +378,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
+				tank_heavy_main_armament
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -408,7 +408,6 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
 				tank_heavy_main_armament
 			}
 		}
@@ -430,7 +429,6 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
 				tank_heavy_main_armament
 			}
 		}
@@ -455,9 +453,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
 				tank_heavy_main_armament
-				tank_super_heavy_main_armament
 			}
 		}
 		forbid_equipment_type_exact_match_for_category = {
@@ -921,7 +917,7 @@ equipment_modules = {
 
 	tank_high_velocity_cannon = {
 		abbreviation = "hv1"
-		category = tank_small_main_armament
+		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
@@ -966,7 +962,7 @@ equipment_modules = {
 	}
 	tank_high_velocity_cannon_3 = {
 		abbreviation = "hv3"
-		category = tank_heavy_main_armament
+		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
