@@ -14,13 +14,13 @@ upgrades = {
 			5 = {
 				has_tech = engine_tech_1
 			}
-			10 = {
+			9 = {
 				has_tech = engine_tech_2
 			}
-			15 = {
+			13 = {
 				has_tech = engine_tech_3
 			}
-			18 = { 
+			17 = { 
 				has_tech = engine_tech_4
 			}
 		}
@@ -31,11 +31,13 @@ upgrades = {
 			}
 		}
 
-		maximum_speed = 0.1
-		reliability = -0.015
+		reliability = -0.01
 		add_stats = {
 			fuel_consumption = 0.05
-			build_cost_ic = 0.1
+			maximum_speed = 0.1
+		}
+		multiply_stats = {
+			build_cost_ic = 0.005
 		}
 	}
 
@@ -53,38 +55,39 @@ upgrades = {
 			5 = {
 				has_tech = armor_tech_1
 			}
-			10 = {
+			9 = {
 				has_tech = armor_tech_2
 			}
-			15 = {
+			13 = {
 				has_tech = armor_tech_3
 			}
-			18 = {
+			17 = {
 				has_tech = armor_tech_4
 			}
 		}
 
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
 			5 = { #more armor requires more resources
-				steel = 1 
+				#steel = 1 
 			}
 			10 = {
-				steel = 1
+				#steel = 1
 				#chromium = 1
 			}
 			15 = {
-				steel = 1
+				#steel = 1
 				#chromium = 2
 			}
 		}
 
-		maximum_speed = -0.05
-		reliability = -0.015
-		armor_value = 0.085
+		reliability = -0.01
 		add_stats = {
-			breakthrough = 0.25       #breakthrough stack yapiliyordu
-			build_cost_ic = 0.2
-
+			maximum_speed = -0.1
+			breakthrough = 1
+		}
+		multiply_stats = {
+			build_cost_ic = 0.005
+			armor_value = 0.05
 		}
 	}
 
@@ -128,7 +131,7 @@ upgrades = {
 	mech_cost_upgrade = {
 		max_level = 5
 		cost = land
-		build_cost_ic = -0.05
+		build_cost_ic = -0.1
 		reliability = -0.05
 	}
 	tank_aa_upgrade = {

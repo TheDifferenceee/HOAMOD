@@ -9,6 +9,7 @@ equipments = {
 		type = {
 			infantry
 			motorized
+			support
 		}
 		group_by = archetype
 		
@@ -17,7 +18,7 @@ equipments = {
 		reliability = 0.8
 
 		#Space taken in convoy
-		lend_lease_cost = 0.15
+		lend_lease_cost = 1
 
 		build_cost_ic = 4
 		resources = {

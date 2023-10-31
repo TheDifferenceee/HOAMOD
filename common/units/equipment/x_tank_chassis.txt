@@ -260,7 +260,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 1
+		lend_lease_cost = 10
 		
 		build_cost_ic = 8
 		resources = {
@@ -688,7 +688,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 1.2
+		lend_lease_cost = 12
 		
 		build_cost_ic = 12 
 		resources = {
@@ -1128,7 +1128,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 1.4
+		lend_lease_cost = 14
 		
 		build_cost_ic = 25 
 		resources = {
@@ -1565,7 +1565,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 1.4
+		lend_lease_cost = 14
 		upgrades = {
 			tank_reliability_upgrade
 			tank_engine_upgrade
@@ -1731,7 +1731,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 1.5
+		lend_lease_cost = 15
 		upgrades = {
 			tank_reliability_upgrade
 			tank_engine_upgrade
@@ -1903,7 +1903,7 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 1
+		lend_lease_cost = 10
 		
 		build_cost_ic = 10
 		resources = {

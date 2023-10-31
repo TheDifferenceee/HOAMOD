@@ -93,7 +93,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -136,13 +136,14 @@ technologies = {
 	
 	tech_engineers2 = {
 
-		engineer = {
-			entrenchment  = 2
-			
-			fort = {
-				defence = 0.10
-				attack = 0.10
+		engineer = {	
+			entrenchment = 2.5
+			urban = {
+				attack = 0.1
 			}
+		}
+		pioneer_support = {	
+			entrenchment = 2.5
 		}
 
 		enable_equipment_modules = {
@@ -175,7 +176,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1939 }
@@ -209,44 +210,21 @@ technologies = {
 	tech_engineers3 = {
 
 		engineer = {
-			entrenchment  = 2
+			entrenchment = 2.5
 			river = {
 				attack = 0.1	
-				defence = 0.10
 			}
 		}
-
-		light_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		medium_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		heavy_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
+		pioneer_support = {	
+			entrenchment = 2.5
 		}
 		path = {
 			leads_to_tech = tech_engineers4
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 1.5
-		start_year = 1942
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1942 }
@@ -280,38 +258,16 @@ technologies = {
 	tech_engineers4 = {
 
 		engineer = {
-			entrenchment  = 2
-			urban = {
-				attack = 0.1	
-				defence = 0.1
-			}
-		}
-		light_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
+			entrenchment = 2.5
 			fort = {
 				attack = 0.10
 			}
 		}
-		medium_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
+		pioneer_support = {	
+			entrenchment = 2.5
 		}
-		heavy_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		research_cost = 1.5
-		start_year = 1945
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1945 }
@@ -356,7 +312,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -409,7 +365,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1939 }
@@ -450,8 +406,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1942
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1942 }
@@ -487,8 +443,8 @@ technologies = {
 			recon = 2
 		}
 
-		research_cost = 1.5
-		start_year = 1945
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 2 y = @1945 }
@@ -530,7 +486,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -598,7 +554,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1939 }
@@ -629,8 +585,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1942
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1942 }
@@ -656,8 +612,8 @@ technologies = {
 			suppression_factor = 0.1
 		}
 
-		research_cost = 1.5
-		start_year = 1945
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
 			position = { x = 4 y = @1945 }
@@ -703,7 +659,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -752,7 +708,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1939 }
@@ -787,15 +743,21 @@ technologies = {
 
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			
+			battalion_mult = {
+				category = category_all_armor
+				equipment_capture_factor = 0.01
+				add = yes
+			}
+			
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1942
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1942 }
@@ -832,8 +794,8 @@ technologies = {
 			equipment_capture_factor = 0.05
 		}
 
-		research_cost = 1.5
-		start_year = 1945
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
 			position = { x = 6 y = @1945 }
@@ -879,7 +841,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -890,6 +852,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -925,7 +888,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1939 }
@@ -935,6 +898,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -968,8 +932,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1942
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1942 }
@@ -979,6 +943,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -1007,8 +972,8 @@ technologies = {
 			experience_loss_factor = -0.10
 		}
 
-		research_cost = 1.5
-		start_year = 1945
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
 			position = { x = 8 y = @1945 }
@@ -1018,6 +983,7 @@ technologies = {
 			support_tech
 			hospital_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -1049,6 +1015,15 @@ technologies = {
 		}
 	}
 
+	NORDIC_supportCollaboration_tech = { # For the Army Capston in the Nordic JFT
+		allow = { always = no } #Only obtained through Focus
+		category_support_battalions = {
+			max_organisation = 10
+			soft_attack = 0.25
+			experience_loss_factor = 0.05
+		}
+	}
+
 	tech_logistics_company = {
 
 		enable_subunits = {
@@ -1064,7 +1039,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1075,6 +1050,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -1115,7 +1091,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1939 }
@@ -1125,6 +1101,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -1163,8 +1140,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1942
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1942 }
@@ -1174,6 +1151,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -1202,8 +1180,8 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 
-		research_cost = 1.5
-		start_year = 1945
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
 			position = { x = 10 y = @1945 }
@@ -1213,6 +1191,7 @@ technologies = {
 			support_tech
 			logistics_tech
 			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
 		}
 		
 		ai_will_do = {
@@ -1252,7 +1231,7 @@ technologies = {
 			motorised_infantry = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.25
 		start_year = 1936
 		folder = {
 			name = support_folder
@@ -1279,7 +1258,7 @@ technologies = {
 	tech_signal_company2 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.1
 		}
 		
 		
@@ -1289,7 +1268,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1939 }
@@ -1324,15 +1303,15 @@ technologies = {
 	tech_signal_company3 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.1
 		}
 		path = {
 			leads_to_tech = tech_signal_company4
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
-		start_year = 1942
+		research_cost = 2.0
+		start_year = 1940
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1942 }
@@ -1366,11 +1345,11 @@ technologies = {
 	tech_signal_company4 = {
 
 		signal_company = {
-			initiative = 0.12
+			initiative = 0.1
 		}
 
-		research_cost = 1.5
-		start_year = 1945
+		research_cost = 2.0
+		start_year = 1942
 		folder = {
 			name = support_folder
 			position = { x = 12 y = @1945 }
@@ -1469,11 +1448,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 			
 			modifier = {
 				is_major = yes
-				factor = 2
+				factor = 1
 			}
 
 			modifier = {
@@ -1492,7 +1471,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = support_folder
 			position = { x = 0 y = @1939 }

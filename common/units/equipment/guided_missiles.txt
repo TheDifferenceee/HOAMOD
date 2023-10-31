@@ -4,8 +4,18 @@ equipments = {
 		year = 1936
 
 		can_be_produced = {
-			NOT = {
-				has_idea = BUL_army_restrictions
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				NOT = {
+					has_idea = BUL_army_restrictions_aat
+				}
+			}
+			else = {
+				NOT = {
+					has_idea = BUL_army_restrictions
+				}
 			}
 		}
 
@@ -30,7 +40,7 @@ equipments = {
 		naval_strike_targetting = 0.6
 
 		#Space taken in convoy
-		lend_lease_cost = 0.15
+		lend_lease_cost = 1.5
 		
 		build_cost_ic = 54
 		resources = {
