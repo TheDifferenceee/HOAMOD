@@ -291,11 +291,6 @@ equipment_modules = {
 				tank_medium_main_armament
 			}
 		}
-		forbid_equipment_type_exact_match_for_category = {
-			tank_medium_main_armament = armor
-			tank_heavy_main_armament = armor
-			tank_super_heavy_main_armament = armor
-		}
 
 		xp_cost = 2
 		add_stats = {
@@ -380,10 +375,6 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_heavy_main_armament
 			}
-		}
-		forbid_equipment_type_exact_match_for_category = {
-			tank_heavy_main_armament = armor
-			tank_super_heavy_main_armament = armor
 		}
 
 		xp_cost = 2
@@ -924,7 +915,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 9
 			hard_attack = 6
-			ap_attack = 90
+			ap_attack = 75
 			build_cost_ic = 4.5
 			#maximum_speed = -0.1
 			reliability = -0.2
@@ -947,7 +938,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 12
 			hard_attack = 8
-			ap_attack = 120
+			ap_attack = 100
 			build_cost_ic = 6
 			#maximum_speed = -0.3
 			reliability = -0.2
@@ -969,7 +960,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 15
 			hard_attack = 10
-			ap_attack = 150
+			ap_attack = 125
 			build_cost_ic = 7.5
 			$maximum_speed = -0.4
 			reliability = -0.2
