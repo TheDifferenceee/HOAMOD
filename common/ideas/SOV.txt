@@ -293,7 +293,6 @@ ideas = {
 
 			modifier = {
 				army_attack_factor = 0.1
-				army_core_attack_factor = -0.1
 			}
 			
 		}
@@ -346,8 +345,8 @@ ideas = {
 			}
 
 			modifier = {  
-				industrial_capacity_factory = 0.2
-				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.25
 			}
 			
 		}
@@ -365,11 +364,66 @@ ideas = {
 			}
 
 			modifier = {  
-				production_factory_efficiency_gain_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 			}
 			
 		}
+		
+		soviet_union_eternal = { 
+			
+			allowed = { 
+				always = no 
+			}
+			
+			picture = smersh
+			
+			removal_cost = -1 
+			
+			modifier = { 
+                army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.125
+			}
+		}
+
+		soviet_union_eternal2 = { 
+			
+			allowed = { 
+				always = no 
+			}
+			
+			picture = smersh
+			
+			removal_cost = -1 
+			
+			modifier = { 
+                army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.1
+				supply_consumption_factor = -0.225
+			}
+		}
+
+		soviet_union_eternal3 = { 
+			
+			allowed = { 
+				always = no 
+			}
+			
+			picture = smersh
+			
+			removal_cost = -1 
+			
+			modifier = { 
+                army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.15
+				supply_consumption_factor = -0.325
+			}
+		}
+
 		
 		soviet_army_balance = {
 		picture = generic_army_problems
