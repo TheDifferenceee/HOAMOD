@@ -75,6 +75,18 @@ NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 2
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 2
 NDefines.NSupply.CAPITAL_SUPPLY_BASE = 150
 
+PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		1.00,
+		0.66,
+		0.33,
+		0.00, --there isn't much point setting this higher than 0
+	}
+PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		0.80,
+		0.60,
+		0.40,
+	}
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 5			-- Max width of regiments in division designer.
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 5		-- Max height of regiments in division designer.
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 4		-- Min height of regiments in division designer.
@@ -94,19 +106,19 @@ NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0    --Base cost to unlock 
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1024			--Max army experience a country can store --500
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1024			--Max navy experience a country can store --500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1024			--Max air experience a country can store --500
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.015    -- air global damage modifier --0.032 yani vanilla degeri
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.015    -- global damage modifier --0.032 yani vanilla degeri
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.025    -- air global damage modifier --0.032 yani vanilla degeri
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.05    -- global damage modifier --0.032 yani vanilla degeri
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2 -- how many CAS/TAC can enter a combat depending on enemy width there --3 
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 20        -- chance to get a hit to damage on forts. (out of 100) --5  
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 70               -- chance to avoid hit if no defences left. --60 yani vanilla degeri     
-NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.15                -- small river crossing -- -0.3
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3           -- large river crossing -- -0.6
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.2          -- small river crossing -- -0.25
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.4     -- large river crossing -- -0.5
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.3                -- small river crossing -- -0.3
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4           -- large river crossing -- -0.6
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.15          -- small river crossing -- -0.25
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.3     -- large river crossing -- -0.5
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.1                        -- fort penalty -- -0.15          
 NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.3               -- defender penalty if attacked from multiple directions -- -0.5         
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.15          -- effect on defense due to enemy air superiorty -- -0.35
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.15           -- more AA attack will approach this amount of help (diminishing returns) --0.70
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.1          -- effect on defense due to enemy air superiorty -- -0.35
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.1           -- more AA attack will approach this amount of help (diminishing returns) --0.70
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 110 -- how quickly defense approaches the max impact diminishing returns curve --112
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = 0    -- effect on speed due to enemy air superiority -- -0.3
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.01            -- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support --0.07 yani vanilla degeri sonradan bakabilirim           
@@ -168,7 +180,7 @@ NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.2                   -- Organisatio
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15                        -- CAS bonus factor for air support moddifier for land unit in combat --0.25
 NDefines.NMilitary.PLANNING_MAX = 0.2                               -- can get more from techs --0.3 vanilla planningi, sistem biraz garip
 NDefines.NMilitary.DIG_IN_FACTOR = 0.01                           -- bonus factor for each dug-in level --0.02 yani vanilla degeri sonradan bakabilirim         entrench 2x            
-NDefines.NMilitary.UNIT_DIGIN_CAP = 0 -- vanilla 5,                           -- how "deep" you can dig you can dig in until hitting max bonus
+NDefines.NMilitary.UNIT_DIGIN_CAP = 5 -- vanilla 5,                           -- how "deep" you can dig you can dig in until hitting max bonus
 NDefines.NMilitary.PLAN_PROVINCE_MEDIUM_VP_IMPORTANCE_AREA = 2.0  -- Used when calculating the value of defense area in the battle plan system --5.0
 NDefines.NMilitary.PLAN_PROVINCE_HIGH_VP_IMPORTANCE_AREA = 2.0   -- Used when calculating the value of defense area in the battle plan system --10.0
 NDefines.NMilitary.PLAN_PROVINCE_CAPITAL_IMPORTANCE_AREA = 2.0    -- Used when calculating the balue of defense area in the battle plan system --50.0         
