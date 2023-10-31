@@ -998,9 +998,9 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 7
-			hard_attack = 6
+			hard_attack = 5
 			ap_attack = 90
-			build_cost_ic = 3
+			build_cost_ic = 4
 			#maximum_speed = -0.3
 			reliability = -0.2
 		}
@@ -1025,9 +1025,9 @@ equipment_modules = {
 		parent = tank_heavy_cannon
 		add_stats = {
 			soft_attack = 14
-			hard_attack = 12
+			hard_attack = 10
 			ap_attack = 120
-			build_cost_ic = 6
+			build_cost_ic = 8
 			#maximum_speed = -0.4
 			reliability = -0.2
 		}
@@ -1052,9 +1052,9 @@ equipment_modules = {
 		parent = tank_heavy_cannon_2
 		add_stats = {
 			soft_attack = 17.5
-			hard_attack = 15
+			hard_attack = 12.5
 			ap_attack = 150
-			build_cost_ic = 7.5
+			build_cost_ic = 10
 			#maximum_speed = -0.5
 			reliability = -0.2
 		}
