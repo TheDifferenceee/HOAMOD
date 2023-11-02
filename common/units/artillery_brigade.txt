@@ -90,7 +90,7 @@ sub_units = {
 
 		need = {
 			artillery_equipment = 30
-			motorized_equipment = 30
+			motorized_equipment = 50
 		}
 		
 		max_strength = 2
@@ -186,7 +186,7 @@ sub_units = {
 		transport = motorized_equipment
 		need = {
 			rocket_artillery_equipment = 30
-			motorized_equipment = 30
+			motorized_equipment = 50
 		}
 		
 		manpower = 500
@@ -254,7 +254,7 @@ sub_units = {
 
 		need = {
 			motorized_rocket_equipment = 30
-			motorized_equipment = 30
+			motorized_equipment = 50
 		}
 		
 		manpower = 500

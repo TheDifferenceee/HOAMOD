@@ -40,6 +40,11 @@ sub_units = {
 		
 		battalion_mult = {
 			category = category_light_infantry
+			entrenchment = 1
+			entrenchment_speed = 0.1
+			add = yes
+		}	
+		battalion_mult = {
 			category = category_mountaineers
 			entrenchment = 1
 			entrenchment_speed = 0.1

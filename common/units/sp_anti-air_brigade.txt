@@ -16,6 +16,8 @@ sub_units = {
 		group = armor_combat_support
 		
 		categories = {
+			category_tanks
+			category_front_line
 			category_all_armor
 			category_army
 		}
@@ -33,7 +35,7 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.16
 
-		breakthrough = -0.55
+		breakthrough = -0.75
 
 		suppression = 0.75
 
@@ -89,6 +91,8 @@ sub_units = {
 		group = armor_combat_support
 		
 		categories = {
+			category_tanks
+			category_front_line
 			category_all_armor
 			category_army
 		}
@@ -106,7 +110,7 @@ sub_units = {
 		weight = 1.25
 		supply_consumption = 0.24
 
-		breakthrough = -0.53
+		breakthrough = -0.75
 
 		suppression = 0.8
 
@@ -163,6 +167,8 @@ sub_units = {
 		group = armor_combat_support
 		
 		categories = {
+			category_tanks
+			category_front_line
 			category_all_armor
 			category_army
 		}
@@ -179,7 +185,7 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.32
 
-		breakthrough = -0.35
+		breakthrough = -0.75
 
 		suppression = 0.75
 
@@ -227,6 +233,8 @@ sub_units = {
 		ai_priority = 100
 		active = yes
 		categories = {
+			category_tanks
+			category_front_line
 			category_all_armor
 			category_army
 		}
@@ -252,7 +260,7 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.4
 
-		breakthrough = -0.35
+		breakthrough = -0.75
 
 		suppression = 0.75
 
@@ -308,6 +316,8 @@ sub_units = {
 		group = armor_combat_support
 		
 		categories = {
+			category_tanks
+			category_front_line
 			category_all_armor
 			category_army
 		}
@@ -325,7 +335,7 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.24
 
-		breakthrough = -0.53
+		breakthrough = -0.75
 
 		suppression = 2
 

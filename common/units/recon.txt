@@ -352,7 +352,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.025
-		recon = 1
+		recon = 2
 
 		# Support nerfs to combat abilities
 		soft_attack = -1
@@ -431,7 +431,7 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.025
-		recon = 1
+		recon = 2
 
 		# Support nerfs to combat abilities
 		soft_attack = -1
