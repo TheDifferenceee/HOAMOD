@@ -26,7 +26,7 @@ equipments = {
 		soft_attack = 3
 		hard_attack = 9
 		ap_attack = 27
-		air_attack = 12
+		air_attack = 15
 
 		#Space taken in convoy
 		lend_lease_cost = 2
@@ -60,7 +60,7 @@ equipments = {
 		soft_attack = 4
 		hard_attack = 12
 		ap_attack = 36
-		air_attack = 16
+		air_attack = 20
 
 		build_cost_ic = 3.2
 		resources = {
@@ -81,7 +81,7 @@ equipments = {
 		soft_attack = 5
 		hard_attack = 15
 		ap_attack = 45
-		air_attack = 20
+		air_attack = 25
 
 		build_cost_ic = 4
 		resources = {
