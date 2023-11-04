@@ -36,5 +36,281 @@ sub_units = {
 		weight = 0.1
 
 		supply_consumption = 0.15
+		same_support_type = anti_tank
+	}
+
+	mot_anti_tank = {
+		abbreviation = "MAT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		
+		group = support
+		
+		type = {
+			infantry
+			support
+		}
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+		essential = {
+			motorized_equipment
+		}
+
+		combat_width = 0
+
+		need = {
+			motorized_equipment = 50
+			anti_tank_equipment = 30
+		}
+		manpower = 500
+		max_organisation = 2
+		default_morale = 0.1
+		max_strength = 2
+		training_time = 120
+		weight = 0.1
+
+		supply_consumption = 0.2
+		same_support_type = anti_tank
+	}
+
+	mec_anti_tank = {
+		abbreviation = "MCAT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		
+		group = support
+		
+		type = {
+			infantry
+			support
+		}
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+		}
+
+		essential = {
+			mechanized_equipment
+		}
+
+		combat_width = 0
+
+		need = {
+			mechanized_equipment = 50
+			anti_tank_equipment = 30
+		}
+
+		manpower = 500
+		max_organisation = 2
+		default_morale = 0.1
+		max_strength = 2
+		training_time = 120
+		weight = 0.1
+
+		supply_consumption = 0.2
+		same_support_type = anti_tank
+	}
+
+	ligh_td = {
+		abbreviation = "LLAT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		
+		group = support
+		
+		type = {
+			infantry
+			support
+		}
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+			category_all_armor
+			category_recony
+		}
+		soft_attack = -0.75
+		ap_attack = 1
+		breakthrough = -0.5
+		essential = {
+			light_tank_destroyer_chassis
+		}
+
+		combat_width = 0
+
+		need = {
+			light_tank_destroyer_chassis = 30
+		}
+
+		manpower = 500
+		max_organisation = 2
+		default_morale = 0.1
+		max_strength = 2
+		training_time = 120
+		weight = 0.1
+
+		supply_consumption = 0.2
+		same_support_type = anti_tank
+	}
+
+	medium_td = {
+		abbreviation = "MMAT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		
+		group = support
+		
+		type = {
+			infantry
+			support
+		}
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+			category_all_armor
+			category_recony
+		}
+		soft_attack = -0.75
+		ap_attack = 1
+		breakthrough = -0.5
+		essential = {
+			medium_tank_destroyer_chassis
+		}
+
+		combat_width = 0
+
+		need = {
+			medium_tank_destroyer_chassis = 30
+		}
+
+		manpower = 500
+		max_organisation = 2
+		default_morale = 0.1
+		max_strength = 2
+		training_time = 120
+		weight = 0.1
+
+		supply_consumption = 0.2
+		same_support_type = anti_tank
+	}
+
+	heavy_td = {
+		abbreviation = "HHAT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		
+		group = support
+		
+		type = {
+			infantry
+			support
+		}
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+			category_all_armor
+			category_recony
+		}
+		soft_attack = -0.75
+		ap_attack = 1
+		breakthrough = -0.5
+		essential = {
+			heavy_tank_destroyer_chassis
+		}
+
+		combat_width = 0
+
+		need = {
+			heavy_tank_destroyer_chassis = 30
+		}
+
+		manpower = 500
+		max_organisation = 2
+		default_morale = 0.1
+		max_strength = 2
+		training_time = 120
+		weight = 0.1
+
+		supply_consumption = 0.2
+		same_support_type = anti_tank
+	}
+
+	modern_td = {
+		abbreviation = "MOAT"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+		
+		group = support
+		
+		type = {
+			infantry
+			support
+		}
+		
+		categories = {
+			category_front_line
+			category_support_battalions
+			category_army
+			category_all_armor
+			category_recony
+		}
+		soft_attack = -0.75
+		ap_attack = 1
+		breakthrough = -0.5
+		essential = {
+			modern_tank_destroyer_chassis
+		}
+
+		combat_width = 0
+
+		need = {
+			modern_tank_destroyer_chassis = 30
+		}
+
+		manpower = 500
+		max_organisation = 2
+		default_morale = 0.1
+		max_strength = 2
+		training_time = 120
+		weight = 0.1
+
+		supply_consumption = 0.2
+		same_support_type = anti_tank
 	}
 }

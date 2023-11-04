@@ -37,6 +37,7 @@ sub_units = {
 
 		soft_attack = -0.75
 		ap_attack = 1
+		breakthrough = -0.5
 
 		suppression = 1.0
 
@@ -114,6 +115,7 @@ sub_units = {
 
 		soft_attack = -0.75
 		ap_attack = 1
+		breakthrough = -0.5
 		
 		suppression = 1.25
 
@@ -191,6 +193,7 @@ sub_units = {
 
 		soft_attack = -0.75
 		ap_attack = 1
+		breakthrough = -0.5
 
 		suppression = 1.25
 		
@@ -268,6 +271,7 @@ sub_units = {
 
 		soft_attack = -0.75
 		ap_attack = 1
+		breakthrough = -0.5
 
 		suppression = 1.25
 
@@ -345,6 +349,7 @@ sub_units = {
 		
 		soft_attack = -0.75
 		ap_attack = 1
+		breakthrough = -0.5
 
 		suppression = 1.25
 		
