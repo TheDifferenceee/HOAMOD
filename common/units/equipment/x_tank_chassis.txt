@@ -14,7 +14,7 @@ duplicate_archetypes = {
 			# used as the localization key (the name of the type) and run a find-and-replace on it.
 			# Example: light_tank_aa_chassis_1 gets variant_name light_tank_aa_equipment_1.
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.5 }
+			#hardness = { set = 0.5 }
 		}
 	}
 
@@ -23,7 +23,7 @@ duplicate_archetypes = {
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.5 }
+			#hardness = { set = 0.5 }
 		}
 	}
 
@@ -40,7 +40,7 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.55 }
+			#hardness = { set = 0.55 }
 		}
 	}
 
@@ -59,7 +59,7 @@ duplicate_archetypes = {
 		type = { armor anti_air }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.65 }
+			#hardness = { set = 0.65 }
 		}
 	}
 
@@ -68,7 +68,7 @@ duplicate_archetypes = {
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.65 }
+			#hardness = { set = 0.65 }
 		}
 	}
 
@@ -85,7 +85,7 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.7 }
+			#hardness = { set = 0.7 }
 		}
 	}
 
@@ -104,7 +104,7 @@ duplicate_archetypes = {
 		type = { armor anti_air }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
+			#hardness = { set = 0.8 }
 		}
 	}
 
@@ -113,7 +113,7 @@ duplicate_archetypes = {
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
+			#hardness = { set = 0.8 }
 		}
 	}
 
@@ -130,7 +130,7 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
+			#hardness = { set = 0.8 }
 		}
 	}
 
@@ -149,7 +149,7 @@ duplicate_archetypes = {
 		type = { armor anti_air }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.9 }
+			#hardness = { set = 0.9 }
 		}
 	}
 
@@ -158,7 +158,7 @@ duplicate_archetypes = {
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.9 }
+			#hardness = { set = 0.9 }
 		}
 	}
 
@@ -177,7 +177,7 @@ duplicate_archetypes = {
 		type = { armor anti_air }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.85 }
+			#hardness = { set = 0.85 }
 		}
 	}
 
@@ -186,7 +186,7 @@ duplicate_archetypes = {
 		type = { armor artillery }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.85 }
+			#hardness = { set = 0.85 }
 		}
 	}
 
@@ -250,7 +250,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 26
-		hardness = 0.8
+		#hardness = 0.8
 		armor_value = 10
 
 		#Offensive Abilities
@@ -356,7 +356,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 2
-		hardness = 0.5
+		#hardness = 0.5
 		armor_value = 5
 
 		#Offensive Abilities
@@ -463,7 +463,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 1
-		hardness = 0.8
+		#hardness = 0.8
 		armor_value = 10
 
 		#Offensive Abilities
@@ -573,7 +573,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 2
 		breakthrough = 2
-		hardness = 0.5
+		#hardness = 0.5
 		armor_value = 5
 
 		#Offensive Abilities
@@ -678,7 +678,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 36
-		hardness = 0.9
+		#hardness = 0.9
 		armor_value = 60
 
 		#Offensive Abilities
@@ -787,7 +787,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 3
-		hardness = 0.65
+		#hardness = 0.65
 		armor_value = 45
 
 		#Offensive Abilities
@@ -897,7 +897,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 1.3
-		hardness = 0.9
+		#hardness = 0.9
 		armor_value = 60
 
 		#Offensive Abilities
@@ -1011,7 +1011,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 2.5
 		breakthrough = 2.5
-		hardness = 0.65
+		#hardness = 0.65
 		armor_value = 45
 
 		#Offensive Abilities
@@ -1118,7 +1118,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 6
 		breakthrough = 36
-		hardness = 0.95
+		#hardness = 0.95
 		armor_value = 70
 
 		#Offensive Abilities
@@ -1232,7 +1232,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 2
-		hardness = 0.8
+		#hardness = 0.8
 		armor_value = 45
 
 		#Offensive Abilities
@@ -1338,7 +1338,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 1
-		hardness = 0.95
+		#hardness = 0.95
 		armor_value = 70
 
 		#Offensive Abilities
@@ -1449,7 +1449,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 2
 		breakthrough = 2
-		hardness = 0.8
+		#hardness = 0.8
 		armor_value = 45
 
 		#Offensive Abilities
@@ -1555,7 +1555,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 10
 		breakthrough = 84
-		hardness = 0.98
+		#hardness = 0.98
 		armor_value = 130
 
 		#Offensive Abilities
@@ -1604,7 +1604,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 4
-		hardness = 0.85
+		#hardness = 0.85
 		armor_value = 90
 
 		#Offensive Abilities
@@ -1645,7 +1645,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 2
-		hardness = 0.98
+		#hardness = 0.98
 		armor_value = 130
 
 		#Offensive Abilities
@@ -1687,7 +1687,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 4
-		hardness = 0.85
+		#hardness = 0.85
 		armor_value = 90
 
 		#Offensive Abilities
@@ -1721,7 +1721,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 10
 		breakthrough = 74
-		hardness = 0.99
+		#hardness = 0.99
 		armor_value = 145
 
 		#Offensive Abilities
@@ -1770,7 +1770,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 3.5
-		hardness = 0.9
+		#hardness = 0.9
 		armor_value = 100
 
 		#Offensive Abilities
@@ -1810,7 +1810,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 7
 		breakthrough = 1.8
-		hardness = 0.99
+		#hardness = 0.99
 		armor_value = 145
 
 		#Offensive Abilities
@@ -1850,7 +1850,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 3.5
 		breakthrough = 3.5
-		hardness = 0.9
+		#hardness = 0.9
 		armor_value = 100
 
 		#Offensive Abilities
@@ -1893,7 +1893,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 26
-		hardness = 0.8
+		#hardness = 0.8
 		armor_value = 20
 
 		#Offensive Abilities
@@ -1931,7 +1931,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 5
 		breakthrough = 36
-		hardness = 0.9
+		#hardness = 0.9
 		armor_value = 80
 
 		#Offensive Abilities
