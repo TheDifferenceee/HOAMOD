@@ -42,7 +42,7 @@ sub_units = {
 		weight = 0.1
 		
         supply_consumption = 0.15
-		same_support_type = arti_air
+		same_support_type = anti_air
 	}
 
 	mot_anti_air = {
@@ -84,7 +84,7 @@ sub_units = {
 		weight = 0.1
 		
         supply_consumption = 0.15
-		same_support_type = arti_air
+		same_support_type = anti_air
 	}
 
 	mec_anti_air = {
@@ -126,7 +126,7 @@ sub_units = {
 		weight = 0.1
 		
         supply_consumption = 0.15
-		same_support_type = arti_air
+		same_support_type = anti_air
 	}
 
 	light_aa = {
@@ -167,7 +167,7 @@ sub_units = {
 		weight = 0.1
 		
         supply_consumption = 0.15
-		same_support_type = arti_air
+		same_support_type = anti_air
 	}
 
 	medium_aa = {
@@ -208,7 +208,7 @@ sub_units = {
 		weight = 0.1
 		
         supply_consumption = 0.15
-		same_support_type = arti_air
+		same_support_type = anti_air
 	}
 
 	heavy_aa = {
@@ -249,7 +249,7 @@ sub_units = {
 		weight = 0.1
 		
         supply_consumption = 0.15
-		same_support_type = arti_air
+		same_support_type = anti_air
 	}
 
 	modern_aa = {
@@ -290,6 +290,6 @@ sub_units = {
 		weight = 0.1
 		
         supply_consumption = 0.15
-		same_support_type = arti_air
+		same_support_type = anti_air
 	}
 }

@@ -20,7 +20,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1926
 		folder = {
 			name = bba_air_techs_folder
@@ -67,7 +67,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1936
 
 		folder = {
@@ -137,7 +137,7 @@ technologies = {
 		}
 				
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
@@ -211,7 +211,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1944
 
 		folder = {
@@ -275,7 +275,7 @@ technologies = {
 			jet_engines = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1945
 
 		folder = {
@@ -319,7 +319,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1926
 		folder = {
 			name = bba_air_techs_folder
@@ -351,7 +351,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 1936
 
 		folder = {
@@ -408,7 +408,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
@@ -464,7 +464,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
@@ -513,7 +513,7 @@ technologies = {
 			jet_engines = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 1945
 		
 		folder = {
@@ -549,7 +549,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 1926
 		folder = {
 			name = bba_air_techs_folder
@@ -589,7 +589,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 1936
 		folder = {
 			name = bba_air_techs_folder
@@ -629,7 +629,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1940
 		folder = {
 			name = bba_air_techs_folder
@@ -669,7 +669,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 1944
 		folder = {
 			name = bba_air_techs_folder
@@ -704,7 +704,7 @@ technologies = {
 			large_plane_maritime_patrol_plane_airframe_4
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1950
 
 		dependencies = {
@@ -743,7 +743,7 @@ technologies = {
 					torpedo_mounting
 		}
 			
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1922
 
 		folder = {
@@ -780,7 +780,7 @@ technologies = {
 			recon_camera
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1922
 
 		folder = {
@@ -815,7 +815,7 @@ technologies = {
 			lmg_defense_turret_2x
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1922
 
 		folder = {
@@ -868,7 +868,7 @@ technologies = {
 			armor_plate_large
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1936
 
 		folder = {
@@ -911,7 +911,7 @@ technologies = {
 			hmg_defense_turret_2x
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1939
 
 		folder = {
@@ -952,7 +952,7 @@ technologies = {
 			aircraft_cannon_1_2x
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1939
 
 		folder = {
@@ -1044,7 +1044,7 @@ technologies = {
 			engine_1_6x	
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1922
 
 		folder = {
@@ -1116,7 +1116,7 @@ technologies = {
 			engine_2_6x	
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1936
 
 		folder = {
@@ -1170,7 +1170,7 @@ technologies = {
 			engine_3_6x	
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1940
 
 		folder = {
@@ -1272,7 +1272,7 @@ technologies = {
 			drop_tanks
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1936
 
 		folder = {
@@ -1329,7 +1329,7 @@ technologies = {
 			flying_boat_large
 		}
 		
-		research_cost = 1
+		research_cost = 1.5
 		start_year = 1936
 
 		folder = {

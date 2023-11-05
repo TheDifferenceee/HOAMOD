@@ -48,6 +48,7 @@ NDefines.NResistance.RESISTANCE_GROWTH_BASE = 0.1 -- base resistance grow	--vani
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 40 --10
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 40 --15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 40 --5
+NDefines.NProduction.BASE_FACTORY_SPEED = 4 --vanilla 5, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives). --4.50
 NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 6.5                 -- Base factory speed multiplier (how much hoi3 style IC each factory gives). --2.5
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 8000000    -- How many deployment lines minimum can be training --100000
@@ -59,7 +60,9 @@ NDefines.NProduction.BASE_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0    -- Mi
 NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 1    -- Minimum fraction of an equipment type's base strategic resource cost to use when converting a naval equipment, such as through ship refitting. --0.2  
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0		-- The minimum number of factories we have to put on consumer goods, by value.
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.0	-- The minimum number of factories we have to put on consumer goods, in percent.
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 4        -- Base year ahead penalty --2
+
+NDefines.NTechnology.BASE_TECH_COST = 120 --vanilla 100,					-- Base cost for a tech. multiplied with tech cost and ahead of time penalties
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2        -- Base year ahead penalty --2
 	
 NDefines.NPolitics.ARMY_LEADER_MAX_COST = 100                -- max cost BEFORE modifiers --100 yani vanilla degeri
 NDefines.NPolitics.NAVY_LEADER_MAX_COST = 100                -- max cost BEFORE modifiers --100 yani vanilla degeri   

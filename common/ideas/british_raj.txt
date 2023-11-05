@@ -401,6 +401,7 @@ ideas = {
 
 			modifier = {
 				conscription_factor = -0.69
+				mobilization_speed = 0.75
 			}
 		}
 
