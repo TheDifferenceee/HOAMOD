@@ -61,6 +61,7 @@ NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 1    
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0		-- The minimum number of factories we have to put on consumer goods, by value.
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.0	-- The minimum number of factories we have to put on consumer goods, in percent.
 
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 60 --vanilla 30.0,		-- Base amount of research points a country can save per slot.
 NDefines.NTechnology.BASE_TECH_COST = 120 --vanilla 100,					-- Base cost for a tech. multiplied with tech cost and ahead of time penalties
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2        -- Base year ahead penalty --2
 	
@@ -95,7 +96,7 @@ NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 5		-- Max height of regiments i
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 4		-- Min height of regiments in division designer.
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2			-- Max width of support in division designer.
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5		-- Max height of support in division designer.
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.025 --- 0.02     --ani giren lag icin            -- basic speed control	
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.02 --- 0.02     --ani giren lag icin            -- basic speed control	
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 1   -- extra damage dice if our armor outclasses enemy
@@ -182,7 +183,7 @@ NDefines.NMilitary.EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 0.5        -- reductio
 NDefines.NMilitary.LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.005        -- Experience scale for lend leased equipment used in combat. --0.0005
 NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 7   -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested. --14
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 3       -- How many days must pass until we may give another reinforcement request --7        
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.05 --0.25
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.025 --0.25
 NDefines.NMilitary.PARACHUTE_COMPLETE_ORG = 0.2                   -- Organisation value (in %) after unit being dropped, regardless if failed, disrupted, or successful. --0.4  
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15                        -- CAS bonus factor for air support moddifier for land unit in combat --0.25
 NDefines.NMilitary.PLANNING_MAX = 0.2                               -- can get more from techs --0.3 vanilla planningi, sistem biraz garip
