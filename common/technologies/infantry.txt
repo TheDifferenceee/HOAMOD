@@ -1221,15 +1221,15 @@ technologies = {
 		}		
 		mountaineers = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		paratrooper = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		marine = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		motorized = {
 			defense = 0.05
@@ -1312,15 +1312,15 @@ technologies = {
 		}		
 		mountaineers = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		paratrooper = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		marine = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		motorized = {
 			defense = 0.05
@@ -1409,15 +1409,15 @@ technologies = {
 		}		
 		mountaineers = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		paratrooper = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		marine = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		motorized = {
 			defense = 0.05
@@ -1493,15 +1493,15 @@ technologies = {
 		}		
 		mountaineers = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		paratrooper = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		marine = {
 			defense = 0.05
-			breakthrough = 0.2
+			breakthrough = 0.25
 		}
 		motorized = {
 			defense = 0.05

@@ -62,6 +62,12 @@ sub_units = {
 		fort = {
 			attack = 0.05
 		}
+		river = {
+			attack = 0.05
+		}
+		amphibious = {
+			attack = 0.05
+		}
 
 		same_support_type = flame
 	}
@@ -127,6 +133,12 @@ sub_units = {
 			attack = 0.1
 		}
 		fort = {
+			attack = 0.1
+		}
+		river = {
+			attack = 0.1
+		}
+		amphibious = {
 			attack = 0.1
 		}
 
@@ -201,6 +213,12 @@ sub_units = {
 			attack = 0.1
 		}
 		fort = {
+			attack = 0.1
+		}
+		river = {
+			attack = 0.1
+		}
+		amphibious = {
 			attack = 0.1
 		}
 

@@ -40,8 +40,7 @@ sub_units = {
 		
 		battalion_mult = {
 			category = category_light_infantry
-			entrenchment = 1
-			dig_in_speed_factor = 0.1
+			entrenchment = 0.5
 			add = yes
 		}	
 
@@ -112,8 +111,7 @@ sub_units = {
 
 		battalion_mult = {
 			category = category_marines
-			entrenchment = 1
-			dig_in_speed_factor = 0.1
+			entrenchment = 0.5
 			add = yes
 		}
 

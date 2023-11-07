@@ -56,7 +56,7 @@ sub_units = {
 		}
 		mountain = {
 			attack = -1
-			defence = -0.5
+			defence = -1
 			movement = -0.5
 		}
 		marsh = {
@@ -71,6 +71,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = -0.9
+			defence = -0.9
 			movement = -0.45
 		}
 	}

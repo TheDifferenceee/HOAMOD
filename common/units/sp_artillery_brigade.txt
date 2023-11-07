@@ -73,6 +73,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = -0.9
+			defence = -0.9
 			movement = -0.45
 		}
 	}
@@ -149,6 +150,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = -0.9
+			defence = -0.9
 			movement = -0.45
 		}
 	}
@@ -226,6 +228,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = -0.9
+			defence = -0.9
 			movement = -0.45
 		}
 	}
@@ -305,6 +308,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = -0.9
+			defence = -0.9
 			movement = -0.45
 		}
 	}
@@ -382,6 +386,7 @@ sub_units = {
 		}
 		amphibious = {
 			attack = -0.9
+			defence = -0.9
 			movement = -0.45
 		}
 	}

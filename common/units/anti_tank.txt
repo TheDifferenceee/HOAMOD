@@ -17,7 +17,6 @@ sub_units = {
 		}
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
 		}
@@ -38,94 +37,7 @@ sub_units = {
 		supply_consumption = 0.15
 		same_support_type = anti_tank
 	}
-
-	mot_anti_tank = {
-		abbreviation = "MAT"
-		sprite = anti_tank
-		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = yes
-		affects_speed = no
-		
-		group = support
-		
-		type = {
-			infantry
-			support
-		}
-		
-		categories = {
-			category_front_line
-			category_support_battalions
-			category_army
-		}
-
-		essential = {
-			motorized_equipment
-		}
-
-		combat_width = 0
-
-		need = {
-			motorized_equipment = 50
-			anti_tank_equipment = 30
-		}
-		manpower = 500
-		max_organisation = 2
-		default_morale = 0.1
-		max_strength = 2
-		training_time = 120
-		weight = 0.1
-
-		supply_consumption = 0.2
-		same_support_type = anti_tank
-	}
-
-	mec_anti_tank = {
-		abbreviation = "MCAT"
-		sprite = anti_tank
-		map_icon_category = infantry
-		priority = 0
-		ai_priority = 0
-		active = yes
-		affects_speed = no
-		
-		group = support
-		
-		type = {
-			infantry
-			support
-		}
-		
-		categories = {
-			category_front_line
-			category_support_battalions
-			category_army
-		}
-
-		essential = {
-			mechanized_equipment
-		}
-
-		combat_width = 0
-
-		need = {
-			mechanized_equipment = 50
-			anti_tank_equipment = 30
-		}
-
-		manpower = 500
-		max_organisation = 2
-		default_morale = 0.1
-		max_strength = 2
-		training_time = 120
-		weight = 0.1
-
-		supply_consumption = 0.2
-		same_support_type = anti_tank
-	}
-
+	
 	ligh_td = {
 		abbreviation = "LLAT"
 		sprite = anti_tank
@@ -143,11 +55,8 @@ sub_units = {
 		}
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
-			category_all_armor
-			category_recony
 		}
 		soft_attack = -0.75
 		ap_attack = 1
@@ -190,11 +99,8 @@ sub_units = {
 		}
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
-			category_all_armor
-			category_recony
 		}
 		soft_attack = -0.75
 		ap_attack = 1
@@ -237,11 +143,8 @@ sub_units = {
 		}
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
-			category_all_armor
-			category_recony
 		}
 		soft_attack = -0.75
 		ap_attack = 1
@@ -284,11 +187,8 @@ sub_units = {
 		}
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
-			category_all_armor
-			category_recony
 		}
 		soft_attack = -0.75
 		ap_attack = 1

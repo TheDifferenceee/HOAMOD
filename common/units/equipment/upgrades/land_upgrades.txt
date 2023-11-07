@@ -35,7 +35,7 @@ upgrades = {
 		}
 		multiply_stats = {
 			build_cost_ic = 0.0025
-			maximum_speed = 0.1
+			maximum_speed = 0.025
 			fuel_consumption = 0.025
 			reliability = -0.01
 		}
@@ -87,7 +87,7 @@ upgrades = {
 			armor_value = 0.05
 			breakthrough = 0.01
 			reliability = -0.01
-			maximum_speed = -0.1
+			maximum_speed = -0.025
 		}
 	}
 
