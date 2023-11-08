@@ -155,7 +155,7 @@ technologies = {
 		production_factory_max_efficiency_factor = 0.1
 		line_change_production_efficiency_factor = 0.2
 		
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1943
 		
 		XOR = {
@@ -187,7 +187,7 @@ technologies = {
 		production_factory_max_efficiency_factor = 0.1
 		production_factory_efficiency_gain_factor = 0.1
 			
-		research_cost = 1
+		research_cost = 2
 		start_year = 1943
 		
 		XOR = {
@@ -519,7 +519,7 @@ technologies = {
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.2
 		
@@ -593,7 +593,7 @@ technologies = {
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
 		
@@ -634,7 +634,7 @@ technologies = {
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
 		
@@ -675,7 +675,7 @@ technologies = {
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
 		
@@ -716,7 +716,7 @@ technologies = {
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.1
+		production_factory_start_efficiency_factor = 0.075
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
 		

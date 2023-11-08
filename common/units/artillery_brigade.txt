@@ -153,9 +153,6 @@ sub_units = {
 		marsh = {
 			attack = -0.4
 		}
-		urban = {
-			attack = -0.4
-		}
 		amphibious = {
 			attack = -0.6
 			defence = -0.6
@@ -188,6 +185,7 @@ sub_units = {
 		transport = motorized_equipment
 		need = {
 			rocket_artillery_equipment = 30
+			motorized_equipment = 50
 		}
 		
 		manpower = 500
@@ -252,7 +250,6 @@ sub_units = {
 
 		need = {
 			motorized_rocket_equipment = 30
-			motorized_equipment = 50
 		}
 		
 		manpower = 500

@@ -6,6 +6,9 @@ technologies = {
 			artillery_equipment_1
 		}
 
+		enable_subunits = {
+			artillery
+		}
 		path = {
 			leads_to_tech = interwar_artillery
 			research_cost_coeff = 1
@@ -395,12 +398,11 @@ technologies = {
 		enable_equipments = {
 			rocket_artillery_equipment_1
 		}
-#		enable_subunits = {
-#			rocket_artillery_brigade
-#		}
+		enable_subunits = {
+			rocket_artillery
+		}
 
 		enable_equipment_modules = {
-			tank_rocket_launcher
 			rocket_rails
 		}
 
@@ -526,11 +528,7 @@ technologies = {
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.3
-		}
 		enable_equipment_modules = {
-			tank_rocket_launcher_2
 		}
 		research_cost = 2
 
@@ -560,6 +558,10 @@ technologies = {
 
 		enable_equipments = {
 			anti_air_equipment_1
+		}
+
+		enable_subunits = {
+			anti_air
 		}
 
 		enable_equipment_modules = {
@@ -899,6 +901,9 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_cannon
 			tank_buster_1
+		}
+		enable_subunits = {
+			anti_tank
 		}
 		path = {
 			leads_to_tech = antitank1

@@ -6,7 +6,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		active = yes
+		active = no
 		affects_speed = no
 		
 		group = support
@@ -28,7 +28,7 @@ sub_units = {
 			anti_tank_equipment = 30
 		}
 		manpower = 500
-		max_organisation = 2
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 2
 		training_time = 120
@@ -44,7 +44,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		active = yes
+		active = no
 		affects_speed = no
 		
 		group = support
@@ -72,7 +72,7 @@ sub_units = {
 		}
 
 		manpower = 500
-		max_organisation = 2
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 2
 		training_time = 120
@@ -88,7 +88,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		active = yes
+		active = no
 		affects_speed = no
 		
 		group = support
@@ -116,7 +116,7 @@ sub_units = {
 		}
 
 		manpower = 500
-		max_organisation = 2
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 2
 		training_time = 120
@@ -132,7 +132,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		active = yes
+		active = no
 		affects_speed = no
 		
 		group = support
@@ -160,7 +160,7 @@ sub_units = {
 		}
 
 		manpower = 500
-		max_organisation = 2
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 2
 		training_time = 120
@@ -176,7 +176,7 @@ sub_units = {
 		map_icon_category = infantry
 		priority = 0
 		ai_priority = 0
-		active = yes
+		active = no
 		affects_speed = no
 		
 		group = support
@@ -204,7 +204,7 @@ sub_units = {
 		}
 
 		manpower = 500
-		max_organisation = 2
+		max_organisation = 20
 		default_morale = 0.1
 		max_strength = 2
 		training_time = 120

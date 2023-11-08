@@ -19,8 +19,17 @@ technologies = {
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
 
-		enable_equipments = {
-		}
+	enable_equipments = {
+		light_tank_amphibious_chassis_1
+		medium_tank_amphibious_chassis_1
+		heavy_tank_amphibious_chassis_1
+		light_tank_amphibious_chassis_2
+		medium_tank_amphibious_chassis_2
+		heavy_tank_amphibious_chassis_2
+		light_tank_amphibious_chassis_3
+		medium_tank_amphibious_chassis_3
+		heavy_tank_amphibious_chassis_3
+	}
 		enable_equipment_modules = {
 			tank_torsion_bar_suspension
 			tank_riveted_armor
@@ -51,6 +60,7 @@ technologies = {
 			wet_ammo_storage
 			smoke_launchers
 			expanded_fuel_tank
+			amphibious_drive
 		}
 		enable_subunits = {
 		}
@@ -142,6 +152,10 @@ technologies = {
 		}
 		enable_subunits = {
 			light_armor
+			light_tank_recon
+			light_td
+			light_aa
+			light_artillery
 		}
 
 		on_research_complete_limit = {
@@ -301,125 +315,6 @@ technologies = {
 		}
 	}
 
-
-
-	amphibious_tank_chassis = { #SchwimmPanzer II
-
-		enable_equipments = {
-			amphibious_tank_chassis_1
-		}
-
-		enable_subunits = {
-			amphibious_armor
-		}
-
-		path = {
-			leads_to_tech = amphibious_drive
-			research_cost_coeff = 1
-		}
-
-		allow_branch = {
-			has_dlc = "Man the Guns"
-		}
-
-		research_cost = 3
-		start_year = 1938
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = -4 y = 5 }
-		}
-
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 2
-				is_major = yes
-				NOT = {
-					TAG = GER
-				}
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
-		}
-
-		categories = {
-			armor
-			tp_tech
-		}
-	}
-
-	amphibious_drive = { #SchwimmPanzer II
-
-
-		enable_equipment_modules = {
-			amphibious_drive
-		}
-
-		enable_equipments = {
-			light_tank_amphibious_chassis_1
-			medium_tank_amphibious_chassis_1
-			heavy_tank_amphibious_chassis_1
-			light_tank_amphibious_chassis_2
-			medium_tank_amphibious_chassis_2
-			heavy_tank_amphibious_chassis_2
-			light_tank_amphibious_chassis_3
-			medium_tank_amphibious_chassis_3
-			heavy_tank_amphibious_chassis_3
-		}
-
-		research_cost = 2
-		start_year = 1941
-
-		folder = {
-			name = nsb_armour_folder
-			position = { x = -4 y = 8 }
-		}
-
-		ai_will_do = {
-			factor = 0.5
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				OR = {
-					original_tag = USA
-					original_tag = JAP
-				}
-				factor = 2
-			}
-			modifier = {
-				not = {
-					any_controlled_state = {
-						is_coastal = yes
-					}
-				}
-				factor = 0
-			}
-		}
-
-		categories = {
-			armor
-			tp_tech
-		}
-	}
-
 	advanced_light_tank_chassis = { #Leopard
 
 		enable_equipments = {
@@ -477,6 +372,10 @@ technologies = {
 
 		enable_subunits = {
 			medium_armor
+			medium_tank_recon
+			medium_td
+			medium_aa
+			medium_artillery
 		}
 
 		on_research_complete_limit = {
@@ -718,6 +617,10 @@ technologies = {
 		
 		enable_subunits = {
 			modern_armor
+			modern_tank_recon
+			modern_td
+			modern_aa
+			modern_artillery
 		}
 
 		research_cost = 3
@@ -765,6 +668,10 @@ technologies = {
 
 		enable_subunits = {
 			heavy_armor
+			heavy_tank_recon
+			heavy_td
+			heavy_aa
+			heavy_artillery
 		}
 
 		on_research_complete_limit = {

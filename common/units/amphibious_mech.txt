@@ -26,14 +26,12 @@ sub_units = {
 		combat_width = 2
 
 		#Offensive Abilities
-		soft_attack = 0.1
-		hard_attack = 0.5
 		
 		#Size Definitions
 		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 1200
+		manpower = 1000
 
 		#Misc Abilities
 		training_time = 120
@@ -77,8 +75,7 @@ sub_units = {
 			movement = -0.4
 		}
 		river = {
-			attack = 0.2
-			defence = 0.1
+			attack = 0.1
 		}
 		amphibious = {
 			defence = -0.1
