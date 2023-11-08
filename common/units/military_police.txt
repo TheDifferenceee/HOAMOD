@@ -39,7 +39,7 @@ sub_units = {
 		supply_consumption = 0.025
 		
 		# Important Ability
-		suppression_factor = 0.20
+		suppression_factor = 0.25
 
 		soft_attack = -1
 		breakthrough = -1

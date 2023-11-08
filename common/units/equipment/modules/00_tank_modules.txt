@@ -223,8 +223,7 @@ equipment_modules = {
 				tank_light_main_armament
 			}
 		}
-		add_stats = {
-			build_cost_ic = 1		
+		add_stats = {	
 		}
 		multiply_stats = {
 			breakthrough = -0.2
@@ -304,8 +303,7 @@ equipment_modules = {
 				tank_medium_main_armament
 			}
 		}
-		add_stats = {
-			build_cost_ic = 2		
+		add_stats = {	
 		}
 		multiply_stats = {		
 			breakthrough = -0.2

@@ -59,6 +59,11 @@ sub_units = {
 			defence = -0.1
 			movement = -0.2
 		}
+		jungle = {
+			attack = -0.15
+			defence = -0.075
+			movement = -0.075
+		}
 		hills = {
 			attack = -0.3
 			defence = -0.15
@@ -68,6 +73,11 @@ sub_units = {
 			attack = -0.5
 			defence = -0.5
 			movement = -0.5
+		}
+		marsh = {
+			attack = -0.2
+			defence = -0.1
+			movement = -0.1
 		}
 		urban = {
 			attack = -0.4

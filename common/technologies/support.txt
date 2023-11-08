@@ -92,6 +92,7 @@ technologies = {
 			leads_to_tech = tech_engineers2
 			research_cost_coeff = 1
 		}
+		dig_in_speed_factor = 0.25
 
 		research_cost = 1
 		start_year = 1936
@@ -319,7 +320,6 @@ technologies = {
 			recon
 			mot_recon
 			armored_car_recon
-			light_tank_recon
 		}
 		
 		path = {
@@ -559,7 +559,7 @@ technologies = {
 	tech_military_police2 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			suppression_factor = 0.25
 		}
 		
 		
@@ -593,7 +593,7 @@ technologies = {
 	tech_military_police3 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			suppression_factor = 0.25
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -624,7 +624,7 @@ technologies = {
 	tech_military_police4 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			suppression_factor = 0.25
 		}
 
 		research_cost = 1
