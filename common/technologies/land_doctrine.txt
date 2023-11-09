@@ -11,7 +11,7 @@ technologies = {
 
 		enable_tactic = tactic_anti_stack
 		enable_tactic = tactic_anti_stack5
-
+		additional_brigade_column_size = 1
 		path = {
 			leads_to_tech = delay 
 			research_cost_coeff = 1
@@ -943,7 +943,7 @@ technologies = {
 
 		enable_tactic = tactic_anti_stack
 		enable_tactic = tactic_anti_stack5 
-
+		additional_brigade_column_size = 1
 		path = {
 			leads_to_tech = sup_delay 
 			research_cost_coeff = 1
@@ -1246,7 +1246,6 @@ technologies = {
 		category_line_artillery = {
 			soft_attack = 0.2
 		}
-		coordination_bonus = 0.05
 		enable_tactic = tactic_overwhelming_fire
 		
 		path = {
@@ -1804,7 +1803,7 @@ technologies = {
 
 		enable_tactic = tactic_anti_stack
 		enable_tactic = tactic_anti_stack5 
-	
+		additional_brigade_column_size = 1
 		max_dig_in = 10
 		dig_in_speed_factor = 0.25 #25% bonus
 		
@@ -2130,7 +2129,6 @@ technologies = {
 		armored_car = {
 			max_organisation = 1
 		}
-		coordination_bonus = 0.1
 		
 		path = {
 			leads_to_tech = assault_breakthrough 
@@ -2667,7 +2665,7 @@ technologies = {
 
 		enable_tactic = tactic_anti_stack
 		enable_tactic = tactic_anti_stack5 
-
+		additional_brigade_column_size = 1
 		path = {
 			leads_to_tech = pocket_defence 
 			research_cost_coeff = 1
