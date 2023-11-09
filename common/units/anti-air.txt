@@ -41,7 +41,7 @@ sub_units = {
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.15
+        supply_consumption = 0.1
 		same_support_type = anti_air
 	}
 
@@ -82,7 +82,7 @@ sub_units = {
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.2
+        supply_consumption = 0.15
 		same_support_type = anti_air
 	}
 
@@ -123,7 +123,7 @@ sub_units = {
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.2
+        supply_consumption = 0.15
 		same_support_type = anti_air
 	}
 
@@ -164,7 +164,7 @@ sub_units = {
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.2
+        supply_consumption = 0.15
 		same_support_type = anti_air
 	}
 
@@ -205,7 +205,7 @@ sub_units = {
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.2
+        supply_consumption = 0.15
 		same_support_type = anti_air
 	}
 }

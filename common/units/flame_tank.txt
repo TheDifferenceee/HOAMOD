@@ -31,7 +31,7 @@ sub_units = {
 
 		#Misc Abilities
 		weight = 0.1
-		supply_consumption = 0.3
+		supply_consumption = 0.2
 		hard_attack = -1
 		need = {
 			light_tank_flame_chassis = 50
@@ -100,7 +100,7 @@ sub_units = {
 
 		#Misc Abilities
 		weight = 0.1
-		supply_consumption = 0.4
+		supply_consumption = 0.2
 		hard_attack = -1
 		need = {
 			medium_tank_flame_chassis = 50
@@ -169,7 +169,7 @@ sub_units = {
 
 		#Misc Abilities
 		weight = 0.1
-		supply_consumption = 0.5
+		supply_consumption = 0.2
 		can_be_parachuted = no
 		hard_attack = -1
 		# Support nerfs to combat abilities
