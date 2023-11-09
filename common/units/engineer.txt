@@ -29,12 +29,12 @@ sub_units = {
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 250
+		manpower = 500
 		training_time = 120
 
 		#Misc Abilities
 		weight = 0.1
-		supply_consumption = 0.025
+		supply_consumption = 0.05
 		
 		entrenchment = 2.5
 		
@@ -98,12 +98,12 @@ sub_units = {
 		max_strength = 2
 		max_organisation = 20
 		default_morale = 0.3
-		manpower = 250
+		manpower = 500
 		training_time = 120
 
 		#Misc Abilities
 		weight = 0.1
-		supply_consumption = 0.025
+		supply_consumption = 0.05
 		
 		entrenchment = 2.5
 

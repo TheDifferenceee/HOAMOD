@@ -78,11 +78,11 @@ sub_units = {
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 10
-		default_morale = 0.1
+		default_morale = 0.3
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.15
+        supply_consumption = 0.2
 		same_support_type = anti_air
 	}
 
@@ -119,11 +119,11 @@ sub_units = {
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 10
-		default_morale = 0.1
+		default_morale = 0.3
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.15
+        supply_consumption = 0.2
 		same_support_type = anti_air
 	}
 
@@ -160,11 +160,11 @@ sub_units = {
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 10
-		default_morale = 0.1
+		default_morale = 0.3
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.15
+        supply_consumption = 0.2
 		same_support_type = anti_air
 	}
 
@@ -201,11 +201,11 @@ sub_units = {
 		#Size Definitions
 		max_strength = 2
 		max_organisation = 10
-		default_morale = 0.1
+		default_morale = 0.3
 		manpower = 500
 		weight = 0.1
 		
-        supply_consumption = 0.15
+        supply_consumption = 0.2
 		same_support_type = anti_air
 	}
 }

@@ -13,7 +13,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = combat_support
+		group = infantry
 		
 		categories = {
 			category_front_line
@@ -27,7 +27,7 @@ sub_units = {
 			anti_tank_equipment = 30
 		}
 		manpower = 500
-		max_organisation = 2
+		max_organisation = 10
 		default_morale = 0.1
 		max_strength = 2
 		training_time = 120
@@ -72,7 +72,7 @@ sub_units = {
 			anti_tank
 		}
 		
-		group = mobile_combat_support
+		group = mobile
 		
 		categories = {
 			category_front_line
@@ -91,13 +91,13 @@ sub_units = {
 			motorized_equipment = 50
 		}
 		manpower = 500
-		max_organisation = 2
+		max_organisation = 10
 		default_morale = 0.1
 		max_strength = 2
 		training_time = 120
 		weight = 0.5
 
-		supply_consumption = 0.25
+		supply_consumption = 0.2
 
 		forest = {
 			attack = -0.2

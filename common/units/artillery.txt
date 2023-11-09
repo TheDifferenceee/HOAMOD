@@ -120,7 +120,7 @@ sub_units = {
 		max_strength = 2
 		weight = 0.1
 		
-		supply_consumption = 0.15
+		supply_consumption = 0.2
 		same_support_type = rocket
 
 		urban = {
@@ -164,11 +164,11 @@ sub_units = {
 		manpower = 500
 		training_time = 120
 		max_organisation = 10
-		default_morale = 0.1
+		default_morale = 0.3
 		max_strength = 2
 		weight = 0.1
 		
-		supply_consumption = 0.15
+		supply_consumption = 0.2
 		same_support_type = artillery
 	}
 
@@ -208,11 +208,11 @@ sub_units = {
 		manpower = 500
 		training_time = 120
 		max_organisation = 10
-		default_morale = 0.1
+		default_morale = 0.3
 		max_strength = 2
 		weight = 0.1
 		
-		supply_consumption = 0.15
+		supply_consumption = 0.2
 		same_support_type = artillery
 	}
 
@@ -252,11 +252,11 @@ sub_units = {
 		manpower = 500
 		training_time = 120
 		max_organisation = 10
-		default_morale = 0.1
+		default_morale = 0.3
 		max_strength = 2
 		weight = 0.1
 		
-		supply_consumption = 0.15
+		supply_consumption = 0.2
 		same_support_type = artillery
 	}
 
@@ -296,11 +296,11 @@ sub_units = {
 		manpower = 500
 		training_time = 120
 		max_organisation = 10
-		default_morale = 0.1
+		default_morale = 0.3
 		max_strength = 2
 		weight = 0.1
 		
-		supply_consumption = 0.15
+		supply_consumption = 0.2
 		same_support_type = artillery
 	}
 }
