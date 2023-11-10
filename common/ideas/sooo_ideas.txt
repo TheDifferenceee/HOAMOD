@@ -4,11 +4,12 @@ ideas = {
 
 
 		afrikenvictoriaidea = {
+		
 			allowed = {
 				always = yes
 			}
 
-			picture = barbarossa
+			picture = man_five_year_plan_industry
 			allowed_civil_war = {
 				always = yes
 			}
@@ -17,8 +18,11 @@ ideas = {
 			
 			
 			modifier = {
-production_factory_max_efficiency_factor = 0.0987654321
-
+			consumer_goods_expected_value = -0.025
+			production_factory_max_efficiency_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.05
+			industrial_capacity_factory = 0.025
+			industrial_capacity_dockyard = 0.05
          }
 		}
 		supplyfix = {

@@ -1848,7 +1848,7 @@ ITA =  { controls_state = 446 }
 		tag = GER	
 		}
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		modifier = {
 		
@@ -1859,9 +1859,11 @@ ITA =  { controls_state = 446 }
 		days_re_enable = 0
 
 		complete_effect = {
-			add_ideas = afrikenvictoriaidea
-
-			
+		    GER = {	add_ideas = afrikenvictoriaidea }
+			ITA = {	add_ideas = afrikenvictoriaidea }
+			ROM = {	add_ideas = afrikenvictoriaidea }
+			HUN = {	add_ideas = afrikenvictoriaidea }
+			BUL = {	add_ideas = afrikenvictoriaidea }
 		}
 
 	}
@@ -1883,7 +1885,7 @@ ENG =  { controls_state = 451 }
 		tag = ENG	
 		}
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		modifier = {
 		
@@ -1895,7 +1897,10 @@ ENG =  { controls_state = 451 }
 
 		complete_effect = {
 GER = {	remove_ideas = afrikenvictoriaidea }
-			
+ITA = {	remove_ideas = afrikenvictoriaidea }		
+ROM = {	remove_ideas = afrikenvictoriaidea }
+HUN = {	remove_ideas = afrikenvictoriaidea }
+BUL = {	remove_ideas = afrikenvictoriaidea }	
 		}
 
 	}
