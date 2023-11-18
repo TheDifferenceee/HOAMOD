@@ -36,7 +36,7 @@ sub_units = {
 
 		#Size Definitions
 		max_strength = 2
-		max_organisation = 10
+		max_organisation = 2
 		default_morale = 0.1
 		manpower = 500
 		weight = 0.1

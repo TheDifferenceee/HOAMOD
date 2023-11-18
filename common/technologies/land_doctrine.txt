@@ -1087,7 +1087,7 @@ technologies = {
 
 	
 		category_support_battalions = {
-			max_organisation = 10
+			max_organisation = 5
 			soft_attack = 0.25
 		}
 		
@@ -1138,7 +1138,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_support_battalions = {
-			max_organisation = 10
+			max_organisation = 5
 			soft_attack = 0.25
 		}
 		

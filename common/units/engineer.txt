@@ -17,7 +17,6 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
 		}
@@ -51,8 +50,7 @@ sub_units = {
 		}
 
 		need = {
-			infantry_equipment = 100
-			support_equipment = 10
+			support_equipment = 20
 		}
 
 		forest = {
@@ -85,10 +83,8 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
 			category_support_battalions
 			category_army
-			category_marines
 		}
 
 	
@@ -120,8 +116,7 @@ sub_units = {
 		}
 
 		need = {
-			infantry_equipment = 100
-			support_equipment = 10
+			support_equipment = 20
 		}
 
 		marsh = {
